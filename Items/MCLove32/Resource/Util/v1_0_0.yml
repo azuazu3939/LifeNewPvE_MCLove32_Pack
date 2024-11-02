@@ -1,0 +1,413 @@
+#メモ:
+# エンチャントテーブルをPluginでいじくる際の注意点。
+# 効率強化エンチャントは、Lv5までしかサーバー内で出ないようにするのが適切な実装。
+# なお、耐久性上昇はエンチャントとしてサーバー内で必要だが、不可壊は付けないこと。
+# TypeSが耐久10より、サーバー内でまれに引けるレベルでも6ほどにするといいかもしれない。
+
+MCLove32_リソースツルハシTypeF:
+  Id: diamond_pickaxe
+  Display: "&bリソースツルハシF"
+  Lore: []
+  Model: 1000
+  Options: 
+    Destroy: false
+    #CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Group: 'Util'
+  Skills:
+  - potion{t=HASTE;l=0;d=100;p=false} @self ~onBlockBreak
+
+MCLove32_リソースアックスTypeF:
+  Id: diamond_axe
+  Display: "&bリソースアックスF"
+  Lore: []
+  Model: 1000
+  Options: 
+    Destroy: false
+    #CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Group: 'Util'
+  Skills:
+  - potion{t=HASTE;l=0;d=100;p=false} @self ~onBlockBreak
+
+MCLove32_リソースシャベルTypeF:
+  Id: diamond_shovel
+  Display: "&bリソースシャベルF"
+  Lore: []
+  Model: 1000
+  Options: 
+    Destroy: false
+    #CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Group: 'Util'
+  Skills:
+  - potion{t=HASTE;l=0;d=100;p=false} @self ~onBlockBreak
+
+MCLove32_リソースクワTypeF:
+  Id: diamond_hoe
+  Display: "&bリソースクワF"
+  Lore: []
+  Model: 1000
+  Options: 
+    Destroy: false
+    #CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Group: 'Util'
+  Skills:
+  - potion{t=HASTE;l=0;d=100;p=false} @self ~onBlockBreak
+
+MCLove32_リソースツルハシTypeE:
+  Id: diamond_pickaxe
+  Display: "&bリソースツルハシE"
+  Lore: []
+  Model: 1001
+  Options: 
+    Destroy: false
+    #CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Group: 'Util'
+  Skills:
+  - potion{t=HASTE;l=1;d=100;p=false} @self ~onBlockBreak
+
+MCLove32_リソースアックスTypeE:
+  Id: diamond_axe
+  Display: "&bリソースアックスE"
+  Lore: []
+  Model: 1001
+  Options: 
+    Destroy: false
+    #CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Group: 'Util'
+  Skills:
+  - potion{t=HASTE;l=1;d=100;p=false} @self ~onBlockBreak
+
+MCLove32_リソースシャベルTypeE:
+  Id: diamond_shovel
+  Display: "&bリソースシャベルE"
+  Lore: []
+  Model: 1001
+  Options: 
+    Destroy: false
+    #CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Group: 'Util'
+  Skills:
+  - potion{t=HASTE;l=1;d=100;p=false} @self ~onBlockBreak
+
+MCLove32_リソースクワTypeE:
+  Id: diamond_hoe
+  Display: "&bリソースクワE"
+  Lore: []
+  Model: 1001
+  Options: 
+    Destroy: false
+    #CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Group: 'Util'
+  Skills:
+  - potion{t=HASTE;l=1;d=100;p=false} @self ~onBlockBreak
+
+MCLove32_リソースツルハシTypeD:
+  Id: diamond_pickaxe
+  Display: "&bリソースツルハシD"
+  Lore: []
+  Model: 1002
+  Options: 
+    Destroy: false
+    #CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Group: 'Util'
+  Skills:
+  - potion{t=HASTE;l=2;d=100;p=false} @self ~onBlockBreak
+
+MCLove32_リソースアックスTypeD:
+  Id: diamond_axe
+  Display: "&bリソースアックスD"
+  Lore: []
+  Model: 1002
+  Options: 
+    Destroy: false
+    #CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Group: 'Util'
+  Skills:
+  - potion{t=HASTE;l=2;d=100;p=false} @self ~onBlockBreak
+
+MCLove32_リソースシャベルTypeD:
+  Id: diamond_shovel
+  Display: "&bリソースシャベルD"
+  Lore: []
+  Model: 1002
+  Options: 
+    Destroy: false
+    #CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Group: 'Util'
+  Skills:
+  - potion{t=HASTE;l=2;d=100;p=false} @self ~onBlockBreak
+
+MCLove32_リソースクワTypeD:
+  Id: diamond_hoe
+  Display: "&bリソースクワD"
+  Lore: []
+  Model: 1002
+  Options: 
+    Destroy: false
+    #CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Group: 'Util'
+  Skills:
+  - potion{t=HASTE;l=2;d=100;p=false} @self ~onBlockBreak
+
+MCLove32_リソースツルハシTypeC:
+  Id: diamond_pickaxe
+  Display: "&bリソースツルハシC"
+  Lore: []
+  Model: 1003
+  Options: 
+    Destroy: false
+    #CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Group: 'Util'
+  Skills:
+  - potion{t=HASTE;l=3;d=100;p=false} @self ~onBlockBreak
+
+MCLove32_リソースアックスTypeC:
+  Id: diamond_axe
+  Display: "&bリソースアックスC"
+  Lore: []
+  Model: 1003
+  Options: 
+    Destroy: false
+    #CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Group: 'Util'
+  Skills:
+  - potion{t=HASTE;l=3;d=100;p=false} @self ~onBlockBreak
+
+MCLove32_リソースシャベルTypeC:
+  Id: diamond_shovel
+  Display: "&bリソースシャベルC"
+  Lore: []
+  Model: 1003
+  Options: 
+    Destroy: false
+    #CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Group: 'Util'
+  Skills:
+  - potion{t=HASTE;l=3;d=100;p=false} @self ~onBlockBreak
+
+MCLove32_リソースクワTypeC:
+  Id: diamond_hoe
+  Display: "&bリソースクワC"
+  Lore: []
+  Model: 1003
+  Options: 
+    Destroy: false
+    #CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Group: 'Util'
+  Skills:
+  - potion{t=HASTE;l=3;d=100;p=false} @self ~onBlockBreak
+
+MCLove32_リソースツルハシTypeB:
+  Id: diamond_pickaxe
+  Display: "&bリソースツルハシB"
+  Lore: []
+  Model: 1004
+  Options: 
+    Destroy: false
+    #CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Group: 'Util'
+  Skills:
+  - potion{t=HASTE;l=4;d=100;p=false} @self ~onBlockBreak
+
+MCLove32_リソースアックスTypeB:
+  Id: diamond_axe
+  Display: "&bリソースアックスB"
+  Lore: []
+  Model: 1004
+  Options: 
+    Destroy: false
+    #CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Group: 'Util'
+  Skills:
+  - potion{t=HASTE;l=4;d=100;p=false} @self ~onBlockBreak
+
+MCLove32_リソースシャベルTypeB:
+  Id: diamond_shovel
+  Display: "&bリソースシャベルB"
+  Lore: []
+  Model: 1004
+  Options: 
+    Destroy: false
+    #CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Group: 'Util'
+  Skills:
+  - potion{t=HASTE;l=4;d=100;p=false} @self ~onBlockBreak
+
+MCLove32_リソースクワTypeB:
+  Id: diamond_hoe
+  Display: "&bリソースクワB"
+  Lore: []
+  Model: 1004
+  Options: 
+    Destroy: false
+    #CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Group: 'Util'
+  Skills:
+  - potion{t=HASTE;l=4;d=100;p=false} @self ~onBlockBreak
+
+MCLove32_リソースツルハシTypeA:
+  Id: diamond_pickaxe
+  Display: "&bリソースツルハシA"
+  Lore: []
+  Model: 1005
+  Options: 
+    Destroy: false
+    #CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Group: 'Util'
+  Skills:
+  - potion{t=HASTE;l=5;d=100;p=false} @self ~onBlockBreak
+
+MCLove32_リソースアックスTypeA:
+  Id: diamond_axe
+  Display: "&bリソースアックスA"
+  Lore: []
+  Model: 1005
+  Options: 
+    Destroy: false
+    #CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Group: 'Util'
+  Skills:
+  - potion{t=HASTE;l=5;d=100;p=false} @self ~onBlockBreak
+
+MCLove32_リソースシャベルTypeA:
+  Id: diamond_shovel
+  Display: "&bリソースシャベルA"
+  Lore: []
+  Model: 1005
+  Options: 
+    Destroy: false
+    #CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Group: 'Util'
+  Skills:
+  - potion{t=HASTE;l=5;d=100;p=false} @self ~onBlockBreak
+
+MCLove32_リソースクワTypeA:
+  Id: diamond_hoe
+  Display: "&bリソースクワA"
+  Lore: []
+  Model: 1005
+  Options: 
+    Destroy: false
+    #CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Group: 'Util'
+  Skills:
+  - potion{t=HASTE;l=5;d=100;p=false} @self ~onBlockBreak
+
+MCLove32_リソースツルハシTypeS:
+  Id: diamond_pickaxe
+  Display: "&bリソースツルハシS"
+  Lore: []
+  Model: 1006
+  Options: 
+    Destroy: false
+    #CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Enchantments:
+  - EFFICIENCY 6
+  - UNBREAKING 10
+  - MENDING 1
+  Group: 'Util'
+  Skills:
+  - potion{t=HASTE;l=5;d=100;p=false} @self ~onBlockBreak
+
+MCLove32_リソースアックスTypeS:
+  Id: diamond_axe
+  Display: "&bリソースアックスS"
+  Lore: []
+  Model: 1006
+  Options: 
+    Destroy: false
+    #CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Enchantments:
+  - EFFICIENCY 6
+  - UNBREAKING 10
+  - MENDING 1
+  Group: 'Util'
+  Skills:
+  - potion{t=HASTE;l=5;d=100;p=false} @self ~onBlockBreak
+
+MCLove32_リソースシャベルTypeS:
+  Id: diamond_shovel
+  Display: "&bリソースシャベルS"
+  Lore: []
+  Model: 1006
+  Options: 
+    Destroy: false
+    #CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Enchantments:
+  - EFFICIENCY 6
+  - UNBREAKING 10
+  - MENDING 1
+  Group: 'Util'
+  Skills:
+  - potion{t=HASTE;l=5;d=100;p=false} @self ~onBlockBreak
+
+MCLove32_リソースクワTypeS:
+  Id: diamond_hoe
+  Display: "&bリソースクワS"
+  Lore: []
+  Model: 1006
+  Options: 
+    Destroy: false
+    #CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Enchantments:
+  - EFFICIENCY 6
+  - UNBREAKING 10
+  - MENDING 1
+  Group: 'Util'
+  Skills:
+  - potion{t=HASTE;l=5;d=100;p=false} @self ~onBlockBreak

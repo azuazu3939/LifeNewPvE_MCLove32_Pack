@@ -45,12 +45,3 @@ MCLove32_ビットブレードTypeAProcess:
     bulletType=DISPLAY;mat=diamond_sword;scale=1.25,1.25,1.25;yaw=3.14;pitch=1.57;roll=0.785;
     v=30;i=1;vr=2;hr=2;hp=false;hnp=true;mr=32;se=true;
     in=12;ho=<skill.ho>;vo=<skill.vo>} 
-
-#@Hand、OffHand使用可能アイテムスキル
-MCLove32_ゾンビ化ビーフSkills:
-  Cooldown: 10
-  Skills:
-  - heal{a=2;repeat=9;repeatI=20} @self 
-  - potion{t=HUNGER;l=1;d=200;p=false} @self 
-  - potion{t=REGENERATION;l=1;d=200;p=false} @self 
-  - potion{t=WEAKNESS;l=9;d=200;p=false} @self 

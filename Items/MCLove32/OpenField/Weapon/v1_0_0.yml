@@ -1,9 +1,7 @@
 MCLove32_サイスオブデーモン:
   Id: netherite_hoe
   Display: "&5&lサイスオブデーモン"
-  Lore:
-  Hide:
-    - ATTRIBUTES
+  Lore: []
   Model: 1000
   Options: 
     Destroy: false
@@ -17,9 +15,7 @@ MCLove32_サイスオブデーモン:
 MCLove32_ビットブレードTypeA:
   Id: diamond_sword
   Display: "&b&lビットブレードTypeA"
-  Lore:
-  Hide:
-    - ATTRIBUTES
+  Lore: []
   Model: 1000
   Options: 
     Destroy: false
