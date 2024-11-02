@@ -1,0 +1,56 @@
+MCLove32_サイスオブデーモンSkills:
+  Cooldown: 8
+  TargetConditions:
+  - isMythicMob true
+  Conditions:
+  - wearing{m=MCLove32_サイスオブデーモン;s=HAND}
+  Skills:
+  - damage{a=80;pi=true;ii=true;type=DARK} 
+  - sound{s=entity.warden.death} @self 
+  - heal{a=5} @self 
+  - potion{t=BLINDNESS;l=0;d=50;p=false} 
+  - potion{t=LEVITATION;l=0;d=50;p=false} 
+  - potion{t=WEAKNESS;l=4;d=50;p=false} 
+  - potion{t=SLOWNESS;l=2;d=50;p=false} 
+
+MCLove32_ビットブレードTypeASkills:
+  Cooldown: 5
+  Conditions:
+  - wearing{m=MCLove32_ビットブレードTypeA;s=HAND}
+  Skills:
+  - skill:MCLove32_ビットブレードTypeAStart @EIC{r=20;a=120;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
+
+MCLove32_ビットブレードTypeAStart:
+  Skills:
+  - skill:MCLove32_ビットブレードTypeAProcess{ho=90;vo=1;so=3;y=3} 
+  - skill:MCLove32_ビットブレードTypeAProcess{ho=270;vo=1;so=3;y=3} 
+  - skill:MCLove32_ビットブレードTypeAProcess{ho=90;vo=1.5;so=3;y=5;delay=2}
+  - skill:MCLove32_ビットブレードTypeAProcess{ho=270;vo=1.5;so=3;y=5;delay=2}
+  - skill:MCLove32_ビットブレードTypeAProcess{ho=90;vo=2;so=3;y=7;delay=4} 
+  - skill:MCLove32_ビットブレードTypeAProcess{ho=270;vo=2;so=3;y=7;delay=4}
+
+MCLove32_ビットブレードTypeAProcess:
+  Skills:
+  - missile{
+    ot=[
+      - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.8} @self 
+    ];
+    oh=[
+      - damage{a=10;ii=true;pi=true;type=LIGHT}
+    ];
+    conditions=[
+      - isLiving true 
+      - isMythicMob true
+    ];
+    bulletType=DISPLAY;mat=diamond_sword;scale=1.25,1.25,1.25;yaw=3.14;pitch=1.57;roll=0.785;
+    v=30;i=1;vr=2;hr=2;hp=false;hnp=true;mr=32;se=true;
+    in=12;ho=<skill.ho>;vo=<skill.vo>} 
+
+#@Hand、OffHand使用可能アイテムスキル
+MCLove32_ゾンビ化ビーフSkills:
+  Cooldown: 10
+  Skills:
+  - heal{a=2;repeat=9;repeatI=20} @self 
+  - potion{t=HUNGER;l=1;d=200;p=false} @self 
+  - potion{t=REGENERATION;l=1;d=200;p=false} @self 
+  - potion{t=WEAKNESS;l=9;d=200;p=false} @self 

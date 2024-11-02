@@ -1,0 +1,15 @@
+MCLove32_ゾンビ化ビーフ:
+  Id: rotten_flesh
+  Display: "&7&lゾンビ化ビーフ"
+  Lore:
+  Hide:
+    - ATTRIBUTES
+  Model: 1000
+  Options: 
+    Destroy: false
+    CancelDamage: true
+    ItemVersion: 1
+    Unbreakable: true
+  Group: 'Food'
+  Skills:
+  - skill:MCLove32_ゾンビ化ビーフSkills @self ~onConsume

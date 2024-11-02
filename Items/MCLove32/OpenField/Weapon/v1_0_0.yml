@@ -1,0 +1,31 @@
+MCLove32_サイスオブデーモン:
+  Id: netherite_hoe
+  Display: "&5&lサイスオブデーモン"
+  Lore:
+  Hide:
+    - ATTRIBUTES
+  Model: 1000
+  Options: 
+    Destroy: false
+    #CancelDamage: true
+    ItemVersion: 1
+    Unbreakable: true
+  Group: 'Weapon'
+  Skills:
+  - skill:MCLove32_サイスオブデーモンSkills @Trigger ~onAttack
+
+MCLove32_ビットブレードTypeA:
+  Id: diamond_sword
+  Display: "&b&lビットブレードTypeA"
+  Lore:
+  Hide:
+    - ATTRIBUTES
+  Model: 1000
+  Options: 
+    Destroy: false
+    #CancelDamage: true
+    ItemVersion: 1
+    Unbreakable: true
+  Group: 'Weapon'
+  Skills:
+  - skill:MCLove32_ビットブレードTypeASkills @self ~onUse
