@@ -1,0 +1,74 @@
+MCLove32_研磨剤: 
+  Id: brown_dye 
+  Display: "&a&l研磨剤"
+  Lore: 
+  - "&f資源で資源系ツールを使い採取、採掘などを、"
+  - "&f行うことで獲得可能なアイテム。"
+  - "&f主に資源系ツールの強化に使われる。"
+  Model: 1000
+  Options: 
+    Destroy: false
+    CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Group: 'Material'
+
+MCLove32_鉱石ユニオン: 
+  Id: pink_dye
+  Display: "&d&l鉱石ユニオン"
+  Lore: 
+  - "&fリソースルートチェストから手に入る。"
+  - "&f主に資源系ツールの強化に使われる。"
+  - "&fどこの地下でも掘れるが、そこまで出回っていない。"
+  Model: 1000
+  Options: 
+    Destroy: false
+    CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Group: 'Material' 
+
+MCLove32_鉱石紅蓮: 
+  Id: red_dye
+  Display: "&c&l鉱石紅蓮"
+  Lore: 
+  - "&fリソースルートチェストから手に入る。"
+  - "&f主に資源系ツールの強化に使われる。"
+  - "&f高熱を帯びている。地下深くで入手できる。"
+  Model: 1000
+  Options: 
+    Destroy: false
+    CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Group: 'Material'
+
+MCLove32_鉱石パピュライト: 
+  Id: purple_dye
+  Display: "&a&l鉱石ラピュアライト"
+  Lore: 
+  - "&fリソースルートチェストから手に入る。"
+  - "&f主に資源系ツールの強化に使われる。"
+  - "&f単純な形状で、不純物が含まれない。"
+  Model: 1000
+  Options: 
+    Destroy: false
+    CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Group: 'Material'
+
+MCLove32_鉱石紫焔: 
+  Id: magenta_dye
+  Display: "&5&l鉱石紫焔"
+  Lore: 
+  - "&fリソースルートチェストから手に入る。"
+  - "&f主に資源系ツールの強化に使われる。"
+  - "&f炎のような複雑な形状の鉱物。"
+  Model: 1000
+  Options: 
+    Destroy: false
+    CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Group: 'Material'

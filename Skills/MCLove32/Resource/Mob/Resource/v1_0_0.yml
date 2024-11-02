@@ -1,0 +1,95 @@
+MCLove32_ルートチェスト_果物Skills:
+  TargetConditions:
+  - isparent true 
+  Skills:
+  - sudoskill{
+    s=[
+      - skill:MCLove32_リソース果物ドロップ判定Skills @self 
+    ]}
+  - remove @self 
+
+MCLove32_リソース果物ドロップ判定Skills:
+  Skills:
+  - setvar{var=skill.count;val="0";t=INTEGER} @self 
+  - skill:MCLove32_リソース果物ドロップ判定Process{repeat=5;repeatI=0} @self 
+
+MCLove32_リソース果物ドロップ判定Process:
+  Skills:
+  - randomskill{
+    s=
+    MCLove32_リソースブドウドロップ 9,
+    MCLove32_リソースキウイドロップ 9,
+    MCLove32_リソースイチゴドロップ 9,
+    MCLove32_リソースバナナドロップ 9,
+    MCLove32_リソース空ドロップ 14
+    } @self 
+
+MCLove32_リソースブドウドロップ:
+  Skills:
+  - cmd{c="mlg <caster.name> MCLove32_ブドウ 1 1"} @self 
+
+MCLove32_リソースキウイドロップ:
+  Skills:
+  - cmd{c="mlg <caster.name> MCLove32_キウイ 1 1"} @self 
+
+MCLove32_リソースイチゴドロップ:
+  Skills:
+  - cmd{c="mlg <caster.name> MCLove32_イチゴ 1 1"} @self 
+
+MCLove32_リソースバナナドロップ:
+  Skills:
+  - cmd{c="mlg <caster.name> MCLove32_バナナ 1 1"} @self 
+
+MCLove32_リソース空ドロップ:
+  Skills:
+  - varmath{var=skill.count;equation="<skill.var.count|0> + 1"} @self
+
+MCLove32_リソース果物最低ドロップ: 
+  Conditions:
+  - varrange{var=skill.count;val=5}
+  Skills:
+  - randomskill{
+    s=
+    MCLove32_リソースブドウドロップ,
+    MCLove32_リソースキウイドロップ,
+    MCLove32_リソースイチゴドロップ,
+    MCLove32_リソースバナナドロップ,
+    } @self 
+
+MCLove32_ルートチェスト_鉱石Skills:
+  TargetConditions:
+  - isparent true 
+  Skills:
+  - sudoskill{
+    s=[
+      - skill:MCLove32_リソース鉱石ドロップ判定Skills @self 
+    ]}
+  - remove @self 
+
+MCLove32_リソース鉱石ドロップ判定Skills:
+  Skills:
+  - setvar{var=skill.count;val="0";t=INTEGER} @self 
+  - skill:MCLove32_リソース果物ドロップ判定Process{repeat=3;repeatI=0} @self 
+
+MCLove32_リソース鉱石ドロップ判定Process:
+  Skills:
+  - skill:MCLove32_リソース鉱石ユニオンドロップ{chance=0.05} @self 
+  - skill:MCLove32_リソース鉱石パピュライトドロップ{chance=0.5} @self 
+  - skill:MCLove32_リソース鉱石紅蓮ドロップ{chance=0.7} @self 
+  - skill:MCLove32_リソース鉱石紫焔ドロップ{chance=0.4} @self 
+
+MCLove32_リソース鉱石ユニオンドロップ:
+  Skills:
+  - cmd{c="mlg <caster.name> MCLove32_鉱石ユニオン <random.1to2> <skill.chance>"} @self 
+
+MCLove32_リソース鉱石パピュライトドロップ:
+  Skills:
+  - cmd{c="mlg <caster.name> MCLove32_鉱石パピュライト <random.1to5> <skill.chance>"} @self 
+
+MCLove32_リソース鉱石紅蓮ドロップ:
+  Skills:
+  - cmd{c="mlg <caster.name> MCLove32_鉱石紅蓮 <random.1to4> <skill.chance>"} @self 
+
+MCLove32_リソース鉱石紫焔ドロップ:
+  Skills:
+  - cmd{c="mlg <caster.name> MCLove32_鉱石紫焔 <random.1to3> <skill.chance>"} @self 

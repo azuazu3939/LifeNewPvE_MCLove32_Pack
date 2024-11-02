@@ -1,0 +1,35 @@
+MCLove32_ルートチェスト:
+  Type: Villager 
+  Display: "&6&lルートチェスト"
+  Faction: LootChest
+  Options:
+    Collidable: false 
+    DigOutOfGround: true 
+    FollowRange: 0
+    Despawn: true 
+    KnockbackResistance: 1
+    Interactable: true
+    MaxCombatDistance: 0
+    NoAI: true
+    PreventMobKillDrops: true 
+    PreventOtherDrops: true 
+    PreventRandomEquipment: true 
+    #PreventSunburn: true
+    PreventVanillaDamage: true
+    Scale: -1
+    Silent: true 
+  Disguise: FALLING_BLOCK CHEST setModifyBoundingBox true 
+  Skills:
+  - remove{delay=1200} @self ~onSpawn
+
+MCLove32_ルートチェスト_果物:
+  Template: MCLove32_ルートチェスト
+  Display: "&6&l果物ルートチェスト"
+  Skills:
+  - skill:MCLove32_ルートチェスト_果物Skills @Trigger ~onInteract
+
+MCLove32_ルートチェスト_鉱石:
+  Template: MCLove32_ルートチェスト
+  Display: "&6&l鉱石ルートチェスト"
+  Skills:
+  - skill:MCLove32_ルートチェスト_鉱石Skills @Trigger ~onInteract
