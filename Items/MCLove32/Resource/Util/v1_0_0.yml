@@ -16,7 +16,7 @@ MCLove32_リソースツルハシTypeF:
     #Unbreakable: false
   Group: 'Util'
   Skills:
-  - potion{t=HASTE;l=0;d=100;p=false} @self ~onBlockBreak
+  - potion{t=HASTE;l=1;d=100;p=false} @self ~onBlockBreak
 
 MCLove32_リソースアックスTypeF:
   Id: diamond_axe
@@ -30,7 +30,7 @@ MCLove32_リソースアックスTypeF:
     #Unbreakable: false
   Group: 'Util'
   Skills:
-  - potion{t=HASTE;l=0;d=100;p=false} @self ~onBlockBreak
+  - potion{t=HASTE;l=1;d=100;p=false} @self ~onBlockBreak
 
 MCLove32_リソースシャベルTypeF:
   Id: diamond_shovel
@@ -44,7 +44,7 @@ MCLove32_リソースシャベルTypeF:
     #Unbreakable: false
   Group: 'Util'
   Skills:
-  - potion{t=HASTE;l=0;d=100;p=false} @self ~onBlockBreak
+  - potion{t=HASTE;l=1;d=100;p=false} @self ~onBlockBreak
 
 MCLove32_リソースクワTypeF:
   Id: diamond_hoe
@@ -58,7 +58,7 @@ MCLove32_リソースクワTypeF:
     #Unbreakable: false
   Group: 'Util'
   Skills:
-  - potion{t=HASTE;l=0;d=100;p=false} @self ~onBlockBreak
+  - potion{t=HASTE;l=1;d=100;p=false} @self ~onBlockBreak
 
 MCLove32_リソースツルハシTypeE:
   Id: diamond_pickaxe
@@ -72,7 +72,7 @@ MCLove32_リソースツルハシTypeE:
     #Unbreakable: false
   Group: 'Util'
   Skills:
-  - potion{t=HASTE;l=1;d=100;p=false} @self ~onBlockBreak
+  - potion{t=HASTE;l=2;d=100;p=false} @self ~onBlockBreak
 
 MCLove32_リソースアックスTypeE:
   Id: diamond_axe
@@ -86,7 +86,7 @@ MCLove32_リソースアックスTypeE:
     #Unbreakable: false
   Group: 'Util'
   Skills:
-  - potion{t=HASTE;l=1;d=100;p=false} @self ~onBlockBreak
+  - potion{t=HASTE;l=2;d=100;p=false} @self ~onBlockBreak
 
 MCLove32_リソースシャベルTypeE:
   Id: diamond_shovel
@@ -100,7 +100,7 @@ MCLove32_リソースシャベルTypeE:
     #Unbreakable: false
   Group: 'Util'
   Skills:
-  - potion{t=HASTE;l=1;d=100;p=false} @self ~onBlockBreak
+  - potion{t=HASTE;l=2;d=100;p=false} @self ~onBlockBreak
 
 MCLove32_リソースクワTypeE:
   Id: diamond_hoe
@@ -114,7 +114,7 @@ MCLove32_リソースクワTypeE:
     #Unbreakable: false
   Group: 'Util'
   Skills:
-  - potion{t=HASTE;l=1;d=100;p=false} @self ~onBlockBreak
+  - potion{t=HASTE;l=2;d=100;p=false} @self ~onBlockBreak
 
 MCLove32_リソースツルハシTypeD:
   Id: diamond_pickaxe
@@ -128,7 +128,7 @@ MCLove32_リソースツルハシTypeD:
     #Unbreakable: false
   Group: 'Util'
   Skills:
-  - potion{t=HASTE;l=2;d=100;p=false} @self ~onBlockBreak
+  - potion{t=HASTE;l=3;d=100;p=false} @self ~onBlockBreak
 
 MCLove32_リソースアックスTypeD:
   Id: diamond_axe
@@ -142,7 +142,7 @@ MCLove32_リソースアックスTypeD:
     #Unbreakable: false
   Group: 'Util'
   Skills:
-  - potion{t=HASTE;l=2;d=100;p=false} @self ~onBlockBreak
+  - potion{t=HASTE;l=3;d=100;p=false} @self ~onBlockBreak
 
 MCLove32_リソースシャベルTypeD:
   Id: diamond_shovel
@@ -156,7 +156,7 @@ MCLove32_リソースシャベルTypeD:
     #Unbreakable: false
   Group: 'Util'
   Skills:
-  - potion{t=HASTE;l=2;d=100;p=false} @self ~onBlockBreak
+  - potion{t=HASTE;l=3;d=100;p=false} @self ~onBlockBreak
 
 MCLove32_リソースクワTypeD:
   Id: diamond_hoe
@@ -170,7 +170,7 @@ MCLove32_リソースクワTypeD:
     #Unbreakable: false
   Group: 'Util'
   Skills:
-  - potion{t=HASTE;l=2;d=100;p=false} @self ~onBlockBreak
+  - potion{t=HASTE;l=3;d=100;p=false} @self ~onBlockBreak
 
 MCLove32_リソースツルハシTypeC:
   Id: diamond_pickaxe
@@ -184,7 +184,7 @@ MCLove32_リソースツルハシTypeC:
     #Unbreakable: false
   Group: 'Util'
   Skills:
-  - potion{t=HASTE;l=3;d=100;p=false} @self ~onBlockBreak
+  - potion{t=HASTE;l=4;d=100;p=false} @self ~onBlockBreak
 
 MCLove32_リソースアックスTypeC:
   Id: diamond_axe
@@ -198,7 +198,7 @@ MCLove32_リソースアックスTypeC:
     #Unbreakable: false
   Group: 'Util'
   Skills:
-  - potion{t=HASTE;l=3;d=100;p=false} @self ~onBlockBreak
+  - potion{t=HASTE;l=4;d=100;p=false} @self ~onBlockBreak
 
 MCLove32_リソースシャベルTypeC:
   Id: diamond_shovel
@@ -212,7 +212,7 @@ MCLove32_リソースシャベルTypeC:
     #Unbreakable: false
   Group: 'Util'
   Skills:
-  - potion{t=HASTE;l=3;d=100;p=false} @self ~onBlockBreak
+  - potion{t=HASTE;l=4;d=100;p=false} @self ~onBlockBreak
 
 MCLove32_リソースクワTypeC:
   Id: diamond_hoe
@@ -226,7 +226,7 @@ MCLove32_リソースクワTypeC:
     #Unbreakable: false
   Group: 'Util'
   Skills:
-  - potion{t=HASTE;l=3;d=100;p=false} @self ~onBlockBreak
+  - potion{t=HASTE;l=4;d=100;p=false} @self ~onBlockBreak
 
 MCLove32_リソースツルハシTypeB:
   Id: diamond_pickaxe
@@ -240,7 +240,7 @@ MCLove32_リソースツルハシTypeB:
     #Unbreakable: false
   Group: 'Util'
   Skills:
-  - potion{t=HASTE;l=4;d=100;p=false} @self ~onBlockBreak
+  - potion{t=HASTE;l=5;d=100;p=false} @self ~onBlockBreak
 
 MCLove32_リソースアックスTypeB:
   Id: diamond_axe
@@ -254,7 +254,7 @@ MCLove32_リソースアックスTypeB:
     #Unbreakable: false
   Group: 'Util'
   Skills:
-  - potion{t=HASTE;l=4;d=100;p=false} @self ~onBlockBreak
+  - potion{t=HASTE;l=5;d=100;p=false} @self ~onBlockBreak
 
 MCLove32_リソースシャベルTypeB:
   Id: diamond_shovel
@@ -268,7 +268,7 @@ MCLove32_リソースシャベルTypeB:
     #Unbreakable: false
   Group: 'Util'
   Skills:
-  - potion{t=HASTE;l=4;d=100;p=false} @self ~onBlockBreak
+  - potion{t=HASTE;l=5;d=100;p=false} @self ~onBlockBreak
 
 MCLove32_リソースクワTypeB:
   Id: diamond_hoe
@@ -282,7 +282,7 @@ MCLove32_リソースクワTypeB:
     #Unbreakable: false
   Group: 'Util'
   Skills:
-  - potion{t=HASTE;l=4;d=100;p=false} @self ~onBlockBreak
+  - potion{t=HASTE;l=5;d=100;p=false} @self ~onBlockBreak
 
 MCLove32_リソースツルハシTypeA:
   Id: diamond_pickaxe
@@ -296,7 +296,7 @@ MCLove32_リソースツルハシTypeA:
     #Unbreakable: false
   Group: 'Util'
   Skills:
-  - potion{t=HASTE;l=5;d=100;p=false} @self ~onBlockBreak
+  - potion{t=HASTE;l=7;d=100;p=false} @self ~onBlockBreak
 
 MCLove32_リソースアックスTypeA:
   Id: diamond_axe
@@ -310,7 +310,7 @@ MCLove32_リソースアックスTypeA:
     #Unbreakable: false
   Group: 'Util'
   Skills:
-  - potion{t=HASTE;l=5;d=100;p=false} @self ~onBlockBreak
+  - potion{t=HASTE;l=7;d=100;p=false} @self ~onBlockBreak
 
 MCLove32_リソースシャベルTypeA:
   Id: diamond_shovel
@@ -324,7 +324,7 @@ MCLove32_リソースシャベルTypeA:
     #Unbreakable: false
   Group: 'Util'
   Skills:
-  - potion{t=HASTE;l=5;d=100;p=false} @self ~onBlockBreak
+  - potion{t=HASTE;l=7;d=100;p=false} @self ~onBlockBreak
 
 MCLove32_リソースクワTypeA:
   Id: diamond_hoe
@@ -338,7 +338,7 @@ MCLove32_リソースクワTypeA:
     #Unbreakable: false
   Group: 'Util'
   Skills:
-  - potion{t=HASTE;l=5;d=100;p=false} @self ~onBlockBreak
+  - potion{t=HASTE;l=7;d=100;p=false} @self ~onBlockBreak
 
 MCLove32_リソースツルハシTypeS:
   Id: diamond_pickaxe
@@ -356,7 +356,7 @@ MCLove32_リソースツルハシTypeS:
   - MENDING 1
   Group: 'Util'
   Skills:
-  - potion{t=HASTE;l=5;d=100;p=false} @self ~onBlockBreak
+  - potion{t=HASTE;l=9;d=100;p=false} @self ~onBlockBreak
 
 MCLove32_リソースアックスTypeS:
   Id: diamond_axe
@@ -374,7 +374,7 @@ MCLove32_リソースアックスTypeS:
   - MENDING 1
   Group: 'Util'
   Skills:
-  - potion{t=HASTE;l=5;d=100;p=false} @self ~onBlockBreak
+  - potion{t=HASTE;l=9;d=100;p=false} @self ~onBlockBreak
 
 MCLove32_リソースシャベルTypeS:
   Id: diamond_shovel
@@ -392,7 +392,7 @@ MCLove32_リソースシャベルTypeS:
   - MENDING 1
   Group: 'Util'
   Skills:
-  - potion{t=HASTE;l=5;d=100;p=false} @self ~onBlockBreak
+  - potion{t=HASTE;l=9;d=100;p=false} @self ~onBlockBreak
 
 MCLove32_リソースクワTypeS:
   Id: diamond_hoe
@@ -410,4 +410,4 @@ MCLove32_リソースクワTypeS:
   - MENDING 1
   Group: 'Util'
   Skills:
-  - potion{t=HASTE;l=5;d=100;p=false} @self ~onBlockBreak
+  - potion{t=HASTE;l=9;d=100;p=false} @self ~onBlockBreak

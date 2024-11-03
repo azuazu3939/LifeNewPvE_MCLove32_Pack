@@ -28,10 +28,10 @@ MCLove32_リソースS研磨剤ドロップ判定Skills:
 
 MCLove32_リソーススポーン_ルートチェスト_果物: 
   Skills:
-  - summon{t=MCLove32_ルートチェスト_果物;a=1;r=2;s=true} @self 
+  - summon{t=MCLove32_ルートチェスト_果物;a=1;r=2;s=true;pitch=0} @self 
   - sound{s=entity.firework_rocket.blast;p=1;v=0.5;audience=caster} @self
 
-MCLove32_リソース研磨剤ドロップ判定Skills:  #こいつはBlockBreakEventに書かない。
+MCLove32_リソース研磨剤ドロップ:  #こいつはBlockBreakEventに書かない。
   Skills:
   - cmd{c="mlg <caster.name> 研磨剤 1 <skill.chance>"} @self 
 
@@ -53,5 +53,5 @@ MCLove32_リソース鉱石紫焔ドロップ判定Skills:
 
 MCLove32_リソーススポーン_ルートチェスト_鉱石: 
   Skills:
-  - summon{t=MCLove32_ルートチェスト_鉱石;a=1;r=2;s=true} @self 
+  - summon{t=MCLove32_ルートチェスト_鉱石;a=1;r=2;s=true;pitch=0} @self 
   - sound{s=entity.firework_rocket.blast;p=1;v=0.5;audience=caster} @self

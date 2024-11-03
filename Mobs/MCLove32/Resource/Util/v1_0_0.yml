@@ -1,7 +1,9 @@
 MCLove32_ルートチェスト:
-  Type: Villager 
+  Type: villager 
   Display: "&6&lルートチェスト"
   Faction: LootChest
+  Equipment:
+  - CHEST HEAD
   Options:
     Collidable: false 
     DigOutOfGround: true 
@@ -11,14 +13,14 @@ MCLove32_ルートチェスト:
     Interactable: true
     MaxCombatDistance: 0
     NoAI: true
+    #NoGravity: true
     PreventMobKillDrops: true 
     PreventOtherDrops: true 
     PreventRandomEquipment: true 
     #PreventSunburn: true
     PreventVanillaDamage: true
-    Scale: -1
+    #Scale: -1
     Silent: true 
-  Disguise: FALLING_BLOCK CHEST setModifyBoundingBox true 
   Skills:
   - remove{delay=1200} @self ~onSpawn
 
