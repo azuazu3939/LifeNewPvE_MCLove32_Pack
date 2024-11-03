@@ -50,3 +50,8 @@ MCLove32_リソース鉱石紅蓮ドロップ判定Skills:
 MCLove32_リソース鉱石紫焔ドロップ判定Skills: 
   Skills:
   - cmd{c="mlg <caster.name> MCLove32_鉱石紫焔 1 0025"} @self 
+
+MCLove32_リソーススポーン_ルートチェスト_鉱石: 
+  Skills:
+  - summon{t=MCLove32_ルートチェスト_鉱石;a=1;r=2;s=true} @self 
+  - sound{s=entity.firework_rocket.blast;p=1;v=0.5;audience=caster} @self
