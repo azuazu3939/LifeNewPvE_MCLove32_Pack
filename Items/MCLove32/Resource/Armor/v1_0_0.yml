@@ -7,6 +7,7 @@ MCLove32_強化ダイヤモンドH:
   Id: diamond_helmet
   Display: "&c強化ダイヤモンドヘルメット"
   Lore: []
+  Model: 1000
   Options:
     Destroy: false
     CancelDamage: true
@@ -18,6 +19,7 @@ MCLove32_強化ダイヤモンドC:
   Id: diamond_chestplate
   Display: "&c強化ダイヤモンドチェストプレート"
   Lore: []
+  Model: 1000
   Options:
     Destroy: false
     CancelDamage: true
@@ -29,6 +31,7 @@ MCLove32_強化ダイヤモンドL:
   Id: diamond_leggings
   Display: "&c強化ダイヤモンドレギンス"
   Lore: []
+  Model: 1000
   Options:
     Destroy: false
     CancelDamage: true
@@ -40,6 +43,7 @@ MCLove32_強化ダイヤモンドB:
   Id: diamond_boots
   Display: "&c強化ダイヤモンドブーツ"
   Lore: []
+  Model: 1000
   Options:
     Destroy: false
     CancelDamage: true
@@ -51,6 +55,7 @@ MCLove32_黒曜石H:
   Id: leather_helmet
   Display: "&5黒曜石ヘルメット"
   Lore: []
+  Model: 1000
   Options:
     Color: BLACK
     Destroy: false
@@ -67,6 +72,7 @@ MCLove32_黒曜石C:
   Id: leather_chestplate
   Display: "&5黒曜石チェストプレート"
   Lore: []
+  Model: 1000
   Options:
     Color: BLACK
     Destroy: false
@@ -83,6 +89,7 @@ MCLove32_黒曜石L:
   Id: leather_leggings
   Display: "&5黒曜石レギンス"
   Lore: []
+  Model: 1000
   Options:
     Color: BLACK
     Destroy: false
@@ -99,6 +106,7 @@ MCLove32_黒曜石B:
   Id: leather_boots
   Display: "&5黒曜石ブーツ"
   Lore: []
+  Model: 1000
   Options:
     Color: BLACK
     Destroy: false
