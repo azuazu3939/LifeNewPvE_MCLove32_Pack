@@ -37,7 +37,7 @@ MCLove32_ハロウルフ:
     ot=[
       - leap{v=100} @origin
       - setFallDistance{a=0} @self 
-      - look{headOnly=false;immediately=true;force=true} @Parent 0.75
+      - look{headOnly=false;immediately=true;force=true} @Parent 0.5
     ];
     v=8;i=1;mr=16;se=false;sb=true;hs=true;hfs=0.1;mch=6;mdh=10;syo=0;sfo=0;hr=0;vr=0;md=25} @Forward{f=5} ~onTimer:20 ?!incombat
 
