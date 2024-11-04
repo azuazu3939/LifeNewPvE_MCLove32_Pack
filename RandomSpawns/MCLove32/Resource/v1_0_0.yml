@@ -8,7 +8,7 @@ MCLove32_ZOMBIE_Spawn:
   - biometype{t=mushroom} false 
   - biometype{t=desert} false 
   - outside true
-  - inside false
+  #- inside false
   - (night || dusk) true 
 
 MCLove32_HUSK_Spawn:
