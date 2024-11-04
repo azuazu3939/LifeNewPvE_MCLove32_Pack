@@ -5,6 +5,7 @@ MCLove32_ZOMBIE_Spawn:
   Chance: 0.5
   Priority: 32
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - biometype{t=mushroom} false 
   - biometype{t=desert} false 
@@ -24,6 +25,7 @@ MCLove32_HUSK_Spawn:
   Chance: 0.5
   Priority: 32
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - biometype{t=mushroom} false 
   - biometype{t=desert} true 
@@ -43,6 +45,7 @@ MCLove32_SKELETON_Spawn:
   Chance: 0.5
   Priority: 24
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - biometype{t=mushroom} false 
   - biometype{t=icy} false 
@@ -63,6 +66,7 @@ MCLove32_BOGGED_Spawn:
   Chance: 0.5
   Priority: 24
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - biometype{t=mushroom} false 
   - biometype{t=icy} false 
@@ -83,6 +87,7 @@ MCLove32_STRAY_Spawn:
   Chance: 0.5
   Priority: 24
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - biometype{t=mushroom} false 
   - biometype{t=icy} true
@@ -103,6 +108,7 @@ MCLove32_SLIME_Spawn:
   Chance: 0.5
   Priority: 24
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - biometype{t=mushroom} false 
   - biometype{t=swamp} false  
@@ -122,6 +128,7 @@ MCLove32_SPIDER_Spawn:
   Chance: 0.5
   Priority: 16
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - biometype{t=mushroom} false 
   - outside true
@@ -140,6 +147,7 @@ MCLove32_CREEPER_Spawn:
   Chance: 0.5
   Priority: 12
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - biometype{t=mushroom} false 
   - outside true
@@ -158,6 +166,7 @@ MCLove32_ENDERMAN_Spawn:
   Chance: 0.5
   Priority: 12
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - biometype{t=mushroom} false 
   - outside true
@@ -176,6 +185,7 @@ MCLove32_WITCH_Spawn:
   Chance: 0.5
   Priority: 5
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - biometype{t=mushroom} false 
   - outside true
@@ -194,6 +204,7 @@ MCLove32_ZOMBIE_VILLAGER_Spawn:
   Chance: 0.5
   Priority: 1
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - biometype{t=mushroom} false 
   - outside true
@@ -212,6 +223,7 @@ MCLove32_BABY_ZOMBIE_VILLAGER_Spawn:
   Chance: 0.01
   Priority: 1
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - biometype{t=mushroom} false 
   - outside true
@@ -230,6 +242,7 @@ MCLove32_BABY_ZOMBIE_Spawn:
   Chance: 0.5
   Priority: 1
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - biometype{t=desert} false 
   - biometype{t=mushroom} false 
@@ -249,6 +262,7 @@ MCLove32_BABY_HUSK_Spawn:
   Chance: 0.5
   Priority: 1
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - biometype{t=desert} true 
   - biometype{t=mushroom} false 
@@ -268,6 +282,7 @@ MCLove32_COW_Spawn:
   Chance: 0.01
   Priority: 1
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - biometype{t=desert} false 
   - biometype{t=mushroom} false 
@@ -287,6 +302,7 @@ MCLove32_SHEEP_Spawn:
   Chance: 0.01
   Priority: 1
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - biometype{t=desert} false 
   - biometype{t=mushroom} false 
@@ -306,6 +322,7 @@ MCLove32_PIG_Spawn:
   Chance: 0.01
   Priority: 1
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - biometype{t=desert} false 
   - biometype{t=mushroom} false 
@@ -325,6 +342,7 @@ MCLove32_CHICKEN_Spawn:
   Chance: 0.01
   Priority: 1
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - biometype{t=desert} false 
   - biometype{t=mushroom} false 
@@ -344,6 +362,7 @@ MCLove32_RABBIT_Spawn:
   Chance: 0.01
   Priority: 1
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - biometype{t=desert} true
   - biometype{t=mushroom} false 
@@ -363,6 +382,7 @@ MCLove32_MUSHROOM_COW_Spawn:
   Chance: 0.01
   Priority: 1
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - biometype{t=mushroom} true
   - outside true
@@ -381,6 +401,7 @@ MCLove32_HORSE_Spawn:
   Chance: 0.01
   Priority: 1
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - biometype{t=mushroom} false 
   - biometype{t=plains} true 
@@ -400,6 +421,7 @@ MCLove32_COW_DaySpawn:
   Chance: 0.5
   Priority: 20
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - biometype{t=desert} false 
   - biometype{t=mushroom} false 
@@ -419,6 +441,7 @@ MCLove32_SHEEP_DaySpawn:
   Chance: 0.5
   Priority: 24
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - biometype{t=desert} false 
   - biometype{t=mushroom} false 
@@ -438,6 +461,7 @@ MCLove32_PIG_DaySpawn:
   Chance: 0.5
   Priority: 24
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - biometype{t=desert} false 
   - biometype{t=mushroom} false 
@@ -457,6 +481,7 @@ MCLove32_CHICKEN_DaySpawn:
   Chance: 0.5
   Priority: 28
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - biometype{t=desert} false 
   - biometype{t=mushroom} false 
@@ -476,6 +501,7 @@ MCLove32_RABBIT_DaySpawn:
   Chance: 0.5
   Priority: 32
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - biometype{t=desert} true
   - biometype{t=mushroom} false 
@@ -495,6 +521,7 @@ MCLove32_MUSHROOM_COW_DaySpawn:
   Chance: 0.5
   Priority: 32
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - biometype{t=mushroom} true
   - outside true
@@ -513,6 +540,7 @@ MCLove32_HORSE_DaySpawn:
   Chance: 0.5
   Priority: 8
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - biometype{t=mushroom} false 
   - biometype{t=plains} true 
@@ -532,6 +560,7 @@ MCLove32_ZOMBIE_UnderSpawn:
   Chance: 0.5
   Priority: 32
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - outside false
   - inside true 
@@ -549,6 +578,7 @@ MCLove32_SKELETON_UnderSpawn:
   Chance: 0.5
   Priority: 24
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - outside false
   - inside true 
@@ -566,6 +596,7 @@ MCLove32_SPIDER_UnderSpawn:
   Chance: 0.5
   Priority: 24
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - outside false
   - inside true 
@@ -583,6 +614,7 @@ MCLove32_WITCH_UnderSpawn:
   Chance: 0.5
   Priority: 8
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - outside false
   - inside true 
@@ -600,6 +632,7 @@ MCLove32_BABY_ZOMBIE_UnderSpawn:
   Chance: 0.5
   Priority: 1
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - outside false
   - inside true 
@@ -617,6 +650,7 @@ MCLove32_BABY_ZOMBIE_VILLAGER_UnderSpawn:
   Chance: 0.01
   Priority: 1
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - outside false
   - inside true 
@@ -634,6 +668,7 @@ MCLove32_BABY_PIG_ZOMBIE_UnderSpawn:
   Chance: 0.5
   Priority: 2
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - outside false
   - inside true 
@@ -651,6 +686,7 @@ MCLove32_CREEPER_UnderSpawn:
   Chance: 0.5
   Priority: 16
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - outside false
   - inside true 
@@ -668,6 +704,7 @@ MCLove32_ENDERMAN_UnderSpawn:
   Chance: 0.5
   Priority: 12
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - outside false
   - inside true 
@@ -685,6 +722,7 @@ MCLove32_SLIME_UnderSpawn:
   Chance: 0.1
   Priority: 8
   Conditions:
+  - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
   - outside false
   - inside true 
