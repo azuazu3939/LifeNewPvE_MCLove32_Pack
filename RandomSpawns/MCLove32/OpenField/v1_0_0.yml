@@ -8,6 +8,7 @@ MCLove32_ハロウルフLeader_Spawn:
   Conditions:
   - mobsinworld{a=<400} true 
   - blocktype{type=air,water,lava} false 
+  - region{r=spawn} false 
   - (
     mythicinradius{a=<2;r=20} ||
     mythicinradius{a=<4;r=32} ||
