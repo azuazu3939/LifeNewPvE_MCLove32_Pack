@@ -11,9 +11,9 @@ MCLove32_ZOMBIE_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true 
 
 MCLove32_HUSK_Spawn:
@@ -29,9 +29,9 @@ MCLove32_HUSK_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true 
 
 MCLove32_SKELETON_Spawn:
@@ -48,9 +48,9 @@ MCLove32_SKELETON_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true 
 
 MCLove32_BOGGED_Spawn:
@@ -67,9 +67,9 @@ MCLove32_BOGGED_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true 
 
 MCLove32_STRAY_Spawn:
@@ -86,9 +86,9 @@ MCLove32_STRAY_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true 
 
 MCLove32_SLIME_Spawn:
@@ -104,9 +104,9 @@ MCLove32_SLIME_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true 
 
 MCLove32_SPIDER_Spawn:
@@ -121,9 +121,9 @@ MCLove32_SPIDER_Spawn:
   - inside false
   - (night || dusk) true  
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true 
 
 MCLove32_CREEPER_Spawn:
@@ -138,9 +138,9 @@ MCLove32_CREEPER_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true 
 
 MCLove32_ENDERMAN_Spawn:
@@ -155,9 +155,9 @@ MCLove32_ENDERMAN_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true 
 
 MCLove32_WITCH_Spawn:
@@ -172,9 +172,9 @@ MCLove32_WITCH_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true 
 
 MCLove32_ZOMBIE_VILLAGER_Spawn:
@@ -189,9 +189,9 @@ MCLove32_ZOMBIE_VILLAGER_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true 
 
 MCLove32_BABY_ZOMBIE_VILLAGER_Spawn:
@@ -206,9 +206,9 @@ MCLove32_BABY_ZOMBIE_VILLAGER_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true 
 
 MCLove32_BABY_ZOMBIE_Spawn:
@@ -224,9 +224,9 @@ MCLove32_BABY_ZOMBIE_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true 
 
 MCLove32_BABY_HUSK_Spawn:
@@ -242,9 +242,9 @@ MCLove32_BABY_HUSK_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true 
 
 MCLove32_COW_Spawn:
@@ -260,9 +260,9 @@ MCLove32_COW_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true 
 
 MCLove32_SHEEP_Spawn:
@@ -278,9 +278,9 @@ MCLove32_SHEEP_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true 
 
 MCLove32_PIG_Spawn:
@@ -296,9 +296,9 @@ MCLove32_PIG_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true 
 
 MCLove32_CHICKEN_Spawn:
@@ -314,9 +314,9 @@ MCLove32_CHICKEN_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true 
 
 MCLove32_RABBIT_Spawn:
@@ -332,9 +332,9 @@ MCLove32_RABBIT_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true 
 
 MCLove32_MUSHROOM_COW_Spawn:
@@ -349,9 +349,9 @@ MCLove32_MUSHROOM_COW_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true 
 
 MCLove32_HORSE_Spawn:
@@ -367,9 +367,9 @@ MCLove32_HORSE_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true 
 
 MCLove32_COW_DaySpawn:
@@ -385,9 +385,9 @@ MCLove32_COW_DaySpawn:
   - inside false
   - (night || dusk) false
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true 
 
 MCLove32_SHEEP_DaySpawn:
@@ -403,9 +403,9 @@ MCLove32_SHEEP_DaySpawn:
   - inside false
   - (night || dusk) false
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true 
 
 MCLove32_PIG_DaySpawn:
@@ -421,9 +421,9 @@ MCLove32_PIG_DaySpawn:
   - inside false
   - (night || dusk) false
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true 
 
 MCLove32_CHICKEN_DaySpawn:
@@ -439,9 +439,9 @@ MCLove32_CHICKEN_DaySpawn:
   - inside false
   - (night || dusk) false
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true 
 
 MCLove32_RABBIT_DaySpawn:
@@ -457,9 +457,9 @@ MCLove32_RABBIT_DaySpawn:
   - inside false
   - (night || dusk) false
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true 
 
 MCLove32_MUSHROOM_COW_DaySpawn:
@@ -474,9 +474,9 @@ MCLove32_MUSHROOM_COW_DaySpawn:
   - inside false
   - (night || dusk) false
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true 
 
 MCLove32_HORSE_DaySpawn:
@@ -492,9 +492,9 @@ MCLove32_HORSE_DaySpawn:
   - inside false
   - (night || dusk) false
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true 
 
 MCLove32_ZOMBIE_UnderSpawn:
@@ -508,9 +508,9 @@ MCLove32_ZOMBIE_UnderSpawn:
   - inside true 
   - height{h=<60} true 
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true  
 
 MCLove32_SKELETON_UnderSpawn:
@@ -524,9 +524,9 @@ MCLove32_SKELETON_UnderSpawn:
   - inside true 
   - height{h=<60} true 
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true  
 
 MCLove32_SPIDER_UnderSpawn:
@@ -540,9 +540,9 @@ MCLove32_SPIDER_UnderSpawn:
   - inside true 
   - height{h=<60} true 
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true  
 
 MCLove32_WITCH_UnderSpawn:
@@ -556,9 +556,9 @@ MCLove32_WITCH_UnderSpawn:
   - inside true 
   - height{h=<60} true 
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true  
 
 MCLove32_BABY_ZOMBIE_UnderSpawn:
@@ -572,9 +572,9 @@ MCLove32_BABY_ZOMBIE_UnderSpawn:
   - inside true 
   - height{h=<60} true 
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true  
 
 MCLove32_BABY_ZOMBIE_VILLAGER_UnderSpawn:
@@ -588,9 +588,9 @@ MCLove32_BABY_ZOMBIE_VILLAGER_UnderSpawn:
   - inside true 
   - height{h=<60} true 
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true  
 
 MCLove32_BABY_PIG_ZOMBIE_UnderSpawn:
@@ -604,9 +604,9 @@ MCLove32_BABY_PIG_ZOMBIE_UnderSpawn:
   - inside true 
   - height{h=<60} true 
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true  
 
 MCLove32_CREEPER_UnderSpawn:
@@ -620,9 +620,9 @@ MCLove32_CREEPER_UnderSpawn:
   - inside true 
   - height{h=<60} true 
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true  
 
 MCLove32_ENDERMAN_UnderSpawn:
@@ -636,9 +636,9 @@ MCLove32_ENDERMAN_UnderSpawn:
   - inside true 
   - height{h=<60} true 
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true  
 
 MCLove32_SLIME_UnderSpawn:
@@ -652,8 +652,8 @@ MCLove32_SLIME_UnderSpawn:
   - inside true 
   - height{h=<60} true 
   - (
-    mythicinradius{a=<3;r=12} ||
-    mythicinradius{a=<6;r=24} ||
-    mythicinradius{a=<9;r=48} 
+    mythicinradius{a=<2;r=12} ||
+    mythicinradius{a=<4;r=24} ||
+    mythicinradius{a=<8;r=48} 
     ) true  
 
