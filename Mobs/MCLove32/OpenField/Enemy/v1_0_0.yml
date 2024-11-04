@@ -1,0 +1,48 @@
+MCLove32_ハロウルフ:
+  Type: wolf 
+  Display: "&a&lハロウルフ"
+  Health: 30
+  Faction: Enemy
+  Armor: 20
+  Options:
+    Collidable: true 
+    DigOutOfGround: true 
+    FollowRange: 10
+    Despawn: true 
+    KnockbackResistance: 0.15
+    Interactable: false 
+    MaxCombatDistance: 256
+    NoAI: false 
+    #NoGravity: true
+    PreventMobKillDrops: true 
+    PreventOtherDrops: true 
+    PreventRandomEquipment: true 
+    #PreventSunburn: true
+    PreventVanillaDamage: true
+    #Scale: -1
+    Silent: false 
+  Skills:
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=20} @self ~onEnterCombat 
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=10} @self ~onDropCombat
+  - damage{a=<caster.damage>;pi=true;ii=true} @Trigger ~onAttack
+  - skill{
+    s=[
+      - potion{t=SPEED;d=144000;l=3;p=false}
+    ]} @self ~onSpawn
+  - projectile{
+    ot=[
+      - lunge{v=0.25;vy=0.05} @self 0.75
+      - jump{v=-0.05} @self 
+      - jump{v=0.25} @self 0.05
+      - look{headOnly=false;immediately=true;force=true} @Parent 0.1
+    ];
+    v=4;i=1;mr=16;se=false;sb=true;hs=true;hfs=0;mch=4;mdh=10;syo=0;sfo=0;g=1;;hr=0;vr=0} @Forward{f=5} ~onTimer:20 ?!incombat
+
+MCLove32_ハロウルフLeader:
+  Template: MCLove32_ハロウルフ
+  Health: 100
+  Armor: 30
+  Skills:
+  - skill:MCLove32_Enemyヘイト @self ~onEnterCombat
+  - summon{t=MCLove32_ハロウルフ;a=3to5;r=5;s=true} @self ~onSpawn
+  - setrotation{yaw=<random.-180to180>;cd=5} @self 0.05 ~onTimer:20 ?!incombat

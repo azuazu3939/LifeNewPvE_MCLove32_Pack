@@ -1,0 +1,15 @@
+MCLove32_ハロウルフLeader_Spawn:
+  Type: MCLove32_ハロウルフLeader
+  Worlds: open_field
+  Action: ADD 
+  PositionType: LAND
+  Chance: 0.25
+  Priority: 5
+  Conditions:
+  - mobsinworld{a=<400} true 
+  - blocktype{type=air,water,lava} false 
+  - (
+    mythicinradius{a=<2;r=20} ||
+    mythicinradius{a=<4;r=32} ||
+    mythicinradius{a=<8;r=48} 
+    ) true  

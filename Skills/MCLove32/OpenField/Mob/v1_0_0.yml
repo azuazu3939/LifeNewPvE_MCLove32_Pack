@@ -1,0 +1,11 @@
+MCLove32_Enemyヘイト:
+  Cooldown: 1
+  Conditions:
+  - incombat
+  Skills:
+  - sudoskill{
+    s=[
+      - setTarget
+    ];target=@T} @Children
+  - delay 100
+  - skill:MCLove32_Enemyヘイト @self
