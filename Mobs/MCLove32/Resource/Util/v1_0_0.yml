@@ -45,6 +45,7 @@ MCLove32_Vanilla:
     Collidable: true 
     Despawn: true 
     Interactable: false 
+    DigOutOfGround: true 
     PreventMobKillDrops: false 
     PreventOtherDrops: false 
     PreventRandomEquipment: false 
