@@ -2,7 +2,7 @@ MCLove32_ZOMBIE_Spawn:
   Type: MCLove32_ZOMBIE
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.05
+  Chance: 0.5
   PositionType: LAND
   Reason: CUSTOM
   Priority: 32
@@ -13,17 +13,16 @@ MCLove32_ZOMBIE_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
 
 MCLove32_HUSK_Spawn:
   Type: MCLove32_HUSK
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.05
+  Chance: 0.5
   PositionType: LAND
   Reason: CUSTOM
   Priority: 32
@@ -34,17 +33,17 @@ MCLove32_HUSK_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_SKELETON_Spawn:
   Type: MCLove32_SKELETON
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.05
+  Chance: 0.5
   PositionType: LAND
   Reason: CUSTOM
   Priority: 24
@@ -56,17 +55,17 @@ MCLove32_SKELETON_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_BOGGED_Spawn:
   Type: MCLove32_BOGGED
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.05
+  Chance: 0.5
   PositionType: LAND
   Reason: CUSTOM
   Priority: 24
@@ -78,17 +77,17 @@ MCLove32_BOGGED_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_STRAY_Spawn:
   Type: MCLove32_STRAY
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.05
+  Chance: 0.5
   PositionType: LAND
   Reason: CUSTOM
   Priority: 24
@@ -100,17 +99,17 @@ MCLove32_STRAY_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_SLIME_Spawn:
   Type: MCLove32_SLIME
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.05
+  Chance: 0.5
   PositionType: LAND
   Reason: CUSTOM
   Priority: 24
@@ -121,17 +120,17 @@ MCLove32_SLIME_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_SPIDER_Spawn:
   Type: MCLove32_SPIDER
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.05
+  Chance: 0.5
   PositionType: LAND
   Reason: CUSTOM
   Priority: 16
@@ -141,17 +140,17 @@ MCLove32_SPIDER_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true 
+      custom 
 
 MCLove32_CREEPER_Spawn:
   Type: MCLove32_CREEPER
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.05
+  Chance: 0.5
   PositionType: LAND
   Reason: CUSTOM
   Priority: 12
@@ -161,17 +160,17 @@ MCLove32_CREEPER_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_ENDERMAN_Spawn:
   Type: MCLove32_ENDERMAN
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.05
+  Chance: 0.5
   PositionType: LAND
   Reason: CUSTOM
   Priority: 12
@@ -181,17 +180,17 @@ MCLove32_ENDERMAN_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_WITCH_Spawn:
   Type: MCLove32_WITCH
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.05
+  Chance: 0.5
   PositionType: LAND
   Reason: CUSTOM
   Priority: 5
@@ -201,17 +200,17 @@ MCLove32_WITCH_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_ZOMBIE_VILLAGER_Spawn:
   Type: MCLove32_ZOMBIE_VILLAGER
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.05
+  Chance: 0.5
   PositionType: LAND
   Reason: CUSTOM
   Priority: 1
@@ -221,17 +220,17 @@ MCLove32_ZOMBIE_VILLAGER_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_BABY_ZOMBIE_VILLAGER_Spawn:
   Type: MCLove32_BABY_ZOMBIE_VILLAGER
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.001
+  Chance: 0.01
   PositionType: LAND
   Reason: CUSTOM
   Priority: 1
@@ -241,18 +240,18 @@ MCLove32_BABY_ZOMBIE_VILLAGER_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 
 MCLove32_BABY_ZOMBIE_Spawn:
   Type: MCLove32_BABY_ZOMBIE
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.05
+  Chance: 0.5
   PositionType: LAND
   Reason: CUSTOM
   Priority: 1
@@ -263,17 +262,17 @@ MCLove32_BABY_ZOMBIE_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_BABY_HUSK_Spawn:
   Type: MCLove32_BABY_HUSK
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.05
+  Chance: 0.5
   PositionType: LAND
   Reason: CUSTOM
   Priority: 1
@@ -284,17 +283,17 @@ MCLove32_BABY_HUSK_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_COW_Spawn:
   Type: MCLove32_COW
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.001
+  Chance: 0.01
   PositionType: LAND
   Reason: CUSTOM
   Priority: 1
@@ -305,17 +304,17 @@ MCLove32_COW_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_SHEEP_Spawn:
   Type: MCLove32_SHEEP
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.001
+  Chance: 0.01
   PositionType: LAND
   Reason: CUSTOM
   Priority: 1
@@ -326,17 +325,17 @@ MCLove32_SHEEP_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_PIG_Spawn:
   Type: MCLove32_PIG
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.001
+  Chance: 0.01
   PositionType: LAND
   Reason: CUSTOM
   Priority: 1
@@ -347,17 +346,17 @@ MCLove32_PIG_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_CHICKEN_Spawn:
   Type: MCLove32_CHICKEN
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.001
+  Chance: 0.01
   PositionType: LAND
   Reason: CUSTOM
   Priority: 1
@@ -368,17 +367,17 @@ MCLove32_CHICKEN_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_RABBIT_Spawn:
   Type: MCLove32_RABBIT
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.001
+  Chance: 0.01
   PositionType: LAND
   Reason: CUSTOM
   Priority: 1
@@ -389,17 +388,17 @@ MCLove32_RABBIT_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_MUSHROOM_COW_Spawn:
   Type: MCLove32_MUSHROOM_COW
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.001
+  Chance: 0.01
   PositionType: LAND
   Reason: CUSTOM
   Priority: 1
@@ -409,17 +408,17 @@ MCLove32_MUSHROOM_COW_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_HORSE_Spawn:
   Type: MCLove32_HORSE
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.001
+  Chance: 0.01
   PositionType: LAND
   Reason: CUSTOM
   Priority: 1
@@ -430,17 +429,17 @@ MCLove32_HORSE_Spawn:
   - inside false
   - (night || dusk) true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_COW_DaySpawn:
   Type: MCLove32_COW
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.05
+  Chance: 0.5
   PositionType: LAND
   Reason: CUSTOM
   Priority: 20
@@ -451,17 +450,17 @@ MCLove32_COW_DaySpawn:
   - inside false
   - (night || dusk) false
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_SHEEP_DaySpawn:
   Type: MCLove32_SHEEP
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.05
+  Chance: 0.5
   PositionType: LAND
   Reason: CUSTOM
   Priority: 24
@@ -472,17 +471,17 @@ MCLove32_SHEEP_DaySpawn:
   - inside false
   - (night || dusk) false
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_PIG_DaySpawn:
   Type: MCLove32_PIG
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.05
+  Chance: 0.5
   PositionType: LAND
   Reason: CUSTOM
   Priority: 24
@@ -493,17 +492,17 @@ MCLove32_PIG_DaySpawn:
   - inside false
   - (night || dusk) false
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_CHICKEN_DaySpawn:
   Type: MCLove32_CHICKEN
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.05
+  Chance: 0.5
   PositionType: LAND
   Reason: CUSTOM
   Priority: 28
@@ -514,17 +513,17 @@ MCLove32_CHICKEN_DaySpawn:
   - inside false
   - (night || dusk) false
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_RABBIT_DaySpawn:
   Type: MCLove32_RABBIT
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.05
+  Chance: 0.5
   PositionType: LAND
   Reason: CUSTOM
   Priority: 32
@@ -535,17 +534,17 @@ MCLove32_RABBIT_DaySpawn:
   - inside false
   - (night || dusk) false
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_MUSHROOM_COW_DaySpawn:
   Type: MCLove32_MUSHROOM_COW
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.05
+  Chance: 0.5
   PositionType: LAND
   Reason: CUSTOM
   Priority: 32
@@ -555,17 +554,17 @@ MCLove32_MUSHROOM_COW_DaySpawn:
   - inside false
   - (night || dusk) false
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_HORSE_DaySpawn:
   Type: MCLove32_HORSE
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.05
+  Chance: 0.5
   PositionType: LAND
   Reason: CUSTOM
   Priority: 8
@@ -576,17 +575,17 @@ MCLove32_HORSE_DaySpawn:
   - inside false
   - (night || dusk) false
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_ZOMBIE_UnderSpawn:
   Type: MCLove32_ZOMBIE
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.05
+  Chance: 0.5
   PositionType: LAND
   Reason: CUSTOM
   Priority: 32
@@ -594,17 +593,17 @@ MCLove32_ZOMBIE_UnderSpawn:
   - outside false
   - inside true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_SKELETON_UnderSpawn:
   Type: MCLove32_SKELETON
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.05
+  Chance: 0.5
   PositionType: LAND
   Reason: CUSTOM
   Priority: 24
@@ -612,17 +611,17 @@ MCLove32_SKELETON_UnderSpawn:
   - outside false
   - inside true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_SPIDER_UnderSpawn:
   Type: MCLove32_SPIDER
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.05
+  Chance: 0.5
   PositionType: LAND
   Reason: CUSTOM
   Priority: 24
@@ -630,17 +629,17 @@ MCLove32_SPIDER_UnderSpawn:
   - outside false
   - inside true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_WITCH_UnderSpawn:
   Type: MCLove32_WITCH 
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.05
+  Chance: 0.5
   PositionType: LAND
   Reason: CUSTOM
   Priority: 8
@@ -648,17 +647,17 @@ MCLove32_WITCH_UnderSpawn:
   - outside false
   - inside true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_BABY_ZOMBIE_UnderSpawn:
   Type: MCLove32_BABY_ZOMBIE
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.05
+  Chance: 0.5
   PositionType: LAND
   Reason: CUSTOM
   Priority: 1
@@ -666,17 +665,17 @@ MCLove32_BABY_ZOMBIE_UnderSpawn:
   - outside false
   - inside true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_BABY_ZOMBIE_VILLAGER_UnderSpawn:
   Type: MCLove32_BABY_ZOMBIE_VILLAGER
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.001
+  Chance: 0.01
   PositionType: LAND
   Reason: CUSTOM
   Priority: 1
@@ -684,17 +683,17 @@ MCLove32_BABY_ZOMBIE_VILLAGER_UnderSpawn:
   - outside false
   - inside true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_BABY_PIG_ZOMBIE_UnderSpawn:
   Type: MCLove32_BABY_PIG_ZOMBIE
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.05
+  Chance: 0.5
   PositionType: LAND
   Reason: CUSTOM
   Priority: 2
@@ -702,17 +701,17 @@ MCLove32_BABY_PIG_ZOMBIE_UnderSpawn:
   - outside false
   - inside true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_CREEPER_UnderSpawn:
   Type: MCLove32_CREEPER
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.05
+  Chance: 0.5
   PositionType: LAND
   Reason: CUSTOM
   Priority: 16
@@ -720,17 +719,17 @@ MCLove32_CREEPER_UnderSpawn:
   - outside false
   - inside true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_ENDERMAN_UnderSpawn:
   Type: MCLove32_ENDERMAN
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.05
+  Chance: 0.5
   PositionType: LAND
   Reason: CUSTOM
   Priority: 12
@@ -738,17 +737,17 @@ MCLove32_ENDERMAN_UnderSpawn:
   - outside false
   - inside true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_SLIME_UnderSpawn:
   Type: MCLove32_SLIME
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.01
+  Chance: 0.1
   PositionType: LAND
   Reason: CUSTOM
   Priority: 8
@@ -756,17 +755,17 @@ MCLove32_SLIME_UnderSpawn:
   - outside false
   - inside true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_CAVE_SPIDER_UnderSpawn:
   Type: MCLove32_CAVE_SPIDER
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.05
+  Chance: 0.5
   PositionType: LAND
   Reason: CUSTOM
   Priority: 1
@@ -775,16 +774,92 @@ MCLove32_CAVE_SPIDER_UnderSpawn:
   - inside true 
   - height{h=<0} true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_ZOGLIN_UnderSpawn:
   Type: MCLove32_ZOGLIN
   Worlds: resource_world
   Action: ADD 
+  Chance: 0.5
+  PositionType: LAND
+  Reason: CUSTOM
+  Priority: 1
+  Conditions:
+  - outside false
+  - inside true 
+  - height{h=<0} true 
+  - (
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
+      ) false 
+      custom
+
+MCLove32_ZOMBIFIED_PIGLIN_VILLAGER_UnderSpawn:
+  Type: MCLove32_ZOMBIFIED_PIGLIN_VILLAGER
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.001
+  PositionType: LAND
+  Reason: CUSTOM
+  Priority: 1
+  Conditions:
+  - outside false
+  - inside true 
+  - height{h=<0} true 
+  - (
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
+      ) false 
+      custom
+
+MCLove32_ZOMBIFIED_PIGLIN_UnderSpawn:
+  Type: MCLove32_ZOMBIFIED_PIGLIN
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.01
+  PositionType: LAND
+  Reason: CUSTOM
+  Priority: 1
+  Conditions:
+  - outside false
+  - inside true 
+  - height{h=<0} true 
+  - (
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
+      ) false 
+      custom
+
+MCLove32_GHAST_UnderSpawn:
+  Type: MCLove32_GHAST
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.01
+  PositionType: LAND
+  Reason: CUSTOM
+  Priority: 1
+  Conditions:
+  - outside false
+  - inside true 
+  - height{h=<0} true 
+  - (
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
+      ) false 
+      custom
+
+MCLove32_WITHER_SKELETON_UnderSpawn:
+  Type: MCLove32_WITHER_SKELETON
+  Worlds: resource_world
+  Action: ADD 
   Chance: 0.05
   PositionType: LAND
   Reason: CUSTOM
@@ -794,93 +869,17 @@ MCLove32_ZOGLIN_UnderSpawn:
   - inside true 
   - height{h=<0} true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
-
-MCLove32_ZOMBIFIED_PIGLIN_VILLAGER_UnderSpawn:
-  Type: MCLove32_ZOMBIFIED_PIGLIN_VILLAGER
-  Worlds: resource_world
-  Action: ADD 
-  Chance: 0.0001
-  PositionType: LAND
-  Reason: CUSTOM
-  Priority: 1
-  Conditions:
-  - outside false
-  - inside true 
-  - height{h=<0} true 
-  - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
-      ) false 
-  - playerwithin{d=64} true
-
-MCLove32_ZOMBIFIED_PIGLIN_UnderSpawn:
-  Type: MCLove32_ZOMBIFIED_PIGLIN
-  Worlds: resource_world
-  Action: ADD 
-  Chance: 0.001
-  PositionType: LAND
-  Reason: CUSTOM
-  Priority: 1
-  Conditions:
-  - outside false
-  - inside true 
-  - height{h=<0} true 
-  - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
-      ) false 
-  - playerwithin{d=64} true
-
-MCLove32_GHAST_UnderSpawn:
-  Type: MCLove32_GHAST
-  Worlds: resource_world
-  Action: ADD 
-  Chance: 0.001
-  PositionType: LAND
-  Reason: CUSTOM
-  Priority: 1
-  Conditions:
-  - outside false
-  - inside true 
-  - height{h=<0} true 
-  - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
-      ) false 
-  - playerwithin{d=64} true
-
-MCLove32_WITHER_SKELETON_UnderSpawn:
-  Type: MCLove32_WITHER_SKELETON
-  Worlds: resource_world
-  Action: ADD 
-  Chance: 0.005
-  PositionType: LAND
-  Reason: CUSTOM
-  Priority: 1
-  Conditions:
-  - outside false
-  - inside true 
-  - height{h=<0} true 
-  - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
-      ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_RAVAGER_UnderSpawn:
   Type: MCLove32_RAVAGER
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.001
+  Chance: 0.01
   PositionType: LAND
   Reason: CUSTOM
   Priority: 1
@@ -889,17 +888,17 @@ MCLove32_RAVAGER_UnderSpawn:
   - inside true 
   - height{h=<0} true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_MAGMA_CUBE_UnderSpawn:
   Type: MCLove32_MAGMA_CUBE
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.001
+  Chance: 0.01
   PositionType: LAND
   Reason: CUSTOM
   Priority: 1
@@ -908,17 +907,17 @@ MCLove32_MAGMA_CUBE_UnderSpawn:
   - inside true 
   - height{h=<0} true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_BLAZE_UnderSpawn:
   Type: MCLove32_BLAZE
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.001
+  Chance: 0.01
   PositionType: LAND
   Reason: CUSTOM
   Priority: 1
@@ -927,17 +926,17 @@ MCLove32_BLAZE_UnderSpawn:
   - inside true 
   - height{h=<0} true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_PILLAGER_UnderSpawn:
   Type: MCLove32_PILLAGER
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.001
+  Chance: 0.01
   PositionType: LAND
   Reason: CUSTOM
   Priority: 1
@@ -946,17 +945,17 @@ MCLove32_PILLAGER_UnderSpawn:
   - inside true 
   - height{h=<0} true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_VINDICATOR_UnderSpawn:
   Type: MCLove32_VINDICATOR
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.001
+  Chance: 0.01
   PositionType: LAND
   Reason: CUSTOM
   Priority: 1
@@ -965,17 +964,17 @@ MCLove32_VINDICATOR_UnderSpawn:
   - inside true 
   - height{h=<0} true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_EVOKER_UnderSpawn:
   Type: MCLove32_EVOKER
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.001
+  Chance: 0.01
   PositionType: LAND
   Reason: CUSTOM
   Priority: 1
@@ -984,17 +983,17 @@ MCLove32_EVOKER_UnderSpawn:
   - inside true 
   - height{h=<0} true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
 
 MCLove32_VEX_UnderSpawn:
   Type: MCLove32_VEX
   Worlds: resource_world
   Action: ADD 
-  Chance: 0.001
+  Chance: 0.01
   PositionType: LAND
   Reason: CUSTOM
   Priority: 1
@@ -1003,8 +1002,8 @@ MCLove32_VEX_UnderSpawn:
   - inside true 
   - height{h=<0} true 
   - (
-      livinginradius{a=>3;r=16} ||
-      livinginradius{a=>9;r=32} || 
-      livinginradius{a=>27;r=48}
+      livinginradius{a=>3;r=8} ||
+      livinginradius{a=>9;r=16} || 
+      livinginradius{a=>27;r=32}
       ) false 
-  - playerwithin{d=64} true
+      custom
