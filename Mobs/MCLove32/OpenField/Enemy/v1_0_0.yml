@@ -21,9 +21,13 @@ MCLove32_ハロウルフ:
     PreventVanillaDamage: true
     #Scale: -1
     Silent: false 
+  Modules:
+    ImmunityTable: true
+    ThreatTable: true
   Skills:
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=20} @self ~onEnterCombat 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=10} @self ~onDropCombat
+  - skill:MCLove32_Enemyヘイト @self ~onEnterCombat
   - damage{a=<caster.damage>;pi=true;ii=true} @Trigger ~onAttack
   - skill{
     s=[
@@ -31,7 +35,6 @@ MCLove32_ハロウルフ:
     ]} @self ~onSpawn
   - projectile{
     ot=[
-      - e:p{p=crit;a=20} @origin
       - leap{v=45} @origin
       - setFallDistance{a=0} @self 
       - look{headOnly=false;immediately=true;force=true} @Parent 0.1
@@ -43,6 +46,5 @@ MCLove32_ハロウルフLeader:
   Health: 100
   Armor: 30
   Skills:
-  - skill:MCLove32_Enemyヘイト @self ~onEnterCombat
   - summon{t=MCLove32_ハロウルフ;a=3to5;r=5;s=true} @self ~onSpawn
   - setrotation{y=<random.-30to30> + <caster.l.yaw>;cd=2} @self 0.1 ~onTimer:20 ?!incombat
