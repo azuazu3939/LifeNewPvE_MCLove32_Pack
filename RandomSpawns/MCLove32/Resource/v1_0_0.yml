@@ -775,7 +775,7 @@ MCLove32_CAVE_SPIDER_UnderSpawn:
   Type: MCLove32_CAVE_SPIDER
   Action: ADD 
   PositionType: LAND
-  Chance: 0.05
+  Chance: 1
   Priority: 1
   Conditions:
   - mobsinworld{a=<400} true 
@@ -793,7 +793,7 @@ MCLove32_ZOGLIN_UnderSpawn:
   Type: MCLove32_ZOGLIN
   Action: ADD 
   PositionType: LAND
-  Chance: 0.05
+  Chance: 1
   Priority: 1
   Conditions:
   - mobsinworld{a=<400} true 
@@ -811,7 +811,7 @@ MCLove32_ZOMBIFIED_PIGLIN_VILLAGER_UnderSpawn:
   Type: MCLove32_ZOMBIFIED_PIGLIN_VILLAGER
   Action: ADD 
   PositionType: LAND
-  Chance: 0.0001
+  Chance: 1
   Priority: 1
   Conditions:
   - mobsinworld{a=<400} true 
@@ -829,7 +829,7 @@ MCLove32_ZOMBIFIED_PIGLIN_UnderSpawn:
   Type: MCLove32_ZOMBIFIED_PIGLIN
   Action: ADD 
   PositionType: LAND
-  Chance: 0.001
+  Chance: 1
   Priority: 1
   Conditions:
   - mobsinworld{a=<400} true 
@@ -847,7 +847,7 @@ MCLove32_GHAST_UnderSpawn:
   Type: MCLove32_GHAST
   Action: ADD 
   PositionType: LAND
-  Chance: 0.001
+  Chance: 1
   Priority: 1
   Conditions:
   - mobsinworld{a=<400} true 
@@ -865,7 +865,7 @@ MCLove32_WITHER_SKELETON_UnderSpawn:
   Type: MCLove32_WITHER_SKELETON
   Action: ADD 
   PositionType: LAND
-  Chance: 0.005
+  Chance: 1
   Priority: 1
   Conditions:
   - mobsinworld{a=<400} true 
@@ -883,7 +883,7 @@ MCLove32_RAVAGER_UnderSpawn:
   Type: MCLove32_RAVAGER
   Action: ADD 
   PositionType: LAND
-  Chance: 0.001
+  Chance: 1
   Priority: 1
   Conditions:
   - mobsinworld{a=<400} true 
@@ -901,7 +901,7 @@ MCLove32_MAGMA_CUBE_UnderSpawn:
   Type: MCLove32_MAGMA_CUBE
   Action: ADD 
   PositionType: LAND
-  Chance: 0.001
+  Chance: 1
   Priority: 1
   Conditions:
   - mobsinworld{a=<400} true 
@@ -919,7 +919,7 @@ MCLove32_BLAZE_UnderSpawn:
   Type: MCLove32_BLAZE
   Action: ADD 
   PositionType: LAND
-  Chance: 0.001
+  Chance: 1
   Priority: 1
   Conditions:
   - mobsinworld{a=<400} true 
@@ -937,7 +937,7 @@ MCLove32_PILLAGER_UnderSpawn:
   Type: MCLove32_PILLAGER
   Action: ADD 
   PositionType: LAND
-  Chance: 0.001
+  Chance: 1
   Priority: 1
   Conditions:
   - mobsinworld{a=<400} true 
@@ -955,7 +955,7 @@ MCLove32_VINDICATOR_UnderSpawn:
   Type: MCLove32_VINDICATOR
   Action: ADD 
   PositionType: LAND
-  Chance: 0.001
+  Chance: 1
   Priority: 1
   Conditions:
   - mobsinworld{a=<400} true 
@@ -973,7 +973,7 @@ MCLove32_EVOKER_UnderSpawn:
   Type: MCLove32_EVOKER
   Action: ADD 
   PositionType: LAND
-  Chance: 0.001
+  Chance: 1
   Priority: 1
   Conditions:
   - mobsinworld{a=<400} true 
@@ -991,7 +991,7 @@ MCLove32_VEX_UnderSpawn:
   Type: MCLove32_VEX
   Action: ADD 
   PositionType: LAND
-  Chance: 0.001
+  Chance: 1
   Priority: 1
   Conditions:
   - mobsinworld{a=<400} true 
