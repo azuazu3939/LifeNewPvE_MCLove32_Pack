@@ -31,12 +31,10 @@ MCLove32_ハロウルフ:
     ]} @self ~onSpawn
   - projectile{
     ot=[
-      - lunge{v=0.25;vy=0.05} @self 0.75
-      - jump{v=-0.05} @self 
-      - jump{v=0.25} @self 0.05
+      - leap{v=80} @origin
       - look{headOnly=false;immediately=true;force=true} @Parent 0.1
     ];
-    v=4;i=1;mr=16;se=false;sb=true;hs=true;hfs=0;mch=4;mdh=10;syo=0;sfo=0;g=1;;hr=0;vr=0} @Forward{f=5} ~onTimer:20 ?!incombat
+    v=4;i=1;mr=16;se=false;sb=true;hs=true;hfs=0.1;mch=4;mdh=5;syo=0;sfo=0;g=1;;hr=0;vr=0} @Forward{f=5} ~onTimer:20 ?!incombat
 
 MCLove32_ハロウルフLeader:
   Template: MCLove32_ハロウルフ
