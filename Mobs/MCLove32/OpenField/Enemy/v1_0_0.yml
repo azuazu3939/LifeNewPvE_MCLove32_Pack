@@ -44,4 +44,4 @@ MCLove32_ハロウルフLeader:
   Skills:
   - skill:MCLove32_Enemyヘイト @self ~onEnterCombat
   - summon{t=MCLove32_ハロウルフ;a=3to5;r=5;s=true} @self ~onSpawn
-  - setrotation{yaw=<random.-180to180>;cd=5} @self 0.05 ~onTimer:20 ?!incombat
+  - setrotation{yaw=<random.-30to30>;r=true;cd=2} @self 0.1 ~onTimer:20 ?!incombat
