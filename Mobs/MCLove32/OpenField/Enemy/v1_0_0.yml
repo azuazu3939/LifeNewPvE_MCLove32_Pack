@@ -31,7 +31,7 @@ MCLove32_ハロウルフ:
     ]} @self ~onSpawn
   - projectile{
     ot=[
-      - leap{v=60} @origin
+      - leap{v=45} @origin
       - setFallDistance{a=0} @self 
       - look{headOnly=false;immediately=true;force=true} @Parent 0.1
     ];
