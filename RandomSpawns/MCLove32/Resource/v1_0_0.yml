@@ -3,8 +3,6 @@ MCLove32_ZOMBIE_Spawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.5
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 32
   Conditions:
   - biometype{t=mushroom} false 
@@ -12,19 +10,12 @@ MCLove32_ZOMBIE_Spawn:
   - outside true
   - inside false
   - (night || dusk) true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
 
 MCLove32_HUSK_Spawn:
   Type: MCLove32_HUSK
   Worlds: resource_world
   Action: ADD 
   Chance: 0.5
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 32
   Conditions:
   - biometype{t=mushroom} false 
@@ -38,8 +29,6 @@ MCLove32_SKELETON_Spawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.5
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 24
   Conditions:
   - biometype{t=mushroom} false 
@@ -54,8 +43,6 @@ MCLove32_BOGGED_Spawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.5
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 24
   Conditions:
   - biometype{t=mushroom} false 
@@ -70,8 +57,6 @@ MCLove32_STRAY_Spawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.5
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 24
   Conditions:
   - biometype{t=mushroom} false 
@@ -86,8 +71,6 @@ MCLove32_SLIME_Spawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.5
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 24
   Conditions:
   - biometype{t=mushroom} false 
@@ -101,8 +84,6 @@ MCLove32_SPIDER_Spawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.5
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 16
   Conditions:
   - biometype{t=mushroom} false 
@@ -115,8 +96,6 @@ MCLove32_CREEPER_Spawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.5
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 12
   Conditions:
   - biometype{t=mushroom} false 
@@ -129,8 +108,6 @@ MCLove32_ENDERMAN_Spawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.5
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 12
   Conditions:
   - biometype{t=mushroom} false 
@@ -143,8 +120,6 @@ MCLove32_WITCH_Spawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.5
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 5
   Conditions:
   - biometype{t=mushroom} false 
@@ -157,8 +132,6 @@ MCLove32_ZOMBIE_VILLAGER_Spawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.5
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 1
   Conditions:
   - biometype{t=mushroom} false 
@@ -171,8 +144,6 @@ MCLove32_BABY_ZOMBIE_VILLAGER_Spawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.01
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 1
   Conditions:
   - biometype{t=mushroom} false 
@@ -186,8 +157,6 @@ MCLove32_BABY_ZOMBIE_Spawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.5
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 1
   Conditions:
   - biometype{t=desert} false 
@@ -201,8 +170,6 @@ MCLove32_BABY_HUSK_Spawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.5
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 1
   Conditions:
   - biometype{t=desert} true 
@@ -216,8 +183,6 @@ MCLove32_COW_Spawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.01
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 1
   Conditions:
   - biometype{t=desert} false 
@@ -231,8 +196,6 @@ MCLove32_SHEEP_Spawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.01
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 1
   Conditions:
   - biometype{t=desert} false 
@@ -246,8 +209,6 @@ MCLove32_PIG_Spawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.01
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 1
   Conditions:
   - biometype{t=desert} false 
@@ -261,8 +222,6 @@ MCLove32_CHICKEN_Spawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.01
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 1
   Conditions:
   - biometype{t=desert} false 
@@ -276,8 +235,6 @@ MCLove32_RABBIT_Spawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.01
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 1
   Conditions:
   - biometype{t=desert} true
@@ -291,8 +248,6 @@ MCLove32_MUSHROOM_COW_Spawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.01
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 1
   Conditions:
   - biometype{t=mushroom} true
@@ -305,8 +260,6 @@ MCLove32_HORSE_Spawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.01
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 1
   Conditions:
   - biometype{t=mushroom} false 
@@ -320,8 +273,6 @@ MCLove32_COW_DaySpawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.5
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 20
   Conditions:
   - biometype{t=desert} false 
@@ -335,8 +286,6 @@ MCLove32_SHEEP_DaySpawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.5
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 24
   Conditions:
   - biometype{t=desert} false 
@@ -350,8 +299,6 @@ MCLove32_PIG_DaySpawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.5
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 24
   Conditions:
   - biometype{t=desert} false 
@@ -365,8 +312,6 @@ MCLove32_CHICKEN_DaySpawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.5
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 28
   Conditions:
   - biometype{t=desert} false 
@@ -380,8 +325,6 @@ MCLove32_RABBIT_DaySpawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.5
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 32
   Conditions:
   - biometype{t=desert} true
@@ -395,8 +338,6 @@ MCLove32_MUSHROOM_COW_DaySpawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.5
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 32
   Conditions:
   - biometype{t=mushroom} true
@@ -409,8 +350,6 @@ MCLove32_HORSE_DaySpawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.5
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 8
   Conditions:
   - biometype{t=mushroom} false 
@@ -424,8 +363,6 @@ MCLove32_ZOMBIE_UnderSpawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.5
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 32
   Conditions:
   - outside false
@@ -436,8 +373,6 @@ MCLove32_SKELETON_UnderSpawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.5
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 24
   Conditions:
   - outside false
@@ -448,8 +383,6 @@ MCLove32_SPIDER_UnderSpawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.5
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 24
   Conditions:
   - outside false
@@ -460,8 +393,6 @@ MCLove32_WITCH_UnderSpawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.5
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 8
   Conditions:
   - outside false
@@ -472,8 +403,6 @@ MCLove32_BABY_ZOMBIE_UnderSpawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.5
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 1
   Conditions:
   - outside false
@@ -484,8 +413,6 @@ MCLove32_BABY_ZOMBIE_VILLAGER_UnderSpawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.01
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 1
   Conditions:
   - outside false
@@ -496,8 +423,6 @@ MCLove32_BABY_PIG_ZOMBIE_UnderSpawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.5
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 2
   Conditions:
   - outside false
@@ -508,8 +433,6 @@ MCLove32_CREEPER_UnderSpawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.5
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 16
   Conditions:
   - outside false
@@ -520,8 +443,6 @@ MCLove32_ENDERMAN_UnderSpawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.5
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 12
   Conditions:
   - outside false
@@ -532,8 +453,6 @@ MCLove32_SLIME_UnderSpawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.1
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 8
   Conditions:
   - outside false
@@ -544,8 +463,6 @@ MCLove32_CAVE_SPIDER_UnderSpawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.5
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 1
   Conditions:
   - outside false
@@ -557,8 +474,6 @@ MCLove32_ZOGLIN_UnderSpawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.5
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 1
   Conditions:
   - outside false
@@ -570,8 +485,6 @@ MCLove32_ZOMBIFIED_PIGLIN_VILLAGER_UnderSpawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.001
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 1
   Conditions:
   - outside false
@@ -583,8 +496,6 @@ MCLove32_ZOMBIFIED_PIGLIN_UnderSpawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.01
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 1
   Conditions:
   - outside false
@@ -596,8 +507,6 @@ MCLove32_GHAST_UnderSpawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.01
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 1
   Conditions:
   - outside false
@@ -609,8 +518,6 @@ MCLove32_WITHER_SKELETON_UnderSpawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.05
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 1
   Conditions:
   - outside false
@@ -622,8 +529,6 @@ MCLove32_RAVAGER_UnderSpawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.01
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 1
   Conditions:
   - outside false
@@ -635,8 +540,6 @@ MCLove32_MAGMA_CUBE_UnderSpawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.01
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 1
   Conditions:
   - outside false
@@ -648,8 +551,6 @@ MCLove32_BLAZE_UnderSpawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.01
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 1
   Conditions:
   - outside false
@@ -661,8 +562,6 @@ MCLove32_PILLAGER_UnderSpawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.01
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 1
   Conditions:
   - outside false
@@ -674,8 +573,6 @@ MCLove32_VINDICATOR_UnderSpawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.01
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 1
   Conditions:
   - outside false
@@ -687,8 +584,6 @@ MCLove32_EVOKER_UnderSpawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.01
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 1
   Conditions:
   - outside false
@@ -700,8 +595,6 @@ MCLove32_VEX_UnderSpawn:
   Worlds: resource_world
   Action: ADD 
   Chance: 0.01
-  PositionType: LAND
-  Reason: CUSTOM
   Priority: 1
   Conditions:
   - outside false
