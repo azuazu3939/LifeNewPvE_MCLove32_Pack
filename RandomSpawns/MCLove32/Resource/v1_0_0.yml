@@ -32,12 +32,6 @@ MCLove32_HUSK_Spawn:
   - outside true
   - inside false
   - (night || dusk) true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_SKELETON_Spawn:
   Type: MCLove32_SKELETON
@@ -54,12 +48,6 @@ MCLove32_SKELETON_Spawn:
   - outside true
   - inside false
   - (night || dusk) true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_BOGGED_Spawn:
   Type: MCLove32_BOGGED
@@ -76,12 +64,6 @@ MCLove32_BOGGED_Spawn:
   - outside true
   - inside false
   - (night || dusk) true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_STRAY_Spawn:
   Type: MCLove32_STRAY
@@ -98,12 +80,6 @@ MCLove32_STRAY_Spawn:
   - outside true
   - inside false
   - (night || dusk) true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_SLIME_Spawn:
   Type: MCLove32_SLIME
@@ -119,12 +95,6 @@ MCLove32_SLIME_Spawn:
   - outside true
   - inside false
   - (night || dusk) true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_SPIDER_Spawn:
   Type: MCLove32_SPIDER
@@ -138,13 +108,7 @@ MCLove32_SPIDER_Spawn:
   - biometype{t=mushroom} false 
   - outside true
   - inside false
-  - (night || dusk) true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom 
+  - (night || dusk) true  
 
 MCLove32_CREEPER_Spawn:
   Type: MCLove32_CREEPER
@@ -159,12 +123,6 @@ MCLove32_CREEPER_Spawn:
   - outside true
   - inside false
   - (night || dusk) true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_ENDERMAN_Spawn:
   Type: MCLove32_ENDERMAN
@@ -179,12 +137,6 @@ MCLove32_ENDERMAN_Spawn:
   - outside true
   - inside false
   - (night || dusk) true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_WITCH_Spawn:
   Type: MCLove32_WITCH
@@ -199,12 +151,6 @@ MCLove32_WITCH_Spawn:
   - outside true
   - inside false
   - (night || dusk) true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_ZOMBIE_VILLAGER_Spawn:
   Type: MCLove32_ZOMBIE_VILLAGER
@@ -219,12 +165,6 @@ MCLove32_ZOMBIE_VILLAGER_Spawn:
   - outside true
   - inside false
   - (night || dusk) true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_BABY_ZOMBIE_VILLAGER_Spawn:
   Type: MCLove32_BABY_ZOMBIE_VILLAGER
@@ -239,12 +179,6 @@ MCLove32_BABY_ZOMBIE_VILLAGER_Spawn:
   - outside true
   - inside false
   - (night || dusk) true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 
 MCLove32_BABY_ZOMBIE_Spawn:
@@ -261,12 +195,6 @@ MCLove32_BABY_ZOMBIE_Spawn:
   - outside true
   - inside false
   - (night || dusk) true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_BABY_HUSK_Spawn:
   Type: MCLove32_BABY_HUSK
@@ -282,12 +210,6 @@ MCLove32_BABY_HUSK_Spawn:
   - outside true
   - inside false
   - (night || dusk) true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_COW_Spawn:
   Type: MCLove32_COW
@@ -303,12 +225,6 @@ MCLove32_COW_Spawn:
   - outside true
   - inside false
   - (night || dusk) true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_SHEEP_Spawn:
   Type: MCLove32_SHEEP
@@ -324,12 +240,6 @@ MCLove32_SHEEP_Spawn:
   - outside true
   - inside false
   - (night || dusk) true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_PIG_Spawn:
   Type: MCLove32_PIG
@@ -345,12 +255,6 @@ MCLove32_PIG_Spawn:
   - outside true
   - inside false
   - (night || dusk) true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_CHICKEN_Spawn:
   Type: MCLove32_CHICKEN
@@ -366,12 +270,6 @@ MCLove32_CHICKEN_Spawn:
   - outside true
   - inside false
   - (night || dusk) true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_RABBIT_Spawn:
   Type: MCLove32_RABBIT
@@ -387,12 +285,6 @@ MCLove32_RABBIT_Spawn:
   - outside true
   - inside false
   - (night || dusk) true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_MUSHROOM_COW_Spawn:
   Type: MCLove32_MUSHROOM_COW
@@ -407,12 +299,6 @@ MCLove32_MUSHROOM_COW_Spawn:
   - outside true
   - inside false
   - (night || dusk) true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_HORSE_Spawn:
   Type: MCLove32_HORSE
@@ -428,12 +314,6 @@ MCLove32_HORSE_Spawn:
   - outside true
   - inside false
   - (night || dusk) true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_COW_DaySpawn:
   Type: MCLove32_COW
@@ -449,12 +329,6 @@ MCLove32_COW_DaySpawn:
   - outside true
   - inside false
   - (night || dusk) false
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_SHEEP_DaySpawn:
   Type: MCLove32_SHEEP
@@ -470,12 +344,6 @@ MCLove32_SHEEP_DaySpawn:
   - outside true
   - inside false
   - (night || dusk) false
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_PIG_DaySpawn:
   Type: MCLove32_PIG
@@ -491,12 +359,6 @@ MCLove32_PIG_DaySpawn:
   - outside true
   - inside false
   - (night || dusk) false
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_CHICKEN_DaySpawn:
   Type: MCLove32_CHICKEN
@@ -512,12 +374,6 @@ MCLove32_CHICKEN_DaySpawn:
   - outside true
   - inside false
   - (night || dusk) false
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_RABBIT_DaySpawn:
   Type: MCLove32_RABBIT
@@ -533,12 +389,6 @@ MCLove32_RABBIT_DaySpawn:
   - outside true
   - inside false
   - (night || dusk) false
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_MUSHROOM_COW_DaySpawn:
   Type: MCLove32_MUSHROOM_COW
@@ -553,12 +403,6 @@ MCLove32_MUSHROOM_COW_DaySpawn:
   - outside true
   - inside false
   - (night || dusk) false
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_HORSE_DaySpawn:
   Type: MCLove32_HORSE
@@ -574,12 +418,6 @@ MCLove32_HORSE_DaySpawn:
   - outside true
   - inside false
   - (night || dusk) false
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_ZOMBIE_UnderSpawn:
   Type: MCLove32_ZOMBIE
@@ -592,12 +430,6 @@ MCLove32_ZOMBIE_UnderSpawn:
   Conditions:
   - outside false
   - inside true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_SKELETON_UnderSpawn:
   Type: MCLove32_SKELETON
@@ -610,12 +442,6 @@ MCLove32_SKELETON_UnderSpawn:
   Conditions:
   - outside false
   - inside true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_SPIDER_UnderSpawn:
   Type: MCLove32_SPIDER
@@ -628,12 +454,6 @@ MCLove32_SPIDER_UnderSpawn:
   Conditions:
   - outside false
   - inside true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_WITCH_UnderSpawn:
   Type: MCLove32_WITCH 
@@ -646,12 +466,6 @@ MCLove32_WITCH_UnderSpawn:
   Conditions:
   - outside false
   - inside true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_BABY_ZOMBIE_UnderSpawn:
   Type: MCLove32_BABY_ZOMBIE
@@ -664,12 +478,6 @@ MCLove32_BABY_ZOMBIE_UnderSpawn:
   Conditions:
   - outside false
   - inside true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_BABY_ZOMBIE_VILLAGER_UnderSpawn:
   Type: MCLove32_BABY_ZOMBIE_VILLAGER
@@ -682,12 +490,6 @@ MCLove32_BABY_ZOMBIE_VILLAGER_UnderSpawn:
   Conditions:
   - outside false
   - inside true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_BABY_PIG_ZOMBIE_UnderSpawn:
   Type: MCLove32_BABY_PIG_ZOMBIE
@@ -700,12 +502,6 @@ MCLove32_BABY_PIG_ZOMBIE_UnderSpawn:
   Conditions:
   - outside false
   - inside true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_CREEPER_UnderSpawn:
   Type: MCLove32_CREEPER
@@ -718,12 +514,6 @@ MCLove32_CREEPER_UnderSpawn:
   Conditions:
   - outside false
   - inside true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_ENDERMAN_UnderSpawn:
   Type: MCLove32_ENDERMAN
@@ -736,12 +526,6 @@ MCLove32_ENDERMAN_UnderSpawn:
   Conditions:
   - outside false
   - inside true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_SLIME_UnderSpawn:
   Type: MCLove32_SLIME
@@ -754,12 +538,6 @@ MCLove32_SLIME_UnderSpawn:
   Conditions:
   - outside false
   - inside true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_CAVE_SPIDER_UnderSpawn:
   Type: MCLove32_CAVE_SPIDER
@@ -773,12 +551,6 @@ MCLove32_CAVE_SPIDER_UnderSpawn:
   - outside false
   - inside true 
   - height{h=<0} true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_ZOGLIN_UnderSpawn:
   Type: MCLove32_ZOGLIN
@@ -792,12 +564,6 @@ MCLove32_ZOGLIN_UnderSpawn:
   - outside false
   - inside true 
   - height{h=<0} true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_ZOMBIFIED_PIGLIN_VILLAGER_UnderSpawn:
   Type: MCLove32_ZOMBIFIED_PIGLIN_VILLAGER
@@ -811,12 +577,6 @@ MCLove32_ZOMBIFIED_PIGLIN_VILLAGER_UnderSpawn:
   - outside false
   - inside true 
   - height{h=<0} true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_ZOMBIFIED_PIGLIN_UnderSpawn:
   Type: MCLove32_ZOMBIFIED_PIGLIN
@@ -830,12 +590,6 @@ MCLove32_ZOMBIFIED_PIGLIN_UnderSpawn:
   - outside false
   - inside true 
   - height{h=<0} true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_GHAST_UnderSpawn:
   Type: MCLove32_GHAST
@@ -849,12 +603,6 @@ MCLove32_GHAST_UnderSpawn:
   - outside false
   - inside true 
   - height{h=<0} true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_WITHER_SKELETON_UnderSpawn:
   Type: MCLove32_WITHER_SKELETON
@@ -868,12 +616,6 @@ MCLove32_WITHER_SKELETON_UnderSpawn:
   - outside false
   - inside true 
   - height{h=<0} true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_RAVAGER_UnderSpawn:
   Type: MCLove32_RAVAGER
@@ -887,12 +629,6 @@ MCLove32_RAVAGER_UnderSpawn:
   - outside false
   - inside true 
   - height{h=<0} true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_MAGMA_CUBE_UnderSpawn:
   Type: MCLove32_MAGMA_CUBE
@@ -906,12 +642,6 @@ MCLove32_MAGMA_CUBE_UnderSpawn:
   - outside false
   - inside true 
   - height{h=<0} true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_BLAZE_UnderSpawn:
   Type: MCLove32_BLAZE
@@ -925,12 +655,6 @@ MCLove32_BLAZE_UnderSpawn:
   - outside false
   - inside true 
   - height{h=<0} true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_PILLAGER_UnderSpawn:
   Type: MCLove32_PILLAGER
@@ -944,12 +668,6 @@ MCLove32_PILLAGER_UnderSpawn:
   - outside false
   - inside true 
   - height{h=<0} true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_VINDICATOR_UnderSpawn:
   Type: MCLove32_VINDICATOR
@@ -963,12 +681,6 @@ MCLove32_VINDICATOR_UnderSpawn:
   - outside false
   - inside true 
   - height{h=<0} true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_EVOKER_UnderSpawn:
   Type: MCLove32_EVOKER
@@ -982,12 +694,6 @@ MCLove32_EVOKER_UnderSpawn:
   - outside false
   - inside true 
   - height{h=<0} true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
 
 MCLove32_VEX_UnderSpawn:
   Type: MCLove32_VEX
@@ -1001,9 +707,3 @@ MCLove32_VEX_UnderSpawn:
   - outside false
   - inside true 
   - height{h=<0} true 
-  - (
-      livinginradius{a=>3;r=8} ||
-      livinginradius{a=>9;r=16} || 
-      livinginradius{a=>27;r=32}
-      ) false 
-      custom
