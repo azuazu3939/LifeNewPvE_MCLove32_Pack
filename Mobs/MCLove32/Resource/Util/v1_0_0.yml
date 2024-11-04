@@ -35,3 +35,246 @@ MCLove32_ルートチェスト_鉱石:
   Display: "&6&l鉱石ルートチェスト"
   Skills:
   - skill:MCLove32_ルートチェスト_鉱石Skills @Trigger ~onInteract
+
+
+MCLove32_Vanilla:
+  Type: Zombie
+  Display: ""
+  Faction: Resource
+  Options:
+    Collidable: true 
+    Despawn: true 
+    Interactable: false 
+    PreventMobKillDrops: false 
+    PreventOtherDrops: false 
+    PreventRandomEquipment: false 
+    PreventSunburn: false 
+    PreventVanillaDamage: true
+    Silent: false 
+  Skills:
+  - damage{a=<caster.damage>;ii=true;pi=true} @Trigger ~onAttack 
+  - damage{a=<caster.damage>;ii=true;pi=true} @Trigger ~onBowHit
+
+MCLove32_ZOMBIE:
+  Template: MCLove32_Vanilla
+  Type: ZOMBIE
+
+MCLove32_SKELETON:
+  Template: MCLove32_Vanilla
+  Type: SKELETON
+
+MCLove32_BABY_DROWNED:
+  Template: MCLove32_Vanilla
+  Type: BABY_DROWNED
+
+MCLove32_BABY_HUSK:
+  Template: MCLove32_Vanilla
+  Type: BABY_HUSK
+
+MCLove32_BABY_ZOMBIE:
+  Template: MCLove32_Vanilla
+  Type: BABY_ZOMBIE
+
+MCLove32_BABY_PIGLIN:
+  Template: MCLove32_Vanilla
+  Type: BABY_PIGLIN
+
+MCLove32_BABY_PIGLIN_BRUTE:
+  Template: MCLove32_Vanilla
+  Type: BABY_PIGLIN_BRUTE
+
+MCLove32_BABY_PIG_ZOMBIE:
+  Template: MCLove32_Vanilla
+  Type: BABY_PIG_ZOMBIE
+
+MCLove32_BABY_PIG_ZOMBIE_VILLAGER:
+  Template: MCLove32_Vanilla
+  Type: BABY_PIG_ZOMBIE_VILLAGER
+
+MCLove32_BABY_ZOGLIN:
+  Template: MCLove32_Vanilla
+  Type: BABY_ZOGLIN
+
+MCLove32_BABY_ZOMBIE_VILLAGER:
+  Template: MCLove32_Vanilla
+  Type: BABY_ZOMBIE_VILLAGER
+
+MCLove32_BLAZE:
+  Template: MCLove32_Vanilla
+  Type: BLAZE
+
+MCLove32_BOGGED:
+  Template: MCLove32_Vanilla
+  Type: BOGGED
+
+MCLove32_BREEZE:
+  Template: MCLove32_Vanilla
+  Type: BREEZE
+
+MCLove32_CAVE_SPIDER:
+  Template: MCLove32_Vanilla
+  Type: CAVE_SPIDER
+
+MCLove32_CHICKEN:
+  Template: MCLove32_Vanilla
+  Type: CHICKEN
+
+MCLove32_COW:
+  Template: MCLove32_Vanilla
+  Type: COW
+
+MCLove32_CREEPER:
+  Template: MCLove32_Vanilla
+  Type: CREEPER
+
+MCLove32_DOLPHIN:
+  Template: MCLove32_Vanilla
+  Type: DOLPHIN
+
+MCLove32_DROWNED:
+  Template: MCLove32_Vanilla
+  Type: DROWNED
+
+MCLove32_ELDER_GUARDIAN:
+  Template: MCLove32_Vanilla
+  Type: ELDER_GUARDIAN
+
+MCLove32_ENDER_DRAGON:
+  Template: MCLove32_Vanilla
+  Type: ENDER_DRAGON
+
+MCLove32_ENDERMAN:
+  Template: MCLove32_Vanilla
+  Type: ENDERMAN
+
+MCLove32_ENDERMITE:
+  Template: MCLove32_Vanilla
+  Type: ENDERMITE
+
+MCLove32_EVOKER:
+  Template: MCLove32_Vanilla
+  Type: EVOKER
+
+MCLove32_GHAST:
+  Template: MCLove32_Vanilla
+  Type: GHAST
+
+MCLove32_GUARDIAN:
+  Template: MCLove32_Vanilla
+  Type: GUARDIAN
+
+MCLove32_HOGLIN:
+  Template: MCLove32_Vanilla
+  Type: HOGLIN
+
+MCLove32_HORSE:
+  Template: MCLove32_Vanilla
+  Type: HORSE
+
+MCLove32_HUSK:
+  Template: MCLove32_Vanilla
+  Type: HUSK
+
+MCLove32_IRON_GOLEM:
+  Template: MCLove32_Vanilla
+  Type: IRON_GOLEM
+
+MCLove32_MAGMA_CUBE:
+  Template: MCLove32_Vanilla
+  Type: MAGMA_CUBE
+
+MCLove32_MUSHROOM_COW:
+  Template: MCLove32_Vanilla
+  Type: MUSHROOM_COW
+
+MCLove32_PHANTOM:
+  Template: MCLove32_Vanilla
+  Type: PHANTOM
+
+MCLove32_PIG:
+  Template: MCLove32_Vanilla
+  Type: PIG
+
+MCLove32_PIGLIN:
+  Template: MCLove32_Vanilla
+  Type: PIGLIN
+
+MCLove32_PIGLIN_BRUTE:
+  Template: MCLove32_Vanilla
+  Type: PIGLIN_BRUTE
+
+MCLove32_ZOMBIFIED_PIGLIN:
+  Template: MCLove32_Vanilla
+  Type: ZOMBIFIED_PIGLIN
+
+MCLove32_ZOMBIFIED_PIGLIN_VILLAGER:
+  Template: MCLove32_Vanilla
+  Type: ZOMBIFIED_PIGLIN_VILLAGER
+
+MCLove32_PILLAGER:
+  Template: MCLove32_Vanilla
+  Type: PILLAGER
+
+MCLove32_RABBIT:
+  Template: MCLove32_Vanilla
+  Type: RABBIT
+
+MCLove32_RAVAGER:
+  Template: MCLove32_Vanilla
+  Type: RAVAGER
+
+MCLove32_SHEEP:
+  Template: MCLove32_Vanilla
+  Type: SHEEP
+
+MCLove32_SILVERFISH:
+  Template: MCLove32_Vanilla
+  Type: SILVERFISH
+
+MCLove32_SLIME:
+  Template: MCLove32_Vanilla
+  Type: SLIME
+
+MCLove32_SPIDER:
+  Template: MCLove32_Vanilla
+  Type: SPIDER
+
+MCLove32_STRAY:
+  Template: MCLove32_Vanilla
+  Type: STRAY
+
+MCLove32_VEX:
+  Template: MCLove32_Vanilla
+  Type: VEX
+
+MCLove32_VINDICATOR:
+  Template: MCLove32_Vanilla
+  Type: VINDICATOR
+
+MCLove32_WARDEN:
+  Template: MCLove32_Vanilla
+  Type: WARDEN
+
+MCLove32_WITCH:
+  Template: MCLove32_Vanilla
+  Type: WITCH
+
+MCLove32_WITHER:
+  Template: MCLove32_Vanilla
+  Type: WITHER
+
+MCLove32_WITHER_SKELETON:
+  Template: MCLove32_Vanilla
+  Type: WITHER_SKELETON
+
+MCLove32_WOLF:
+  Template: MCLove32_Vanilla
+  Type: WOLF
+
+MCLove32_ZOGLIN:
+  Template: MCLove32_Vanilla
+  Type: ZOGLIN
+
+MCLove32_ZOMBIE_VILLAGER:
+  Template: MCLove32_Vanilla
+  Type: ZOMBIE_VILLAGER

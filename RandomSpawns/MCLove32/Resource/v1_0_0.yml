@@ -1,0 +1,1010 @@
+MCLove32_ZOMBIE_Spawn:
+  Type: MCLove32_ZOMBIE
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.05
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 32
+  Conditions:
+  - biometype{t=mushroom} false 
+  - biometype{t=desert} false 
+  - outside true
+  - inside false
+  - (night || dusk) true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_HUSK_Spawn:
+  Type: MCLove32_HUSK
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.05
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 32
+  Conditions:
+  - biometype{t=mushroom} false 
+  - biometype{t=desert} true 
+  - outside true
+  - inside false
+  - (night || dusk) true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_SKELETON_Spawn:
+  Type: MCLove32_SKELETON
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.05
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 24
+  Conditions:
+  - biometype{t=mushroom} false 
+  - biometype{t=icy} false 
+  - biometype{t=swamp} false 
+  - outside true
+  - inside false
+  - (night || dusk) true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_BOGGED_Spawn:
+  Type: MCLove32_BOGGED
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.05
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 24
+  Conditions:
+  - biometype{t=mushroom} false 
+  - biometype{t=icy} false 
+  - biometype{t=swamp} true 
+  - outside true
+  - inside false
+  - (night || dusk) true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_STRAY_Spawn:
+  Type: MCLove32_STRAY
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.05
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 24
+  Conditions:
+  - biometype{t=mushroom} false 
+  - biometype{t=icy} true
+  - biometype{t=swamp} false  
+  - outside true
+  - inside false
+  - (night || dusk) true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_SLIME_Spawn:
+  Type: MCLove32_SLIME
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.05
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 24
+  Conditions:
+  - biometype{t=mushroom} false 
+  - biometype{t=swamp} false  
+  - outside true
+  - inside false
+  - (night || dusk) true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_SPIDER_Spawn:
+  Type: MCLove32_SPIDER
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.05
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 16
+  Conditions:
+  - biometype{t=mushroom} false 
+  - outside true
+  - inside false
+  - (night || dusk) true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true 
+
+MCLove32_CREEPER_Spawn:
+  Type: MCLove32_CREEPER
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.05
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 12
+  Conditions:
+  - biometype{t=mushroom} false 
+  - outside true
+  - inside false
+  - (night || dusk) true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_ENDERMAN_Spawn:
+  Type: MCLove32_ENDERMAN
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.05
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 12
+  Conditions:
+  - biometype{t=mushroom} false 
+  - outside true
+  - inside false
+  - (night || dusk) true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_WITCH_Spawn:
+  Type: MCLove32_WITCH
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.05
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 5
+  Conditions:
+  - biometype{t=mushroom} false 
+  - outside true
+  - inside false
+  - (night || dusk) true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_ZOMBIE_VILLAGER_Spawn:
+  Type: MCLove32_ZOMBIE_VILLAGER
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.05
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 1
+  Conditions:
+  - biometype{t=mushroom} false 
+  - outside true
+  - inside false
+  - (night || dusk) true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_BABY_ZOMBIE_VILLAGER_Spawn:
+  Type: MCLove32_BABY_ZOMBIE_VILLAGER
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.001
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 1
+  Conditions:
+  - biometype{t=mushroom} false 
+  - outside true
+  - inside false
+  - (night || dusk) true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+
+MCLove32_BABY_ZOMBIE_Spawn:
+  Type: MCLove32_BABY_ZOMBIE
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.05
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 1
+  Conditions:
+  - biometype{t=desert} false 
+  - biometype{t=mushroom} false 
+  - outside true
+  - inside false
+  - (night || dusk) true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_BABY_HUSK_Spawn:
+  Type: MCLove32_BABY_HUSK
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.05
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 1
+  Conditions:
+  - biometype{t=desert} true 
+  - biometype{t=mushroom} false 
+  - outside true
+  - inside false
+  - (night || dusk) true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_COW_Spawn:
+  Type: MCLove32_COW
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.001
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 1
+  Conditions:
+  - biometype{t=desert} false 
+  - biometype{t=mushroom} false 
+  - outside true
+  - inside false
+  - (night || dusk) true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_SHEEP_Spawn:
+  Type: MCLove32_SHEEP
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.001
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 1
+  Conditions:
+  - biometype{t=desert} false 
+  - biometype{t=mushroom} false 
+  - outside true
+  - inside false
+  - (night || dusk) true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_PIG_Spawn:
+  Type: MCLove32_PIG
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.001
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 1
+  Conditions:
+  - biometype{t=desert} false 
+  - biometype{t=mushroom} false 
+  - outside true
+  - inside false
+  - (night || dusk) true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_CHICKEN_Spawn:
+  Type: MCLove32_CHICKEN
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.001
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 1
+  Conditions:
+  - biometype{t=desert} false 
+  - biometype{t=mushroom} false 
+  - outside true
+  - inside false
+  - (night || dusk) true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_RABBIT_Spawn:
+  Type: MCLove32_RABBIT
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.001
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 1
+  Conditions:
+  - biometype{t=desert} true
+  - biometype{t=mushroom} false 
+  - outside true
+  - inside false
+  - (night || dusk) true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_MUSHROOM_COW_Spawn:
+  Type: MCLove32_MUSHROOM_COW
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.001
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 1
+  Conditions:
+  - biometype{t=mushroom} true
+  - outside true
+  - inside false
+  - (night || dusk) true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_HORSE_Spawn:
+  Type: MCLove32_HORSE
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.001
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 1
+  Conditions:
+  - biometype{t=mushroom} false 
+  - biometype{t=plains} true 
+  - outside true
+  - inside false
+  - (night || dusk) true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_COW_DaySpawn:
+  Type: MCLove32_COW
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.05
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 20
+  Conditions:
+  - biometype{t=desert} false 
+  - biometype{t=mushroom} false 
+  - outside true
+  - inside false
+  - (night || dusk) false
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_SHEEP_DaySpawn:
+  Type: MCLove32_SHEEP
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.05
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 24
+  Conditions:
+  - biometype{t=desert} false 
+  - biometype{t=mushroom} false 
+  - outside true
+  - inside false
+  - (night || dusk) false
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_PIG_DaySpawn:
+  Type: MCLove32_PIG
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.05
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 24
+  Conditions:
+  - biometype{t=desert} false 
+  - biometype{t=mushroom} false 
+  - outside true
+  - inside false
+  - (night || dusk) false
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_CHICKEN_DaySpawn:
+  Type: MCLove32_CHICKEN
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.05
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 28
+  Conditions:
+  - biometype{t=desert} false 
+  - biometype{t=mushroom} false 
+  - outside true
+  - inside false
+  - (night || dusk) false
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_RABBIT_DaySpawn:
+  Type: MCLove32_RABBIT
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.05
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 32
+  Conditions:
+  - biometype{t=desert} true
+  - biometype{t=mushroom} false 
+  - outside true
+  - inside false
+  - (night || dusk) false
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_MUSHROOM_COW_DaySpawn:
+  Type: MCLove32_MUSHROOM_COW
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.05
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 32
+  Conditions:
+  - biometype{t=mushroom} true
+  - outside true
+  - inside false
+  - (night || dusk) false
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_HORSE_DaySpawn:
+  Type: MCLove32_HORSE
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.05
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 8
+  Conditions:
+  - biometype{t=mushroom} false 
+  - biometype{t=plains} true 
+  - outside true
+  - inside false
+  - (night || dusk) false
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_ZOMBIE_UnderSpawn:
+  Type: MCLove32_ZOMBIE
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.05
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 32
+  Conditions:
+  - outside false
+  - inside true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_SKELETON_UnderSpawn:
+  Type: MCLove32_SKELETON
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.05
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 24
+  Conditions:
+  - outside false
+  - inside true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_SPIDER_UnderSpawn:
+  Type: MCLove32_SPIDER
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.05
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 24
+  Conditions:
+  - outside false
+  - inside true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_WITCH_UnderSpawn:
+  Type: MCLove32_WITCH 
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.05
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 8
+  Conditions:
+  - outside false
+  - inside true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_BABY_ZOMBIE_UnderSpawn:
+  Type: MCLove32_BABY_ZOMBIE
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.05
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 1
+  Conditions:
+  - outside false
+  - inside true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_BABY_ZOMBIE_VILLAGER_UnderSpawn:
+  Type: MCLove32_BABY_ZOMBIE_VILLAGER
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.001
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 1
+  Conditions:
+  - outside false
+  - inside true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_BABY_PIG_ZOMBIE_UnderSpawn:
+  Type: MCLove32_BABY_PIG_ZOMBIE
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.05
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 2
+  Conditions:
+  - outside false
+  - inside true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_CREEPER_UnderSpawn:
+  Type: MCLove32_CREEPER
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.05
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 16
+  Conditions:
+  - outside false
+  - inside true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_ENDERMAN_UnderSpawn:
+  Type: MCLove32_ENDERMAN
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.05
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 12
+  Conditions:
+  - outside false
+  - inside true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_SLIME_UnderSpawn:
+  Type: MCLove32_SLIME
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.01
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 8
+  Conditions:
+  - outside false
+  - inside true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_CAVE_SPIDER_UnderSpawn:
+  Type: MCLove32_CAVE_SPIDER
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.05
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 1
+  Conditions:
+  - outside false
+  - inside true 
+  - height{h=<16} true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_ZOGLIN_UnderSpawn:
+  Type: MCLove32_ZOGLIN
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.05
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 1
+  Conditions:
+  - outside false
+  - inside true 
+  - height{h=<0} true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_ZOMBIFIED_PIGLIN_VILLAGER_UnderSpawn:
+  Type: MCLove32_ZOMBIFIED_PIGLIN_VILLAGER
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.0001
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 1
+  Conditions:
+  - outside false
+  - inside true 
+  - height{h=<0} true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_ZOMBIFIED_PIGLIN_UnderSpawn:
+  Type: MCLove32_ZOMBIFIED_PIGLIN
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.001
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 1
+  Conditions:
+  - outside false
+  - inside true 
+  - height{h=<0} true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_GHAST_UnderSpawn:
+  Type: MCLove32_GHAST
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.001
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 1
+  Conditions:
+  - outside false
+  - inside true 
+  - height{h=<0} true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_WITHER_SKELETON_UnderSpawn:
+  Type: MCLove32_WITHER_SKELETON
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.005
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 1
+  Conditions:
+  - outside false
+  - inside true 
+  - height{h=<0} true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_RAVAGER_UnderSpawn:
+  Type: MCLove32_RAVAGER
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.001
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 1
+  Conditions:
+  - outside false
+  - inside true 
+  - height{h=<0} true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_MAGMA_CUBE_UnderSpawn:
+  Type: MCLove32_MAGMA_CUBE
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.001
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 1
+  Conditions:
+  - outside false
+  - inside true 
+  - height{h=<0} true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_BLAZE_UnderSpawn:
+  Type: MCLove32_BLAZE
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.001
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 1
+  Conditions:
+  - outside false
+  - inside true 
+  - height{h=<0} true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_PILLAGER_UnderSpawn:
+  Type: MCLove32_PILLAGER
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.001
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 1
+  Conditions:
+  - outside false
+  - inside true 
+  - height{h=<0} true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_VINDICATOR_UnderSpawn:
+  Type: MCLove32_VINDICATOR
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.001
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 1
+  Conditions:
+  - outside false
+  - inside true 
+  - height{h=<0} true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_EVOKER_UnderSpawn:
+  Type: MCLove32_EVOKER
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.001
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 1
+  Conditions:
+  - outside false
+  - inside true 
+  - height{h=<0} true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true
+
+MCLove32_VEX_UnderSpawn:
+  Type: MCLove32_VEX
+  Worlds: resource_world
+  Action: ADD 
+  Chance: 0.001
+  PositionType: LAND
+  Reason: NATURAL
+  Priority: 1
+  Conditions:
+  - outside false
+  - inside true 
+  - height{h=<0} true 
+  - (
+      livinginradius{a=>3;r=16} ||
+      livinginradius{a=>9;r=32} || 
+      livinginradius{a=>27;r=48}
+      ) false 
+  - playerwithin{d=64} true

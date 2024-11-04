@@ -99,23 +99,5 @@ MCLove32_リソース鉱石紅蓮ドロップ:
 MCLove32_リソース鉱石紫焔ドロップ:
   Conditions:
   - height{h=<-16} true
-  - triggerblocktype{
-    mat=
-    stone,
-    gravel,
-    deepslate,
-    deepslate_coal_ore,
-    deepslate_gold_ore,
-    deepslate_iron_ore,
-    deepslate_gold_ore,
-    deepslate_lapis_ore,
-    deepslate_copper_ore,
-    deepslate_diamond_ore,
-    deepslate_emerald_ore,
-    deepslate_redstone_ore,
-    tuff,
-    andesite,
-    granite,
-    diorite} true
   Skills:
   - cmd{c="mlg <caster.name> MCLove32_鉱石紫焔 <random.1to3> <skill.chance>"} @self 
