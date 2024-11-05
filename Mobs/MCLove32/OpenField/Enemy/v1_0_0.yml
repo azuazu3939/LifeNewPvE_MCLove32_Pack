@@ -19,7 +19,7 @@ MCLove32_ハロウルフ:
     PreventOtherDrops: true 
     PreventRandomEquipment: true 
     #PreventSunburn: true
-    PreventVanillaDamage: true
+    #PreventVanillaDamage: true
     Scale: 1.5
     Silent: false 
   Modules:

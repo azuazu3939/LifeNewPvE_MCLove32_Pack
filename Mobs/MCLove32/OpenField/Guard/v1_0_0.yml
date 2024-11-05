@@ -32,7 +32,7 @@ MCLove32_ヒィツジー:
     PreventOtherDrops: true 
     PreventRandomEquipment: true 
     #PreventSunburn: true
-    PreventVanillaDamage: true
+    #PreventVanillaDamage: true
     #Scale: -1
     Silent: false 
   Skills:
