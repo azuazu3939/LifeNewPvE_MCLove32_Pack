@@ -2,7 +2,7 @@ MCLove32_ハロウルフ:
   Type: wolf 
   Display: "&a&lハロウルフ"
   Health: 30
-  Damage: 5
+  Damage: 3
   Faction: Wolf
   Armor: 3
   Options:
@@ -49,7 +49,7 @@ MCLove32_ハロウルフ:
 MCLove32_ハロウルフLeader:
   Template: MCLove32_ハロウルフ
   Health: 100
-  Damage: 6
+  Damage: 4
   Armor: 4
   Skills:
   - summon{t=MCLove32_ハロウルフ;a=2to3;r=5;s=true} @self ~onSpawn
@@ -97,3 +97,48 @@ MCLove32_枯れた抜け殻:
   - skill:MCLove32_枯れたEffect @self ~onEnterCombat
   - damage{a=100;pi=true;ii=true} @trigger ~onDamaged 0.01
   - skill:MCLove32_枯れた抜け殻Skills @self ~onEnterCombat
+
+MCLove32_コロニアル:
+  Type: zombie 
+  Display: "&fコロニアル"
+  Health: 40
+  Damage: 3
+  Faction: Enemy
+  Armor: 5
+  Equipment:
+  - leather_helmet{color=WHITE} HEAD
+  - leather_chestplate{color=BLACK} CHEST
+  - leather_leggings{color=BLACK} LEGS 
+  - leather_boots{color=WHITE} FEET 
+  - stone_sword HAND 
+  Options:
+    Collidable: true 
+    DigOutOfGround: true 
+    FollowRange: 8
+    Despawn: false  
+    KnockbackResistance: 0
+    NoDamageTicks: 0
+    NoAI: false 
+    VisibleByDefault: true 
+    Invisible: true
+    #NoGravity: true
+    PreventMobKillDrops: true 
+    PreventRandomEquipment: true 
+    #PreventSunburn: true
+    Scale: 1.25
+    #Silent: false 
+  Modules:
+    ThreatTable: true
+  AITargetSelectors:
+  - clear
+  - attacker
+  - players 
+  Skills:
+  - skill:MCLove32_コロニアルSkills @self ~onEnterCombat
+
+MCLove32_コロニアルLeader: 
+  Template: MCLove32_コロニアル
+  Health: 80
+  Damage: 4
+  Skills:
+  - summon{t=MCLove32_コロニアル;a=1to3;r=3;s=true} @self ~onSpawn

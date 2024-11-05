@@ -68,3 +68,26 @@ MCLove32_枯れた抜け殻SkillRepeat1:
   Skills:
   - delay 1
   - skill:MCLove32_枯れた抜け殻SkillRepeat @self 
+
+MCLove32_コロニアルSkills:
+  Cooldown: 1
+  Conditions:
+  - incombat
+  Skills:
+  - skill:MCLove32_コロニアルSkill1 @self 
+  - delay <random.80to120>
+  - skill:MCLove32_コロニアルSkills @self 
+
+MCLove32_コロニアルSkill1:
+  Skills:
+  - projectile{
+    ot=[
+      - e:p{p=magic_crit;a=3;vs=0.15;hs=0.15} @origin
+    ];
+    oh=[
+      - sound{s=entity.witch.ambient;v=0.25} @self  
+      - damage{a=10;pi=true;ii=true}
+      - pull{v=3;to=true}
+      - heal{a=10} @self 
+    ];
+    v=5;i=1} @TL
