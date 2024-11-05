@@ -37,6 +37,8 @@ MCLove32_ビットブレードTypeAProcess:
     ];
     oh=[
       - damage{a=10;ii=true;pi=true}
+      - sound{s=block.anvil.land;p=2;v=0.5}
+      - sound{s=entity.breeze.inhale;p=2;v=0.5}
     ];
     conditions=[
       - isLiving true 
