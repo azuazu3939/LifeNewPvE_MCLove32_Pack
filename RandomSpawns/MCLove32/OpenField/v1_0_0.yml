@@ -6,7 +6,7 @@ MCLove32_ハロウルフLeader_Spawn:
   Chance: 0.25
   Priority: 5
   Conditions:
-  - mobsinworld{a=<400} true 
+  - mobsinworld{a=<1000} true 
   - blocktype{
     type=
     grass_block,
@@ -31,7 +31,7 @@ MCLove32_ヒィツジーLeader_Spawn:
   Chance: 0.25
   Priority: 8
   Conditions:
-  - mobsinworld{a=<400} true 
+  - mobsinworld{a=<1000} true 
   - blocktype{
     type=
     grass_block,
