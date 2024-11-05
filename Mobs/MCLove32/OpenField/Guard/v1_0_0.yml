@@ -12,8 +12,8 @@ MCLove32_ヒィツジー:
   - randomstroll
   - gotoparent
   - gotoowner
-  - fleefaction{d=12;s=2;ss=1.2;f=Wolf}
-  - fleeplayers{d=12;s=2;ss=1.2}
+  - fleefaction{d=16;s=2;ss=1.2;f=Wolf}
+  - fleeplayers{d=16;s=2;ss=1.2}
   AITargetSelectors:
   - clear
   - attacker
@@ -21,7 +21,7 @@ MCLove32_ヒィツジー:
   Options:
     Collidable: true 
     DigOutOfGround: true 
-    FollowRange: 12
+    FollowRange: 16
     Despawn: true 
     KnockbackResistance: 0.15
     Interactable: false 

@@ -8,7 +8,7 @@ MCLove32_ハロウルフ:
   Options:
     Collidable: true 
     DigOutOfGround: true 
-    FollowRange: 10
+    FollowRange: 8
     Despawn: true 
     KnockbackResistance: 0.15
     Interactable: false 
