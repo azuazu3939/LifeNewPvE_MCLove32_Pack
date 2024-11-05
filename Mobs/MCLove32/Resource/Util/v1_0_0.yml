@@ -204,10 +204,6 @@ MCLove32_PIGLIN_BRUTE:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: PIGLIN_BRUTE
 
-MCLove32_ZOMBIFIED_PIGLIN:
-  Template: Resource_MobUtil_バニラ_MCLove32
-  Type: ZOMBIFIED_PIGLIN
-
 MCLove32_ZOMBIFIED_PIGLIN_VILLAGER:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: ZOMBIFIED_PIGLIN_VILLAGER

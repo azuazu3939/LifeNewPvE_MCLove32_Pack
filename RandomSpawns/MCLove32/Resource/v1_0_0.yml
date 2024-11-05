@@ -825,24 +825,6 @@ MCLove32_ZOMBIFIED_PIGLIN_VILLAGER_UnderSpawn:
     mythicinradius{a=<15;r=48} 
     ) true   
 
-MCLove32_ZOMBIFIED_PIGLIN_UnderSpawn:
-  Type: MCLove32_ZOMBIFIED_PIGLIN
-  Action: ADD 
-  PositionType: LAND
-  Chance: 1
-  Priority: 1
-  Conditions:
-  - mobsinworld{a=<400} true 
-  - blocktype{type=air,water,lava} false 
-  - outside false
-  - inside true 
-  - height{h=<0} true 
-  - (
-    mythicinradius{a=<5;r=20} ||
-    mythicinradius{a=<10;r=32} ||
-    mythicinradius{a=<15;r=48} 
-    ) true  
-
 MCLove32_GHAST_UnderSpawn:
   Type: MCLove32_GHAST
   Action: ADD 
