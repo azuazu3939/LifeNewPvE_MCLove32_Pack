@@ -29,6 +29,7 @@ MCLove32_ヒィツジー:
     DigOutOfGround: true 
     FollowRange: 16
     Despawn: true 
+    NoDamageTicks: 0
     KnockbackResistance: 0.15
     NoAI: false 
     #NoGravity: true

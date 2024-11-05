@@ -4,8 +4,6 @@ MCLove32_サイスオブデーモン:
   Lore: []
   Model: 1000
   Options: 
-    Destroy: false
-    CancelDamage: false 
     ItemVersion: 1
     Unbreakable: true
   Group: 'Weapon'
@@ -18,8 +16,6 @@ MCLove32_ビットブレードTypeA:
   Lore: []
   Model: 1000
   Options: 
-    Destroy: false
-    CancelDamage: false 
     ItemVersion: 1
     Unbreakable: true
   Group: 'Weapon'
