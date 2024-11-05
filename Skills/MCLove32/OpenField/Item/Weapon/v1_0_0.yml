@@ -7,7 +7,7 @@ MCLove32_サイスオブデーモンSkills:
   Skills:
   - damage{a=80;ii=true;pi=true}
   - sound{s=entity.warden.death} @self 
-  - heal{a=5} @self 
+  - potion{t=SPEED;l=4;d=50;p=false} @self 
   - potion{t=BLINDNESS;l=0;d=50;p=false} 
   - potion{t=LEVITATION;l=0;d=50;p=false} 
   - potion{t=WEAKNESS;l=4;d=50;p=false} 
