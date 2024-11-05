@@ -44,3 +44,20 @@ MCLove32_ヒィツジーLeader_Spawn:
     mythicinradius{a=<3;r=32} ||
     mythicinradius{a=<5;r=48} 
     ) true  
+
+MCLove32_枯れた抜け殻_Spawn:
+  Type: MCLove32_枯れた抜け殻
+  Worlds: open_field
+  Action: ADD 
+  PositionType: LAND
+  Chance: 0.001
+  Priority: 8
+  Conditions:
+  - mobsinworld{a=<1000} true 
+  - height{h=40to120} true 
+  - region{r=spawn} false 
+  - (
+    mythicinradius{a=<1;r=20} ||
+    mythicinradius{a=<2;r=32} ||
+    mythicinradius{a=<3;r=48} 
+    ) true  

@@ -13,3 +13,21 @@ MCLove32_Enemyヘイト:
     ];target=@T} @Parent
   - delay 100
   - skill:MCLove32_Enemyヘイト @self
+
+MCLove32_枯れたEffect:
+  Conditions:
+  - incombat
+  Skills:
+  - skill:MCLove32_枯れたEffectProcess{y=0}
+  - skill:MCLove32_枯れたEffectProcess{y=-1}
+  - skill:MCLove32_枯れたEffectProcess{y=-2}
+  - delay 200
+  - skill{s=MCLove32_枯れたEffect} @self
+
+MCLove32_枯れたEffectProcess:
+  Skills:
+  - orbital{
+    ot=[
+      - e:p{p=falling_nectar;a=2} @origin
+      - e:p{p=falling_nectar;a=2;delay=20} @origin
+    ];r=0.5;hp=false;p=40;i=1;oy=<skill.y>;md=200} @self

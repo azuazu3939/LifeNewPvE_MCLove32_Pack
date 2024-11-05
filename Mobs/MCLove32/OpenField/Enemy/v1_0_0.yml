@@ -53,3 +53,47 @@ MCLove32_ハロウルフLeader:
   Armor: 4
   Skills:
   - summon{t=MCLove32_ハロウルフ;a=2to3;r=5;s=true} @self ~onSpawn
+
+MCLove32_枯れた抜け殻:
+  Type: wither_skeleton
+  Display: "&f枯れた抜け殻"
+  Health: 500
+  Damage: 8
+  Faction: Enemy
+  Armor: 10
+  Equipment:
+  - golden_helmet HEAD
+  - stone_sword HAND 
+  - shield OFFHAND 
+  - netherite_chestplate CHEST 
+  - iron_leggings LEGS 
+  - diamond_boots FEET 
+  KillMessages:
+  - '<target.name>は、無謀な戦いを挑んだ。'
+  Options:
+    Collidable: true 
+    DigOutOfGround: true 
+    FollowRange: 8
+    Despawn: false  
+    KnockbackResistance: 0
+    NoDamageTicks: 0
+    NoAI: false 
+    #NoGravity: true
+    PreventMobKillDrops: true 
+    PreventRandomEquipment: true 
+    #PreventSunburn: true
+    Scale: 2
+    #Silent: false 
+  Modules:
+    ThreatTable: true
+  AITargetSelectors:
+  - clear
+  - attacker
+  AIGoalSelectors:
+  - clear
+  - randomstroll
+  Skills:
+  - heal{a=100} @self ~onTimer:200
+  - e:p{p=sculk_soul;a=15;vs=1;hs=0.5;vd=32} @Forward{f=-2} ~onTimer:5
+  - skill:MCLove32_枯れたEffect @self ~onEnterCombat
+  - damage{a=100;pi=true;ii=true} @trigger ~onDamaged 0.01

@@ -1,6 +1,6 @@
 MCLove32_サイスオブデーモン:
   Id: netherite_hoe
-  Display: "&5&lサイスオブデーモン"
+  Display: "&7&lサイス&f&lオブ&5&lデーモン"
   Lore: []
   Model: 1000
   Options: 
@@ -12,7 +12,7 @@ MCLove32_サイスオブデーモン:
 
 MCLove32_ビットブレードTypeA:
   Id: diamond_sword
-  Display: "&b&lビットブレードTypeA"
+  Display: "&b&lビット&c&lブレード&f&lType&a&lA"
   Lore: []
   Model: 1000
   Options: 
