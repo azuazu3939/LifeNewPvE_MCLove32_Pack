@@ -12,7 +12,8 @@ MCLove32_ハロウルフLeader_Spawn:
     glass_block,
     moss_block,
     snow_block,
-    snow
+    snow,
+    podzol
     } true  
   - height{h=60to80} true 
   - region{r=spawn} false 
