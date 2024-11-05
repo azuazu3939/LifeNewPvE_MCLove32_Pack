@@ -5,7 +5,7 @@ MCLove32_サイスオブデーモンSkills:
   Conditions:
   - wearing{m=MCLove32_サイスオブデーモン;s=HAND}
   Skills:
-  - damage{a=80;ii=true;dc=custom}
+  - damage{a=80;ii=true}
   - sound{s=entity.warden.death} @self 
   - heal{a=5} @self 
   - potion{t=BLINDNESS;l=0;d=50;p=false} 
@@ -36,7 +36,7 @@ MCLove32_ビットブレードTypeAProcess:
       - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.8} @self 
     ];
     oh=[
-      - damage{a=10;ii=true;dc=custom}
+      - damage{a=10;ii=true}
     ];
     conditions=[
       - isLiving true 
