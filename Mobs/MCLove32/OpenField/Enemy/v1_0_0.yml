@@ -48,5 +48,5 @@ MCLove32_ハロウルフLeader:
   Damage: 6
   Armor: 4
   Skills:
-  - summon{t=MCLove32_ハロウルフ;a=3to5;r=5;s=true} @self ~onSpawn
-  - rotate{y=<random.-10to10>;cd=2} @self 0.1 ~onTimer:20 ?!incombat
+  - summon{t=MCLove32_ハロウルフ;a=2to3;r=5;s=true} @self ~onSpawn
+  - addYaw{y=<random.-10to10>;cd=2} @self 0.1 ~onTimer:20 ?!incombat

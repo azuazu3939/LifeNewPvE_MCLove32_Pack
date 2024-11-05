@@ -46,4 +46,4 @@ MCLove32_ヒィツジーLeader:
   Health: 25
   Armor: 2
   Skills:
-  - summon{t=MCLove32_ヒィツジー;a=3to5;r=5;s=true} @self ~onSpawn
+  - summon{t=MCLove32_ヒィツジー;a=2to4;r=5;s=true} @self ~onSpawn
