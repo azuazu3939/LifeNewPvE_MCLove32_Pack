@@ -23,6 +23,12 @@ MCLove32_ハロウルフ:
   Modules:
     ImmunityTable: true
     ThreatTable: true
+  BossBar:
+    Enabled: true
+    Title: '<caster.name> <caster.hp>/<caster.mhp>HP'
+    Range: 12
+    Color: RED
+    Style: SOLID
   AITargetSelectors:
   - clear
   - attacker
