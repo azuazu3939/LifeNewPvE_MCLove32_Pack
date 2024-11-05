@@ -48,4 +48,4 @@ MCLove32_ハロウルフLeader:
   Armor: 4
   Skills:
   - summon{t=MCLove32_ハロウルフ;a=3to5;r=5;s=true} @self ~onSpawn
-  - setrotation{y=<random.-10to10> + <caster.l.yaw>;cd=2} @self 0.1 ~onTimer:20 ?!incombat
+  - setrotation{y=<random.-180to180>;cd=2} @self 0.1 ~onTimer:20 ?!incombat
