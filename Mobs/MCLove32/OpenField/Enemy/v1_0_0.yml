@@ -44,7 +44,7 @@ MCLove32_ハロウルフ:
         v=5;i=1;mr=16;se=false;sb=true;hs=true;hfs=0.5;mch=6;mdh=10;syo=0;sfo=0;hr=0;vr=0;md=25;HugLiquid=true} @Forward{f=5;so=<random.float.-1to1>}  ?!hasowner
     ]} @self ~onTimer:20 ?!incombat
   - cmd{c="mlgo <target.name> MCLove32_ハロウルフの牙 1 0.7"} @TTP{conditions=[ - targetwithin{d=32} true ]} ~onDeath
-  - drop{i=MCLove32_ハロウルフの牙} @self ~onKill 
+  - drop{i=MCLove32_ハロウルフの牙;n=false} @self ~onKill 
 
 MCLove32_ハロウルフLeader:
   Template: MCLove32_ハロウルフ
