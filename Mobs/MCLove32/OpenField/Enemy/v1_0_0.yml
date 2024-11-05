@@ -22,7 +22,6 @@ MCLove32_ハロウルフ:
     Scale: 1.5
     Silent: false 
   Modules:
-    ImmunityTable: true
     ThreatTable: true
   BossBar:
     Enabled: true

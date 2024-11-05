@@ -6,7 +6,6 @@ MCLove32_ヒィツジー:
   Armor: 1
   Modules:
     ThreatTable: true
-    ImmunityTable: true
   AIGoalSelectors:
   - clear
   - randomstroll
