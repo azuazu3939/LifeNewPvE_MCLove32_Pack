@@ -37,7 +37,7 @@ MCLove32_枯れた抜け殻Skills:
   Conditions:
   - incombat
   Skills:
-  - skill:MCLove32_枯れた抜け殻Skill1 @self 0.01
+  - skill:MCLove32_枯れた抜け殻Skill1 @self 0.1
   - delay 20
   - skill:MCLove32_枯れた抜け殻Skills @self 
 
