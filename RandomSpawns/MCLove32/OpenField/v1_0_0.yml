@@ -22,3 +22,25 @@ MCLove32_ハロウルフLeader_Spawn:
     mythicinradius{a=<4;r=32} ||
     mythicinradius{a=<8;r=48} 
     ) true  
+
+MCLove32_ヒィツジーLeader_Spawn:
+  Type: MCLove32_ヒィツジーLeader
+  Worlds: open_field
+  Action: ADD 
+  PositionType: LAND
+  Chance: 0.25
+  Priority: 8
+  Conditions:
+  - mobsinworld{a=<400} true 
+  - blocktype{
+    type=
+    glass_block,
+    moss_block
+    } true  
+  - height{h=60to100} true 
+  #- region{r=spawn} false  温厚mobは除外
+  - (
+    mythicinradius{a=<2;r=20} ||
+    mythicinradius{a=<4;r=32} ||
+    mythicinradius{a=<8;r=48} 
+    ) true  

@@ -1,0 +1,49 @@
+MCLove32_ヒィツジー:
+  Type: sheep
+  Display: "&fヒィツジー"
+  Faction: Sheep
+  Health: 20
+  Armor: 12
+  Modules:
+    ThreatTable: true
+    ImmunityTable: true
+  AIGoalSelectors:
+  - clear
+  - randomstroll
+  - gotoparent
+  - gotoowner
+  - fleefaction{d=12;s=2;ss=1.2;f=Wolf}
+  - fleeplayers{d=12;s=2;ss=1.2}
+  AITargetSelectors:
+  - clear
+  - attacker
+  - specificfaction{f=Wolf}
+  Options:
+    Collidable: true 
+    DigOutOfGround: true 
+    FollowRange: 12
+    Despawn: true 
+    KnockbackResistance: 0.15
+    Interactable: false 
+    MaxCombatDistance: 256
+    NoAI: false 
+    #NoGravity: true
+    PreventMobKillDrops: true 
+    PreventOtherDrops: true 
+    PreventRandomEquipment: true 
+    #PreventSunburn: true
+    PreventVanillaDamage: true
+    #Scale: -1
+    Silent: false 
+  Skills:
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=24} @self ~onEnterCombat 
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=12} @self ~onDropCombat
+  - skill:MCLove32_Enemyヘイト @self ~onEnterCombat
+  - damage{a=<caster.damage>;pi=true;ii=true} @Trigger ~onAttack
+
+MCLove32_ヒィツジーLeader:
+  Template: MCLove32_ヒィツジー
+  Health: 25
+  Armor: 15
+  Skills:
+  - summon{t=MCLove32_ヒィツジーa=3to5;r=5;s=true} @self ~onSpawn
