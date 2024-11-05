@@ -49,8 +49,4 @@ MCLove32_ハロウルフLeader:
   Armor: 4
   Skills:
   - summon{t=MCLove32_ハロウルフ;a=2to3;r=5;s=true} @self ~onSpawn
-  - skill{
-    s=[
-      - addYaw{y=<random.-10to10>;cd=5} @self 
-      - look{headOnly=false;immediately=true;force=true} @Forward{f=5}
-    ]} @self 0.05 ~onTimer:20 ?!incombat
+  - addYaw{y=<random.-10to10>;cd=5} @self 0.05 ~onTimer:20 ?!incombat
