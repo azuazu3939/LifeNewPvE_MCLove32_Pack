@@ -4,7 +4,7 @@ MCLove32_ハロウルフLeader_Spawn:
   Action: ADD 
   PositionType: LAND
   Chance: 0.25
-  Priority: 5
+  Priority: 25
   Conditions:
   - mobsinworld{a=<1000} true 
   - blocktype{
@@ -29,7 +29,7 @@ MCLove32_ヒィツジーLeader_Spawn:
   Action: ADD 
   PositionType: LAND
   Chance: 0.25
-  Priority: 8
+  Priority: 20
   Conditions:
   - mobsinworld{a=<1000} true 
   - blocktype{
@@ -51,7 +51,7 @@ MCLove32_枯れた抜け殻_Spawn:
   Action: ADD 
   PositionType: LAND
   Chance: 0.001
-  Priority: 8
+  Priority: 1
   Conditions:
   - mobsinworld{a=<1000} true 
   - height{h=40to120} true 
@@ -67,8 +67,8 @@ MCLove32_コロニアルLeader:
   Worlds: open_field
   Action: ADD 
   PositionType: LAND
-  Chance: 0.0125
-  Priority: 5
+  Chance: 0.015
+  Priority: 10
   Conditions:
   - mobsinworld{a=<1000} true 
   - height{h=60to100} true 
