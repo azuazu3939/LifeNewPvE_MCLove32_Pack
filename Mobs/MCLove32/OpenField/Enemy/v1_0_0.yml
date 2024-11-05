@@ -2,8 +2,9 @@ MCLove32_ハロウルフ:
   Type: wolf 
   Display: "&a&lハロウルフ"
   Health: 30
+  Damage: 5
   Faction: Wolf
-  Armor: 10
+  Armor: 3
   Options:
     Collidable: true 
     DigOutOfGround: true 
@@ -45,7 +46,8 @@ MCLove32_ハロウルフ:
 MCLove32_ハロウルフLeader:
   Template: MCLove32_ハロウルフ
   Health: 100
-  Armor: 12
+  Damage: 6
+  Armor: 4
   Skills:
   - summon{t=MCLove32_ハロウルフ;a=3to5;r=5;s=true} @self ~onSpawn
   - setrotation{y=<random.-10to10> + <caster.l.yaw>;cd=2} @self 0.1 ~onTimer:20 ?!incombat

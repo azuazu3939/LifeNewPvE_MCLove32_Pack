@@ -3,7 +3,7 @@ MCLove32_ヒィツジー:
   Display: "&fヒィツジー"
   Faction: Sheep
   Health: 20
-  Armor: 5
+  Armor: 1
   Modules:
     ThreatTable: true
     ImmunityTable: true
@@ -44,6 +44,6 @@ MCLove32_ヒィツジー:
 MCLove32_ヒィツジーLeader:
   Template: MCLove32_ヒィツジー
   Health: 25
-  Armor: 8
+  Armor: 2
   Skills:
   - summon{t=MCLove32_ヒィツジー;a=3to5;r=5;s=true} @self ~onSpawn
