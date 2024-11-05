@@ -36,7 +36,7 @@ MCLove32_ハロウルフ:
   - potion{t=SPEED;d=144000;l=3;p=false} @self ~onSpawn
   - projectile{
     ot=[
-      - leap{v=45} @origin
+      - leap{v=45} @origin{y=-1}
       - setFallDistance{a=0} @self 
       - look{headOnly=false;immediately=true;force=true} @Parent 
     ];
