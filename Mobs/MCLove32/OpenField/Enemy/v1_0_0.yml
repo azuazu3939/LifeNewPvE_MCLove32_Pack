@@ -11,7 +11,6 @@ MCLove32_ハロウルフ:
     FollowRange: 8
     Despawn: true 
     KnockbackResistance: 0.15
-    MaxCombatDistance: 256
     NoAI: false 
     #NoGravity: true
     PreventMobKillDrops: true 

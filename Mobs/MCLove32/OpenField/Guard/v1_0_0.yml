@@ -24,7 +24,6 @@ MCLove32_ヒィツジー:
     FollowRange: 16
     Despawn: true 
     KnockbackResistance: 0.15
-    MaxCombatDistance: 256
     NoAI: false 
     #NoGravity: true
     PreventMobKillDrops: true 
@@ -38,7 +37,6 @@ MCLove32_ヒィツジー:
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=24} @self ~onEnterCombat 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=12} @self ~onDropCombat
   - skill:MCLove32_Enemyヘイト @self ~onEnterCombat
-  - damage{a=<caster.damage>;pi=true;ii=true} @Trigger ~onAttack
 
 MCLove32_ヒィツジーLeader:
   Template: MCLove32_ヒィツジー
