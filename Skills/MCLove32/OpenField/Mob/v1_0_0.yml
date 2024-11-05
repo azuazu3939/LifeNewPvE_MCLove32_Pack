@@ -31,3 +31,40 @@ MCLove32_枯れたEffectProcess:
       - e:p{p=falling_nectar;a=2} @origin
       - e:p{p=falling_nectar;a=2;delay=20} @origin
     ];r=0.5;hp=false;p=40;i=1;oy=<skill.y>;md=200} @self
+  
+MCLove32_枯れた抜け殻Skills:
+  Cooldown: 0.5
+  Conditions:
+  - incombat
+  Skills:
+  - skill:MCLove32_枯れた抜け殻Skill1 @self 0.01
+  - delay 20
+  - skill:MCLove32_枯れた抜け殻Skills @self 
+
+MCLove32_枯れた抜け殻Skill1:
+  Skills: 
+  - jump{v=0.5} @self 
+  - delay 8
+  - leap{v=100} @T 
+  - delay 4
+  - skill:MCLove32_枯れた抜け殻SkillRepeat @self 
+
+MCLove32_枯れた抜け殻SkillRepeat: 
+  Conditions:
+  - onground orElseCast MCLove32_枯れた抜け殻SkillRepeat1
+  Skills:
+  - projectile{
+    ot=[
+      - e:p{p=crit;a=2;vs=0.025;hs=0.025} @origin
+    ];
+    oh=[
+      - damage{a=<caster.damage>;pi=true;ii=true}
+    ];
+    v=5;i=2;vr=0.75;hr=0.75;se=false;sb=true} @Ring{r=10;p=32}
+
+MCLove32_枯れた抜け殻SkillRepeat1: 
+  Conditions:
+  - incombat
+  Skills:
+  - delay 1
+  - skill:MCLove32_枯れた抜け殻SkillRepeat @self 

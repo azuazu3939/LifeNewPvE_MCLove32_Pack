@@ -63,13 +63,10 @@ MCLove32_枯れた抜け殻:
   Armor: 10
   Equipment:
   - golden_helmet HEAD
-  - stone_sword HAND 
-  - shield OFFHAND 
+  - netherite_hoe HAND 
   - netherite_chestplate CHEST 
-  - iron_leggings LEGS 
-  - diamond_boots FEET 
   KillMessages:
-  - '<target.name>は、無謀な戦いを挑んだ。'
+  - '&7<target.name>は無謀な戦いを挑んだ…'
   Options:
     Collidable: true 
     DigOutOfGround: true 
@@ -78,6 +75,8 @@ MCLove32_枯れた抜け殻:
     KnockbackResistance: 0
     NoDamageTicks: 0
     NoAI: false 
+    VisibleByDefault: true 
+    Invisible: true
     #NoGravity: true
     PreventMobKillDrops: true 
     PreventRandomEquipment: true 
@@ -94,6 +93,7 @@ MCLove32_枯れた抜け殻:
   - randomstroll
   Skills:
   - heal{a=100} @self ~onTimer:200
-  - e:p{p=sculk_soul;a=15;vs=1;hs=0.5;vd=32} @Forward{f=-2} ~onTimer:5
+  - e:p{p=sculk_soul;a=20;vs=1.25;hs=1;vd=32} @Forward{f=-2} ~onTimer:5
   - skill:MCLove32_枯れたEffect @self ~onEnterCombat
   - damage{a=100;pi=true;ii=true} @trigger ~onDamaged 0.01
+  - skill:MCLove32_枯れた抜け殻Skills @self ~onEnterCombat
