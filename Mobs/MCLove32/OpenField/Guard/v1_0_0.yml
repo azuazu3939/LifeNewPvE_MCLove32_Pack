@@ -24,7 +24,6 @@ MCLove32_ヒィツジー:
     FollowRange: 16
     Despawn: true 
     KnockbackResistance: 0.15
-    Interactable: false 
     MaxCombatDistance: 256
     NoAI: false 
     #NoGravity: true
