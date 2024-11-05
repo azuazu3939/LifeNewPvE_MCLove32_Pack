@@ -10,7 +10,7 @@ MCLove32_サイスオブデーモン:
     Unbreakable: true
   Group: 'Weapon'
   Skills:
-  - skill:MCLove32_サイスオブデーモンSkills @Trigger ~onUse
+  - skill:MCLove32_サイスオブデーモンSkills @trigger ~onAttack
 
 MCLove32_ビットブレードTypeA:
   Id: diamond_sword
