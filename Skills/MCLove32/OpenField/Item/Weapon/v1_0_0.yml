@@ -1,7 +1,5 @@
 MCLove32_サイスオブデーモンSkills:
   Cooldown: 8
-  TargetConditions:
-  - isMythicMob true
   Conditions:
   - wearing{m=MCLove32_サイスオブデーモン;s=HAND}
   Skills:
