@@ -5,7 +5,7 @@ MCLove32_サイスオブデーモン:
   Model: 1000
   Options: 
     Destroy: false
-    #CancelDamage: true
+    CancelDamage: false 
     ItemVersion: 1
     Unbreakable: true
   Group: 'Weapon'
@@ -19,7 +19,7 @@ MCLove32_ビットブレードTypeA:
   Model: 1000
   Options: 
     Destroy: false
-    #CancelDamage: true
+    CancelDamage: false 
     ItemVersion: 1
     Unbreakable: true
   Group: 'Weapon'
