@@ -12,7 +12,7 @@ Resource_Food_ブドウ_MCLove32:
     #Unbreakable: true
   Group: 'Food'
   Skills:
-  - skill:Resource_Food_ブドウ_MCLove32_Skills @self ~onConsume
+  - skill:Resource_ItemFood_ブドウ_MCLove32_Skills @self ~onConsume
 
 Resource_Food_イチゴ_MCLove32:
   Id: apple
@@ -28,7 +28,7 @@ Resource_Food_イチゴ_MCLove32:
     #Unbreakable: true
   Group: 'Food'
   Skills:
-  - skill:Resource_Food_イチゴ_MCLove32_Skills @self ~onConsume
+  - skill:Resource_ItemFood_イチゴ_MCLove32_Skills @self ~onConsume
 
 Resource_Food_キウイ_MCLove32:
   Id: apple
@@ -44,7 +44,7 @@ Resource_Food_キウイ_MCLove32:
     #Unbreakable: true
   Group: 'Food'
   Skills:
-  - skill:Resource_Food_キウイ_MCLove32_Skills @self ~onConsume
+  - skill:Resource_ItemFood_キウイ_MCLove32_Skills @self ~onConsume
 
 Resource_Food_バナナ_MCLove32:
   Id: apple
@@ -60,7 +60,7 @@ Resource_Food_バナナ_MCLove32:
     #Unbreakable: true
   Group: 'Food'
   Skills:
-  - skill:Resource_Food_バナナ_MCLove32_Skills @self ~onConsume
+  - skill:Resource_ItemFood_バナナ_MCLove32_Skills @self ~onConsume
 
 Resource_Food_フルーツポンチ_MCLove32:
   Id: golden_apple
@@ -76,4 +76,4 @@ Resource_Food_フルーツポンチ_MCLove32:
     #Unbreakable: true
   Group: 'Food'
   Skills:
-  - skill:Resource_Food_フルーツポンチ_MCLove32_Skills @self ~onConsume
+  - skill:Resource_ItemFood_フルーツポンチ_MCLove32_Skills @self ~onConsume
