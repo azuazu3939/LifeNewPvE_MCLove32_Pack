@@ -56,222 +56,222 @@ Resource_MobUtil_バニラ_MCLove32:
   - damage{a=<caster.damage>;ii=true;pi=true} @Trigger ~onAttack 
   - damage{a=<caster.damage>;ii=true;pi=true} @Trigger ~onBowHit
 
-MCLove32_ZOMBIE:
+Resource_MobUtil_ZOMBIE_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: ZOMBIE
 
-MCLove32_SKELETON:
+Resource_MobUtil_SKELETON_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: SKELETON
 
-MCLove32_BABY_DROWNED:
+Resource_MobUtil_BABY_DROWNED_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: BABY_DROWNED
 
-MCLove32_BABY_HUSK:
+Resource_MobUtil_BABY_HUSK_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: BABY_HUSK
 
-MCLove32_BABY_ZOMBIE:
+Resource_MobUtil_BABY_ZOMBIE_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: BABY_ZOMBIE
 
-MCLove32_BABY_PIGLIN:
+Resource_MobUtil_BABY_PIGLIN_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: BABY_PIGLIN
 
-MCLove32_BABY_PIGLIN_BRUTE:
+Resource_MobUtil_BABY_PIGLIN_BRUTE_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: BABY_PIGLIN_BRUTE
 
-MCLove32_BABY_PIG_ZOMBIE:
+Resource_MobUtil_BABY_PIG_ZOMBIE_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: BABY_PIG_ZOMBIE
 
-MCLove32_BABY_PIG_ZOMBIE_VILLAGER:
+Resource_MobUtil_BABY_PIG_ZOMBIE_VILLAGER_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: BABY_PIG_ZOMBIE_VILLAGER
 
-MCLove32_BABY_ZOGLIN:
+Resource_MobUtil_BABY_ZOGLIN_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: BABY_ZOGLIN
 
-MCLove32_BABY_ZOMBIE_VILLAGER:
+Resource_MobUtil_BABY_ZOMBIE_VILLAGER_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: BABY_ZOMBIE_VILLAGER
 
-MCLove32_BLAZE:
+Resource_MobUtil_BLAZE_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: BLAZE
 
-MCLove32_BOGGED:
+Resource_MobUtil_BOGGED_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: BOGGED
 
-MCLove32_BREEZE:
+Resource_MobUtil_BREEZE_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: BREEZE
 
-MCLove32_CAVE_SPIDER:
+Resource_MobUtil_CAVE_SPIDER_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: CAVE_SPIDER
 
-MCLove32_CHICKEN:
+Resource_MobUtil_CHICKEN_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: CHICKEN
 
-MCLove32_COW:
+Resource_MobUtil_COW_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: COW
 
-MCLove32_CREEPER:
+Resource_MobUtil_CREEPER_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: CREEPER
 
-MCLove32_DOLPHIN:
+Resource_MobUtil_DOLPHIN_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: DOLPHIN
 
-MCLove32_DROWNED:
+Resource_MobUtil_DROWNED_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: DROWNED
 
-MCLove32_ELDER_GUARDIAN:
+Resource_MobUtil_ELDER_GUARDIAN_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: ELDER_GUARDIAN
 
-MCLove32_ENDER_DRAGON:
+Resource_MobUtil_ENDER_DRAGON_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: ENDER_DRAGON
 
-MCLove32_ENDERMAN:
+Resource_MobUtil_ENDERMAN_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: ENDERMAN
 
-MCLove32_ENDERMITE:
+Resource_MobUtil_ENDERMITE_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: ENDERMITE
 
-MCLove32_EVOKER:
+Resource_MobUtil_EVOKER_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: EVOKER
 
-MCLove32_GHAST:
+Resource_MobUtil_GHAST_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: GHAST
 
-MCLove32_GUARDIAN:
+Resource_MobUtil_GUARDIAN_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: GUARDIAN
 
-MCLove32_HOGLIN:
+Resource_MobUtil_HOGLIN_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: HOGLIN
 
-MCLove32_HORSE:
+Resource_MobUtil_HORSE_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: HORSE
 
-MCLove32_HUSK:
+Resource_MobUtil_HUSK_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: HUSK
 
-MCLove32_IRON_GOLEM:
+Resource_MobUtil_IRON_GOLEM_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: IRON_GOLEM
 
-MCLove32_MAGMA_CUBE:
+Resource_MobUtil_MAGMA_CUBE_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: MAGMA_CUBE
 
-MCLove32_MUSHROOM_COW:
+Resource_MobUtil_MUSHROOM_COW_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: MUSHROOM_COW
 
-MCLove32_PHANTOM:
+Resource_MobUtil_PHANTOM_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: PHANTOM
 
-MCLove32_PIG:
+Resource_MobUtil_PIG_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: PIG
 
-MCLove32_PIGLIN:
+Resource_MobUtil_PIGLIN_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: PIGLIN
 
-MCLove32_PIGLIN_BRUTE:
+Resource_MobUtil_PIGLIN_BRUTE_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: PIGLIN_BRUTE
 
-MCLove32_ZOMBIFIED_PIGLIN_VILLAGER:
+Resource_MobUtil_ZOMBIFIED_PIGLIN_VILLAGER_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: ZOMBIFIED_PIGLIN_VILLAGER
 
-MCLove32_PILLAGER:
+Resource_MobUtil_PILLAGER_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: PILLAGER
 
-MCLove32_RABBIT:
+Resource_MobUtil_RABBIT_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: RABBIT
 
-MCLove32_RAVAGER:
+Resource_MobUtil_RAVAGER_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: RAVAGER
 
-MCLove32_SHEEP:
+Resource_MobUtil_SHEEP_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: SHEEP
 
-MCLove32_SILVERFISH:
+Resource_MobUtil_SILVERFISH_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: SILVERFISH
 
-MCLove32_SLIME:
+Resource_MobUtil_SLIME_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: SLIME
 
-MCLove32_SPIDER:
+Resource_MobUtil_SPIDER_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: SPIDER
 
-MCLove32_STRAY:
+Resource_MobUtil_STRAY_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: STRAY
 
-MCLove32_VEX:
+Resource_MobUtil_VEX_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: VEX
 
-MCLove32_VINDICATOR:
+Resource_MobUtil_VINDICATOR_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: VINDICATOR
 
-MCLove32_WARDEN:
+Resource_MobUtil_WARDEN_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: WARDEN
 
-MCLove32_WITCH:
+Resource_MobUtil_WITCH_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: WITCH
 
-MCLove32_WITHER:
+Resource_MobUtil_WITHER_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: WITHER
 
-MCLove32_WITHER_SKELETON:
+Resource_MobUtil_WITHER_SKELETON_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: WITHER_SKELETON
 
-MCLove32_WOLF:
+Resource_MobUtil_WOLF_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: WOLF
 
-MCLove32_ZOGLIN:
+Resource_MobUtil_ZOGLIN_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: ZOGLIN
 
-MCLove32_ZOMBIE_VILLAGER:
+Resource_MobUtil_ZOMBIE_VILLAGER_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
   Type: ZOMBIE_VILLAGER
