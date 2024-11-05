@@ -97,6 +97,7 @@ MCLove32_枯れた抜け殻:
   - skill:MCLove32_枯れたEffect @self ~onEnterCombat
   - damage{a=100;pi=true;ii=true} @trigger ~onDamaged 0.01
   - skill:MCLove32_枯れた抜け殻Skills @self ~onEnterCombat
+  - skill:MCLove32_Enemyヘイト @self ~onEnterCombat
 
 MCLove32_コロニアル:
   Type: zombie 
@@ -119,8 +120,6 @@ MCLove32_コロニアル:
     KnockbackResistance: 0
     NoDamageTicks: 0
     NoAI: false 
-    VisibleByDefault: true 
-    Invisible: true
     #NoGravity: true
     PreventMobKillDrops: true 
     PreventRandomEquipment: true 
