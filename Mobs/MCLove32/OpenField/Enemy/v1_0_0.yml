@@ -30,8 +30,6 @@ MCLove32_ハロウルフ:
   - attacker
   - specificfaction{f=Sheep}
   Skills:
-  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=20} @self ~onEnterCombat 
-  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=10} @self ~onDropCombat
   - skill:MCLove32_Enemyヘイト @self ~onEnterCombat
   - damage{a=<caster.damage>;pi=true;ii=true} @Trigger ~onAttack
   - potion{t=SPEED;d=144000;l=3;p=false} @self ~onSpawn
