@@ -80,7 +80,7 @@ MCLove32_枯れた抜け殻:
     #NoGravity: true
     PreventMobKillDrops: true 
     PreventRandomEquipment: true 
-    #PreventSunburn: true
+    PreventSunburn: true
     Scale: 2
     #Silent: false 
   Modules:
