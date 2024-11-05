@@ -29,7 +29,7 @@ MCLove32_ハロウルフ:
   - specificfaction{f=Sheep}
   Skills:
   - skill:MCLove32_Enemyヘイト @self ~onEnterCombat
-  - damage{a=<caster.damage>;pi=true;ii=true} @Trigger ~onAttack
+  #- damage{a=<caster.damage>;pi=true;ii=true} @Trigger ~onAttack
   - potion{t=SPEED;d=144000;l=1;p=false} @self ~onSpawn
   - skill{
     s=[
