@@ -9,7 +9,7 @@ MCLove32_ハロウルフLeader_Spawn:
   - mobsinworld{a=<400} true 
   - blocktype{
     type=
-    glass_block,
+    grass_block,
     moss_block,
     snow_block,
     snow,
@@ -34,7 +34,7 @@ MCLove32_ヒィツジーLeader_Spawn:
   - mobsinworld{a=<400} true 
   - blocktype{
     type=
-    glass_block,
+    grass_block,
     moss_block
     } true  
   - height{h=60to100} true 
