@@ -20,7 +20,7 @@ MCLove32_ハロウルフ:
     PreventRandomEquipment: true 
     #PreventSunburn: true
     PreventVanillaDamage: true
-    Scale: 1.25
+    Scale: 1.5
     Silent: false 
   Modules:
     ImmunityTable: true
@@ -32,6 +32,7 @@ MCLove32_ハロウルフ:
   Skills:
   - skill:MCLove32_Enemyヘイト @self ~onEnterCombat
   - damage{a=<caster.damage>;pi=true;ii=true} @Trigger ~onAttack
+  - potion{t=SPEED;d=144000;l=0;p=false} @self ~onSpawn
   - projectile{
     ot=[
       - leap{v=45} @origin{y=-1}
