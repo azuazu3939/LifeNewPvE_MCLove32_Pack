@@ -1,5 +1,5 @@
 #@Hand、OffHand使用可能アイテムスキル
-MCLove32_ゾンビ化ビーフSkills:
+OpneField_Armor_ゾンビ化ビーフ_MCLove32_Skills:
   Cooldown: 10
   Skills:
   - heal{a=2;repeat=9;repeatI=20} @self

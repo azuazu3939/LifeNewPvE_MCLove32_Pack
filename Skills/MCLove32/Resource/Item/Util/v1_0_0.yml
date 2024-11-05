@@ -1,57 +1,57 @@
-MCLove32_リソースF研磨剤ドロップ判定Skills:
+Resource_ItemUtil_リソースTypeF研磨剤ドロップ判定_MCLove32_Skills:
   Skills:
-  - skill:MCLove32_リソース研磨剤ドロップ{chance=0.002} @self 
+  - skill:Resource_ItemUtil_リソース研磨剤ドロップ_MCLove32_Skills{chance=0.002} @self 
 
-MCLove32_リソースE研磨剤ドロップ判定Skills:
+Resource_ItemUtil_リソースTypeE研磨剤ドロップ判定_MCLove32_Skills:
   Skills:
-  - skill:MCLove32_リソース研磨剤ドロップ{chance=0.0025} @self 
+  - skill:Resource_ItemUtil_リソース研磨剤ドロップ_MCLove32_Skills{chance=0.0025} @self 
 
-MCLove32_リソースD研磨剤ドロップ判定Skills:
+Resource_ItemUtil_リソースTypeD研磨剤ドロップ判定_MCLove32_Skills:
   Skills:
-  - skill:MCLove32_リソース研磨剤ドロップ{chance=0.003} @self 
+  - skill:Resource_ItemUtil_リソース研磨剤ドロップ_MCLove32_Skills{chance=0.003} @self 
 
-MCLove32_リソースC研磨剤ドロップ判定Skills:
+Resource_ItemUtil_リソースTypeC研磨剤ドロップ判定_MCLove32_Skills:
   Skills:
-  - skill:MCLove32_リソース研磨剤ドロップ{chance=0.0035} @self 
+  - skill:Resource_ItemUtil_リソース研磨剤ドロップ_MCLove32_Skills{chance=0.0035} @self 
 
-MCLove32_リソースB研磨剤ドロップ判定Skills:
+Resource_ItemUtil_リソースTypeB研磨剤ドロップ判定_MCLove32_Skills:
   Skills:
-  - skill:MCLove32_リソース研磨剤ドロップ{chance=0.04} @self 
+  - skill:Resource_ItemUtil_リソース研磨剤ドロップ_MCLove32_Skills{chance=0.04} @self 
 
-MCLove32_リソースA研磨剤ドロップ判定Skills:
+Resource_ItemUtil_リソースTypeA研磨剤ドロップ判定_MCLove32_Skills:
   Skills:
-  - skill:MCLove32_リソース研磨剤ドロップ{chance=0.0045} @self 
+  - skill:Resource_ItemUtil_リソース研磨剤ドロップ_MCLove32_Skills{chance=0.0045} @self 
 
-MCLove32_リソースS研磨剤ドロップ判定Skills:
+Resource_ItemUtil_リソースTypeS研磨剤ドロップ判定_MCLove32_Skills:
   Skills:
-  - skill:MCLove32_リソース研磨剤ドロップ{chance=0.005} @self 
+  - skill:Resource_ItemUtil_リソース研磨剤ドロップ_MCLove32_Skills{chance=0.005} @self 
 
-MCLove32_リソーススポーン_ルートチェスト_果物: 
+Resource_ItemUtil_リソース研磨剤ドロップ_MCLove32_Skills:  #こいつはBlockBreakEventに書かない。
   Skills:
-  - summon{t=MCLove32_ルートチェスト_果物;a=1;r=2;s=true;pitch=0} @self 
+  - cmd{c="mlg <caster.name> Resource_Material_鉱石研磨剤:_MCLove32 1 <skill.chance>"} @self 
+
+Resource_ItemUtil_鉱石ユニオンドロップ_MCLove32_Skills: 
+  Skills:
+  - cmd{c="mlg <caster.name> Resource_Material_鉱石ユニオン_MCLove32 1 0.0002"} @self 
+
+Resource_ItemUtil_鉱石パピュライトドロップ_MCLove32_Skills: 
+  Skills:
+  - cmd{c="mlg <caster.name> Resource_Material_鉱石パピュライト_MCLove32 1 0.0015"} @self 
+
+Resource_ItemUtil_鉱石紅蓮ドロップ_MCLove32_Skills: 
+  Skills:
+  - cmd{c="mlg <caster.name> Resource_Material_鉱石紅蓮_MCLove32 1 0.004"} @self 
+
+Resource_ItemUtil_鉱石紫焔ドロップ_MCLove32_Skills: 
+  Skills:
+  - cmd{c="mlg <caster.name> Resource_Material_鉱石紫焔_MCLove32 1 0025"} @self 
+
+Resource_ItemUtil_リソースルートチェスト鉱石スポーン_MCLove32_Skills: 
+  Skills:
+  - summon{t=Resource_MobUtil_ルートチェスト鉱石_MCLove32;a=1;r=2;s=true;pitch=0} @self 
   - sound{s=entity.firework_rocket.blast;p=1;v=0.5;audience=caster} @self
 
-MCLove32_リソース研磨剤ドロップ:  #こいつはBlockBreakEventに書かない。
+Resource_ItemUtil_リソースルートチェスト果物スポーン_MCLove32_Skills:
   Skills:
-  - cmd{c="mlg <caster.name> 研磨剤 1 <skill.chance>"} @self 
-
-MCLove32_リソース鉱石ユニオンドロップ判定Skills: 
-  Skills:
-  - cmd{c="mlg <caster.name> MCLove32_鉱石ユニオン 1 0.0002"} @self 
-
-MCLove32_リソース鉱石パピュライトドロップ判定Skills: 
-  Skills:
-  - cmd{c="mlg <caster.name> MCLove32_鉱石パピュライト 1 0.0015"} @self 
-
-MCLove32_リソース鉱石紅蓮ドロップ判定Skills: 
-  Skills:
-  - cmd{c="mlg <caster.name> MCLove32_鉱石紅蓮 1 0.004"} @self 
-
-MCLove32_リソース鉱石紫焔ドロップ判定Skills: 
-  Skills:
-  - cmd{c="mlg <caster.name> MCLove32_鉱石紫焔 1 0025"} @self 
-
-MCLove32_リソーススポーン_ルートチェスト_鉱石: 
-  Skills:
-  - summon{t=MCLove32_ルートチェスト_鉱石;a=1;r=2;s=true;pitch=0} @self 
+  - summon{t=Resource_MobUtil_ルートチェスト果物_MCLove32;a=1;r=2;s=true;pitch=0} @self 
   - sound{s=entity.firework_rocket.blast;p=1;v=0.5;audience=caster} @self

@@ -1,4 +1,4 @@
-MCLove32_ゾンビ化ビーフ:
+OpneField_Armor_ゾンビ化ビーフ_MCLove32:
   Id: rotten_flesh
   Display: "&7&lゾンビ化ビーフ"
   Lore:
@@ -12,4 +12,4 @@ MCLove32_ゾンビ化ビーフ:
     #Unbreakable: true
   Group: 'Food'
   Skills:
-  - skill:MCLove32_ゾンビ化ビーフSkills @self ~onConsume
+  - skill:OpneField_Armor_ゾンビ化ビーフ_MCLove32_Skills @self ~onConsume

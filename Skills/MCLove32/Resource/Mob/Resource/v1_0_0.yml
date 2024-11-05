@@ -1,103 +1,103 @@
-MCLove32_ルートチェスト_果物Skills:
+Resource_MobUtil_ルートチェスト果物_MCLove32_Skills:
   TargetConditions:
   - isparent true 
   Skills:
   - sudoskill{
     s=[
-      - skill:MCLove32_リソース果物ドロップ判定Skills @self 
+      - skill:Resource_MobUtil_ルートチェスト果物ドロップ判定_MCLove32_Skills @self 
     ]}
   - remove @self 
 
-MCLove32_リソース果物ドロップ判定Skills:
+Resource_MobUtil_ルートチェスト果物ドロップ判定_MCLove32_Skills:
   Skills:
   - setvar{var=skill.count;val="0";t=INTEGER} @self 
-  - skill:MCLove32_リソース果物ドロップ判定Process{repeat=5;repeatI=0} @self 
+  - skill:Resource_MobUtil_ルートチェスト果物ドロップ判定Process_MCLove32_Skills{repeat=5;repeatI=0} @self 
 
-MCLove32_リソース果物ドロップ判定Process:
+Resource_MobUtil_ルートチェスト果物ドロップ判定Process_MCLove32_Skills:
   Skills:
   - randomskill{
     s=
-    MCLove32_リソースブドウドロップ 9,
-    MCLove32_リソースキウイドロップ 9,
-    MCLove32_リソースイチゴドロップ 9,
-    MCLove32_リソースバナナドロップ 9,
-    MCLove32_リソース空ドロップ 14
+    Resource_MobUtil_ルートチェスト果物ブドウドロップ_MCLove32 9,
+    Resource_MobUtil_ルートチェスト果物キウイドロップ_MCLove32 9,
+    Resource_MobUtil_ルートチェスト果物イチゴドロップ_MCLove32 9,
+    Resource_MobUtil_ルートチェスト果物バナナドロップ_MCLove32 9,
+    Resource_MobUtil_ルートチェスト果物空ドロップ_MCLove32 14
     } @self 
 
-MCLove32_リソースブドウドロップ:
+Resource_MobUtil_ルートチェスト果物ブドウドロップ_MCLove32:
   Skills:
   - cmd{c="mlg <caster.name> MCLove32_ブドウ 1 1"} @self 
 
-MCLove32_リソースキウイドロップ:
+Resource_MobUtil_ルートチェスト果物キウイドロップ_MCLove32:
   Skills:
   - cmd{c="mlg <caster.name> MCLove32_キウイ 1 1"} @self 
 
-MCLove32_リソースイチゴドロップ:
+Resource_MobUtil_ルートチェスト果物イチゴドロップ_MCLove32:
   Skills:
   - cmd{c="mlg <caster.name> MCLove32_イチゴ 1 1"} @self 
 
-MCLove32_リソースバナナドロップ:
+Resource_MobUtil_ルートチェスト果物バナナドロップ_MCLove32:
   Skills:
   - cmd{c="mlg <caster.name> MCLove32_バナナ 1 1"} @self 
 
-MCLove32_リソース空ドロップ:
+Resource_MobUtil_ルートチェスト果物空ドロップ_MCLove32:
   Skills:
   - varmath{var=skill.count;equation="<skill.var.count|0> + 1"} @self
 
-MCLove32_リソース果物最低ドロップ: 
+Resource_MobUtil_ルートチェスト果物ドロップ最低果物_MCLove32_Skills:
   Conditions:
   - varrange{var=skill.count;val=5}
   Skills:
   - randomskill{
     s=
-    MCLove32_リソースブドウドロップ,
-    MCLove32_リソースキウイドロップ,
-    MCLove32_リソースイチゴドロップ,
-    MCLove32_リソースバナナドロップ
+    Resource_MobUtil_ルートチェスト果物ブドウドロップ_MCLove32,
+    Resource_MobUtil_ルートチェスト果物キウイドロップ_MCLove32,
+    Resource_MobUtil_ルートチェスト果物イチゴドロップ_MCLove32,
+    Resource_MobUtil_ルートチェスト果物バナナドロップ_MCLove32
     } @self 
 
-MCLove32_ルートチェスト_鉱石Skills:
+Resource_MobUtil_ルートチェスト鉱石_MCLove32_Skills:
   TargetConditions:
   - isparent true 
   Skills:
   - sudoskill{
     s=[
-      - skill:MCLove32_リソース鉱石ドロップ判定Skills @self 
+      - skill:Resource_MobUtil_ルートチェスト鉱石ドロップ判定_MCLove32_Skills @self 
     ]}
   - remove @self 
 
-MCLove32_リソース鉱石ドロップ判定Skills:
+Resource_MobUtil_ルートチェスト鉱石ドロップ判定_MCLove32_Skills:
   Skills:
   - setvar{var=skill.count;val="0";t=INTEGER} @self 
-  - skill:MCLove32_リソース果物ドロップ判定Process{repeat=3;repeatI=0} @self 
+  - skill:Resource_MobUtil_ルートチェスト鉱石ドロップ判定Process_MCLove32_Skills{repeat=3;repeatI=0} @self 
 
-MCLove32_リソース鉱石ドロップ判定Process:
+Resource_MobUtil_ルートチェスト鉱石ドロップ判定Process_MCLove32_Skills:
   Skills:
-  - skill:MCLove32_リソース鉱石ユニオンドロップ{chance=0.05} @self 
-  - skill:MCLove32_リソース鉱石パピュライトドロップ{chance=0.5} @self 
-  - skill:MCLove32_リソース鉱石紅蓮ドロップ{chance=0.7} @self 
-  - skill:MCLove32_リソース鉱石紫焔ドロップ{chance=0.4} @self 
+  - skill:Resource_MobUtil_ルートチェスト鉱石ユニオンドロップ_MCLove32{chance=0.05} @self 
+  - skill:Resource_MobUtil_ルートチェスト鉱石パピュライトドロップ_MCLove32{chance=0.5} @self 
+  - skill:Resource_MobUtil_ルートチェスト鉱石紅蓮ドロップ_MCLove32{chance=0.7} @self 
+  - skill:Resource_MobUtil_ルートチェスト鉱石紫焔ドロップ_MCLove32{chance=0.4} @self 
 
-MCLove32_リソース鉱石ユニオンドロップ:
+Resource_MobUtil_ルートチェスト鉱石ユニオンドロップ_MCLove32:
   Conditions:
   - height{h=<200} true
   Skills:
-  - cmd{c="mlg <caster.name> MCLove32_鉱石ユニオン <random.1to2> <skill.chance>"} @self 
+  - cmd{c="mlg <caster.name> Resource_Material_鉱石ユニオン_MCLove32 <random.1to2> <skill.chance>"} @self 
 
-MCLove32_リソース鉱石パピュライトドロップ:
+Resource_MobUtil_ルートチェスト鉱石パピュライトドロップ_MCLove32:
   Conditions:
   - height{h=<64} true
   Skills:
-  - cmd{c="mlg <caster.name> MCLove32_鉱石パピュライト <random.1to5> <skill.chance>"} @self 
+  - cmd{c="mlg <caster.name> Resource_Material_鉱石パピュライト_MCLove32 <random.1to5> <skill.chance>"} @self 
 
-MCLove32_リソース鉱石紅蓮ドロップ:
+Resource_MobUtil_ルートチェスト鉱石紅蓮ドロップ_MCLove32:
   Conditions:
   - height{h=<16} true
   Skills:
-  - cmd{c="mlg <caster.name> MCLove32_鉱石紅蓮 <random.1to4> <skill.chance>"} @self 
+  - cmd{c="mlg <caster.name> Resource_Material_鉱石紅蓮_MCLove32 <random.1to4> <skill.chance>"} @self 
 
-MCLove32_リソース鉱石紫焔ドロップ:
+Resource_MobUtil_ルートチェスト鉱石紫焔ドロップ_MCLove32:
   Conditions:
   - height{h=<-16} true
   Skills:
-  - cmd{c="mlg <caster.name> MCLove32_鉱石紫焔 <random.1to3> <skill.chance>"} @self 
+  - cmd{c="mlg <caster.name> Resource_Material_鉱石紫焔_MCLove32 <random.1to3> <skill.chance>"} @self 

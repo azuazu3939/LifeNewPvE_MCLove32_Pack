@@ -3,7 +3,7 @@
 # ダメージ軽減などの軽減系は上限値を変えないほうが、ゲームの幅が生まれる。
 # 水中呼吸は、水中戦のストレスを減らすためにもLv5ほどまで上げてもいいかもしれない。
 
-MCLove32_強化ダイヤモンドH:
+Resource_Armor_強化ダイヤモンドH_MCLove32:
   Id: diamond_helmet
   Display: "&c強化ダイヤモンドヘルメット"
   Lore: []
@@ -15,7 +15,7 @@ MCLove32_強化ダイヤモンドH:
     Unbreakable: true
   Group: 'Armor'
 
-MCLove32_強化ダイヤモンドC:
+Resource_Armor_強化ダイヤモンドC_MCLove32:
   Id: diamond_chestplate
   Display: "&c強化ダイヤモンドチェストプレート"
   Lore: []
@@ -27,7 +27,7 @@ MCLove32_強化ダイヤモンドC:
     Unbreakable: true
   Group: 'Armor'
 
-MCLove32_強化ダイヤモンドL:
+Resource_Armor_強化ダイヤモンドL_MCLove32:
   Id: diamond_leggings
   Display: "&c強化ダイヤモンドレギンス"
   Lore: []
@@ -39,7 +39,7 @@ MCLove32_強化ダイヤモンドL:
     Unbreakable: true
   Group: 'Armor'
 
-MCLove32_強化ダイヤモンドB:
+Resource_Armor_強化ダイヤモンドB_MCLove32:
   Id: diamond_boots
   Display: "&c強化ダイヤモンドブーツ"
   Lore: []
@@ -51,7 +51,7 @@ MCLove32_強化ダイヤモンドB:
     Unbreakable: true
   Group: 'Armor'
 
-MCLove32_黒曜石H:
+Resource_Armor_黒曜石H_MCLove32:
   Id: leather_helmet
   Display: "&5黒曜石ヘルメット"
   Lore: []
@@ -68,7 +68,7 @@ MCLove32_黒曜石H:
       ArmorToughness: 3 ADD
   Group: 'Armor'
 
-MCLove32_黒曜石C:
+Resource_Armor_黒曜石C_MCLove32:
   Id: leather_chestplate
   Display: "&5黒曜石チェストプレート"
   Lore: []
@@ -85,7 +85,7 @@ MCLove32_黒曜石C:
       ArmorToughness: 3 ADD
   Group: 'Armor'
 
-MCLove32_黒曜石L:
+Resource_Armor_黒曜石L_MCLove32:
   Id: leather_leggings
   Display: "&5黒曜石レギンス"
   Lore: []
@@ -102,7 +102,7 @@ MCLove32_黒曜石L:
       ArmorToughness: 3 ADD
   Group: 'Armor'
 
-MCLove32_黒曜石B:
+Resource_Armor_黒曜石B_MCLove32:
   Id: leather_boots
   Display: "&5黒曜石ブーツ"
   Lore: []

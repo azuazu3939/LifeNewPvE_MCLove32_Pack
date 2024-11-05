@@ -1,4 +1,4 @@
-MCLove32_ヒィツジー:
+OpenField_Guard_ヒィツジー_MCLove32:
   Type: sheep
   Display: "&fヒィツジー"
   Faction: Sheep
@@ -35,11 +35,11 @@ MCLove32_ヒィツジー:
   Skills:
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=24} @self ~onEnterCombat 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=12} @self ~onDropCombat
-  - skill:MCLove32_Enemyヘイト @self ~onEnterCombat
+  - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
 
-MCLove32_ヒィツジーLeader:
-  Template: MCLove32_ヒィツジー
+OpenField_Guard_ヒィツジー_MCLove32_Leader:
+  Template: OpenField_Guard_ヒィツジー_MCLove32
   Health: 25
   Armor: 2
   Skills:
-  - summon{t=MCLove32_ヒィツジー;a=2to4;r=5;s=true} @self ~onSpawn
+  - summon{t=OpenField_Guard_ヒィツジー_MCLove32;a=2to4;r=5;s=true} @self ~onSpawn

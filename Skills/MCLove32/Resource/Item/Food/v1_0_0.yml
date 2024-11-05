@@ -1,7 +1,7 @@
 #ドロップ判定自体はUtilへ
 
 #@Hand、OffHand使用可能アイテムスキル
-MCLove32_ブドウSkills:
+Resource_ItemFood_ブドウ_MCLove32_Skills:
   Cooldown: 1
   Skills:
   - feed{a=-2;s=1.6;o=true} @self
@@ -10,7 +10,7 @@ MCLove32_ブドウSkills:
   - heal{a=5} @self
 
 #@Hand、OffHand使用可能アイテムスキル
-MCLove32_イチゴSkills:
+Resource_ItemFood_イチゴ_MCLove32_Skills:
   Cooldown: 1
   Skills:
   - feed{a=-1;s=-0.4;o=true} @self
@@ -19,7 +19,7 @@ MCLove32_イチゴSkills:
   - heal{a=2} @self
 
 #@Hand、OffHand使用可能アイテムスキル
-MCLove32_キウイSkills:
+Resource_ItemFood_キウイ_MCLove32_Skills:
   Cooldown: 1
   Skills:
   - feed{a=1;s=0.6;o=true} @self
@@ -28,7 +28,7 @@ MCLove32_キウイSkills:
   - heal{a=3} @self
 
 #@Hand、OffHand使用可能アイテムスキル
-MCLove32_バナナSkills:
+Resource_ItemFood_バナナ_MCLove32_Skills:
   Cooldown: 1
   Skills:
   - feed{a=0;s=-0.4;o=true} @self
@@ -37,7 +37,7 @@ MCLove32_バナナSkills:
   - heal{a=4} @self
 
 #@Hand、OffHand使用可能アイテムスキル
-MCLove32_フルーツポンチSkills:
+Resource_ItemFood_フルーツポンチ_MCLove32_Skills:
   Cooldown: 1
   Skills:
   - feed{a=20;s=20;o=true} @self

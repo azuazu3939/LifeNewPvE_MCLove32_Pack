@@ -1,4 +1,4 @@
-MCLove32_ルートチェスト:
+Resource_MobUtil_ルートチェスト_MCLove32:
   Type: villager 
   Display: "&6&lルートチェスト"
   Faction: LootChest
@@ -24,20 +24,20 @@ MCLove32_ルートチェスト:
   Skills:
   - remove{delay=1200} @self ~onSpawn
 
-MCLove32_ルートチェスト_果物:
-  Template: MCLove32_ルートチェスト
+Resource_MobUtil_ルートチェスト果物_MCLove32:
+  Template: Resource_MobUtil_ルートチェスト_MCLove32
   Display: "&6&l果物ルートチェスト"
   Skills:
-  - skill:MCLove32_ルートチェスト_果物Skills @Trigger ~onInteract
+  - skill:Resource_MobUtil_ルートチェスト果物_MCLove32_Skills @Trigger ~onInteract
 
-MCLove32_ルートチェスト_鉱石:
-  Template: MCLove32_ルートチェスト
+Resource_MobUtil_ルートチェスト鉱石_MCLove32:
+  Template: Resource_MobUtil_ルートチェスト_MCLove32
   Display: "&6&l鉱石ルートチェスト"
   Skills:
-  - skill:MCLove32_ルートチェスト_鉱石Skills @Trigger ~onInteract
+  - skill:Resource_MobUtil_ルートチェスト鉱石_MCLove32_Skills @Trigger ~onInteract
 
 
-MCLove32_Vanilla:
+Resource_MobUtil_バニラ_MCLove32:
   Type: Zombie
   Display: ""
   Faction: Resource
@@ -57,225 +57,225 @@ MCLove32_Vanilla:
   - damage{a=<caster.damage>;ii=true;pi=true} @Trigger ~onBowHit
 
 MCLove32_ZOMBIE:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: ZOMBIE
 
 MCLove32_SKELETON:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: SKELETON
 
 MCLove32_BABY_DROWNED:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: BABY_DROWNED
 
 MCLove32_BABY_HUSK:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: BABY_HUSK
 
 MCLove32_BABY_ZOMBIE:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: BABY_ZOMBIE
 
 MCLove32_BABY_PIGLIN:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: BABY_PIGLIN
 
 MCLove32_BABY_PIGLIN_BRUTE:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: BABY_PIGLIN_BRUTE
 
 MCLove32_BABY_PIG_ZOMBIE:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: BABY_PIG_ZOMBIE
 
 MCLove32_BABY_PIG_ZOMBIE_VILLAGER:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: BABY_PIG_ZOMBIE_VILLAGER
 
 MCLove32_BABY_ZOGLIN:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: BABY_ZOGLIN
 
 MCLove32_BABY_ZOMBIE_VILLAGER:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: BABY_ZOMBIE_VILLAGER
 
 MCLove32_BLAZE:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: BLAZE
 
 MCLove32_BOGGED:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: BOGGED
 
 MCLove32_BREEZE:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: BREEZE
 
 MCLove32_CAVE_SPIDER:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: CAVE_SPIDER
 
 MCLove32_CHICKEN:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: CHICKEN
 
 MCLove32_COW:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: COW
 
 MCLove32_CREEPER:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: CREEPER
 
 MCLove32_DOLPHIN:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: DOLPHIN
 
 MCLove32_DROWNED:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: DROWNED
 
 MCLove32_ELDER_GUARDIAN:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: ELDER_GUARDIAN
 
 MCLove32_ENDER_DRAGON:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: ENDER_DRAGON
 
 MCLove32_ENDERMAN:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: ENDERMAN
 
 MCLove32_ENDERMITE:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: ENDERMITE
 
 MCLove32_EVOKER:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: EVOKER
 
 MCLove32_GHAST:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: GHAST
 
 MCLove32_GUARDIAN:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: GUARDIAN
 
 MCLove32_HOGLIN:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: HOGLIN
 
 MCLove32_HORSE:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: HORSE
 
 MCLove32_HUSK:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: HUSK
 
 MCLove32_IRON_GOLEM:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: IRON_GOLEM
 
 MCLove32_MAGMA_CUBE:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: MAGMA_CUBE
 
 MCLove32_MUSHROOM_COW:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: MUSHROOM_COW
 
 MCLove32_PHANTOM:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: PHANTOM
 
 MCLove32_PIG:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: PIG
 
 MCLove32_PIGLIN:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: PIGLIN
 
 MCLove32_PIGLIN_BRUTE:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: PIGLIN_BRUTE
 
 MCLove32_ZOMBIFIED_PIGLIN:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: ZOMBIFIED_PIGLIN
 
 MCLove32_ZOMBIFIED_PIGLIN_VILLAGER:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: ZOMBIFIED_PIGLIN_VILLAGER
 
 MCLove32_PILLAGER:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: PILLAGER
 
 MCLove32_RABBIT:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: RABBIT
 
 MCLove32_RAVAGER:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: RAVAGER
 
 MCLove32_SHEEP:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: SHEEP
 
 MCLove32_SILVERFISH:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: SILVERFISH
 
 MCLove32_SLIME:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: SLIME
 
 MCLove32_SPIDER:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: SPIDER
 
 MCLove32_STRAY:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: STRAY
 
 MCLove32_VEX:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: VEX
 
 MCLove32_VINDICATOR:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: VINDICATOR
 
 MCLove32_WARDEN:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: WARDEN
 
 MCLove32_WITCH:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: WITCH
 
 MCLove32_WITHER:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: WITHER
 
 MCLove32_WITHER_SKELETON:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: WITHER_SKELETON
 
 MCLove32_WOLF:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: WOLF
 
 MCLove32_ZOGLIN:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: ZOGLIN
 
 MCLove32_ZOMBIE_VILLAGER:
-  Template: MCLove32_Vanilla
+  Template: Resource_MobUtil_バニラ_MCLove32
   Type: ZOMBIE_VILLAGER

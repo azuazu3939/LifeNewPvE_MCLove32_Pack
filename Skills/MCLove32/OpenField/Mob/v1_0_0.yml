@@ -1,4 +1,4 @@
-MCLove32_Enemyヘイト:
+Generic_Enemy_ヘイト_MCLove32:
   Cooldown: 1
   Conditions:
   - incombat
@@ -12,19 +12,19 @@ MCLove32_Enemyヘイト:
       - setTarget @Targeted{conditions=[ - incombat false ]}
     ];target=@T} @Parent
   - delay 100
-  - skill:MCLove32_Enemyヘイト @self
+  - skill:Generic_Enemy_ヘイト_MCLove32 @self
 
-MCLove32_枯れたEffect:
+OpenField_Enemy_枯れた抜け殻_MCLove32_Effect:
   Conditions:
   - incombat
   Skills:
-  - skill:MCLove32_枯れたEffectProcess{y=0}
-  - skill:MCLove32_枯れたEffectProcess{y=-1}
-  - skill:MCLove32_枯れたEffectProcess{y=-2}
+  - skill:OpenField_Enemy_枯れた抜け殻_MCLove32_Process{y=0}
+  - skill:OpenField_Enemy_枯れた抜け殻_MCLove32_Process{y=-1}
+  - skill:OpenField_Enemy_枯れた抜け殻_MCLove32_Process{y=-2}
   - delay 200
-  - skill{s=MCLove32_枯れたEffect} @self
+  - skill{s=OpenField_Enemy_枯れた抜け殻_MCLove32_Effect} @self
 
-MCLove32_枯れたEffectProcess:
+OpenField_Enemy_枯れた抜け殻_MCLove32_Process:
   Skills:
   - orbital{
     ot=[
@@ -32,26 +32,26 @@ MCLove32_枯れたEffectProcess:
       - e:p{p=falling_nectar;a=2;delay=20} @origin
     ];r=0.5;hp=false;p=40;i=1;oy=<skill.y>;md=200} @self
   
-MCLove32_枯れた抜け殻Skills:
+OpenField_Enemy_枯れた抜け殻_MCLove32_Skills:
   Cooldown: 0.5
   Conditions:
   - incombat
   Skills:
-  - skill:MCLove32_枯れた抜け殻Skill1 @self 0.1
+  - skill:OpenField_Enemy_枯れた抜け殻_MCLove32_Skill1 @self 0.1
   - delay 20
-  - skill:MCLove32_枯れた抜け殻Skills @self 
+  - skill:OpenField_Enemy_枯れた抜け殻_MCLove32_Skills @self 
 
-MCLove32_枯れた抜け殻Skill1:
+OpenField_Enemy_枯れた抜け殻_MCLove32_Skill1:
   Skills: 
   - jump{v=0.5} @self 
   - delay 8
   - leap{v=100} @T 
   - delay 4
-  - skill:MCLove32_枯れた抜け殻SkillRepeat @self 
+  - skill:OpenField_Enemy_枯れた抜け殻_MCLove32_SkillRepeat @self 
 
-MCLove32_枯れた抜け殻SkillRepeat: 
+OpenField_Enemy_枯れた抜け殻_MCLove32_SkillRepeat: 
   Conditions:
-  - onground orElseCast MCLove32_枯れた抜け殻SkillRepeat1
+  - onground orElseCast OpenField_Enemy_枯れた抜け殻_MCLove32_SkillRepeat1
   Skills:
   - projectile{
     ot=[
@@ -62,23 +62,23 @@ MCLove32_枯れた抜け殻SkillRepeat:
     ];
     v=5;i=2;vr=0.75;hr=0.75;se=false;sb=true} @Ring{r=10;p=32}
 
-MCLove32_枯れた抜け殻SkillRepeat1: 
+OpenField_Enemy_枯れた抜け殻_MCLove32_SkillRepeat1: 
   Conditions:
   - incombat
   Skills:
   - delay 1
-  - skill:MCLove32_枯れた抜け殻SkillRepeat @self 
+  - skill:OpenField_Enemy_枯れた抜け殻_MCLove32_SkillRepeat @self 
 
-MCLove32_コロニアルSkills:
+OpenField_Enemy_コロニアル_MCLove32_Skills:
   Cooldown: 1
   Conditions:
   - incombat
   Skills:
-  - skill:MCLove32_コロニアルSkill1 @self 
+  - skill:OpenField_Enemy_コロニアル_MCLove32_Skill1 @self 
   - delay <random.40to80>
-  - skill:MCLove32_コロニアルSkills @self 
+  - skill:MOpenField_Enemy_コロニアル_MCLove32_Skills @self 
 
-MCLove32_コロニアルSkill1:
+OpenField_Enemy_コロニアル_MCLove32_Skill1:
   Skills:
   - projectile{
     ot=[

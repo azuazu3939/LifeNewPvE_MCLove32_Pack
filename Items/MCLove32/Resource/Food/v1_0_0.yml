@@ -1,4 +1,4 @@
-MCLove32_ブドウ:
+Resource_Food_ブドウ_MCLove32:
   Id: apple
   Display: "&5ブドウ"
   Lore:
@@ -12,9 +12,9 @@ MCLove32_ブドウ:
     #Unbreakable: true
   Group: 'Food'
   Skills:
-  - skill:MCLove32_ブドウSkills @self ~onConsume
+  - skill:Resource_Food_ブドウ_MCLove32_Skills @self ~onConsume
 
-MCLove32_イチゴ:
+Resource_Food_イチゴ_MCLove32:
   Id: apple
   Display: "&cイチゴ"
   Lore:
@@ -28,9 +28,9 @@ MCLove32_イチゴ:
     #Unbreakable: true
   Group: 'Food'
   Skills:
-  - skill:MCLove32_イチゴSkills @self ~onConsume
+  - skill:Resource_Food_イチゴ_MCLove32_Skills @self ~onConsume
 
-MCLove32_キウイ:
+Resource_Food_キウイ_MCLove32:
   Id: apple
   Display: "&aキウイ"
   Lore:
@@ -44,9 +44,9 @@ MCLove32_キウイ:
     #Unbreakable: true
   Group: 'Food'
   Skills:
-  - skill:MCLove32_キウイSkills @self ~onConsume
+  - skill:Resource_Food_キウイ_MCLove32_Skills @self ~onConsume
 
-MCLove32_バナナ:
+Resource_Food_バナナ_MCLove32:
   Id: apple
   Display: "&eバナナ"
   Lore:
@@ -60,9 +60,9 @@ MCLove32_バナナ:
     #Unbreakable: true
   Group: 'Food'
   Skills:
-  - skill:MCLove32_バナナSkills @self ~onConsume
+  - skill:Resource_Food_バナナ_MCLove32_Skills @self ~onConsume
 
-MCLove32_フルーツポンチ:
+Resource_Food_フルーツポンチ_MCLove32:
   Id: golden_apple
   Display: "&eフルーツポンチ"
   Lore:
@@ -76,4 +76,4 @@ MCLove32_フルーツポンチ:
     #Unbreakable: true
   Group: 'Food'
   Skills:
-  - skill:MCLove32_フルーツポンチSkills @self ~onConsume
+  - skill:Resource_Food_フルーツポンチ_MCLove32_Skills @self ~onConsume

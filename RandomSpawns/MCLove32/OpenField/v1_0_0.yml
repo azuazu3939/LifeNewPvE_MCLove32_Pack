@@ -1,5 +1,5 @@
-MCLove32_ハロウルフLeader_Spawn:
-  Type: MCLove32_ハロウルフLeader
+OpenField_Enemy_ハロウルフ_MCLove32_Leader_Spawn:
+  Type: OpenField_Enemy_ハロウルフ_MCLove32_Leader
   Worlds: open_field
   Action: ADD 
   PositionType: LAND
@@ -23,8 +23,8 @@ MCLove32_ハロウルフLeader_Spawn:
     mythicinradius{a=<5;r=48} 
     ) true  
 
-MCLove32_ヒィツジーLeader_Spawn:
-  Type: MCLove32_ヒィツジーLeader
+OpenField_Guard_ヒィツジー_MCLove32_Leader_Spawn:
+  Type: OpenField_Guard_ヒィツジー_MCLove32_Leader
   Worlds: open_field
   Action: ADD 
   PositionType: LAND
@@ -45,8 +45,8 @@ MCLove32_ヒィツジーLeader_Spawn:
     mythicinradius{a=<5;r=48} 
     ) true  
 
-MCLove32_枯れた抜け殻_Spawn:
-  Type: MCLove32_枯れた抜け殻
+OpenField_Enemy_枯れた抜け殻_MCLove32_Spawn:
+  Type: OpenField_Enemy_枯れた抜け殻_MCLove32
   Worlds: open_field
   Action: ADD 
   PositionType: LAND
@@ -62,8 +62,8 @@ MCLove32_枯れた抜け殻_Spawn:
     mythicinradius{a=<3;r=48} 
     ) true  
   
-MCLove32_コロニアルLeader:
-  Type: MCLove32_コロニアルLeader
+OpenField_Enemy_コロニアル_MCLove32_Leader:
+  Type: OpenField_Enemy_コロニアル_MCLove32_Leader
   Worlds: open_field
   Action: ADD 
   PositionType: LAND

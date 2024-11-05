@@ -1,4 +1,4 @@
-MCLove32_ハロウルフ:
+OpenField_Enemy_ハロウルフ_MCLove32:
   Type: wolf 
   Display: "&a&lハロウルフ"
   Health: 30
@@ -26,7 +26,7 @@ MCLove32_ハロウルフ:
   - attacker
   - specificfaction{f=Sheep}
   Skills:
-  - skill:MCLove32_Enemyヘイト @self ~onEnterCombat
+  - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
   - potion{t=SPEED;d=144000;l=1;p=false} @self ~onSpawn
   - skill{
     s=[
@@ -46,15 +46,15 @@ MCLove32_ハロウルフ:
   - cmd{c="mlgo <target.name> MCLove32_ハロウルフの牙 1 0.7"} @TTP{conditions=[ - targetwithin{d=32} true ]} ~onDeath
   - drop{i=MCLove32_ハロウルフの牙} @Trigger{conditions=[ - isPlayer false ]} ~onAttack 0.05
 
-MCLove32_ハロウルフLeader:
-  Template: MCLove32_ハロウルフ
+OpenField_Enemy_ハロウルフ_MCLove32_Leader:
+  Template: OpenField_Enemy_ハロウルフ_MCLove32
   Health: 100
   Damage: 4
   Armor: 4
   Skills:
   - summon{t=MCLove32_ハロウルフ;a=2to3;r=5;s=true} @self ~onSpawn
 
-MCLove32_枯れた抜け殻:
+OpenField_Enemy_枯れた抜け殻_MCLove32:
   Type: wither_skeleton
   Display: "&f枯れた抜け殻"
   Health: 500
@@ -94,12 +94,12 @@ MCLove32_枯れた抜け殻:
   Skills:
   - heal{a=100} @self ~onTimer:200
   - e:p{p=sculk_soul;a=20;vs=1.25;hs=1;vd=32} @Forward{f=-2} ~onTimer:5
-  - skill:MCLove32_枯れたEffect @self ~onEnterCombat
+  - skill:OpenField_Enemy_枯れた抜け殻_MCLove32_Effect @self ~onEnterCombat
   - damage{a=100;pi=true;ii=true} @trigger ~onDamaged 0.01
-  - skill:MCLove32_枯れた抜け殻Skills @self ~onEnterCombat
-  - skill:MCLove32_Enemyヘイト @self ~onEnterCombat
+  - skill:OpenField_Enemy_枯れた抜け殻_MCLove32_Skills @self ~onEnterCombat
+  - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
 
-MCLove32_コロニアル:
+OpenField_Enemy_コロニアル_MCLove32:
   Type: zombie 
   Display: "&fコロニアル"
   Health: 40
@@ -133,11 +133,11 @@ MCLove32_コロニアル:
   - attacker
   - players 
   Skills:
-  - skill:MCLove32_コロニアルSkills @self ~onEnterCombat
+  - skill:OpenField_Enemy_コロニアル_MCLove32_Skills @self ~onEnterCombat
 
-MCLove32_コロニアルLeader: 
-  Template: MCLove32_コロニアル
+OpenField_Enemy_コロニアル_MCLove32_Leader: 
+  Template: OpenField_Enemy_コロニアル_MCLove32
   Health: 80
   Damage: 4
   Skills:
-  - summon{t=MCLove32_コロニアル;a=1to3;r=3;s=true} @self ~onSpawn
+  - summon{t=OpenField_Enemy_コロニアル_MCLove32;a=1to3;r=3;s=true} @self ~onSpawn

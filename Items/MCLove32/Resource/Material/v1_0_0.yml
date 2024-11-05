@@ -1,4 +1,4 @@
-MCLove32_研磨剤: 
+Resource_Material_鉱石研磨剤:_MCLove32:
   Id: brown_dye 
   Display: "&a&l研磨剤"
   Lore: 
@@ -13,7 +13,7 @@ MCLove32_研磨剤:
     #Unbreakable: false
   Group: 'Material'
 
-MCLove32_鉱石ユニオン: 
+Resource_Material_鉱石ユニオン_MCLove32:
   Id: pink_dye
   Display: "&d&l鉱石ユニオン"
   Lore: 
@@ -28,7 +28,7 @@ MCLove32_鉱石ユニオン:
     #Unbreakable: false
   Group: 'Material' 
 
-MCLove32_鉱石紅蓮: 
+Resource_Material_鉱石紅蓮_MCLove32:
   Id: red_dye
   Display: "&c&l鉱石紅蓮"
   Lore: 
@@ -43,7 +43,7 @@ MCLove32_鉱石紅蓮:
     #Unbreakable: false
   Group: 'Material'
 
-MCLove32_鉱石パピュライト: 
+Resource_Material_鉱石パピュライト_MCLove32:
   Id: purple_dye
   Display: "&a&l鉱石ラピュアライト"
   Lore: 
@@ -58,7 +58,7 @@ MCLove32_鉱石パピュライト:
     #Unbreakable: false
   Group: 'Material'
 
-MCLove32_鉱石紫焔: 
+Resource_Material_鉱石紫焔_MCLove32:
   Id: magenta_dye
   Display: "&5&l鉱石紫焔"
   Lore: 
