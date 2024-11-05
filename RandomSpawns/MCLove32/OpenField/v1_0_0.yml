@@ -7,7 +7,14 @@ MCLove32_ハロウルフLeader_Spawn:
   Priority: 5
   Conditions:
   - mobsinworld{a=<400} true 
-  - blocktype{type=air,water,lava} false 
+  - blocktype{
+    type=
+    glass_block,
+    moss_block,
+    snow_block,
+    snow
+    } true  
+  - height{h=60to80} true 
   - region{r=spawn} false 
   - (
     mythicinradius{a=<2;r=20} ||
