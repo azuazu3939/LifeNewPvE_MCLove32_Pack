@@ -18,9 +18,9 @@ MCLove32_ハロウルフLeader_Spawn:
   - height{h=60to80} true 
   - region{r=spawn} false 
   - (
-    mythicinradius{a=<2;r=20} ||
-    mythicinradius{a=<4;r=32} ||
-    mythicinradius{a=<8;r=48} 
+    mythicinradius{a=<1;r=20} ||
+    mythicinradius{a=<3;r=32} ||
+    mythicinradius{a=<5;r=48} 
     ) true  
 
 MCLove32_ヒィツジーLeader_Spawn:
@@ -40,7 +40,7 @@ MCLove32_ヒィツジーLeader_Spawn:
   - height{h=60to100} true 
   #- region{r=spawn} false  温厚mobは除外
   - (
-    mythicinradius{a=<2;r=20} ||
-    mythicinradius{a=<4;r=32} ||
-    mythicinradius{a=<8;r=48} 
+    mythicinradius{a=<1;r=20} ||
+    mythicinradius{a=<3;r=32} ||
+    mythicinradius{a=<5;r=48} 
     ) true  
