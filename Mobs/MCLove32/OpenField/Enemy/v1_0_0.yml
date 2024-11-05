@@ -32,13 +32,21 @@ MCLove32_ハロウルフ:
   - skill:MCLove32_Enemyヘイト @self ~onEnterCombat
   - damage{a=<caster.damage>;pi=true;ii=true} @Trigger ~onAttack
   - potion{t=SPEED;d=144000;l=1;p=false} @self ~onSpawn
-  - projectile{
-    ot=[
-      - leap{v=45} @origin{y=-1}
-      - setFallDistance{a=0} @self 
-      - look{headOnly=false;immediately=true;force=true} @Parent 
-    ];
-    v=5;i=1;mr=16;se=false;sb=true;hs=true;hfs=0.5;mch=6;mdh=10;syo=0;sfo=0;hr=0;vr=0;md=25;HugLiquid=true} @Forward{f=5;so=<random.float.-1to1>} ~onTimer:20 ?!incombat
+  - skill{
+    s=[
+      - projectile{
+        ot=[
+          - leap{v=45} @origin{y=-1}
+          - setFallDistance{a=0} @self 
+        ];
+        v=5;i=1;mr=16;se=false;sb=true;hs=true;hfs=0.5;mch=6;mdh=10;syo=0;sfo=0;hr=0;vr=0;md=25;HugLiquid=true} @Parent ?hasowner
+      - projectile{
+        ot=[
+          - leap{v=45} @origin{y=-1}
+          - setFallDistance{a=0} @self 
+        ];
+        v=5;i=1;mr=16;se=false;sb=true;hs=true;hfs=0.5;mch=6;mdh=10;syo=0;sfo=0;hr=0;vr=0;md=25;HugLiquid=true} @Forward{f=5;so=<random.float.-1to1>}  ?!hasowner
+    ]} @self ~onTimer:20 ?!incombat
   - cmd{c="mlgo <target.name> MCLove32_ハロウルフの牙 1 0.7"} @TTP{conditions=[ - targetwithin{d=32} true ]} ~onDeath
   - drop{i=MCLove32_ハロウルフの牙} @self ~onKill 0.3
 
