@@ -30,6 +30,7 @@ MCLove32_ハロウルフ:
   - attacker
   - specificfaction{f=Sheep}
   Skills:
+
   - skill:MCLove32_Enemyヘイト @self ~onEnterCombat
   - damage{a=<caster.damage>;pi=true;ii=true} @Trigger ~onAttack
   - potion{t=SPEED;d=144000;l=3;p=false} @self ~onSpawn
@@ -48,4 +49,4 @@ MCLove32_ハロウルフLeader:
   Armor: 4
   Skills:
   - summon{t=MCLove32_ハロウルフ;a=3to5;r=5;s=true} @self ~onSpawn
-  - setrotation{y=<random.-180to180>;cd=2} @self 0.1 ~onTimer:20 ?!incombat
+  - rotate{y=<random.-10to10> + <caster.l.yaw>;cd=2} @self 0.1 ~onTimer:20 ?!incombat
