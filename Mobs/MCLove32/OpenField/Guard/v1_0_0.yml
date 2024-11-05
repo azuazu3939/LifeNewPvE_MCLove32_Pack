@@ -17,12 +17,6 @@ MCLove32_ヒィツジー:
   - clear
   - attacker
   - specificfaction{f=Wolf}
-  BossBar:
-    Enabled: true
-    Title: '<caster.name> <caster.hp>/<caster.mhp>HP'
-    Range: 12
-    Color: GREEN 
-    Style: SOLID
   Options:
     Collidable: true 
     DigOutOfGround: true 
@@ -33,7 +27,6 @@ MCLove32_ヒィツジー:
     NoAI: false 
     #NoGravity: true
     PreventMobKillDrops: true 
-    PreventOtherDrops: true 
     PreventRandomEquipment: true 
     #PreventSunburn: true
     #PreventVanillaDamage: true

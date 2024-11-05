@@ -15,27 +15,18 @@ MCLove32_ハロウルフ:
     NoAI: false 
     #NoGravity: true
     PreventMobKillDrops: true 
-    PreventOtherDrops: true 
     PreventRandomEquipment: true 
     #PreventSunburn: true
-    #PreventVanillaDamage: true
     Scale: 1.5
     Silent: false 
   Modules:
     ThreatTable: true
-  BossBar:
-    Enabled: true
-    Title: '<caster.name> <caster.hp>/<caster.mhp>HP'
-    Range: 12
-    Color: RED
-    Style: SOLID
   AITargetSelectors:
   - clear
   - attacker
   - specificfaction{f=Sheep}
   Skills:
   - skill:MCLove32_Enemyヘイト @self ~onEnterCombat
-  #- damage{a=<caster.damage>;pi=true;ii=true} @Trigger ~onAttack
   - potion{t=SPEED;d=144000;l=1;p=false} @self ~onSpawn
   - skill{
     s=[
