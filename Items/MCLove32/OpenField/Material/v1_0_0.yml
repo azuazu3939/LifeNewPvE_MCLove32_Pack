@@ -1,0 +1,31 @@
+MCLove32_ハロウルフの希少な牙:
+  Id: bone
+  Display: "&6&lハロウルフの希少な牙"
+  Lore:
+  - "&f特定条件で稀にドロップする牙。"
+  - "&f武器への加工が可能。"
+  Model: 1001
+  Options: 
+    Destroy: false
+    CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Enchantments:
+  - UNBREAKING 10
+  Group: 'Material'
+
+MCLove32_ハロウルフの牙:
+  Id: bone
+  Display: "&6&lハロウルフの牙"
+  Lore:
+  - "&fハロウルフを倒すと手に入る牙。"
+  - "&f武器への加工が可能。"
+  Model: 1000
+  Options: 
+    Destroy: false
+    CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Enchantments:
+  - UNBREAKING 1
+  Group: 'Material'
