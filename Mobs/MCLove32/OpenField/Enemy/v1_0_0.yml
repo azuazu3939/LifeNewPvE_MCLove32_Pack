@@ -85,8 +85,6 @@ OpenField_Enemy_枯れた抜け殻_MCLove32:
   AITargetSelectors:
   - clear
   - attacker
-  - ownerattacker
-  - ownertarget
   AIGoalSelectors:
   - randomstroll
   Variables:
@@ -97,6 +95,7 @@ OpenField_Enemy_枯れた抜け殻_MCLove32:
   - skill:OpenField_Enemy_枯れた抜け殻_MCLove32_Effect @self ~onEnterCombat
   - damage{a=100;pi=true;ii=true} @trigger ~onDamaged 0.01
   - skill:OpenField_Enemy_枯れた抜け殻_MCLove32_Skills @self ~onEnterCombat
+  - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
 
 
 OpenField_Enemy_コロニアル_MCLove32:
@@ -138,12 +137,11 @@ OpenField_Enemy_コロニアル_MCLove32:
   - clear
   - attacker
   - players 
-  - ownerattacker
-  - ownertarget
   Skills:
   - skill:OpenField_Enemy_コロニアル_MCLove32_Skills @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=24} @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16} @self ~onDropCombat
+  - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
 
 OpenField_Enemy_コロニアル_MCLove32_Leader: 
   Template: OpenField_Enemy_コロニアル_MCLove32
@@ -183,8 +181,6 @@ OpenField_Enemy_スパイディ_MCLove32:
   - clear
   - attacker
   - players 
-  - ownerattacker
-  - ownertarget
   AIGoalSelectors:
   - randomstroll
   - spiderattack
@@ -195,6 +191,7 @@ OpenField_Enemy_スパイディ_MCLove32:
   - potionclear{t=SPEED} @self ~onDropCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=32} @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16} @self ~onDropCombat
+  - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
 
 OpenField_Enemy_スパイディ_MCLove32_Leader:
   Template: OpenField_Enemy_スパイディ_MCLove32
