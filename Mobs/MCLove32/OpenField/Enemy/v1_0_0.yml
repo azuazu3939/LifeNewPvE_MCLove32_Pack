@@ -28,21 +28,7 @@ OpenField_Enemy_ハロウルフ_MCLove32:
   Skills:
   - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
   - potion{t=SPEED;d=144000;l=1;p=false} @self ~onSpawn
-  - skill{
-    s=[
-      - projectile{
-        ot=[
-          - leap{v=45} @origin{y=-1}
-          - setFallDistance{a=0} @self 
-        ];
-        v=5;i=1;mr=16;se=false;sb=true;hs=true;hfs=0.5;mch=6;mdh=10;syo=0;sfo=0;hr=0;vr=0;md=25;HugLiquid=true} @Parent ?hasowner
-      - projectile{
-        ot=[
-          - leap{v=45} @origin{y=-1}
-          - setFallDistance{a=0} @self 
-        ];
-        v=5;i=1;mr=16;se=false;sb=true;hs=true;hfs=0.5;mch=6;mdh=10;syo=0;sfo=0;hr=0;vr=0;md=25;HugLiquid=true} @Forward{f=5;so=<random.float.-1to1>}  ?!hasowner
-    ]} @self ~onTimer:20 ?!incombat
+  - skill:Generic_Enemy_ウォーク追従_MCLove32{v=50} @self ~onTimer:20 ?!incombat
   - cmd{c="mlgo <target.name> OpneField_Material_ハロウルフの牙_MCLove32 1 0.7"} @TTP{conditions=[ - targetwithin{d=32} true ]} ~onDeath
   - drop{i=OpneField_Material_ハロウルフの希少な牙_MCLove32} @Trigger{conditions=[ - isPlayer false ]} ~onAttack 0.05
 
@@ -53,6 +39,7 @@ OpenField_Enemy_ハロウルフ_MCLove32_Leader:
   Armor: 4
   Skills:
   - summon{t=OpenField_Enemy_ハロウルフ_MCLove32;a=2to3;r=5;s=true} @self ~onSpawn
+  - skill:Generic_Enemy_ウォーク_MCLove32{v=50} @self ~onTimer:20 ?!incombat
 
 OpenField_Enemy_枯れた抜け殻_MCLove32:
   Type: wither_skeleton
@@ -98,6 +85,7 @@ OpenField_Enemy_枯れた抜け殻_MCLove32:
   - damage{a=100;pi=true;ii=true} @trigger ~onDamaged 0.01
   - skill:OpenField_Enemy_枯れた抜け殻_MCLove32_Skills @self ~onEnterCombat
   - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
+  - skill:Generic_Enemy_ウォーク_MCLove32{v=10} @self ~onTimer:20 ?!incombat
 
 OpenField_Enemy_コロニアル_MCLove32:
   Type: zombie 
@@ -137,6 +125,7 @@ OpenField_Enemy_コロニアル_MCLove32:
   - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=24} @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16} @self ~onDropCombat
+  - skill:Generic_Enemy_ウォーク追従_MCLove32{v=25} @self ~onTimer:20 ?!incombat
 
 OpenField_Enemy_コロニアル_MCLove32_Leader: 
   Template: OpenField_Enemy_コロニアル_MCLove32
@@ -144,6 +133,7 @@ OpenField_Enemy_コロニアル_MCLove32_Leader:
   Damage: 4
   Skills:
   - summon{t=OpenField_Enemy_コロニアル_MCLove32;a=1to2;r=3;s=true} @self ~onSpawn
+  - skill:Generic_Enemy_ウォーク_MCLove32{v=25} @self ~onTimer:20 ?!incombat
 
 OpenField_Enemy_スパイディ_MCLove32:
   Type: cave_spider
@@ -179,7 +169,8 @@ OpenField_Enemy_スパイディ_MCLove32:
   - potionclear{t=SPEED} @self ~onDropCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=32} @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16} @self ~onDropCombat
-  
+  - leap{v=200} @T ~onEnterCombat
+  - skill:Generic_Enemy_ウォーク追従_MCLove32{v=35} @self ~onTimer:20 ?!incombat
 
 OpenField_Enemy_スパイディ_MCLove32_Leader:
   Template: OpenField_Enemy_スパイディ_MCLove32
@@ -202,8 +193,7 @@ OpenField_Enemy_スパイディ_MCLove32_Leader:
       - summon{t=OpenField_Enemy_スパイディ_MCLove32;a=2;r=0;repeat=3;repeatI=10} @origin{y=-2}
       - summon{t=OpenField_Enemy_スパイディ_MCLove32_Commander;a=1;r=0;delay=60} @origin{y=-4}
     ]} @origin ~onDeath 0.25
-  - jump{v=0.5} @self ~onSpawn 
-  - leap{v=150;delay=8} @self ~onSpawn 
+  - skill:Generic_Enemy_ウォーク_MCLove32{v=35} @self ~onTimer:20 ?!incombat
 
 OpenField_Enemy_スパイディ_MCLove32_Commander:
   Template: OpenField_Enemy_スパイディ_MCLove32_Leader
