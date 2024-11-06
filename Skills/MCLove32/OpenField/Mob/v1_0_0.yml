@@ -23,7 +23,7 @@ Generic_Enemy_ウォーク_MCLove32:
       - leap{v=<skill.v>} @origin{y=-1}
       - setFallDistance{a=0} @self 
     ];
-    v=<skill.var.v>;i=1;mr=16;se=false;sb=true;hs=true;hfs=0.5;mch=6;mdh=10;syo=0;sfo=0;hr=0;vr=0;md=25} @Forward{f=5;so=<random.float.-1to1>} 
+    v=<skill.var.v>;i=1;mr=16;se=false;sb=false;hs=true;hfs=0.5;mch=6;mdh=10;syo=0;sfo=0;hr=0;vr=0;md=25} @Forward{f=5;so=<random.float.-1to1>} 
   - setrotation{relative=true;y=<random.-10to10>;cd=5} @self 0.05 
 
 #<skill.v>必要
@@ -36,7 +36,7 @@ Generic_Enemy_ウォーク追従_MCLove32:
       - setFallDistance{a=0} @self 
       - look{headOnly=false;immediately=true;f=true} @Parent 0.75
     ];
-    v=<skill.var.v>;i=1;mr=16;se=false;sb=true;hs=true;hfs=0.5;mch=6;mdh=10;syo=0;sfo=0;hr=0;vr=0;md=25} @Parent ?hasparent
+    v=<skill.var.v>;i=1;mr=16;se=false;sb=false;hs=true;hfs=0.5;mch=6;mdh=10;syo=0;sfo=0;hr=0;vr=0;md=25} @Parent ?hasparent
 
 OpenField_Enemy_枯れた抜け殻_MCLove32_Effect:
   Conditions:
