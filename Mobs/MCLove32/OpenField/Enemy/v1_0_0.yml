@@ -169,7 +169,6 @@ OpenField_Enemy_スパイディ_MCLove32:
   - potionclear{t=SPEED} @self ~onDropCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=32} @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16} @self ~onDropCombat
-  - leap{v=200} @T ~onEnterCombat
   - skill:Generic_Enemy_ウォーク追従_MCLove32{v=45} @self ~onTimer:20 ?!incombat
 
 OpenField_Enemy_スパイディ_MCLove32_Leader:
@@ -193,6 +192,7 @@ OpenField_Enemy_スパイディ_MCLove32_Leader:
       - summon{t=OpenField_Enemy_スパイディ_MCLove32;a=2;r=0;repeat=3;repeatI=10} @origin{y=-2}
       - summon{t=OpenField_Enemy_スパイディ_MCLove32_Commander;a=1;r=0;delay=60} @origin{y=-4}
     ]} @origin ~onDeath 0.25
+  - potion{t=LEVITATION;l=2;d=20;p=false} @self ~onSpawn
   - skill:Generic_Enemy_ウォーク_MCLove32{v=45} @self ~onTimer:20 ?!incombat
 
 OpenField_Enemy_スパイディ_MCLove32_Commander:
