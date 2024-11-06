@@ -195,7 +195,7 @@ OpenField_Enemy_スパイディ_MCLove32_Leader:
   Skills:
   - potion{t=SLOW;l=5;d=14400;p=false} @self ~onEnterCombat
   - potionclear{t=SLOW} @self ~onDropCombat
-  - damage{a=40;pi=true;ii=true} @MIR{r=16;t=OpenField_Enemy_スパイディ_MCLove32,OpenField_Enemy_スパイディ_MCLove32_Leader,OpenField_Enemy_スパイディ_MCLove32_Commander;conditions=[ - (parent || child || owner) true ]} ~onDeath
+  - summon{t=OpenField_Enemy_スパイディ_MCLove32_Commander;a=1;r=0;s=true} ~onDeath 0.15
   - summon{t=OpenField_Enemy_スパイディ_MCLove32;a=1;r=3;s=true} @self ~onDamaged 0.001
   - summon{t=OpenField_Enemy_スパイディ_MCLove32;a=1;r=3;s=true;cd=1200} @self ~onEnterCombat
 
