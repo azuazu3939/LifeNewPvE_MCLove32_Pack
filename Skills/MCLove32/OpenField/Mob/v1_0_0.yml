@@ -25,7 +25,6 @@ Generic_Enemy_ウォーク_MCLove32:
     ot=[
       - leap{v=<skill.var.v2>} @origin{y=-1}
       - setFallDistance{a=0} @self 
-      - look{headOnly=false;immediately=false;fp=true} @Forward{f=5;lockpitch=true} 
     ];
     v=<skill.var.v>;i=2;mr=16;se=false;sb=false;hs=true;hfs=0.5;mch=6;mdh=10;syo=0;sfo=0;hr=0;vr=0;md=25} @Forward{f=5;so=<random.float.-1to1>;lockpitch=true;uel=true} 
   - skill:Generic_Enemy_ウォークRemoveCheck_MCLove32 @self 
