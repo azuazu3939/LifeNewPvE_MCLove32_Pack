@@ -17,8 +17,8 @@ Generic_Enemy_ヘイト_MCLove32:
 #<skill.v>必要
 Generic_Enemy_ウォーク_MCLove32:
   Skills:
-  - setvar{var=skill.v;val="<skill.v> * 0.1";t=INTEGER} @self  
-  - setvar{var=skill.v2;val="(<skill.v> + 150) * (<skill.var.v> * 0.15)";t=INTEGER} @self 
+  - setvar{var=skill.v;val="<skill.v> * 0.1";t=FLOAT} @self  
+  - setvar{var=skill.v2;val="(<skill.v> + 150) * (<skill.var.v> * 0.15)";t=FLOAT} @self 
   - setrotation{y=<random.-5to5> + <caster.l.yaw>;cd=2} @self 0.01 
   - projectile{
     ot=[
@@ -30,8 +30,8 @@ Generic_Enemy_ウォーク_MCLove32:
 #<skill.v>必要
 Generic_Enemy_ウォーク追従_MCLove32:
   Skills: 
-  - setvar{var=skill.v;val="<skill.v> * 0.1";t=INTEGER} @self  
-  - setvar{var=skill.v2;val="(<skill.v> + 150) * (<skill.var.v> * 0.15)";t=INTEGER} @self  
+  - setvar{var=skill.v;val="<skill.v> * 0.1";t=FLOAT} @self  
+  - setvar{var=skill.v2;val="(<skill.v> + 150) * (<skill.var.v> * 0.15)";t=FLOAT} @self 
   - projectile{
     ot=[
       - leap{v=<skill.var.v2>} @origin{y=-1}
