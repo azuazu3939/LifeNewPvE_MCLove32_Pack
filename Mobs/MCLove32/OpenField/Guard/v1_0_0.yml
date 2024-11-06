@@ -35,6 +35,7 @@ OpenField_Guard_ヒィツジー_MCLove32:
   Skills:
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=24} @self ~onEnterCombat 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=12} @self ~onDropCombat
+  - attribute{attribute=STEP_HEIGHT;a=1.5;duration=600} @self ~onSpawn
   - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
 
 OpenField_Guard_ヒィツジー_MCLove32_Leader:
