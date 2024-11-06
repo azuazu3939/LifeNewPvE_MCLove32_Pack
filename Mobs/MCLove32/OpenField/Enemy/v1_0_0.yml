@@ -87,8 +87,6 @@ OpenField_Enemy_枯れた抜け殻_MCLove32:
   - attacker
   AIGoalSelectors:
   - randomstroll
-  Variables:
-    livingWater: int/20
   Skills:
   - heal{a=100} @self ~onTimer:200
   - e:p{p=sculk_soul;a=20;vs=1.25;hs=1;vd=32} @Forward{f=-2} ~onTimer:5
@@ -127,8 +125,6 @@ OpenField_Enemy_コロニアル_MCLove32:
     #Silent: false 
   Modules:
     ThreatTable: true
-  Variables:
-    livingWater: int/1
   AIGoalSelectors:
   - randomstroll
   - gotoparent
@@ -147,8 +143,6 @@ OpenField_Enemy_コロニアル_MCLove32_Leader:
   Template: OpenField_Enemy_コロニアル_MCLove32
   Health: 80
   Damage: 4
-  Variables:
-    livingWater: int/1
   Skills:
   - summon{t=OpenField_Enemy_コロニアル_MCLove32;a=1to2;r=3;s=true} @self ~onSpawn
 
@@ -175,8 +169,9 @@ OpenField_Enemy_スパイディ_MCLove32:
     #Silent: false 
   Modules:
     ThreatTable: true
-  Variables:
-    livingWater: int/1
+  DamageModifiers:
+  - SUFFOCATION 0
+  - FALL
   AITargetSelectors:
   - clear
   - attacker
@@ -201,8 +196,9 @@ OpenField_Enemy_スパイディ_MCLove32_Leader:
   Damage: 4
   Faction: Enemy
   Armor: 8
-  Variables:
-    livingWater: int/1
+  DamageModifiers:
+  - SUFFOCATION 0
+  - FALL
   AIGoalSelectors:
   - movetowardsconditional{d=2;r=16;conditions=[ - inlineofsight true ]}
   Options:
@@ -228,10 +224,9 @@ OpenField_Enemy_スパイディ_MCLove32_Commander:
   Armor: 10
   Equipment:
   - bow HAND 
-  Variables:
-    livingWater: int/1
   DamageModifiers:
   - SUFFOCATION 0
+  - FALL
   Options:
     PreventSunburn: true
     Scale: 1.15
