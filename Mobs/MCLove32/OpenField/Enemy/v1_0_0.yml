@@ -21,6 +21,9 @@ OpenField_Enemy_ハロウルフ_MCLove32:
     Silent: false 
   AIGoalSelectors:
   - randomstroll
+  - meleeattack
+  - ownerattacker
+  - ownertarget
   - gotoparent
   - gotoowner
   Modules:
