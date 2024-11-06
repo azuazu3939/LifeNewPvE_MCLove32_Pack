@@ -17,9 +17,10 @@ Generic_Enemy_ヘイト_MCLove32:
 #<skill.v>必要
 Generic_Enemy_ウォーク_MCLove32:
   Skills:
+  - setrotation{y=<random.-5to5> + <caster.l.yaw>;cd=2} @self 0.01 
+  - delay 1
   - setvar{var=skill.v;val="<skill.v> * 0.1";t=FLOAT} @self  
   - setvar{var=skill.v2;val="(<skill.v> + 150) * (<skill.var.v> * 0.15)";t=FLOAT} @self 
-  - setrotation{y=<random.-5to5> + <caster.l.yaw>;cd=2} @self 0.01 
   - projectile{
     ot=[
       - leap{v=<skill.var.v2>} @origin{y=-1}
@@ -39,7 +40,7 @@ Generic_Enemy_ウォーク追従_MCLove32:
       - setFallDistance{a=0} @self 
       - look{headOnly=false;immediately=true;fp=true} @Parent 0.75
     ];
-    v=<skill.var.v>;i=1;mr=16;se=true;sb=false;hs=true;hfs=0.5;mch=6;mdh=10;syo=0;sfo=0;hr=2;vr=2;md=25;conditions=[ - parent true ];hp=false;hnp=true} @Parent ?hasparent
+    v=<skill.var.v>;i=2;mr=16;se=true;sb=false;hs=true;hfs=0.5;mch=6;mdh=10;syo=0;sfo=0;hr=2;vr=2;md=25;conditions=[ - parent true ];hp=false;hnp=true} @Parent ?hasparent
   - skill:Generic_Enemy_ウォークRemoveCheck_MCLove32 @self 
 
 Generic_Enemy_ウォークRemoveCheck_MCLove32:
