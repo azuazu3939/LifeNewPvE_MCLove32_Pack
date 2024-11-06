@@ -7,6 +7,7 @@ OpenField_Enemy_ハロウルフ_MCLove32_Leader_Spawn:
   Priority: 25
   Conditions:
   - mobsinworld{a=<1000} true 
+  - blocktype{type=water,air} false 
   - blocktype{
     type=
     grass_block,
@@ -32,6 +33,7 @@ OpenField_Guard_ヒィツジー_MCLove32_Leader_Spawn:
   Priority: 20
   Conditions:
   - mobsinworld{a=<1000} true 
+  - blocktype{type=water,air} false 
   - blocktype{
     type=
     grass_block,
@@ -54,6 +56,7 @@ OpenField_Enemy_枯れた抜け殻_MCLove32_Spawn:
   Priority: 1
   Conditions:
   - mobsinworld{a=<1000} true 
+  - blocktype{type=water,air} false 
   - height{h=40to120} true 
   - region{r=spawn} false 
   - (
@@ -72,6 +75,7 @@ OpenField_Enemy_コロニアル_MCLove32_Leader:
   Priority: 8
   Conditions:
   - mobsinworld{a=<1000} true 
+  - blocktype{type=water,air} false 
   - height{h=60to100} true 
   - region{r=spawn} false 
   - (
@@ -90,6 +94,7 @@ OpenField_Enemy_スパイディ_MCLove32_Commander_Spawn:
   Priority: 6
   Conditions:
   - mobsinworld{a=<1000} true 
+  - blocktype{type=water,air} false 
   - height{h=60to100} true 
   - region{r=spawn} false 
   - (
