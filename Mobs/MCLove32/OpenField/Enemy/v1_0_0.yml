@@ -70,7 +70,7 @@ OpenField_Enemy_枯れた抜け殻_MCLove32:
   Options:
     Collidable: true 
     DigOutOfGround: true 
-    FollowRange: 8
+    FollowRange: 12
     Despawn: true   
     KnockbackResistance: 0
     NoDamageTicks: 0
@@ -115,7 +115,7 @@ OpenField_Enemy_コロニアル_MCLove32:
   Options:
     Collidable: true 
     DigOutOfGround: true 
-    FollowRange: 8
+    FollowRange: 16
     Despawn: true  
     KnockbackResistance: 0
     NoDamageTicks: 0
@@ -135,6 +135,8 @@ OpenField_Enemy_コロニアル_MCLove32:
   Skills:
   - skill:OpenField_Enemy_コロニアル_MCLove32_Skills @self ~onEnterCombat
   - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=24} @self ~onEnterCombat
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16} @self ~onDropCombat
 
 OpenField_Enemy_コロニアル_MCLove32_Leader: 
   Template: OpenField_Enemy_コロニアル_MCLove32
@@ -173,7 +175,7 @@ OpenField_Enemy_スパイディ_MCLove32:
   - players 
   Skills:
   - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
-  - potion{t=SPEED;l=5;d=14400;p=false} @self ~onEnterCombat
+  - potion{t=SPEED;l=1;d=14400;p=false} @self ~onEnterCombat
   - potionclear{t=SPEED} @self ~onDropCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=32} @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16} @self ~onDropCombat
