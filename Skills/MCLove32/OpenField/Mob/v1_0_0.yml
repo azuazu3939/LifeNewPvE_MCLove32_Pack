@@ -87,7 +87,7 @@ OpenField_Enemy_コロニアル_MCLove32_Skill1:
     oh=[
       - sound{s=entity.witch.ambient;v=0.25} @self  
       - damage{a=10;pi=true;ii=true}
-      - pull{v=4;to=true}
+      - pull{v=5}
       - heal{a=10} @self 
     ];
     v=8;i=1} @TL
