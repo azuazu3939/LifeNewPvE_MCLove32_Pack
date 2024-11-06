@@ -3,7 +3,7 @@ OpneField_Weapon_サイスオブデーモン_MCLove32_Skills:
   TargetConditions:
   - isMythicMob true
   Conditions:
-  - wearing{m=MCLove32_サイスオブデーモン;s=HAND}
+  - wearing{m=OpneField_Weapon_サイスオブデーモン_MCLove32;s=HAND}
   Skills:
   - damage{a=80;ii=true;pi=true}
   - sound{s=entity.warden.death} @self 
@@ -16,7 +16,7 @@ OpneField_Weapon_サイスオブデーモン_MCLove32_Skills:
 OpneField_Weapon_ビットブレードTypeA_MCLove32_Skills:
   Cooldown: 5
   Conditions:
-  - wearing{m=MCLove32_ビットブレードTypeA;s=HAND}
+  - wearing{m=OpneField_Weapon_ビットブレードTypeA_MCLove32s=HAND}
   Skills:
   - skill:OpneField_Weapon_ビットブレードTypeA_MCLove32_Skills_Start @EIC{r=20;a=120;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
 
