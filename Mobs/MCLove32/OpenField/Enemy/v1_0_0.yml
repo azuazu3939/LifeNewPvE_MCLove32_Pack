@@ -21,6 +21,8 @@ OpenField_Enemy_ハロウルフ_MCLove32:
     Silent: false 
   Modules:
     ThreatTable: true
+  Variables:
+    livingWater: int/2
   AITargetSelectors:
   - clear
   - attacker
@@ -78,6 +80,8 @@ OpenField_Enemy_枯れた抜け殻_MCLove32:
   AIGoalSelectors:
   - clear
   - randomstroll
+  Variables:
+    livingWater: int/20
   Skills:
   - heal{a=100} @self ~onTimer:200
   - e:p{p=sculk_soul;a=20;vs=1.25;hs=1;vd=32} @Forward{f=-2} ~onTimer:5
@@ -116,6 +120,8 @@ OpenField_Enemy_コロニアル_MCLove32:
     #Silent: false 
   Modules:
     ThreatTable: true
+  Variables:
+    livingWater: int/1
   AITargetSelectors:
   - clear
   - attacker
@@ -158,6 +164,8 @@ OpenField_Enemy_スパイディ_MCLove32:
     #Silent: false 
   Modules:
     ThreatTable: true
+  Variables:
+    livingWater: int/1
   AITargetSelectors:
   - clear
   - attacker

@@ -26,6 +26,7 @@ Generic_Enemy_ウォーク_MCLove32:
       - setFallDistance{a=0} @self 
     ];
     v=<skill.var.v>;i=1;mr=16;se=false;sb=false;hs=true;hfs=0.5;mch=6;mdh=10;syo=0;sfo=0;hr=0;vr=0;md=25} @Forward{f=5;so=<random.float.-1to1>} 
+  - skill:Generic_Enemy_ウォークRemoveCheck_MCLove32 @self 
 
 #<skill.v>必要
 Generic_Enemy_ウォーク追従_MCLove32:
@@ -39,6 +40,14 @@ Generic_Enemy_ウォーク追従_MCLove32:
       - look{headOnly=false;immediately=true;fp=true} @Parent 0.75
     ];
     v=<skill.var.v>;i=1;mr=16;se=true;sb=false;hs=true;hfs=0.5;mch=6;mdh=10;syo=0;sfo=0;hr=2;vr=2;md=25;conditions=[ - parent true ];hp=false;hnp=true} @Parent ?hasparent
+  - skill:Generic_Enemy_ウォークRemoveCheck_MCLove32 @self 
+
+Generic_Enemy_ウォークRemoveCheck_MCLove32:
+  Conditions:
+  - varset{var=caster.livingWater} true 
+  Skills:
+  - varmath{var=caster.livingWater;e="<caster.var.livingWater> - 1"} @self 
+  - remove @self ?!varrange{var=caster.livingWater;val=>0} 
 
 OpenField_Enemy_枯れた抜け殻_MCLove32_Effect:
   Conditions:
