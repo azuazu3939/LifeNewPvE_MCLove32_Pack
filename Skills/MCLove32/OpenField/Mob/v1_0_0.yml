@@ -29,7 +29,7 @@ Generic_Enemy_ウォーク_MCLove32:
 #<skill.v>必要
 Generic_Enemy_ウォーク追従_MCLove32:
   Skills: 
-  - setvar{var=skill.v;val="<skill.v> * 0.1";t=FLOAT} @self  
+  - setvar{var=skill.v;val="<skill.v> * 0.1";t=INTEGER} @self  
   - projectile{
     ot=[
       - leap{v=<skill.v>} @origin{y=-1}
