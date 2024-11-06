@@ -16,7 +16,7 @@ OpneField_Weapon_サイスオブデーモン_MCLove32_Skills:
 OpneField_Weapon_ビットブレードTypeA_MCLove32_Skills:
   Cooldown: 5
   Conditions:
-  - wearing{m=OpneField_Weapon_ビットブレードTypeA_MCLove32s=HAND}
+  - wearing{m=OpneField_Weapon_ビットブレードTypeA_MCLove32;s=HAND}
   Skills:
   - skill:OpneField_Weapon_ビットブレードTypeA_MCLove32_Skills_Start @EIC{r=20;a=120;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
 
