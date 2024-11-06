@@ -203,6 +203,8 @@ OpenField_Enemy_スパイディ_MCLove32_Leader:
   Armor: 8
   Variables:
     livingWater: int/1
+  AIGoalSelectors:
+  - movetowardsconditional{d=2;r=16;conditions=[ - inlineofsight true ]}
   Options:
     KnockbackResistance: 0.35
   Skills:
