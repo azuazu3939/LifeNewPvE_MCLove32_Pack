@@ -54,7 +54,7 @@ OpneField_Weapon_サンドストーム_MCLove32_Skills:
   - wearing{m=OpneField_Weapon_サンドストーム_MCLove32;s=HAND}
   Skills:
   - skill:OpneField_Weapon_サンドストーム_MCLove32_Skills_Process{repeat=5;repeatI=5} @ENO{r=5;limit=10;sort=NEAREST;ignore=players;conditions=[ - isLiving true - isMythicMob true]}
-  - skill:OpneField_Weapon_サンドストーム_MCLove32_Skills_Effect{repeat=5;repeatI=5} @origin
+  - skill:OpneField_Weapon_サンドストーム_MCLove32_Skills_Effect{repeat=30;repeatI=1} @origin{y=2}
 
 OpneField_Weapon_サンドストーム_MCLove32_Skills_Process:
   Skills:
