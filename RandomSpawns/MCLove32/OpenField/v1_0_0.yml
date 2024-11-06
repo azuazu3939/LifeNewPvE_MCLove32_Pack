@@ -50,7 +50,7 @@ OpenField_Enemy_枯れた抜け殻_MCLove32_Spawn:
   Worlds: open_field
   Action: ADD 
   PositionType: LAND
-  Chance: 0.001
+  Chance: 0.25
   Priority: 1
   Conditions:
   - mobsinworld{a=<1000} true 
@@ -60,15 +60,16 @@ OpenField_Enemy_枯れた抜け殻_MCLove32_Spawn:
     mythicinradius{a=<1;r=20} ||
     mythicinradius{a=<2;r=32} ||
     mythicinradius{a=<3;r=48} 
-    ) true  
+    ) true
+  - mobsInRadius{types=OpenField_Enemy_枯れた抜け殻_MCLove32;amount=<1;radius=64} true  
   
 OpenField_Enemy_コロニアル_MCLove32_Leader:
   Type: OpenField_Enemy_コロニアル_MCLove32_Leader
   Worlds: open_field
   Action: ADD 
   PositionType: LAND
-  Chance: 0.015
-  Priority: 10
+  Chance: 0.25
+  Priority: 8
   Conditions:
   - mobsinworld{a=<1000} true 
   - height{h=60to100} true 
@@ -78,3 +79,22 @@ OpenField_Enemy_コロニアル_MCLove32_Leader:
     mythicinradius{a=<3;r=32} ||
     mythicinradius{a=<5;r=48} 
     ) true  
+  - mobsInRadius{types=OpenField_Enemy_コロニアル_MCLove32;amount=<3;radius=32} true
+
+OpenField_Enemy_スパイディ_MCLove32_Leader_Spawn:
+  Type: OpenField_Enemy_スパイディ_MCLove32_Leader
+  Worlds: open_field
+  Action: ADD 
+  PositionType: LAND
+  Chance: 0.25
+  Priority: 6
+  Conditions:
+  - mobsinworld{a=<1000} true 
+  - height{h=60to100} true 
+  - region{r=spawn} false 
+  - (
+    mythicinradius{a=<1;r=20} ||
+    mythicinradius{a=<3;r=32} ||
+    mythicinradius{a=<5;r=48} 
+    ) true  
+  - mobsInRadius{types=OpenField_Enemy_スパイディ_MCLove32;amount=<2;radius=32} true
