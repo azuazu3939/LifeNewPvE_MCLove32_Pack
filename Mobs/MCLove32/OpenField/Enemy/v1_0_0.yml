@@ -183,7 +183,7 @@ OpenField_Enemy_スパイディ_MCLove32:
   - players 
   AIGoalSelectors:
   - randomstroll
-  - spiderattack
+  - meleeattack
   - gotoparent
   - gotoowner
   Skills:
