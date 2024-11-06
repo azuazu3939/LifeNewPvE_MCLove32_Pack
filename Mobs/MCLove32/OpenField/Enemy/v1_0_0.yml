@@ -173,6 +173,8 @@ OpenField_Enemy_スパイディ_MCLove32:
   - players 
   Skills:
   - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
+  - potion{t=SPEED;l=5;d=14400;p=false} @self ~onEnterCombat
+  - potionclear{t=SPEED} @self ~onDropCombat
 
 OpenField_Enemy_スパイディ_MCLove32_Leader:
   Template: OpenField_Enemy_スパイディ_MCLove32
