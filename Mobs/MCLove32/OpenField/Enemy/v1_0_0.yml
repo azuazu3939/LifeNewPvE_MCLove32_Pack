@@ -39,6 +39,8 @@ OpenField_Enemy_ハロウルフ_MCLove32_Leader:
   Health: 100
   Damage: 4
   Armor: 4
+  Variables:
+    livingWater: int/2
   Skills:
   - summon{t=OpenField_Enemy_ハロウルフ_MCLove32;a=2to3;r=5;s=true} @self ~onSpawn
   - skill:Generic_Enemy_ウォーク_MCLove32{v=45} @self ~onTimer:20 ?!incombat
@@ -137,6 +139,8 @@ OpenField_Enemy_コロニアル_MCLove32_Leader:
   Template: OpenField_Enemy_コロニアル_MCLove32
   Health: 80
   Damage: 4
+  Variables:
+    livingWater: int/1
   Skills:
   - summon{t=OpenField_Enemy_コロニアル_MCLove32;a=1to2;r=3;s=true} @self ~onSpawn
   - skill:Generic_Enemy_ウォーク_MCLove32{v=32} @self ~onTimer:20 ?!incombat
@@ -186,6 +190,8 @@ OpenField_Enemy_スパイディ_MCLove32_Leader:
   Damage: 4
   Faction: Enemy
   Armor: 8
+  Variables:
+    livingWater: int/1
   Options:
     KnockbackResistance: 0.35
   Skills:
@@ -210,6 +216,8 @@ OpenField_Enemy_スパイディ_MCLove32_Commander:
   Armor: 10
   Equipment:
   - bow HAND 
+  Variables:
+    livingWater: int/1
   DamageModifiers:
   - SUFFOCATION 0
   Options:
