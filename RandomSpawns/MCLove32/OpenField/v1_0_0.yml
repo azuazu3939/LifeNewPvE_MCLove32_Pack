@@ -81,8 +81,8 @@ OpenField_Enemy_コロニアル_MCLove32_Leader:
     ) true  
   - mobsInRadius{types=OpenField_Enemy_コロニアル_MCLove32;amount=<3;radius=32} true
 
-OpenField_Enemy_スパイディ_MCLove32_Leader_Spawn:
-  Type: OpenField_Enemy_スパイディ_MCLove32_Leader
+OpenField_Enemy_スパイディ_MCLove32_Commander_Spawn:
+  Type: OpenField_Enemy_スパイディ_MCLove32_Commander
   Worlds: open_field
   Action: ADD 
   PositionType: LAND

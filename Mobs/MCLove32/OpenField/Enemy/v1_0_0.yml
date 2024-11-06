@@ -179,7 +179,6 @@ OpenField_Enemy_スパイディ_MCLove32_Leader:
   Type: spider 
   Display: "&fスパイディ"
   Health: 100
-  Mount: OpenField_Enemy_スパイディ_MCLove32_Commander
   Damage: 4
   Faction: Enemy
   Armor: 8
@@ -204,6 +203,7 @@ OpenField_Enemy_スパイディ_MCLove32_Commander:
   Type: skeleton
   Display: "&fスパイディ・コマンダー"
   Health: 20
+  Mount: OpenField_Enemy_スパイディ_MCLove32_Leader
   Armor: 10
   Equipment:
   - bow HAND 
