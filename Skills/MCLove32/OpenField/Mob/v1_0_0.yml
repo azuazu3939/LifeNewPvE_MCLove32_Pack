@@ -18,20 +18,20 @@ Generic_Enemy_ヘイト_MCLove32:
 Generic_Enemy_ウォーク_MCLove32:
   Skills:
   - setvar{var=skill.v;val="<skill.v> * 0.1";t=INTEGER} @self  
-  - setvar{var=skill.v2;val="(<skill.v> + 150) * (<skill.var.v> * 0.15)";t=INTEGER} @self  
+  - setvar{var=skill.v2;val="(<skill.v> + 150) * (<skill.var.v> * 0.15)";t=INTEGER} @self 
+  - setrotation{y=<random.-5to5> + <caster.l.yaw>;cd=2} @self 0.01 
   - projectile{
     ot=[
       - leap{v=<skill.var.v2>} @origin{y=-1}
       - setFallDistance{a=0} @self 
     ];
     v=<skill.var.v>;i=1;mr=16;se=false;sb=false;hs=true;hfs=0.5;mch=6;mdh=10;syo=0;sfo=0;hr=0;vr=0;md=25} @Forward{f=5;so=<random.float.-1to1>} 
-  - setrotation{relative=true;y=<random.-10to10>;cd=5} @self 0.05 
 
 #<skill.v>必要
 Generic_Enemy_ウォーク追従_MCLove32:
   Skills: 
   - setvar{var=skill.v;val="<skill.v> * 0.1";t=INTEGER} @self  
-  - setvar{var=skill.v2;val="(<skill.v> + 150) * (<skill.var.v> * 0.25)";t=INTEGER} @self  
+  - setvar{var=skill.v2;val="(<skill.v> + 150) * (<skill.var.v> * 0.15)";t=INTEGER} @self  
   - projectile{
     ot=[
       - leap{v=<skill.var.v2>} @origin{y=-1}
