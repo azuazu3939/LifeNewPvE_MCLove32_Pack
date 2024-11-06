@@ -34,7 +34,7 @@ Generic_Enemy_ウォーク追従_MCLove32:
   - setvar{var=skill.v2;val="(<skill.v> + 100) * (<skill.var.v> * 0.2)";t=INTEGER} @self  
   - projectile{
     ot=[
-      - leap{v=<skill.var.v2>} @origin
+      - leap{v=<skill.var.v2>} @origin{y=-1}
       - setFallDistance{a=0} @self 
       - look{headOnly=false;immediately=true} @Parent 0.75
     ];
