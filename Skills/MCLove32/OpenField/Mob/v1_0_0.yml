@@ -34,7 +34,7 @@ Generic_Enemy_ウォーク追従_MCLove32:
     ot=[
       - leap{v=<skill.v>} @origin{y=-1}
       - setFallDistance{a=0} @self 
-      - look{headOnly=false;immediately=true;fp=true} @Parent 0.75
+      - look{headOnly=false;immediately=true;f=true} @Parent 0.75
     ];
     v=<skill.var.v>;i=1;mr=16;se=false;sb=true;hs=true;hfs=0.5;mch=6;mdh=10;syo=0;sfo=0;hr=0;vr=0;md=25} @Parent ?hasparent
 
