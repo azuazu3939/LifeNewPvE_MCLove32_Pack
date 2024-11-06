@@ -36,7 +36,7 @@ Generic_Enemy_ウォーク追従_MCLove32:
       - setFallDistance{a=0} @self 
       - look{headOnly=false;immediately=true;fp=true} @Parent 0.75
     ];
-    v=<skill.var.v>;i=1;mr=16;se=false;sb=true;hs=true;hfs=0.5;mch=6;mdh=10;syo=0;sfo=0;hr=0;vr=0;md=25} @Parent ?parent 
+    v=<skill.var.v>;i=1;mr=16;se=false;sb=true;hs=true;hfs=0.5;mch=6;mdh=10;syo=0;sfo=0;hr=0;vr=0;md=25} @Parent ?hasparent
 
 OpenField_Enemy_枯れた抜け殻_MCLove32_Effect:
   Conditions:
