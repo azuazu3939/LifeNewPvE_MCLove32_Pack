@@ -45,8 +45,9 @@ Generic_Enemy_ウォーク追従_MCLove32:
 Generic_Enemy_ウォークRemoveCheck_MCLove32:
   Conditions:
   - varset{var=caster.livingWater} true 
+  - blocktype{type=water} true
   Skills:
-  - varmath{var=caster.livingWater;e="<caster.var.livingWater> - 1"} @self{conditions=[ - onblock{m=water,lava} true ]}
+  - varmath{var=caster.livingWater;e="<caster.var.livingWater> - 1"} @self
   - remove @self ?!varrange{var=caster.livingWater;val=>0} 
 
 OpenField_Enemy_枯れた抜け殻_MCLove32_Effect:
