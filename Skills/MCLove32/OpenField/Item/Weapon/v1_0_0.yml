@@ -53,18 +53,20 @@ OpneField_Weapon_サンドストーム_MCLove32_Skills:
   Conditions:
   - wearing{m=OpneField_Weapon_サンドストーム_MCLove32;s=HAND}
   Skills:
-  - skill:OpneField_Weapon_サンドストーム_MCLove32_Skills_Process{repeat=5;repeatI=5} @ENO{r=5;limit=10;sort=NEAREST;ignore=players;conditions=[ - isLiving true - isMythicMob true]}
-  - skill:OpneField_Weapon_サンドストーム_MCLove32_Skills_Effect{repeat=30;repeatI=1} @origin
-
-OpneField_Weapon_サンドストーム_MCLove32_Skills_Process:
-  Skills:
-  - damage{a=10;pi=true;ii=true}
-  - pull{v=3;to=true} 
-
-OpneField_Weapon_サンドストーム_MCLove32_Skills_Effect:
-  Skills:
-  - setvar{var=skill.x;val="<random.float.-5to5>";t=FLOAT} @self 
-  - setvar{var=skill.y;val="<random.float.-5to5>";t=FLOAT} @self 
-  - setvar{var=skill.z;val="<random.float.-5to5>";t=FLOAT} @self 
-  - e:p{p=cloud;a=1;s=0.5;d=true;dr=true;origin=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};fo=true} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
+  - totem{
+    ot=[
+      - setvar{var=skill.x;val="<random.float.-5to5>";t=FLOAT} @self 
+      - setvar{var=skill.y;val="<random.float.-5to5>";t=FLOAT} @self 
+      - setvar{var=skill.z;val="<random.float.-5to5>";t=FLOAT} @self 
+      - e:p{p=cloud;a=1;s=0.5;d=true;dr=true;origin=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};fo=true} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
+    ];
+    oh=[
+      - damage{a=10;pi=true;ii=true}
+      - pull{v=3;to=true} 
+    ];
+    conditions=[
+      - isLiving true 
+      - isMythicMob true
+    ];
+    md=20;i=1;hp=false;hnp=true;vr=5;hr=5} 
 
