@@ -215,6 +215,7 @@ OpenField_Enemy_スパイディ_MCLove32_Leader:
       - summon{t=OpenField_Enemy_スパイディ_MCLove32_Commander;a=1;r=0;delay=60} @origin{y=-4}
     ]} @origin ~onDeath 0.1
   - potion{t=LEVITATION;l=2;d=8;p=false} @self ~onSpawn
+  - attribute{attribute=STEP_HEIGHT;a=1.5;duration=600} @self ~onSpawn
 
 OpenField_Enemy_スパイディ_MCLove32_Commander:
   Template: OpenField_Enemy_スパイディ_MCLove32_Leader
