@@ -200,8 +200,10 @@ OpenField_Enemy_スパイディ_MCLove32_Leader:
   - skill{
     s=[
       - summon{t=OpenField_Enemy_スパイディ_MCLove32;a=2;r=0;repeat=3;repeatI=10} @origin{y=-2}
-      - summon{t=OpenField_Enemy_スパイディ_MCLove32_Commander;a=1;r=0;delay=60} @origin{y=-3}
+      - summon{t=OpenField_Enemy_スパイディ_MCLove32_Commander;a=1;r=0;delay=60} @origin{y=-4}
     ]} @origin ~onDeath 0.25
+  - jump{v=0.5} @self ~onSpawn 
+  - leap{v=150;delay=8} @self ~onSpawn 
 
 OpenField_Enemy_スパイディ_MCLove32_Commander:
   Template: OpenField_Enemy_スパイディ_MCLove32_Leader
