@@ -191,13 +191,7 @@ OpenField_Enemy_スパイディ_MCLove32_Leader:
   Skills:
   - potion{t=SLOW;l=5;d=14400;p=false} @self ~onEnterCombat
   - potionclear{t=SLOW} @self ~onDropCombat
-  - damage{a=40;pi=true;ii=true} @MIR{r=16;
-    t=
-    OpenField_Enemy_スパイディ_MCLove32,
-    OpenField_Enemy_スパイディ_MCLove32_Leader,
-    OpenField_Enemy_スパイディ_MCLove32_Commander;
-    conditions=[ - (parent || child || owner) true ]
-    } ~onDeath
+  - damage{a=40;pi=true;ii=true} @MIR{r=16;t=OpenField_Enemy_スパイディ_MCLove32,OpenField_Enemy_スパイディ_MCLove32_Leader,OpenField_Enemy_スパイディ_MCLove32_Commander;conditions=[ - (parent || child || owner) true ]} ~onDeath
   - summon{t=OpenField_Enemy_スパイディ_MCLove32;a=1;r=3;s=true} @self ~onDamaged 0.001
 
 OpenField_Enemy_スパイディ_MCLove32_Commander:
@@ -209,9 +203,12 @@ OpenField_Enemy_スパイディ_MCLove32_Commander:
   Armor: 10
   Equipment:
   - bow HAND 
+  DamageModifiers:
+  - SUFFOCATION 0
   Options:
     PreventSunburn: true
     Scale: 1.15
+    DigOutOfGround: false 
   Skills:
   - damage{a=<caster.damage>;pi=true;ii=true} @trigger ~onBowHit
   - summon{t=OpenField_Enemy_スパイディ_MCLove32;a=1to2;r=3;s=true} @self ~onSpawn
