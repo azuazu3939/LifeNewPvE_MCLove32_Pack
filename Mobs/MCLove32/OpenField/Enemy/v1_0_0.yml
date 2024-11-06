@@ -22,8 +22,6 @@ OpenField_Enemy_ハロウルフ_MCLove32:
   AIGoalSelectors:
   - randomstroll
   - meleeattack
-  - ownerattacker
-  - ownertarget
   - gotoparent
   - gotoowner
   Modules:
@@ -32,10 +30,11 @@ OpenField_Enemy_ハロウルフ_MCLove32:
     livingWater: int/2
   AITargetSelectors:
   - clear
+  - ownerattacker
+  - ownertarget
   - attacker
   - specificfaction{f=Sheep}
   Skills:
-  - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
   - potion{t=SPEED;d=144000;l=1;p=false} @self ~onSpawn
   - skill:Generic_Enemy_ウォーク追従_MCLove32{v=45} @self ~onTimer:20 ?!incombat
   - cmd{c="mlgo <target.name> OpneField_Material_ハロウルフの牙_MCLove32 1 0.7"} @TTP{conditions=[ - targetwithin{d=32} true ]} ~onDeath
@@ -86,6 +85,8 @@ OpenField_Enemy_枯れた抜け殻_MCLove32:
   AITargetSelectors:
   - clear
   - attacker
+  - ownerattacker
+  - ownertarget
   AIGoalSelectors:
   - randomstroll
   Variables:
@@ -96,7 +97,7 @@ OpenField_Enemy_枯れた抜け殻_MCLove32:
   - skill:OpenField_Enemy_枯れた抜け殻_MCLove32_Effect @self ~onEnterCombat
   - damage{a=100;pi=true;ii=true} @trigger ~onDamaged 0.01
   - skill:OpenField_Enemy_枯れた抜け殻_MCLove32_Skills @self ~onEnterCombat
-  - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
+
 
 OpenField_Enemy_コロニアル_MCLove32:
   Type: zombie 
@@ -137,9 +138,10 @@ OpenField_Enemy_コロニアル_MCLove32:
   - clear
   - attacker
   - players 
+  - ownerattacker
+  - ownertarget
   Skills:
   - skill:OpenField_Enemy_コロニアル_MCLove32_Skills @self ~onEnterCombat
-  - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=24} @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16} @self ~onDropCombat
 
@@ -181,12 +183,14 @@ OpenField_Enemy_スパイディ_MCLove32:
   - clear
   - attacker
   - players 
+  - ownerattacker
+  - ownertarget
   AIGoalSelectors:
   - randomstroll
+  - spiderattack
   - gotoparent
   - gotoowner
   Skills:
-  - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
   - potion{t=SPEED;l=1;d=14400;p=false} @self ~onEnterCombat
   - potionclear{t=SPEED} @self ~onDropCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=32} @self ~onEnterCombat
@@ -233,6 +237,9 @@ OpenField_Enemy_スパイディ_MCLove32_Commander:
     PreventSunburn: true
     Scale: 1.15
     DigOutOfGround: false 
+  AIGoalSelectors:
+  - bowattack
+  - arrowattack
   Skills:
   - damage{a=<caster.damage>;pi=true;ii=true} @trigger ~onBowHit
   - summon{t=OpenField_Enemy_スパイディ_MCLove32;a=1to2;r=3;s=true} @self ~onSpawn
