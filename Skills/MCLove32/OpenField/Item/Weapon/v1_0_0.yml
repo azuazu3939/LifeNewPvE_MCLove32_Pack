@@ -47,3 +47,24 @@ OpneField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process:
     bulletType=DISPLAY;mat=diamond_sword;scale=1.25,1.25,1.25;yaw=3.14;pitch=1.57;roll=0.785;
     v=30;i=1;vr=2;hr=2;hp=false;hnp=true;mr=32;se=true;
     in=12;ho=<skill.ho>;vo=<skill.vo>} 
+
+OpneField_Weapon_サンドストーム_MCLove32_Skills:
+  Cooldown: 1
+  Conditions:
+  - wearing{m=OpneField_Weapon_サンドストーム_MCLove32;s=HAND}
+  Skills:
+  - skill:OpneField_Weapon_サンドストーム_MCLove32_Skills_Process{repeat=5;repeatI=5} @ENO{r=5;limit=10;sort=NEAREST;ignore=players;conditions=[ - isLiving true - isMythicMob true]}
+  - skill:OpneField_Weapon_サンドストーム_MCLove32_Skills_Effect{repeat=5;repeatI=5} @origin
+
+OpneField_Weapon_サンドストーム_MCLove32_Skills_Process:
+  Skills:
+  - damage{a=10;pi=true;ii=true}
+  - pull{v=3;to=true} 
+
+OpneField_Weapon_サンドストーム_MCLove32_Skills_Effect:
+  Skills:
+  - setvar{var=skill.x;val="<random.float.-5to5>";t=FLOAT} @self 
+  - setvar{var=skill.y;val="<random.float.-5to5>";t=FLOAT} @self 
+  - setvar{var=skill.z;val="<random.float.-5to5>";t=FLOAT} @self 
+  - e:p{p=cloud;a=1;s=0.5;d=true;dr=true;origin=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};fo=true} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
+

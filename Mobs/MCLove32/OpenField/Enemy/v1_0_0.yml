@@ -239,3 +239,4 @@ OpenField_Enemy_スパイディ_MCLove32_Commander:
   Skills:
   - damage{a=<caster.damage>;pi=true;ii=true} @trigger ~onBowHit
   - summon{t=OpenField_Enemy_スパイディ_MCLove32;a=1to2;r=3;s=true} @self ~onSpawn
+
