@@ -49,7 +49,7 @@ OpneField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process:
     in=12;ho=<skill.ho>;vo=<skill.vo>} 
 
 OpneField_Weapon_サンドストーム_MCLove32_Skills:
-  Cooldown: 5
+  Cooldown: 10
   Conditions:
   - wearing{m=OpneField_Weapon_サンドストーム_MCLove32;s=HAND}
   Skills:
@@ -72,5 +72,5 @@ OpneField_Weapon_サンドストーム_MCLove32_Skills:
       - isLiving true 
       - isMythicMob true
     ];
-    md=60;i=1;hp=false;hnp=true;vr=5;hr=5;id=8} 
+    md=60;i=1;hp=false;hnp=true;vr=5;hr=5;id=5} 
 
