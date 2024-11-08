@@ -109,6 +109,10 @@ OpneField_Weapon_牙狼ノ壱_MCLove32_Skills:
   - jump{v=0.5} @self 
   - setvar{var=skill.v;val="500";t=INTEGER} @self
   - skill:OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity{repeat=49;repeatI=4} @self
+  - projectile{
+    ot=[
+      - leap{v=150} @origin
+    ];se=false;sb=false;md=200;mr=320;i=2;vr=0;hr=0;g=0.5;v=25} @TL
 
 OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity:
   Skills:
@@ -119,11 +123,10 @@ OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity:
 OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_BuffT1:
   Conditions:
   - varrange{var=skill.v;val=<200} true
-  - onground orElseCast OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_End
+  - onground true 
   Skills:
   - setFallDistance{a=0} @self 
   - potion{t=REGENERATION;d=400;l=0;p=false} @self 
-  - glow{g=AQUA;d=100} @self 
   - skill:OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_BuffT2 @self 
 
 OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_BuffT2:
@@ -132,7 +135,6 @@ OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_BuffT2:
   Skills:
   - potion{t=RESISTANCE;d=400;l=0;p=false} @self
   - potion{t=SPEED;d=400;l=1;p=false} @self 
-  - glow{g=GREEN;d=100} @self 
   - skill:OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_BuffT3 @self 
 
 OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_BuffT3: 
@@ -143,7 +145,6 @@ OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_BuffT3:
   - potion{t=SPEED;d=60;l=2;p=false} @self 
   - potion{t=REGENERATION;d=60;l=2;p=false} @self 
   - potion{t=STRENGTH;d=60;l=4;p=false} @self 
-  - glow{g=YELLOW;d=100} @self 
   - skill:OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_BuffT4 @self 
 
 OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_BuffT4: 
@@ -152,10 +153,4 @@ OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_BuffT4:
   Skills:
   - potion{t=RESISTANCE;d=20;l=2;p=false} @self
   - potion{t=STRENGTH;d=20;l=19;p=false} @self 
-  - glow{g=RED;d=100} @self 
   - damage{a=15;pi=true;ii=true} @EIR{r=4;ignore=players;conditions=[ - isLiving true - isMythicMob true ]}
-
-OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_End:
-  Skills:
-  - sound{s=ui.toast.challenge_complete;p=0} @self 
-  - glow{g=WHITE;d=1} @self 

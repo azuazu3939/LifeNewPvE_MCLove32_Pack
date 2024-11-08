@@ -60,7 +60,7 @@ OpneField_Weapon_エアブラスタ_MCLove32:
 
 OpneField_Weapon_牙狼ノ壱_MCLove32:
   Id: stone_sword 
-  Display: "&b&l牙&8&l狼&b&lノ&f&l壱"
+  Display: "&b&l牙&8&l狼&a&lノ&f&l壱"
   Lore:
   - "&f狼が狼であるのは何故か？"
   - "&f動きの次元が違うことを知るだろう…"
