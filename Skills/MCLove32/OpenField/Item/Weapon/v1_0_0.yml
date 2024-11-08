@@ -1,9 +1,9 @@
-OpneField_Weapon_サイスオブデーモン_MCLove32_Skills:
+OpenField_Weapon_サイスオブデーモン_MCLove32_Skills:
   Cooldown: 8
   TargetConditions:
   - isMythicMob true
   Conditions:
-  - wearing{m=OpneField_Weapon_サイスオブデーモン_MCLove32;s=HAND}
+  - wearing{m=OpenField_Weapon_サイスオブデーモン_MCLove32;s=HAND}
   Skills:
   - damage{a=80;ii=true;pi=true}
   - sound{s=entity.warden.death} @self 
@@ -13,23 +13,23 @@ OpneField_Weapon_サイスオブデーモン_MCLove32_Skills:
   - potion{t=WEAKNESS;l=4;d=50;p=false} 
   - potion{t=SLOWNESS;l=2;d=50;p=false} 
 
-OpneField_Weapon_ビットブレードTypeA_MCLove32_Skills:
+OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills:
   Cooldown: 5
   Conditions:
-  - wearing{m=OpneField_Weapon_ビットブレードTypeA_MCLove32;s=HAND}
+  - wearing{m=OpenField_Weapon_ビットブレードTypeA_MCLove32;s=HAND}
   Skills:
-  - skill:OpneField_Weapon_ビットブレードTypeA_MCLove32_Skills_Start @EIC{r=20;a=120;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
+  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Start @EIC{r=20;a=120;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
 
-OpneField_Weapon_ビットブレードTypeA_MCLove32_Skills_Start:
+OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Start:
   Skills:
-  - skill:OpneField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=90;vo=1;so=3;y=3} 
-  - skill:OpneField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=270;vo=1;so=3;y=3} 
-  - skill:OpneField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=90;vo=1.5;so=3;y=5;delay=2}
-  - skill:OpneField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=270;vo=1.5;so=3;y=5;delay=2}
-  - skill:OpneField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=90;vo=2;so=3;y=7;delay=4} 
-  - skill:OpneField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=270;vo=2;so=3;y=7;delay=4}
+  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=90;vo=1;so=3;y=3} 
+  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=270;vo=1;so=3;y=3} 
+  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=90;vo=1.5;so=3;y=5;delay=2}
+  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=270;vo=1.5;so=3;y=5;delay=2}
+  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=90;vo=2;so=3;y=7;delay=4} 
+  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=270;vo=2;so=3;y=7;delay=4}
 
-OpneField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process:
+OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process:
   Skills:
   - missile{
     ot=[
@@ -48,10 +48,10 @@ OpneField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process:
     v=30;i=1;vr=2;hr=2;hp=false;hnp=true;mr=32;se=true;
     in=12;ho=<skill.ho>;vo=<skill.vo>} 
 
-OpneField_Weapon_サンドストーム_MCLove32_Skills:
+OpenField_Weapon_サンドストーム_MCLove32_Skills:
   Cooldown: 10
   Conditions:
-  - wearing{m=OpneField_Weapon_サンドストーム_MCLove32;s=HAND}
+  - wearing{m=OpenField_Weapon_サンドストーム_MCLove32;s=HAND}
   Skills:
   - totem{
     ot=[
@@ -74,16 +74,16 @@ OpneField_Weapon_サンドストーム_MCLove32_Skills:
     ];
     md=60;i=1;hp=false;hnp=true;vr=5;hr=5;id=5} 
 
-OpneField_Weapon_エアブラスタ_MCLove32_Skills:
+OpenField_Weapon_エアブラスタ_MCLove32_Skills:
   Cooldown: 4
   Conditions:
-  - wearing{m=OpneField_Weapon_エアブラスタ_MCLove32;s=HAND}
+  - wearing{m=OpenField_Weapon_エアブラスタ_MCLove32;s=HAND}
   Skills:
-  - skill:OpneField_Weapon_エアブラスタ_MCLove32_SkillProcess{ho=30} @self 
-  - skill:OpneField_Weapon_エアブラスタ_MCLove32_SkillProcess{ho=0} @self 
-  - skill:OpneField_Weapon_エアブラスタ_MCLove32_SkillProcess{ho=-30} @self 
+  - skill:OpenField_Weapon_エアブラスタ_MCLove32_SkillProcess{ho=30} @self 
+  - skill:OpenField_Weapon_エアブラスタ_MCLove32_SkillProcess{ho=0} @self 
+  - skill:OpenField_Weapon_エアブラスタ_MCLove32_SkillProcess{ho=-30} @self 
 
-OpneField_Weapon_エアブラスタ_MCLove32_SkillProcess:
+OpenField_Weapon_エアブラスタ_MCLove32_SkillProcess:
   Skills:
   - projectile{
     os=[
@@ -103,20 +103,20 @@ OpneField_Weapon_エアブラスタ_MCLove32_SkillProcess:
     ];
     hp=false;hnp=true;v=35;i=1;md=30;mr=25;se=false;sb=false;vr=1.5;hr=2;ho=<skill.ho>} @TL 
 
-OpneField_Weapon_牙狼ノ壱_MCLove32_Skills:
+OpenField_Weapon_牙狼ノ壱_MCLove32_Skills:
   Cooldown: 20
   Conditions:
-  - wearing{m=OpneField_Weapon_牙狼ノ壱_MCLove32;s=HAND}
+  - wearing{m=OpenField_Weapon_牙狼ノ壱_MCLove32;s=HAND}
   - materialcooldown{m=stone_sword} false 
   Skills:
   - setmaterialcooldown{m=stone_sword;d=400} @self 
   - setvar{var=skill.v;val="400";t=INTEGER} @self
-  - skill:OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity @self
+  - skill:OpenField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity @self
 
-OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity:
+OpenField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity:
   Conditions:
-  - wearing{m=OpneField_Weapon_牙狼ノ壱_MCLove32;s=HAND} true
-  - onground orElseCast OpneField_Weapon_牙狼_MCLove32_Skill_Wait
+  - wearing{m=OpenField_Weapon_牙狼ノ壱_MCLove32;s=HAND} true
+  - onground orElseCast OpenField_Weapon_牙狼_MCLove32_Skill_Wait
   Skills:
   - leap{v=<skill.var.v>} @TL{cpitch=min(<caster.l.pitch>, 40)} 
   - setFallDistance{a=0} @self
@@ -133,27 +133,27 @@ OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity:
     ];
     v=8;i=2;se=false;sb=true;hp=false;hnp=false;mr=8;hr=1.5;vr=1.5} @Ring{r=8;p=16}
   - delay 2
-  - skill:OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity @self ?!varrange{var=skill.v;val=<100}
+  - skill:OpenField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity @self ?!varrange{var=skill.v;val=<100}
 
-OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Wait:
+OpenField_Weapon_牙狼ノ壱_MCLove32_Skill_Wait:
   Skills:
   - delay 2
-  - skill:OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity
+  - skill:OpenField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity
 
-OpneField_Weapon_牙狼ノ弐_MCLove32_Skills:
+OpenField_Weapon_牙狼ノ弐_MCLove32_Skills:
   Cooldown: 30
   Conditions:
-  - wearing{m=OpneField_Weapon_牙狼ノ弐_MCLove32;s=HAND}
+  - wearing{m=OpenField_Weapon_牙狼ノ弐_MCLove32;s=HAND}
   - materialcooldown{m=stone_sword} false 
   Skills:
   - setmaterialcooldown{m=stone_sword;d=600} @self 
   - setvar{var=skill.v;val="400";t=INTEGER} @self
-  - skill:OpneField_Weapon_牙狼ノ弐_MCLove32_Skill_Velocity @self
+  - skill:OpenField_Weapon_牙狼ノ弐_MCLove32_Skill_Velocity @self
 
-OpneField_Weapon_牙狼ノ弐_MCLove32_Skill_Velocity:
+OpenField_Weapon_牙狼ノ弐_MCLove32_Skill_Velocity:
   Conditions:
-  - wearing{m=OpneField_Weapon_牙狼ノ弐_MCLove32;s=HAND} true
-  - onground orElseCast OpneField_Weapon_牙狼ノ弐_MCLove32_Skill_Wait
+  - wearing{m=OpenField_Weapon_牙狼ノ弐_MCLove32;s=HAND} true
+  - onground orElseCast OpenField_Weapon_牙狼ノ弐_MCLove32_Skill_Wait
   Skills:
   - leap{v=<skill.var.v>} @TL{cpitch=min(<caster.l.pitch>, 40)} 
   - setFallDistance{a=0} @self
@@ -170,27 +170,27 @@ OpneField_Weapon_牙狼ノ弐_MCLove32_Skill_Velocity:
     ];
     v=8;i=2;se=false;sb=true;hp=false;hnp=false;mr=8;hr=1.5;vr=1.5} @Ring{r=8;p=16}
   - delay 2
-  - skill:OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity @self ?!varrange{var=skill.v;val=<100}
+  - skill:OpenField_Weapon_牙狼ノ弐_MCLove32_Skill_Velocity @self ?!varrange{var=skill.v;val=<100}
 
-OpneField_Weapon_牙狼ノ弐_MCLove32_Skill_Wait:
+OpenField_Weapon_牙狼ノ弐_MCLove32_Skill_Wait:
   Skills:
   - delay 2
-  - skill:OpneField_Weapon_牙狼ノ弐_MCLove32_Skill_Velocity
+  - skill:OpenField_Weapon_牙狼ノ弐_MCLove32_Skill_Velocity
 
-OpneField_Weapon_牙狼ノ零_MCLove32_Skills:
+OpenField_Weapon_牙狼ノ零_MCLove32_Skills:
   Cooldown: 60
   Conditions:
-  - wearing{m=OpneField_Weapon_牙狼ノ零_MCLove32;s=HAND}
+  - wearing{m=OpenField_Weapon_牙狼ノ零_MCLove32;s=HAND}
   - materialcooldown{m=stone_sword} false 
   Skills:
   - setmaterialcooldown{m=stone_sword;d=1200} @self 
   - setvar{var=skill.v;val="400";t=INTEGER} @self
-  - skill:OpneField_Weapon_牙狼ノ零_MCLove32_Skill_Velocity @self
+  - skill:OpenField_Weapon_牙狼ノ零_MCLove32_Skill_Velocity @self
 
-OpneField_Weapon_牙狼ノ零_MCLove32_Skill_Velocity:
+OpenField_Weapon_牙狼ノ零_MCLove32_Skill_Velocity:
   Conditions:
-  - wearing{m=OpneField_Weapon_牙狼ノ零_MCLove32;s=HAND} true
-  - onground orElseCast OpneField_Weapon_牙狼ノ零_MCLove32_Skill_Wait
+  - wearing{m=OpenField_Weapon_牙狼ノ零_MCLove32;s=HAND} true
+  - onground orElseCast OpenField_Weapon_牙狼ノ零_MCLove32_Skill_Wait
   Skills:
   - leap{v=<skill.var.v>} @TL{cpitch=min(<caster.l.pitch>, 40)} 
   - setFallDistance{a=0} @self
@@ -206,9 +206,9 @@ OpneField_Weapon_牙狼ノ零_MCLove32_Skill_Velocity:
     ];
     v=8;i=2;se=false;sb=true;hp=false;hnp=false;mr=8;hr=1.5;vr=1.5} @Ring{r=8;p=16}
   - delay 2
-  - skill:OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity @self ?!varrange{var=skill.v;val=<100}
+  - skill:OpenField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity @self ?!varrange{var=skill.v;val=<100}
 
-OpneField_Weapon_牙狼ノ零_MCLove32_Skill_Wait:
+OpenField_Weapon_牙狼ノ零_MCLove32_Skill_Wait:
   Skills:
   - delay 2
-  - skill:OpneField_Weapon_牙狼ノ零_MCLove32_Skill_Velocity
+  - skill:OpenField_Weapon_牙狼ノ零_MCLove32_Skill_Velocity
