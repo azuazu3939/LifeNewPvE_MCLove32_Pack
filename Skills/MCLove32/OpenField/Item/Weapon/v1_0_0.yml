@@ -94,8 +94,9 @@ OpneField_Weapon_エアカッター_MCLove32_SkillProcess:
     ot=[
       - setvar{var=skill.x;val="<random.float.-1to1>";t=FLOAT} @self 
       - setvar{var=skill.z;val="<random.float.-1to1>";t=FLOAT} @self 
-      - e:p{p=sweep_attack;a=2;vs=0.3;hs=0.3;s=1;d=true;audience=caster;origin=@origin{x=<skill.var.x>;z=<skill.var.z>}} @origin{x=<skill.var.x>;y=1;z=<skill.var.z>}
+      - e:p{p=sweep_attack;a=1;vs=0.3;hs=0.3;s=1;d=true;audience=caster;origin=@origin{x=<skill.var.x>;z=<skill.var.z>}} @origin{x=<skill.var.x>;y=1;z=<skill.var.z>}
       - e:p{p=cloud;a=5;s=0.25;d=true;delay=2;audience=caster;eo=true;origin=@origin{x=<skill.var.x>;z=<skill.var.z>}} @origin{x=<skill.var.x>;y=1;z=<skill.var.z>}
+      - e:p{p=crit;a=4;vs=0.5;hs=0.5;delay=2;audience=caster} @origin
     ];
     oh=[
       - damage{a=<skill.var.<skill.ho>>;ii=true;pi=true}
