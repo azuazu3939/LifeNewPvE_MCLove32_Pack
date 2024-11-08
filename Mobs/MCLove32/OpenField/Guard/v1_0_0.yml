@@ -43,3 +43,39 @@ OpenField_Guard_ヒィツジー_MCLove32_Leader:
   Armor: 2
   Skills:
   - summon{t=OpenField_Guard_ヒィツジー_MCLove32;a=2to4;r=5;s=true} @self ~onSpawn
+
+OpenField_Guard_牙狼ノ壱_MCLove32:
+  Type: wolf
+  Display: "&f牙狼"
+  Faction: Guard
+  Health: 60
+  Armor: 20
+  AIGoalSelectors:
+  - clear
+  - randomstroll
+  - gotoparent
+  - gotoowner
+  - meleeattack 
+  AITargetSelectors:
+  - clear
+  - ownertarget
+  - ownerattacker
+  Options:
+    Collidable: true 
+    DigOutOfGround: true 
+    FollowRange: 64
+    Despawn: true 
+    NoDamageTicks: 0
+    KnockbackResistance: 0.15
+    NoAI: false 
+    #NoGravity: true
+    PreventMobKillDrops: true 
+    PreventRandomEquipment: true 
+    #PreventSunburn: true
+    #PreventVanillaDamage: true
+    #Scale: -1
+    Silent: false 
+  Skills:
+  - heal{a=5} @self ~onAttack  
+  - remove{delay=600} @self ~onSpawn
+  - e:p{p=cloud;a=20;vs=0.5;hs=0.5;s=1} @self ~onSpawn 
