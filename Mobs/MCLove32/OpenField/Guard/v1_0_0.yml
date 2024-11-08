@@ -80,4 +80,5 @@ OpenField_Guard_牙狼ノ壱_MCLove32:
   - heal{a=5} @self ~onAttack  
   - remove{delay=600} @self ~onSpawn
   - e:p{p=cloud;a=20;vs=0.5;hs=0.5;s=1} @self ~onSpawn 
+  - potion{t=SPEED;d=144000;l=3;p=false} @self ~onSpawn
   - cancelevent{sync=true} @self ~onDamaged ?~isplayer
