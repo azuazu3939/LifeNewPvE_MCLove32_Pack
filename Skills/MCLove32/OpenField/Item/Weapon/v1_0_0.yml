@@ -125,7 +125,7 @@ OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity:
   - projectile{
     ot=[
       - e:p{p=cloud;a=1;vs=0.025;hs=0.025;audience=caster} @origin
-      - summon{t=OpenField_Guard_牙狼ノ壱_MCLove32;a=1;r=0;s=true} @origin 0.01
+      - summon{t=OpenField_Guard_牙狼ノ壱_MCLove32;a=1;r=0;s=true} @origin 0.001
     ];
     v=8;i=2;se=false;sb=true;hp=false;hnp=false;mr=8;hr=1.5;vr=1.5} @Ring{r=8;p=16}
   - delay 2
