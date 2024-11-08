@@ -107,7 +107,7 @@ OpneField_Weapon_牙狼ノ壱_MCLove32_Skills:
   Cooldown: 20
   Conditions:
   - wearing{m=OpneField_Weapon_牙狼ノ壱_MCLove32;s=HAND}
-  - materialcooldown{m=stone_sword} true 
+  - materialcooldown{m=stone_sword} false 
   Skills:
   - setmaterialcooldown{m=stone_sword;d=400} @self 
   - setvar{var=skill.v;val="400";t=INTEGER} @self
@@ -144,7 +144,7 @@ OpneField_Weapon_牙狼ノ弐_MCLove32_Skills:
   Cooldown: 30
   Conditions:
   - wearing{m=OpneField_Weapon_牙狼ノ弐_MCLove32;s=HAND}
-  - materialcooldown{m=stone_sword} true 
+  - materialcooldown{m=stone_sword} false 
   Skills:
   - setmaterialcooldown{m=stone_sword;d=600} @self 
   - setvar{var=skill.v;val="400";t=INTEGER} @self
@@ -176,7 +176,7 @@ OpneField_Weapon_牙狼ノ零_MCLove32_Skills:
   Cooldown: 60
   Conditions:
   - wearing{m=OpneField_Weapon_牙狼ノ零_MCLove32;s=HAND}
-  - materialcooldown{m=stone_sword} true 
+  - materialcooldown{m=stone_sword} false 
   Skills:
   - setmaterialcooldown{m=stone_sword;d=1200} @self 
   - setvar{var=skill.v;val="400";t=INTEGER} @self
