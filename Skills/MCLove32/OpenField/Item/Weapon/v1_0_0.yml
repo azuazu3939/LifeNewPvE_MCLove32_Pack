@@ -74,16 +74,16 @@ OpneField_Weapon_サンドストーム_MCLove32_Skills:
     ];
     md=60;i=1;hp=false;hnp=true;vr=5;hr=5;id=5} 
 
-OpneField_Weapon_エアカッター_MCLove32_Skills:
+OpneField_Weapon_エアブラスタ_MCLove32_Skills:
   Cooldown: 4
   Conditions:
-  - wearing{m=OpneField_Weapon_エアカッター_MCLove32;s=HAND}
+  - wearing{m=OpneField_Weapon_エアブラスタ_MCLove32;s=HAND}
   Skills:
-  - skill:OpneField_Weapon_エアカッター_MCLove32_SkillProcess{ho=30} @self 
-  - skill:OpneField_Weapon_エアカッター_MCLove32_SkillProcess{ho=0} @self 
-  - skill:OpneField_Weapon_エアカッター_MCLove32_SkillProcess{ho=-30} @self 
+  - skill:OpneField_Weapon_エアブラスタ_MCLove32_SkillProcess{ho=30} @self 
+  - skill:OpneField_Weapon_エアブラスタ_MCLove32_SkillProcess{ho=0} @self 
+  - skill:OpneField_Weapon_エアブラスタ_MCLove32_SkillProcess{ho=-30} @self 
 
-OpneField_Weapon_エアカッター_MCLove32_SkillProcess:
+OpneField_Weapon_エアブラスタ_MCLove32_SkillProcess:
   Skills:
   - projectile{
     os=[
@@ -99,5 +99,6 @@ OpneField_Weapon_エアカッター_MCLove32_SkillProcess:
     ];
     oh=[
       - damage{a=40;ii=true;pi=true}
+      - throw{v=3;vy=1}
     ];
     hp=false;hnp=true;v=35;i=1;md=30;mr=25;se=false;sb=false;vr=1.5;hr=2;ho=<skill.ho>} @TL 
