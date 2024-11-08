@@ -120,7 +120,7 @@ OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity:
   - setFallDistance{a=0} @self
   - setvar{var=skill.v;val="<skill.var.v> * 0.95";t=INTEGER} @self
   - damage{a=30;ii=true;pi=true} @EIR{r=8;ignore=players;c=[ - isLiving true - isMythicMob true ]}
-  - jump{v=0.15} @self 
+  - sound{s=entity.wolf.growl;p=0;cd=2} @self 
   - delay 2
   - skill:OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity @self ?!varrange{var=skill.v;val=<100}
 
