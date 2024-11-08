@@ -108,7 +108,7 @@ OpneField_Weapon_牙狼ノ壱_MCLove32_Skills:
   Conditions:
   - wearing{m=OpneField_Weapon_牙狼ノ壱_MCLove32;s=HAND}
   Skills:
-  - setvar{var=skill.v;val="500";t=INTEGER} @self
+  - setvar{var=skill.v;val="400";t=INTEGER} @self
   - skill:OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity @self
 
 OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity:
@@ -118,9 +118,9 @@ OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity:
   Skills:
   - leap{v=<skill.var.v>} @TL{cpitch=min(<caster.l.pitch>, 40)} 
   - setFallDistance{a=0} @self
-  - setvar{var=skill.v;val="<skill.var.v> * 0.9";t=INTEGER} @self
+  - setvar{var=skill.v;val="<skill.var.v> * 0.95";t=INTEGER} @self
   - damage{a=30;ii=true;pi=true} @EIR{r=8;ignore=players;c=[ - isLiving true - isMythicMob true ]}
-  - jump{v=0.25} @self 
+  - jump{v=0.15} @self 
   - delay 2
   - skill:OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity @self ?!varrange{var=skill.v;val=<100}
 
