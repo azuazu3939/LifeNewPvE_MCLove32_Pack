@@ -107,33 +107,98 @@ OpneField_Weapon_牙狼ノ壱_MCLove32_Skills:
   Cooldown: 20
   Conditions:
   - wearing{m=OpneField_Weapon_牙狼ノ壱_MCLove32;s=HAND}
+  - materialcooldown{m=stone_sword} true 
   Skills:
+  - setmaterialcooldown{m=stone_sword;d=400} @self 
   - setvar{var=skill.v;val="400";t=INTEGER} @self
   - skill:OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity @self
 
 OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity:
   Conditions:
   - wearing{m=OpneField_Weapon_牙狼ノ壱_MCLove32;s=HAND} true
-  - onground orElseCast OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Wait
+  - onground orElseCast OpneField_Weapon_牙狼_MCLove32_Skill_Wait
   Skills:
   - leap{v=<skill.var.v>} @TL{cpitch=min(<caster.l.pitch>, 40)} 
   - setFallDistance{a=0} @self
   - setvar{var=skill.v;val="<skill.var.v> * 0.95";t=INTEGER} @self
-  - damage{a=30;ii=true;pi=true} @EIR{r=8;ignore=players;c=[ - isLiving true - isMythicMob true ]}
+  - damage{a=10;ii=true;pi=true} @EIR{r=8;ignore=players;c=[ - isLiving true - isMythicMob true ]}
   - sound{s=entity.wolf.growl;v=0.25;p=0;cd=2} @self 0.5
   - projectile{
     ot=[
       - e:p{p=cloud;a=1;vs=0.025;hs=0.025;audience=caster} @origin
       - skill{s=[
-        - summon{t=OpenField_Guard_牙狼ノ壱_MCLove32;a=1;r=0;s=true} 
+        - summon{t=OpenField_Guard_牙狼_MCLove32;a=1;r=0;s=true} 
         - sound{s=entity.wolf.howl} 
-        ]} @origin 0.002
+        ]} @origin 0.001
     ];
     v=8;i=2;se=false;sb=true;hp=false;hnp=false;mr=8;hr=1.5;vr=1.5} @Ring{r=8;p=16}
   - delay 2
   - skill:OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity @self ?!varrange{var=skill.v;val=<100}
 
-OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Wait:
+OpneField_Weapon_牙狼_MCLove32_Skill_Wait:
   Skills:
   - delay 2
   - skill:OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity
+
+OpneField_Weapon_牙狼ノ弐_MCLove32_Skills:
+  Cooldown: 30
+  Conditions:
+  - wearing{m=OpneField_Weapon_牙狼ノ弐_MCLove32;s=HAND}
+  - materialcooldown{m=stone_sword} true 
+  Skills:
+  - setmaterialcooldown{m=stone_sword;d=600} @self 
+  - setvar{var=skill.v;val="400";t=INTEGER} @self
+  - skill:OpneField_Weapon_牙狼ノ弐_MCLove32_Skill_Velocity @self
+
+OpneField_Weapon_牙狼ノ弐_MCLove32_Skill_Velocity:
+  Conditions:
+  - wearing{m=OpneField_Weapon_牙狼ノ弐_MCLove32;s=HAND} true
+  - onground orElseCast OpneField_Weapon_牙狼_MCLove32_Skill_Wait
+  Skills:
+  - leap{v=<skill.var.v>} @TL{cpitch=min(<caster.l.pitch>, 40)} 
+  - setFallDistance{a=0} @self
+  - setvar{var=skill.v;val="<skill.var.v> * 0.96";t=INTEGER} @self
+  - damage{a=20;ii=true;pi=true} @EIR{r=8;ignore=players;c=[ - isLiving true - isMythicMob true ]}
+  - sound{s=entity.wolf.growl;v=0.25;p=0;cd=2} @self 0.5
+  - projectile{
+    ot=[
+      - e:p{p=cloud;a=1;vs=0.025;hs=0.025;audience=caster} @origin
+      - skill{s=[
+        - summon{t=OpenField_Guard_牙狼_MCLove32;a=1;r=0;s=true} 
+        - sound{s=entity.wolf.howl} 
+        ]} @origin 0.0015
+    ];
+    v=8;i=2;se=false;sb=true;hp=false;hnp=false;mr=8;hr=1.5;vr=1.5} @Ring{r=8;p=16}
+  - delay 2
+  - skill:OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity @self ?!varrange{var=skill.v;val=<100}
+
+OpneField_Weapon_牙狼ノ零_MCLove32_Skills:
+  Cooldown: 60
+  Conditions:
+  - wearing{m=OpneField_Weapon_牙狼ノ零_MCLove32;s=HAND}
+  - materialcooldown{m=stone_sword} true 
+  Skills:
+  - setmaterialcooldown{m=stone_sword;d=1200} @self 
+  - setvar{var=skill.v;val="400";t=INTEGER} @self
+  - skill:OpneField_Weapon_牙狼ノ零_MCLove32_Skill_Velocity @self
+
+OpneField_Weapon_牙狼ノ零_MCLove32_Skill_Velocity:
+  Conditions:
+  - wearing{m=OpneField_Weapon_牙狼ノ零_MCLove32;s=HAND} true
+  - onground orElseCast OpneField_Weapon_牙狼_MCLove32_Skill_Wait
+  Skills:
+  - leap{v=<skill.var.v>} @TL{cpitch=min(<caster.l.pitch>, 40)} 
+  - setFallDistance{a=0} @self
+  - setvar{var=skill.v;val="<skill.var.v> * 0.96";t=INTEGER} @self
+  - sound{s=entity.wolf.growl;v=0.25;p=0;cd=2} @self 0.5
+  - projectile{
+    ot=[
+      - e:p{p=cloud;a=1;vs=0.025;hs=0.025;audience=caster} @origin
+      - skill{s=[
+        - summon{t=OpenField_Guard_牙狼ノ零_MCLove32;a=1;r=0;s=true} 
+        - sound{s=entity.wolf.howl} 
+        ]} @origin 0.0025
+    ];
+    v=8;i=2;se=false;sb=true;hp=false;hnp=false;mr=8;hr=1.5;vr=1.5} @Ring{r=8;p=16}
+  - delay 2
+  - skill:OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity @self ?!varrange{var=skill.v;val=<100}

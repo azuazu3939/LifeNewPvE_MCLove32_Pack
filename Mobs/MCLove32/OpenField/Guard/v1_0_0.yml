@@ -44,7 +44,7 @@ OpenField_Guard_ヒィツジー_MCLove32_Leader:
   Skills:
   - summon{t=OpenField_Guard_ヒィツジー_MCLove32;a=2to4;r=5;s=true} @self ~onSpawn
 
-OpenField_Guard_牙狼ノ壱_MCLove32:
+OpenField_Guard_牙狼_MCLove32:
   Type: wolf
   Display: "&f牙狼"
   Faction: Guard
@@ -85,3 +85,46 @@ OpenField_Guard_牙狼ノ壱_MCLove32:
   - potion{t=SPEED;d=144000;l=4;p=false} @self ~onSpawn
   - cancelevent{sync=true} @self ~onDamaged ?~isPlayer
   - cancelevent{sync=true} @self ~onAttack ?~isPlayer
+
+OpenField_Guard_牙狼ノ零_MCLove32:
+  Type: wolf
+  Display: "&f牙狼ノ零"
+  Faction: Guard
+  Health: 200
+  Damage: 35
+  Armor: 50
+  Modules:
+    ThreatTable: true 
+  AIGoalSelectors:
+  - clear
+  - randomstroll
+  - gotoowner
+  - meleeattack{ar=8}
+  - doNothing{conditions=[ - isPlayer true ]}
+  AITargetSelectors:
+  - clear
+  - ownertarget
+  - specificfaction{f=Enemy} 
+  - ownerattacker
+  Options:
+    Collidable: true 
+    DigOutOfGround: true 
+    FollowRange: 64
+    Despawn: true 
+    NoDamageTicks: 0
+    KnockbackResistance: 0.15
+    NoAI: false 
+    #NoGravity: true
+    PreventMobKillDrops: true 
+    PreventRandomEquipment: true 
+    #PreventSunburn: true
+    #PreventVanillaDamage: true
+    #Scale: -1
+    Silent: false 
+  Skills:
+  - remove{delay=6000} @self ~onSpawn
+  - e:p{p=cloud;a=20;vs=0.5;hs=0.5;s=1} @self ~onSpawn 
+  - potion{t=SPEED;d=144000;l=4;p=false} @self ~onSpawn
+  - cancelevent{sync=true} @self ~onDamaged ?~isPlayer
+  - cancelevent{sync=true} @self ~onAttack ?~isPlayer
+  - healpercent{p=0.05} @self ~onDamaged 
