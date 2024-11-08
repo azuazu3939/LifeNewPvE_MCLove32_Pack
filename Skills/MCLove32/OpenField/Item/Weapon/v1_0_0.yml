@@ -105,53 +105,26 @@ OpneField_Weapon_エアブラスタ_MCLove32_SkillProcess:
 
 OpneField_Weapon_牙狼ノ壱_MCLove32_Skills:
   Cooldown: 15
+  Conditions:
+  - wearing{m=OpneField_Weapon_牙狼ノ壱_MCLove32;s=HAND}
   Skills:
-  - jump{v=0.5} @self 
   - setvar{var=skill.v;val="500";t=INTEGER} @self
-  - skill:OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity{repeat=49;repeatI=4} @self
-  - projectile{
-    ot=[
-      - leap{v=150} @origin ?!onground 
-      - endprojectile @self ?onground 
-    ];se=false;sb=false;md=200;mr=320;i=2;vr=0;hr=0;g=0.5;v=25} @TL
+  - skill:OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity @self
 
 OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity:
+  Conditions:
+  - wearing{m=OpneField_Weapon_牙狼ノ壱_MCLove32;s=HAND} true
+  - onground orElseCast OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Wait
   Skills:
-  - leap{v=<skill.var.v>} @TL{cpitch=min(<caster.l.pitch>, 40)}
+  - leap{v=<skill.var.v>} @TL{cpitch=min(<caster.l.pitch>, 40)} 
+  - setFallDistance{a=0} @self
   - setvar{var=skill.v;val="<skill.var.v> * 0.9";t=INTEGER} @self
-  - skill:OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_BuffT1 @self 
+  - damage{a=30;ii=true;pi=true} @EIR{r=8;ignore=players;c=[ - isLiving true - isMythicMob true ]}
+  - jump{v=0.25} @self 
+  - delay 2
+  - skill:OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity @self ?!varrange{var=skill.v;val=<100}
 
-OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_BuffT1:
-  Conditions:
-  - varrange{var=skill.v;val=<200} true
-  - onground true 
+OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Wait:
   Skills:
-  - setFallDistance{a=0} @self 
-  - potion{t=REGENERATION;d=400;l=0;p=false} @self 
-  - skill:OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_BuffT2 @self 
-
-OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_BuffT2:
-  Conditions:
-  - varrange{var=skill.v;val=<100} true
-  Skills:
-  - potion{t=RESISTANCE;d=400;l=0;p=false} @self
-  - potion{t=SPEED;d=400;l=1;p=false} @self 
-  - skill:OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_BuffT3 @self 
-
-OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_BuffT3: 
-  Conditions:
-  - varrange{var=skill.v;val=<50} true
-  Skills:
-  - potion{t=RESISTANCE;d=60;l=1;p=false} @self
-  - potion{t=SPEED;d=60;l=2;p=false} @self 
-  - potion{t=REGENERATION;d=60;l=2;p=false} @self 
-  - potion{t=STRENGTH;d=60;l=4;p=false} @self 
-  - skill:OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_BuffT4 @self 
-
-OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_BuffT4: 
-  Conditions:
-  - varrange{var=skill.v;val=<25} true
-  Skills:
-  - potion{t=RESISTANCE;d=20;l=2;p=false} @self
-  - potion{t=STRENGTH;d=20;l=19;p=false} @self 
-  - damage{a=15;pi=true;ii=true} @EIR{r=4;ignore=players;conditions=[ - isLiving true - isMythicMob true ]}
+  - delay 2
+  - skill:OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity
