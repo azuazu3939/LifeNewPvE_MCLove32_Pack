@@ -58,7 +58,7 @@ OpenField_Enemy_枯れた抜け殻_MCLove32:
   Health: 1000
   Damage: 50
   Faction: Enemy
-  Armor: 10
+  Armor: 25
   Equipment:
   - golden_helmet HEAD
   - netherite_hoe HAND 

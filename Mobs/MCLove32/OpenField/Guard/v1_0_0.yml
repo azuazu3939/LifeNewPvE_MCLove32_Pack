@@ -61,8 +61,8 @@ OpenField_Guard_牙狼_MCLove32:
   - doNothing{conditions=[ - isPlayer true ]}
   AITargetSelectors:
   - clear
-  - ownertarget
   - specificfaction{f=Enemy} 
+  - ownertarget
   - ownerattacker
   Options:
     Collidable: true 
@@ -103,8 +103,8 @@ OpenField_Guard_牙狼ノ零_MCLove32:
   - doNothing{conditions=[ - isPlayer true ]}
   AITargetSelectors:
   - clear
-  - ownertarget
   - specificfaction{f=Enemy} 
+  - ownertarget
   - ownerattacker
   Options:
     Collidable: true 
@@ -127,4 +127,4 @@ OpenField_Guard_牙狼ノ零_MCLove32:
   - potion{t=SPEED;d=144000;l=4;p=false} @self ~onSpawn
   - cancelevent{sync=true} @self ~onDamaged ?~isPlayer
   - cancelevent{sync=true} @self ~onAttack ?~isPlayer
-  - healpercent{p=0.05} @self ~onDamaged 
+  - healpercent{p=0.01} @self ~onDamaged 
