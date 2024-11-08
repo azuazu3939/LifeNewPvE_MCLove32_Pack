@@ -135,7 +135,7 @@ OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity:
   - delay 2
   - skill:OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity @self ?!varrange{var=skill.v;val=<100}
 
-OpneField_Weapon_牙狼_MCLove32_Skill_Wait:
+OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Wait:
   Skills:
   - delay 2
   - skill:OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity
@@ -153,7 +153,7 @@ OpneField_Weapon_牙狼ノ弐_MCLove32_Skills:
 OpneField_Weapon_牙狼ノ弐_MCLove32_Skill_Velocity:
   Conditions:
   - wearing{m=OpneField_Weapon_牙狼ノ弐_MCLove32;s=HAND} true
-  - onground orElseCast OpneField_Weapon_牙狼_MCLove32_Skill_Wait
+  - onground orElseCast OpneField_Weapon_牙狼ノ弐_MCLove32_Skill_Wait
   Skills:
   - leap{v=<skill.var.v>} @TL{cpitch=min(<caster.l.pitch>, 40)} 
   - setFallDistance{a=0} @self
@@ -172,6 +172,11 @@ OpneField_Weapon_牙狼ノ弐_MCLove32_Skill_Velocity:
   - delay 2
   - skill:OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity @self ?!varrange{var=skill.v;val=<100}
 
+OpneField_Weapon_牙狼ノ弐_MCLove32_Skill_Wait:
+  Skills:
+  - delay 2
+  - skill:OpneField_Weapon_牙狼ノ弐_MCLove32_Skill_Velocity
+
 OpneField_Weapon_牙狼ノ零_MCLove32_Skills:
   Cooldown: 60
   Conditions:
@@ -185,7 +190,7 @@ OpneField_Weapon_牙狼ノ零_MCLove32_Skills:
 OpneField_Weapon_牙狼ノ零_MCLove32_Skill_Velocity:
   Conditions:
   - wearing{m=OpneField_Weapon_牙狼ノ零_MCLove32;s=HAND} true
-  - onground orElseCast OpneField_Weapon_牙狼_MCLove32_Skill_Wait
+  - onground orElseCast OpneField_Weapon_牙狼ノ零_MCLove32_Skill_Wait
   Skills:
   - leap{v=<skill.var.v>} @TL{cpitch=min(<caster.l.pitch>, 40)} 
   - setFallDistance{a=0} @self
@@ -202,3 +207,8 @@ OpneField_Weapon_牙狼ノ零_MCLove32_Skill_Velocity:
     v=8;i=2;se=false;sb=true;hp=false;hnp=false;mr=8;hr=1.5;vr=1.5} @Ring{r=8;p=16}
   - delay 2
   - skill:OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity @self ?!varrange{var=skill.v;val=<100}
+
+OpneField_Weapon_牙狼ノ零_MCLove32_Skill_Wait:
+  Skills:
+  - delay 2
+  - skill:OpneField_Weapon_牙狼ノ零_MCLove32_Skill_Velocity
