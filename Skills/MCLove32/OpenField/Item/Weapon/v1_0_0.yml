@@ -121,11 +121,13 @@ OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity:
   - setvar{var=skill.v;val="<skill.var.v> * 0.95";t=INTEGER} @self
   - damage{a=30;ii=true;pi=true} @EIR{r=8;ignore=players;c=[ - isLiving true - isMythicMob true ]}
   - sound{s=entity.wolf.growl;v=0.25;p=0;cd=2} @self 0.5
-  - sound{s=entity.wolf.howl;v=0.25;cd=4} @self 0.5
   - projectile{
     ot=[
       - e:p{p=cloud;a=1;vs=0.025;hs=0.025;audience=caster} @origin
-      - summon{t=OpenField_Guard_牙狼ノ壱_MCLove32;a=1;r=0;s=true} @origin 0.001
+      - skill{s=[
+        - summon{t=OpenField_Guard_牙狼ノ壱_MCLove32;a=1;r=0;s=true} 
+        - sound{s=entity.wolf.howl} 
+        ]} @origin 0.002
     ];
     v=8;i=2;se=false;sb=true;hp=false;hnp=false;mr=8;hr=1.5;vr=1.5} @Ring{r=8;p=16}
   - delay 2
