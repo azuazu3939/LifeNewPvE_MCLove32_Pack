@@ -85,7 +85,6 @@ OpneField_Weapon_エアカッター_MCLove32_Skills:
 
 OpneField_Weapon_エアカッター_MCLove32_SkillProcess:
   Skills:
-  - setvar{var=skill.<skill.ho>;val="50";t=FLOAT} @self
   - projectile{
     os=[
       - sound{s=entity.breeze.deflect;p=2} @self
@@ -99,7 +98,6 @@ OpneField_Weapon_エアカッター_MCLove32_SkillProcess:
       - e:p{p=crit;a=4;vs=0.5;hs=0.5;delay=2;audience=caster} @origin
     ];
     oh=[
-      - damage{a=<skill.var.<skill.ho>>;ii=true;pi=true}
-      - setvar{var=skill.<skill.ho>;val="<skill.var.<skill.ho>> * 0.9";t=FLOAT} @self 
+      - damage{a=40;ii=true;pi=true}
     ];
     hp=false;hnp=true;v=35;i=1;md=30;mr=25;se=false;sb=false;vr=1.5;hr=2;ho=<skill.ho>} @TL 
