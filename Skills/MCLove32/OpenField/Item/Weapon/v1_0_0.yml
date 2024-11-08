@@ -65,7 +65,7 @@ OpneField_Weapon_サンドストーム_MCLove32_Skills:
       - sound{s=entity.ravager.stunned;p=0;v=0.6;repeat=5;repeatI=10} @origin
     ];
     oh=[
-      - damage{a=10;pi=true;ii=true}
+      - damage{a=25;pi=true;ii=true}
       - pull{v=3;to=true} 
     ];
     conditions=[
