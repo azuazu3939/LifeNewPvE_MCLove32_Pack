@@ -58,7 +58,7 @@ OpneField_Weapon_サンドストーム_MCLove32_Skills:
       - setvar{var=skill.x;val="<random.float.-5to5>";t=FLOAT} @self 
       - setvar{var=skill.y;val="<random.float.-5to5>";t=FLOAT} @self 
       - setvar{var=skill.z;val="<random.float.-5to5>";t=FLOAT} @self 
-      - e:p{p=cloud;a=1;s=0.5;d=true;dr=true} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
+      - e:p{p=cloud;a=1;s=0.5;d=true;dr=true;eo=true} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
     ];
     oh=[
       - damage{a=10;pi=true;ii=true}
