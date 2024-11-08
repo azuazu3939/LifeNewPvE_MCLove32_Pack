@@ -99,6 +99,6 @@ OpneField_Weapon_エアブラスタ_MCLove32_SkillProcess:
     ];
     oh=[
       - damage{a=40;ii=true;pi=true}
-      - throw{v=3;vy=1}
+      - throw{v=8;vy=2}
     ];
     hp=false;hnp=true;v=35;i=1;md=30;mr=25;se=false;sb=false;vr=1.5;hr=2;ho=<skill.ho>} @TL 
