@@ -124,9 +124,9 @@ OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity:
   - sound{s=entity.wolf.howl;v=0.25;cd=4} @self 0.5
   - projectile{
     ot=[
-      - e:p{p=crit;a=2;vs=0.025;hs=0.025} @origin
+      - e:p{p=cloud;a=2;vs=0.025;hs=0.025} @origin
     ];
-    v=8;i=2;vr=0;hr=0;se=false;sb=true;hp=false;hnp=false;mr=8} @Ring{r=8;p=16}
+    v=8;i=2;vr=0;hr=0;se=false;sb=true;hp=false;hnp=false;mr=8;hr=1;vr=1} @Ring{r=8;p=24}
   - delay 2
   - skill:OpneField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity @self ?!varrange{var=skill.v;val=<100}
 
