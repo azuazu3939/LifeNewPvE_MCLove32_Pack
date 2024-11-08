@@ -206,7 +206,7 @@ OpenField_Weapon_牙狼ノ零_MCLove32_Skill_Velocity:
     ];
     v=8;i=2;se=false;sb=true;hp=false;hnp=false;mr=8;hr=1.5;vr=1.5} @Ring{r=8;p=16}
   - delay 2
-  - skill:OpenField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity @self ?!varrange{var=skill.v;val=<100}
+  - skill:OpenField_Weapon_牙狼ノ零_MCLove32_Skill_Velocity @self ?!varrange{var=skill.v;val=<100}
 
 OpenField_Weapon_牙狼ノ零_MCLove32_Skill_Wait:
   Skills:
