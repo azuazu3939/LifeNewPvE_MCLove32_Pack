@@ -48,9 +48,11 @@ OpenField_Guard_牙狼ノ壱_MCLove32:
   Type: wolf
   Display: "&f牙狼"
   Faction: Guard
-  Health: 60
+  Health: 100
   Damage: 25
-  Armor: 20
+  Armor: 40
+  Modules:
+    ThreatTable: true 
   AIGoalSelectors:
   - clear
   - randomstroll
@@ -59,6 +61,7 @@ OpenField_Guard_牙狼ノ壱_MCLove32:
   AITargetSelectors:
   - clear
   - ownertarget
+  - specificfaction{f=Enemy} 
   - ownerattacker
   Options:
     Collidable: true 
@@ -76,8 +79,8 @@ OpenField_Guard_牙狼ノ壱_MCLove32:
     #Scale: -1
     Silent: false 
   Skills:
-  - heal{a=5} @self ~onAttack  
   - remove{delay=600} @self ~onSpawn
   - e:p{p=cloud;a=20;vs=0.5;hs=0.5;s=1} @self ~onSpawn 
-  - potion{t=SPEED;d=144000;l=3;p=false} @self ~onSpawn
-  - cancelevent{sync=true} @self ~onDamaged ?~isplayer
+  - potion{t=SPEED;d=144000;l=4;p=false} @self ~onSpawn
+  - cancelevent{sync=true} @self ~onDamaged ?~isPlayer
+  - cancelevent{sync=true} @self ~onAttack ?~isPlayer
