@@ -49,6 +49,7 @@ OpenField_Guard_牙狼ノ壱_MCLove32:
   Display: "&f牙狼"
   Faction: Guard
   Health: 60
+  Damage: 25
   Armor: 20
   AIGoalSelectors:
   - clear
