@@ -39,3 +39,17 @@ OpneField_Weapon_サンドストーム_MCLove32:
   - INFINITY 1
   Skills:
   - skill:OpneField_Weapon_サンドストーム_MCLove32_Skills @triggerLocation ~onBowHit
+
+OpneField_Weapon_エアカッター_MCLove32:
+  Id: iron_sword
+  Display: "&f&lエアカッター"
+  Lore:
+  - "&f空を切り敵の陣形を乱す。"
+  - "&f前方に3つ同時に放つ。"
+  Model: 1000
+  Options:
+    ItemVersion: 1
+    Unbreakable: true 
+  Group: "Weapon"
+  Skills:
+  - skill:OpneField_Weapon_エアカッター_MCLove32_Skills @tl ~onUse

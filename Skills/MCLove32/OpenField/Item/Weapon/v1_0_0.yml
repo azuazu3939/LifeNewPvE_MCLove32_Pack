@@ -58,11 +58,11 @@ OpneField_Weapon_サンドストーム_MCLove32_Skills:
       - setvar{var=skill.x;val="<random.float.-5to5>";t=FLOAT} @self 
       - setvar{var=skill.y;val="<random.float.-5to5>";t=FLOAT} @self 
       - setvar{var=skill.z;val="<random.float.-5to5>";t=FLOAT} @self 
-      - e:p{p=cloud;a=5;s=0.5;d=true;dr=true;eo=true;origin=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};fo=true} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
+      - e:p{p=cloud;audience=caster;a=5;s=0.5;d=true;dr=true;eo=true;origin=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};fo=true} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
     ];
     os=[
-      - e:p{p=sculk_soul;a=3;vs=0.25;hs=0.25;repeat=5;repeatI=10} @origin
-      - sound{s=entity.ravager.stunned;p=0;v=0.6;repeat=5;repeatI=10} @origin
+      - e:p{p=sculk_soul;a=3;vs=0.25;hs=0.25;repeat=5;repeatI=10;audience=caster} @origin
+      - sound{s=entity.ravager.stunned;p=0;v=0.6;repeat=5;repeatI=10;audience=caster} @origin
     ];
     oh=[
       - damage{a=25;pi=true;ii=true}
@@ -74,3 +74,31 @@ OpneField_Weapon_サンドストーム_MCLove32_Skills:
     ];
     md=60;i=1;hp=false;hnp=true;vr=5;hr=5;id=5} 
 
+OpneField_Weapon_エアカッター_MCLove32_Skills:
+  Cooldown: 4
+  Conditions:
+  - wearing{m=OpneField_Weapon_エアカッター_MCLove32;s=HAND}
+  Skills:
+  - skill:OpneField_Weapon_エアカッター_MCLove32_SkillProcess{ho=30} @self 
+  - skill:OpneField_Weapon_エアカッター_MCLove32_SkillProcess{ho=0} @self 
+  - skill:OpneField_Weapon_エアカッター_MCLove32_SkillProcess{ho=-30} @self 
+
+OpneField_Weapon_エアカッター_MCLove32_SkillProcess:
+  Skills:
+  - setvar{var=skill.<skill.ho>;val="50";t=FLOAT} @self
+  - projectile{
+    os=[
+      - sound{s=entity.breeze.deflect;p=2} @self
+      - e:p{p=crit;a=15;vs=2;hs=2;y=1.5} @self 
+    ];
+    ot=[
+      - setvar{var=skill.x;val="<random.float.-1to1>";t=FLOAT} @self 
+      - setvar{var=skill.z;val="<random.float.-1to1>";t=FLOAT} @self 
+      - e:p{p=sweep_attack;a=2;vs=0.3;hs=0.3;s=1;d=true;dir=0,1,0;audience=caster} @origin{x=<skill.var.x>;z=<skill.var.z>}
+      - e:p{p=cloud;a=5;s=1;d=true;dir=0,1,0;delay=2;audience=caster} @origin{x=<skill.var.x>;z=<skill.var.z>}
+    ];
+    oh=[
+      - damage{a=<skill.var.<skill.ho>>;ii=true;pi=true}
+      - setvar{var=skill.<skill.ho>;val="<skill.var.<skill.ho>> * 0.9";t=FLOAT} @self 
+    ];
+    hp=false;hnp=true;v=35;i=1;md=30;mr=25;se=false;sb=false;vr=1.5;hr=2;ho=<skill.ho>} @TL 
