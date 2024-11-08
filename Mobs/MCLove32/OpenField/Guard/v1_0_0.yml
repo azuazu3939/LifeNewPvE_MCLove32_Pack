@@ -54,7 +54,6 @@ OpenField_Guard_牙狼ノ壱_MCLove32:
   AIGoalSelectors:
   - clear
   - randomstroll
-  - gotoparent
   - gotoowner
   - meleeattack 
   AITargetSelectors:
