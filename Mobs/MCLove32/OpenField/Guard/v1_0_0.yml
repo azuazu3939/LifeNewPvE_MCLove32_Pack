@@ -58,6 +58,7 @@ OpenField_Guard_牙狼ノ壱_MCLove32:
   - randomstroll
   - gotoowner
   - meleeattack{ar=8}
+  - doNothing{conditions=[ - isPlayer true ]}
   AITargetSelectors:
   - clear
   - ownertarget
