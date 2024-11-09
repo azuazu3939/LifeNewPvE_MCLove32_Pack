@@ -144,7 +144,7 @@ OpenField_Guard_牙狼ノ零_MCLove32_Skill_Process:
     s=[
       - sudoskill{
         s=[
-          - goto{speedModifier=1.5;sh=0;sv=0} @origin
+          - goto{speedModifier=2.25;sh=0;sv=0} @origin
         ];origin=@forward{f=4.5;uel=true}} @trigger 
     ];cat=true} @rider
   - delay 2
