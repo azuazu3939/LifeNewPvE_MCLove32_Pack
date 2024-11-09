@@ -14,7 +14,7 @@ OpenField_Weapon_サイスオブデーモン_MCLove32:
 
 OpenField_Weapon_ビットブレードTypeA_MCLove32:
   Id: diamond_sword
-  Display: "&b&lビット&c&lブレード&f&lType&a&lA"
+  Display: "&b&lビット&c&lブレード&a&lTypeA"
   Lore: 
   - "&f使用することでブレードビットが攻撃を行う。"
   - "&fあなたはただ、そこにいればいい。それだけ"
