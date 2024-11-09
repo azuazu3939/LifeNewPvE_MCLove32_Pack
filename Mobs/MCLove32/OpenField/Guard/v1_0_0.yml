@@ -50,6 +50,8 @@ OpenField_Guard_牙狼_MCLove32:
   Faction: Guard
   Health: 100
   Damage: 15
+  DamageModifiers:
+  - FALL 0 
   Armor: 40
   Modules:
     ThreatTable: true 
@@ -98,6 +100,8 @@ OpenField_Guard_牙狼ノ零_MCLove32:
   Armor: 50
   Modules:
     ThreatTable: true 
+  DamageModifiers:
+  - FALL 0 
   AIGoalSelectors:
   - clear
   - randomstroll
