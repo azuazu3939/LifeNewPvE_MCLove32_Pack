@@ -135,5 +135,5 @@ OpenField_Guard_牙狼ノ零_MCLove32:
   - cancelevent{sync=true} @self ~onAttack ?~isPlayer
   - healpercent{p=0.01} @self ~onDamaged 
   - remove @self ~onAttack 0.1
-  - skill:OpenField_Guard_牙狼ノ零_MCLove32_Skills @trigger{c=[ - isPlayer true - isOwner true ]} ~onIntetact
+  - skill:OpenField_Guard_牙狼ノ零_MCLove32_Skills @trigger{c=[ - isparent true ]} ~onIntetact ?~isPlayer
   - cancelevent{sync=true} @self ~onInteract  ?~isPlayer
