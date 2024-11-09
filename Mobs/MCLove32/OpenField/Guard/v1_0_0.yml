@@ -49,7 +49,7 @@ OpenField_Guard_牙狼_MCLove32:
   Display: "&f牙狼"
   Faction: Guard
   Health: 100
-  Damage: 25
+  Damage: 15
   Armor: 40
   Modules:
     ThreatTable: true 
@@ -85,13 +85,14 @@ OpenField_Guard_牙狼_MCLove32:
   - potion{t=SPEED;d=144000;l=2;p=false} @self ~onSpawn
   - cancelevent{sync=true} @self ~onDamaged ?~isPlayer
   - cancelevent{sync=true} @self ~onAttack ?~isPlayer
+  - remove @self ~onAttack 0.25
 
 OpenField_Guard_牙狼ノ零_MCLove32:
   Type: wolf
   Display: "&f牙狼ノ零"
   Faction: Guard
-  Health: 200
-  Damage: 35
+  Health: 120
+  Damage: 20
   Armor: 50
   Modules:
     ThreatTable: true 
@@ -128,3 +129,4 @@ OpenField_Guard_牙狼ノ零_MCLove32:
   - cancelevent{sync=true} @self ~onDamaged ?~isPlayer
   - cancelevent{sync=true} @self ~onAttack ?~isPlayer
   - healpercent{p=0.01} @self ~onDamaged 
+  - remove @self ~onAttack 0.2
