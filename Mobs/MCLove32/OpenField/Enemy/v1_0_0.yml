@@ -89,7 +89,7 @@ OpenField_Enemy_枯れた抜け殻_MCLove32:
   AIGoalSelectors:
   - randomstroll
   Skills:
-  - healpercent{p=0.5} @self ~onTimer:200
+  - healpercent{m=0.5} @self ~onTimer:200
   - e:p{p=sculk_soul;a=20;vs=1.25;hs=1;vd=32} @Forward{f=-2} ~onTimer:5
   - skill:OpenField_Enemy_枯れた抜け殻_MCLove32_Effect @self ~onEnterCombat
   - damage{a=200;pi=true;ii=true} @trigger ~onDamaged 0.01
