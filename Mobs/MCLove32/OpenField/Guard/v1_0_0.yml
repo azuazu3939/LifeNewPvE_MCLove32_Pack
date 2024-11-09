@@ -119,6 +119,7 @@ OpenField_Guard_牙狼ノ零_MCLove32:
     NoDamageTicks: 0
     KnockbackResistance: 0.15
     NoAI: false 
+    Interactable: true
     #NoGravity: true
     PreventMobKillDrops: true 
     PreventRandomEquipment: true 
@@ -135,3 +136,4 @@ OpenField_Guard_牙狼ノ零_MCLove32:
   - healpercent{p=0.01} @self ~onDamaged 
   - remove @self ~onAttack 0.1
   - skill:OpenField_Guard_牙狼ノ零_MCLove32_Skills @trigger{c=[ - isPlayer true - isOwner true ]} ~onIntetact
+  - cancelevent{sync=true} @self ~onInteract  ?~isPlayer
