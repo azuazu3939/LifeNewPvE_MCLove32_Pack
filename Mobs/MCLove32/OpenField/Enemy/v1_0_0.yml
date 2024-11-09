@@ -37,9 +37,10 @@ OpenField_Enemy_ハロウルフ_MCLove32:
   Skills:
   - potion{t=SPEED;d=144000;l=1;p=false} @self ~onSpawn
   - skill:Generic_Enemy_ウォーク追従_MCLove32{v=45} @self ~onTimer:20 ?!incombat
-  - cmd{c="mlgo <target.name> OpenField_Material_ハロウルフの牙_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true ]} ~onDeath 0.8
+  - cmd{c="mlg <target.name> OpenField_Material_ハロウルフの牙_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true ]} ~onDeath 0.8
   - drop{i=OpenField_Material_ハロウルフの希少な牙_MCLove32} @Trigger{conditions=[ - isPlayer false ]} ~onAttack 0.05
-  - cmd{c="mlgo <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.000001"} @TTP{conditions=[ - targetwithin{d=32} true ]} ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.000001"} @TTP{conditions=[ - targetwithin{d=32} true ]} ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Material_魔力結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true ]} ~onDeath 0.001
 
 OpenField_Enemy_ハロウルフ_MCLove32_Leader:
   Template: OpenField_Enemy_ハロウルフ_MCLove32
@@ -95,7 +96,11 @@ OpenField_Enemy_枯れた抜け殻_MCLove32:
   - damage{a=200;pi=true;ii=true} @trigger ~onDamaged 0.01
   - skill:OpenField_Enemy_枯れた抜け殻_MCLove32_Skills @self ~onEnterCombat
   - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
-  - cmd{c="mlgo <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.00001"} @TTP{conditions=[ - targetwithin{d=32} true ]} ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.00001"} @TTP{conditions=[ - targetwithin{d=32} true ]} ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Material_エアラプト結晶_MCLove32 1 1"} @TTP{conditions=[ - targetwithin{d=32} true ]} ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Material_魔力結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true ]} ~onDeath 0.01
+  - cmd{c="mlg <target.name> OpenField_Material_ハロウルフの牙_MCLove32 1 1"} @TTP{conditions=[ - targetwithin{d=32} true ]} ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Material_ハロウルフの希少な牙_MCLove32 1 1"} @TTP{conditions=[ - targetwithin{d=32} true ]} ~onDeath 0.2
 
 OpenField_Enemy_コロニアル_MCLove32:
   Type: zombie 
@@ -139,7 +144,9 @@ OpenField_Enemy_コロニアル_MCLove32:
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=24} @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16} @self ~onDropCombat
   - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
-  - cmd{c="mlgo <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.000001"} @TTP{conditions=[ - targetwithin{d=32} true ]} ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.000001"} @TTP{conditions=[ - targetwithin{d=32} true ]} ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Material_エアラプト結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true ]} ~onDeath 0.2
+  - cmd{c="mlg <target.name> OpenField_Material_魔力結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true ]} ~onDeath 0.001
 
 OpenField_Enemy_コロニアル_MCLove32_Leader: 
   Template: OpenField_Enemy_コロニアル_MCLove32
@@ -189,7 +196,8 @@ OpenField_Enemy_スパイディ_MCLove32:
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=32} @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16} @self ~onDropCombat
   - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
-  - cmd{c="mlgo <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.000001"} @TTP{conditions=[ - targetwithin{d=32} true ]} ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.000001"} @TTP{conditions=[ - targetwithin{d=32} true ]} ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Material_魔力結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true ]} ~onDeath 0.001
 
 OpenField_Enemy_スパイディ_MCLove32_Leader:
   Template: OpenField_Enemy_スパイディ_MCLove32

@@ -29,3 +29,49 @@ OpenField_Material_ハロウルフの牙_MCLove32:
   Enchantments:
   - UNBREAKING 1
   Group: 'Material'
+
+OpenField_Material_エアラプト結晶_MCLove32:
+  Id: iron_nugget
+  Display: "&f&lエアラプト&6&l結晶"
+  Lore: 
+  - "&fコロニアルが落とす、小さな結晶。"
+  - "&f魔力を用いて武器へ加工することができる。"
+  Model: 1000
+  Options: 
+    Destroy: false
+    CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  #Enchantments:
+  #- UNBREAKING 1
+  Group: 'Material'
+
+OpenField_Material_魔力結晶_MCLove32:
+  Id: purple_dye
+  Display: "&f&l魔力結晶"
+  Lore: 
+  - "&f魔力を用いて武器へ加工することができる。"
+  Model: 1001
+  Options: 
+    Destroy: false
+    CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Enchantments:
+  - INFINITY 1
+  Group: 'Material'
+
+OpenField_Material_アイロス_MCLove32:
+  Id: iron_ingot
+  Display: "&7&lアイロス"
+  Lore: 
+  - "&f魔力を帯びた鉄"
+  Model: 1000
+  Options: 
+    Destroy: false
+    CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Enchantments:
+  - INFINITY 1
+  Group: 'Material'
