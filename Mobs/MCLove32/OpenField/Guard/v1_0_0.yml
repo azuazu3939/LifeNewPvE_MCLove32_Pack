@@ -129,4 +129,4 @@ OpenField_Guard_牙狼ノ零_MCLove32:
   - cancelevent{sync=true} @self ~onDamaged ?~isPlayer
   - cancelevent{sync=true} @self ~onAttack ?~isPlayer
   - healpercent{p=0.01} @self ~onDamaged 
-  - remove @self ~onAttack 0.2
+  - remove @self ~onAttack 0.1
