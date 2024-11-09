@@ -128,3 +128,20 @@ OpenField_Enemy_コロニアル_MCLove32_Skill1:
       - heal{a=10} @self 
     ];
     v=8;i=1} @TL
+
+OpenField_Guard_牙狼ノ零_MCLove32_Skills: 
+  Cooldown: 0.1
+  Skills:
+  - mountme
+  - skill:OpenField_Guard_牙狼ノ零_MCLove32_Skill_Process @self 
+
+OpenField_Guard_牙狼ノ零_MCLove32_Skill_Process:
+  Conditions:
+  - hasPassenger true 
+  Skills:
+  - delay 1
+  - setrotation{y=<target.l.yaw>;p=15} @rider
+  - delay 1
+  - goto{speedModifier=1.15;sh=0;sv=0} @forward{f=16;uel=true} 
+  - delay 2
+  - skill:OpenField_Guard_牙狼ノ零_MCLove32_Skill_Process @self 
