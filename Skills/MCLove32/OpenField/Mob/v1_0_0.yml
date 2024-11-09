@@ -132,7 +132,10 @@ OpenField_Enemy_コロニアル_MCLove32_Skill1:
 OpenField_Guard_牙狼ノ零_MCLove32_Skills: 
   Cooldown: 0.1
   Skills:
+  - message{m="a"}
   - mountme
+  - message{m="b"} @trigger
+  - mountme @trigger
   - skill:OpenField_Guard_牙狼ノ零_MCLove32_Skill_Process @self 
 
 OpenField_Guard_牙狼ノ零_MCLove32_Skill_Process:
