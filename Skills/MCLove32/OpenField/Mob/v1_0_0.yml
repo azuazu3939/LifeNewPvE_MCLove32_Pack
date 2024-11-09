@@ -137,8 +137,9 @@ OpenField_Guard_牙狼ノ零_MCLove32_Skills:
 
 OpenField_Guard_牙狼ノ零_MCLove32_Skill_Process:
   Conditions:
-  - hasPassenger true 
+  - hasPassenger orElseCast OpenField_Guard_牙狼ノ零_MCLove32_Skill_End
   Skills:
+  - potion{t=SPEED;d=144000;l=4;p=false} @self 
   - delay 1
   - sudoskill{
     s=[
@@ -149,3 +150,7 @@ OpenField_Guard_牙狼ノ零_MCLove32_Skill_Process:
     ];cat=true} @rider
   - delay 2
   - skill:OpenField_Guard_牙狼ノ零_MCLove32_Skill_Process @self 
+
+OpenField_Guard_牙狼ノ零_MCLove32_Skill_End:
+  Skills:
+  - potion{t=SPEED;d=144000;l=2;p=false} @self 
