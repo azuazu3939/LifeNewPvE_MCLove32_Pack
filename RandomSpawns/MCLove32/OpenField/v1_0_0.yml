@@ -129,7 +129,7 @@ OpenField_Enemy_ジャイアントボグド_MCLove32_Spawn:
   Action: ADD 
   PositionType: LAND
   Chance: 1
-  Priority: 5
+  Priority: 10
   Conditions:
   - mobsinworld{a=<1000} true 
   - blocktype{type=water,air} false 
@@ -141,7 +141,6 @@ OpenField_Enemy_ジャイアントボグド_MCLove32_Spawn:
     mythicinradius{a=<5;r=40} 
     ) true 
   - mobsInRadius{types=OpenField_Enemy_ジャイアントボグド_MCLove32;amount=<2;radius=32} true
-  - (dusk || night) true 
   - biome{b=terra:origen/origen/scarlet_sanctuary} true
 
 OpenField_Enemy_マザーボグド_MCLove32_Spawn:
@@ -150,7 +149,7 @@ OpenField_Enemy_マザーボグド_MCLove32_Spawn:
   Action: ADD 
   PositionType: LAND
   Chance: 1
-  Priority: 2
+  Priority: 8
   Conditions:
   - mobsinworld{a=<1000} true 
   - blocktype{type=water,air} false 
@@ -162,5 +161,4 @@ OpenField_Enemy_マザーボグド_MCLove32_Spawn:
     mythicinradius{a=<5;r=40} 
     ) true
   - mobsInRadius{types=OpenField_Enemy_マザーボグド_MCLove32;amount=<1;radius=32} true
-  - (dusk || night) true 
   - biome{b=terra:origen/origen/scarlet_sanctuary} true
