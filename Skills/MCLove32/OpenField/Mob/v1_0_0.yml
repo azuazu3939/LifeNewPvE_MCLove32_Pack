@@ -154,3 +154,57 @@ OpenField_Guard_牙狼ノ零_MCLove32_Skill_Process:
 OpenField_Guard_牙狼ノ零_MCLove32_Skill_End:
   Skills:
   - potion{t=SPEED;d=144000;l=2;p=false} @self 
+
+OpenField_Enemy_ジャイアントボグド_MCLove32_Skills:
+  Conditions:
+  - incombat true 
+  Skills:
+  - skill:OpenField_Enemy_ジャイアントボグド_MCLove32_Skill_Start[repeat=5;repeatI=20] @EIC{r=16;a=105;limit=1;sort=NEAREST;c=[ - (isPlayer || faction{f=Guard}) true ]}
+  - delay 200
+  - skill:OpenField_Enemy_ジャイアントボグド_MCLove32_Skills @self
+
+
+OpenField_Enemy_ジャイアントボグド_MCLove32_Skill_Start:
+  Cooldown: 9.5
+  Skills:
+  - potion{t=SLOWNESS;l=7;d=220;p=false} @self 
+  - skill:OpenField_Enemy_ジャイアントボグド_MCLove32_Skill_Process{ho=90;vo=1;so=3;y=3} 
+  - skill:OpenField_Enemy_ジャイアントボグド_MCLove32_Skill_Process{ho=270;vo=1;so=3;y=3} 
+  - skill:OpenField_Enemy_ジャイアントボグド_MCLove32_Skill_Process{ho=90;vo=1.5;so=3;y=5;delay=2}
+  - skill:OpenField_Enemy_ジャイアントボグド_MCLove32_Skill_Process{ho=270;vo=1.5;so=3;y=5;delay=2}
+  - skill:OpenField_Enemy_ジャイアントボグド_MCLove32_Skill_Process{ho=90;vo=2;so=3;y=7;delay=4} 
+  - skill:OpenField_Enemy_ジャイアントボグド_MCLove32_Skill_Process{ho=270;vo=2;so=3;y=7;delay=4}
+
+OpenField_Enemy_ジャイアントボグド_MCLove32_Skill_Process:
+  Skills:
+  - missile{
+    ot=[
+      - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.8} @self 
+    ];
+    oh=[
+      - damage{a=12;ii=true;pi=true}
+      - sound{s=block.anvil.land;p=2;v=0.5}
+      - sound{s=entity.breeze.inhale;p=2;v=0.5}
+    ];
+    conditions=[
+      - (isPlayer || faction{f=Guard}) true
+    ];
+    bulletType=DISPLAY;mat=netherite_sword;scale=1.25,1.25,1.25;yaw=3.14;pitch=1.57;roll=0.785;
+    v=30;i=1;vr=2;hr=2;mr=32;se=true;
+    in=12;ho=<skill.ho>;vo=<skill.vo>} 
+
+OpenField_Enemy_マザーボグド_MCLove32_Skills:
+  Skills:
+  - summon{t=OpenField_Enemy_生命生い茂る森のボグド_MCLove32;a=1to4;r=10;s=true} @TL
+  - summon{t=OpenField_Enemy_ジャイアントボグド_MCLove32;a=1;r=10;s=true} @TL 0.25
+  - e:p{p=heart;a=5;vs=2;hs=2;size=2} @self 
+  - heal{a=500} @self
+  - skill{
+    s=[
+      - e:p{p=heart;a=3;vs=1;hs=1;size=1.25} 
+      - healpercent{m=0.2} 
+      - e:p{p=flash;a=1;delay=10} @origin
+    ]} @mir{t=OpenField_Enemy_生命生い茂る森のボグド_MCLove32,OpenField_Enemy_ジャイアントボグド_MCLove32;r=16} 
+  - e:p{p=flash;a=1;delay=10} @origin
+  - delay 600
+  - skill:OpenField_Enemy_マザーボグド_MCLove32_Skills @self 
