@@ -159,7 +159,7 @@ OpenField_Enemy_ジャイアントボグド_MCLove32_Skills:
   Conditions:
   - incombat true 
   Skills:
-  - skill:OpenField_Enemy_ジャイアントボグド_MCLove32_Skill_Start[repeat=5;repeatI=20] @EIC{r=16;a=105;limit=1;sort=NEAREST;c=[ - (isPlayer || faction{f=Guard}) true ]}
+  - skill:OpenField_Enemy_ジャイアントボグド_MCLove32_Skill_Start{repeat=5;repeatI=20} @EIC{r=16;a=120;limit=1;sort=NEAREST;c=[ - (isPlayer || faction{f=Guard}) true ]}
   - delay 200
   - skill:OpenField_Enemy_ジャイアントボグド_MCLove32_Skills @self
 
