@@ -270,6 +270,7 @@ OpenField_Weapon_樹木剣_MCLove32_Skills:
     ];
     oh=[ 
       - damage{a=70;pi=true;ii=true;delay=<skill.var.i>} 
+      - damage{a=30;pi=true;ii=true;delay=<skill.var.i>}  0.5
       - throw{v=5;vy=8;delay=<skill.var.i>}
       - heal{a=0.2;delay=<skill.var.i>} @self 
     ];
@@ -300,7 +301,7 @@ OpenField_Weapon_樹木剣_MCLove32_Skill_Process:
     ];
     oh=[
       - sound{s=entity.breeze.jump;p=0;v=1.25} 
-      - damage{a=40;pi=true;ii=true} 
+      - damage{a=20;pi=true;ii=true} 
       - throw{v=5;vy=8}
       - delay 15
       - throw{v=1;vy=-20}
