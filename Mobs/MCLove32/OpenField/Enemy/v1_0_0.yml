@@ -309,6 +309,7 @@ OpenField_Enemy_生命生い茂る森のボグド_MCLove32:
       - addtag{t=death} @self 
       - equip{item=air OFFHAND} @self 
       - sound{s=item.totem.use;v=0.5} @self
+      - potion{t=SPEED;l=3;d=200;p=false} @self ~onEnterCombat
     ];sync=true} @self ~onDeath ?!hastag{t=death}
   - potion{t=SPEED;l=1;d=14400;p=false} @self ~onEnterCombat
   - potionclear{t=SPEED} @self ~onDropCombat 
