@@ -32,8 +32,8 @@ OpenField_Armor_アルドーナT_MCLove32:
   - FIRE_PROTECTION 4
   Attributes:
     Head:
-      Armor: 4 ADD
-      ArmorToughness: 3 ADD
+      Armor: 15 ADD
+      ArmorToughness: 10 ADD
   Group: 'Armor'
 
 OpenField_Armor_アルドーナC_MCLove32:
@@ -85,4 +85,99 @@ OpenField_Armor_アルドーナB_MCLove32:
     Feet:
       Armor: 4 ADD
       ArmorToughness: 4 ADD
+  Group: 'Armor'
+
+OpenField_Armor_イルドーナH_MCLove32:
+  Id: leather_helmet 
+  Display: "&bイルドーナヘルメット"
+  Lore: []
+  Model: 1002
+  Options:
+    Color: BLUE
+    Destroy: false
+    CancelDamage: true
+    ItemVersion: 1
+    Unbreakable: true
+  Attributes:
+    Head:
+      Armor: 14 ADD
+      ArmorToughness: 8 ADD
+      Damage: 3 ADD 
+  Group: 'Armor'
+
+OpenField_Armor_イルドーナT_MCLove32:
+  Id: golden_helmet
+  Display: "&6イルドーナティアラ"
+  Lore: 
+  - "&f海と自然の加護の効果として、"
+  - "&fエンチャントが付与されている。"
+  Model: 1002
+  Options:
+    Destroy: false
+    CancelDamage: true
+    ItemVersion: 1
+    Unbreakable: true
+  Enchantments:
+  - PROTECTION 4
+  - FIRE_PROTECTION 4
+  Attributes:
+    Head:
+      Armor: 20 ADD
+      ArmorToughness: 15 ADD
+      Damage: 3 ADD 
+      AttackSpeed: 0.1 MULTIPLY_BASE
+  Group: 'Armor'
+
+OpenField_Armor_イルドーナC_MCLove32:
+  Id: leather_chestplate
+  Display: "&bイルドーナチェストプレート"
+  Lore: []
+  Model: 1002
+  Options:
+    Color: BLUE
+    Destroy: false
+    CancelDamage: true
+    ItemVersion: 1
+    Unbreakable: true
+  Attributes:
+    Chest:
+      Armor: 10 ADD
+      ArmorToughness: 6 ADD
+      Damage: 2 ADD 
+  Group: 'Armor'
+
+OpenField_Armor_イルドーナL_MCLove32:
+  Id: leather_leggings
+  Display: "&bイルドーナレギンス"
+  Lore: []
+  Model: 1002
+  Options:
+    Color: BLUE
+    Destroy: false
+    CancelDamage: true
+    ItemVersion: 1
+    Unbreakable: true
+  Attributes:
+    Legs:
+      Armor: 10 ADD
+      ArmorToughness: 5 ADD
+      Damage: 3 ADD 
+  Group: 'Armor'
+
+OpenField_Armor_イルドーナB_MCLove32:
+  Id: leather_boots
+  Display: "&bイルドーナブーツ"
+  Lore: []
+  Model: 1002
+  Options:
+    Color: BLUE
+    Destroy: false
+    CancelDamage: true
+    ItemVersion: 1
+    Unbreakable: true
+  Attributes:
+    Feet:
+      Armor: 6 ADD
+      ArmorToughness: 7 ADD
+      Damage: 2 ADD 
   Group: 'Armor'

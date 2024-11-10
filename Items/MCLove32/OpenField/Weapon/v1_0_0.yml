@@ -96,3 +96,58 @@ OpenField_Weapon_牙狼ノ零_MCLove32:
   Group: "Weapon"
   Skills:
   - skill:OpenField_Weapon_牙狼ノ零_MCLove32_Skills @self ~onUse
+
+OpenField_Weapon_ロングソード_MCLove32:
+  Id: stone_sword 
+  Display: "&fライトワイドソード"
+  Lore: []
+  Model: 1003
+  Options:
+    ItemVersion: 1
+    Unbreakable: true 
+  Attributes:
+    MainHand:
+      Damage: 9 ADD 
+      AttackSpeed: -0.5 MULTIPLY_BASE
+  Group: "Weapon"
+
+OpenField_Weapon_ロングソード_MCLove32:
+  Id: stone_sword 
+  Display: "&fヘビーワイドソード"
+  Lore: []
+  Model: 1004
+  Options:
+    ItemVersion: 1
+    Unbreakable: true 
+  Attributes:
+    MainHand:
+      Damage: 19 ADD 
+      AttackSpeed: -0.75 MULTIPLY_BASE
+  Group: "Weapon"
+
+OpenField_Weapon_ライトメイス_MCLove32:
+  Id: mace
+  Display: "&e&lライトメイス"
+  Lore: []
+  Model: 1000
+  Options:
+    ItemVersion: 1
+    Unbreakable: true 
+  Attributes:
+    MainHand:
+      AttackSpeed: -0.5 MULTIPLY_BASE
+  Group: "Weapon"
+
+OpenField_Weapon_ベリーライトメイス_MCLove32:
+  Id: mace
+  Display: "&f&lベリー&e&lライトメイス"
+  Lore: []
+  Model: 1000
+  Options:
+    ItemVersion: 1
+    Unbreakable: true 
+  Attributes:
+    MainHand:
+      Damage: -10 ADD 
+      AttackSpeed: 2.5 MULTIPLY_BASE
+  Group: "Weapon"
