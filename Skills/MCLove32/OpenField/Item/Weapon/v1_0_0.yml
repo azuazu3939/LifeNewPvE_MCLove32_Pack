@@ -284,7 +284,7 @@ OpenField_Weapon_樹木剣_MCLove32_Skills:
   - sound{s=block.glass.break;p=0.85;v=1} @self
   - sound{s=block.glass.break;p=0.7;v=1.25} @self
   - sound{s=block.glass.break;p=0.65;v=1.5} @self
-  - sound{s=item.trident.thunder;p=2;v=0.85;delay=1} @self 
+  - sound{s=item.trident.thunder;p=2;v=0.45;delay=1} @self 
 
 OpenField_Weapon_樹木剣_MCLove32_Skill_Process:
   Skills:
