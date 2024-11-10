@@ -259,36 +259,36 @@ OpenField_Weapon_樹木剣_MCLove32_Skills:
   - potion{t=MINING_FATIGUE;l=0;d=30;p=false;i=false} @self
   - sound{s=block.trial_spawner.about_to_spawn_item;p=1.414;v=0.5} @self
   - delay 35 
+  - sound{s=block.glass.break;p=1;v=0.75} @self
+  - sound{s=block.glass.break;p=0.85;v=1} @self
+  - sound{s=block.glass.break;p=0.7;v=1.25} @self
+  - sound{s=block.glass.break;p=0.65;v=1.5} @self
+  - sound{s=item.trident.thunder;p=2;v=0.85;delay=1} @self 
   - slash{y=1.8;w=8;h=16;mpd=true;a=90;radius=6;hnp=true;hp=false;
-      op=[ 
-        - e:p{p=sweep_attack;a=1;vs=0.2;hs=1;audience=caster} 
-        - e:p{a=3;vs=0.25;hs=0.25;c=#46884a;audience=caster} 
-        - e:p{a=3;vs=0.25;hs=0.25;c=#af9831;audience=caster} 
-        - skill:OpenField_Weapon_樹木剣_MCLove32_Skill_Process @self 
-      ];
-      oh=[ 
-        - damage{a=30;pi=true;ii=true} 
-        - throw{v=5;vy=8}
-        - heal{a=0.2} @self 
-      ];
-      conditions=[
+    op=[ 
+      - e:p{p=sweep_attack;a=1;vs=0.2;hs=1;audience=caster;p=dust;size=2} @origin
+      - e:p{a=5;vs=0.25;hs=0.25;c=#46884a;audience=caster;p=dust;size=2} @origin 
+      - e:p{a=5;vs=0.25;hs=0.25;c=#af9831;audience=caster;p=dust;size=2} @origin 
+      - skill:OpenField_Weapon_樹木剣_MCLove32_Skill_Process @self 
+    ];
+    oh=[ 
+      - damage{a=30;pi=true;ii=true} 
+      - throw{v=5;vy=8}
+      - heal{a=0.2} @self 
+    ];
+    conditions=[
       - isLiving true 
       - isMythicMob true
-      ];
-      roll=<random.-45to45>;fo=4;duration=20;p=16} @self
-  - sound{s=block.glass.break;p=1;v=0.5} @self
-  - sound{s=block.glass.break;p=0.85;v=0.55} @self
-  - sound{s=block.glass.break;p=0.7;v=0.65} @self
-  - sound{s=block.glass.break;p=0.65;v=0.75} @self
-  - sound{s=item.trident.thunder;p=2;v=0.45;delay=2} @self 
+    ];
+    roll=<random.-45to45>;fo=4;duration=20;p=16} @self
 
 OpenField_Weapon_樹木剣_MCLove32_Skill_Process:
   Skills:
   - projectile{
     ot=[
-      - e:p{p=sweep_attack;a=1;vs=0.2;hs=1;audience=caster} 
-      - e:p{a=3;vs=0.25;hs=0.25;c=#46884a;audience=caster} 
-      - e:p{a=3;vs=0.25;hs=0.25;c=#af9831;audience=caster} 
+      - e:p{p=sweep_attack;a=1;vs=0.2;hs=1;audience=caster;p=dust} 
+      - e:p{a=3;vs=0.25;hs=0.25;c=#46884a;audience=caster;p=dust} 
+      - e:p{a=3;vs=0.25;hs=0.25;c=#af9831;audience=caster;p=dust} 
     ];
     oh=[
       - sound{s=entity.breeze.jump;p=0;v=1.25} 
