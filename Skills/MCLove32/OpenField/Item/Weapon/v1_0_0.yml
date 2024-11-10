@@ -261,7 +261,7 @@ OpenField_Weapon_樹木剣_MCLove32_Skills:
   - sound{s=block.trial_spawner.about_to_spawn_item;p=1.414;v=0.5} @self
   - delay 5
   - setvar{var=skill.i;val="30";t=INTEGER} @self 
-  - slash{y=1;w=8;h=16;mpd=true;a=180;radius=4;hnp=true;hp=false;
+  - slash{y=1;w=8;h=16;mpd=true;a=180;radius=6;hnp=true;hp=false;
     oP=[ 
       - e:p{p=sweep_attack;a=1;vs=0.2;hs=1;audience=caster;size=2;delay=<skill.var.i>} @origin
       - e:p{a=25;vs=0.5;hs=0.5;color=#46884a;audience=caster;p=red_dust;size=2;delay=<skill.var.i>} @origin 
