@@ -321,6 +321,7 @@ OpenField_Enemy_ジャイアントボグド_MCLove32:
   Options:
     ReviveHealth: 100
     Scale: 3
+    MovementSpeed: 0.15
   Skills:
   - skill:OpenField_Enemy_ジャイアントボグド_MCLove32_Skills @self ~onEnterCombat
 
@@ -337,5 +338,6 @@ OpenField_Enemy_マザーボグド_MCLove32:
   Options:
     ReviveHealth: 300
     Scale: 6
+    MovementSpeed: 0.1
   Skills:
   - skill:OpenField_Enemy_マザーボグド_MCLove32_Skills @self ~onEnterCombat 
