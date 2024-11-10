@@ -267,8 +267,8 @@ OpenField_Weapon_樹木剣_MCLove32_Skills:
   - slash{y=1.8;w=8;h=16;mpd=true;a=90;radius=4;hnp=true;hp=false;
     oP=[ 
       - e:p{p=sweep_attack;a=1;vs=0.2;hs=1;audience=caster;size=2} @origin
-      - e:p{a=15;vs=1;hs=1;color=#46884a;audience=caster;p=red_dust;size=2} @origin 
-      - e:p{a=15;vs=1;hs=1;color=#af9831;audience=caster;p=red_dust;size=2} @origin 
+      - e:p{a=25;vs=0.5;hs=0.5;color=#46884a;audience=caster;p=red_dust;size=2} @origin 
+      - e:p{a=25;vs=0.5;hs=0.5;color=#af9831;audience=caster;p=red_dust;size=2} @origin 
       - skill:OpenField_Weapon_樹木剣_MCLove32_Skill_Process @self 
     ];
     oH=[ 
@@ -280,7 +280,7 @@ OpenField_Weapon_樹木剣_MCLove32_Skills:
       - isLiving true 
       - isMythicMob true
     ];
-    roll=<random.-45to45>;fo=2;duration=20;p=16;i=1} @self
+    roll=<random.-45to45>;fo=1;duration=20;p=8} @self
 
 OpenField_Weapon_樹木剣_MCLove32_Skill_Process:
   Skills:
