@@ -160,3 +160,18 @@ OpenField_Material_驚異の糸_MCLove32:
   #Enchantments:
   #- INFINITY 1
   Group: 'Material'
+
+OpenField_Material_取引不可_MCLove32:
+  Id: barrier
+  Display: "&4&l取引不可"
+  Lore: 
+  - "&fGUIを見やすくするためのアイテム。"
+  Model: 1000
+  Options: 
+    Destroy: false
+    CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  #Enchantments:
+  #- INFINITY 1
+  Group: 'Material'
