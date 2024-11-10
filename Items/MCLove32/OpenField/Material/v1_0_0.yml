@@ -175,3 +175,20 @@ OpenField_Material_取引不可_MCLove32:
   #Enchantments:
   #- INFINITY 1
   Group: 'Material'
+
+OpenField_Material_緑玉_MCLove32:
+  Id: slime_block
+  Display: "&2&l緑玉"
+  Lore: 
+  - "&f両手で運ぶサイズの大きなコア。"
+  - "&f触るだけでも様々な反応を起こす未知の物。"
+  Model: 1000
+  Options: 
+    Destroy: false
+    CancelDamage: true
+    ItemVersion: 1
+    Unbreakable: false
+  Enchantments:
+  - INFINITY 10
+  - UNBREAKING 10
+  Group: 'Material'

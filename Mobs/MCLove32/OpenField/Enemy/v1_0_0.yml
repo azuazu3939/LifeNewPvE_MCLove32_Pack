@@ -364,3 +364,4 @@ OpenField_Enemy_マザーボグド_MCLove32:
   Skills:
   - skill:OpenField_Enemy_マザーボグド_MCLove32_Skills @self ~onEnterCombat 
   - cmd{c="mlg <target.name> OpenField_Armor_アルドーナT_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=32} true ]} ~onDeath 0.025 ?hastag{t=death}
+  - cmd{c="mlg <target.name> OpenField_Material_緑玉_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true ]} ~onDeath 0.05 ?hastag{t=death}
