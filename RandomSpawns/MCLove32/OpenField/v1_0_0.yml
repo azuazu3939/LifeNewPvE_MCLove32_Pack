@@ -141,7 +141,7 @@ OpenField_Enemy_ジャイアントボグド_MCLove32_Spawn:
     mythicinradius{a=<5;r=40} 
     ) true 
   - mobsInRadius{types=OpenField_Enemy_ジャイアントボグド_MCLove32;amount=<2;radius=32} true
-  - (dusk || night) true 
+  #- (dusk || night) true 
   - biome{b=terra:origen/origen/scarlet_sanctuary} true
 
 OpenField_Enemy_マザーボグド_MCLove32_Spawn:
@@ -162,5 +162,5 @@ OpenField_Enemy_マザーボグド_MCLove32_Spawn:
     mythicinradius{a=<5;r=40} 
     ) true
   - mobsInRadius{types=OpenField_Enemy_マザーボグド_MCLove32;amount=<1;radius=64} true
-  - (dusk || night) true 
+  #- (dusk || night) true 
   - biome{b=terra:origen/origen/scarlet_sanctuary} true
