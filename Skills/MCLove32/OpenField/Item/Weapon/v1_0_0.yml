@@ -266,9 +266,9 @@ OpenField_Weapon_樹木剣_MCLove32_Skills:
   - sound{s=item.trident.thunder;p=2;v=0.85;delay=1} @self 
   - slash{y=1.8;w=8;h=16;mpd=true;a=90;radius=6;hnp=true;hp=false;
     op=[ 
-      - e:p{p=sweep_attack;a=1;vs=0.2;hs=1;audience=caster;p=dust;size=2} @origin
-      - e:p{a=5;vs=0.25;hs=0.25;c=#46884a;audience=caster;p=dust;size=2} @origin 
-      - e:p{a=5;vs=0.25;hs=0.25;c=#af9831;audience=caster;p=dust;size=2} @origin 
+      - e:p{p=sweep_attack;a=1;vs=0.2;hs=1;audience=caster;size=2} @origin
+      - e:p{a=5;vs=0.25;hs=0.25;color=#46884a;audience=caster;p=dust;size=2} @origin 
+      - e:p{a=5;vs=0.25;hs=0.25;color=#af9831;audience=caster;p=dust;size=2} @origin 
       - skill:OpenField_Weapon_樹木剣_MCLove32_Skill_Process @self 
     ];
     oh=[ 
@@ -286,9 +286,9 @@ OpenField_Weapon_樹木剣_MCLove32_Skill_Process:
   Skills:
   - projectile{
     ot=[
-      - e:p{p=sweep_attack;a=1;vs=0.2;hs=1;audience=caster;p=dust} 
-      - e:p{a=3;vs=0.25;hs=0.25;c=#46884a;audience=caster;p=dust} 
-      - e:p{a=3;vs=0.25;hs=0.25;c=#af9831;audience=caster;p=dust} 
+      - e:p{p=sweep_attack;a=1;vs=0.2;hs=1;audience=caster} 
+      - e:p{a=3;vs=0.25;hs=0.25;color=#46884a;audience=caster;p=dust} 
+      - e:p{a=3;vs=0.25;hs=0.25;color=#af9831;audience=caster;p=dust} 
     ];
     oh=[
       - sound{s=entity.breeze.jump;p=0;v=1.25} 
