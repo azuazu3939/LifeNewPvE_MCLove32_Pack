@@ -160,5 +160,5 @@ OpenField_Enemy_マザーボグド_MCLove32_Spawn:
     mythicinradius{a=<3;r=28} ||
     mythicinradius{a=<5;r=40} 
     ) true
-  - mobsInRadius{types=OpenField_Enemy_マザーボグド_MCLove32;amount=<1;radius=64} true
+  - mobsInRadius{types=OpenField_Enemy_マザーボグド_MCLove32;amount=<1;radius=128} true
   - biome{b=terra:origen/origen/scarlet_sanctuary} true
