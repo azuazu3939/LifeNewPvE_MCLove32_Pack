@@ -278,7 +278,7 @@ OpenField_Weapon_樹木剣_MCLove32_Skills:
       - isLiving true 
       - isMythicMob true
     ];
-    roll=<random.-45to45>;fo=-3;duration=30;p=30} @self
+    roll=<random.-45to45>;fo=-3;duration=30;p=30} @self 
   - delay 30
   - sound{s=block.glass.break;p=1;v=0.75} @self
   - sound{s=block.glass.break;p=0.85;v=1} @self
@@ -287,6 +287,11 @@ OpenField_Weapon_樹木剣_MCLove32_Skills:
   - sound{s=item.trident.thunder;p=2;v=0.45;delay=1} @self 
 
 OpenField_Weapon_樹木剣_MCLove32_Skill_Process:
+  Conditions:
+  - (
+    wearing{s=HAND;m=OpenField_Weapon_樹木剣ヘビー_MCLove32} ||
+    wearing{s=HAND;m=OpenField_Weapon_樹木剣ライト_MCLove32}
+    ) true
   Skills:
   - projectile{
     ot=[
