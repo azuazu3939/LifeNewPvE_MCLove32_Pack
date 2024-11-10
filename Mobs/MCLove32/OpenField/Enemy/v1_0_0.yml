@@ -15,7 +15,8 @@ OpenField_Enemy_ハロウルフ_MCLove32:
     NoAI: false 
     #NoGravity: true
     PreventMobKillDrops: true 
-    PreventRandomEquipment: true 
+    PreventRandomEquipment: true
+    PreventVanillaDamage: true 
     #PreventSunburn: true
     Scale: 1.5
     Silent: false 
@@ -35,6 +36,7 @@ OpenField_Enemy_ハロウルフ_MCLove32:
   - attacker
   - specificfaction{f=Sheep}
   Skills:
+  - damage{a=<caster.damage>;ii=true;pi=true} @trigger ~onAttack 
   - potion{t=SPEED;d=144000;l=1;p=false} @self ~onSpawn
   - skill:Generic_Enemy_ウォーク追従_MCLove32{v=45} @self ~onTimer:20 ?!incombat
   - cmd{c="mlg <target.name> OpenField_Material_ハロウルフの牙_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true ]} ~onDeath 0.8
@@ -78,7 +80,8 @@ OpenField_Enemy_枯れた抜け殻_MCLove32:
     Invisible: true
     #NoGravity: true
     PreventMobKillDrops: true 
-    PreventRandomEquipment: true 
+    PreventRandomEquipment: true
+    PreventVanillaDamage: true 
     PreventSunburn: true
     Scale: 2
     #Silent: false 
@@ -90,6 +93,7 @@ OpenField_Enemy_枯れた抜け殻_MCLove32:
   AIGoalSelectors:
   - randomstroll
   Skills:
+  - damage{a=<caster.damage>;ii=true;pi=true} @trigger ~onAttack 
   - healpercent{m=0.5} @self ~onTimer:200
   - e:p{p=sculk_soul;a=20;vs=1.25;hs=1;vd=32} @Forward{f=-2} ~onTimer:5
   - skill:OpenField_Enemy_枯れた抜け殻_MCLove32_Effect @self ~onEnterCombat
@@ -127,6 +131,7 @@ OpenField_Enemy_コロニアル_MCLove32:
     PreventMobKillDrops: true 
     PreventRandomEquipment: true 
     PreventSunburn: true
+    PreventVanillaDamage: true 
     Scale: 1.25
     #Silent: false 
   Modules:
@@ -140,6 +145,7 @@ OpenField_Enemy_コロニアル_MCLove32:
   - attacker
   - players 
   Skills:
+  - damage{a=<caster.damage>;ii=true;pi=true} @trigger ~onAttack 
   - skill:OpenField_Enemy_コロニアル_MCLove32_Skills @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=24} @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16} @self ~onDropCombat
@@ -174,6 +180,7 @@ OpenField_Enemy_スパイディ_MCLove32:
     PreventMobKillDrops: true 
     PreventRandomEquipment: true 
     PreventSunburn: true
+    PreventVanillaDamage: true 
     Scale: 1.5
     #Silent: false 
   Modules:
@@ -191,6 +198,7 @@ OpenField_Enemy_スパイディ_MCLove32:
   - gotoparent
   - gotoowner
   Skills:
+  - damage{a=<caster.damage>;ii=true;pi=true} @trigger ~onAttack 
   - potion{t=SPEED;l=1;d=14400;p=false} @self ~onEnterCombat
   - potionclear{t=SPEED} @self ~onDropCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=32} @self ~onEnterCombat
@@ -275,6 +283,7 @@ OpenField_Enemy_生命生い茂る森のボグド_MCLove32:
     PreventMobKillDrops: true 
     PreventRandomEquipment: true 
     PreventSunburn: true
+    PreventVanillaDamage: true 
     Scale: 1.25
     #Silent: false 
     ReviveHealth: -1
@@ -293,6 +302,7 @@ OpenField_Enemy_生命生い茂る森のボグド_MCLove32:
   - gotoparent
   - gotoowner
   Skills:
+  - damage{a=<caster.damage>;ii=true;pi=true} @trigger ~onAttack 
   - skill{
     s=[
       - cancelevent @self
