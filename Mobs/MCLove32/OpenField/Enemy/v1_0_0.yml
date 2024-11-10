@@ -306,7 +306,7 @@ OpenField_Enemy_生命生い茂る森のボグド_MCLove32:
   - skill{
     s=[
       - cancelevent @self
-      - addtag{t=death} @self 
+      - addtag{t=death;delay=2} @self 
       - equip{item=air OFFHAND} @self 
       - sound{s=item.totem.use;v=0.5} @self
       - potion{t=SPEED;l=3;d=200;p=false} @self ~onEnterCombat
