@@ -264,7 +264,7 @@ OpenField_Weapon_樹木剣_MCLove32_Skills:
   - sound{s=block.glass.break;p=0.7;v=1.25} @self
   - sound{s=block.glass.break;p=0.65;v=1.5} @self
   - sound{s=item.trident.thunder;p=2;v=0.85;delay=1} @self 
-  - slash{y=1.8;w=8;h=16;mpd=true;a=90;radius=6;hnp=true;hp=false;
+  - slash{y=1.8;w=8;h=16;mpd=true;a=90;radius=4;hnp=true;hp=false;
     op=[ 
       - e:p{p=sweep_attack;a=1;vs=0.2;hs=1;audience=caster;size=2} @origin
       - e:p{a=5;vs=0.25;hs=0.25;color=#46884a;audience=caster;p=red_dust;size=2} @origin 
@@ -280,7 +280,7 @@ OpenField_Weapon_樹木剣_MCLove32_Skills:
       - isLiving true 
       - isMythicMob true
     ];
-    roll=<random.-45to45>;fo=4;duration=20;p=16} @self
+    roll=<random.-45to45>;fo=4;duration=20;p=8} @self
 
 OpenField_Weapon_樹木剣_MCLove32_Skill_Process:
   Skills:
