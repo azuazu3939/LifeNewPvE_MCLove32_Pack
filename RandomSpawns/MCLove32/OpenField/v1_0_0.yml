@@ -103,3 +103,64 @@ OpenField_Enemy_スパイディ_MCLove32_Commander_Spawn:
     mythicinradius{a=<5;r=48} 
     ) true  
   - mobsInRadius{types=OpenField_Enemy_スパイディ_MCLove32;amount=<2;radius=32} true
+
+OpenField_Enemy_生命生い茂る森のボグド_MCLove32_Spawn:
+  Type: OpenField_Enemy_生命生い茂る森のボグド_MCLove32
+  Worlds: open_field
+  Action: ADD 
+  PositionType: LAND
+  Chance: 1
+  Priority: 10
+  Conditions:
+  - mobsinworld{a=<1000} true 
+  - blocktype{type=water,air} false 
+  - height{h=60to100} true 
+  - region{r=spawn} false 
+  - (
+    mythicinradius{a=<1;r=16} ||
+    mythicinradius{a=<3;r=28} ||
+    mythicinradius{a=<5;r=40} 
+    ) true  
+  - biome{b=terra:origen/origen/scarlet_sanctuary} true
+
+OpenField_Enemy_ジャイアントボグド_MCLove32_Spawn:
+  Type: OpenField_Enemy_ジャイアントボグド_MCLove32
+  Worlds: open_field
+  Action: ADD 
+  PositionType: LAND
+  Chance: 1
+  Priority: 2
+  Conditions:
+  - mobsinworld{a=<1000} true 
+  - blocktype{type=water,air} false 
+  - height{h=60to100} true 
+  - region{r=spawn} false 
+  - (
+    mythicinradius{a=<1;r=16} ||
+    mythicinradius{a=<3;r=28} ||
+    mythicinradius{a=<5;r=40} 
+    ) true 
+  - mobsInRadius{types=OpenField_Enemy_ジャイアントボグド_MCLove32;amount=<2;radius=32} true
+  - (dusk || night) true 
+  - biome{b=terra:origen/origen/scarlet_sanctuary} true
+
+OpenField_Enemy_マザーボグド_MCLove32_Spawn:
+  Type: OpenField_Enemy_マザーボグド_MCLove32
+  Worlds: open_field
+  Action: ADD 
+  PositionType: LAND
+  Chance: 1
+  Priority: 1
+  Conditions:
+  - mobsinworld{a=<1000} true 
+  - blocktype{type=water,air} false 
+  - height{h=60to100} true 
+  - region{r=spawn} false 
+  - (
+    mythicinradius{a=<1;r=16} ||
+    mythicinradius{a=<3;r=28} ||
+    mythicinradius{a=<5;r=40} 
+    ) true
+  - mobsInRadius{types=OpenField_Enemy_マザーボグド_MCLove32;amount=<1;radius=64} true
+  - (dusk || night) true 
+  - biome{b=terra:origen/origen/scarlet_sanctuary} true
