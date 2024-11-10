@@ -169,3 +169,35 @@ OpenField_Weapon_ビットブレードTypeB_MCLove32:
       Armor: -5
   Skills:
   - skill:OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills @self ~onUse
+
+OpenField_Weapon_樹木剣ライト_MCLove32:
+  Id: wooden_sword
+  Display: "&a&l樹&e&l木&c&l剣&f&lライト"
+  Lore: []
+  Model: 1001
+  Options:
+    ItemVersion: 1
+    Unbreakable: true 
+  Attributes:
+    MainHand:
+      Damage: 16.5 ADD 
+      AttackSpeed: -0.4 MULTIPLY_BASE
+  Group: "Weapon"
+  Skills:
+  - skill:OpenField_Weapon_樹木剣_MCLove32_Skills @self ~onSwing
+
+OpenField_Weapon_樹木剣ヘビー_MCLove32:
+  Id: wooden_sword
+  Display: "&a&l樹&e&l木&c&l剣&f&lヘビー"
+  Lore: []
+  Model: 1002
+  Options:
+    ItemVersion: 1
+    Unbreakable: true 
+  Attributes:
+    MainHand:
+      Damage: 30 ADD 
+      AttackSpeed: -0.7 MULTIPLY_BASE
+  Group: "Weapon"
+  Skills:
+  - skill:OpenField_Weapon_樹木剣_MCLove32_Skills @self ~onSwing

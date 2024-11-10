@@ -247,3 +247,59 @@ OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills_Process:
     bulletType=DISPLAY;mat=netherite_sword;scale=1.25,1.25,1.25;yaw=3.14;pitch=1.57;roll=0.785;
     v=30;i=1;vr=2;hr=2;hp=false;hnp=true;mr=32;se=true;
     in=12;ho=<skill.ho>;vo=<skill.vo>} 
+
+OpenField_Weapon_樹木剣_MCLove32_Skills:
+  Cooldown: 2
+  Conditions:
+  - (
+    wearing{s=HAND;m=OpenField_Weapon_樹木剣ヘビー_MCLove32} ||
+    wearing{s=HAND;m=OpenField_Weapon_樹木剣ライト_MCLove32}
+    ) true
+  Skills:
+  - potion{t=MINING_FATIGUE;l=0;d=30;p=false;i=false} @self
+  - sound{s=block.trial_spawner.about_to_spawn_item;p=1.414;v=0.5} @self
+  - delay 35 
+  - slash{y=1.8;w=8;h=16;mpd=true;a=90;radius=6;hnp=true;hp=false;
+      op=[ 
+        - e:p{p=sweep_attack;a=1;vs=0.2;hs=1;audience=caster} 
+        - e:p{a=3;vs=0.25;hs=0.25;c=#46884a;audience=caster} 
+        - e:p{a=3;vs=0.25;hs=0.25;c=#af9831;audience=caster} 
+        - skill:OpenField_Weapon_樹木剣_MCLove32_Skill_Process @self 
+      ];
+      oh=[ 
+        - damage{a=30;pi=true;ii=true} 
+        - throw{v=5;vy=8}
+        - heal{a=0.2} @self 
+      ];
+      conditions=[
+      - isLiving true 
+      - isMythicMob true
+      ];
+      roll=<random.-45to45>;fo=4;duration=20;p=16} @self
+  - sound{s=block.glass.break;p=1;v=0.5} @self
+  - sound{s=block.glass.break;p=0.85;v=0.55} @self
+  - sound{s=block.glass.break;p=0.7;v=0.65} @self
+  - sound{s=block.glass.break;p=0.65;v=0.75} @self
+  - sound{s=item.trident.thunder;p=2;v=0.45;delay=2} @self 
+
+OpenField_Weapon_樹木剣_MCLove32_Skill_Process:
+  Skills:
+  - projectile{
+    ot=[
+      - e:p{p=sweep_attack;a=1;vs=0.2;hs=1;audience=caster} 
+      - e:p{a=3;vs=0.25;hs=0.25;c=#46884a;audience=caster} 
+      - e:p{a=3;vs=0.25;hs=0.25;c=#af9831;audience=caster} 
+    ];
+    oh=[
+      - sound{s=entity.breeze.jump;p=0;v=1.25} 
+      - damage{a=20;pi=true;ii=true} 
+      - throw{v=5;vy=8}
+      - delay 15
+      - throw{v=1;vy=-20}
+      - heal{a=0.1} @self 
+    ];
+    conditions=[
+      - isLiving true 
+      - isMythicMob true
+    ];
+    v=-20;i=2;se=false;hp=false;hnp=true;mr=24;vr=2;hr=2}
