@@ -106,6 +106,21 @@ OpenField_Material_ゴルネス_MCLove32:
   - INFINITY 1
   Group: 'Material'
 
+OpenField_Material_オブネス_MCLove32:
+  Id: obsidian
+  Display: "&5&lオブネス"
+  Lore: 
+  - "&f魔力を帯びた黒曜石"
+  Model: 1000
+  Options: 
+    Destroy: false
+    CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: false
+  Enchantments:
+  - INFINITY 1
+  Group: 'Material'
+
 OpenField_Material_ランチパッドボール_MCLove32:
   Id: slime_ball
   Display: "&fランチパッドボール"
