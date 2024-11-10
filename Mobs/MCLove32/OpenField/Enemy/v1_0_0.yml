@@ -254,7 +254,7 @@ OpenField_Enemy_スパイディ_MCLove32_Commander:
 
 OpenField_Enemy_生命生い茂る森のボグド_MCLove32:
   Type: BOGGED
-  Display: "&b&l生命&a&l生い茂る森&f&lの&1&lボグド"
+  Display: "&b&l生命&a&l生い茂る森&f&lの&2&lボグド"
   Health: 100
   Damage: 12
   Faction: Enemy
@@ -310,7 +310,7 @@ OpenField_Enemy_生命生い茂る森のボグド_MCLove32:
 
 OpenField_Enemy_ジャイアントボグド_MCLove32:
   Template: OpenField_Enemy_生命生い茂る森のボグド_MCLove32
-  Display: "&1&lジャイアントボグド"
+  Display: "&2&lジャイアントボグド"
   Health: 600
   Damage: 15
   Armor: 20
