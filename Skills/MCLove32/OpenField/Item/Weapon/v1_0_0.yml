@@ -258,20 +258,17 @@ OpenField_Weapon_樹木剣_MCLove32_Skills:
   Skills:
   - potion{t=MINING_FATIGUE;l=0;d=30;p=false;i=false} @self
   - sound{s=block.trial_spawner.about_to_spawn_item;p=1.414;v=0.5} @self
-  - delay 35 
-  - sound{s=block.glass.break;p=1;v=0.75} @self
-  - sound{s=block.glass.break;p=0.85;v=1} @self
-  - sound{s=block.glass.break;p=0.7;v=1.25} @self
-  - sound{s=block.glass.break;p=0.65;v=1.5} @self
-  - sound{s=item.trident.thunder;p=2;v=0.85;delay=1} @self 
+  - delay 5
+  - setvar{var=skill.i;val="30";t=INTEGER} @self 
   - slash{y=1.8;w=8;h=16;mpd=true;a=90;radius=4;hnp=true;hp=false;
     oP=[ 
-      - e:p{p=sweep_attack;a=1;vs=0.2;hs=1;audience=caster;size=2} @origin
-      - e:p{a=25;vs=0.5;hs=0.5;color=#46884a;audience=caster;p=red_dust;size=2} @origin 
-      - e:p{a=25;vs=0.5;hs=0.5;color=#af9831;audience=caster;p=red_dust;size=2} @origin 
-      - skill:OpenField_Weapon_樹木剣_MCLove32_Skill_Process @self 
+      - e:p{p=sweep_attack;a=1;vs=0.2;hs=1;audience=caster;size=2;delay=<skill.var.i>} @origin
+      - e:p{a=25;vs=0.5;hs=0.5;color=#46884a;audience=caster;p=red_dust;size=2;delay=<skill.var.i>} @origin 
+      - e:p{a=25;vs=0.5;hs=0.5;color=#af9831;audience=caster;p=red_dust;size=2;delay=<skill.var.i>} @origin 
+      - skill:OpenField_Weapon_樹木剣_MCLove32_Skill_Process{delay=<skill.var.i>} @self 
+      - setvar{var=skill.i;val="<skill.var.i> - 1";t=INTEGER} @self 
     ];
-    oH=[ 
+    oh=[ 
       - damage{a=30;pi=true;ii=true} 
       - throw{v=5;vy=8}
       - heal{a=0.2} @self 
@@ -280,7 +277,13 @@ OpenField_Weapon_樹木剣_MCLove32_Skills:
       - isLiving true 
       - isMythicMob true
     ];
-    roll=<random.-45to45>;fo=1;duration=20;p=8} @self
+    roll=<random.-45to45>;fo=1;duration=30;p=30} @self
+  - delay 30
+  - sound{s=block.glass.break;p=1;v=0.75} @self
+  - sound{s=block.glass.break;p=0.85;v=1} @self
+  - sound{s=block.glass.break;p=0.7;v=1.25} @self
+  - sound{s=block.glass.break;p=0.65;v=1.5} @self
+  - sound{s=item.trident.thunder;p=2;v=0.85;delay=1} @self 
 
 OpenField_Weapon_樹木剣_MCLove32_Skill_Process:
   Skills:
