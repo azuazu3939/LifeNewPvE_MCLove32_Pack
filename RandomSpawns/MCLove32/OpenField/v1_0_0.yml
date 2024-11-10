@@ -133,7 +133,7 @@ OpenField_Enemy_ジャイアントボグド_MCLove32_Spawn:
   Conditions:
   - mobsinworld{a=<1000} true 
   - blocktype{type=water,air} false 
-  - height{h=60to100} true 
+  - height{h=60to150} true 
   - region{r=spawn} false 
   - (
     mythicinradius{a=<1;r=16} ||
@@ -153,7 +153,7 @@ OpenField_Enemy_マザーボグド_MCLove32_Spawn:
   Conditions:
   - mobsinworld{a=<1000} true 
   - blocktype{type=water,air} false 
-  - height{h=60to100} true 
+  - height{h=60to150} true 
   - region{r=spawn} false 
   - (
     mythicinradius{a=<1;r=16} ||
