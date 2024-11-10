@@ -220,7 +220,7 @@ OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills:
   Skills:
   - skill:OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills_Start @EIC{r=20;a=120;limit=3;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
 
-OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Start:
+OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills_Start:
   Skills:
   - skill:OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills_Process{ho=90;vo=1;so=3;y=3} 
   - skill:OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills_Process{ho=270;vo=1;so=3;y=3} 
@@ -229,7 +229,7 @@ OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Start:
   - skill:OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills_Process{ho=90;vo=2;so=3;y=7;delay=4} 
   - skill:OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills_Process{ho=270;vo=2;so=3;y=7;delay=4}
 
-OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process:
+OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills_Process:
   Skills:
   - missile{
     ot=[
