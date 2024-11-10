@@ -257,6 +257,7 @@ OpenField_Weapon_樹木剣_MCLove32_Skills:
     ) true
   Skills:
   - potion{t=MINING_FATIGUE;l=0;d=30;p=false;i=false} @self
+  - potion{t=SLOW;l=7;d=30;p=false;i=false} @self
   - sound{s=block.trial_spawner.about_to_spawn_item;p=1.414;v=0.5} @self
   - delay 5
   - setvar{var=skill.i;val="30";t=INTEGER} @self 
