@@ -265,13 +265,13 @@ OpenField_Weapon_樹木剣_MCLove32_Skills:
   - sound{s=block.glass.break;p=0.65;v=1.5} @self
   - sound{s=item.trident.thunder;p=2;v=0.85;delay=1} @self 
   - slash{y=1.8;w=8;h=16;mpd=true;a=90;radius=4;hnp=true;hp=false;
-    op=[ 
+    oP=[ 
       - e:p{p=sweep_attack;a=1;vs=0.2;hs=1;audience=caster;size=2} @origin
       - e:p{a=5;vs=0.25;hs=0.25;color=#46884a;audience=caster;p=red_dust;size=2} @origin 
       - e:p{a=5;vs=0.25;hs=0.25;color=#af9831;audience=caster;p=red_dust;size=2} @origin 
       - skill:OpenField_Weapon_樹木剣_MCLove32_Skill_Process @self 
     ];
-    oh=[ 
+    oH=[ 
       - damage{a=30;pi=true;ii=true} 
       - throw{v=5;vy=8}
       - heal{a=0.2} @self 
