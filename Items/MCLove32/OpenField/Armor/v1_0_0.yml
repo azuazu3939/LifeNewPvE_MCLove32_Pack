@@ -1,0 +1,88 @@
+OpenField_Armor_アルドーナH_MCLove32:
+  Id: leather_helmet 
+  Display: "&bアルドーナヘルメット"
+  Lore: []
+  Model: 1001
+  Options:
+    Color: GREEN
+    Destroy: false
+    CancelDamage: true
+    ItemVersion: 1
+    Unbreakable: true
+  Attributes:
+    Head:
+      Armor: 10 ADD
+      ArmorToughness: 5 ADD
+  Group: 'Armor'
+
+OpenField_Armor_アルドーナT_MCLove32:
+  Id: golden_helmet
+  Display: "&6アルドーナティアラ"
+  Lore: 
+  - "&f森と自然の加護の効果として、"
+  - "&fエンチャントが付与されている。"
+  Model: 1001
+  Options:
+    Destroy: false
+    CancelDamage: true
+    ItemVersion: 1
+    Unbreakable: true
+  Enchantments:
+  - PROTECTION 4
+  - FIRE_PROTECTION 4
+  Attributes:
+    Head:
+      Armor: 4 ADD
+      ArmorToughness: 3 ADD
+  Group: 'Armor'
+
+OpenField_Armor_アルドーナC_MCLove32:
+  Id: leather_chestplate
+  Display: "&bアルドーナチェストプレート"
+  Lore: []
+  Model: 1001
+  Options:
+    Color: GREEN
+    Destroy: false
+    CancelDamage: true
+    ItemVersion: 1
+    Unbreakable: true
+  Attributes:
+   Chest:
+      Armor: 8 ADD
+      ArmorToughness: 4 ADD
+  Group: 'Armor'
+
+OpenField_Armor_アルドーナL_MCLove32:
+  Id: leather_leggings
+  Display: "&bアルドーナレギンス"
+  Lore: []
+  Model: 1001
+  Options:
+    Color: GREEN
+    Destroy: false
+    CancelDamage: true
+    ItemVersion: 1
+    Unbreakable: true
+  Attributes:
+    Legs:
+      Armor: 8 ADD
+      ArmorToughness: 3 ADD
+  Group: 'Armor'
+
+OpenField_Armor_アルドーナB_MCLove32:
+  Id: leather_boots
+  Display: "&bアルドーナブーツ"
+  Lore: []
+  Model: 1001
+  Options:
+    Color: GREEN
+    Destroy: false
+    CancelDamage: true
+    ItemVersion: 1
+    Unbreakable: true
+  Attributes:
+    Feet:
+      Armor: 4 ADD
+      ArmorToughness: 4 ADD
+  Group: 'Armor'
