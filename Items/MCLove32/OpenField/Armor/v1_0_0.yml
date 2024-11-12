@@ -35,6 +35,9 @@ OpenField_Armor_アルドーナT_MCLove32:
       Armor: 15 ADD
       ArmorToughness: 10 ADD
   Group: 'Armor'
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:prevent_grindstone: "true"
 
 OpenField_Armor_アルドーナC_MCLove32:
   Id: leather_chestplate
@@ -127,6 +130,9 @@ OpenField_Armor_イルドーナT_MCLove32:
       Damage: 3 ADD 
       AttackSpeed: 0.1 MULTIPLY_BASE
   Group: 'Armor'
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:prevent_grindstone: "true"
 
 OpenField_Armor_イルドーナC_MCLove32:
   Id: leather_chestplate

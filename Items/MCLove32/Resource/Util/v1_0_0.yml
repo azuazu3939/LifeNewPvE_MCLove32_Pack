@@ -13,8 +13,14 @@ Resource_Util_リソースツルハシTypeF_MCLove32:
     Destroy: false
     #CancelDamage: true
     ItemVersion: 1
-    #Unbreakable: false
+    PreventEnchanting: false 
+    PreventCrafting: true       
+    PreventAnviling: false        
+    PreventSmithing: true
   Group: 'Util'
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:prevent_grindstone: "true"
   Skills:
   - potion{t=HASTE;l=1;d=100;p=false} @self ~onBlockBreak
 
@@ -27,8 +33,14 @@ Resource_Util_リソースアックスTypeF_MCLove32:
     Destroy: false
     #CancelDamage: true
     ItemVersion: 1
-    #Unbreakable: false
+    PreventEnchanting: false 
+    PreventCrafting: true       
+    PreventAnviling: false        
+    PreventSmithing: true
   Group: 'Util'
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:prevent_grindstone: "true"
   Skills:
   - potion{t=HASTE;l=1;d=100;p=false} @self ~onBlockBreak
 
@@ -41,8 +53,14 @@ Resource_Util_リソースシャベルTypeF_MCLove32:
     Destroy: false
     #CancelDamage: true
     ItemVersion: 1
-    #Unbreakable: false
+    PreventEnchanting: false 
+    PreventCrafting: true       
+    PreventAnviling: false        
+    PreventSmithing: true
   Group: 'Util'
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:prevent_grindstone: "true"
   Skills:
   - potion{t=HASTE;l=1;d=100;p=false} @self ~onBlockBreak
 
@@ -55,8 +73,14 @@ Resource_Util_リソースクワTypeF_MCLove32:
     Destroy: false
     #CancelDamage: true
     ItemVersion: 1
-    #Unbreakable: false
+    PreventEnchanting: false 
+    PreventCrafting: true       
+    PreventAnviling: false        
+    PreventSmithing: true
   Group: 'Util'
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:prevent_grindstone: "true"
   Skills:
   - potion{t=HASTE;l=1;d=100;p=false} @self ~onBlockBreak
 
@@ -69,8 +93,14 @@ Resource_Util_リソースツルハシTypeE_MCLove32:
     Destroy: false
     #CancelDamage: true
     ItemVersion: 1
-    #Unbreakable: false
+    PreventEnchanting: false 
+    PreventCrafting: true       
+    PreventAnviling: false        
+    PreventSmithing: true
   Group: 'Util'
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:prevent_grindstone: "true"
   Skills:
   - potion{t=HASTE;l=2;d=100;p=false} @self ~onBlockBreak
 
@@ -83,8 +113,14 @@ Resource_Util_リソースアックスTypeE_MCLove32:
     Destroy: false
     #CancelDamage: true
     ItemVersion: 1
-    #Unbreakable: false
+    PreventEnchanting: false 
+    PreventCrafting: true       
+    PreventAnviling: false        
+    PreventSmithing: true
   Group: 'Util'
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:prevent_grindstone: "true"
   Skills:
   - potion{t=HASTE;l=2;d=100;p=false} @self ~onBlockBreak
 
@@ -97,8 +133,14 @@ Resource_Util_リソースシャベルTypeE_MCLove32:
     Destroy: false
     #CancelDamage: true
     ItemVersion: 1
-    #Unbreakable: false
+    PreventEnchanting: false 
+    PreventCrafting: true       
+    PreventAnviling: false        
+    PreventSmithing: true
   Group: 'Util'
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:prevent_grindstone: "true"
   Skills:
   - potion{t=HASTE;l=2;d=100;p=false} @self ~onBlockBreak
 
@@ -111,8 +153,14 @@ Resource_Util_リソースクワTypeE_MCLove32:
     Destroy: false
     #CancelDamage: true
     ItemVersion: 1
-    #Unbreakable: false
+    PreventEnchanting: false 
+    PreventCrafting: true       
+    PreventAnviling: false        
+    PreventSmithing: true
   Group: 'Util'
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:prevent_grindstone: "true"
   Skills:
   - potion{t=HASTE;l=2;d=100;p=false} @self ~onBlockBreak
 
@@ -125,8 +173,14 @@ Resource_Util_リソースツルハシTypeD_MCLove32:
     Destroy: false
     #CancelDamage: true
     ItemVersion: 1
-    #Unbreakable: false
+    PreventEnchanting: false 
+    PreventCrafting: true       
+    PreventAnviling: false        
+    PreventSmithing: true
   Group: 'Util'
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:prevent_grindstone: "true"
   Skills:
   - potion{t=HASTE;l=3;d=100;p=false} @self ~onBlockBreak
 
@@ -139,8 +193,14 @@ Resource_Util_リソースアックスTypeD_MCLove32:
     Destroy: false
     #CancelDamage: true
     ItemVersion: 1
-    #Unbreakable: false
+    PreventEnchanting: false 
+    PreventCrafting: true       
+    PreventAnviling: false        
+    PreventSmithing: true
   Group: 'Util'
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:prevent_grindstone: "true"
   Skills:
   - potion{t=HASTE;l=3;d=100;p=false} @self ~onBlockBreak
 
@@ -153,8 +213,14 @@ Resource_Util_リソースシャベルTypeD_MCLove32:
     Destroy: false
     #CancelDamage: true
     ItemVersion: 1
-    #Unbreakable: false
+    PreventEnchanting: false 
+    PreventCrafting: true       
+    PreventAnviling: false        
+    PreventSmithing: true
   Group: 'Util'
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:prevent_grindstone: "true"
   Skills:
   - potion{t=HASTE;l=3;d=100;p=false} @self ~onBlockBreak
 
@@ -167,8 +233,14 @@ Resource_Util_リソースクワTypeD_MCLove32:
     Destroy: false
     #CancelDamage: true
     ItemVersion: 1
-    #Unbreakable: false
+    PreventEnchanting: false 
+    PreventCrafting: true       
+    PreventAnviling: false        
+    PreventSmithing: true
   Group: 'Util'
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:prevent_grindstone: "true"
   Skills:
   - potion{t=HASTE;l=3;d=100;p=false} @self ~onBlockBreak
 
@@ -181,8 +253,14 @@ Resource_Util_リソースツルハシTypeC_MCLove32:
     Destroy: false
     #CancelDamage: true
     ItemVersion: 1
-    #Unbreakable: false
+    PreventEnchanting: false 
+    PreventCrafting: true       
+    PreventAnviling: false        
+    PreventSmithing: true
   Group: 'Util'
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:prevent_grindstone: "true"
   Skills:
   - potion{t=HASTE;l=4;d=100;p=false} @self ~onBlockBreak
 
@@ -195,8 +273,14 @@ Resource_Util_リソースアックスTypeC_MCLove32:
     Destroy: false
     #CancelDamage: true
     ItemVersion: 1
-    #Unbreakable: false
+    PreventEnchanting: false 
+    PreventCrafting: true       
+    PreventAnviling: false        
+    PreventSmithing: true
   Group: 'Util'
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:prevent_grindstone: "true"
   Skills:
   - potion{t=HASTE;l=4;d=100;p=false} @self ~onBlockBreak
 
@@ -209,8 +293,14 @@ Resource_Util_リソースシャベルTypeC_MCLove32:
     Destroy: false
     #CancelDamage: true
     ItemVersion: 1
-    #Unbreakable: false
+    PreventEnchanting: false 
+    PreventCrafting: true       
+    PreventAnviling: false        
+    PreventSmithing: true
   Group: 'Util'
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:prevent_grindstone: "true"
   Skills:
   - potion{t=HASTE;l=4;d=100;p=false} @self ~onBlockBreak
 
@@ -223,8 +313,14 @@ Resource_Util_リソースクワTypeC_MCLove32:
     Destroy: false
     #CancelDamage: true
     ItemVersion: 1
-    #Unbreakable: false
+    PreventEnchanting: false 
+    PreventCrafting: true       
+    PreventAnviling: false        
+    PreventSmithing: true
   Group: 'Util'
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:prevent_grindstone: "true"
   Skills:
   - potion{t=HASTE;l=4;d=100;p=false} @self ~onBlockBreak
 
@@ -237,8 +333,14 @@ Resource_Util_リソースツルハシTypeB_MCLove32:
     Destroy: false
     #CancelDamage: true
     ItemVersion: 1
-    #Unbreakable: false
+    PreventEnchanting: false 
+    PreventCrafting: true       
+    PreventAnviling: false        
+    PreventSmithing: true
   Group: 'Util'
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:prevent_grindstone: "true"
   Skills:
   - potion{t=HASTE;l=5;d=100;p=false} @self ~onBlockBreak
 
@@ -251,8 +353,14 @@ Resource_Util_リソースアックスTypeB_MCLove32:
     Destroy: false
     #CancelDamage: true
     ItemVersion: 1
-    #Unbreakable: false
+    PreventEnchanting: false 
+    PreventCrafting: true       
+    PreventAnviling: false        
+    PreventSmithing: true
   Group: 'Util'
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:prevent_grindstone: "true"
   Skills:
   - potion{t=HASTE;l=5;d=100;p=false} @self ~onBlockBreak
 
@@ -265,8 +373,14 @@ Resource_Util_リソースシャベルTypeB_MCLove32:
     Destroy: false
     #CancelDamage: true
     ItemVersion: 1
-    #Unbreakable: false
+    PreventEnchanting: false 
+    PreventCrafting: true       
+    PreventAnviling: false        
+    PreventSmithing: true
   Group: 'Util'
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:prevent_grindstone: "true"
   Skills:
   - potion{t=HASTE;l=5;d=100;p=false} @self ~onBlockBreak
 
@@ -279,8 +393,14 @@ Resource_Util_リソースクワTypeB_MCLove32:
     Destroy: false
     #CancelDamage: true
     ItemVersion: 1
-    #Unbreakable: false
+    PreventEnchanting: false 
+    PreventCrafting: true       
+    PreventAnviling: false        
+    PreventSmithing: true
   Group: 'Util'
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:prevent_grindstone: "true"
   Skills:
   - potion{t=HASTE;l=5;d=100;p=false} @self ~onBlockBreak
 
@@ -293,8 +413,14 @@ Resource_Util_リソースツルハシTypeA_MCLove32:
     Destroy: false
     #CancelDamage: true
     ItemVersion: 1
-    #Unbreakable: false
+    PreventEnchanting: false 
+    PreventCrafting: true       
+    PreventAnviling: false        
+    PreventSmithing: true
   Group: 'Util'
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:prevent_grindstone: "true"
   Skills:
   - potion{t=HASTE;l=7;d=100;p=false} @self ~onBlockBreak
 
@@ -307,8 +433,14 @@ Resource_Util_リソースアックスTypeA_MCLove32:
     Destroy: false
     #CancelDamage: true
     ItemVersion: 1
-    #Unbreakable: false
+    PreventEnchanting: false 
+    PreventCrafting: true       
+    PreventAnviling: false        
+    PreventSmithing: true
   Group: 'Util'
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:prevent_grindstone: "true"
   Skills:
   - potion{t=HASTE;l=7;d=100;p=false} @self ~onBlockBreak
 
@@ -321,8 +453,14 @@ Resource_Util_リソースシャベルTypeA_MCLove32:
     Destroy: false
     #CancelDamage: true
     ItemVersion: 1
-    #Unbreakable: false
+    PreventEnchanting: false 
+    PreventCrafting: true       
+    PreventAnviling: false        
+    PreventSmithing: true
   Group: 'Util'
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:prevent_grindstone: "true"
   Skills:
   - potion{t=HASTE;l=7;d=100;p=false} @self ~onBlockBreak
 
@@ -335,8 +473,14 @@ Resource_Util_リソースクワTypeA_MCLove32:
     Destroy: false
     #CancelDamage: true
     ItemVersion: 1
-    #Unbreakable: false
+    PreventEnchanting: false 
+    PreventCrafting: true       
+    PreventAnviling: false        
+    PreventSmithing: true
   Group: 'Util'
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:prevent_grindstone: "true"
   Skills:
   - potion{t=HASTE;l=7;d=100;p=false} @self ~onBlockBreak
 
@@ -349,12 +493,18 @@ Resource_Util_リソースツルハシTypeS_MCLove32:
     Destroy: false
     #CancelDamage: true
     ItemVersion: 1
-    #Unbreakable: false
+    PreventEnchanting: false 
+    PreventCrafting: true       
+    PreventAnviling: false        
+    PreventSmithing: true
   Enchantments:
   - EFFICIENCY 6
   - UNBREAKING 10
   - MENDING 1
   Group: 'Util'
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:prevent_grindstone: "true"
   Skills:
   - potion{t=HASTE;l=9;d=100;p=false} @self ~onBlockBreak
 
@@ -367,12 +517,18 @@ Resource_Util_リソースアックスTypeS_MCLove32:
     Destroy: false
     #CancelDamage: true
     ItemVersion: 1
-    #Unbreakable: false
+    PreventEnchanting: false 
+    PreventCrafting: true       
+    PreventAnviling: false        
+    PreventSmithing: true
   Enchantments:
   - EFFICIENCY 6
   - UNBREAKING 10
   - MENDING 1
   Group: 'Util'
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:prevent_grindstone: "true"
   Skills:
   - potion{t=HASTE;l=9;d=100;p=false} @self ~onBlockBreak
 
@@ -385,12 +541,18 @@ Resource_Util_リソースシャベルTypeS_MCLove32:
     Destroy: false
     #CancelDamage: true
     ItemVersion: 1
-    #Unbreakable: false
+    PreventEnchanting: false 
+    PreventCrafting: true       
+    PreventAnviling: false        
+    PreventSmithing: true
   Enchantments:
   - EFFICIENCY 6
   - UNBREAKING 10
   - MENDING 1
   Group: 'Util'
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:prevent_grindstone: "true"
   Skills:
   - potion{t=HASTE;l=9;d=100;p=false} @self ~onBlockBreak
 
@@ -403,11 +565,17 @@ Resource_Util_リソースクワTypeS_MCLove32:
     Destroy: false
     #CancelDamage: true
     ItemVersion: 1
-    #Unbreakable: false
+    PreventEnchanting: false 
+    PreventCrafting: true       
+    PreventAnviling: false        
+    PreventSmithing: true
   Enchantments:
   - EFFICIENCY 6
   - UNBREAKING 10
   - MENDING 1
   Group: 'Util'
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:prevent_grindstone: "true"
   Skills:
   - potion{t=HASTE;l=9;d=100;p=false} @self ~onBlockBreak
