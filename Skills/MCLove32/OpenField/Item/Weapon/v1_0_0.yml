@@ -294,6 +294,7 @@ OpenField_Weapon_樹木剣_MCLove32_Skill_Process:
     wearing{s=HAND;m=OpenField_Weapon_樹木剣ヘビー_MCLove32} ||
     wearing{s=HAND;m=OpenField_Weapon_樹木剣ライト_MCLove32}
     ) true
+  - crouching true 
   Skills:
   - projectile{
     ot=[
