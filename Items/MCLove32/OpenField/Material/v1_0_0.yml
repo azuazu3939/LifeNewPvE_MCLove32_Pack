@@ -141,7 +141,7 @@ OpenField_Material_ランチパッドボール_MCLove32:
     s=[
       - sound{s=entity.generic.explode;v=0.15} @self
       - takeitem{a=1;m=OpenField_Material_ランチパッドボール_MCLove32} @self
-      - jump{v=1.25} @self 
+      - jump{v=2} @self 
       - delay 10
       - setFallDistance{a=10} @self 
     ];cd=0.8} @self ~onUse ?wearing{s=HAND;m=OpenField_Material_ランチパッドボール_MCLove32} ?fromSurface{r=<21}
