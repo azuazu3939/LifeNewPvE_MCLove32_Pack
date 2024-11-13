@@ -141,10 +141,10 @@ OpenField_Material_ランチパッドボール_MCLove32:
     s=[
       - sound{s=entity.generic.explode;v=0.15} @self
       - takeitem{a=1;m=OpenField_Material_ランチパッドボール_MCLove32} @self
-      - jump{v=2} @self 
+      - jump{v=1.25} @self 
       - delay 10
       - setFallDistance{a=10} @self 
-    ];cd=0.8} @self ~onUse ?wearing{s=HAND;m=OpenField_Material_ランチパッドボール_MCLove32} ?fromSurface{r=<21}
+    ];cd=0.4} @self ~onUse ?wearing{s=HAND;m=OpenField_Material_ランチパッドボール_MCLove32} ?fromSurface{r=<21}
 
 OpenField_Material_驚異の糸_MCLove32:
   Id: string
