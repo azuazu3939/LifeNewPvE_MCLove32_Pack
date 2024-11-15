@@ -228,7 +228,7 @@ OpenField_Enemy_臆病なオセロット_MCLove32_Skill_Checker:
 OpenField_Enemy_臆病なオセロット_MCLove32_Skill_Looper:
   Conditions:
   - onGround orElseCast OpenField_Enemy_臆病なオセロット_MCLove32_Skill_Add
-  - varrange{var=skill.fall;val=>20} true 
+  - varrange{var=skill.fall;val=>10} true 
   Skills:
   - suicide @self 
 
