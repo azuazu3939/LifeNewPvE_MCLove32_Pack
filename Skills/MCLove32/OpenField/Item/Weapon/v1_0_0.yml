@@ -256,7 +256,7 @@ OpenField_Weapon_樹木剣_MCLove32_Skills:
     wearing{s=HAND;m=OpenField_Weapon_樹木剣ライト_MCLove32}
     ) true
   - crouching true 
-  - materialcooldown{m=wooden_sword}
+  - materialcooldown{m=wooden_sword} false 
   Skills:
   - setmaterialcooldown{m=wooden_sword;d=200} @self
   - potion{t=SLOW;l=7;d=40;p=false;i=false} @self
