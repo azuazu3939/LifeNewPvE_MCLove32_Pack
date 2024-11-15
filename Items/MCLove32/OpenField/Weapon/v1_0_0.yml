@@ -202,6 +202,22 @@ OpenField_Weapon_樹木剣ヘビー_MCLove32:
   Skills:
   - skill:OpenField_Weapon_樹木剣_MCLove32_Skills @self ~onSwing
 
+OpenField_Weapon_ラヴァン_MCLove32:
+  Id: diamond_axe
+  Display: "&6&lラヴァン"
+  Lore: 
+  - "&f不滅の灼熱の灯、ここにあり。"
+  Model: 11
+  Options:
+    ItemVersion: 1
+    Unbreakable: true 
+  Attributes:
+    MainHand:
+      Damage: 15 ADD 
+  Group: "Weapon"
+  Skills:
+  - skill:OpenField_Weapon_ラヴァン_MCLove32_Skills @self ~onUse
+
 OpenField_Weapon_赫灼大斧ラヴァン_MCLove32:
   Id: diamond_axe
   Display: "&4&l赫&c&l灼&4&l大&c&l斧 &6&lラヴァン"
