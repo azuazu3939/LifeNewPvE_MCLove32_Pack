@@ -402,7 +402,7 @@ OpenField_Enemy_臆病なオセロット_MCLove32:
   Options:
     Collidable: true 
     DigOutOfGround: true 
-    FollowRange: 32
+    FollowRange: 16
     Despawn: true 
     KnockbackResistance: 0
     NoDamageTicks: 0

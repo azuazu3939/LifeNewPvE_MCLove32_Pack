@@ -215,6 +215,6 @@ OpenField_Enemy_臆病なオセロット_MCLove32_Skills:
   - onGround true
   Skills:
   - addtag{t=combat} @self 
-  - leap{v=200;repeat=9;repeati=5} @TL
-  - setFallDistance{v=0;repeat=9;repeati=5} @self 
+  - leap{v=200;repeat=4;repeati=5} @TL
+  - setFallDistance{v=0;repeat=4;repeati=5} @self 
 
