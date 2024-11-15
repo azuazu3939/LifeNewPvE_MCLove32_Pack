@@ -324,16 +324,16 @@ OpenField_Weapon_赫灼大斧ラヴァン_MCLove32_Skills:
   - materialcooldown{m=diamond_axe} false 
   Skills:
   - setmaterialcooldown{m=diamond_axe;d=100} @self
-  - setvar{var=skill.pitch;val="0.5"};t=FLOAT} @self 
+  - setvar{var=skill.pitch;val="0.5";t=FLOAT} @self 
   - skill{
     s=[
-      - setvar{var=skill.pitch;val="<skill.var.pitch> + 0.25"};t=FLOAT} @self 
+      - setvar{var=skill.pitch;val="<skill.var.pitch> + 0.25";t=FLOAT} @self 
       - sound{s=block.note_block.harp;p=<skill.var.pitch>} @self
     ];repeat=5;repeatI=2} @self 
-  - setvar{var=skill.radius;val="1"};t=INTEGER} @self 
+  - setvar{var=skill.radius;val="1";t=INTEGER} @self 
   - skill{
     s=[
-      - setvar{var=skill.radius;val="<skill.var.radius> + 3"};t=INTEGER} @self 
+      - setvar{var=skill.radius;val="<skill.var.radius> + 3";t=INTEGER} @self 
       - e:pr{particle=explosion_large;radius=<skill.var.radius>;points=16;amount=3;hS=1;vS=0;audience=caster} @self
     ];repeat=2;repeatI=4} @self 
   - damage{a=90;pi=true;ii=true} @EIR{r=10;c=[ - isLiving true - isMythicMob true ]}
