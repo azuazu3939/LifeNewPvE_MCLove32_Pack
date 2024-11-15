@@ -45,6 +45,53 @@ OpenField_Guard_ヒィツジー_MCLove32_Leader:
   Skills:
   - summon{t=OpenField_Guard_ヒィツジー_MCLove32;a=2to4;r=5;s=true} @self ~onSpawn
 
+OpenField_Enemy_雪原ラビット_MCLove32:
+  Type: rabbit
+  Display: "&f&l雪原ラビット"
+  Health: 100
+  Damage: 50
+  Faction: Guard
+  Armor: 35
+  Options:
+    Collidable: true 
+    DigOutOfGround: true 
+    FollowRange: 8
+    Despawn: true 
+    KnockbackResistance: 0
+    NoDamageTicks: 0
+    NoAI: false 
+    #NoGravity: true
+    PreventMobKillDrops: true 
+    PreventRandomEquipment: true 
+    PreventSunburn: true
+    PreventVanillaDamage: true 
+    Scale: 1
+    #Silent: false 
+    #MovementSpeed: 0.05
+    IsKillerBunny: false 
+    RabbitType: WHITE
+  Modules:
+    ThreatTable: true
+  DamageModifiers:
+  - SUFFOCATION 0
+  AITargetSelectors:
+  - clear
+  - ownertarget
+  - ownerattacker
+  AIGoalSelectors:
+  - randomstroll
+  - gotoowner
+  Skills:
+  - cmd{c="lmg <target.name> 0.5 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true  ]} ~onDeath
+
+OpenField_Enemy_雪原ラビット_MCLove32_Leader:
+  Template: OpenField_Enemy_雪原ラビット_MCLove32
+  Type: rabbit
+  Display: "&f&l雪原ラビット"
+  Skills:
+  - summon{t=OpenField_Enemy_雪原ラビット_MCLove32;a=2to5;r=4;s=true} @self ~onSpawn 
+  - cmd{c="lmg <target.name> 2 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true  ]} ~onDeath
+
 OpenField_Guard_牙狼_MCLove32:
   Type: wolf
   Display: "&f牙狼"

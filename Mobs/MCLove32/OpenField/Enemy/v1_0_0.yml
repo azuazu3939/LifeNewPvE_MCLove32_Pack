@@ -419,7 +419,6 @@ OpenField_Enemy_臆病なオセロット_MCLove32:
     ThreatTable: true
   DamageModifiers:
   - SUFFOCATION 0
-  - FALL 50
   AITargetSelectors:
   - clear
   - attacker
@@ -428,9 +427,66 @@ OpenField_Enemy_臆病なオセロット_MCLove32:
   - randomstroll
   - movetowardstarget
   Skills:
+  - sound{s=entity.ocelot.death;v=4} @self ~onDeath 
   - skill:OpenField_Enemy_臆病なオセロット_MCLove32_Skill_Checker @self ~onDamaged ?!hasTag{t=combat}
   - skill:OpenField_Enemy_臆病なオセロット_MCLove32_Skills{delay=5} @T ~onEntercombat
   - velocity{x=2.5;y=3;z=2.5;m=MULTIPLY} @self ~onDamaged ?!hasTag{t=combat}
   - cmd{c="mlg <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.000001"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true  ]} ~onDeath 
   - cmd{c="mlg <target.name> OpenField_Material_魔力結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true  ]} ~onDeath 0.001
   - cmd{c="lmg <target.name> 0.5 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true  ]} ~onDeath
+
+OpenField_Enemy_雪原キラーラビット_MCLove32:
+  Type: rabbit
+  Display: "&f&l雪原ラビット"
+  Health: 100
+  Damage: 50
+  Faction: Enemy
+  Armor: 35
+  Options:
+    Collidable: true 
+    DigOutOfGround: true 
+    FollowRange: 8
+    Despawn: true 
+    KnockbackResistance: 0
+    NoDamageTicks: 0
+    NoAI: false 
+    #NoGravity: true
+    PreventMobKillDrops: true 
+    PreventRandomEquipment: true 
+    PreventSunburn: true
+    PreventVanillaDamage: true 
+    Scale: 1
+    #Silent: false 
+    #MovementSpeed: 0.05
+    IsKillerBunny: true
+    RabbitType: WHITE
+  Modules:
+    ThreatTable: true
+  DamageModifiers:
+  - SUFFOCATION 0
+  AITargetSelectors:
+  - clear
+  - attacker
+  - players 
+  - ownertarget
+  - ownerattacker
+  AIGoalSelectors:
+  - randomstroll
+  - gotoowner
+  - meleeattack{ar=8}
+  Skills:
+  - attribute{attr=GENERIC_FOLLOW_RANGE;a=64} @self ~onEntercombat 
+  - attribute{attr=GENERIC_FOLLOW_RANGE;a=8} @self ~onDropcombat 
+  - potion{t=speed;l=5;d=144000;p=false} @self ~onEntercombat 
+  - potionclear{t=SPEED} @self ~onDropcombat 
+  - cmd{c="mlg <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.000001"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true  ]} ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Material_魔力結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true  ]} ~onDeath 0.001
+  - cmd{c="lmg <target.name> 1 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true  ]} ~onDeath
+
+OpenField_Enemy_雪原キラーラビット_MCLove32_Leader:
+  Template: OpenField_Enemy_雪原ラビット_MCLove32
+  Type: rabbit
+  Display: "&f&l雪原ラビット"
+  Skills:
+  - summon{t=OpenField_Enemy_雪原キラーラビット_MCLove32;a=2to5;r=4;s=true} @self ~onSpawn 
+  - cmd{c="lmg <target.name> 5 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true  ]} ~onDeath
