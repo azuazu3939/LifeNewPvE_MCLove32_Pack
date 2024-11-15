@@ -178,6 +178,7 @@ OpenField_Enemy_雪原ラビット_MCLove32_Leader_Spawn:
     mythicinradius{a=<5;r=32} ||
     mythicinradius{a=<8;r=48} 
     ) true
+  - mobsInRadius{types=OpenField_Enemy_雪原ラビット_MCLove32,OpenField_Enemy_雪原キラーラビット_MCLove32;amount=<5;radius=1} true
   - biome{b=terra:origen/origen/snowy_mountains} true
 
 OpenField_Enemy_雪原キラーラビット_MCLove32_Leader_Spawn:
@@ -195,4 +196,5 @@ OpenField_Enemy_雪原キラーラビット_MCLove32_Leader_Spawn:
     mythicinradius{a=<5;r=32} ||
     mythicinradius{a=<8;r=48} 
     ) true
+  - mobsInRadius{types=OpenField_Enemy_雪原ラビット_MCLove32,OpenField_Enemy_雪原キラーラビット_MCLove32;amount=<5;radius=16} true
   - biome{b=terra:origen/origen/snowy_mountains} true
