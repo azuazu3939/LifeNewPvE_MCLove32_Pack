@@ -395,7 +395,7 @@ OpenField_Enemy_マザーボグド_MCLove32:
 OpenField_Enemy_臆病なオセロット_MCLove32:
   Type: ocelot
   Display: "&7&l臆病なオセロット"
-  Health: 400
+  Health: 200
   Damage: 20
   Faction: Enemy
   Armor: 35
@@ -419,7 +419,7 @@ OpenField_Enemy_臆病なオセロット_MCLove32:
     ThreatTable: true
   DamageModifiers:
   - SUFFOCATION 0
-  - FALL 10
+  - FALL 50
   AITargetSelectors:
   - clear
   - attacker
@@ -429,4 +429,4 @@ OpenField_Enemy_臆病なオセロット_MCLove32:
   - movetowardstarget
   Skills:
   - skill:OpenField_Enemy_臆病なオセロット_MCLove32_Skills{delay=5} @T ~onEntercombat
-  - velocity{x=2.5;y=1;z=2.5;m=MULTIPLY} @self ~onDamaged ?!hasTag{t=combat}
+  - velocity{x=2.5;y=3;z=2.5;m=MULTIPLY} @self ~onDamaged ?!hasTag{t=combat}
