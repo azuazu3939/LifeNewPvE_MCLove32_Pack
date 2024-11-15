@@ -208,3 +208,13 @@ OpenField_Enemy_マザーボグド_MCLove32_Skills:
   - e:p{p=flash;a=1;delay=10} @origin
   - delay 600
   - skill:OpenField_Enemy_マザーボグド_MCLove32_Skills @self 
+
+OpenField_Enemy_臆病なオセロット_MCLove32_Skills:
+  Cooldown: 1
+  Conditions:
+  - onGround true
+  Skills:
+  - addtag{t=combat} @self 
+  - leap{v=200;repeat=9;repeati=5} @TL
+  - setFallDistance{v=0;repeat=9;repeati=5} @self 
+

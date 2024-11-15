@@ -41,6 +41,10 @@ OpenField_Weapon_サンドストーム_MCLove32:
   Enchantments:
   - MENDING 1
   - INFINITY 1
+  - POWER 20
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:prevent_grindstone: "true"
   Skills:
   - skill:OpenField_Weapon_サンドストーム_MCLove32_Skills @triggerLocation ~onBowHit
 
@@ -234,3 +238,22 @@ OpenField_Weapon_赫灼大斧ラヴァン_MCLove32:
   Group: "Weapon"
   Skills:
   - skill:OpenField_Weapon_赫灼大斧ラヴァン_MCLove32_Skills @self ~onUse
+
+OpenField_Weapon_ダブルパンチ_MCLove32:
+  Id: bow
+  Display: "&5&lダブルパンチ"
+  Lore: 
+  - "&fおいしい！！"
+  Model: 1001
+  Options:
+    ItemVersion: 1
+    Unbreakable: true 
+  Group: "Weapon"
+  Enchantments:
+  - PUNCH 4
+  - POWER 10
+  - MENDING 1
+  - INFINITY 1
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:prevent_grindstone: "true"

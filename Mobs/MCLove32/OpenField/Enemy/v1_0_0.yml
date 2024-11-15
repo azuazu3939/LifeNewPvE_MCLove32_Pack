@@ -391,3 +391,42 @@ OpenField_Enemy_マザーボグド_MCLove32:
     Range: 32
     Color: GREEN
     Style: SEGMENTED_12
+
+OpenField_Enemy_臆病なオセロット_MCLove32:
+  Type: ocelot
+  Display: "&7&l臆病なオセロット"
+  Health: 400
+  Damage: 20
+  Faction: Enemy
+  Armor: 35
+  Options:
+    Collidable: true 
+    DigOutOfGround: true 
+    FollowRange: 32
+    Despawn: true 
+    KnockbackResistance: 0
+    NoDamageTicks: 0
+    NoAI: false 
+    #NoGravity: true
+    PreventMobKillDrops: true 
+    PreventRandomEquipment: true 
+    PreventSunburn: true
+    PreventVanillaDamage: true 
+    Scale: 1.25
+    #Silent: false 
+    MovementSpeed: 0.125
+  Modules:
+    ThreatTable: true
+  DamageModifiers:
+  - SUFFOCATION 0
+  - FALL 10
+  AITargetSelectors:
+  - clear
+  - attacker
+  - players 
+  AIGoalSelectors:
+  - randomstroll
+  - movetowardstarget
+  Skills:
+  - skill:OpenField_Enemy_臆病なオセロット_MCLove32_Skills{delay=5} @T ~onEntercombat
+  - velocity{x=2.5;y=1;z=2.5;m=MULTIPLY} @self ~onDamaged ?!hasTag{t=combat}
