@@ -414,7 +414,7 @@ OpenField_Enemy_臆病なオセロット_MCLove32:
     PreventVanillaDamage: true 
     Scale: 2.5
     #Silent: false 
-    MovementSpeed: 0.1
+    MovementSpeed: 0.05
   Modules:
     ThreatTable: true
   DamageModifiers:
