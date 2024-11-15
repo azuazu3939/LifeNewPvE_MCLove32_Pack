@@ -431,3 +431,6 @@ OpenField_Enemy_臆病なオセロット_MCLove32:
   - skill:OpenField_Enemy_臆病なオセロット_MCLove32_Skill_Checker @self ~onDamaged ?!hasTag{t=combat}
   - skill:OpenField_Enemy_臆病なオセロット_MCLove32_Skills{delay=5} @T ~onEntercombat
   - velocity{x=2.5;y=3;z=2.5;m=MULTIPLY} @self ~onDamaged ?!hasTag{t=combat}
+  - cmd{c="mlg <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.000001"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true  ]} ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Material_魔力結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true  ]} ~onDeath 0.001
+  - cmd{c="lmg <target.name> 0.5 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true  ]} ~onDeath
