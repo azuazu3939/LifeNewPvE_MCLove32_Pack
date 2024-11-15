@@ -412,9 +412,9 @@ OpenField_Enemy_臆病なオセロット_MCLove32:
     PreventRandomEquipment: true 
     PreventSunburn: true
     PreventVanillaDamage: true 
-    Scale: 1.25
+    Scale: 2
     #Silent: false 
-    MovementSpeed: 0.125
+    MovementSpeed: 0.1
   Modules:
     ThreatTable: true
   DamageModifiers:
