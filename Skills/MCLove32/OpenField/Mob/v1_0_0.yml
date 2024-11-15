@@ -221,6 +221,7 @@ OpenField_Enemy_臆病なオセロット_MCLove32_Skills:
 OpenField_Enemy_臆病なオセロット_MCLove32_Skill_Checker:
   Skills:
   - setVar{var=skill.fall;val="0"} @self 
+  - delay 4
   - skill:OpenField_Enemy_臆病なオセロット_MCLove32_Skill_Looper @self 
 
 
