@@ -4,7 +4,7 @@ OpenField_Enemy_ハロウルフ_MCLove32_Leader_Spawn:
   Action: ADD 
   PositionType: LAND
   Chance: 0.25
-  Priority: 32
+  Priority: 10
   Conditions:
   - mobsinworld{a=<1000} true 
   - blocktype{type=water,air} false 
@@ -30,7 +30,7 @@ OpenField_Guard_ヒィツジー_MCLove32_Leader_Spawn:
   Action: ADD 
   PositionType: LAND
   Chance: 0.25
-  Priority: 25
+  Priority: 8
   Conditions:
   - mobsinworld{a=<1000} true 
   - blocktype{type=water,air} false 
@@ -72,7 +72,7 @@ OpenField_Enemy_コロニアル_MCLove32_Leader:
   Action: ADD 
   PositionType: LAND
   Chance: 0.25
-  Priority: 15
+  Priority: 4
   Conditions:
   - mobsinworld{a=<1000} true 
   - blocktype{type=water,air} false 
@@ -91,7 +91,7 @@ OpenField_Enemy_スパイディ_MCLove32_Commander_Spawn:
   Action: ADD 
   PositionType: LAND
   Chance: 0.25
-  Priority: 10
+  Priority: 3
   Conditions:
   - mobsinworld{a=<1000} true 
   - blocktype{type=water,air} false 
@@ -110,7 +110,7 @@ OpenField_Enemy_生命生い茂る森のボグド_MCLove32_Spawn:
   Action: ADD 
   PositionType: LAND
   Chance: 1
-  Priority: 10
+  Priority: 20
   Conditions:
   - mobsinworld{a=<1000} true 
   - blocktype{type=water,air} false 
@@ -168,7 +168,7 @@ OpenField_Enemy_雪原ラビット_MCLove32_Leader_Spawn:
   Action: ADD 
   PositionType: LAND
   Chance: 1
-  Priority: 8
+  Priority: 20
   Conditions:
   - mobsinworld{a=<1000} true 
   - blocktype{type=water,air} false 
@@ -186,7 +186,7 @@ OpenField_Enemy_雪原キラーラビット_MCLove32_Leader_Spawn:
   Action: ADD 
   PositionType: LAND
   Chance: 1
-  Priority: 8
+  Priority: 20
   Conditions:
   - mobsinworld{a=<1000} true 
   - blocktype{type=water,air} false 
