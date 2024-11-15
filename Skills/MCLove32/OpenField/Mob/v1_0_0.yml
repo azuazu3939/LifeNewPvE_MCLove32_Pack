@@ -218,3 +218,22 @@ OpenField_Enemy_臆病なオセロット_MCLove32_Skills:
   - leap{v=200;repeat=4;repeati=5} @TL
   - setFallDistance{v=0;repeat=4;repeati=5} @self 
 
+OpenField_Enemy_臆病なオセロット_MCLove32_Skill_Checker:
+  Skills:
+  - setVar{var=skill.fall;val="0"} @self 
+  - skill:OpenField_Enemy_臆病なオセロット_MCLove32_Skill_Looper @self 
+
+
+OpenField_Enemy_臆病なオセロット_MCLove32_Skill_Looper:
+  Conditions:
+  - onGround orElseCast OpenField_Enemy_臆病なオセロット_MCLove32_Skill_Add
+  - varrange{var=skill.fall;val=>20} true 
+  Skills:
+  - suicide @self 
+
+
+OpenField_Enemy_臆病なオセロット_MCLove32_Skill_Add:
+  Skills:
+  - setVar{var=skill.fall;val="<skill.var.fall> + 1"} @self 
+  - delay 1
+  - skill:OpenField_Enemy_臆病なオセロット_MCLove32_Skill_Looper @self 
