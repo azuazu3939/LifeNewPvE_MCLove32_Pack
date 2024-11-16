@@ -600,7 +600,7 @@ Resource_Util_リソースPicksaw_MCLove32:
     PreventSmithing: true
   Enchantments:
   - EFFICIENCY 7
-  - FORTURE 3
+  - FORTUNE 3
   - UNBREAKING 10
   - MENDING 1
   Group: 'Util'
