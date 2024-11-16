@@ -608,8 +608,6 @@ Resource_Util_リソースPicksaw_MCLove32:
     MainHand:
       StepHeight: 2 ADD
       BlockInteractionRange: 5 ADD
-      BreakBreakSpeed: 10 ADD 
-
   NBT:
     PublicBukkitValues:
       lifenewpve:prevent_grindstone: "true"
