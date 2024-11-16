@@ -468,8 +468,6 @@ OpenField_Enemy_雪原キラーラビット_MCLove32:
   - clear
   - attacker
   - players 
-  - ownertarget
-  - ownerattacker
   AIGoalSelectors:
   - randomstroll
   - gotoowner

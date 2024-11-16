@@ -76,8 +76,6 @@ OpenField_Enemy_雪原ラビット_MCLove32:
   - SUFFOCATION 0
   AITargetSelectors:
   - clear
-  - ownertarget
-  - ownerattacker
   AIGoalSelectors:
   - randomstroll
   - gotoowner
