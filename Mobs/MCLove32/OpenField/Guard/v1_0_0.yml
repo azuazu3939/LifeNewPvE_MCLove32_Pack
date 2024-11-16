@@ -36,7 +36,7 @@ OpenField_Guard_ヒィツジー_MCLove32:
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=24} @self ~onEnterCombat 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=12} @self ~onDropCombat
   - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
-  - cmd{c="lmg <target.name> 0.1 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true ]} ~onDeath 
+  - cmd{c="lmg <target.name> 1 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 
 
 OpenField_Guard_ヒィツジー_MCLove32_Leader:
   Template: OpenField_Guard_ヒィツジー_MCLove32
@@ -80,7 +80,7 @@ OpenField_Enemy_雪原ラビット_MCLove32:
   - randomstroll
   - gotoowner
   Skills:
-  - cmd{c="lmg <target.name> 0.5 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true  ]} ~onDeath
+  - cmd{c="lmg <target.name> 5 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
 
 OpenField_Enemy_雪原ラビット_MCLove32_Leader:
   Template: OpenField_Enemy_雪原ラビット_MCLove32
@@ -88,7 +88,6 @@ OpenField_Enemy_雪原ラビット_MCLove32_Leader:
   Display: "&f&l雪原ラビット"
   Skills:
   - summon{t=OpenField_Enemy_雪原ラビット_MCLove32;a=2to5;r=4;s=true} @self ~onSpawn 
-  - cmd{c="lmg <target.name> 2 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true  ]} ~onDeath
 
 OpenField_Guard_牙狼_MCLove32:
   Type: wolf
