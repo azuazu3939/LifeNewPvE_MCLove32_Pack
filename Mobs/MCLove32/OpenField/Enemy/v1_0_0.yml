@@ -27,7 +27,7 @@ OpenField_Enemy_ハロウルフ_MCLove32:
   - gotoparent
   - gotoowner
   Drops:
-  - exp 3
+  - exp 20
   Modules:
     ThreatTable: true
   Variables:
@@ -54,7 +54,7 @@ OpenField_Enemy_ハロウルフ_MCLove32_Leader:
   Damage: 4
   Armor: 4
   Drops:
-  - exp 5
+  - exp 30
   Variables:
     livingWater: int/2
   Skills:
@@ -92,7 +92,7 @@ OpenField_Enemy_枯れた抜け殻_MCLove32:
     Scale: 2
     #Silent: false 
   Drops:
-  - exp 150
+  - exp 500
   Modules:
     ThreatTable: true
   AITargetSelectors:
@@ -159,7 +159,7 @@ OpenField_Enemy_コロニアル_MCLove32:
   - gotoparent
   - gotoowner
   Drops:
-  - exp 10
+  - exp 20
   AITargetSelectors:
   - clear
   - attacker
@@ -179,6 +179,8 @@ OpenField_Enemy_コロニアル_MCLove32_Leader:
   Template: OpenField_Enemy_コロニアル_MCLove32
   Health: 80
   Damage: 4
+  Drops:
+  - exp 30
   Skills:
   - summon{t=OpenField_Enemy_コロニアル_MCLove32;a=1to2;r=3;s=true} @self ~onSpawn
 
@@ -214,7 +216,7 @@ OpenField_Enemy_スパイディ_MCLove32:
   - attacker
   - players 
   Drops:
-  - exp 2
+  - exp 10
   AIGoalSelectors:
   - randomstroll
   - meleeattack
@@ -250,7 +252,7 @@ OpenField_Enemy_スパイディ_MCLove32_Leader:
     KnockbackResistance: 0.35
     Scale: 2
   Drops:
-  - exp 20
+  - exp 30
   Skills:
   - potion{t=SLOWNESS;l=5;d=14400;p=false} @self ~onEnterCombat
   - potionclear{t=SLOWNESS} @self ~onDropCombat
@@ -281,7 +283,7 @@ OpenField_Enemy_スパイディ_MCLove32_Commander:
     Scale: 1.5
     DigOutOfGround: false 
   Drops:
-  - exp 25
+  - exp 40
   AIGoalSelectors:
   - bowattack
   - arrowattack
@@ -333,7 +335,7 @@ OpenField_Enemy_生命生い茂る森のボグド_MCLove32:
   - gotoparent
   - gotoowner
   Drops:
-  - exp 30
+  - exp 75
   Skills:
   - damage{a=<caster.damage>;ii=true;pi=true} @trigger ~onAttack 
   - skill{
@@ -369,7 +371,7 @@ OpenField_Enemy_ジャイアントボグド_MCLove32:
   - netherite_sword HAND 
   - totem_of_undying OFFHAND 
   Drops:
-  - exp 100
+  - exp 300
   Options:
     ReviveHealth: 100
     Scale: 2.25
@@ -439,7 +441,7 @@ OpenField_Enemy_臆病なオセロット_MCLove32:
   DamageModifiers:
   - SUFFOCATION 0
   Drops:
-  - exp 15
+  - exp 30
   AITargetSelectors:
   - clear
   - attacker
@@ -486,7 +488,7 @@ OpenField_Enemy_雪原キラーラビット_MCLove32:
   DamageModifiers:
   - SUFFOCATION 0
   Drops:
-  - exp 2
+  - exp 10
   AITargetSelectors:
   - clear
   - attacker
@@ -509,7 +511,7 @@ OpenField_Enemy_雪原キラーラビット_MCLove32_Leader:
   Type: rabbit
   Display: "&f&l雪原ラビット"
   Drops:
-  - exp 5
+  - exp 15
   Skills:
   - summon{t=OpenField_Enemy_雪原キラーラビット_MCLove32;a=2to5;r=4;s=true} @self ~onSpawn 
   - cmd{c="lmg <target.name> 50 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath

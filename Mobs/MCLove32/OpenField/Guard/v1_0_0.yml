@@ -17,6 +17,8 @@ OpenField_Guard_ヒィツジー_MCLove32:
   - clear
   - attacker
   - specificfaction{f=Wolf}
+  Drops:
+  - exp 30
   Options:
     Collidable: true 
     DigOutOfGround: true 
@@ -42,6 +44,8 @@ OpenField_Guard_ヒィツジー_MCLove32_Leader:
   Template: OpenField_Guard_ヒィツジー_MCLove32
   Health: 25
   Armor: 2
+  Drops:
+  - exp 50
   Skills:
   - summon{t=OpenField_Guard_ヒィツジー_MCLove32;a=2to4;r=5;s=true} @self ~onSpawn
 
@@ -52,6 +56,8 @@ OpenField_Enemy_雪原ラビット_MCLove32:
   Damage: 50
   Faction: Guard
   Armor: 35
+  Drops:
+  - exp 30
   Options:
     Collidable: true 
     DigOutOfGround: true 
@@ -86,6 +92,8 @@ OpenField_Enemy_雪原ラビット_MCLove32_Leader:
   Template: OpenField_Enemy_雪原ラビット_MCLove32
   Type: rabbit
   Display: "&f&l雪原ラビット"
+  Drops:
+  - exp 50
   Skills:
   - summon{t=OpenField_Enemy_雪原ラビット_MCLove32;a=2to5;r=4;s=true} @self ~onSpawn 
 
