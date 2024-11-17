@@ -5,7 +5,7 @@
 
 Resource_Armor_強化ダイヤモンドH_MCLove32:
   Id: diamond_helmet
-  Display: "&c強化ダイヤモンドヘルメット"
+  Display: "&f強化ダイヤモンドヘルメット"
   Lore: []
   Model: 1000
   Options:
@@ -17,7 +17,7 @@ Resource_Armor_強化ダイヤモンドH_MCLove32:
 
 Resource_Armor_強化ダイヤモンドC_MCLove32:
   Id: diamond_chestplate
-  Display: "&c強化ダイヤモンドチェストプレート"
+  Display: "&f強化ダイヤモンドチェストプレート"
   Lore: []
   Model: 1000
   Options:
@@ -29,7 +29,7 @@ Resource_Armor_強化ダイヤモンドC_MCLove32:
 
 Resource_Armor_強化ダイヤモンドL_MCLove32:
   Id: diamond_leggings
-  Display: "&c強化ダイヤモンドレギンス"
+  Display: "&f強化ダイヤモンドレギンス"
   Lore: []
   Model: 1000
   Options:
@@ -41,7 +41,7 @@ Resource_Armor_強化ダイヤモンドL_MCLove32:
 
 Resource_Armor_強化ダイヤモンドB_MCLove32:
   Id: diamond_boots
-  Display: "&c強化ダイヤモンドブーツ"
+  Display: "&f強化ダイヤモンドブーツ"
   Lore: []
   Model: 1000
   Options:
@@ -53,7 +53,7 @@ Resource_Armor_強化ダイヤモンドB_MCLove32:
 
 Resource_Armor_黒曜石H_MCLove32:
   Id: leather_helmet
-  Display: "&5黒曜石ヘルメット"
+  Display: "&f黒曜石ヘルメット"
   Lore: []
   Model: 1000
   Options:
@@ -70,7 +70,7 @@ Resource_Armor_黒曜石H_MCLove32:
 
 Resource_Armor_黒曜石C_MCLove32:
   Id: leather_chestplate
-  Display: "&5黒曜石チェストプレート"
+  Display: "&f黒曜石チェストプレート"
   Lore: []
   Model: 1000
   Options:
@@ -87,7 +87,7 @@ Resource_Armor_黒曜石C_MCLove32:
 
 Resource_Armor_黒曜石L_MCLove32:
   Id: leather_leggings
-  Display: "&5黒曜石レギンス"
+  Display: "&f黒曜石レギンス"
   Lore: []
   Model: 1000
   Options:
@@ -104,7 +104,7 @@ Resource_Armor_黒曜石L_MCLove32:
 
 Resource_Armor_黒曜石B_MCLove32:
   Id: leather_boots
-  Display: "&5黒曜石ブーツ"
+  Display: "&f黒曜石ブーツ"
   Lore: []
   Model: 1000
   Options:

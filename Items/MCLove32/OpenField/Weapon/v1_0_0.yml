@@ -1,6 +1,6 @@
 OpenField_Weapon_サイスオブデーモン_MCLove32:
   Id: netherite_hoe
-  Display: "&8&lサイス&f&lオブ&5&lデーモン"
+  Display: "&fサイスオブデーモン"
   Lore: 
   - "&f相手を呪い、私は力を得る。"
   - "&fこれはまさにデーモンの力ではないだろうか？"
@@ -14,7 +14,7 @@ OpenField_Weapon_サイスオブデーモン_MCLove32:
 
 OpenField_Weapon_ビットブレードTypeA_MCLove32:
   Id: diamond_sword
-  Display: "&b&lビット&c&lブレード&a&lTypeA"
+  Display: "&fビットブレードTypeA"
   Lore: 
   - "&f使用することでブレードビットが攻撃を行う。"
   - "&fあなたはただ、そこにいればいい。それだけ"
@@ -28,7 +28,7 @@ OpenField_Weapon_ビットブレードTypeA_MCLove32:
 
 OpenField_Weapon_サンドストーム_MCLove32:
   Id: bow
-  Display: "&a&lサンド&f&lストーム"
+  Display: "&fサンドストーム"
   Lore: 
   - "&f着弾した敵を中心に砂嵐を発生させ、"
   - "&f周囲の敵を吸い込み尽くす。"
@@ -50,7 +50,7 @@ OpenField_Weapon_サンドストーム_MCLove32:
 
 OpenField_Weapon_エアブラスタ_MCLove32:
   Id: iron_sword
-  Display: "&f&lエアブラスタ"
+  Display: "&fエアブラスタ"
   Lore:
   - "&f空気の波動を前方に3つ同時に放つ。"
   - "&f相手を押し出す。"
@@ -64,7 +64,7 @@ OpenField_Weapon_エアブラスタ_MCLove32:
 
 OpenField_Weapon_牙狼ノ壱_MCLove32:
   Id: stone_sword 
-  Display: "&b&l牙&8&l狼&a&lノ&f&l壱"
+  Display: "&f牙狼ノ壱"
   Lore:
   - "&f狼が狼であるのは何故か？"
   Model: 1000
@@ -77,7 +77,7 @@ OpenField_Weapon_牙狼ノ壱_MCLove32:
 
 OpenField_Weapon_牙狼ノ弐_MCLove32:
   Id: stone_sword 
-  Display: "&b&l牙&8&l狼&a&lノ&e&l弐"
+  Display: "&f牙狼ノ弐"
   Lore:
   - "&f統率がモノ言う。"
   Model: 1001
@@ -90,7 +90,7 @@ OpenField_Weapon_牙狼ノ弐_MCLove32:
 
 OpenField_Weapon_牙狼ノ零_MCLove32:
   Id: stone_sword 
-  Display: "&b&l牙&8&l狼&a&lノ&c&l零"
+  Display: "&f牙狼ノ零"
   Lore:
   - "&f狼となり、蹂躙せよ。"
   Model: 1002
@@ -131,7 +131,7 @@ OpenField_Weapon_ヘビーワイドソード_MCLove32:
 
 OpenField_Weapon_ライトメイス_MCLove32:
   Id: mace
-  Display: "&e&lライトメイス"
+  Display: "&fライトメイス"
   Lore: []
   Model: 1000
   Options:
@@ -144,7 +144,7 @@ OpenField_Weapon_ライトメイス_MCLove32:
 
 OpenField_Weapon_ベリーライトメイス_MCLove32:
   Id: mace
-  Display: "&f&lベリー&e&lライトメイス"
+  Display: "&fベリーライトメイス"
   Lore: []
   Model: 1001
   Options:
@@ -158,7 +158,7 @@ OpenField_Weapon_ベリーライトメイス_MCLove32:
 
 OpenField_Weapon_ビットブレードTypeB_MCLove32:
   Id: netherite_sword
-  Display: "&b&lビット&c&lブレード&a&lTypeB"
+  Display: "&fビットブレードTypeB"
   Lore: 
   - "&f使用することでブレードビットが攻撃を行う。"
   - "&fあなたはただ、そこにいればいい。それだけ"
@@ -176,7 +176,7 @@ OpenField_Weapon_ビットブレードTypeB_MCLove32:
 
 OpenField_Weapon_樹木剣ライト_MCLove32:
   Id: wooden_sword
-  Display: "&a&l樹&e&l木&7&l剣&f&lライト"
+  Display: "&f樹木剣ライト"
   Lore: []
   Model: 1001
   Options:
@@ -192,7 +192,7 @@ OpenField_Weapon_樹木剣ライト_MCLove32:
 
 OpenField_Weapon_樹木剣ヘビー_MCLove32:
   Id: wooden_sword
-  Display: "&a&l樹&e&l木&7&l剣&f&lヘビー"
+  Display: "&f樹木剣ヘビー"
   Lore: []
   Model: 1002
   Options:
@@ -241,7 +241,7 @@ OpenField_Weapon_赫灼大斧ラヴァン_MCLove32:
 
 OpenField_Weapon_ダブルパンチ_MCLove32:
   Id: bow
-  Display: "&5&lダブルパンチ"
+  Display: "&fダブルパンチ"
   Lore: 
   - "&fおいしい！！"
   Model: 1001

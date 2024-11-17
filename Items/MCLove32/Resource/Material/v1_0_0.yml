@@ -1,6 +1,6 @@
 Resource_Material_鉱石研磨剤:_MCLove32:
   Id: brown_dye 
-  Display: "&a&l研磨剤"
+  Display: "&f研磨剤"
   Lore: 
   - "&f資源で資源系ツールを使い採取、採掘などを、"
   - "&f行うことで獲得可能なアイテム。"
@@ -15,7 +15,7 @@ Resource_Material_鉱石研磨剤:_MCLove32:
 
 Resource_Material_鉱石ユニオン_MCLove32:
   Id: pink_dye
-  Display: "&d&l鉱石ユニオン"
+  Display: "&f鉱石ユニオン"
   Lore: 
   - "&fリソースルートチェストから手に入る。"
   - "&f主に資源系ツールの強化に使われる。"
@@ -30,7 +30,7 @@ Resource_Material_鉱石ユニオン_MCLove32:
 
 Resource_Material_鉱石紅蓮_MCLove32:
   Id: red_dye
-  Display: "&c&l鉱石紅蓮"
+  Display: "&f鉱石紅蓮"
   Lore: 
   - "&fリソースルートチェストから手に入る。"
   - "&f主に資源系ツールの強化に使われる。"
@@ -45,7 +45,7 @@ Resource_Material_鉱石紅蓮_MCLove32:
 
 Resource_Material_鉱石パピュライト_MCLove32:
   Id: purple_dye
-  Display: "&a&l鉱石ラピュアライト"
+  Display: "&f鉱石ラピュアライト"
   Lore: 
   - "&fリソースルートチェストから手に入る。"
   - "&f主に資源系ツールの強化に使われる。"
@@ -60,7 +60,7 @@ Resource_Material_鉱石パピュライト_MCLove32:
 
 Resource_Material_鉱石紫焔_MCLove32:
   Id: magenta_dye
-  Display: "&5&l鉱石紫焔"
+  Display: "&b鉱石紫焔"
   Lore: 
   - "&fリソースルートチェストから手に入る。"
   - "&f主に資源系ツールの強化に使われる。"

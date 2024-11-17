@@ -1,6 +1,6 @@
 OpenField_Armor_アルドーナH_MCLove32:
   Id: leather_helmet 
-  Display: "&bアルドーナヘルメット"
+  Display: "&fアルドーナヘルメット"
   Lore: []
   Model: 1001
   Options:
@@ -17,7 +17,7 @@ OpenField_Armor_アルドーナH_MCLove32:
 
 OpenField_Armor_アルドーナT_MCLove32:
   Id: golden_helmet
-  Display: "&6アルドーナティアラ"
+  Display: "&eアルドーナティアラ"
   Lore: 
   - "&f森と自然の加護の効果として、"
   - "&fエンチャントが付与されている。"
@@ -42,7 +42,7 @@ OpenField_Armor_アルドーナT_MCLove32:
 
 OpenField_Armor_アルドーナC_MCLove32:
   Id: leather_chestplate
-  Display: "&bアルドーナチェストプレート"
+  Display: "&fアルドーナチェストプレート"
   Lore: []
   Model: 1001
   Options:
@@ -59,7 +59,7 @@ OpenField_Armor_アルドーナC_MCLove32:
 
 OpenField_Armor_アルドーナL_MCLove32:
   Id: leather_leggings
-  Display: "&bアルドーナレギンス"
+  Display: "&fアルドーナレギンス"
   Lore: []
   Model: 1001
   Options:
@@ -76,7 +76,7 @@ OpenField_Armor_アルドーナL_MCLove32:
 
 OpenField_Armor_アルドーナB_MCLove32:
   Id: leather_boots
-  Display: "&bアルドーナブーツ"
+  Display: "&fアルドーナブーツ"
   Lore: []
   Model: 1001
   Options:
@@ -93,7 +93,7 @@ OpenField_Armor_アルドーナB_MCLove32:
 
 OpenField_Armor_イルドーナH_MCLove32:
   Id: leather_helmet 
-  Display: "&bイルドーナヘルメット"
+  Display: "&fイルドーナヘルメット"
   Lore: []
   Model: 1002
   Options:
@@ -111,7 +111,7 @@ OpenField_Armor_イルドーナH_MCLove32:
 
 OpenField_Armor_イルドーナT_MCLove32:
   Id: golden_helmet
-  Display: "&6イルドーナティアラ"
+  Display: "&eイルドーナティアラ"
   Lore: 
   - "&f海と自然の加護の効果として、"
   - "&fエンチャントが付与されている。"
@@ -138,7 +138,7 @@ OpenField_Armor_イルドーナT_MCLove32:
 
 OpenField_Armor_イルドーナC_MCLove32:
   Id: leather_chestplate
-  Display: "&bイルドーナチェストプレート"
+  Display: "&fイルドーナチェストプレート"
   Lore: []
   Model: 1002
   Options:
@@ -156,7 +156,7 @@ OpenField_Armor_イルドーナC_MCLove32:
 
 OpenField_Armor_イルドーナL_MCLove32:
   Id: leather_leggings
-  Display: "&bイルドーナレギンス"
+  Display: "&fイルドーナレギンス"
   Lore: []
   Model: 1002
   Options:
@@ -174,7 +174,7 @@ OpenField_Armor_イルドーナL_MCLove32:
 
 OpenField_Armor_イルドーナB_MCLove32:
   Id: leather_boots
-  Display: "&bイルドーナブーツ"
+  Display: "&fイルドーナブーツ"
   Lore: []
   Model: 1002
   Options:

@@ -1,6 +1,6 @@
 Resource_Food_ブドウ_MCLove32:
   Id: apple
-  Display: "&5ブドウ"
+  Display: "&fブドウ"
   Lore:
   Hide:
   - ATTRIBUTES
@@ -16,7 +16,7 @@ Resource_Food_ブドウ_MCLove32:
 
 Resource_Food_イチゴ_MCLove32:
   Id: apple
-  Display: "&cイチゴ"
+  Display: "&fイチゴ"
   Lore:
   Hide:
   - ATTRIBUTES
@@ -32,7 +32,7 @@ Resource_Food_イチゴ_MCLove32:
 
 Resource_Food_キウイ_MCLove32:
   Id: apple
-  Display: "&aキウイ"
+  Display: "&fキウイ"
   Lore:
   Hide:
   - ATTRIBUTES
@@ -48,7 +48,7 @@ Resource_Food_キウイ_MCLove32:
 
 Resource_Food_バナナ_MCLove32:
   Id: apple
-  Display: "&eバナナ"
+  Display: "&fバナナ"
   Lore:
   Hide:
   - ATTRIBUTES
@@ -64,7 +64,7 @@ Resource_Food_バナナ_MCLove32:
 
 Resource_Food_フルーツポンチ_MCLove32:
   Id: golden_apple
-  Display: "&eフルーツポンチ"
+  Display: "&fフルーツポンチ"
   Lore:
   Hide:
   - ATTRIBUTES
