@@ -2,8 +2,8 @@ OpenField_Material_ハロウルフの希少な牙_MCLove32:
   Id: bone
   Display: "&fハロウルフの希少な牙"
   Lore:
-  - "&f特定条件で稀にドロップする牙。"
-  - "&f武器への加工が可能。"
+  - "&7特定条件で稀にドロップする牙。"
+  - "&7武器への加工が可能。"
   Model: 1001
   Options: 
     Destroy: false
@@ -18,8 +18,8 @@ OpenField_Material_ハロウルフの牙_MCLove32:
   Id: bone
   Display: "&fハロウルフの牙"
   Lore:
-  - "&fハロウルフを倒すと手に入る牙。"
-  - "&f武器への加工が可能。"
+  - "&7ハロウルフを倒すと手に入る牙。"
+  - "&7武器への加工が可能。"
   Model: 1000
   Options: 
     Destroy: false
@@ -34,8 +34,8 @@ OpenField_Material_エアラプト結晶_MCLove32:
   Id: iron_nugget
   Display: "&fエアラプト結晶"
   Lore: 
-  - "&fコロニアルが落とす、小さな結晶。"
-  - "&f魔力を用いて武器へ加工することができる。"
+  - "&7コロニアルが落とす、小さな結晶。"
+  - "&7魔力を用いて武器へ加工することができる。"
   Model: 1000
   Options: 
     Destroy: false
@@ -48,9 +48,9 @@ OpenField_Material_エアラプト結晶_MCLove32:
 
 OpenField_Material_魔力結晶_MCLove32:
   Id: purple_dye
-  Display: "&f魔力結晶"
+  Display: "&5魔力結晶"
   Lore: 
-  - "&f魔力を用いて武器へ加工することができる。"
+  - "&7魔力を用いて武器へ加工することができる。"
   Model: 1001
   Options: 
     Destroy: false
@@ -63,9 +63,9 @@ OpenField_Material_魔力結晶_MCLove32:
 
 OpenField_Material_アイロス_MCLove32:
   Id: iron_ingot
-  Display: "&fアイロス"
+  Display: "&eアイロス"
   Lore: 
-  - "&f魔力を帯びた鉄"
+  - "&7魔力を帯びた鉄"
   Model: 1000
   Options: 
     Destroy: false
@@ -78,9 +78,9 @@ OpenField_Material_アイロス_MCLove32:
 
 OpenField_Material_ディアス_MCLove32:
   Id: diamond
-  Display: "&fディアス"
+  Display: "&eディアス"
   Lore: 
-  - "&f魔力を帯びたダイヤモンド"
+  - "&7魔力を帯びたダイヤモンド"
   Model: 1000
   Options: 
     Destroy: false
@@ -93,9 +93,9 @@ OpenField_Material_ディアス_MCLove32:
 
 OpenField_Material_ゴルネス_MCLove32:
   Id: gold_ingot
-  Display: "&fゴルネス"
+  Display: "&eゴルネス"
   Lore: 
-  - "&f魔力を帯びた金"
+  - "&7魔力を帯びた金"
   Model: 1000
   Options: 
     Destroy: false
@@ -108,9 +108,9 @@ OpenField_Material_ゴルネス_MCLove32:
 
 OpenField_Material_オブネス_MCLove32:
   Id: obsidian
-  Display: "&fオブネス"
+  Display: "&eオブネス"
   Lore: 
-  - "&f魔力を帯びた黒曜石"
+  - "&7魔力を帯びた黒曜石"
   Model: 1000
   Options: 
     Destroy: false
@@ -125,8 +125,8 @@ OpenField_Material_ランチパッドボール_MCLove32:
   Id: slime_ball
   Display: "&fランチパッドボール"
   Lore: 
-  - "使用することで、自身を打ち上げ"
-  - "重さを10にする。"
+  - "&7使用することで、自身を打ち上げ"
+  - "&7重さを10にする。"
   Model: 1000
   Options: 
     Destroy: false
@@ -150,7 +150,7 @@ OpenField_Material_驚異の糸_MCLove32:
   Id: string
   Display: "&f驚異の糸"
   Lore: 
-  - "&f驚異の軽さ！！"
+  - "&7驚異の軽さ！！"
   Model: 1000
   Options: 
     Destroy: false
@@ -165,7 +165,7 @@ OpenField_Material_取引不可_MCLove32:
   Id: barrier
   Display: "&f取引不可"
   Lore: 
-  - "&fGUIを見やすくするためのアイテム。"
+  - "&7GUIを見やすくするためのアイテム。"
   Model: 1000
   Options: 
     Destroy: false
@@ -178,10 +178,10 @@ OpenField_Material_取引不可_MCLove32:
 
 OpenField_Material_緑玉_MCLove32:
   Id: slime_block
-  Display: "&f緑玉"
+  Display: "&6緑玉"
   Lore: 
-  - "&f両手で運ぶサイズの大きなコア。"
-  - "&f触るだけでも様々な反応を起こす未知の物。"
+  - "&7両手で運ぶサイズの大きなコア。"
+  - "&7触るだけでも様々な反応を起こす未知の物。"
   Model: 1000
   Options: 
     Destroy: false
