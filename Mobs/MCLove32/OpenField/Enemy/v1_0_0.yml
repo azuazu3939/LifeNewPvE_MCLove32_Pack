@@ -521,15 +521,14 @@ OpenField_Enemy_雪原キラーラビット_MCLove32_Leader:
 OpenField_Enemy_ワイルドハンター_MCLove32:
   Type: BOGGED
   Display: "&2&lワイルドハンター"
-  Health: 1800
-  Damage: 20
+  Health: 150
+  Damage: 35
   Armor: 30
   Equipment:
   - leather_helmet{color=81,126,88} HEAD
   - leather_chestplate{color=81,126,88} CHEST 
   - chainmail_leggings LEGS 
   - leather_boots FEET
-  - bow HAND 
   - bow HAND 
   Options:
     Collidable: true 
@@ -539,17 +538,19 @@ OpenField_Enemy_ワイルドハンター_MCLove32:
     KnockbackResistance: 0
     NoDamageTicks: 0
     NoAI: false 
+    AttackSpeed: 2
     #NoGravity: true
     PreventMobKillDrops: true 
     PreventRandomEquipment: true 
     PreventSunburn: true
     PreventVanillaDamage: true 
     #Silent: false 
-    MovementSpeed: 0.25
+    MovementSpeed: 0.3
     Scale: 1
   Drops:
   - exp 100
   Skills:
-  - skill:OpenField_Enemy_ワイルドハンター_MCLove32_Skills @self ~onEntercombat 
+  - skill:OpenField_Enemy_ワイルドハンター_MCLove32_Skills @self ~onShoot
+  - cancelevent{sync=true} @self ~onShoot
   - cmd{c="mlg <target.name> OpenField_Armor_アルドーナT_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.025
   - cmd{c="lmg <target.name> 150 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
