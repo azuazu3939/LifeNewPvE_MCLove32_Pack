@@ -123,7 +123,7 @@ OpenField_Enemy_コロニアル_MCLove32_Skill1:
     ];
     oh=[
       - sound{s=entity.witch.ambient;v=0.25} @self  
-      - damage{a=10;pi=true;ii=true}
+      - damage{a=15;pi=true;ii=true}
       - pull{v=5}
       - heal{a=10} @self 
     ];
@@ -182,7 +182,7 @@ OpenField_Enemy_ジャイアントボグド_MCLove32_Skill_Process:
       - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.8} @self 
     ];
     oh=[
-      - damage{a=12;ii=true;pi=true}
+      - damage{a=18;ii=true;pi=true}
       - sound{s=block.anvil.land;p=2;v=0.5}
       - sound{s=entity.breeze.inhale;p=2;v=0.5}
     ];
@@ -250,7 +250,7 @@ OpenField_Enemy_ワイルドハンター_MCLove32_Skills:
       - modifyprojectile{t=INERTIA;a=MULTIPLY;v=0.975} @self 
     ];
     oh=[
-      - damage{a=25;ii=true;pi=true}
+      - damage{a=40;ii=true;pi=true}
       - skill:OpenField_Enemy_ワイルドハンター_MCLove32_Skill_Pain
     ];
     v=5;g=0.1;tyo=3;vr=2;hr=1.5;in=30;i=1;mr=16} @T 
@@ -261,6 +261,6 @@ OpenField_Enemy_ワイルドハンター_MCLove32_Skill_Pain:
   TargetConditions:
   - crouching false
   Skills: 
-  - damage{a=10;pi=;ii=true}
+  - damage{a=20;pi=;ii=true}
   - delay 5
   - skill:OpenField_Enemy_ワイルドハンター_MCLove32_Skill_Pain
