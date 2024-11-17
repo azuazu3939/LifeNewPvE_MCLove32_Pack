@@ -525,7 +525,7 @@ OpenField_Enemy_ワイルドハンター_MCLove32:
   Damage: 20
   Armor: 30
   Equipment:
-  - leather_helemt{color=81,126,88} HEAD
+  - leather_helmet{color=81,126,88} HEAD
   - leather_chestplate{color=81,126,88} CHEST 
   - chainmail_leggings LEGS 
   - leather_boots FEET
