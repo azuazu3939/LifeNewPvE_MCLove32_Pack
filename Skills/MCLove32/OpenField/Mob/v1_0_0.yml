@@ -250,7 +250,7 @@ OpenField_Enemy_ワイルドハンター_MCLove32_Skills:
       - modifyprojectile{t=INERTIA;a=MULTIPLY;v=0.975} @self 
     ];
     oh=[
-      - damage{a=40;ii=true;pi=true}
+      - damage{a=25;ii=true;pi=true}
       - skill:OpenField_Enemy_ワイルドハンター_MCLove32_Skill_Pain
     ];
     v=12;g=0.1;tyo=3;vr=2;hr=1.5;in=30;i=1;mr=16} @T 
@@ -261,6 +261,6 @@ OpenField_Enemy_ワイルドハンター_MCLove32_Skill_Pain:
   TargetConditions:
   - crouching false
   Skills: 
-  - damage{a=20;pi=;ii=true}
+  - damage{a=12;pi=;ii=true}
   - delay 5
   - skill:OpenField_Enemy_ワイルドハンター_MCLove32_Skill_Pain
