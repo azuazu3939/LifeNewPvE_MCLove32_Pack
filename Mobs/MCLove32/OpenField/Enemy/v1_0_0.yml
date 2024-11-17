@@ -519,6 +519,7 @@ OpenField_Enemy_雪原キラーラビット_MCLove32_Leader:
   - cmd{c="lmg <target.name> 50 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
 
 OpenField_Enemy_ワイルドハンター_MCLove32:
+  Type: BOGGED
   Display: "&2&lワイルドハンター"
   Health: 1800
   Damage: 20
