@@ -28,7 +28,7 @@ OpenField_Weapon_ビットブレードTypeA_MCLove32:
 
 OpenField_Weapon_サンドストーム_MCLove32:
   Id: bow
-  Display: "&fサンドストーム"
+  Display: "&dサンドストーム"
   Lore: 
   - "&f着弾した敵を中心に砂嵐を発生させ、"
   - "&f周囲の敵を吸い込み尽くす。"
