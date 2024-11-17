@@ -254,8 +254,8 @@ OpenField_Enemy_ワイルドハンター_MCLove32_Skills:
       - skill:OpenField_Enemy_ワイルドハンター_MCLove32_Skill_Pain
     ];
     v=12;g=0.1;tyo=3;vr=2;hr=1.5;in=30;i=1;mr=16} @T 
-  - equip{e=IRON_SWORD HAND} @self 0.05
-  - equip{e=BOW HAND} @self 0.05
+  - equip{e=IRON_SWORD HAND} @self 0.1
+  - equip{e=BOW HAND} @self 0.1
 
 OpenField_Enemy_ワイルドハンター_MCLove32_Skill_Pain:
   TargetConditions:
