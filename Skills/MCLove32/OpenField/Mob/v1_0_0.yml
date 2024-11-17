@@ -238,3 +238,29 @@ OpenField_Enemy_臆病なオセロット_MCLove32_Skill_Add:
   - setVar{var=skill.fall;val="<skill.var.fall> + 1"} @self 
   - delay 1
   - skill:OpenField_Enemy_臆病なオセロット_MCLove32_Skill_Looper @self 
+
+OpenField_Enemy_ワイルドハンター_MCLove32_Skills:
+  Cooldown: 1
+  Conditions:
+  - incombat
+  Skills:
+  - missile{
+    ot=[
+      - e:p{p=spark;a=2;vs=0.2;hs=0.2} @origin
+      - modifyprojectile{t=INERTIA;a=MULTIPLY;v=0.975} @self 
+    ];
+    oh=[
+      - damage{a=25;ii=true;pi=true}
+      - skill:OpenField_Enemy_ワイルドハンター_MCLove32_Skill_Pain
+    ];
+    v=8;g=0.1;tyo=3;vr=2;hr=1.25;in=30;i=true;mr=16} @T 
+  - delay <random.80to200>
+  - skill:OpenField_Enemy_ワイルドハンター_MCLove32_Skills @self 
+
+OpenField_Enemy_ワイルドハンター_MCLove32_Skill_Pain:
+  TargetConditions:
+  - crouching false
+  Skills: 
+  - damage{a=10;pi=;ii=true}
+  - delay 5
+  - skill:OpenField_Enemy_ワイルドハンター_MCLove32_Skill_Pain
