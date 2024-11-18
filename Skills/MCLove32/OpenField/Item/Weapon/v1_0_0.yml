@@ -407,4 +407,4 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Loop:
       - isMythicMob true
     ];
     origen=@ProjectileForward;
-    v=25;i=2;se=false;mr=16;md=80;in=25;hp=false;hnp=true;ho=<random.-30to30>;syo=0;sfo=0;fo=true;id=20} @targeted
+    v=25;i=2;se=false;mr=16;md=80;in=25;hp=false;hnp=true;ho=<random.-30to30>;syo=0;sfo=0;fo=true;id=20} 
