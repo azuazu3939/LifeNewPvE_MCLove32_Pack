@@ -258,3 +258,15 @@ OpenField_Weapon_ダブルパンチ_MCLove32:
   NBT:
     PublicBukkitValues:
       lifenewpve:prevent_grindstone: "true"
+
+OpenField_Weapon_ロープ_MCLove32:
+  Id: stone_hoe
+  Display: "&fロープ"
+  Lore: []
+  Model: 1000
+  Options:
+    ItemVersion: 1
+    Unbreakable: true 
+  Group: "Weapon"
+  Skills:
+  - skill:OpenField_Weapon_ロープ_MCLove32_Skills @self ~onUse
