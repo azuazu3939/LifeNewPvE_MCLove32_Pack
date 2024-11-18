@@ -388,7 +388,7 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Loop:
   Conditions:
   - varrange{var=skill.loop;val=<1} false
   Skills:
-  - setVar{var=skill.in;val="=<skill.var.in> - 0.5";t=FLOAT} @self 
+  - setVar{var=skill.in;val="<skill.var.in> - 0.5";t=FLOAT} @self 
   - setVar{var=skill.loop;val="<skill.var.loop> - 1";t=INTEGER} @self 
   - missile{
     ot=[
