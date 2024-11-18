@@ -371,7 +371,7 @@ OpenField_Weapon_ロープ_MCLove32_Skills:
       - e:p{p=witch;a=2} @origin
     ];
     oe=[
-      - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Loop
+      - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Loop @projectileforward
     ];
     oh=[
       - damage{a=10;pi=true;ii=true}
@@ -387,7 +387,8 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Loop:
   - varrange{var=skill.loop;val=<1} false
   Skills:
   - setVar{var=skill.loop;val="<skill.var.loop> - 1";t=INTEGER} @self 
-  - setVar{var=skill.save;val="<target.uuid>";t=STRING} @targeted
+  #- setVar{var=skill.pitch;val="<target.l.pitch>";t=FLOAT}
+  #- setVar{var=skill.yaw;val="<target.l.yaw>";t=FLOAT}
   - missile{
     ot=[
       - e:p{p=crit;a=10;vs=0.1;hs=0.1} @origin
@@ -397,10 +398,10 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Loop:
       - damage{a=10;pi=true;ii=true}
     ];
     oe=[
-      - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Loop
+      - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Loop @projectileforward
     ];
     conditions=[
       - isLiving true 
       - isMythicMob true
     ];
-    v=25;i=2;se=false;mr=16;md=80;hp=false;hnp=true;syo=0;sfo=0;id=20;fo=true} @UUIR{uuid=<skill.var.save>}
+    v=25;i=2;se=false;mr=16;md=80;hp=false;hnp=true;syo=0;sfo=0;id=20;fo=true;sdir=@projectileforward} @ENO{r=24;ignore=players,self;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
