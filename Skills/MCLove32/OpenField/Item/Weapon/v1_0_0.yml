@@ -375,9 +375,13 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Process:
   Conditions:
   - varrange{var=skill.loop;val=>0} true 
   Skills:
+  - message{m="1"} @self 
   - setVar{var=skill.loop;val="<skill.var.loop> - 1";t=INTEGER} @self 
+  - message{m="<skill.var.loop> aaaa"} @self 
   - setVar{var=skill.s;val="<skill.s> * -1";t=INTEGER} @self 
+  - message{m="<skill.s> aaaaa"} @self 
   - setVar{var=skill.y;val="<skill.y> * -1";t=INTEGER} @self 
+  - message{m="<skill.y> aaaaaa"} @self 
   - message{m="a"} @self 
   - projectile{
     ot=[
