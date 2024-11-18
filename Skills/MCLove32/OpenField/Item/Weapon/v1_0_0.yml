@@ -372,4 +372,8 @@ OpenField_Weapon_ロープ_MCLove32_Skills:
     oh=[
       - damage{a=10;pi=true;ii=true}
     ];
-    v=25;i=1;vr=2;hr=2;se=false;mr=10;md=80;in=12} @EIC{r=32;a=135;limit=3;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
+    conditions=[
+      - isLiving true 
+      - isMythicMob true
+    ];
+    v=25;i=1;vr=2;hr=2;se=false;mr=10;md=80;in=12;hp=false;hnp=true} @EIC{r=32;a=135;limit=3;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
