@@ -408,4 +408,4 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Loop:
       - isLiving true 
       - isMythicMob true
     ];
-    v=25;i=1;vr=2;hr=2;se=false;mr=10;md=80;in=12;hp=false;hnp=true;ho=<random.-30to30>;syo=0;sfo=0;fo=true}
+    v=25;i=1;vr=2;hr=2;se=false;mr=10;md=80;in=12;hp=false;hnp=true;ho=<random.-30to30>;syo=0;sfo=0;fo=true} @targeted
