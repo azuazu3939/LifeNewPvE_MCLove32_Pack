@@ -414,4 +414,4 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Loop:
       - isLiving true 
       - isMythicMob true
     ];
-    v=50;i=2;mr=10;md=80;hp=false;hnp=true;fo=true;sb=false} @ENO{r=10;ignore=players,self;conditions=[ - isLiving true   - isMythicMob true ];limit=1;sort=RANDOM}
+    v=50;i=2;mr=10;md=80;hp=false;hnp=true;fo=true;sb=false} @ENO{r=10;conditions=[ - isLiving true   - isMythicMob true ];limit=1;sort=RANDOM}
