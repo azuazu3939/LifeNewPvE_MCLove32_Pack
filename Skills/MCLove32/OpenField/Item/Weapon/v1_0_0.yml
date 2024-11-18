@@ -373,7 +373,7 @@ OpenField_Weapon_ロープ_MCLove32_Skills:
       - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=<skill.in>} @self 
     ];
     oe=[
-      - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Loop
+      - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Loop @self 
     ];
     oh=[
       - damage{a=10;pi=true;ii=true}
@@ -382,7 +382,7 @@ OpenField_Weapon_ロープ_MCLove32_Skills:
       - isLiving true 
       - isMythicMob true
     ];
-    v=25;i=1;se=false;mr=16;md=80;in=25;hp=false;hnp=true;ho=<random.-60to60>;vo=2;syo=0;sfo=0;id=20} @EIC{r=32;a=135;limit=3;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
+    v=25;i=1;se=false;mr=16;md=80;in=25;hp=false;hnp=true;ho=<random.-60to60>;vo=1;syo=0;sfo=0;id=20} @EIC{r=32;a=135;limit=3;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
 
 OpenField_Weapon_ロープ_MCLove32_Skill_Loop:
   Conditions:
@@ -400,7 +400,7 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Loop:
       - damage{a=10;pi=true;ii=true}
     ];
     oe=[
-      - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Loop
+      - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Loop @self
     ];
     conditions=[
       - isLiving true 
