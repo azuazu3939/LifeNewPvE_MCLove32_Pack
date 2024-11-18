@@ -373,7 +373,7 @@ OpenField_Weapon_ロープ_MCLove32_Skills:
       - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=<skill.in>} @self 
     ];
     oe=[
-      - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Loop @ENO{r=32;l=true;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
+      - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Loop @ENO{r=32;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
     ];
     oh=[
       - damage{a=10;pi=true;ii=true}
@@ -382,16 +382,14 @@ OpenField_Weapon_ロープ_MCLove32_Skills:
       - isLiving true 
       - isMythicMob true
     ];
-    v=25;i=1;vr=2;hr=2;se=true;mr=32;md=80;in=12;hp=false;hnp=true;ho=<random.-30to30>;syo=0;sfo=0} @EIC{r=32;a=135;limit=3;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
+    v=25;i=1;vr=2;hr=2;se=true;mr=32;md=80;in=12;hp=false;hnp=true;ho=<random.-60to60>;vo=2;syo=0;sfo=0} @EIC{r=32;a=135;limit=3;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
 
 OpenField_Weapon_ロープ_MCLove32_Skill_Loop:
   Conditions:
-  - wearing{s=HAND;m=OpenField_Weapon_ロープ_MCLove32} true 
   - varrange{var=skill.loop;val=<1} false
-  Cooldown: 2
   Skills:
   - setVar{var=skill.in;val="=<skill.var.in> - 0.5";t=FLOAT} @self 
-  - setVar{var=skill.loop;val="<skill.var.loop|5> - 1";t=INTEGER} @self 
+  - setVar{var=skill.loop;val="<skill.var.loop> - 1";t=INTEGER} @self 
   - missile{
     ot=[
       - e:p{p=crit;a=10;vs=0.5;hs=0.5} @origin
@@ -402,7 +400,7 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Loop:
       - damage{a=10;pi=true;ii=true}
     ];
     oe=[
-      - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Loop @ENO{r=32;l=true;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
+      - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Loop @ENO{r=32;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
     ];
     conditions=[
       - isLiving true 
