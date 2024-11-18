@@ -380,8 +380,8 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Process:
   - setVar{var=skill.y;val="<skill.y> * -1";t=INTEGER} @self 
   - projectile{
     oe=[
-      - e:pl{p=lava;a=1;fo=true} 
-      - e:pl{p=flame;a=1;fo=true}
+      - pl{p=lava;a=1;fo=true} 
+      - pl{p=flame;a=1;fo=true}
       - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Loop{so=<skill.var.so>;y=<skill.var.y>} @projectileforward{f=8;so=<skill.var.so>;y=<skill.var.y>}
     ];
     oh=[
@@ -399,8 +399,8 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Loop:
   Skills:
   - missile{
     oe=[
-      - e:pl{p=lava;a=1;fo=true} 
-      - e:pl{p=flame;a=1;fo=true}
+      - pl{p=lava;a=1;fo=true} 
+      - pl{p=flame;a=1;fo=true}
     ];
     oh=[
       - damage{a=30;pi=true;ii=true}
