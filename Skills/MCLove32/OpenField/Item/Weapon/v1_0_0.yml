@@ -370,7 +370,7 @@ OpenField_Weapon_ロープ_MCLove32_Skills:
       - e:p{p=crit;a=10;vs=0.1;hs=0.1} @origin
       - e:p{p=witch;a=2} @origin
       - delay 1
-      - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.99} @self 
+      - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.95} @self 
     ];
     oe=[
       - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Loop @projectileforward
@@ -394,7 +394,7 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Loop:
       - e:p{p=crit;a=10;vs=0.1;hs=0.1} @origin
       - e:p{p=witch;a=2} @origin
       - delay 1
-      - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.99} @self 
+      - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.9} @self 
     ];
     oh=[
       - damage{a=10;pi=true;ii=true}
