@@ -368,8 +368,8 @@ OpenField_Weapon_ロープ_MCLove32_Skills:
   - setVar{var=skill.in;val="0.95";t=FLOAT} @self 
   - missile{
     ot=[
-      - e:p{p=crit;a=10;vs=0.5;hs=0.5} @origin
-      - e:p{p=witch;a=2;vs=0.2;hs=0.2} @origin
+      - e:p{p=crit;a=10;vs=0.1;hs=0.1} @origin
+      - e:p{p=witch;a=2} @origin
       - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=<skill.in>} @self 
     ];
     oe=[
@@ -392,8 +392,8 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Loop:
   - setVar{var=skill.loop;val="<skill.var.loop> - 1";t=INTEGER} @self 
   - missile{
     ot=[
-      - e:p{p=crit;a=10;vs=0.5;hs=0.5} @origin
-      - e:p{p=witch;a=2;vs=0.2;hs=0.2} @origin
+      - e:p{p=crit;a=10;vs=0.1;hs=0.1} @origin
+      - e:p{p=witch;a=2} @origin
       - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=<skill.in>} @self 
     ];
     oh=[
