@@ -61,6 +61,7 @@ OpenField_Weapon_エアブラスタ_MCLove32:
   Group: "Weapon"
   Skills:
   - skill:OpenField_Weapon_エアブラスタ_MCLove32_Skills @tl ~onUse
+  - skill{s=OpenField_Weapon_エアブラスタ_MCLove32_Skills} @tl ~onUse
 
 OpenField_Weapon_牙狼ノ壱_MCLove32:
   Id: stone_sword 
