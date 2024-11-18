@@ -415,7 +415,7 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Loop:
       - isLiving true 
       - isMythicMob true
     ];
-    v=25;i=1;mr=10;md=80;hp=false;hnp=true} @ENO{r=10;ignore=players,self;conditions=[ - isLiving true   - isMythicMob true ];limit=1;sort=RANDOM}
+    v=25;i=1;mr=10;md=80;hp=false;hnp=true;fo=true} @ENO{r=10;ignore=players,self;conditions=[ - isLiving true   - isMythicMob true ];limit=1;sort=RANDOM}
 
 OpenField_Weapon_ロープ_MCLove32_Skill_Fail:
   Skills:
@@ -435,7 +435,7 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Fail:
       - isLiving true 
       - isMythicMob true
     ];
-    v=25;i=2;se=false;mr=8;md=80;hp=false;hnp=true}
+    v=25;i=2;se=false;mr=8;md=80;hp=false;hnp=true;fo=true} 
   - setVar{var=skill.x;val="<skill.var.x> * -1";t=INTEGER} @self 
   - setVar{var=skill.y;val="<skill.var.y> * -1";t=INTEGER} @self 
   - setVar{var=skill.z;val="<skill.var.z> * -1";t=INTEGER} @self 
