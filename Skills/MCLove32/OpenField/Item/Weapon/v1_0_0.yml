@@ -375,13 +375,9 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Process:
   Conditions:
   - varrange{var=skill.loop;val=>0} true 
   Skills:
-  - message{m="1"} @self 
   - setVar{var=skill.loop;val="<skill.var.loop> - 1";t=INTEGER} @self 
   - setVar{var=skill.so;val="<skill.so> * -1";t=INTEGER} @self 
-  - message{m="<skill.so> aaaaa"} @self 
   - setVar{var=skill.y;val="<skill.y> * -1";t=INTEGER} @self 
-  - message{m="<skill.y> aaaaaa"} @self 
-  - message{m="a"} @self 
   - projectile{
     ot=[
       - e:p{p=flame;a=3;vs=0.15;hs=0.15} @origin
@@ -398,7 +394,6 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Process:
       - isMythicMob true
     ];
     v=25;i=2;se=false;mr=8;md=80;hp=false;hnp=true;syo=0;sfo=0;fo=true} @targetedLoc{so=<skill.so>;y=<skill.y>}
-  - message{m="b"} @self 
 
 OpenField_Weapon_ロープ_MCLove32_Skill_Loop:
   TargetConditions:
