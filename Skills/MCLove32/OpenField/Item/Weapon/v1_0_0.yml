@@ -361,7 +361,7 @@ OpenField_Weapon_ラヴァン_MCLove32_Skill_Handler:
   
 OpenField_Weapon_ロープ_MCLove32_Skills:
   Conditions:
-  - wearing{s=HAND;m=stone_hoe} true 
+  - wearing{s=HAND;m=OpenField_Weapon_ロープ_MCLove32} true 
   Cooldown: 2
   Skills:
   - missile{
