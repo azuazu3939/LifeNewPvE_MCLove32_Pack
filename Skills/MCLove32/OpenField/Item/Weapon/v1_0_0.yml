@@ -365,12 +365,11 @@ OpenField_Weapon_ロープ_MCLove32_Skills:
   Cooldown: 2
   Skills:
   - setVar{var=skill.loop;val="5";t=INTEGER} @self 
-  - setVar{var=skill.in;val="0.99";t=FLOAT} @self 
   - missile{
     ot=[
       - e:p{p=crit;a=10;vs=0.1;hs=0.1} @origin
       - e:p{p=witch;a=2} @origin
-      - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=<skill.in>} @self 
+      - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.99} @self 
     ];
     oe=[
       - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Loop @ProjectileForward
@@ -388,13 +387,12 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Loop:
   Conditions:
   - varrange{var=skill.loop;val=<1} false
   Skills:
-  - setVar{var=skill.in;val="<skill.var.in> - 0.01";t=FLOAT} @self 
   - setVar{var=skill.loop;val="<skill.var.loop> - 1";t=INTEGER} @self 
   - missile{
     ot=[
       - e:p{p=crit;a=10;vs=0.1;hs=0.1} @origin
       - e:p{p=witch;a=2} @origin
-      - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=<skill.in>} @self 
+      - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.99} @self 
     ];
     oh=[
       - damage{a=10;pi=true;ii=true}
@@ -406,4 +404,4 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Loop:
       - isLiving true 
       - isMythicMob true
     ];
-    v=25;i=2;se=false;mr=16;md=80;in=25;hp=false;hnp=true;ho=<random.-30to30>;syo=0;sfo=0;fo=true;id=20} @ENO{r=24;ignore=players,self;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
+    v=25;i=2;se=false;mr=16;md=80;in=25;hp=false;hnp=true;syo=0;sfo=0;fo=true;id=20} @ENO{r=24;ignore=players,self;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
