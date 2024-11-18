@@ -373,7 +373,7 @@ OpenField_Weapon_ロープ_MCLove32_Skills:
       - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.99} @self 
     ];
     oe=[
-      - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Loop{origen=@projectileforward}
+      - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Loop{origen=@projectileforward;fo=true}
     ];
     oh=[
       - damage{a=10;pi=true;ii=true}
@@ -400,7 +400,7 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Loop:
       - damage{a=10;pi=true;ii=true}
     ];
     oe=[
-      - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Loop{origen=@projectileforward}
+      - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Loop{origen=@projectileforward;fo=true}
     ];
     conditions=[
       - isLiving true 
