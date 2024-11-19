@@ -375,7 +375,7 @@ OpenField_Weapon_火炎レーザー_MCLove32_Skills:
 
 OpenField_Weapon_火炎レーザー_MCLove32_Skill_Starts:
   Skills:
-  - vskill{s=OpenField_Weapon_火炎レーザー_MCLove32_Skill_Starts_<skill.var.itr>} @self 
+  - vskill{s=OpenField_Weapon_火炎レーザー_MCLove32_Skill_Starts_<skill.var.itr>;f=true} @self 
 
 OpenField_Weapon_火炎レーザー_MCLove32_Skill_Start_1:
   Skills:
