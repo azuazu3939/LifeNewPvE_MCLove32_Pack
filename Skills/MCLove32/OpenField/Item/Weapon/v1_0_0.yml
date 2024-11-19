@@ -401,7 +401,7 @@ OpenField_Weapon_火炎レーザー_MCLove32_Skill_Process:
 
 OpenField_Weapon_火炎レーザー_MCLove32_Skill_Loop:
   TargetConditions:
-  - mythicinradius{r=6;a=>0} orElseCast OpenField_Weapon_火炎レーザー_MCLove32_Skill_Process
+  - mythicinradius{r=4;a=>0} orElseCast OpenField_Weapon_火炎レーザー_MCLove32_Skill_Process
   Skills:
   - projectile{
     ot=[
@@ -415,4 +415,4 @@ OpenField_Weapon_火炎レーザー_MCLove32_Skill_Loop:
       - isLiving true 
       - isMythicMob true
     ];
-    v=50;i=1;sb=false;mr=12;md=80;hp=false;hnp=true;fo=true;ti=8;syo=0;sfo=0} @ENO{r=10;conditions=[ - isLiving true   - isMythicMob true ];limit=1;sort=RANDOM}
+    v=50;i=1;sb=false;mr=16;md=80;hp=false;hnp=true;fo=true;ti=8;syo=0;sfo=0} @ENO{r=16;conditions=[ - isLiving true   - isMythicMob true ];limit=1;sort=RANDOM}
