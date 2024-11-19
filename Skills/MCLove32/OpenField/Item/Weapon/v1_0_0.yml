@@ -366,7 +366,7 @@ OpenField_Weapon_火炎レーザー_MCLove32_Skills:
   Cooldown: 6
   Skills:
   - setMaterialCooldown{d=120;m=iron_hoe} @self
-  - setVar{var=skill.loop;val="3";t=INTEGER} @self 
+  - setVar{var=skill.loop;val="2";t=INTEGER} @self 
   - setVar{var=skill.x;val="<life.l.x>";t=FLOAT} @TL{d=40}
   - setVar{var=skill.y;val="<life.l.y>";t=FLOAT} @TL{d=40}
   - setVar{var=skill.z;val="<life.l.z>";t=FLOAT} @TL{d=40}
