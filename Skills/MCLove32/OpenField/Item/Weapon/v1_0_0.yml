@@ -364,7 +364,7 @@ OpenField_Weapon_ロープ_MCLove32_Skills:
   - wearing{s=HAND;m=OpenField_Weapon_ロープ_MCLove32} true 
   Cooldown: 6
   Skills:
-  - setVar{var=skill.loop;val="40";t=INTEGER} @self 
+  #- setVar{var=skill.loop;val="40";t=INTEGER} @self 
   - sound{s=entity.blaze.shoot;repeat=2;repeatI=4} @self
   - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Process{ho=20;vo=0.1;delay=0} @forward{f=8;lockpitch=true}
   - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Process{ho=20;vo=-0.1;delay=2} @forward{f=8;lockpitch=true}
@@ -372,10 +372,10 @@ OpenField_Weapon_ロープ_MCLove32_Skills:
   - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Process{ho=-40;vo=-0.1;delay=6} @forward{f=8;lockpitch=true}
 
 OpenField_Weapon_ロープ_MCLove32_Skill_Process:
-  Conditions:
-  - varrange{var=skill.loop;val=>0} true 
+  #Conditions:
+  #- varrange{var=skill.loop;val=>0} true 
   Skills:
-  - setVar{var=skill.loop;val="<skill.var.loop> - 1";t=INTEGER} @self 
+  #- setVar{var=skill.loop;val="<skill.var.loop> - 1";t=INTEGER} @self 
   - setVar{var=skill.ho;val="<skill.ho> * -1";t=FLOAT} @self 
   - setVar{var=skill.vo;val="<skill.vo> * -1";t=FLOAT} @self 
   - projectile{
