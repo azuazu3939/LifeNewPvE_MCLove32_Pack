@@ -388,7 +388,7 @@ OpenField_Weapon_火炎レーザー_MCLove32_Skill_Process:
       - e:p{p=flame;a=1;audience=@self} @origin
     ];
     oe=[
-      - skill:OpenField_Weapon_火炎レーザー_MCLove32_Skill_Loop @origin
+      - skill:OpenField_Weapon_火炎レーザー_MCLove32_Skill_Loop{delay=1} @origin
     ];
     oh=[
       - damage{a=5;pi=true;ii=true;e=RED}
