@@ -397,7 +397,7 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Process:
 OpenField_Weapon_ロープ_MCLove32_Skill_Loop:
   TargetConditions:
   - mythicinradius{r=8;a=>0} true 
-  onPassSkill:
+  onFail:
   - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Process
   Skills:
   - missile{
