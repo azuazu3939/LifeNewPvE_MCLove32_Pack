@@ -402,7 +402,7 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Process:
 
 OpenField_Weapon_ロープ_MCLove32_Skill_Loop:
   TargetConditions:
-  - mythicinradius{r=4;a=>0;
+  - mythicinradius{r=2;a=>0;
     onFail=[
       - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Process @self 
     ]} true 
