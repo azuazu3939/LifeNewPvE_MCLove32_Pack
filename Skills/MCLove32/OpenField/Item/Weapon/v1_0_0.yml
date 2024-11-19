@@ -398,7 +398,7 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Process:
       - isLiving true 
       - isMythicMob true
     ];
-    v=50;i=1;se=false;sb=false;mr=8;md=80;hp=false;hnp=true;syo=0;sfo=0;fo=true;ho=<skill.var.ho>;vo=<skill.var.vo>;ti=10} @Location{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
+    v=50;i=1;se=false;sb=false;mr=10;md=80;hp=false;hnp=true;syo=0;sfo=0;fo=true;ho=<skill.var.ho>;vo=<skill.var.vo>;ti=10} @Location{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
 
 OpenField_Weapon_ロープ_MCLove32_Skill_Loop:
   TargetConditions:
