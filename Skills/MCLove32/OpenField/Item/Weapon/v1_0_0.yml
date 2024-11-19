@@ -66,6 +66,7 @@ OpenField_Weapon_サンドストーム_MCLove32_Skills:
       - sound{s=entity.ravager.stunned;p=0;v=0.6;repeat=5;repeatI=10;audience=@self} @origin
     ];
     oh=[
+      - setVar{var=skill.count;val="<skill.var.count> - 1";t=INTEGER} @self 
       - damage{a=25;pi=true;ii=true}
       - pull{v=3;to=true} 
       - endprojectile @self ?!varrange{var=skill.count;val=>0}
