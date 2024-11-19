@@ -72,7 +72,7 @@ OpenField_Weapon_サンドストーム_MCLove32_Skills:
       - isLiving true 
       - isMythicMob true
     ];
-    md=60;i=1;hp=false;hnp=true;vr=5;hr=5;id=5} 
+    md=60;i=1;hp=false;hnp=true;vr=5;hr=5;id=20;charge=10} 
 
 OpenField_Weapon_エアブラスタ_MCLove32_Skills:
   Cooldown: 4
