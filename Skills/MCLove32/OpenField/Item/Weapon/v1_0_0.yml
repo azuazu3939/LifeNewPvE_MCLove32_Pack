@@ -366,9 +366,7 @@ OpenField_Weapon_ロープ_MCLove32_Skills:
   Skills:
   - setVar{var=skill.loop;val="40";t=INTEGER} @self 
   - sound{s=entity.blaze.shoot;repeat=2;repeatI=4} @self
-  - setVar{var=skill.x;val="<target.l.x>";t=FLOAT} @TL
-  - setVar{var=skill.y;val="<target.l.y>";t=FLOAT} @TL
-  - setVar{var=skill.z;val="<target.l.z>";t=FLOAT} @TL
+  - setVar{var=skill.loc;val="<life.l>";t=STRING} @forward{f=32;lockpitch=true}
   - sound{s=entity.blaze.shoot;p=0} @self
   - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Process{ho=20;vo=0.1;delay=0} @forward{f=8;lockpitch=true}
   - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Process{ho=20;vo=-0.1;delay=2} @forward{f=8;lockpitch=true}
@@ -396,7 +394,7 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Process:
       - isLiving true 
       - isMythicMob true
     ];
-    v=50;i=1;se=false;sb=false;mr=8;md=80;hp=false;hnp=true;syo=0;sfo=0;fo=true;ti=10;ho=<skill.so>;vo=<skill.vo>} @Location{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
+    v=50;i=1;se=false;sb=false;mr=8;md=80;hp=false;hnp=true;syo=0;sfo=0;fo=true;ti=10;ho=<skill.so>;vo=<skill.vo>} @Location{loc=<skill.var.loc>}
 
 OpenField_Weapon_ロープ_MCLove32_Skill_Loop:
   TargetConditions:
