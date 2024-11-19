@@ -55,9 +55,11 @@ OpenField_Weapon_サンドストーム_MCLove32_Skills:
   Skills:
   - totem{
     ot=[
-      - setVar{var=skill.count;val="<skill.var.count> - 1";t=INTEGER} @self 
-      - damage{a=25;pi=true;ii=true}
-      - pull{v=3;to=true} 
+      - skill{
+        s=[
+          - damage{a=25;pi=true;ii=true} 
+          - pull{v=3;to=true}
+        ]} @ENO{r=5;limit=5;sort=RANDOM;c=[ - isLiving true - isMythicMob true ]}
       - setvar{var=skill.x;val="<random.float.-5to5>";t=FLOAT} @self 
       - setvar{var=skill.y;val="<random.float.-5to5>";t=FLOAT} @self 
       - setvar{var=skill.z;val="<random.float.-5to5>";t=FLOAT} @self 
