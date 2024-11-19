@@ -363,9 +363,9 @@ OpenField_Weapon_火炎レーザー_MCLove32_Skills:
   Conditions:
   - wearing{s=HAND;m=OpenField_Weapon_火炎レーザー_MCLove32} true 
   - materialIsOnCooldown{m=iron_hoe} false 
-  Cooldown: 6
+  Cooldown: 10
   Skills:
-  - setMaterialCooldown{d=120;m=iron_hoe} @self
+  - setMaterialCooldown{d=200;m=iron_hoe} @self
   - setVar{var=skill.x;val="<life.l.x>";t=FLOAT} @TL{d=40}
   - setVar{var=skill.y;val="<life.l.y>";t=FLOAT} @TL{d=40}
   - setVar{var=skill.z;val="<life.l.z>";t=FLOAT} @TL{d=40}
@@ -578,7 +578,7 @@ OpenField_Weapon_火炎レーザー_MCLove32_Skill_Process:
       - skill:OpenField_Weapon_火炎レーザー_MCLove32_Skill_Loop{count=<skill.count>} @origin
     ];
     oh=[
-      - damage{a=3;pi=true;ii=true;e=RED}
+      - damage{a=5;pi=true;ii=true;e=RED}
     ];
     conditions=[
       - isLiving true 
@@ -599,7 +599,7 @@ OpenField_Weapon_火炎レーザー_MCLove32_Skill_Loop:
       - e:p{p=flame;a=1;audience=@self} @origin
     ];
     oh=[
-      - damage{a=10;pi=true;ii=true;e=RED}
+      - damage{a=20;pi=true;ii=true;e=RED}
       - ignite{t=10} 
     ];
     conditions=[
