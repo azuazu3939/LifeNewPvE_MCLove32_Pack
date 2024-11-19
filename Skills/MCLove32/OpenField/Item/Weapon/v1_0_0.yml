@@ -366,7 +366,6 @@ OpenField_Weapon_火炎レーザー_MCLove32_Skills:
   Cooldown: 6
   Skills:
   - setMaterialCooldown{d=120;m=iron_hoe} @self
-  - setVar{var=skill.loop;val="32";t=INTEGER} @self 
   - setVar{var=skill.x;val="<life.l.x>";t=FLOAT} @TL{d=40}
   - setVar{var=skill.y;val="<life.l.y>";t=FLOAT} @TL{d=40}
   - setVar{var=skill.z;val="<life.l.z>";t=FLOAT} @TL{d=40}
@@ -375,14 +374,11 @@ OpenField_Weapon_火炎レーザー_MCLove32_Skills:
 
 
 OpenField_Weapon_火炎レーザー_MCLove32_Skill_Process:
-  Conditions:
-  - varrange{var=skill.loop;val=>0} true 
   Skills:
   - setVar{var=skill.ho;val="<skill.var.ho> * -1";t=INTEGER} @self ?varset{val=skill.ho}
   - setVar{var=skill.vo;val="<skill.var.vo> * -1";t=FLOAT} @self ?varset{val=skill.vo}
   - setVar{var=skill.ho;val="<random.-45to45>";t=INTEGER} @self ?!varset{val=skill.ho}
   - setVar{var=skill.vo;val="<random.float.0.05to0.5>";t=FLOAT} @self ?!varset{val=skill.vo}
-  - setVar{var=skill.loop;val="<skill.var.loop> - 1";t=INTEGER} @self 
   - projectile{
     ot=[
       - e:p{p=flame;a=1;audience=@self} @origin
@@ -402,6 +398,7 @@ OpenField_Weapon_火炎レーザー_MCLove32_Skill_Process:
 OpenField_Weapon_火炎レーザー_MCLove32_Skill_Loop:
   TargetConditions:
   - mythicinradius{r=4;a=>0} orElseCast OpenField_Weapon_火炎レーザー_MCLove32_Skill_Process
+  - distance{d=<48} true 
   Skills:
   - projectile{
     ot=[
