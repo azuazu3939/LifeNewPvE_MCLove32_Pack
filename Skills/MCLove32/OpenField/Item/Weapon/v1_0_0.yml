@@ -4,7 +4,9 @@ OpenField_Weapon_サイスオブデーモン_MCLove32_Skills:
   - isMythicMob true
   Conditions:
   - wearing{m=OpenField_Weapon_サイスオブデーモン_MCLove32;s=HAND}
+  - hasMana{a=>80} 
   Skills:
+  - modifyMana{a=-80} @self 
   - damage{a=80;ii=true;pi=true}
   - sound{s=entity.warden.death} @self 
   - potion{t=SPEED;l=4;d=50;p=false} @self 
@@ -17,7 +19,9 @@ OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills:
   Cooldown: 5
   Conditions:
   - wearing{m=OpenField_Weapon_ビットブレードTypeA_MCLove32;s=HAND}
+  - hasMana{a=>50} 
   Skills:
+  - modifyMana{a=-50} @self 
   - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Start @EIC{r=20;a=120;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
 
 OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Start:
@@ -52,7 +56,9 @@ OpenField_Weapon_サンドストーム_MCLove32_Skills:
   Cooldown: 10
   Conditions:
   - wearing{m=OpenField_Weapon_サンドストーム_MCLove32;s=HAND}
+  - hasMana{a=>150} 
   Skills:
+  - modifyMana{a=-150} @self 
   - totem{
     ot=[
       - skill{
@@ -79,7 +85,9 @@ OpenField_Weapon_エアブラスタ_MCLove32_Skills:
   Cooldown: 4
   Conditions:
   - wearing{m=OpenField_Weapon_エアブラスタ_MCLove32;s=HAND}
+  - hasMana{a=>30} 
   Skills:
+  - modifyMana{a=-30} @self 
   - skill:OpenField_Weapon_エアブラスタ_MCLove32_SkillProcess{ho=30} @self 
   - skill:OpenField_Weapon_エアブラスタ_MCLove32_SkillProcess{ho=0} @self 
   - skill:OpenField_Weapon_エアブラスタ_MCLove32_SkillProcess{ho=-30} @self 
@@ -109,7 +117,9 @@ OpenField_Weapon_牙狼ノ壱_MCLove32_Skills:
   Conditions:
   - wearing{m=OpenField_Weapon_牙狼ノ壱_MCLove32;s=HAND}
   - materialcooldown{m=stone_sword} false 
+  - hasMana{a=>500} 
   Skills:
+  - modifyMana{a=-500} @self 
   - setmaterialcooldown{m=stone_sword;d=400} @self 
   - setvar{var=skill.v;val="400";t=INTEGER} @self
   - skill:OpenField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity @self
@@ -146,7 +156,9 @@ OpenField_Weapon_牙狼ノ弐_MCLove32_Skills:
   Conditions:
   - wearing{m=OpenField_Weapon_牙狼ノ弐_MCLove32;s=HAND}
   - materialcooldown{m=stone_sword} false 
+  - hasMana{a=>600} 
   Skills:
+  - modifyMana{a=-600} @self 
   - setmaterialcooldown{m=stone_sword;d=600} @self 
   - setvar{var=skill.v;val="400";t=INTEGER} @self
   - skill:OpenField_Weapon_牙狼ノ弐_MCLove32_Skill_Velocity @self
@@ -192,7 +204,9 @@ OpenField_Weapon_牙狼ノ零_MCLove32_Skill_Velocity:
   Conditions:
   - wearing{m=OpenField_Weapon_牙狼ノ零_MCLove32;s=HAND} true
   - onground orElseCast OpenField_Weapon_牙狼ノ零_MCLove32_Skill_Wait
+  - hasMana{a=>800} 
   Skills:
+  - modifyMana{a=-800} @self 
   - leap{v=<skill.var.v>} @TL{cpitch=min(<caster.l.pitch>, 40)} 
   - setFallDistance{a=0} @self
   - setvar{var=skill.v;val="<skill.var.v> * 0.9";t=INTEGER} @self
@@ -218,7 +232,9 @@ OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills:
   Cooldown: 8
   Conditions:
   - wearing{m=OpenField_Weapon_ビットブレードTypeB_MCLove32;s=HAND}
+  - hasMana{a=>80} 
   Skills:
+  - modifyMana{a=-80} @self 
   - skill:OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills_Start{repeat=3;repeatI=10} @EIC{r=20;a=120;limit=3;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
 
 OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills_Start:
@@ -258,7 +274,9 @@ OpenField_Weapon_樹木剣_MCLove32_Skills:
     ) true
   - crouching true 
   - materialcooldown{m=wooden_sword} false 
+  - hasMana{a=>120} 
   Skills:
+  - modifyMana{a=-120} @self 
   - setmaterialcooldown{m=wooden_sword;d=200} @self
   - potion{t=SLOW;l=7;d=40;p=false;i=false} @self
   - sound{s=block.trial_spawner.about_to_spawn_item;p=1.414;v=0.5} @self
@@ -325,7 +343,9 @@ OpenField_Weapon_ラヴァン_MCLove32_Skills:
   Conditions:
   - wearing{s=HAND;m=OpenField_Weapon_ラヴァン_MCLove32}
   - materialcooldown{m=diamond_axe} false 
+  - hasMana{a=>30} 
   Skills:
+  - modifyMana{a=-30} @self 
   - skill:OpenField_Weapon_ラヴァン_MCLove32_Skill_Handler @self 
   - setvar{var=skill.radius;val="1";t=INTEGER} @self 
   - skill{
@@ -340,7 +360,9 @@ OpenField_Weapon_赫灼大斧ラヴァン_MCLove32_Skills:
   Conditions:
   - wearing{s=HAND;m=OpenField_Weapon_赫灼大斧ラヴァン_MCLove32}
   - materialcooldown{m=diamond_axe} false 
+  - hasMana{a=>40} 
   Skills:
+  - modifyMana{a=-40} @self 
   - skill:OpenField_Weapon_ラヴァン_MCLove32_Skill_Handler @self 
   - setvar{var=skill.radius;val="1";t=INTEGER} @self 
   - skill{
@@ -361,11 +383,13 @@ OpenField_Weapon_ラヴァン_MCLove32_Skill_Handler:
     ];repeat=5;repeatI=2} @self 
   
 OpenField_Weapon_火炎レーザー_MCLove32_Skills:
+  Cooldown: 10
   Conditions:
   - wearing{s=HAND;m=OpenField_Weapon_火炎レーザー_MCLove32} true 
   - materialIsOnCooldown{m=iron_hoe} false 
-  Cooldown: 10
+  - hasMana{a=>150} 
   Skills:
+  - modifyMana{a=-150} @self 
   - setMaterialCooldown{d=200;m=iron_hoe} @self
   - setVar{var=skill.x;val="<life.l.x>";t=FLOAT} @TL{d=40}
   - setVar{var=skill.y;val="<life.l.y>";t=FLOAT} @TL{d=40}
