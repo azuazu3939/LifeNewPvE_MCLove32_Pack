@@ -53,9 +53,11 @@ OpenField_Weapon_サンドストーム_MCLove32_Skills:
   Conditions:
   - wearing{m=OpenField_Weapon_サンドストーム_MCLove32;s=HAND}
   Skills:
-  - setVar{var=skill.count;val="20";t=INTEGER} @self 
   - totem{
     ot=[
+      - setVar{var=skill.count;val="<skill.var.count> - 1";t=INTEGER} @self 
+      - damage{a=25;pi=true;ii=true}
+      - pull{v=3;to=true} 
       - setvar{var=skill.x;val="<random.float.-5to5>";t=FLOAT} @self 
       - setvar{var=skill.y;val="<random.float.-5to5>";t=FLOAT} @self 
       - setvar{var=skill.z;val="<random.float.-5to5>";t=FLOAT} @self 
@@ -65,17 +67,11 @@ OpenField_Weapon_サンドストーム_MCLove32_Skills:
       - e:p{p=sculk_soul;a=3;vs=0.25;hs=0.25;repeat=5;repeatI=10;audience=@self} @origin
       - sound{s=entity.ravager.stunned;p=0;v=0.6;repeat=5;repeatI=10;audience=@self} @origin
     ];
-    oh=[
-      - setVar{var=skill.count;val="<skill.var.count> - 1";t=INTEGER} @self 
-      - damage{a=25;pi=true;ii=true}
-      - pull{v=3;to=true} 
-      - endprojectile @self ?!varrange{var=skill.count;val=>0}
-    ];
     conditions=[
       - isLiving true 
       - isMythicMob true
     ];
-    md=60;i=1;hp=false;hnp=true;vr=5;hr=5;id=20} 
+    md=60;i=5;hp=false;hnp=true;vr=5;hr=5} 
 
 OpenField_Weapon_エアブラスタ_MCLove32_Skills:
   Cooldown: 4
