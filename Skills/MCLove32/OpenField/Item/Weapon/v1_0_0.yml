@@ -53,6 +53,7 @@ OpenField_Weapon_サンドストーム_MCLove32_Skills:
   Conditions:
   - wearing{m=OpenField_Weapon_サンドストーム_MCLove32;s=HAND}
   Skills:
+  - setVar{var=skill.count;val="10";t=INTEGER} @self 
   - totem{
     ot=[
       - setvar{var=skill.x;val="<random.float.-5to5>";t=FLOAT} @self 
@@ -67,12 +68,13 @@ OpenField_Weapon_サンドストーム_MCLove32_Skills:
     oh=[
       - damage{a=25;pi=true;ii=true}
       - pull{v=3;to=true} 
+      - endprojectile @self ?!varrange{var=skill.count;val=>0}
     ];
     conditions=[
       - isLiving true 
       - isMythicMob true
     ];
-    md=60;i=1;hp=false;hnp=true;vr=5;hr=5;charge=10} 
+    md=60;i=1;hp=false;hnp=true;vr=5;hr=5} 
 
 OpenField_Weapon_エアブラスタ_MCLove32_Skills:
   Cooldown: 4
