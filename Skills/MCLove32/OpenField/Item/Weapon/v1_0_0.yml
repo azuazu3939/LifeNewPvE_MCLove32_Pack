@@ -392,15 +392,17 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Process:
       - isLiving true 
       - isMythicMob true
     ];
-    v=25;i=1;se=false;sb=false;mr=8;md=80;hp=false;hnp=true;syo=0;sfo=0;fo=true;ti=10} @targetedLoc{so=<skill.so>;y=<skill.y>}
+    v=50;i=1;se=false;sb=false;mr=8;md=80;hp=false;hnp=true;syo=0;sfo=0;fo=true;ti=10} @targetedLoc{so=<skill.so>;y=<skill.y>}
 
 OpenField_Weapon_ロープ_MCLove32_Skill_Loop:
   TargetConditions:
-  - mythicinradius{r=8;a=>0} onFail OpenField_Weapon_ロープ_MCLove32_Skill_Process
+  - mythicinradius{r=8;a=>0} true 
+  onPassSkill:
+  - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Process
   Skills:
   - missile{
     ot=[
-      - e:p{p=flame;a=1} @origin
+      - e:p{p=flame;a=1;audience=caster} @origin
     ];
     oh=[
       - damage{a=30;pi=true;ii=true}
@@ -410,4 +412,4 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Loop:
       - isLiving true 
       - isMythicMob true
     ];
-    v=25;i1;mr=10;md=80;hp=false;hnp=true;fo=true;sb=false;ti=10} @ENO{r=10;conditions=[ - isLiving true   - isMythicMob true ];limit=1;sort=RANDOM}
+    v=50;i=1;mr=10;md=80;hp=false;hnp=true;fo=true;sb=false;ti=10} @ENO{r=10;conditions=[ - isLiving true   - isMythicMob true ];limit=1;sort=RANDOM}
