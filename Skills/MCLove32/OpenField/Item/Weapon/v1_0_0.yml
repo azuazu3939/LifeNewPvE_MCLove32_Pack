@@ -401,7 +401,7 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Loop:
       - message{m="b"} @self
       - setVar{var=skill.so;val="<skill.so>";t=INTEGER} @self 
       - setVar{var=skill.y;val="<skill.y>";t=INTEGER} @self 
-      - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Process{so=<skill.var.so>;y=<skill.var.y>} @projectileforward{f=8;so=<skill.var.so>;y=<skill.var.y>}
+      - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Process{so=<skill.var.so>;y=<skill.var.y>} 
     ];
     onPass=[
       - message{m="a"} @self
