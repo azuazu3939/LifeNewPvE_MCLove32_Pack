@@ -380,7 +380,7 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Process:
   - setVar{var=skill.y;val="<skill.y> * -1";t=INTEGER} @self 
   - projectile{
     ot=[
-      - e:p{p=flame;a=1} @origin
+      - e:p{p=flame;a=1;audience=caster} @origin
     ];
     oe=[
       - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Loop{so=<skill.var.so>;y=<skill.var.y>} @projectileforward{f=8;so=<skill.var.so>;y=<skill.var.y>}
@@ -392,7 +392,7 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Process:
       - isLiving true 
       - isMythicMob true
     ];
-    v=50;i=2;se=false;sb=false;mr=8;md=80;hp=false;hnp=true;syo=0;sfo=0;fo=true} @targetedLoc{so=<skill.so>;y=<skill.y>}
+    v=25;i=1;se=false;sb=false;mr=8;md=80;hp=false;hnp=true;syo=0;sfo=0;fo=true;ti=10} @targetedLoc{so=<skill.so>;y=<skill.y>}
 
 OpenField_Weapon_ロープ_MCLove32_Skill_Loop:
   TargetConditions:
@@ -410,4 +410,4 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Loop:
       - isLiving true 
       - isMythicMob true
     ];
-    v=50;i=2;mr=10;md=80;hp=false;hnp=true;fo=true;sb=false} @ENO{r=10;conditions=[ - isLiving true   - isMythicMob true ];limit=1;sort=RANDOM}
+    v=25;i1;mr=10;md=80;hp=false;hnp=true;fo=true;sb=false;ti=10} @ENO{r=10;conditions=[ - isLiving true   - isMythicMob true ];limit=1;sort=RANDOM}
