@@ -370,17 +370,17 @@ OpenField_Weapon_ロープ_MCLove32_Skills:
   - setVar{var=skill.y;val="<life.l.y>";t=FLOAT} @forward{f=32;lockpitch=true}
   - setVar{var=skill.z;val="<life.l.z>";t=FLOAT} @forward{f=32;lockpitch=true}
   - sound{s=entity.blaze.shoot;p=0} @self
-  - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Process{ho=20;vo=0.1;delay=0} @forward{f=8;lockpitch=true}
-  - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Process{ho=20;vo=-0.1;delay=2} @forward{f=8;lockpitch=true}
-  - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Process{ho=-40;vo=0.1;delay=4} @forward{f=8;lockpitch=true}
-  - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Process{ho=-40;vo=-0.1;delay=6} @forward{f=8;lockpitch=true}
+  - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Process{ho=20;vo=0.2;delay=0} @forward{f=8;lockpitch=true}
+  - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Process{ho=20;vo=-0.2;delay=2} @forward{f=8;lockpitch=true}
+  - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Process{ho=-40;vo=0.2;delay=4} @forward{f=8;lockpitch=true}
+  - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Process{ho=-40;vo=-0.2;delay=6} @forward{f=8;lockpitch=true}
 
 OpenField_Weapon_ロープ_MCLove32_Skill_Process:
   Conditions:
   - varrange{var=skill.loop;val=>0} true 
   Skills:
   - setVar{var=skill.loop;val="<skill.var.loop> - 1";t=INTEGER} @self 
-  - setVar{var=skill.ho;val="<skill.ho> * -1";t=FLOAT} @self 
+  - setVar{var=skill.ho;val="<skill.ho> * -1";t=INTEGER} @self 
   - setVar{var=skill.vo;val="<skill.vo> * -1";t=FLOAT} @self 
   - projectile{
     ot=[
@@ -402,7 +402,7 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Loop:
   TargetConditions:
   - mythicinradius{r=4;a=>0;
     onFail=[
-      - setVar{var=skill.ho;val="<skill.ho>";t=FLOAT} @self 
+      - setVar{var=skill.ho;val="<skill.ho>";t=INTEGER} @self 
       - setVar{var=skill.vo;val="<skill.vo>";t=FLOAT} @self 
       - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Process{ho=<skill.var.ho>;vo=<skill.var.vo>} @Location{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>} 
     ]} true 
