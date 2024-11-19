@@ -398,7 +398,9 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Loop:
   TargetConditions:
   - mythicinradius{r=8;a=>0;
     onFail=[
-       - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Process
+       - setVar{var=skill.so;val="<skill.so>";t=INTEGER} @self 
+       - setVar{var=skill.y;val="<skill.y>";t=INTEGER} @self 
+       - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Process{so=<skill.var.so>;y=<skill.var.y>} @projectileforward{f=8;so=<skill.var.so>;y=<skill.var.y>}
     ]} true 
   Skills:
   - missile{
