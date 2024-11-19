@@ -58,11 +58,11 @@ OpenField_Weapon_サンドストーム_MCLove32_Skills:
       - setvar{var=skill.x;val="<random.float.-5to5>";t=FLOAT} @self 
       - setvar{var=skill.y;val="<random.float.-5to5>";t=FLOAT} @self 
       - setvar{var=skill.z;val="<random.float.-5to5>";t=FLOAT} @self 
-      - e:p{p=campfire_cosy_smoke;audience=caster;a=5;s=0.1;d=true;dr=true;eo=true;origin=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};fo=true} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
+      - e:p{p=campfire_cosy_smoke;audience=@self;a=5;s=0.1;d=true;dr=true;eo=true;origin=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};fo=true} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
     ];
     os=[
-      - e:p{p=sculk_soul;a=3;vs=0.25;hs=0.25;repeat=5;repeatI=10;audience=caster} @origin
-      - sound{s=entity.ravager.stunned;p=0;v=0.6;repeat=5;repeatI=10;audience=caster} @origin
+      - e:p{p=sculk_soul;a=3;vs=0.25;hs=0.25;repeat=5;repeatI=10;audience=@self} @origin
+      - sound{s=entity.ravager.stunned;p=0;v=0.6;repeat=5;repeatI=10;audience=@self} @origin
     ];
     oh=[
       - damage{a=25;pi=true;ii=true}
@@ -93,9 +93,9 @@ OpenField_Weapon_エアブラスタ_MCLove32_SkillProcess:
     ot=[
       - setvar{var=skill.x;val="<random.float.-1to1>";t=FLOAT} @self 
       - setvar{var=skill.z;val="<random.float.-1to1>";t=FLOAT} @self 
-      - e:p{p=sweep_attack;a=1;vs=0.3;hs=0.3;s=1;d=true;audience=caster;origin=@origin{x=<skill.var.x>;z=<skill.var.z>}} @origin{x=<skill.var.x>;y=1;z=<skill.var.z>}
-      - e:p{p=cloud;a=5;s=0.25;d=true;delay=2;audience=caster;eo=true;origin=@origin{x=<skill.var.x>;z=<skill.var.z>}} @origin{x=<skill.var.x>;y=1;z=<skill.var.z>}
-      - e:p{p=crit;a=4;vs=0.5;hs=0.5;delay=2;audience=caster} @origin
+      - e:p{p=sweep_attack;a=1;vs=0.3;hs=0.3;s=1;d=true;audience=@self;origin=@origin{x=<skill.var.x>;z=<skill.var.z>}} @origin{x=<skill.var.x>;y=1;z=<skill.var.z>}
+      - e:p{p=cloud;a=5;s=0.25;d=true;delay=2;audience=@self;eo=true;origin=@origin{x=<skill.var.x>;z=<skill.var.z>}} @origin{x=<skill.var.x>;y=1;z=<skill.var.z>}
+      - e:p{p=crit;a=4;vs=0.5;hs=0.5;delay=2;audience=@self} @origin
     ];
     oh=[
       - damage{a=40;ii=true;pi=true}
@@ -125,7 +125,7 @@ OpenField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity:
   - sound{s=entity.wolf.growl;v=0.25;p=0;cd=2} @self 0.5
   - projectile{
     ot=[
-      - e:p{p=cloud;a=1;vs=0.025;hs=0.025;audience=caster} @origin
+      - e:p{p=cloud;a=1;vs=0.025;hs=0.025;audience=@self} @origin
       - skill{s=[
         - summon{t=OpenField_Guard_牙狼_MCLove32;a=1;r=0;s=true} 
         - sound{s=entity.wolf.howl;v=0.5} 
@@ -162,7 +162,7 @@ OpenField_Weapon_牙狼ノ弐_MCLove32_Skill_Velocity:
   - sound{s=entity.wolf.growl;v=0.25;p=0;cd=2} @self 0.5
   - projectile{
     ot=[
-      - e:p{p=cloud;a=1;vs=0.025;hs=0.025;audience=caster} @origin
+      - e:p{p=cloud;a=1;vs=0.025;hs=0.025;audience=@self} @origin
       - skill{s=[
         - summon{t=OpenField_Guard_牙狼_MCLove32;a=1;r=0;s=true} 
         - sound{s=entity.wolf.howl;v=0.5} 
@@ -198,7 +198,7 @@ OpenField_Weapon_牙狼ノ零_MCLove32_Skill_Velocity:
   - sound{s=entity.wolf.growl;v=0.25;p=0;cd=2} @self 0.5
   - projectile{
     ot=[
-      - e:p{p=cloud;a=1;vs=0.025;hs=0.025;audience=caster} @origin
+      - e:p{p=cloud;a=1;vs=0.025;hs=0.025;audience=@self} @origin
       - skill{s=[
         - summon{t=OpenField_Guard_牙狼ノ零_MCLove32;a=1;r=0;s=true} 
         - sound{s=entity.wolf.howl;v=0.5} 
@@ -265,9 +265,9 @@ OpenField_Weapon_樹木剣_MCLove32_Skills:
   - setvar{var=skill.i;val="30";t=INTEGER} @self 
   - slash{y=1;w=8;h=16;mpd=true;a=180;radius=6;hnp=true;hp=false;
     oP=[ 
-      - e:p{p=sweep_attack;a=1;vs=0.2;hs=1;audience=caster;size=2;delay=<skill.var.i>} @origin
-      - e:p{a=25;vs=0.5;hs=0.5;color=#46884a;audience=caster;p=red_dust;size=2;delay=<skill.var.i>} @origin 
-      - e:p{a=25;vs=0.5;hs=0.5;color=#af9831;audience=caster;p=red_dust;size=2;delay=<skill.var.i>} @origin 
+      - e:p{p=sweep_attack;a=1;vs=0.2;hs=1;audience=@self;size=2;delay=<skill.var.i>} @origin
+      - e:p{a=25;vs=0.5;hs=0.5;color=#46884a;audience=@self;p=red_dust;size=2;delay=<skill.var.i>} @origin 
+      - e:p{a=25;vs=0.5;hs=0.5;color=#af9831;audience=@self;p=red_dust;size=2;delay=<skill.var.i>} @origin 
       - skill:OpenField_Weapon_樹木剣_MCLove32_Skill_Process{delay=<skill.var.i>} @self 
       - setvar{var=skill.i;val="<skill.var.i> - 1";t=INTEGER} @self 
     ];
@@ -300,9 +300,9 @@ OpenField_Weapon_樹木剣_MCLove32_Skill_Process:
   Skills:
   - projectile{
     ot=[
-      - e:p{p=sweep_attack;a=1;vs=0.2;hs=1;audience=caster} 
-      - e:p{a=3;vs=0.25;hs=0.25;color=#46884a;audience=caster;p=red_dust} 
-      - e:p{a=3;vs=0.25;hs=0.25;color=#af9831;audience=caster;p=red_dust} 
+      - e:p{p=sweep_attack;a=1;vs=0.2;hs=1;audience=@self} 
+      - e:p{a=3;vs=0.25;hs=0.25;color=#46884a;audience=@self;p=red_dust} 
+      - e:p{a=3;vs=0.25;hs=0.25;color=#af9831;audience=@self;p=red_dust} 
     ];
     oh=[
       - sound{s=entity.breeze.jump;p=0;v=1.25} 
@@ -330,7 +330,7 @@ OpenField_Weapon_ラヴァン_MCLove32_Skills:
   - skill{
     s=[
       - setvar{var=skill.radius;val="<skill.var.radius> + 2";t=INTEGER} @self 
-      - e:pr{particle=explosion_large;radius=<skill.var.radius>;points=16;amount=3;hS=1;vS=0;audience=caster} @self
+      - e:pr{particle=explosion_large;radius=<skill.var.radius>;points=16;amount=3;hS=1;vS=0;audience=@self} @self
     ];repeat=2;repeatI=4} @self 
   - damage{a=70;pi=true;ii=true} @EIR{r=7;c=[ - isLiving true - isMythicMob true ]}
 
@@ -345,7 +345,7 @@ OpenField_Weapon_赫灼大斧ラヴァン_MCLove32_Skills:
   - skill{
     s=[
       - setvar{var=skill.radius;val="<skill.var.radius> + 3";t=INTEGER} @self 
-      - e:pr{particle=explosion_large;radius=<skill.var.radius>;points=16;amount=3;hS=1;vS=0;audience=caster} @self
+      - e:pr{particle=explosion_large;radius=<skill.var.radius>;points=16;amount=3;hS=1;vS=0;audience=@self} @self
     ];repeat=2;repeatI=4} @self 
   - damage{a=105;pi=true;ii=true;e=BLUE} @EIR{r=10;c=[ - isLiving true - isMythicMob true ]}
 
@@ -384,7 +384,7 @@ OpenField_Weapon_火炎レーザー_MCLove32_Skill_Process:
   - setVar{var=skill.loop;val="<skill.var.loop> - 1";t=INTEGER} @self 
   - projectile{
     ot=[
-      - e:p{p=flame;a=1;audience=caster} @origin
+      - e:p{p=flame;a=1;audience=@self} @origin
     ];
     oe=[
       - skill:OpenField_Weapon_火炎レーザー_MCLove32_Skill_Loop @origin
@@ -407,7 +407,7 @@ OpenField_Weapon_火炎レーザー_MCLove32_Skill_Loop:
   Skills:
   - projectile{
     ot=[
-      - e:p{p=flame;a=1;audience=caster} @origin
+      - e:p{p=flame;a=1;audience=@self} @origin
     ];
     oh=[
       - damage{a=30;pi=true;ii=true;e=RED}
