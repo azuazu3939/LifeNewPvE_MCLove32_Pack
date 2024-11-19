@@ -419,4 +419,4 @@ OpenField_Weapon_火炎レーザー_MCLove32_Skill_Loop:
       - isMythicMob true
       - hasTag{t=pass} false 
     ];
-    v=50;i=1;sb=false;mr=16;md=80;hp=false;hnp=true;fo=true;ti=4;syo=0;sfo=0} @ENO{r=16;conditions=[ - isLiving true   - isMythicMob true - hasTag{t=pass} false ];limit=1;sort=RANDOM}
+    v=50;i=1;sb=false;mr=32;md=80;hp=false;hnp=true;fo=true;ti=4;syo=0;sfo=0} @ENO{r=32;conditions=[ - isLiving true   - isMythicMob true - hasTag{t=pass} false ];limit=1;sort=RANDOM}
