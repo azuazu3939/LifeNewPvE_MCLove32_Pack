@@ -398,7 +398,7 @@ OpenField_Weapon_火炎レーザー_MCLove32_Skill_Process:
       - isMythicMob true
       - hasTag{t=pass} false 
     ];
-    v=32;i=1;se=false;mr=8;md=80;hp=false;hnp=true;syo=0;sfo=0;fo=true;ho=<skill.var.ho>;vo=<skill.var.vo>;ti=4} @Location{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
+    v=40;i=1;se=false;mr=8;md=80;hp=false;hnp=true;syo=0;sfo=0;fo=true;ho=<skill.var.ho>;vo=<skill.var.vo>;ti=4} @Location{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
 
 OpenField_Weapon_火炎レーザー_MCLove32_Skill_Loop:
   TargetConditions:
