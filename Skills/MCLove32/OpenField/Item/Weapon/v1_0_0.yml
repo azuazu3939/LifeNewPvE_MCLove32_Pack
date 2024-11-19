@@ -396,7 +396,7 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Process:
 
 OpenField_Weapon_ロープ_MCLove32_Skill_Loop:
   TargetConditions:
-  - mythicinradius{r=8;a=>0;
+  - mythicinradius{r=8;a=>1;
     onFail=[
        - setVar{var=skill.so;val="<skill.so>";t=INTEGER} @self 
        - setVar{var=skill.y;val="<skill.y>";t=INTEGER} @self 
