@@ -383,7 +383,7 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Process:
       - e:p{p=flame;a=1;audience=caster} @origin
     ];
     oe=[
-      - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Loop{ho=<skill.var.ho>;vo=<skill.var.vo>} @ProjectileForward{f=8;rot=<skill.var.ho>}
+      - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Loop{ho=<skill.var.ho>;vo=<skill.var.vo>} @ProjectileForward{f=8}
     ];
     oh=[
       - damage{a=10;pi=true;ii=true}
