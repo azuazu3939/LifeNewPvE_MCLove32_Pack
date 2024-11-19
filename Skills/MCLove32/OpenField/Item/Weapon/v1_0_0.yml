@@ -378,7 +378,7 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Process:
   - setVar{var=skill.loop;val="<skill.var.loop> - 1";t=INTEGER} @self 
   - setVar{var=skill.so;val="<skill.so> * -1";t=INTEGER} @self 
   - setVar{var=skill.y;val="<skill.y> * -1";t=INTEGER} @self 
-  - message{m="c"} @self
+  - message{m="<skill.so> <skill.var.so> <skill.y> <skill.var.y>"} @self
   - projectile{
     ot=[
       - e:p{p=flame;a=1;audience=caster} @origin
@@ -397,12 +397,9 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Process:
 
 OpenField_Weapon_ロープ_MCLove32_Skill_Loop:
   TargetConditions:
-  - mythicinradius{r=8;a=>2;
+  - mythicinradius{r=4;a=>0;
     onFail=[
-      - message{m="b"} @self
-      - setVar{var=skill.so;val="<skill.so>";t=INTEGER} @self 
-      - setVar{var=skill.y;val="<skill.y>";t=INTEGER} @self 
-      - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Process{so=<skill.var.so>;y=<skill.var.y>} @targetedLoc
+      - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Process @targetedLoc
     ]} true 
   Skills:
   - missile{
