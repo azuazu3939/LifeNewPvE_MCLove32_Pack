@@ -413,6 +413,7 @@ OpenField_Weapon_火炎レーザー_MCLove32_Skill_Loop:
       - damage{a=80;pi=true;ii=true;e=RED}
       - ignite{t=10} 
       - addTag{t=pass}
+      - removeTag{t=pass;delay=50}
     ];
     conditions=[
       - isLiving true 
