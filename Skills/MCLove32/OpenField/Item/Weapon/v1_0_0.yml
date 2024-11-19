@@ -365,29 +365,29 @@ OpenField_Weapon_ロープ_MCLove32_Skills:
   Cooldown: 6
   Skills:
   - setVar{var=skill.loop;val="40";t=INTEGER} @self 
+  - setVar{var=skill.x;val="<life.l.x>";t=FLOAT} @forward{f=40;lockpitch=true}
+  - setVar{var=skill.y;val="<life.l.y>";t=FLOAT} @forward{f=40;lockpitch=true}
+  - setVar{var=skill.z;val="<life.l.z>";t=FLOAT} @forward{f=40;lockpitch=true}
+
   - sound{s=entity.blaze.shoot;repeat=2;repeatI=4} @self
-  - setVar{var=skill.x;val="<life.l.x>";t=FLOAT} @forward{f=32;lockpitch=true}
-  - setVar{var=skill.y;val="<life.l.y>";t=FLOAT} @forward{f=32;lockpitch=true}
-  - setVar{var=skill.z;val="<life.l.z>";t=FLOAT} @forward{f=32;lockpitch=true}
-  - sound{s=entity.blaze.shoot;p=0} @self
   - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Process{ho=20;vo=0.2;delay=0} @forward{f=8;lockpitch=true}
-  - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Process{ho=20;vo=-0.2;delay=2} @forward{f=8;lockpitch=true}
-  - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Process{ho=-40;vo=0.2;delay=4} @forward{f=8;lockpitch=true}
+  - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Process{ho=-20;vo=-0.2;delay=2} @forward{f=8;lockpitch=true}
+  - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Process{ho=40;vo=0.2;delay=4} @forward{f=8;lockpitch=true}
   - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Process{ho=-40;vo=-0.2;delay=6} @forward{f=8;lockpitch=true}
 
 OpenField_Weapon_ロープ_MCLove32_Skill_Process:
   Conditions:
   - varrange{var=skill.loop;val=>0} true 
   Skills:
+  - setVar{var=skill.ho;val="<random.-45to45> - <skill.var.ho|0>";t=INTEGER} @self 
+  - setVar{var=skill.vo;val="<random.float.0to1> - <skill.var.vo|0>";t=FLOAT} @self 
   - setVar{var=skill.loop;val="<skill.var.loop> - 1";t=INTEGER} @self 
-  - setVar{var=skill.ho;val="<skill.ho> * -1";t=INTEGER} @self 
-  - setVar{var=skill.vo;val="<skill.vo> * -1";t=FLOAT} @self 
   - projectile{
     ot=[
       - e:p{p=flame;a=1;audience=caster} @origin
     ];
     oe=[
-      - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Loop{ho=<skill.var.ho>;vo=<skill.var.vo>} @ProjectileForward{f=8}
+      - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Loop @ProjectileForward{f=8}
     ];
     oh=[
       - damage{a=10;pi=true;ii=true}
@@ -396,15 +396,13 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Process:
       - isLiving true 
       - isMythicMob true
     ];
-    v=50;i=1;se=false;sb=false;mr=8;md=80;hp=false;hnp=true;syo=0;sfo=0;fo=true;ho=<skill.so>;vo=<skill.vo>;ti=10} @Location{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
+    v=50;i=1;se=false;sb=false;mr=8;md=80;hp=false;hnp=true;syo=0;sfo=0;fo=true;ho=<skill.var.so>;vo=<skill.var.vo>;ti=10} @Location{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
 
 OpenField_Weapon_ロープ_MCLove32_Skill_Loop:
   TargetConditions:
   - mythicinradius{r=4;a=>0;
     onFail=[
-      - setVar{var=skill.ho;val="<skill.ho>";t=INTEGER} @self 
-      - setVar{var=skill.vo;val="<skill.vo>";t=FLOAT} @self 
-      - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Process{ho=<skill.var.ho>;vo=<skill.var.vo>} @Location{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>} 
+      - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Process @self 
     ]} true 
   Skills:
   - missile{
