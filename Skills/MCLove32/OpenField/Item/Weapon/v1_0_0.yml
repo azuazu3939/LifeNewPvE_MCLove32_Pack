@@ -599,7 +599,7 @@ OpenField_Weapon_火炎レーザー_MCLove32_Skill_Loop:
       - e:p{p=flame;a=1;audience=@self} @origin
     ];
     oh=[
-      - damage{a=20;pi=true;ii=true;e=RED}
+      - damage{a=10;pi=true;ii=true;e=RED}
       - ignite{t=10} 
     ];
     conditions=[
