@@ -362,8 +362,10 @@ OpenField_Weapon_ラヴァン_MCLove32_Skill_Handler:
 OpenField_Weapon_火炎レーザー_MCLove32_Skills:
   Conditions:
   - wearing{s=HAND;m=OpenField_Weapon_火炎レーザー_MCLove32} true 
+  - materialIsOnCooldown{m=iron_hoe} false 
   Cooldown: 6
   Skills:
+  - setMaterialCooldown{d=120;m=iron_hoe} @self
   - setVar{var=skill.loop;val="20";t=INTEGER} @self 
   - setVar{var=skill.x;val="<life.l.x>";t=FLOAT} @TL{d=40}
   - setVar{var=skill.y;val="<life.l.y>";t=FLOAT} @TL{d=40}
