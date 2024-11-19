@@ -578,7 +578,7 @@ OpenField_Weapon_火炎レーザー_MCLove32_Skill_Process:
       - skill:OpenField_Weapon_火炎レーザー_MCLove32_Skill_Loop{count=<skill.count>} @origin
     ];
     oh=[
-      - damage{a=5;pi=true;ii=true;e=RED}
+      - damage{a=3;pi=true;ii=true;e=RED}
     ];
     conditions=[
       - isLiving true 
