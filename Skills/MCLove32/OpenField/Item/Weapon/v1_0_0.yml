@@ -53,7 +53,7 @@ OpenField_Weapon_サンドストーム_MCLove32_Skills:
   Conditions:
   - wearing{m=OpenField_Weapon_サンドストーム_MCLove32;s=HAND}
   Skills:
-  - setVar{var=skill.count;val="10";t=INTEGER} @self 
+  - setVar{var=skill.count;val="20";t=INTEGER} @self 
   - totem{
     ot=[
       - setvar{var=skill.x;val="<random.float.-5to5>";t=FLOAT} @self 
