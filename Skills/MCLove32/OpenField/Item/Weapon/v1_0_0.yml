@@ -389,7 +389,7 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Process:
       - e:p{p=flame;a=1;audience=caster} @origin
     ];
     oe=[
-      - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Loop @ProjectileForward{f=8}
+      - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Loop @origin
     ];
     oh=[
       - damage{a=10;pi=true;ii=true}
@@ -402,12 +402,12 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Process:
 
 OpenField_Weapon_ロープ_MCLove32_Skill_Loop:
   TargetConditions:
-  - mythicinradius{r=2;a=>0;
+  - mythicinradius{r=16;a=>0;
     onFail=[
       - skill:OpenField_Weapon_ロープ_MCLove32_Skill_Process @self 
     ]} true 
   Skills:
-  - missile{
+  - projectile{
     ot=[
       - e:p{p=flame;a=1;audience=caster} @origin
     ];
@@ -419,4 +419,4 @@ OpenField_Weapon_ロープ_MCLove32_Skill_Loop:
       - isLiving true 
       - isMythicMob true
     ];
-    v=50;i=1;mr=20;md=80;hp=false;hnp=true;fo=true;sb=false;ti=10} @ENO{r=16;conditions=[ - isLiving true   - isMythicMob true ];limit=1;sort=RANDOM}
+    v=50;i=1;mr=20;md=80;hp=false;hnp=true;fo=true;sb=false;ti=10;syo=0;sfo=0} @ENO{r=16;conditions=[ - isLiving true   - isMythicMob true ];limit=1;sort=RANDOM}
