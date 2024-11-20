@@ -4,7 +4,10 @@ OpenField_Weapon_サイスオブデーモン_MCLove32_Skills:
   - isMythicMob true
   Conditions:
   - wearing{m=OpenField_Weapon_サイスオブデーモン_MCLove32;s=HAND}
-  - hasMana{a=>80} 
+  - hasMana{a=>80;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]}  
   Skills:
   - modifyMana{a=-80} @self 
   - damage{a=80;ii=true;pi=true}
@@ -19,7 +22,10 @@ OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills:
   Cooldown: 5
   Conditions:
   - wearing{m=OpenField_Weapon_ビットブレードTypeA_MCLove32;s=HAND}
-  - hasMana{a=>50} 
+  - hasMana{a=>50;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]}  
   Skills:
   - modifyMana{a=-50} @self 
   - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Start @EIC{r=20;a=120;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
@@ -56,7 +62,10 @@ OpenField_Weapon_サンドストーム_MCLove32_Skills:
   Cooldown: 10
   Conditions:
   - wearing{m=OpenField_Weapon_サンドストーム_MCLove32;s=HAND}
-  - hasMana{a=>150} 
+  - hasMana{a=>150;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]} 
   Skills:
   - modifyMana{a=-150} @self 
   - totem{
@@ -85,7 +94,10 @@ OpenField_Weapon_エアブラスタ_MCLove32_Skills:
   Cooldown: 4
   Conditions:
   - wearing{m=OpenField_Weapon_エアブラスタ_MCLove32;s=HAND}
-  - hasMana{a=>30} 
+  - hasMana{a=>30;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]}  
   Skills:
   - modifyMana{a=-30} @self 
   - skill:OpenField_Weapon_エアブラスタ_MCLove32_SkillProcess{ho=30} @self 
@@ -117,7 +129,10 @@ OpenField_Weapon_牙狼ノ壱_MCLove32_Skills:
   Conditions:
   - wearing{m=OpenField_Weapon_牙狼ノ壱_MCLove32;s=HAND}
   - materialcooldown{m=stone_sword} false 
-  - hasMana{a=>500} 
+  - hasMana{a=>500;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]}  
   Skills:
   - modifyMana{a=-500} @self 
   - setmaterialcooldown{m=stone_sword;d=400} @self 
@@ -156,7 +171,10 @@ OpenField_Weapon_牙狼ノ弐_MCLove32_Skills:
   Conditions:
   - wearing{m=OpenField_Weapon_牙狼ノ弐_MCLove32;s=HAND}
   - materialcooldown{m=stone_sword} false 
-  - hasMana{a=>600} 
+  - hasMana{a=>600;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]} 
   Skills:
   - modifyMana{a=-600} @self 
   - setmaterialcooldown{m=stone_sword;d=600} @self 
@@ -204,7 +222,10 @@ OpenField_Weapon_牙狼ノ零_MCLove32_Skill_Velocity:
   Conditions:
   - wearing{m=OpenField_Weapon_牙狼ノ零_MCLove32;s=HAND} true
   - onground orElseCast OpenField_Weapon_牙狼ノ零_MCLove32_Skill_Wait
-  - hasMana{a=>800} 
+  - hasMana{a=>800;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]} 
   Skills:
   - modifyMana{a=-800} @self 
   - leap{v=<skill.var.v>} @TL{cpitch=min(<caster.l.pitch>, 40)} 
@@ -232,7 +253,10 @@ OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills:
   Cooldown: 8
   Conditions:
   - wearing{m=OpenField_Weapon_ビットブレードTypeB_MCLove32;s=HAND}
-  - hasMana{a=>80} 
+  - hasMana{a=>80;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]} 
   Skills:
   - modifyMana{a=-80} @self 
   - skill:OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills_Start{repeat=3;repeatI=10} @EIC{r=20;a=120;limit=3;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
@@ -274,7 +298,10 @@ OpenField_Weapon_樹木剣_MCLove32_Skills:
     ) true
   - crouching true 
   - materialcooldown{m=wooden_sword} false 
-  - hasMana{a=>120} 
+  - hasMana{a=>120;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]} 
   Skills:
   - modifyMana{a=-120} @self 
   - setmaterialcooldown{m=wooden_sword;d=200} @self
@@ -343,7 +370,10 @@ OpenField_Weapon_ラヴァン_MCLove32_Skills:
   Conditions:
   - wearing{s=HAND;m=OpenField_Weapon_ラヴァン_MCLove32}
   - materialcooldown{m=diamond_axe} false 
-  - hasMana{a=>30} 
+  - hasMana{a=>30;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]}  
   Skills:
   - modifyMana{a=-30} @self 
   - skill:OpenField_Weapon_ラヴァン_MCLove32_Skill_Handler @self 
@@ -360,7 +390,10 @@ OpenField_Weapon_赫灼大斧ラヴァン_MCLove32_Skills:
   Conditions:
   - wearing{s=HAND;m=OpenField_Weapon_赫灼大斧ラヴァン_MCLove32}
   - materialcooldown{m=diamond_axe} false 
-  - hasMana{a=>40} 
+  - hasMana{a=>40;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]}  
   Skills:
   - modifyMana{a=-40} @self 
   - skill:OpenField_Weapon_ラヴァン_MCLove32_Skill_Handler @self 
@@ -387,7 +420,10 @@ OpenField_Weapon_火炎レーザー_MCLove32_Skills:
   Conditions:
   - wearing{s=HAND;m=OpenField_Weapon_火炎レーザー_MCLove32} true 
   - materialIsOnCooldown{m=iron_hoe} false 
-  - hasMana{a=>150} 
+  - hasMana{a=>150;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]} 
   Skills:
   - modifyMana{a=-150} @self 
   - setMaterialCooldown{d=200;m=iron_hoe} @self
