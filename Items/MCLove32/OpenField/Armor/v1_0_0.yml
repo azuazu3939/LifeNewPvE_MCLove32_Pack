@@ -21,7 +21,7 @@ OpenField_Armor_アルドーナT_MCLove32:
   Lore: 
   - "&7森と自然の加護の効果として、"
   - "&7エンチャントが付与されている。"
-  - "&4&lグラインドストーン使用不可"
+  - "&4&l砥石使用不可"
   Model: 1001
   Options:
     Destroy: false
@@ -116,7 +116,7 @@ OpenField_Armor_イルドーナT_MCLove32:
   Lore: 
   - "&7海と自然の加護の効果として、"
   - "&7エンチャントが付与されている。"
-  - "&4&lグラインドストーン使用不可"
+  - "&4&l砥石使用不可"
   Model: 1002
   Options:
     Destroy: false
