@@ -567,12 +567,12 @@ OpenField_Enemy_エリミネーター_MCLove32:
   Display: "&7&lエリミネーター"
   Health: 1000
   Damage: 40
-  Armor: 0
+  Armor: 80
   Equipment:
   - player_head{skulltexture=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODBkNzkyMjAxZmRjZTkxZTg4NGZmMzJhMDZkZDRjYzdjZDk4MzgyMmIxNjVkNDUzZWNjYjRjNjBhZWRjM2JhYSJ9fX0} HEAD 
-  - OpenField_Armor_エリミネーターC_MCLove32 CHEST
-  - OpenField_Armor_エリミネーターL_MCLove32 LEGS
-  - OpenField_Armor_エリミネーターB_MCLove32 FEET
+  - leather_chestplate{color=GRAY} CHEST
+  - leather_leggings{color=GRAY} LEGS
+  - leather_boots{color=GRAY} FEET
   - netherite_sword HAND 
   - diamond_sword OFFHAND
   Options:
