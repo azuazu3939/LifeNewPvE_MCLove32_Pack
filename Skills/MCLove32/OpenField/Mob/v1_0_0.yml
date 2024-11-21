@@ -403,13 +403,14 @@ OpenField_Enemy_モフィモス_MCLove32_Skill_Process:
   Conditions:
   - incombat
   Skills:     
-  - skill:OpenField_Enemy_モフィモス_MCLove32_Skill_Process_Shot{repeatI=4;repeat=4;cd=0.5} @self 0.8
+  - skill:OpenField_Enemy_モフィモス_MCLove32_Skill_Process_Shot{repeatI=4;repeat=4} @self 0.8
   - leap{v=150;repeat=1;repeati=20} @T 0.15
   - leap{v=100;repeat=1;repeati=10} @T 0.15
   - leap{v=150} @T 0.3
   - leap{v=100} @T 0.6
   
 OpenField_Enemy_モフィモス_MCLove32_Skill_Process_Shot:
+  Cooldown: 0.2
   Skills:
   - projectile{
     oh=[
