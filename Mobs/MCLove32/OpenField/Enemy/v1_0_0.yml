@@ -732,7 +732,7 @@ OpenField_Enemy_モフィモ_ゾラ_MCLove32:
   - gotoowner
   - meleeattack
   Skills:
-  - skill:OpenField_Enemy_モフィモ_ゾラ_MCLove32_Skills @self ~onSignal:goto
+  - skill:OpenField_Enemy_モフィモ_ゾラ_MCLove32_Skills @self ~onSpawn 
 
 OpenField_Enemy_モフィモ_ゾラール_MCLove32:
   Template: OpenField_Enemy_モフィモ_ゾラ_MCLove32
