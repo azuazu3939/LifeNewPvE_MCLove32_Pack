@@ -402,7 +402,7 @@ OpenField_Enemy_モフィモス_MCLove32_Skill_Process:
   Conditions:
   - incombat
   Skills:     
-  - skill:OpenField_Enemy_モフィモス_MCLove32_Skill_Process_Shot{repeatI=4;repeat=<random.4to15>} @self 0.5
+  - skill:OpenField_Enemy_モフィモス_MCLove32_Skill_Process_Shot{repeatI=4;repeat=4} @self 0.8
   - leap{v=150;repeat=1;repeati=20} @T 0.15
   - leap{v=100;repeat=1;repeati=10} @T 0.15
   - leap{v=150} @T 0.3
@@ -419,4 +419,4 @@ OpenField_Enemy_モフィモス_MCLove32_Skill_Process_Shot:
       - (isPlayer || faction{f=Guard}) true
     ]
     bulletType=MOB;mob=OpenField_Enemy_モフィモ_ゾラノ_MCLove32;
-    v=12;i=1;se=false;sb=false;md=105;mr=128;sfo=<random.-5to5>;syo=<random.0to5>;sso=<random.-5to5>;hn=3;vn=3} @TL 
+    v=<random.10to16>;i=1;se=false;sb=false;md=105;mr=128;sfo=<random.-5to5>;syo=<random.0to5>;sso=<random.-5to5>;hn=3;vn=3} @TL 
