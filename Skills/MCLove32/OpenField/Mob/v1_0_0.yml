@@ -393,4 +393,4 @@ OpenField_Enemy_モフィモ_ゾラ_MCLove32_Skills:
     v=12;in=<random.8to10>;i=1;se=false;sb=false;md=200;mr=64;sfo=0;syo=0;
     conditions=[
       - (isPlayer || faction{f=Guard}) true
-    ]} @parent
+    ]} @BNO{r=16;n=5;limit=1;sort=RANDOM}
