@@ -322,7 +322,7 @@ OpenField_Enemy_エリミネーター_MCLove32_Skill_DeathField:
   - potion{t=SLOW;l=7;d=80;p=false} @self 
   - healpercent{m=0.1} @self 
   - stun{d=80;cotd=true;cosu=true;cot=true} @self
-  - e:ps{p=barrier;a=20;radius=12;repeat=3;repeati=20} @self
+  - ps{p=barrier;a=20;r=12;repeat=3;repeati=20} @self
   - delay 60
   - skill{
     s=[
