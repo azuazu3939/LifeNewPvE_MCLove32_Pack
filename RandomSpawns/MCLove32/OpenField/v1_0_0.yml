@@ -65,7 +65,26 @@ OpenField_Enemy_枯れた抜け殻_MCLove32_Spawn:
     mythicinradius{a=<3;r=48} 
     ) true
   - mobsInRadius{types=OpenField_Enemy_枯れた抜け殻_MCLove32;amount=<1;radius=64} true  
-  
+
+OpenField_Enemy_エリミネーター_MCLove32_Spawn:
+  Type: OpenField_Enemy_エリミネーター_MCLove32
+  Worlds: open_field
+  Action: ADD 
+  PositionType: LAND
+  Chance: 0.1
+  Priority: 1
+  Conditions:
+  - mobsinworld{a=<1000} true 
+  - blocktype{type=water,air} false 
+  - height{h=40to120} true 
+  - region{r=spawn} false 
+  - (
+    mythicinradius{a=<1;r=24} ||
+    mythicinradius{a=<2;r=36} ||
+    mythicinradius{a=<3;r=54} 
+    ) true
+  - mobsInRadius{types=OpenField_Enemy_エリミネーター_MCLove32;amount=<1;radius=128} true  
+
 OpenField_Enemy_コロニアル_MCLove32_Leader:
   Type: OpenField_Enemy_コロニアル_MCLove32_Leader
   Worlds: open_field
