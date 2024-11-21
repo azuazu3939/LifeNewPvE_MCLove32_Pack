@@ -400,8 +400,18 @@ OpenField_Enemy_モフィモ_ゾラ_MCLove32_Skills:
 
 OpenField_Enemy_モフィモ_ゾ_MCLove32_Skill_Process:
   Cooldown: 5
+  Conditions:
+  - incombat
   Skills:
-  - sudoskill{
-    s=[
-      - setTarget @NearestPlayer{r=32}
-    ]} @MIR{r=48;t=OpenField_Enemy_モフィモ_ゾラール_MCLove32,OpenField_Enemy_モフィモ_ゾラ_MCLove32;limit=5;sort=RANDOM}
+  - missile{
+    ot=[
+      - teleport @origin
+    ];
+    oh=[
+      - damage{a=<caster.damage>;pi=true;ii=true}
+      - throw{v=3;vy=5}
+    ];
+    v=15;in=5;i=1;se=false;sb=false;md=105;mr=64;sfo=0;syo=0;
+    conditions=[
+      - (isPlayer || faction{f=Guard}) true
+    ]} @T
