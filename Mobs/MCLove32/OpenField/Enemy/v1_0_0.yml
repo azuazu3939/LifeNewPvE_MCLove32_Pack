@@ -677,7 +677,7 @@ OpenField_Enemy_モフィモス_MCLove32:
   - attribute{attr=GENERIC_FOLLOW_RANGE;a=24} @self ~onDropcombat 
   - skill:OpenField_Enemy_モフィモス_MCLove32_Skills @self ~onEntercombat
   - skill:OpenField_Enemy_モフィモス_MCLove32_Skills @self ~onDamaged 
-  - healpercent{m=0.01} @self ~onSignal:death
+  - healpercent{m=0.01;cd=5} @self ~onSignal:death
   - cmd{c="mlg <target.name> OpenField_Armor_モフィモスH_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.025
   - cmd{c="mlg <target.name> OpenField_Armor_モフィモスC_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.025
   - cmd{c="mlg <target.name> OpenField_Armor_モフィモスL_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.025
