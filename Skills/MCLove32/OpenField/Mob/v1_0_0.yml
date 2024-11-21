@@ -374,6 +374,7 @@ OpenField_Enemy_モフィモ_ゾ_MCLove32_Skills:
   - skill:OpenField_Enemy_モフィモ_ゾ_MCLove32_Skills @self 
 
 OpenField_Enemy_モフィモ_ゾラ_MCLove32_Skills:
+  Cooldown: 10
   Skills:
   - setVar{var=skill.rot;val="<random.0to360> - 180";t=INTEGER} @self 
   - setrotation{y=<skill.var.rot>;p=<random.-45to45>} @self
@@ -390,7 +391,9 @@ OpenField_Enemy_モフィモ_ゾラ_MCLove32_Skills:
     oe=[
       - skill:OpenField_Enemy_モフィモ_ゾラ_MCLove32_Skills @self 
     ];
-    v=12;in=<random.8to10>;i=1;se=false;sb=false;md=200;mr=64;sfo=0;syo=0;
+    v=12;in=<random.8to10>;i=1;se=false;sb=false;md=210;mr=64;sfo=0;syo=0;
     conditions=[
       - (isPlayer || faction{f=Guard}) true
-    ]} @BNO{r=16;n=5;limit=1;sort=RANDOM}
+    ]} @NearestPlayer{r=32}
+  - delay 200
+  - skill:OpenField_Enemy_モフィモ_ゾラ_MCLove32_Skills @self 

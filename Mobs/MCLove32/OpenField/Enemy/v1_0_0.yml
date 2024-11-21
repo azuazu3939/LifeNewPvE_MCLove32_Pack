@@ -698,7 +698,7 @@ OpenField_Enemy_モフィモ_ゾラ_MCLove32:
   - player_head{skulltexture=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjQwOWM0ZmE1YzQzNTJhZDAzZDM0ZDE1MTBjMDdkY2E3M2YwZmNiZDRhZDQ2MDQxMWFmZTY5NjAxOTExMDMyNiJ9fX0} HEAD
   Options:
     Collidable: true 
-    DigOutOfGround: true 
+    DigOutOfGround: false
     FollowRange: 48
     Despawn: true 
     KnockbackResistance: 1
