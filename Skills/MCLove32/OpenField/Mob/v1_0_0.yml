@@ -364,13 +364,13 @@ OpenField_Enemy_エリミネーター_MCLove32_Damaged_Skills_Process:
   - damage{a=50;ii=true;pi=true;e=GREEN} @EIR{r=10;c=[ - (isPlayer || faction{f=Guard}) true ]}
 
 OpenField_Enemy_モフィモ_ゾ_MCLove32_Skills: 
-  Cooldown: 2
+  Cooldown: 1
   Conditions:
-  - children{a=<5} orElseCast OpenField_Enemy_モフィモ_ゾ_MCLove32_Skill_Process
+  - children{a=<10} orElseCast OpenField_Enemy_モフィモ_ゾ_MCLove32_Skill_Process
   - incombat
   Skills:
   - summon{t=OpenField_Enemy_モフィモ_ゾラール_MCLove32;a=1;r=8} @self 
-  - delay 50
+  - delay 21
   - skill:OpenField_Enemy_モフィモ_ゾ_MCLove32_Skills @self 
 
 OpenField_Enemy_モフィモ_ゾラ_MCLove32_Skills:
