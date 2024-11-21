@@ -707,6 +707,7 @@ OpenField_Enemy_モフィモ_ゾラ_MCLove32:
     #PassthroughDamage: true
     NoGravity: true
     AttackSpeed: 2
+    PreventJockeyMounts: true
     #NoGravity: true
     PreventMobKillDrops: true 
     PreventRandomEquipment: true 
@@ -756,6 +757,7 @@ OpenField_Enemy_モフィモ_ゾラノ_MCLove32:
     KnockbackResistance: 1
     NoDamageTicks: 0
     NoAI: false
+    PreventJockeyMounts: true
     #PassthroughDamage: true
     NoGravity: true
     AttackSpeed: 2
