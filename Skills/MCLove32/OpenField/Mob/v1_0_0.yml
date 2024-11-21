@@ -363,15 +363,15 @@ OpenField_Enemy_エリミネーター_MCLove32_Damaged_Skills_Process:
   - sound{s=item.totem.use;p=2;v=0.5} @self
   - damage{a=50;ii=true;pi=true;e=GREEN} @EIR{r=10;c=[ - (isPlayer || faction{f=Guard}) true ]}
 
-OpenField_Enemy_モフィモ_ゾ_MCLove32_Skills: 
+OpenField_Enemy_モフィモス_MCLove32_Skills: 
   Cooldown: 1
   Conditions:
-  - children{a=<10} orElseCast OpenField_Enemy_モフィモ_ゾ_MCLove32_Skill_Process
+  - children{a=<10} orElseCast OpenField_Enemy_モフィモス_MCLove32_Skill_Process
   - incombat
   Skills:
   - summon{t=OpenField_Enemy_モフィモ_ゾラール_MCLove32;a=1;r=8} @self 
   - delay 21
-  - skill:OpenField_Enemy_モフィモ_ゾ_MCLove32_Skills @self 
+  - skill:OpenField_Enemy_モフィモス_MCLove32_Skills @self 
 
 OpenField_Enemy_モフィモ_ゾラ_MCLove32_Skills:
   Cooldown: 10
@@ -398,13 +398,13 @@ OpenField_Enemy_モフィモ_ゾラ_MCLove32_Skills:
   - delay 200
   - skill:OpenField_Enemy_モフィモ_ゾラ_MCLove32_Skills @self 
 
-OpenField_Enemy_モフィモ_ゾ_MCLove32_Skill_Process:
+OpenField_Enemy_モフィモス_MCLove32_Skill_Process:
   Conditions:
   - incombat
   Skills:     
-  - skill:OpenField_Enemy_モフィモ_ゾ_MCLove32_Skill_Process_Shot @self 0.1
-  - skill:OpenField_Enemy_モフィモ_ゾ_MCLove32_Skill_Process_Shot{repeatI=1;repeat=4} @self 0.01
-  - skill:OpenField_Enemy_モフィモ_ゾ_MCLove32_Skill_Process_Shot{repeatI=5;repeat=19} @self 0.005
+  - skill:OpenField_Enemy_モフィモス_MCLove32_Skill_Process_Shot @self 0.1
+  - skill:OpenField_Enemy_モフィモス_MCLove32_Skill_Process_Shot{repeatI=1;repeat=4} @self 0.01
+  - skill:OpenField_Enemy_モフィモス_MCLove32_Skill_Process_Shot{repeatI=5;repeat=19} @self 0.005
   - leap{v=150;repeat=5;repeati=20} @T 0.05
   - leap{v=80;repeat=5;repeati=10} @T 0.05
   - leap{v=200;repeat=2;repeati=20} @T 0.1
@@ -412,7 +412,7 @@ OpenField_Enemy_モフィモ_ゾ_MCLove32_Skill_Process:
   - leap{v=200} @T 0.3
   - leap{v=125} @T 0.5
   
-OpenField_Enemy_モフィモ_ゾ_MCLove32_Skill_Process_Shot:
+OpenField_Enemy_モフィモス_MCLove32_Skill_Process_Shot:
   Skills:
   - projectile{
     oh=[

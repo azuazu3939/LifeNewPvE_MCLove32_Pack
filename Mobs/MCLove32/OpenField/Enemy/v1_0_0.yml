@@ -625,9 +625,9 @@ OpenField_Enemy_エリミネーター_MCLove32:
     Color: PURPLE
     Style: SEGMENTED_12
 
-OpenField_Enemy_モフィモ_ゾ_MCLove32:
+OpenField_Enemy_モフィモス_MCLove32:
   Type: wither_skeleton
-  Display: "&7&lモフィモ・ゾ"
+  Display: "&7&lモフィモス"
   Health: 1000
   Damage: 32
   Armor: 80
@@ -673,14 +673,14 @@ OpenField_Enemy_モフィモ_ゾ_MCLove32:
   Skills:
   - raidBoss @self ~onSpawn 
   - remove @children ~onDeath 
-  - attribute{attr=GENERIC_FOLLOW_RANGE;a=64} @self ~onEntercombat 
+  - attribute{attr=GENERIC_FOLLOW_RANGE;a=48} @self ~onEntercombat 
   - attribute{attr=GENERIC_FOLLOW_RANGE;a=24} @self ~onDropcombat 
-  - skill:OpenField_Enemy_モフィモ_ゾ_MCLove32_Skills @self ~onEntercombat
-  - skill:OpenField_Enemy_モフィモ_ゾ_MCLove32_Skills @self ~onDamaged 
-  - cmd{c="mlg <target.name> OpenField_Armor_エリミネーターH_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.025
-  - cmd{c="mlg <target.name> OpenField_Armor_エリミネーターC_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.025
-  - cmd{c="mlg <target.name> OpenField_Armor_エリミネーターL_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.025
-  - cmd{c="mlg <target.name> OpenField_Armor_エリミネーターB_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.025
+  - skill:OpenField_Enemy_モフィモス_MCLove32_Skills @self ~onEntercombat
+  - skill:OpenField_Enemy_モフィモス_MCLove32_Skills @self ~onDamaged 
+  - cmd{c="mlg <target.name> OpenField_Armor_モフィモスH_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.025
+  - cmd{c="mlg <target.name> OpenField_Armor_モフィモスC_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.025
+  - cmd{c="mlg <target.name> OpenField_Armor_モフィモスL_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.025
+  - cmd{c="mlg <target.name> OpenField_Armor_モフィモスB_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.025
   - cmd{c="lmg <target.name> 500 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
   BossBar:
     Enabled: true
@@ -718,8 +718,6 @@ OpenField_Enemy_モフィモ_ゾラ_MCLove32:
     Invisible: true
   Modules:
     ThreatTable: true
-  Drops:
-  - exp 10
   DamageModifiers:
   - SUFFOCATION 0
   - FALL 0
@@ -771,8 +769,6 @@ OpenField_Enemy_モフィモ_ゾラノ_MCLove32:
     Invisible: true
   Modules:
     ThreatTable: true
-  Drops:
-  - exp 10
   DamageModifiers:
   - SUFFOCATION 0
   - FALL 0

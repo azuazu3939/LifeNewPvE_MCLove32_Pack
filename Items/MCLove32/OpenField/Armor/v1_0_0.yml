@@ -209,7 +209,7 @@ OpenField_Armor_エリミネーターH_MCLove32:
   Attributes:
     Head:
       Damage: 6 ADD 
-      Health: 6 ADD 
+      Health: 8 ADD 
       ArmorToughness: 12 ADD 
       Armor: 20 ADD 
   NBT:
@@ -287,3 +287,83 @@ OpenField_Armor_エリミネーターB_MCLove32:
   NBT:
     PublicBukkitValues:
       lifenewpve:max_mana: "50"
+
+OpenField_Armor_モフィモスH_MCLove32:
+  Id: netherite_helmet
+  Display: "&eモフィモスヘルメット"
+  Lore: []
+  Model: 1000
+  Options:
+    Destroy: false
+    CancelDamage: true
+    ItemVersion: 1
+    Unbreakable: true
+  Attributes:
+    Head:
+      Damage: 1 ADD 
+      Health: 4 ADD 
+      ArmorToughness: 8 ADD 
+      Armor: 12.5 ADD 
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:max_mana: "125"
+
+OpenField_Armor_モフィモスC_MCLove32:
+  Id: netherite_chestplate
+  Display: "&eモフィモスチェストプレート"
+  Lore: []
+  Model: 1000
+  Options:
+    Destroy: false
+    CancelDamage: true
+    ItemVersion: 1
+    Unbreakable: true
+  Attributes:
+    Chest:
+      Damage: 1 ADD 
+      Health: 4 ADD 
+      ArmorToughness: 8 ADD 
+      Armor: 15 ADD 
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:max_mana: "100"
+
+OpenField_Armor_モフィモスL_MCLove32:
+  Id: netherite_leggings
+  Display: "&eモフィモスレギンス"
+  Lore: []
+  Model: 1000
+  Options:
+    Destroy: false
+    CancelDamage: true
+    ItemVersion: 1
+    Unbreakable: true
+  Attributes:
+    Legs:
+      Damage: 1 ADD 
+      Health: 4 ADD 
+      ArmorToughness: 8 ADD 
+      Armor: 15 ADD 
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:max_mana: "100"
+
+OpenField_Armor_モフィモスB_MCLove32:
+  Id: netherite_boots
+  Display: "&eモフィモスブーツ"
+  Lore: []
+  Model: 1000
+  Options:
+    Destroy: false
+    CancelDamage: true
+    ItemVersion: 1
+    Unbreakable: true
+  Attributes:
+    Feet:
+      Damage: 1 ADD 
+      Health: 4 ADD 
+      ArmorToughness: 8 ADD 
+      Armor: 12.5 ADD 
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:max_mana: "125"
