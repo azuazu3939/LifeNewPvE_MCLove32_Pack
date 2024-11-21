@@ -264,3 +264,96 @@ OpenField_Enemy_ワイルドハンター_MCLove32_Skill_Pain:
   - damage{a=12;pi=;ii=true}
   - delay 5
   - skill:OpenField_Enemy_ワイルドハンター_MCLove32_Skill_Pain
+
+OpenField_Enemy_エリミネーター_MCLove32_Skills:
+  Conditions:
+  - incombat
+  Skills:
+  - projectile{
+    os=[
+      - sound{s=item.trident.return;p=1} @self
+      - sound{s=block.grindstone.use;p=2} @self
+    ];
+    ot=[
+      - e:p{p=crit;a=3;vs=0.5;hs=0.5} @origin
+      - e:p{p=sweep_attack;a=2;vs=0.25;hs=0.25} @origin
+      - e:p{p=enchant;a=5;vs=1;hs=1} @origin
+    ];
+    oh=[
+      - damage{a=20;ii=true;pi=true}
+      - potion{t=SLOW;d=50;l=0;p=false}
+    ];
+    conditions=[
+      - (isPlayer || faction{f=Guard}) true
+    ];
+    bulletType=DISPLAY;mat=diamond_sword;scale=1.5,1.5,1.5;yaw=3.14;pitch=1.57;roll=0.785;
+    v=12;i=1;vr=1.5;hr=1.5;mr=30;
+    ;repeat=6;repeatI=10} @TL 
+  - delay <random.20to100>
+  - skill:OpenField_Enemy_エリミネーター_MCLove32_Skill_Knife @self 
+  - delay 200
+  - skill:OpenField_Enemy_エリミネーター_MCLove32_Skills @self
+
+OpenField_Enemy_エリミネーター_MCLove32_Skill_Knife:
+  Skills:
+  - projectile{
+    ot=[
+      - e:p{p=crit;a=3;vs=0.5;hs=0.5} @origin
+      - e:p{p=sweep_attack;a=2;vs=0.25;hs=0.25} @origin
+      - e:p{p=enchant;a=5;vs=1;hs=1} @origin
+      - skill:OpenField_Enemy_エリミネーター_MCLove32_Skill_DeathField @self 0.01
+    ];
+    oh=[
+      - damage{a=40;ii=true;pi=true}
+      - sound{s=entity.blaze.hurt;p=2;v=0.5} 
+    ];
+    conditions=[
+      - (isPlayer || faction{f=Guard}) true
+    ];
+    bulletType=DISPLAY;mat=netherite_sword;scale=1.5,1.5,1.5;yaw=3.14;pitch=1.57;roll=0.785;
+    v=15;i=1;vr=1.5;hr=1.5;mr=20;repeat=3;repeatI=5} @TL
+
+OpenField_Enemy_エリミネーター_MCLove32_Skill_DeathField:
+  Cooldown: 15
+  Skills:
+  - delay 100
+  - sound{s=entity.wither.spawn;p=2;v=2} @self
+  - potion{t=SLOW;l=7;d=80;p=false} @self 
+  - healpercent{m=0.1} @self 
+  - stun{d=80;cotd=true;cosu=true;cot=true} @self
+  - e:ps{p=barrier;a=20;radius=12;repeat=3;repeati=20} @self
+  - delay 60
+  - skill{
+    s=[
+      - sound{s=entity.wither.break_block;v=0.75} @self
+      - shieldbreak{duration=600}
+      - damage{a=200;ii=true;pi=true;e=GREEN} @EIR{r=10;c=[ - (isPlayer || faction{f=Guard}) true ]}
+    ];repeat=10;repeati=2} @self 
+  
+
+OpenField_Enemy_エリミネーター_MCLove32_Damaged_Skills: 
+  Cooldown: 10
+  Conditions:
+  - incombat
+  - hppercent{p=<80%} true
+  Skills:
+  - sound{s=item.totem.use;p=2;v=0.5} @self
+  - delay 10
+  - sound{s=item.totem.use;p=2;v=0.5} @self
+  - delay 10
+  - teleport @T{c=[ - (isPlayer || faction{f=Guard}) true - ]} ?targetwithin{d=64}
+  - sound{s=item.totem.use;p=2;v=0.5} @self
+  - delay 40
+  - skill:OpenField_Enemy_エリミネーター_MCLove32_Damaged_Skills_Process{repeat=2;repeatI=30}
+  - delay 10
+  - skill:OpenField_Enemy_エリミネーター_MCLove32_Damaged_Skills_Process{repeat=2;repeatI=30}
+
+OpenField_Enemy_エリミネーター_MCLove32_Damaged_Skills_Process:
+  Skills:
+  - sound{s=item.totem.use;p=2} @self
+  - sound{s=item.totem.use;p=2;v=0.5} @self
+  - damage{a=30;ii=true;pi=true;e=GREEN} @EIR{r=10;c=[ - (isPlayer || faction{f=Guard}) true ]}
+  - delay 5
+  - sound{s=item.totem.use;p=2} @self
+  - sound{s=item.totem.use;p=2;v=0.5} @self
+  - damage{a=50;ii=true;pi=true;e=GREEN} @EIR{r=10;c=[ - (isPlayer || faction{f=Guard}) true ]}

@@ -191,3 +191,92 @@ OpenField_Armor_イルドーナB_MCLove32:
       ArmorToughness: 7 ADD
       Damage: 2 ADD 
   Group: 'Armor'
+
+OpenField_Armor_エリミネーターH_MCLove32:
+  Id: player_head
+  Display: '&eエリミネーターヘッド'
+  Lore: []
+  Model: 1000
+  Options:
+    Destroy: false
+    CancelDamage: true
+    ItemVersion: 1
+    Unbreakable: true
+    SkinTexture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODBkNzkyMjAxZmRjZTkxZTg4NGZmMzJhMDZkZDRjYzdjZDk4MzgyMmIxNjVkNDUzZWNjYjRjNjBhZWRjM2JhYSJ9fX0
+  Attributes:
+    Head:
+      Damage: 6 ADD 
+      Health: 6 ADD 
+      ArmorToughness: 12 ADD 
+      Armor: 20 ADD 
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:max_mana: "100"
+  Skills:
+  - skill:OpenField_Armor_エリミネーターFull_MCLove32 @self ~onAttack 
+  - skill:OpenField_Armor_エリミネーターFull_MCLove32 @self ~onDamaged 
+  - skill:OpenField_Armor_エリミネーターFull_MCLove32 @self ~onUse
+  - skill:OpenField_Armor_エリミネーターFull_MCLove32 @self ~onSwing
+
+OpenField_Armor_エリミネーターC_MCLove32:
+  Id: leather_chestplate
+  Display: '&eエリミネーターチェストプレート'
+  Lore: []
+  Model: 1000
+  Options:
+    Destroy: false
+    CancelDamage: true
+    ItemVersion: 1
+    Unbreakable: true
+    Color: GRAY
+  Attributes:
+    Chest:
+      Damage: 3 ADD 
+      Health: 4 ADD 
+      ArmorToughness: 6 ADD 
+      Armor: 10 ADD 
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:max_mana: "50"
+
+OpenField_Armor_エリミネーターL_MCLove32:
+  Id: leather_leggings
+  Display: '&eエリミネーターレギンス'
+  Lore: []
+  Model: 1000
+  Options:
+    Destroy: false
+    CancelDamage: true
+    ItemVersion: 1
+    Unbreakable: true
+    Color: GRAY
+  Attributes:
+    Legs:
+      Damage: 3 ADD 
+      Health: 4 ADD 
+      ArmorToughness: 6 ADD 
+      Armor: 10 ADD 
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:max_mana: "50"
+
+OpenField_Armor_エリミネーターB_MCLove32:
+  Id: leather_boots
+  Display: '&eエリミネーターブーツ'
+  Lore: []
+  Model: 1000
+  Options:
+    Destroy: false
+    CancelDamage: true
+    ItemVersion: 1
+    Unbreakable: true
+    Color: GRAY
+  Attributes:
+    Feet:
+      Damage: 3 ADD 
+      Health: 4 ADD 
+      ArmorToughness: 6 ADD 
+      Armor: 10 ADD 
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:max_mana: "50"

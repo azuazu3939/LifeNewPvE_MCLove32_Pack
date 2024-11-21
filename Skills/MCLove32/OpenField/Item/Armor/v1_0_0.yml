@@ -1,0 +1,10 @@
+OpenField_Armor_エリミネーターFull_MCLove32: 
+  Cooldown: 10
+  Conditions:
+  - wearing{s=HEAD;m=OpenField_Armor_エリミネーターH_MCLove32}
+  - wearing{s=CHEST;m=OpenField_Armor_エリミネーターC_MCLove32}
+  - wearing{s=LEGS;m=OpenField_Armor_エリミネーターL_MCLove32}
+  - wearing{s=FEET;m=OpenField_Armor_エリミネーターB_MCLove32}
+  Skills:
+  - modifyMana{a=0.1;m=true} @self 
+  - potion{t=SPEED;l=1;d=100;p=false} @self
