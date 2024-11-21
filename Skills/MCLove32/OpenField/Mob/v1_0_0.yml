@@ -362,3 +362,35 @@ OpenField_Enemy_エリミネーター_MCLove32_Damaged_Skills_Process:
   - sound{s=item.totem.use;p=2} @self
   - sound{s=item.totem.use;p=2;v=0.5} @self
   - damage{a=50;ii=true;pi=true;e=GREEN} @EIR{r=10;c=[ - (isPlayer || faction{f=Guard}) true ]}
+
+OpenField_Enemy_モフィモ_ゾ_MCLove32_Skills: 
+  Cooldown: 2
+  Conditions:
+  - children{a=<15}
+  - incombat
+  Skills:
+  - summon{t=OpenField_Enemy_モフィモ_ゾラール_MCLove32;a=1;r=8} @self 
+  - delay 50
+  - skill:OpenField_Enemy_モフィモ_ゾ_MCLove32_Skills @self 
+
+OpenField_Enemy_モフィモ_ゾラ_MCLove32_Skills:
+  Skills:
+  - setVar{var=skill.rot;val="<random.0to360> - 180";t=INTEGER} @self 
+  - setrotation{y=<skill.var.rot>;p=<random.-45to45>} @self
+  - delay 1
+  - missile{
+    ot=[
+      - modifyprojectile{t=INERTIA;a=MULTIPLY;v=1.01} @self 
+      - teleport @origin
+    ];
+    oh=[
+      - damage{a=<caster.damage>;pi=true;ii=true}
+      - throw{v=3;vy=5}
+    ];
+    oe=[
+      - skill:OpenField_Enemy_モフィモ_ゾラ_MCLove32_Skills @self 
+    ];
+    v=12;in=<random.8to10>;i=1;se=false;sb=false;md=200;mr=64;sfo=0;syo=0;
+    conditions=[
+      - (isPlayer || faction{f=Guard}) true
+    ]} @parent
