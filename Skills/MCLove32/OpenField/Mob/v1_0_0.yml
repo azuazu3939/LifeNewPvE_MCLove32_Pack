@@ -404,7 +404,5 @@ OpenField_Enemy_モフィモ_ゾ_MCLove32_Skill_Process:
   Skills:
   - sudoskill{
     s=[
-      - setTarget @T
-      - delay 200
-      - setTarget @self 
+      - setTarget @NearestPlayer{r=32}
     ]} @MIR{r=48;t=OpenField_Enemy_モフィモ_ゾラール_MCLove32,OpenField_Enemy_モフィモ_ゾラ_MCLove32;limit=5;sort=RANDOM}
