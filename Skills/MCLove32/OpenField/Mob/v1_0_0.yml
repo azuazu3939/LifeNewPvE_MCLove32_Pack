@@ -391,7 +391,7 @@ OpenField_Enemy_モフィモ_ゾラ_MCLove32_Skills:
     oe=[
       - skill:OpenField_Enemy_モフィモ_ゾラ_MCLove32_Skills @self 
     ];
-    v=12;in=<random.8to10>;i=1;se=false;sb=false;md=210;mr=64;sfo=0;syo=0;
+    v=18;in=<random.12to15>;i=1;se=false;sb=false;md=205;mr=64;sfo=0;syo=0;
     conditions=[
       - (isPlayer || faction{f=Guard}) true
     ]} @NearestPlayer{r=32}
