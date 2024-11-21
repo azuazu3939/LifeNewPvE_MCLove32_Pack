@@ -405,12 +405,10 @@ OpenField_Enemy_モフィモス_MCLove32_Skill_Process:
   - skill:OpenField_Enemy_モフィモス_MCLove32_Skill_Process_Shot @self 0.1
   - skill:OpenField_Enemy_モフィモス_MCLove32_Skill_Process_Shot{repeatI=1;repeat=4} @self 0.01
   - skill:OpenField_Enemy_モフィモス_MCLove32_Skill_Process_Shot{repeatI=5;repeat=19} @self 0.005
-  - leap{v=150;repeat=5;repeati=20} @T 0.05
-  - leap{v=80;repeat=5;repeati=10} @T 0.05
-  - leap{v=200;repeat=2;repeati=20} @T 0.1
-  - leap{v=125;repeat=2;repeati=10} @T 0.1
-  - leap{v=200} @T 0.3
-  - leap{v=125} @T 0.5
+  - leap{v=150;repeat=1;repeati=20} @T 0.15
+  - leap{v=100;repeat=1;repeati=10} @T 0.15
+  - leap{v=150} @T 0.3
+  - leap{v=100} @T 0.6
   
 OpenField_Enemy_モフィモス_MCLove32_Skill_Process_Shot:
   Skills:
