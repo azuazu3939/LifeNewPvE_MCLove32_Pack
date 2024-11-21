@@ -742,3 +742,47 @@ OpenField_Enemy_モフィモ_ゾラール_MCLove32:
   - summon{t=OpenField_Enemy_モフィモ_ゾラ_MCLove32;a=2;r=0} @self ~onSpawn 
   - remove @children ~onDeath 
 
+OpenField_Enemy_モフィモ_ゾラノ_MCLove32:
+  Type: baby_zombie
+  Health: 100
+  Damage: 25
+  Armor: 0
+  Equipment:
+  - player_head{skulltexture=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjQwOWM0ZmE1YzQzNTJhZDAzZDM0ZDE1MTBjMDdkY2E3M2YwZmNiZDRhZDQ2MDQxMWFmZTY5NjAxOTExMDMyNiJ9fX0} HEAD
+  Options:
+    Collidable: true 
+    DigOutOfGround: false
+    FollowRange: 48
+    Despawn: true 
+    KnockbackResistance: 1
+    NoDamageTicks: 0
+    NoAI: false
+    #PassthroughDamage: true
+    NoGravity: true
+    AttackSpeed: 2
+    #NoGravity: true
+    PreventMobKillDrops: true 
+    PreventRandomEquipment: true 
+    PreventSunburn: true
+    PreventVanillaDamage: true 
+    Silent: true 
+    MovementSpeed: 0.0001
+    Scale: 1.5
+    Invisible: true
+  Modules:
+    ThreatTable: true
+  Drops:
+  - exp 10
+  DamageModifiers:
+  - SUFFOCATION 0
+  - FALL 0
+  AITargetSelectors:
+  - clear
+  - attacker
+  - players 
+  AIGoalSelectors:
+  - randomstroll
+  - gotoowner
+  - meleeattack
+  Skills:
+  - remove{delay=105} @self ~onSpawn
