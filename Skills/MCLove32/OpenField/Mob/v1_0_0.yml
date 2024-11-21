@@ -276,7 +276,6 @@ OpenField_Enemy_エリミネーター_MCLove32_Skills:
   - skill:OpenField_Enemy_エリミネーター_MCLove32_Skill_Knife_N @TL
   - skill:OpenField_Enemy_エリミネーター_MCLove32_Skill_Knife_N @EIR{r=32;limit=5;sort=RANDOM;c=[ - (isPlayer || faction{f=Guard}) true ]} 0.1
   - delay 200
-  - healpercent{m=0.05} @self
   - skill:OpenField_Enemy_エリミネーター_MCLove32_Skills @self
 
 OpenField_Enemy_エリミネーター_MCLove32_Skill_Knife_D:
@@ -327,7 +326,6 @@ OpenField_Enemy_エリミネーター_MCLove32_Skill_DeathField:
   - delay 100
   - sound{s=entity.wither.spawn;p=2;v=2} @self
   - potion{t=SLOW;l=7;d=80;p=false} @self 
-  - healpercent{m=0.1} @self 
   - e:p{p=block_marker;m=barrier;a=1;repeat=3;repeatI=20} @sphere{r=10;points=60}
   - delay 60
   - skill{
