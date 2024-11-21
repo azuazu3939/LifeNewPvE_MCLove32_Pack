@@ -400,6 +400,7 @@ OpenField_Enemy_モフィモ_ゾラ_MCLove32_Skills:
   - skill:OpenField_Enemy_モフィモ_ゾラ_MCLove32_Skills @self 
 
 OpenField_Enemy_モフィモ_ゾ_MCLove32_Skill_Process:
+  Cooldown: 5
   Skills:
   - sudoskill{
     s=[
