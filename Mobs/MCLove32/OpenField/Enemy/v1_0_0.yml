@@ -590,7 +590,7 @@ OpenField_Enemy_エリミネーター_MCLove32:
     PreventSunburn: true
     PreventVanillaDamage: true 
     Silent: true 
-    MovementSpeed: 0.35
+    MovementSpeed: 0.22
     Scale: 1
   Modules:
     ThreatTable: true
