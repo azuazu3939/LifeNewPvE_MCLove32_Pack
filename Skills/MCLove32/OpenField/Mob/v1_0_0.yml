@@ -266,8 +266,20 @@ OpenField_Enemy_ワイルドハンター_MCLove32_Skill_Pain:
   - skill:OpenField_Enemy_ワイルドハンター_MCLove32_Skill_Pain
 
 OpenField_Enemy_エリミネーター_MCLove32_Skills:
+  Cooldown: 5
   Conditions:
   - incombat
+  Skills:
+  - skill:OpenField_Enemy_エリミネーター_MCLove32_Skill_Knife_D @TL
+  - skill:OpenField_Enemy_エリミネーター_MCLove32_Skill_Knife_D @EIR{r=32;limit=5;sort=RANDOM;c=[ - (isPlayer || faction{f=Guard}) true ]} 0.15
+  - delay <random.20to100>
+  - skill:OpenField_Enemy_エリミネーター_MCLove32_Skill_Knife_N @TL
+  - skill:OpenField_Enemy_エリミネーター_MCLove32_Skill_Knife_N @EIR{r=32;limit=5;sort=RANDOM;c=[ - (isPlayer || faction{f=Guard}) true ]} 0.1
+  - delay 200
+  - healpercent{m=0.05} @self
+  - skill:OpenField_Enemy_エリミネーター_MCLove32_Skills @self
+
+OpenField_Enemy_エリミネーター_MCLove32_Skill_Knife_D:
   Skills:
   - projectile{
     os=[
@@ -288,14 +300,9 @@ OpenField_Enemy_エリミネーター_MCLove32_Skills:
     ];
     bulletType=DISPLAY;mat=diamond_sword;scale=1.5,1.5,1.5;yaw=3.14;pitch=1.57;roll=0.785;
     v=10;i=1;vr=1.5;hr=1.5;mr=30;
-    ;repeat=6;repeatI=10} @TL 
-  - delay <random.20to100>
-  - skill:OpenField_Enemy_エリミネーター_MCLove32_Skill_Knife @self 
-  - delay 200
-  - healpercent{m=0.05} @self
-  - skill:OpenField_Enemy_エリミネーター_MCLove32_Skills @self
+    ;repeat=6;repeatI=10} 
 
-OpenField_Enemy_エリミネーター_MCLove32_Skill_Knife:
+OpenField_Enemy_エリミネーター_MCLove32_Skill_Knife_N:
   Skills:
   - projectile{
     ot=[
@@ -312,7 +319,7 @@ OpenField_Enemy_エリミネーター_MCLove32_Skill_Knife:
       - (isPlayer || faction{f=Guard}) true
     ];
     bulletType=DISPLAY;mat=netherite_sword;scale=1.5,1.5,1.5;yaw=3.14;pitch=1.57;roll=0.785;
-    v=12;i=1;vr=1.5;hr=1.5;mr=20;repeat=3;repeatI=5} @TL
+    v=12;i=1;vr=1.5;hr=1.5;mr=20;repeat=3;repeatI=5} 
 
 OpenField_Enemy_エリミネーター_MCLove32_Skill_DeathField:
   Cooldown: 15
