@@ -292,6 +292,7 @@ OpenField_Enemy_エリミネーター_MCLove32_Skills:
   - delay <random.20to100>
   - skill:OpenField_Enemy_エリミネーター_MCLove32_Skill_Knife @self 
   - delay 200
+  - healpercent{m=0.05} @self
   - skill:OpenField_Enemy_エリミネーター_MCLove32_Skills @self
 
 OpenField_Enemy_エリミネーター_MCLove32_Skill_Knife:

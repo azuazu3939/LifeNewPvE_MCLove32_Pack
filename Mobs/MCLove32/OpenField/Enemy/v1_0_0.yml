@@ -567,7 +567,7 @@ OpenField_Enemy_エリミネーター_MCLove32:
   Display: "&7&lエリミネーター"
   Health: 1500
   Damage: 40
-  Armor: 30
+  Armor: 50
   Equipment:
   - OpenField_Armor_エリミネーターH_MCLove32 HEAD 
   - OpenField_Armor_エリミネーターC_MCLove32 CHEST
@@ -580,7 +580,7 @@ OpenField_Enemy_エリミネーター_MCLove32:
     DigOutOfGround: true 
     FollowRange: 24
     Despawn: true 
-    KnockbackResistance: 0
+    KnockbackResistance: 1
     NoDamageTicks: 0
     NoAI: false 
     AttackSpeed: 2
@@ -589,9 +589,9 @@ OpenField_Enemy_エリミネーター_MCLove32:
     PreventRandomEquipment: true 
     PreventSunburn: true
     PreventVanillaDamage: true 
-    #Silent: false 
-    MovementSpeed: 0.3
-    Scale: 1.5
+    Silent: true 
+    MovementSpeed: 0.35
+    Scale: 1
   Drops:
   - exp 1000
   Skills:

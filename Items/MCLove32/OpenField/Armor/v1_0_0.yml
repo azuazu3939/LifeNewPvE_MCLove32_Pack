@@ -195,7 +195,8 @@ OpenField_Armor_イルドーナB_MCLove32:
 OpenField_Armor_エリミネーターH_MCLove32:
   Id: player_head
   Display: '&eエリミネーターヘッド'
-  Lore: []
+  Lore: 
+  - "&4&l砥石使用不可"
   Model: 1000
   Options:
     Destroy: false
@@ -203,6 +204,8 @@ OpenField_Armor_エリミネーターH_MCLove32:
     ItemVersion: 1
     Unbreakable: true
     SkinTexture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODBkNzkyMjAxZmRjZTkxZTg4NGZmMzJhMDZkZDRjYzdjZDk4MzgyMmIxNjVkNDUzZWNjYjRjNjBhZWRjM2JhYSJ9fX0
+  Enchantments:
+  - PROTECTION 4
   Attributes:
     Head:
       Damage: 6 ADD 
@@ -212,6 +215,7 @@ OpenField_Armor_エリミネーターH_MCLove32:
   NBT:
     PublicBukkitValues:
       lifenewpve:max_mana: "100"
+      lifenewpve:prevent_grindstone: "true"
   Skills:
   - skill:OpenField_Armor_エリミネーターFull_MCLove32 @self ~onAttack 
   - skill:OpenField_Armor_エリミネーターFull_MCLove32 @self ~onDamaged 
@@ -221,14 +225,17 @@ OpenField_Armor_エリミネーターH_MCLove32:
 OpenField_Armor_エリミネーターC_MCLove32:
   Id: leather_chestplate
   Display: '&eエリミネーターチェストプレート'
-  Lore: []
-  Model: 1000
+  Lore: 
+  - "&4&l砥石使用不可"
+  Model: 1003
   Options:
     Destroy: false
     CancelDamage: true
     ItemVersion: 1
     Unbreakable: true
     Color: GRAY
+  Enchantments:
+  - PROTECTION 4
   Attributes:
     Chest:
       Damage: 3 ADD 
@@ -238,18 +245,22 @@ OpenField_Armor_エリミネーターC_MCLove32:
   NBT:
     PublicBukkitValues:
       lifenewpve:max_mana: "50"
+      lifenewpve:prevent_grindstone: "true"
 
 OpenField_Armor_エリミネーターL_MCLove32:
   Id: leather_leggings
   Display: '&eエリミネーターレギンス'
-  Lore: []
-  Model: 1000
+  Lore: 
+  - "&4&l砥石使用不可"
+  Model: 1003
   Options:
     Destroy: false
     CancelDamage: true
     ItemVersion: 1
     Unbreakable: true
     Color: GRAY
+  Enchantments:
+  - PROTECTION 4
   Attributes:
     Legs:
       Damage: 3 ADD 
@@ -259,18 +270,22 @@ OpenField_Armor_エリミネーターL_MCLove32:
   NBT:
     PublicBukkitValues:
       lifenewpve:max_mana: "50"
+      lifenewpve:prevent_grindstone: "true"
 
 OpenField_Armor_エリミネーターB_MCLove32:
   Id: leather_boots
   Display: '&eエリミネーターブーツ'
-  Lore: []
-  Model: 1000
+  Lore: 
+  - "&4&l砥石使用不可"
+  Model: 1003
   Options:
     Destroy: false
     CancelDamage: true
     ItemVersion: 1
     Unbreakable: true
     Color: GRAY
+  Enchantments:
+  - PROTECTION 4
   Attributes:
     Feet:
       Damage: 3 ADD 
@@ -280,3 +295,4 @@ OpenField_Armor_エリミネーターB_MCLove32:
   NBT:
     PublicBukkitValues:
       lifenewpve:max_mana: "50"
+      lifenewpve:prevent_grindstone: "true"
