@@ -399,29 +399,28 @@ OpenField_Enemy_モフィモ_ゾラ_MCLove32_Skills:
   - skill:OpenField_Enemy_モフィモ_ゾラ_MCLove32_Skills @self 
 
 OpenField_Enemy_モフィモ_ゾ_MCLove32_Skill_Process:
-  Cooldown: 5
   Conditions:
   - incombat
+  Skills:     
+  - skill:OpenField_Enemy_モフィモ_ゾ_MCLove32_Skill_Process_Shot @self 0.1
+  - skill:OpenField_Enemy_モフィモ_ゾ_MCLove32_Skill_Process_Shot{repeatI=1;repeat=4} @self 0.01
+  - skill:OpenField_Enemy_モフィモ_ゾ_MCLove32_Skill_Process_Shot{repeatI=5;repeat=19} @self 0.005
+  - leap{v=150;repeat=5;repeati=20} @T 0.05
+  - leap{v=80;repeat=5;repeati=10} @T 0.05
+  - leap{v=200;repeat=2;repeati=20} @T 0.1
+  - leap{v=125;repeat=2;repeati=10} @T 0.1
+  - leap{v=200} @T 0.3
+  - leap{v=125} @T 0.5
+  
+OpenField_Enemy_モフィモ_ゾ_MCLove32_Skill_Process_Shot:
   Skills:
-  - missile{
-    ot=[
-      - teleport @origin
-      - projectile{
-        oh=[
-          - damage{a=<caster.damage>;pi=true;ii=true}
-          - throw{v=3;vy=5}
-        ];
-        conditions=[
-          - (isPlayer || faction{f=Guard}) true
-        ]
-        bulletType=MOB;mob=OpenField_Enemy_モフィモ_ゾラノ_MCLove32;
-        v=15;in=10;i=1;se=false;sb=false;md=105;mr=128;sfo=0;syo=0} @TL 0.01
-    ];
+  - projectile{
     oh=[
       - damage{a=<caster.damage>;pi=true;ii=true}
       - throw{v=3;vy=5}
     ];
-    v=6;in=15;i=1;se=false;sb=false;md=105;mr=128;sfo=0;syo=0;
     conditions=[
       - (isPlayer || faction{f=Guard}) true
-    ]} @T
+    ]
+    bulletType=MOB;mob=OpenField_Enemy_モフィモ_ゾラノ_MCLove32;
+    v=12;i=1;se=false;sb=false;md=105;mr=128;sfo=<random.-5to5>;syo=<random.0to5>;sso=<random.-5to5>;hn=3;vn=3} @TL 
