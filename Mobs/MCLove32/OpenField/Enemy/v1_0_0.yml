@@ -691,7 +691,7 @@ OpenField_Enemy_モフィモ_ゾ_MCLove32:
 
 OpenField_Enemy_モフィモ_ゾラ_MCLove32:
   Type: baby_zombie
-  Health: 100
+  Health: 200
   Damage: 25
   Armor: 0
   Equipment:
@@ -737,14 +737,14 @@ OpenField_Enemy_モフィモ_ゾラ_MCLove32:
 OpenField_Enemy_モフィモ_ゾラール_MCLove32:
   Template: OpenField_Enemy_モフィモ_ゾラ_MCLove32
   Type: baby_zombie
-  Health: 120
+  Health: 250
   Skills:
   - summon{t=OpenField_Enemy_モフィモ_ゾラ_MCLove32;a=2;r=0} @self ~onSpawn 
   - remove @children ~onDeath 
 
 OpenField_Enemy_モフィモ_ゾラノ_MCLove32:
   Type: baby_zombie
-  Health: 100
+  Health: 200
   Damage: 25
   Armor: 0
   Equipment:
