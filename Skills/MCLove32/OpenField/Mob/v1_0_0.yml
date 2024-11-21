@@ -321,7 +321,7 @@ OpenField_Enemy_エリミネーター_MCLove32_Skill_DeathField:
   - sound{s=entity.wither.spawn;p=2;v=2} @self
   - potion{t=SLOW;l=7;d=80;p=false} @self 
   - healpercent{m=0.1} @self 
-  - e:p{p=barrier;a=1;repeat=3;repeatI=20} @sphere{r=10;points=30}
+  - e:p{p=block_marker;m=barrier;a=1;repeat=3;repeatI=20} @sphere{r=10;points=30}
   - delay 60
   - skill{
     s=[
