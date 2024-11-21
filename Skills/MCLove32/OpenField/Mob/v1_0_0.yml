@@ -394,6 +394,6 @@ OpenField_Enemy_モフィモ_ゾラ_MCLove32_Skills:
     v=18;in=<random.12to15>;i=1;se=false;sb=false;md=205;mr=64;sfo=0;syo=0;
     conditions=[
       - (isPlayer || faction{f=Guard}) true
-    ]} @NearestPlayer{r=32}
+    ]} @parent
   - delay 200
   - skill:OpenField_Enemy_モフィモ_ゾラ_MCLove32_Skills @self 
