@@ -366,7 +366,7 @@ OpenField_Enemy_エリミネーター_MCLove32_Damaged_Skills_Process:
 OpenField_Enemy_モフィモ_ゾ_MCLove32_Skills: 
   Cooldown: 2
   Conditions:
-  - children{a=<15}
+  - children{a=<5} orElseCast OpenField_Enemy_モフィモ_ゾ_MCLove32_Skill_Process
   - incombat
   Skills:
   - summon{t=OpenField_Enemy_モフィモ_ゾラール_MCLove32;a=1;r=8} @self 
@@ -378,6 +378,7 @@ OpenField_Enemy_モフィモ_ゾラ_MCLove32_Skills:
   Skills:
   - setVar{var=skill.rot;val="<random.0to360> - 180";t=INTEGER} @self 
   - setrotation{y=<skill.var.rot>;p=<random.-45to45>} @self
+  - setTarget @parent
   - delay 1
   - missile{
     ot=[
@@ -391,9 +392,18 @@ OpenField_Enemy_モフィモ_ゾラ_MCLove32_Skills:
     oe=[
       - skill:OpenField_Enemy_モフィモ_ゾラ_MCLove32_Skills @self 
     ];
-    v=18;in=<random.12to15>;i=1;se=false;sb=false;md=205;mr=64;sfo=0;syo=0;
+    v=15;in=<random.12to15>;i=1;se=false;sb=false;md=205;mr=64;sfo=0;syo=0;
     conditions=[
       - (isPlayer || faction{f=Guard}) true
-    ]} @parent
+    ]} @T
   - delay 200
   - skill:OpenField_Enemy_モフィモ_ゾラ_MCLove32_Skills @self 
+
+OpenField_Enemy_モフィモ_ゾ_MCLove32_Skill_Process:
+  Skills:
+  - sudoskill{
+    s=[
+      - setTarget @T
+      - delay 200
+      - setTarget @self 
+    ]} @MIR{r=48;t=OpenField_Enemy_モフィモ_ゾラール_MCLove32,OpenField_Enemy_モフィモ_ゾラ_MCLove32;limit=5;sort=RANDOM}
