@@ -704,7 +704,7 @@ OpenField_Enemy_モフィモ_ゾラ_MCLove32:
     KnockbackResistance: 1
     NoDamageTicks: 0
     NoAI: false
-    PassthroughDamage: true
+    #PassthroughDamage: true
     NoGravity: true
     AttackSpeed: 2
     #NoGravity: true
