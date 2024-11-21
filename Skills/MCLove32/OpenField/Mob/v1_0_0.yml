@@ -418,6 +418,6 @@ OpenField_Enemy_モフィモス_MCLove32_Skill_Process_Shot:
     ];
     conditions=[
       - (isPlayer || faction{f=Guard}) true
-    ]
+    ];
     bulletType=MOB;mob=OpenField_Enemy_モフィモ_ゾラノ_MCLove32;
     v=<random.10to16>;i=1;se=false;sb=false;md=105;mr=128;sfo=<random.-5to5>;syo=<random.0to5>;sso=<random.-5to5>;hn=2;vn=2} @TL 
