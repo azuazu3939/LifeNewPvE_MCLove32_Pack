@@ -340,8 +340,8 @@ OpenField_Enemy_エリミネーター_MCLove32_Damaged_Skills:
   Cooldown: 10
   Conditions:
   - incombat
-  - healthpercent{p=<0.8}
   Skills:
+  - delay 200
   - sound{s=item.totem.use;p=2;v=0.5} @self
   - delay 10
   - sound{s=item.totem.use;p=2;v=0.5} @self
