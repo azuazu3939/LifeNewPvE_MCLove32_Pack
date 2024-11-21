@@ -382,7 +382,6 @@ OpenField_Enemy_モフィモ_ゾラ_MCLove32_Skills:
   - delay 1
   - missile{
     ot=[
-      - modifyprojectile{t=INERTIA;a=MULTIPLY;v=1.01} @self 
       - teleport @origin
     ];
     oh=[
@@ -392,7 +391,7 @@ OpenField_Enemy_モフィモ_ゾラ_MCLove32_Skills:
     oe=[
       - skill:OpenField_Enemy_モフィモ_ゾラ_MCLove32_Skills @self 
     ];
-    v=15;in=<random.12to15>;i=1;se=false;sb=false;md=205;mr=64;sfo=0;syo=0;
+    v=15;in=10;i=1;se=false;sb=false;md=205;mr=64;sfo=0;syo=0;
     conditions=[
       - (isPlayer || faction{f=Guard}) true
     ]} @parent
