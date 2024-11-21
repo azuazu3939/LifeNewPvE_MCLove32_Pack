@@ -592,8 +592,21 @@ OpenField_Enemy_エリミネーター_MCLove32:
     Silent: true 
     MovementSpeed: 0.35
     Scale: 1
+  Modules:
+    ThreatTable: true
   Drops:
   - exp 1000
+  DamageModifiers:
+  - SUFFOCATION 0
+  - FALL 0
+  AITargetSelectors:
+  - clear
+  - attacker
+  - players 
+  AIGoalSelectors:
+  - randomstroll
+  - gotoowner
+  - meleeattack{ar=8}
   Skills:
   - attribute{attr=GENERIC_FOLLOW_RANGE;a=64} @self ~onEntercombat 
   - attribute{attr=GENERIC_FOLLOW_RANGE;a=24} @self ~onDropcombat 
