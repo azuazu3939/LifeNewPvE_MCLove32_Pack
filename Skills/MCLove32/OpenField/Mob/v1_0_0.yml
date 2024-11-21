@@ -369,6 +369,7 @@ OpenField_Enemy_モフィモス_MCLove32_Skills:
   - children{a=<10} orElseCast OpenField_Enemy_モフィモス_MCLove32_Skill_Process
   - incombat
   Skills:
+  - skill:OpenField_Enemy_モフィモス_MCLove32_Skill_Process @self 
   - summon{t=OpenField_Enemy_モフィモ_ゾラール_MCLove32;a=1;r=8} @self 
   - delay 21
   - skill:OpenField_Enemy_モフィモス_MCLove32_Skills @self 
@@ -419,4 +420,4 @@ OpenField_Enemy_モフィモス_MCLove32_Skill_Process_Shot:
       - (isPlayer || faction{f=Guard}) true
     ]
     bulletType=MOB;mob=OpenField_Enemy_モフィモ_ゾラノ_MCLove32;
-    v=<random.10to16>;i=1;se=false;sb=false;md=105;mr=128;sfo=<random.-5to5>;syo=<random.0to5>;sso=<random.-5to5>;hn=3;vn=3} @TL 
+    v=<random.10to16>;i=1;se=false;sb=false;md=105;mr=128;sfo=<random.-5to5>;syo=<random.0to5>;sso=<random.-5to5>;hn=2;vn=2} @TL 
