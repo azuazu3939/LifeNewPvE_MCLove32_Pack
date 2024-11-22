@@ -818,7 +818,7 @@ OpenField_Enemy_パブリックヤドカリ_MCLove32:
   DisplayOptions:
     Block: red_sand
     Translation: -0.5,-0.25,-0.35
-    Scale: 0.75,0.5,1
+    Scale: 1,0.5,0.75
   Health: 20
   Damage: 3
   Armor: 2
