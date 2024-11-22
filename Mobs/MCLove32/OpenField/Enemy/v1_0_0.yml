@@ -817,7 +817,7 @@ OpenField_Enemy_パブリックヤドカリ_MCLove32:
   Display: "パブリックヤドカリ"
   DisplayOptions:
     Block: red_sand
-    Translation: -0.125,-0.125,-0.125
+    Translation: -0.125,-1,-0.125
     Scale: 0.5,0.5,0.5
   Health: 20
   Damage: 3
