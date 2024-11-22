@@ -1,0 +1,6 @@
+LifeNewPvE_Utils_RightRotation_MCLove32:
+  Id: stick
+  Display: "RightRotation"
+  Skills:
+  - skill:LifeNewPvE_Utils_RightRotation_MCLove32_Settings @self ~onUse
+  - skill:LifeNewPvE_Utils_RightRotation_MCLove32_Do @self ~onUse

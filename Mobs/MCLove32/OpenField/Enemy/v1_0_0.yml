@@ -769,9 +769,9 @@ OpenField_Enemy_モフィモ_ゾラノ_MCLove32:
   Skills:
   - remove{delay=105} @self ~onSpawn
 
-OpenField_Enemy_パブリックヤドカリ_MCLove32:
+OpenField_Enemy_プライベートヤドカリ_MCLove32:
   Type: silverfish
-  Display: "パブリックヤドカリ"
+  Display: "プライベートヤドカリ"
   Health: 20
   Damage: 3
   Armor: 2
@@ -812,17 +812,17 @@ OpenField_Enemy_パブリックヤドカリ_MCLove32:
   Skills:
   - remove @parent ~onDeath
 
-OpenField_Enemy_パブリックヤドカリ殻_MCLove32:
+OpenField_Enemy_パブリックヤドカリ_MCLove32:
   Type: block_display
-  Display: "パブリックヤドカリ殻"
+  Display: "パブリックヤドカリ"
   DisplayOptions:
     Block: red_sand
-    RightRotation: 3.5,0.5,2.5,0.5
+    RightRotation: 0,0,0,1
     Scale: 0.5,0.5,0.5
   Health: 20
   Damage: 3
   Armor: 2
-  Mount: OpenField_Enemy_パブリックヤドカリ_MCLove32
+  Mount: OpenField_Enemy_プライベートヤドカリ_MCLove32
   Options:
     Collidable: true 
     DigOutOfGround: false
