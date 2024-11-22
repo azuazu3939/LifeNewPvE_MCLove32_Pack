@@ -128,7 +128,6 @@ OpenField_Enemy_コロニア_MCLove32:
   Template: OpenField_Enemy_コロニアル_MCLove32
   Health: 10
   Damage: 5
-  Armor: 5
   Drops:
   - exp 100
   Options:
@@ -142,7 +141,6 @@ OpenField_Enemy_コロニアル_MCLove32:
   Health: 20
   Damage: 10
   Faction: Enemy
-  Armor: 10
   Options:
     Collidable: true 
     DigOutOfGround: true 
