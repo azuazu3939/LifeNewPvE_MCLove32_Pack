@@ -189,7 +189,7 @@ OpenField_Weapon_樹木剣ライト_MCLove32:
       AttackSpeed: -0.4 MULTIPLY_BASE
   Group: "Weapon"
   Skills:
-  - skill:OpenField_Weapon_樹木剣_MCLove32_Skills @self ~onSwing
+  - skill:OpenField_Weapon_樹木剣_MCLove32_Skills @self ~onUse
 
 OpenField_Weapon_樹木剣ヘビー_MCLove32:
   Id: wooden_sword
@@ -205,7 +205,7 @@ OpenField_Weapon_樹木剣ヘビー_MCLove32:
       AttackSpeed: -0.7 MULTIPLY_BASE
   Group: "Weapon"
   Skills:
-  - skill:OpenField_Weapon_樹木剣_MCLove32_Skills @self ~onSwing
+  - skill:OpenField_Weapon_樹木剣_MCLove32_Skills @self ~onUse
 
 OpenField_Weapon_ラヴァン_MCLove32:
   Id: diamond_axe
@@ -258,6 +258,18 @@ OpenField_Weapon_ダブルパンチ_MCLove32:
   NBT:
     PublicBukkitValues:
       lifenewpve:prevent_grindstone: "true"
+
+OpenField_Weapon_火炎レーザー_MCLove32:
+  Id: iron_hoe
+  Display: "&f火炎レーザー"
+  Lore: []
+  Model: 1000
+  Options:
+    ItemVersion: 1
+    Unbreakable: true 
+  Group: "Weapon"
+  Skills:
+  - skill:OpenField_Weapon_火炎レーザー_MCLove32_Skills @self ~onUse
 
 OpenField_Weapon_火炎レーザー_MCLove32:
   Id: iron_hoe

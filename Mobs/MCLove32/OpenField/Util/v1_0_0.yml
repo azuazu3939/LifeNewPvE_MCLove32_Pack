@@ -1,0 +1,5 @@
+OpenField_MobUtil_テキストディスプレイ_MCLove32:
+  Type: text_display
+  DisplayOptions:
+    Text: 何もないよ
+    Opacity: 255
