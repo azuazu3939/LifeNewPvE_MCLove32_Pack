@@ -817,7 +817,7 @@ OpenField_Enemy_パブリックヤドカリ殻_MCLove32:
   Display: "パブリックヤドカリ殻"
   DisplayOptions:
     Block: red_sand
-    RightRotation: 0.5,0.5,0.5,0.5
+    RightRotation: 3.5,0.5,2.5,0.5
     Scale: 0.5,0.5,0.5
   Health: 20
   Damage: 3
