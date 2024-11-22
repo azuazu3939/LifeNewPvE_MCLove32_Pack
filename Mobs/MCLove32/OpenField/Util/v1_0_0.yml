@@ -3,3 +3,5 @@ OpenField_MobUtil_テキストディスプレイ_MCLove32:
   DisplayOptions:
     Text: 何もないよ
     Opacity: 255
+  Skills:
+  - setText{t=<target.nbt>} @NearestPlayer{r=16} ~onTimer:20
