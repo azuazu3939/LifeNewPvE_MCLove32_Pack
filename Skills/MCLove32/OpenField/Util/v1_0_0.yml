@@ -45,5 +45,5 @@ LifeNewPvE_Utils_RightRotation_MCLove32_Do:
   - setVar{var=skill.x;val="0.25";t=FLOAT} @self ?hasTag{t=x}
   - setVar{var=skill.y;val="0.25";t=FLOAT} @self ?hasTag{t=y} 
   - setVar{var=skill.z;val="0.25";t=FLOAT} @self ?hasTag{t=z} 
-  - displaytransformation{action=ADD;transformation=translation;value=<skill.var.x>,<skill.var.y>,<skill.var.z>;delay=1} @EIR{r=16;sort=NEAREST;limit=1;c=[ - entitytype{t=BLOCK_DISPLAY,ITEM_DISPLAY,TEXT_DISPLAY} true ]}
+  - displaytransformation{action=ADD;transformation=translation;value=<skill.var.x>,<skill.var.y>,<skill.var.z>;delay=1} @EIR{l=false;r=16;sort=NEAREST;limit=1;c=[ - entitytype{t=BLOCK_DISPLAY,ITEM_DISPLAY,TEXT_DISPLAY} true ]}
   - message{m="完了"} @self 
