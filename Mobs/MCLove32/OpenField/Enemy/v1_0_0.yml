@@ -768,3 +768,89 @@ OpenField_Enemy_モフィモ_ゾラノ_MCLove32:
   - meleeattack
   Skills:
   - remove{delay=105} @self ~onSpawn
+
+OpenField_Enemy_パブリックヤドカリ_MCLove32:
+  Type: silverfish
+  Display: "パブリックヤドカリ"
+  Health: 20
+  Damage: 3
+  Armor: 2
+  Mount: OpenField_Enemy_パブリックヤドカリ殻_MCLove32
+  Options:
+    Collidable: true 
+    DigOutOfGround: false
+    FollowRange: 8
+    Despawn: true 
+    KnockbackResistance: 1
+    NoDamageTicks: 0
+    NoAI: false
+    #PreventJockeyMounts: true
+    #PassthroughDamage: true
+    NoGravity: true
+    AttackSpeed: 0.5
+    #NoGravity: true
+    PreventMobKillDrops: true 
+    PreventRandomEquipment: true 
+    PreventSunburn: true
+    PreventVanillaDamage: true 
+    Silent: true 
+    MovementSpeed: 0.1
+    Scale: 2
+    #Invisible: true
+  Modules:
+    ThreatTable: true
+  DamageModifiers:
+  - SUFFOCATION 0
+  - FALL 0
+  AITargetSelectors:
+  - clear
+  - attacker
+  - players 
+  AIGoalSelectors:
+  - randomstroll
+  - gotoowner
+  - meleeattack
+  Skills:
+
+OpenField_Enemy_パブリックヤドカリ殻_MCLove32:
+  Type: silverfish
+  Display: "パブリックヤドカリ殻"
+  Health: 20
+  Damage: 3
+  Armor: 2
+  Options:
+    Collidable: true 
+    DigOutOfGround: false
+    FollowRange: 8
+    Despawn: true 
+    KnockbackResistance: 1
+    NoDamageTicks: 0
+    NoAI: false
+    #PreventJockeyMounts: true
+    #PassthroughDamage: true
+    NoGravity: true
+    AttackSpeed: 0.5
+    #NoGravity: true
+    PreventMobKillDrops: true 
+    PreventRandomEquipment: true 
+    PreventSunburn: true
+    PreventVanillaDamage: true 
+    Silent: true 
+    MovementSpeed: 0.1
+    Scale: 1
+    #Invisible: true
+  Modules:
+    ThreatTable: true
+  Disguise: FALLING_BLOCK red_sand
+  DamageModifiers:
+  - SUFFOCATION 0
+  - FALL 0
+  AITargetSelectors:
+  - clear
+  - attacker
+  - players 
+  AIGoalSelectors:
+  - randomstroll
+  - gotoowner
+  - meleeattack
+  Skills:
