@@ -5,3 +5,4 @@ OpenField_MobUtil_テキストディスプレイ_MCLove32:
     Opacity: 255
   Skills:
   - setText{t=<target.nbt>} @NearestPlayer{r=16} ~onTimer:20
+  - message{m=<target.nbt>} @NearestPlayer{r=16} ~onTimer:20
