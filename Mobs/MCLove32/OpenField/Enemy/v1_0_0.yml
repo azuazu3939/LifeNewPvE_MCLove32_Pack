@@ -817,12 +817,12 @@ OpenField_Enemy_パブリックヤドカリ_MCLove32:
   Display: "パブリックヤドカリ"
   DisplayOptions:
     Block: red_sand
-    #RightRotation: 0,0,0,1
+    Translation: 4,2,4
     Scale: 0.5,0.5,0.5
   Health: 20
   Damage: 3
   Armor: 2
-  #Mount: OpenField_Enemy_プライベートヤドカリ_MCLove32
+  Mount: OpenField_Enemy_プライベートヤドカリ_MCLove32
   Options:
     Collidable: true 
     DigOutOfGround: false
