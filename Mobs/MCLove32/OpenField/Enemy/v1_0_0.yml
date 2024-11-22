@@ -810,12 +810,15 @@ OpenField_Enemy_パブリックヤドカリ_MCLove32:
   - gotoowner
   - meleeattack
   Skills:
+  - remove @parent ~onDeath
 
 OpenField_Enemy_パブリックヤドカリ殻_MCLove32:
   Type: block_display
   Display: "パブリックヤドカリ殻"
   DisplayOptions:
     Block: red_sand
+    Translation: 0.5,0,0.5
+    Scale: 0.5,0.5,0.5
   Health: 20
   Damage: 3
   Armor: 2
@@ -839,7 +842,6 @@ OpenField_Enemy_パブリックヤドカリ殻_MCLove32:
     PreventVanillaDamage: true 
     Silent: true 
     MovementSpeed: 0.1
-    Scale: 0.5
     #Invisible: true
   Modules:
     ThreatTable: true
