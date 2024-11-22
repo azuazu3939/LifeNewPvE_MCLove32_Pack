@@ -44,8 +44,8 @@ OpenField_Enemy_ハロウルフ_MCLove32:
   - skill:Generic_Enemy_ウォーク追従_MCLove32{v=45} @self ~onTimer:20 ?!incombat
   - cmd{c="mlg <target.name> OpenField_Material_ハロウルフの牙_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.8
   - drop{i=OpenField_Material_ハロウルフの希少な牙_MCLove32} @Trigger{conditions=[ - isPlayer false ]} ~onAttack 0.05
-  - cmd{c="mlg <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.000001"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 
-  - cmd{c="mlg <target.name> OpenField_Material_魔力結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.001
+  - cmd{c="mlg <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.0001"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Material_魔力結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true]} ~onDeath 0.1
   - cmd{c="lmg <target.name> 50 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
 
 OpenField_Enemy_ハロウルフ_MCLove32_Leader:
@@ -110,9 +110,9 @@ OpenField_Enemy_枯れた抜け殻_MCLove32:
   - damage{a=200;pi=true;ii=true} @trigger ~onDamaged 0.1
   - skill:OpenField_Enemy_枯れた抜け殻_MCLove32_Skills @self ~onEnterCombat
   - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
-  - cmd{c="mlg <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.000002"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 
-  - cmd{c="mlg <target.name> OpenField_Material_エアラプト結晶_MCLove32 1 1"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 
-  - cmd{c="mlg <target.name> OpenField_Material_魔力結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.002
+  - cmd{c="mlg <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.0001"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Material_エアラプト結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.2
+  - cmd{c="mlg <target.name> OpenField_Material_魔力結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true]} ~onDeath 0.1
   - cmd{c="mlg <target.name> OpenField_Material_ハロウルフの牙_MCLove32 1 1"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath
   - cmd{c="mlg <target.name> OpenField_Material_ハロウルフの希少な牙_MCLove32 1 1"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.05
   - cmd{c="mlg <target.name> OpenField_Weapon_赫灼大斧ラヴァン_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.002 
@@ -124,20 +124,25 @@ OpenField_Enemy_枯れた抜け殻_MCLove32:
     Color: RED
     Style: SEGMENTED_6
 
+OpenField_Enemy_コロニア_MCLove32:
+  Template: OpenField_Enemy_コロニアル_MCLove32
+  Health: 10
+  Damage: 5
+  Armor: 5
+  Drops:
+  - exp 100
+  Options:
+    Size: 2
+  Skills:
+  - cmd{c="lmg <target.name> 100 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
 
 OpenField_Enemy_コロニアル_MCLove32:
-  Type: zombie 
+  Type: slime
   Display: "&fコロニアル"
-  Health: 40
+  Health: 20
   Damage: 10
   Faction: Enemy
-  Armor: 5
-  Equipment:
-  - leather_helmet{color=WHITE} HEAD
-  - leather_chestplate{color=BLACK} CHEST
-  - leather_leggings{color=BLACK} LEGS 
-  - leather_boots{color=WHITE} FEET 
-  - stone_sword HAND 
+  Armor: 10
   Options:
     Collidable: true 
     DigOutOfGround: true 
@@ -151,7 +156,8 @@ OpenField_Enemy_コロニアル_MCLove32:
     PreventRandomEquipment: true 
     PreventSunburn: true
     PreventVanillaDamage: true 
-    Scale: 1.25
+    Size: 4
+    PreventSlimeSplit: true
     #Silent: false 
   Modules:
     ThreatTable: true
@@ -171,20 +177,23 @@ OpenField_Enemy_コロニアル_MCLove32:
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=24} @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16} @self ~onDropCombat
   - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
-  - cmd{c="mlg <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.000001"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.0001"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 
   - cmd{c="mlg <target.name> OpenField_Material_エアラプト結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.2
-  - cmd{c="mlg <target.name> OpenField_Material_魔力結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true]} ~onDeath 0.001
-  - cmd{c="lmg <target.name> 50 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Material_魔力結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true]} ~onDeath 0.1
+  - cmd{c="lmg <target.name> 20 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
 
 OpenField_Enemy_コロニアル_MCLove32_Leader: 
   Template: OpenField_Enemy_コロニアル_MCLove32
-  Health: 80
+  Health: 50
   Damage: 12
+  Options:
+    Size: 6
   Drops:
   - exp 30
   Skills:
   - summon{t=OpenField_Enemy_コロニアル_MCLove32;a=1to2;r=3;s=true} @self ~onSpawn
-  - cmd{c="lmg <target.name> 50 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
+  - summon{t=OpenField_Enemy_コロニア_MCLove32;a=<random.2to5>;r=4;s=true;delay=20} @self ~onDeath 
+  - cmd{c="lmg <target.name> 30 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
 
 OpenField_Enemy_スパイディ_MCLove32:
   Type: cave_spider
@@ -231,8 +240,8 @@ OpenField_Enemy_スパイディ_MCLove32:
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=32} @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16} @self ~onDropCombat
   - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
-  - cmd{c="mlg <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.000001"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 
-  - cmd{c="mlg <target.name> OpenField_Material_魔力結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.001
+  - cmd{c="mlg <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.0001"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Material_魔力結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true]} ~onDeath 0.1
   - cmd{c="mlg <target.name> OpenField_Material_驚異の糸_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.01
   - cmd{c="lmg <target.name> 30 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
 
@@ -241,7 +250,7 @@ OpenField_Enemy_スパイディ_MCLove32_Leader:
   Template: OpenField_Enemy_スパイディ_MCLove32
   Type: spider 
   Display: "&fスパイディ"
-  Health: 100
+  Health: 80
   Damage: 15
   Faction: Enemy
   Armor: 8
@@ -249,7 +258,14 @@ OpenField_Enemy_スパイディ_MCLove32_Leader:
   - SUFFOCATION 0
   - FALL 0
   AIGoalSelectors:
+  - clear
+  - randomstroll
+  - meleeattack
   - movetowardsconditional{d=2;r=16;conditions=[ - inlineofsight true ]}
+  AITargetSelectors:
+  - clear
+  - attacker
+  - players 
   Options:
     KnockbackResistance: 0.35
     Scale: 2
@@ -261,40 +277,7 @@ OpenField_Enemy_スパイディ_MCLove32_Leader:
   - summon{t=OpenField_Enemy_スパイディ_MCLove32;a=1;r=3;s=true} @self ~onDamaged 0.001
   - summon{t=OpenField_Enemy_スパイディ_MCLove32;a=1;r=3;s=true;cd=1200} @self ~onEnterCombat
   - cmd{c="lmg <target.name> 50 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
-  - skill{
-    s=[
-      - summon{t=OpenField_Enemy_スパイディ_MCLove32;a=2;r=0;repeat=3;repeatI=10} @origin{y=-2}
-      - summon{t=OpenField_Enemy_スパイディ_MCLove32_Commander;a=1;r=0;delay=60} @origin{y=-4}
-    ]} @origin ~onDeath 0.1
   - potion{t=LEVITATION;l=2;d=8;p=false} @self ~onSpawn
-
-OpenField_Enemy_スパイディ_MCLove32_Commander:
-  Template: OpenField_Enemy_スパイディ_MCLove32_Leader
-  Type: skeleton
-  Display: "&fスパイディ・コマンダー"
-  Health: 20
-  Damage: 20
-  Mount: OpenField_Enemy_スパイディ_MCLove32_Leader
-  Armor: 10
-  Equipment:
-  - bow HAND 
-  DamageModifiers:
-  - SUFFOCATION 0
-  - FALL 0
-  Options:
-    PreventSunburn: true
-    Scale: 1.5
-    DigOutOfGround: false 
-  Drops:
-  - exp 40
-  AIGoalSelectors:
-  - bowattack
-  - arrowattack
-  Skills:
-  - damage{a=<caster.damage>;pi=true;ii=true} @trigger ~onBowHit
-  - summon{t=OpenField_Enemy_スパイディ_MCLove32;a=1to2;r=3;s=true} @self ~onSpawn
-  - cmd{c="lmg <target.name> 100 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
-
 
 OpenField_Enemy_生命生い茂る森のボグド_MCLove32:
   Type: BOGGED
@@ -354,8 +337,8 @@ OpenField_Enemy_生命生い茂る森のボグド_MCLove32:
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=48} @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16} @self ~onDropCombat
   - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
-  - cmd{c="mlg <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.000001"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 
-  - cmd{c="mlg <target.name> OpenField_Material_魔力結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.001 ?hastag{t=death}
+  - cmd{c="mlg <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.0001"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath ?hastag{t=death} 
+  - cmd{c="mlg <target.name> OpenField_Material_魔力結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true]} ~onDeath 0.1 ?hastag{t=death}
   - cmd{c="mlg <target.name> OpenField_Armor_アルドーナH_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.05 ?hastag{t=death}
   - cmd{c="mlg <target.name> OpenField_Armor_アルドーナC_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.05 ?hastag{t=death}
   - cmd{c="mlg <target.name> OpenField_Armor_アルドーナL_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.05 ?hastag{t=death}
@@ -461,8 +444,8 @@ OpenField_Enemy_臆病なオセロット_MCLove32:
   - skill:OpenField_Enemy_臆病なオセロット_MCLove32_Skill_Checker @self ~onDamaged ?!hasTag{t=combat}
   - skill:OpenField_Enemy_臆病なオセロット_MCLove32_Skills{delay=5} @T ~onEntercombat
   - velocity{x=2.5;y=3;z=2.5;m=MULTIPLY} @self ~onDamaged ?!hasTag{t=combat}
-  - cmd{c="mlg <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.000001"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 
-  - cmd{c="mlg <target.name> OpenField_Material_魔力結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.001
+  - cmd{c="mlg <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.0001"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Material_魔力結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true]} ~onDeath 0.1
   - cmd{c="lmg <target.name> 50 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
 
 OpenField_Enemy_雪原キラーラビット_MCLove32:
@@ -509,8 +492,8 @@ OpenField_Enemy_雪原キラーラビット_MCLove32:
   - attribute{attr=GENERIC_FOLLOW_RANGE;a=8} @self ~onDropcombat 
   - potion{t=speed;l=5;d=144000;p=false} @self ~onEntercombat 
   - potionclear{t=SPEED} @self ~onDropcombat 
-  - cmd{c="mlg <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.000001"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 
-  - cmd{c="mlg <target.name> OpenField_Material_魔力結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.001
+  - cmd{c="mlg <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.0001"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Material_魔力結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true]} ~onDeath 0.1
   - cmd{c="lmg <target.name> 30 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true]} ~onDeath
 
 OpenField_Enemy_雪原キラーラビット_MCLove32_Leader:
@@ -600,7 +583,6 @@ OpenField_Enemy_エリミネーター_MCLove32:
   - FALL 0
   AITargetSelectors:
   - clear
-  - attacker
   - players 
   AIGoalSelectors:
   - randomstroll
@@ -612,6 +594,8 @@ OpenField_Enemy_エリミネーター_MCLove32:
   - attribute{attr=GENERIC_FOLLOW_RANGE;a=24} @self ~onDropcombat 
   - skill:OpenField_Enemy_エリミネーター_MCLove32_Skills @self ~onEntercombat
   - skill:OpenField_Enemy_エリミネーター_MCLove32_Damaged_Skills @self ~onDamaged
+  - cmd{c="mlg <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.001"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Material_魔力結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true]} ~onDeath 
   - cmd{c="mlg <target.name> OpenField_Armor_エリミネーターH_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.025
   - cmd{c="mlg <target.name> OpenField_Armor_エリミネーターC_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.025
   - cmd{c="mlg <target.name> OpenField_Armor_エリミネーターL_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.025
@@ -663,7 +647,6 @@ OpenField_Enemy_モフィモス_MCLove32:
   - FALL 0
   AITargetSelectors:
   - clear
-  - attacker
   - players 
   AIGoalSelectors:
   - randomstroll
@@ -677,6 +660,8 @@ OpenField_Enemy_モフィモス_MCLove32:
   - skill:OpenField_Enemy_モフィモス_MCLove32_Skills @self ~onEntercombat
   - skill:OpenField_Enemy_モフィモス_MCLove32_Skills @self ~onDamaged 
   - healpercent{m=0.01;cd=5} @self ~onSignal:death
+  - cmd{c="mlg <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.001"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Material_魔力結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true]} ~onDeath 
   - cmd{c="mlg <target.name> OpenField_Armor_モフィモスH_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.025
   - cmd{c="mlg <target.name> OpenField_Armor_モフィモスC_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.025
   - cmd{c="mlg <target.name> OpenField_Armor_モフィモスL_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.025
