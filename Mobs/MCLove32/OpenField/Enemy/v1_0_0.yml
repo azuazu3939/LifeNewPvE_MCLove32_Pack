@@ -636,6 +636,7 @@ OpenField_Enemy_モフィモ_ゾラノ_MCLove32:
 
 OpenField_Enemy_ウッドライク_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
+  Display: "&2ウッドライク"
   Type: baby_zombie
   Health: 50
   Damage: 5
