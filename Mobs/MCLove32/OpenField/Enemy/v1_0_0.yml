@@ -603,7 +603,7 @@ OpenField_Enemy_モフィモ_ゾラール_MCLove32:
   - remove @children ~onDeath 
 
 OpenField_Enemy_モフィモ_ゾラノ_MCLove32:
-  Template: Template: OpenField_Enemy_Base_MCLove32
+  Template: OpenField_Enemy_Base_MCLove32
   Type: baby_zombie
   Health: 200
   Damage: 25
