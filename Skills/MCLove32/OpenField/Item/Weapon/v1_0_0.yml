@@ -7,9 +7,14 @@ OpenField_Weapon_サイスオブデーモン_MCLove32_Skills:
   - hasMana{a=>50;
     onFail=[
       - message{m="&cマナが足りません。"} @self 
-    ]}  
+    ]} 
+  - hasAura{n=サブウェポン;
+    onfail=[
+      - message{m="&cサブウェポン共通CT中です。"} @self 
+    ]} 
   Skills:
   - modifyMana{a=-50} @self 
+  - aura{n=サブウェポン;i=20;rd=true;t=60} @self  
   - damage{a=100;ii=true;pi=true}
   - sound{s=entity.warden.death} @self 
   - potion{t=SPEED;l=4;d=50;p=false} @self 
@@ -25,19 +30,24 @@ OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills:
   - hasMana{a=>30;
     onFail=[
       - message{m="&cマナが足りません。"} @self 
-    ]}  
+    ]} 
+  - hasAura{n=サブウェポン;
+    onfail=[
+      - message{m="&cサブウェポン共通CT中です。"} @self 
+    ]} 
   Skills:
   - modifyMana{a=-30} @self 
+  - aura{n=サブウェポン;i=20;rd=true;t=60} @self  
   - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Start @EIC{r=20;a=120;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
 
 OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Start:
   Skills:
-  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=90;vo=1;so=3;y=3} 
-  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=270;vo=1;so=3;y=3} 
-  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=90;vo=1.5;so=3;y=5;delay=2}
-  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=270;vo=1.5;so=3;y=5;delay=2}
-  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=90;vo=2;so=3;y=7;delay=4} 
-  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=270;vo=2;so=3;y=7;delay=4}
+  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=90;vo=1;so=3;y=3;damage=15} 
+  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=270;vo=1;so=3;y=3;damage=15} 
+  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=90;vo=1.5;so=3;y=5;delay=2;damage=15}
+  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=270;vo=1.5;so=3;y=5;delay=2;damage=15}
+  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=90;vo=2;so=3;y=7;delay=4;damage=15} 
+  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=270;vo=2;so=3;y=7;delay=4;damage=15}
 
 OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process:
   Skills:
@@ -46,7 +56,7 @@ OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process:
       - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.8} @self 
     ];
     oh=[
-      - damage{a=15;ii=true;pi=true}
+      - damage{a=<skill.damage>;ii=true;pi=true}
       - sound{s=block.anvil.land;p=2;v=0.5}
       - sound{s=entity.breeze.inhale;p=2;v=0.5}
     ];
@@ -58,6 +68,103 @@ OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process:
     v=30;i=1;vr=2;hr=2;hp=false;hnp=true;mr=32;se=true;
     in=12;ho=<skill.ho>;vo=<skill.vo>} 
 
+OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills:
+  Cooldown: 8
+  Conditions:
+  - wearing{m=OpenField_Weapon_ビットブレードTypeB_MCLove32;s=HAND}
+  - hasMana{a=>50;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]}
+  - hasAura{n=サブウェポン;
+    onfail=[
+      - message{m="&cサブウェポン共通CT中です。"} @self 
+    ]} 
+  Skills:
+  - modifyMana{a=-50} @self 
+  - aura{n=サブウェポン;i=20;rd=true;t=60} @self  
+  - skill:OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills_Start{repeat=3;repeatI=10} @EIC{r=20;a=120;limit=3;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
+
+OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills_Start:
+  Skills:
+  - skill:OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills_Process{ho=90;vo=1;so=3;y=3;damage=12} 
+  - skill:OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills_Process{ho=270;vo=1;so=3;y=3;damage=12} 
+  - skill:OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills_Process{ho=90;vo=1.5;so=3;y=5;delay=2;damage=12}
+  - skill:OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills_Process{ho=270;vo=1.5;so=3;y=5;delay=2;damage=12}
+  - skill:OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills_Process{ho=90;vo=2;so=3;y=7;delay=4;damage=12} 
+  - skill:OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills_Process{ho=270;vo=2;so=3;y=7;delay=4;damage=12}
+
+OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills_Process:
+  Skills:
+  - missile{
+    ot=[
+      - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.8} @self 
+    ];
+    oh=[
+      - damage{a=<skill.damage>;ii=true;pi=true}
+      - sound{s=block.anvil.land;p=2;v=0.5}
+      - sound{s=entity.breeze.inhale;p=2;v=0.5}
+    ];
+    conditions=[
+      - isLiving true 
+      - isMythicMob true
+    ];
+    bulletType=DISPLAY;mat=netherite_sword;scale=1.25,1.25,1.25;yaw=3.14;pitch=1.57;roll=0.785;
+    v=30;i=1;vr=2;hr=2;hp=false;hnp=true;mr=32;se=true;
+    in=12;ho=<skill.ho>;vo=<skill.vo>} 
+
+OpenField_Weapon_ビットブレードTypeMA_MCLove32_Skills:
+  Cooldown: 1.2
+  Conditions:
+  - wearing{m=OpenField_Weapon_ビットブレードTypeMA_MCLove32;s=HAND}
+  - hasMana{a=>30;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]} 
+  - hasAura{n=メインウェポン;
+    onfail=[
+      - message{m="&cメインウェポン共通CT中です。"} @self 
+    ]} 
+  Skills:
+  - modifyMana{a=-30} @self 
+  - aura{n=メインウェポン;i=20;rd=true;t=20} @self  
+  - skill:OpenField_Weapon_ビットブレードTypeMA_MCLove32_Skills_Start @EIC{r=20;a=120;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
+
+OpenField_Weapon_ビットブレードTypeMA_MCLove32_Skills_Start:
+  Skills:
+  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=90;vo=1;so=3;y=3;damage=5} 
+  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=270;vo=1;so=3;y=3;damage=5} 
+  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=90;vo=1.5;so=3;y=5;delay=2;damage=5}
+  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=270;vo=1.5;so=3;y=5;delay=2;damage=5}
+  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=90;vo=2;so=3;y=7;delay=4;damage=5} 
+  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=270;vo=2;so=3;y=7;delay=4;damage=5}
+
+OpenField_Weapon_ビットブレードTypeMB_MCLove32_Skills:
+  Cooldown: 2
+  Conditions:
+  - wearing{m=OpenField_Weapon_ビットブレードTypeMB_MCLove32;s=HAND}
+  - hasMana{a=>50;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]}
+  - hasAura{n=メインウェポン;
+    onfail=[
+      - message{m="&cメインウェポン共通CT中です。"} @self 
+    ]} 
+  Skills:
+  - modifyMana{a=-50} @self 
+  - aura{n=メインウェポン;i=20;rd=true;t=60} @self  
+  - skill:OpenField_Weapon_ビットブレードTypeMB_MCLove32_Skills_Start{repeat=3;repeatI=10} @EIC{r=20;a=120;limit=3;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
+
+OpenField_Weapon_ビットブレードTypeMB_MCLove32_Skills_Start:
+  Skills:
+  - skill:OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills_Process{ho=90;vo=1;so=3;y=3;damage=4} 
+  - skill:OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills_Process{ho=270;vo=1;so=3;y=3;damage=4} 
+  - skill:OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills_Process{ho=90;vo=1.5;so=3;y=5;delay=2;damage=4}
+  - skill:OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills_Process{ho=270;vo=1.5;so=3;y=5;delay=2;damage=4}
+  - skill:OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills_Process{ho=90;vo=2;so=3;y=7;delay=4;damage=4} 
+  - skill:OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills_Process{ho=270;vo=2;so=3;y=7;delay=4;damage=4}
+
 OpenField_Weapon_サンドストーム_MCLove32_Skills:
   Cooldown: 10
   Conditions:
@@ -65,9 +172,14 @@ OpenField_Weapon_サンドストーム_MCLove32_Skills:
   - hasMana{a=>80;
     onFail=[
       - message{m="&cマナが足りません。"} @self 
+    ]}
+  - hasAura{n=サブウェポン;
+    onfail=[
+      - message{m="&cサブウェポン共通CT中です。"} @self 
     ]} 
   Skills:
   - modifyMana{a=-80} @self 
+  - aura{n=サブウェポン;i=20;rd=true;t=60} @self 
   - totem{
     ot=[
       - skill{
@@ -91,15 +203,20 @@ OpenField_Weapon_サンドストーム_MCLove32_Skills:
     md=60;i=5;hp=false;hnp=true;vr=5;hr=5} 
 
 OpenField_Weapon_エアブラスタ_MCLove32_Skills:
-  Cooldown: 4
+  Cooldown: 2
   Conditions:
   - wearing{m=OpenField_Weapon_エアブラスタ_MCLove32;s=HAND}
   - hasMana{a=>20;
     onFail=[
       - message{m="&cマナが足りません。"} @self 
-    ]}  
+    ]} 
+  - hasAura{n=メインウェポン;
+    onfail=[
+      - message{m="&cメインウェポン共通CT中です。"} @self 
+    ]} 
   Skills:
-  - modifyMana{a=-20} @self 
+  - modifyMana{a=-20} @self
+  - aura{n=メインウェポン;i=20;rd=true;t=20} @self  
   - skill:OpenField_Weapon_エアブラスタ_MCLove32_SkillProcess{ho=30} @self 
   - skill:OpenField_Weapon_エアブラスタ_MCLove32_SkillProcess{ho=0} @self 
   - skill:OpenField_Weapon_エアブラスタ_MCLove32_SkillProcess{ho=-30} @self 
@@ -119,7 +236,7 @@ OpenField_Weapon_エアブラスタ_MCLove32_SkillProcess:
       - e:p{p=crit;a=4;vs=0.5;hs=0.5;delay=2;audience=@self} @origin
     ];
     oh=[
-      - damage{a=40;ii=true;pi=true}
+      - damage{a=30;ii=true;pi=true}
       - throw{v=8;vy=2}
     ];
     hp=false;hnp=true;v=35;i=1;md=30;mr=25;se=false;sb=false;vr=1.5;hr=2;ho=<skill.ho>} @TL 
@@ -132,9 +249,14 @@ OpenField_Weapon_牙狼ノ壱_MCLove32_Skills:
   - hasMana{a=>400;
     onFail=[
       - message{m="&cマナが足りません。"} @self 
-    ]}  
+    ]} 
+  - hasAura{n=サブウェポン;
+    onfail=[
+      - message{m="&cサブウェポン共通CT中です。"} @self 
+    ]} 
   Skills:
-  - modifyMana{a=-400} @self 
+  - modifyMana{a=-400} @self
+  - aura{n=サブウェポン;i=20;rd=true;t=60} @self  
   - setmaterialcooldown{m=stone_sword;d=400} @self 
   - setvar{var=skill.v;val="400";t=INTEGER} @self
   - skill:OpenField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity @self
@@ -175,8 +297,13 @@ OpenField_Weapon_牙狼ノ弐_MCLove32_Skills:
     onFail=[
       - message{m="&cマナが足りません。"} @self 
     ]} 
+  - hasAura{n=サブウェポン;
+    onfail=[
+      - message{m="&cサブウェポン共通CT中です。"} @self 
+    ]} 
   Skills:
   - modifyMana{a=-400} @self 
+  - aura{n=サブウェポン;i=20;rd=true;t=60} @self  
   - setmaterialcooldown{m=stone_sword;d=600} @self 
   - setvar{var=skill.v;val="400";t=INTEGER} @self
   - skill:OpenField_Weapon_牙狼ノ弐_MCLove32_Skill_Velocity @self
@@ -226,8 +353,13 @@ OpenField_Weapon_牙狼ノ零_MCLove32_Skill_Velocity:
     onFail=[
       - message{m="&cマナが足りません。"} @self 
     ]} 
+  - hasAura{n=サブウェポン;
+    onfail=[
+      - message{m="&cサブウェポン共通CT中です。"} @self 
+    ]} 
   Skills:
   - modifyMana{a=-400} @self 
+  - aura{n=サブウェポン;i=20;rd=true;t=60} @self  
   - leap{v=<skill.var.v>} @TL{cpitch=min(<caster.l.pitch>, 40)} 
   - setFallDistance{a=0} @self
   - setvar{var=skill.v;val="<skill.var.v> * 0.9";t=INTEGER} @self
@@ -249,46 +381,6 @@ OpenField_Weapon_牙狼ノ零_MCLove32_Skill_Wait:
   - delay 2
   - skill:OpenField_Weapon_牙狼ノ零_MCLove32_Skill_Velocity
 
-OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills:
-  Cooldown: 8
-  Conditions:
-  - wearing{m=OpenField_Weapon_ビットブレードTypeB_MCLove32;s=HAND}
-  - hasMana{a=>50;
-    onFail=[
-      - message{m="&cマナが足りません。"} @self 
-    ]} 
-  Skills:
-  - modifyMana{a=-50} @self 
-  - skill:OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills_Start{repeat=3;repeatI=10} @EIC{r=20;a=120;limit=3;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
-
-OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills_Start:
-  Skills:
-  - skill:OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills_Process{ho=90;vo=1;so=3;y=3} 
-  - skill:OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills_Process{ho=270;vo=1;so=3;y=3} 
-  - skill:OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills_Process{ho=90;vo=1.5;so=3;y=5;delay=2}
-  - skill:OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills_Process{ho=270;vo=1.5;so=3;y=5;delay=2}
-  - skill:OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills_Process{ho=90;vo=2;so=3;y=7;delay=4} 
-  - skill:OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills_Process{ho=270;vo=2;so=3;y=7;delay=4}
-
-OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills_Process:
-  Skills:
-  - missile{
-    ot=[
-      - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.8} @self 
-    ];
-    oh=[
-      - damage{a=12;ii=true;pi=true}
-      - sound{s=block.anvil.land;p=2;v=0.5}
-      - sound{s=entity.breeze.inhale;p=2;v=0.5}
-    ];
-    conditions=[
-      - isLiving true 
-      - isMythicMob true
-    ];
-    bulletType=DISPLAY;mat=netherite_sword;scale=1.25,1.25,1.25;yaw=3.14;pitch=1.57;roll=0.785;
-    v=30;i=1;vr=2;hr=2;hp=false;hnp=true;mr=32;se=true;
-    in=12;ho=<skill.ho>;vo=<skill.vo>} 
-
 OpenField_Weapon_樹木剣_MCLove32_Skills:
   Cooldown: 10
   Conditions:
@@ -302,8 +394,13 @@ OpenField_Weapon_樹木剣_MCLove32_Skills:
     onFail=[
       - message{m="&cマナが足りません。"} @self 
     ]} 
+  - hasAura{n=サブウェポン;
+    onfail=[
+      - message{m="&cサブウェポン共通CT中です。"} @self 
+    ]} 
   Skills:
   - modifyMana{a=-80} @self 
+  - aura{n=サブウェポン;i=20;rd=true;t=60} @self  
   - setmaterialcooldown{m=wooden_sword;d=200} @self
   - potion{t=SLOW;l=7;d=40;p=false;i=false} @self
   - sound{s=block.trial_spawner.about_to_spawn_item;p=1.414;v=0.5} @self
@@ -370,12 +467,17 @@ OpenField_Weapon_ラヴァン_MCLove32_Skills:
   Conditions:
   - wearing{s=HAND;m=OpenField_Weapon_ラヴァン_MCLove32}
   - materialcooldown{m=diamond_axe} false 
-  - hasMana{a=>20;
+  - hasMana{a=>75;
     onFail=[
       - message{m="&cマナが足りません。"} @self 
-    ]}  
+    ]} 
+  - hasAura{n=サブウェポン;
+    onfail=[
+      - message{m="&cサブウェポン共通CT中です。"} @self 
+    ]} 
   Skills:
-  - modifyMana{a=-20} @self 
+  - modifyMana{a=-75} @self
+  - aura{n=サブウェポン;i=20;rd=true;t=60} @self  
   - skill:OpenField_Weapon_ラヴァン_MCLove32_Skill_Handler @self 
   - setvar{var=skill.radius;val="1";t=INTEGER} @self 
   - skill{
@@ -383,19 +485,23 @@ OpenField_Weapon_ラヴァン_MCLove32_Skills:
       - setvar{var=skill.radius;val="<skill.var.radius> + 2";t=INTEGER} @self 
       - e:pr{particle=explosion_large;radius=<skill.var.radius>;points=16;amount=3;hS=1;vS=0;audience=@self} @self
     ];repeat=2;repeatI=4} @self 
-  - damage{a=70;pi=true;ii=true} @EIR{r=7;c=[ - isLiving true - isMythicMob true ]}
+  - damage{a=75;pi=true;ii=true} @EIR{r=7;c=[ - isLiving true - isMythicMob true ]}
 
 OpenField_Weapon_赫灼大斧ラヴァン_MCLove32_Skills:
-  Cooldown: 5
+  Cooldown: 2
   Conditions:
   - wearing{s=HAND;m=OpenField_Weapon_赫灼大斧ラヴァン_MCLove32}
   - materialcooldown{m=diamond_axe} false 
   - hasMana{a=>30;
     onFail=[
       - message{m="&cマナが足りません。"} @self 
-    ]}  
+    ]} 
+  - hasAura{n=メインウェポン;onfail=[
+      - message{m="&cメインウェポン共通CT中です。"} @self 
+    ]} 
   Skills:
   - modifyMana{a=-30} @self 
+  - aura{n=メインウェポン;i=20;rd=true;t=20} @self  
   - skill:OpenField_Weapon_ラヴァン_MCLove32_Skill_Handler @self 
   - setvar{var=skill.radius;val="1";t=INTEGER} @self 
   - skill{
@@ -403,7 +509,7 @@ OpenField_Weapon_赫灼大斧ラヴァン_MCLove32_Skills:
       - setvar{var=skill.radius;val="<skill.var.radius> + 3";t=INTEGER} @self 
       - e:pr{particle=explosion_large;radius=<skill.var.radius>;points=16;amount=3;hS=1;vS=0;audience=@self} @self
     ];repeat=2;repeatI=4} @self 
-  - damage{a=105;pi=true;ii=true;e=BLUE} @EIR{r=10;c=[ - isLiving true - isMythicMob true ]}
+  - damage{a=40;pi=true;ii=true;e=BLUE} @EIR{r=10;c=[ - isLiving true - isMythicMob true ]}
 
 OpenField_Weapon_ラヴァン_MCLove32_Skill_Handler:
   Skills:
@@ -424,8 +530,12 @@ OpenField_Weapon_火炎レーザー_MCLove32_Skills:
     onFail=[
       - message{m="&cマナが足りません。"} @self 
     ]} 
+  - hasAura{n=サブウェポン;onfail=[
+      - message{m="&cサブウェポン共通CT中です。"} @self 
+    ]} 
   Skills:
   - modifyMana{a=-100} @self 
+  - aura{n=サブウェポン;i=20;rd=true;t=60} @self  
   - setMaterialCooldown{d=200;m=iron_hoe} @self
   - setVar{var=skill.x;val="<life.l.x>";t=FLOAT} @TL{d=40}
   - setVar{var=skill.y;val="<life.l.y>";t=FLOAT} @TL{d=40}
