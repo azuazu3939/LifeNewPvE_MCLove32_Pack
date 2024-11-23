@@ -435,9 +435,9 @@ OpenField_Enemy_ワイルドハンター_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
   Type: BOGGED
   Display: "&2&lワイルドハンター"
-  Health: 150
-  Damage: 35
-  Armor: 30
+  Health: 40
+  Damage: 10
+  Armor: 3
   Equipment:
   - leather_helmet{color=81,126,88} HEAD
   - leather_chestplate{color=81,126,88} CHEST 
