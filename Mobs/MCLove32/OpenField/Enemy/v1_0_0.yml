@@ -461,8 +461,8 @@ OpenField_Enemy_エリミネーター_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
   Type: WITHER_SKELETON
   Display: "&7&lエリミネーター"
-  Health: 1000
-  Damage: 40
+  Health: 200
+  Damage: 10
   Armor: 80
   Equipment:
   - player_head{skulltexture=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODBkNzkyMjAxZmRjZTkxZTg4NGZmMzJhMDZkZDRjYzdjZDk4MzgyMmIxNjVkNDUzZWNjYjRjNjBhZWRjM2JhYSJ9fX0} HEAD 
@@ -479,7 +479,7 @@ OpenField_Enemy_エリミネーター_MCLove32:
     MovementSpeed: 0.22
     Scale: 1
   Drops:
-  - exp 1000
+  - exp 500
   DamageModifiers:
   - SUFFOCATION 0
   - FALL 0
