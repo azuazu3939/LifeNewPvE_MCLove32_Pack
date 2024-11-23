@@ -251,9 +251,9 @@ OpenField_Enemy_生命生い茂る森のボグド_MCLove32:
   - Skills
   Type: BOGGED
   Display: "&b&l生命&a&l生い茂る森&f&lの&2&lボグド"
-  Health: 100
-  Damage: 10
-  Armor: 18
+  Health: 50
+  Damage: 5
+  Armor: 5
   Equipment:
   - leather_chestplate{color=81,126,88} CHEST 
   - iron_sword HAND 
@@ -307,9 +307,9 @@ OpenField_Enemy_生命生い茂る森のボグド_MCLove32:
 OpenField_Enemy_ジャイアントボグド_MCLove32:
   Template: OpenField_Enemy_生命生い茂る森のボグド_MCLove32
   Display: "&2&lジャイアントボグド"
-  Health: 600
-  Damage: 15
-  Armor: 20
+  Health: 300
+  Damage: 8
+  Armor: 10
   Equipment:
   - leather_chestplate{color=81,126,88} CHEST 
   - netherite_sword HAND 
@@ -328,14 +328,15 @@ OpenField_Enemy_ジャイアントボグド_MCLove32:
   - cmd{c="mlg <target.name> OpenField_Armor_アルドーナC_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.1 ?hastag{t=death}
   - cmd{c="mlg <target.name> OpenField_Armor_アルドーナL_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.1 ?hastag{t=death}
   - cmd{c="mlg <target.name> OpenField_Armor_アルドーナB_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.1 ?hastag{t=death}
+  - cmd{c="mlg <target.name> OpenField_Weapon_赫灼大斧ラヴァン_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.01 ?hastag{t=death}
   - cmd{c="lmg <target.name> 600 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath ?hastag{t=death}
 
 OpenField_Enemy_マザーボグド_MCLove32:
   Template: OpenField_Enemy_生命生い茂る森のボグド_MCLove32
   Display: "&5&lマザーボグド"
-  Health: 1500
-  Damage: 20
-  Armor: 30
+  Health: 1000
+  Damage: 13
+  Armor: 20
   Equipment:
   - leather_chestplate{color=81,126,88} CHEST 
   - bone HAND 
@@ -353,7 +354,7 @@ OpenField_Enemy_マザーボグド_MCLove32:
   - cmd{c="mlg <target.name> OpenField_Armor_アルドーナT_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.1 ?hastag{t=death}
   - cmd{c="mlg <target.name> OpenField_Material_緑玉_MCLove32 1 0.4"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.75 ?hastag{t=death}
   - cmd{c="lmg <target.name> 2500 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath ?hastag{t=death}
-  - cmd{c="mlg <target.name> OpenField_Weapon_赫灼大斧ラヴァン_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.01 ?hastag{t=death}
+  - cmd{c="mlg <target.name> OpenField_Weapon_赫灼大斧ラヴァン_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.05 ?hastag{t=death}
   BossBar:
     Enabled: true
     Title: "&c&lバイオームBoss&r <caster.name> &f&lHP &a&l<caster.hp{round=2}> &f&l/ &b&l<caster.mhp{round=2}>"
