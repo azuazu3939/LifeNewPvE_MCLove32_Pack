@@ -8,7 +8,7 @@ OpenField_Weapon_サイスオブデーモン_MCLove32:
   Options: 
     ItemVersion: 1
     Unbreakable: true
-  Group: 'Weapon'
+  Group: 'Sub-Weapon'
   Skills:
   - skill:OpenField_Weapon_サイスオブデーモン_MCLove32_Skills @trigger ~onAttack
 
@@ -22,7 +22,7 @@ OpenField_Weapon_ビットブレードTypeA_MCLove32:
   Options: 
     ItemVersion: 1
     Unbreakable: true
-  Group: 'Weapon'
+  Group: 'Sub-Weapon'
   Skills:
   - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills @self ~onUse
 
@@ -36,7 +36,7 @@ OpenField_Weapon_ビットブレードTypeB_MCLove32:
   Options: 
     ItemVersion: 1
     Unbreakable: true
-  Group: 'Weapon'
+  Group: 'Sub-Weapon'
   Skills:
   - skill:OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills @self ~onUse
 
@@ -50,14 +50,12 @@ OpenField_Weapon_ビットブレードTypeMA_MCLove32:
   Options: 
     ItemVersion: 1
     Unbreakable: true
-  Group: 'Weapon'
+  Group: "Main-Weapon"
   Attributes:
     MainHand:
       Damage: 7
   Skills:
   - skill:OpenField_Weapon_ビットブレードTypeMA_MCLove32_Skills @self ~onUse
-  NBT:
-    enchantment-glint-override: boolean/true
 
 OpenField_Weapon_ビットブレードTypeMB_MCLove32:
   Id: netherite_sword
@@ -69,14 +67,12 @@ OpenField_Weapon_ビットブレードTypeMB_MCLove32:
   Options: 
     ItemVersion: 1
     Unbreakable: true
-  Group: 'Weapon'
+  Group: "Main-Weapon"
   Attributes:
     MainHand:
       Damage: 9
   Skills:
   - skill:OpenField_Weapon_ビットブレードTypeMB_MCLove32_Skills @self ~onUse
-  NBT:
-    enchantment-glint-override: boolean/true
 
 OpenField_Weapon_サンドストーム_MCLove32:
   Id: bow
@@ -89,7 +85,7 @@ OpenField_Weapon_サンドストーム_MCLove32:
   Options: 
     ItemVersion: 1
     Unbreakable: true
-  Group: 'Weapon'
+  Group: 'Sub-Weapon'
   Enchantments:
   - MENDING 1
   - INFINITY 1
@@ -110,11 +106,9 @@ OpenField_Weapon_エアブラスタ_MCLove32:
   Options:
     ItemVersion: 1
     Unbreakable: true 
-  Group: "Weapon"
+  Group: "Main-Weapon"
   Skills:
   - skill:OpenField_Weapon_エアブラスタ_MCLove32_Skills @tl ~onUse
-  NBT:
-    enchantment-glint-override: boolean/true
 
 OpenField_Weapon_牙狼ノ壱_MCLove32:
   Id: stone_sword 
@@ -125,7 +119,7 @@ OpenField_Weapon_牙狼ノ壱_MCLove32:
   Options:
     ItemVersion: 1
     Unbreakable: true 
-  Group: "Weapon"
+  Group: 'Sub-Weapon'
   Skills:
   - skill:OpenField_Weapon_牙狼ノ壱_MCLove32_Skills @self ~onUse
 
@@ -138,7 +132,7 @@ OpenField_Weapon_牙狼ノ弐_MCLove32:
   Options:
     ItemVersion: 1
     Unbreakable: true 
-  Group: "Weapon"
+  Group: 'Sub-Weapon'
   Skills:
   - skill:OpenField_Weapon_牙狼ノ弐_MCLove32_Skills @self ~onUse
 
@@ -151,7 +145,7 @@ OpenField_Weapon_牙狼ノ零_MCLove32:
   Options:
     ItemVersion: 1
     Unbreakable: true 
-  Group: "Weapon"
+  Group: 'Sub-Weapon'
   Skills:
   - skill:OpenField_Weapon_牙狼ノ零_MCLove32_Skills @self ~onUse
 
@@ -167,7 +161,7 @@ OpenField_Weapon_ライトワイドソード_MCLove32:
     MainHand:
       Damage: 9 ADD 
       AttackSpeed: -0.5 MULTIPLY_BASE
-  Group: "Weapon"
+  Group: 'Weapon'
 
 OpenField_Weapon_ヘビーワイドソード_MCLove32:
   Id: stone_sword 
@@ -181,7 +175,7 @@ OpenField_Weapon_ヘビーワイドソード_MCLove32:
     MainHand:
       Damage: 19 ADD 
       AttackSpeed: -0.75 MULTIPLY_BASE
-  Group: "Weapon"
+  Group: 'Weapon'
 
 OpenField_Weapon_ライトメイス_MCLove32:
   Id: mace
@@ -194,7 +188,7 @@ OpenField_Weapon_ライトメイス_MCLove32:
   Attributes:
     MainHand:
       AttackSpeed: -0.5 MULTIPLY_BASE
-  Group: "Weapon"
+  Group: 'Weapon'
 
 OpenField_Weapon_ベリーライトメイス_MCLove32:
   Id: mace
@@ -208,7 +202,7 @@ OpenField_Weapon_ベリーライトメイス_MCLove32:
     MainHand:
       Damage: -10 ADD 
       AttackSpeed: 2.5 MULTIPLY_BASE
-  Group: "Weapon"
+  Group: 'Weapon'
 
 OpenField_Weapon_樹木剣ライト_MCLove32:
   Id: wooden_sword
@@ -222,7 +216,7 @@ OpenField_Weapon_樹木剣ライト_MCLove32:
     MainHand:
       Damage: 16.5 ADD 
       AttackSpeed: -0.4 MULTIPLY_BASE
-  Group: "Weapon"
+  Group: 'Sub-Weapon'
   Skills:
   - skill:OpenField_Weapon_樹木剣_MCLove32_Skills @self ~onUse
 
@@ -238,7 +232,7 @@ OpenField_Weapon_樹木剣ヘビー_MCLove32:
     MainHand:
       Damage: 30 ADD 
       AttackSpeed: -0.7 MULTIPLY_BASE
-  Group: "Weapon"
+  Group: 'Sub-Weapon'
   Skills:
   - skill:OpenField_Weapon_樹木剣_MCLove32_Skills @self ~onUse
 
@@ -251,7 +245,7 @@ OpenField_Weapon_ラヴァン_MCLove32:
   Options:
     ItemVersion: 1
     Unbreakable: true 
-  Group: "Weapon"
+  Group: 'Sub-Weapon'
   Skills:
   - skill:OpenField_Weapon_ラヴァン_MCLove32_Skills @self ~onUse
 
@@ -267,30 +261,9 @@ OpenField_Weapon_赫灼大斧ラヴァン_MCLove32:
   Attributes:
     MainHand:
       Damage: 20 ADD 
-  Group: "Weapon"
+  Group: "Main-Weapon"
   Skills:
   - skill:OpenField_Weapon_赫灼大斧ラヴァン_MCLove32_Skills @self ~onUse
-  NBT:
-    enchantment-glint-override: boolean/true
-
-OpenField_Weapon_ダブルパンチ_MCLove32:
-  Id: bow
-  Display: "&fダブルパンチ"
-  Lore: 
-  - "&fおいしい！！"
-  Model: 1001
-  Options:
-    ItemVersion: 1
-    Unbreakable: true 
-  Group: "Weapon"
-  Enchantments:
-  - PUNCH 4
-  - POWER 10
-  - MENDING 1
-  - INFINITY 1
-  NBT:
-    PublicBukkitValues:
-      lifenewpve:prevent_grindstone: "true"
 
 OpenField_Weapon_火炎レーザー_MCLove32:
   Id: iron_hoe
@@ -300,6 +273,6 @@ OpenField_Weapon_火炎レーザー_MCLove32:
   Options:
     ItemVersion: 1
     Unbreakable: true 
-  Group: "Weapon"
+  Group: 'Sub-Weapon'
   Skills:
   - skill:OpenField_Weapon_火炎レーザー_MCLove32_Skills @self ~onUse
