@@ -344,6 +344,7 @@ OpenField_Enemy_生命生い茂る森のボグド_MCLove32:
   - cmd{c="mlg <target.name> OpenField_Armor_アルドーナT_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.01 ?hastag{t=death}
   - cmd{c="mlg <target.name> OpenField_Material_緑玉_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.0001 ?hastag{t=death}
   - cmd{c="lmg <target.name> 100 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath ?hastag{t=death}
+  - cmd{c="sg <target.name> 1 Resource_Material_GREENSoul_MCLove32"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath ?hastag{t=death}
   - healpercent{m=0.25} @EIR{r=20;limit=5;sort=NEAREST;c=[ - isLiving true - isMythicMob true ]} ~onDeath ?!hastag{t=death}
 
 OpenField_Enemy_ジャイアントボグド_MCLove32:
@@ -364,6 +365,7 @@ OpenField_Enemy_ジャイアントボグド_MCLove32:
     MovementSpeed: 0.15
   Skills:
   - skill:OpenField_Enemy_ジャイアントボグド_MCLove32_Skills @self ~onEnterCombat
+  - cmd{c="sg <target.name> 2 Resource_Material_GREENSoul_MCLove32"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath ?hastag{t=death}
   - cmd{c="mlg <target.name> OpenField_Armor_アルドーナH_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.1 ?hastag{t=death}
   - cmd{c="mlg <target.name> OpenField_Material_緑玉_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.01 ?hastag{t=death}
   - cmd{c="mlg <target.name> OpenField_Armor_アルドーナC_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.1 ?hastag{t=death}
@@ -390,6 +392,7 @@ OpenField_Enemy_マザーボグド_MCLove32:
   Skills:
   - raidBoss @self ~onSpawn 
   - skill:OpenField_Enemy_マザーボグド_MCLove32_Skills @self ~onEnterCombat 
+  - cmd{c="sg <target.name> 5 Resource_Material_GREENSoul_MCLove32"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath ?hastag{t=death}
   - cmd{c="mlg <target.name> OpenField_Armor_アルドーナT_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.1 ?hastag{t=death}
   - cmd{c="mlg <target.name> OpenField_Material_緑玉_MCLove32 1 0.4"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.75 ?hastag{t=death}
   - cmd{c="lmg <target.name> 1500 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath ?hastag{t=death}
@@ -536,11 +539,13 @@ OpenField_Enemy_ワイルドハンター_MCLove32:
   Drops:
   - exp 100
   Skills:
+  
   - skill:OpenField_Enemy_ワイルドハンター_MCLove32_Skills @self ~onShoot
   - cancelevent{sync=true} @self ~onShoot
   - equip{e=BOW HAND} @self ~onDamaged 0.05
   - cmd{c="mlg <target.name> OpenField_Armor_アルドーナT_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.05
   - cmd{c="lmg <target.name> 125 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
+  - cmd{c="sg <target.name> 1 Resource_Material_GREENSoul_MCLove32"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
 
 OpenField_Enemy_エリミネーター_MCLove32:
   Type: WITHER_SKELETON
