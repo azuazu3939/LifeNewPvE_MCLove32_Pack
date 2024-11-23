@@ -36,10 +36,10 @@ OpenField_Enemy_ハロウルフ_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
   Type: wolf 
   Display: "&a&lハロウルフ"
-  Health: 30
+  Health: 20
   Damage: 3
   Faction: Wolf
-  Armor: 3
+  Armor: 1
   Drop:
   Options:
     FollowRange: 8
@@ -52,7 +52,7 @@ OpenField_Enemy_ハロウルフ_MCLove32:
   - gotoparent
   - gotoowner
   Drops:
-  - exp 20
+  - exp 50
   Variables:
     livingWater: int/2
   AITargetSelectors:
