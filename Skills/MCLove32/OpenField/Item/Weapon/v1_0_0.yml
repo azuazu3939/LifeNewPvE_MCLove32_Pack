@@ -11,7 +11,7 @@ OpenField_Weapon_サイスオブデーモン_MCLove32_Skills:
   - hasAura{n=サブウェポン;
     onfail=[
       - message{m="&cサブウェポン共通CT中です。"} @self 
-    ]} 
+    ]} false 
   Skills:
   - modifyMana{a=-50} @self 
   - aura{n=サブウェポン;i=20;rd=true;t=60} @self  
@@ -34,7 +34,7 @@ OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills:
   - hasAura{n=サブウェポン;
     onfail=[
       - message{m="&cサブウェポン共通CT中です。"} @self 
-    ]} 
+    ]} false 
   Skills:
   - modifyMana{a=-30} @self 
   - aura{n=サブウェポン;i=20;rd=true;t=60} @self  
@@ -79,7 +79,7 @@ OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills:
   - hasAura{n=サブウェポン;
     onfail=[
       - message{m="&cサブウェポン共通CT中です。"} @self 
-    ]} 
+    ]} false  
   Skills:
   - modifyMana{a=-50} @self 
   - aura{n=サブウェポン;i=20;rd=true;t=60} @self  
@@ -124,7 +124,7 @@ OpenField_Weapon_ビットブレードTypeMA_MCLove32_Skills:
   - hasAura{n=メインウェポン;
     onfail=[
       - message{m="&cメインウェポン共通CT中です。"} @self 
-    ]} 
+    ]} false  
   Skills:
   - modifyMana{a=-30} @self 
   - aura{n=メインウェポン;i=20;rd=true;t=20} @self  
@@ -150,7 +150,7 @@ OpenField_Weapon_ビットブレードTypeMB_MCLove32_Skills:
   - hasAura{n=メインウェポン;
     onfail=[
       - message{m="&cメインウェポン共通CT中です。"} @self 
-    ]} 
+    ]} false  
   Skills:
   - modifyMana{a=-50} @self 
   - aura{n=メインウェポン;i=20;rd=true;t=60} @self  
@@ -176,7 +176,7 @@ OpenField_Weapon_サンドストーム_MCLove32_Skills:
   - hasAura{n=サブウェポン;
     onfail=[
       - message{m="&cサブウェポン共通CT中です。"} @self 
-    ]} 
+    ]} false  
   Skills:
   - modifyMana{a=-80} @self 
   - aura{n=サブウェポン;i=20;rd=true;t=60} @self 
@@ -213,7 +213,7 @@ OpenField_Weapon_エアブラスタ_MCLove32_Skills:
   - hasAura{n=メインウェポン;
     onfail=[
       - message{m="&cメインウェポン共通CT中です。"} @self 
-    ]} 
+    ]} false 
   Skills:
   - modifyMana{a=-20} @self
   - aura{n=メインウェポン;i=20;rd=true;t=20} @self  
@@ -253,7 +253,7 @@ OpenField_Weapon_牙狼ノ壱_MCLove32_Skills:
   - hasAura{n=サブウェポン;
     onfail=[
       - message{m="&cサブウェポン共通CT中です。"} @self 
-    ]} 
+    ]} false  
   Skills:
   - modifyMana{a=-400} @self
   - aura{n=サブウェポン;i=20;rd=true;t=60} @self  
@@ -300,7 +300,7 @@ OpenField_Weapon_牙狼ノ弐_MCLove32_Skills:
   - hasAura{n=サブウェポン;
     onfail=[
       - message{m="&cサブウェポン共通CT中です。"} @self 
-    ]} 
+    ]} false  
   Skills:
   - modifyMana{a=-400} @self 
   - aura{n=サブウェポン;i=20;rd=true;t=60} @self  
@@ -356,7 +356,7 @@ OpenField_Weapon_牙狼ノ零_MCLove32_Skill_Velocity:
   - hasAura{n=サブウェポン;
     onfail=[
       - message{m="&cサブウェポン共通CT中です。"} @self 
-    ]} 
+    ]} false  
   Skills:
   - modifyMana{a=-400} @self 
   - aura{n=サブウェポン;i=20;rd=true;t=60} @self  
@@ -397,7 +397,7 @@ OpenField_Weapon_樹木剣_MCLove32_Skills:
   - hasAura{n=サブウェポン;
     onfail=[
       - message{m="&cサブウェポン共通CT中です。"} @self 
-    ]} 
+    ]} false  
   Skills:
   - modifyMana{a=-80} @self 
   - aura{n=サブウェポン;i=20;rd=true;t=60} @self  
@@ -474,7 +474,7 @@ OpenField_Weapon_ラヴァン_MCLove32_Skills:
   - hasAura{n=サブウェポン;
     onfail=[
       - message{m="&cサブウェポン共通CT中です。"} @self 
-    ]} 
+    ]} false  
   Skills:
   - modifyMana{a=-75} @self
   - aura{n=サブウェポン;i=20;rd=true;t=60} @self  
@@ -498,7 +498,7 @@ OpenField_Weapon_赫灼大斧ラヴァン_MCLove32_Skills:
     ]} 
   - hasAura{n=メインウェポン;onfail=[
       - message{m="&cメインウェポン共通CT中です。"} @self 
-    ]} 
+    ]} false  
   Skills:
   - modifyMana{a=-30} @self 
   - aura{n=メインウェポン;i=20;rd=true;t=20} @self  
@@ -532,7 +532,7 @@ OpenField_Weapon_火炎レーザー_MCLove32_Skills:
     ]} 
   - hasAura{n=サブウェポン;onfail=[
       - message{m="&cサブウェポン共通CT中です。"} @self 
-    ]} 
+    ]} false  
   Skills:
   - modifyMana{a=-100} @self 
   - aura{n=サブウェポン;i=20;rd=true;t=60} @self  
