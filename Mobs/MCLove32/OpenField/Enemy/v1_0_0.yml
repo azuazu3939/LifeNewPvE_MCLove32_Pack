@@ -182,7 +182,7 @@ OpenField_Enemy_スパイディ_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
   Type: cave_spider
   Display: "&fスパイディ"
-  Health: 40
+  Health: 20
   Damage: 8
   Armor: 8
   Options:
@@ -217,7 +217,7 @@ OpenField_Enemy_スパイディ_MCLove32_Leader:
   Template: OpenField_Enemy_スパイディ_MCLove32
   Type: spider 
   Display: "&fスパイディ"
-  Health: 80
+  Health: 50
   Damage: 15
   Armor: 8
   DamageModifiers:
