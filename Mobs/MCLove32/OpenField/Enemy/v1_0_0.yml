@@ -1,4 +1,39 @@
+OpenField_Enemy_Base_MCLove32:
+  Type: zombie
+  Display: ""
+  Faction: Enemy
+  Drop:
+  Options:
+    Collidable: true 
+    DigOutOfGround: true 
+    FollowRange: 8
+    Despawn: true 
+    KnockbackResistance: 0
+    NoDamageTicks: 0
+    VisibleByDefault: true 
+    NoAI: false 
+    PreventSlimeSplit: true
+    NoGravity: false
+    PreventMobKillDrops: true 
+    PreventRandomEquipment: true
+    PreventVanillaDamage: true 
+    PreventSunburn: true
+    PreventJockeyMounts: true
+    Invisible: false
+    AttackSpeed: 1
+    Scale: 1
+    MovementSpeed: 0.2
+    Silent: false
+  Modules:
+    ThreatTable: true
+  Skills:
+  - damage{a=<caster.damage>;ii=true;pi=true} @trigger ~onAttack 
+  - cmd{c="mlg <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.0001"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Material_魔力結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true]} ~onDeath 0.1
+
+
 OpenField_Enemy_ハロウルフ_MCLove32:
+  Template: OpenField_Enemy_Base_MCLove32
   Type: wolf 
   Display: "&a&lハロウルフ"
   Health: 30
@@ -7,18 +42,8 @@ OpenField_Enemy_ハロウルフ_MCLove32:
   Armor: 3
   Drop:
   Options:
-    Collidable: true 
-    DigOutOfGround: true 
     FollowRange: 8
-    Despawn: true 
     KnockbackResistance: 0.15
-    NoDamageTicks: 0
-    NoAI: false 
-    #NoGravity: true
-    PreventMobKillDrops: true 
-    PreventRandomEquipment: true
-    PreventVanillaDamage: true 
-    #PreventSunburn: true
     Scale: 1.5
     Silent: false 
   AIGoalSelectors:
@@ -28,8 +53,6 @@ OpenField_Enemy_ハロウルフ_MCLove32:
   - gotoowner
   Drops:
   - exp 20
-  Modules:
-    ThreatTable: true
   Variables:
     livingWater: int/2
   AITargetSelectors:
@@ -39,13 +62,10 @@ OpenField_Enemy_ハロウルフ_MCLove32:
   - attacker
   - specificfaction{f=Sheep}
   Skills:
-  - damage{a=<caster.damage>;ii=true;pi=true} @trigger ~onAttack 
   - potion{t=SPEED;d=144000;l=1;p=false} @self ~onSpawn
   - skill:Generic_Enemy_ウォーク追従_MCLove32{v=45} @self ~onTimer:20 ?!incombat
   - cmd{c="mlg <target.name> OpenField_Material_ハロウルフの牙_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.8
   - drop{i=OpenField_Material_ハロウルフの希少な牙_MCLove32} @Trigger{conditions=[ - isPlayer false ]} ~onAttack 0.05
-  - cmd{c="mlg <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.0001"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 
-  - cmd{c="mlg <target.name> OpenField_Material_魔力結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true]} ~onDeath 0.1
   - cmd{c="lmg <target.name> 50 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
 
 OpenField_Enemy_ハロウルフ_MCLove32_Leader:
@@ -63,11 +83,11 @@ OpenField_Enemy_ハロウルフ_MCLove32_Leader:
   - cmd{c="lmg <target.name> 30 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
 
 OpenField_Enemy_枯れた抜け殻_MCLove32:
+  Template: OpenField_Enemy_Base_MCLove32
   Type: wither_skeleton
   Display: "&f枯れた抜け殻"
   Health: 800
   Damage: 50
-  Faction: Enemy
   Armor: 40
   Equipment:
   - golden_helmet HEAD
@@ -76,26 +96,14 @@ OpenField_Enemy_枯れた抜け殻_MCLove32:
   KillMessages:
   - '&7<target.name>は無謀な戦いを挑んだ…'
   Options:
-    Collidable: true 
-    DigOutOfGround: true 
     FollowRange: 12
-    Despawn: true   
     KnockbackResistance: 0
-    NoDamageTicks: 0
-    NoAI: false 
     VisibleByDefault: true 
     Invisible: true
-    #NoGravity: true
-    PreventMobKillDrops: true 
-    PreventRandomEquipment: true
-    PreventVanillaDamage: true 
-    PreventSunburn: true
+    Silent: true 
     Scale: 2
-    #Silent: false 
   Drops:
   - exp 500
-  Modules:
-    ThreatTable: true
   AITargetSelectors:
   - clear
   - attacker
@@ -103,7 +111,6 @@ OpenField_Enemy_枯れた抜け殻_MCLove32:
   - randomstroll
   Skills:
   - raidBoss @self ~onSpawn 
-  - damage{a=<caster.damage>;ii=true;pi=true} @trigger ~onAttack 
   - healpercent{m=0.5} @self ~onTimer:200
   - e:p{p=sculk_soul;a=20;vs=1.25;hs=1;vd=32} @Forward{f=-2} ~onTimer:5
   - skill:OpenField_Enemy_枯れた抜け殻_MCLove32_Effect @self ~onEnterCombat
@@ -115,7 +122,6 @@ OpenField_Enemy_枯れた抜け殻_MCLove32:
   - cmd{c="mlg <target.name> OpenField_Material_魔力結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true]} ~onDeath 0.1
   - cmd{c="mlg <target.name> OpenField_Material_ハロウルフの牙_MCLove32 1 1"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath
   - cmd{c="mlg <target.name> OpenField_Material_ハロウルフの希少な牙_MCLove32 1 1"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.05
-  - cmd{c="mlg <target.name> OpenField_Weapon_赫灼大斧ラヴァン_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.002 
   - cmd{c="lmg <target.name> 500 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath
   BossBar:
     Enabled: true
@@ -136,27 +142,14 @@ OpenField_Enemy_コロニア_MCLove32:
   - cmd{c="lmg <target.name> 100 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
 
 OpenField_Enemy_コロニアル_MCLove32:
+  Template: OpenField_Enemy_Base_MCLove32
   Type: slime
   Display: "&fコロニアル"
   Health: 20
   Damage: 5
-  Faction: Enemy
   Options:
-    Collidable: true 
-    DigOutOfGround: true 
     FollowRange: 16
-    Despawn: true  
-    KnockbackResistance: 0
-    NoDamageTicks: 0
-    NoAI: false 
-    #NoGravity: true
-    PreventMobKillDrops: true 
-    PreventRandomEquipment: true 
-    PreventSunburn: true
-    PreventVanillaDamage: true 
     Size: 4
-    PreventSlimeSplit: true
-    #Silent: false 
   Modules:
     ThreatTable: true
   AIGoalSelectors:
@@ -164,17 +157,12 @@ OpenField_Enemy_コロニアル_MCLove32:
   - gotoowner
   Drops:
   - exp 20
-  AITargetSelectors:
-  - clear
   Skills:
-  - damage{a=<caster.damage>;ii=true;pi=true;cd=1} @trigger ~onAttack 
   - skill:OpenField_Enemy_コロニアル_MCLove32_Skills @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=24} @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16} @self ~onDropCombat
   - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
-  - cmd{c="mlg <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.0001"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 
   - cmd{c="mlg <target.name> OpenField_Material_エアラプト結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.2
-  - cmd{c="mlg <target.name> OpenField_Material_魔力結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true]} ~onDeath 0.1
   - cmd{c="lmg <target.name> 20 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
 
 OpenField_Enemy_コロニアル_MCLove32_Leader: 
@@ -191,29 +179,16 @@ OpenField_Enemy_コロニアル_MCLove32_Leader:
   - cmd{c="lmg <target.name> 30 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
 
 OpenField_Enemy_スパイディ_MCLove32:
+  Template: OpenField_Enemy_Base_MCLove32
   Type: cave_spider
   Display: "&fスパイディ"
   Health: 40
   Damage: 8
-  Faction: Enemy
   Armor: 8
   Options:
-    Collidable: true 
-    DigOutOfGround: true 
     FollowRange: 16
-    Despawn: true 
     KnockbackResistance: 0.25
-    NoDamageTicks: 0
-    NoAI: false 
-    #NoGravity: true
-    PreventMobKillDrops: true 
-    PreventRandomEquipment: true 
-    PreventSunburn: true
-    PreventVanillaDamage: true 
     Scale: 1.5
-    #Silent: false 
-  Modules:
-    ThreatTable: true
   DamageModifiers:
   - SUFFOCATION 0
   - FALL 0
@@ -229,14 +204,11 @@ OpenField_Enemy_スパイディ_MCLove32:
   - gotoparent
   - gotoowner
   Skills:
-  - damage{a=<caster.damage>;ii=true;pi=true} @trigger ~onAttack 
   - potion{t=SPEED;l=1;d=14400;p=false} @self ~onEnterCombat
   - potionclear{t=SPEED} @self ~onDropCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=32} @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16} @self ~onDropCombat
   - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
-  - cmd{c="mlg <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.0001"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 
-  - cmd{c="mlg <target.name> OpenField_Material_魔力結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true]} ~onDeath 0.1
   - cmd{c="mlg <target.name> OpenField_Material_驚異の糸_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.01
   - cmd{c="lmg <target.name> 30 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
 
@@ -247,7 +219,6 @@ OpenField_Enemy_スパイディ_MCLove32_Leader:
   Display: "&fスパイディ"
   Health: 80
   Damage: 15
-  Faction: Enemy
   Armor: 8
   DamageModifiers:
   - SUFFOCATION 0
@@ -275,34 +246,23 @@ OpenField_Enemy_スパイディ_MCLove32_Leader:
   - potion{t=LEVITATION;l=2;d=8;p=false} @self ~onSpawn
 
 OpenField_Enemy_生命生い茂る森のボグド_MCLove32:
+  Template: OpenField_Enemy_Base_MCLove32
+  Exclude:
+  - Skills
   Type: BOGGED
   Display: "&b&l生命&a&l生い茂る森&f&lの&2&lボグド"
   Health: 100
   Damage: 10
-  Faction: Enemy
   Armor: 18
   Equipment:
   - leather_chestplate{color=81,126,88} CHEST 
   - iron_sword HAND 
   - totem_of_undying OFFHAND 
   Options:
-    Collidable: true 
-    DigOutOfGround: true 
     FollowRange: 16
-    Despawn: true 
     KnockbackResistance: 0.75
-    NoDamageTicks: 0
-    NoAI: false 
-    #NoGravity: true
-    PreventMobKillDrops: true 
-    PreventRandomEquipment: true 
-    PreventSunburn: true
-    PreventVanillaDamage: true 
     Scale: 1.25
-    #Silent: false 
     ReviveHealth: -1
-  Modules:
-    ThreatTable: true
   DamageModifiers:
   - SUFFOCATION 0
   - FALL 0
@@ -402,30 +362,16 @@ OpenField_Enemy_マザーボグド_MCLove32:
     Style: SEGMENTED_12
 
 OpenField_Enemy_臆病なオセロット_MCLove32:
+  Template: OpenField_Enemy_Base_MCLove32
   Type: ocelot
   Display: "&7&l臆病なオセロット"
   Health: 200
   Damage: 20
-  Faction: Enemy
   Armor: 35
   Options:
-    Collidable: true 
-    DigOutOfGround: true 
     FollowRange: 16
-    Despawn: true 
-    KnockbackResistance: 0
-    NoDamageTicks: 0
-    NoAI: false 
-    #NoGravity: true
-    PreventMobKillDrops: true 
-    PreventRandomEquipment: true 
-    PreventSunburn: true
-    PreventVanillaDamage: true 
     Scale: 2
-    #Silent: false 
     MovementSpeed: 0.05
-  Modules:
-    ThreatTable: true
   DamageModifiers:
   - SUFFOCATION 0
   Drops:
@@ -442,37 +388,19 @@ OpenField_Enemy_臆病なオセロット_MCLove32:
   - skill:OpenField_Enemy_臆病なオセロット_MCLove32_Skill_Checker @self ~onDamaged ?!hasTag{t=combat}
   - skill:OpenField_Enemy_臆病なオセロット_MCLove32_Skills{delay=5} @T ~onEntercombat
   - velocity{x=2.5;y=3;z=2.5;m=MULTIPLY} @self ~onDamaged ?!hasTag{t=combat}
-  - cmd{c="mlg <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.0001"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
-  - cmd{c="mlg <target.name> OpenField_Material_魔力結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true]} ~onDeath 0.1
   - cmd{c="lmg <target.name> 50 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
 
 OpenField_Enemy_雪原キラーラビット_MCLove32:
+  Template: OpenField_Enemy_Base_MCLove32
   Type: rabbit
   Display: "&f&l雪原ラビット"
   Health: 100
   Damage: 50
-  Faction: Enemy
   Armor: 35
   Options:
-    Collidable: true 
-    DigOutOfGround: true 
-    FollowRange: 8
-    Despawn: true 
-    KnockbackResistance: 0
-    NoDamageTicks: 0
-    NoAI: false 
-    #NoGravity: true
-    PreventMobKillDrops: true 
-    PreventRandomEquipment: true 
-    PreventSunburn: true
-    PreventVanillaDamage: true 
     Scale: 1
-    #Silent: false 
-    #MovementSpeed: 0.05
     IsKillerBunny: true
     RabbitType: WHITE
-  Modules:
-    ThreatTable: true
   DamageModifiers:
   - SUFFOCATION 0
   Drops:
@@ -490,8 +418,6 @@ OpenField_Enemy_雪原キラーラビット_MCLove32:
   - attribute{attr=GENERIC_FOLLOW_RANGE;a=8} @self ~onDropcombat 
   - potion{t=speed;l=5;d=144000;p=false} @self ~onEntercombat 
   - potionclear{t=SPEED} @self ~onDropcombat 
-  - cmd{c="mlg <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.0001"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
-  - cmd{c="mlg <target.name> OpenField_Material_魔力結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true]} ~onDeath 0.1
   - cmd{c="lmg <target.name> 30 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true]} ~onDeath
 
 OpenField_Enemy_雪原キラーラビット_MCLove32_Leader:
@@ -505,6 +431,7 @@ OpenField_Enemy_雪原キラーラビット_MCLove32_Leader:
   - cmd{c="lmg <target.name> 50 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
 
 OpenField_Enemy_ワイルドハンター_MCLove32:
+  Template: OpenField_Enemy_Base_MCLove32
   Type: BOGGED
   Display: "&2&lワイルドハンター"
   Health: 150
@@ -517,26 +444,12 @@ OpenField_Enemy_ワイルドハンター_MCLove32:
   - leather_boots FEET
   - bow HAND 
   Options:
-    Collidable: true 
-    DigOutOfGround: true 
     FollowRange: 16
-    Despawn: true 
-    KnockbackResistance: 0
-    NoDamageTicks: 0
-    NoAI: false 
     AttackSpeed: 2
-    #NoGravity: true
-    PreventMobKillDrops: true 
-    PreventRandomEquipment: true 
-    PreventSunburn: true
-    PreventVanillaDamage: true 
-    #Silent: false 
     MovementSpeed: 0.3
-    Scale: 1
   Drops:
   - exp 100
   Skills:
-  
   - skill:OpenField_Enemy_ワイルドハンター_MCLove32_Skills @self ~onShoot
   - cancelevent{sync=true} @self ~onShoot
   - equip{e=BOW HAND} @self ~onDamaged 0.05
@@ -545,6 +458,7 @@ OpenField_Enemy_ワイルドハンター_MCLove32:
   - cmd{c="sg <target.name> 1 Resource_Material_GREENSoul_MCLove32"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
 
 OpenField_Enemy_エリミネーター_MCLove32:
+  Template: OpenField_Enemy_Base_MCLove32
   Type: WITHER_SKELETON
   Display: "&7&lエリミネーター"
   Health: 1000
@@ -558,24 +472,12 @@ OpenField_Enemy_エリミネーター_MCLove32:
   - netherite_sword HAND 
   - diamond_sword OFFHAND
   Options:
-    Collidable: true 
-    DigOutOfGround: true 
     FollowRange: 24
-    Despawn: true 
     KnockbackResistance: 1
-    NoDamageTicks: 0
-    NoAI: false 
     AttackSpeed: 2
-    #NoGravity: true
-    PreventMobKillDrops: true 
-    PreventRandomEquipment: true 
-    PreventSunburn: true
-    PreventVanillaDamage: true 
     Silent: true 
     MovementSpeed: 0.22
     Scale: 1
-  Modules:
-    ThreatTable: true
   Drops:
   - exp 1000
   DamageModifiers:
@@ -594,8 +496,6 @@ OpenField_Enemy_エリミネーター_MCLove32:
   - attribute{attr=GENERIC_FOLLOW_RANGE;a=24} @self ~onDropcombat 
   - skill:OpenField_Enemy_エリミネーター_MCLove32_Skills @self ~onEntercombat
   - skill:OpenField_Enemy_エリミネーター_MCLove32_Damaged_Skills @self ~onDamaged
-  - cmd{c="mlg <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.001"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
-  - cmd{c="mlg <target.name> OpenField_Material_魔力結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true]} ~onDeath 
   - cmd{c="mlg <target.name> OpenField_Armor_エリミネーターH_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.025
   - cmd{c="mlg <target.name> OpenField_Armor_エリミネーターC_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.025
   - cmd{c="mlg <target.name> OpenField_Armor_エリミネーターL_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.025
@@ -609,6 +509,7 @@ OpenField_Enemy_エリミネーター_MCLove32:
     Style: SEGMENTED_12
 
 OpenField_Enemy_モフィモス_MCLove32:
+  Template: OpenField_Enemy_Base_MCLove32
   Type: wither_skeleton
   Display: "&7&lモフィモス"
   Health: 1000
@@ -622,24 +523,12 @@ OpenField_Enemy_モフィモス_MCLove32:
   - soul_lantern HAND
   - soul_lantern OFFHAND
   Options:
-    Collidable: true 
-    DigOutOfGround: true 
     FollowRange: 24
-    Despawn: true 
     KnockbackResistance: 1
-    NoDamageTicks: 0
-    NoAI: false 
     AttackSpeed: 2
-    #NoGravity: true
-    PreventMobKillDrops: true 
-    PreventRandomEquipment: true 
-    PreventSunburn: true
-    PreventVanillaDamage: true 
     Silent: true 
     MovementSpeed: 0.18
     Scale: 1
-  Modules:
-    ThreatTable: true
   Drops:
   - exp 1000
   DamageModifiers:
@@ -660,8 +549,6 @@ OpenField_Enemy_モフィモス_MCLove32:
   - skill:OpenField_Enemy_モフィモス_MCLove32_Skills @self ~onEntercombat
   - skill:OpenField_Enemy_モフィモス_MCLove32_Skills @self ~onDamaged 
   - healpercent{m=0.01;cd=5} @self ~onSignal:death
-  - cmd{c="mlg <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.001"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
-  - cmd{c="mlg <target.name> OpenField_Material_魔力結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true]} ~onDeath 
   - cmd{c="mlg <target.name> OpenField_Armor_モフィモスH_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.025
   - cmd{c="mlg <target.name> OpenField_Armor_モフィモスC_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.025
   - cmd{c="mlg <target.name> OpenField_Armor_モフィモスL_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.025
@@ -675,6 +562,7 @@ OpenField_Enemy_モフィモス_MCLove32:
     Style: SEGMENTED_12
 
 OpenField_Enemy_モフィモ_ゾラ_MCLove32:
+  Template: OpenField_Enemy_Base_MCLove32
   Type: baby_zombie
   Health: 200
   Damage: 25
@@ -682,28 +570,15 @@ OpenField_Enemy_モフィモ_ゾラ_MCLove32:
   Equipment:
   - player_head{skulltexture=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjQwOWM0ZmE1YzQzNTJhZDAzZDM0ZDE1MTBjMDdkY2E3M2YwZmNiZDRhZDQ2MDQxMWFmZTY5NjAxOTExMDMyNiJ9fX0} HEAD
   Options:
-    Collidable: true 
     DigOutOfGround: false
-    FollowRange: 48
-    Despawn: true 
     KnockbackResistance: 1
     NoDamageTicks: 0
-    NoAI: false
-    #PassthroughDamage: true
     NoGravity: true
     AttackSpeed: 2
-    PreventJockeyMounts: true
-    #NoGravity: true
-    PreventMobKillDrops: true 
-    PreventRandomEquipment: true 
-    PreventSunburn: true
-    PreventVanillaDamage: true 
     Silent: true 
     MovementSpeed: 0.0001
     Scale: 1.5
     Invisible: true
-  Modules:
-    ThreatTable: true
   DamageModifiers:
   - SUFFOCATION 0
   - FALL 0
@@ -728,6 +603,7 @@ OpenField_Enemy_モフィモ_ゾラール_MCLove32:
   - remove @children ~onDeath 
 
 OpenField_Enemy_モフィモ_ゾラノ_MCLove32:
+  Template: Template: OpenField_Enemy_Base_MCLove32
   Type: baby_zombie
   Health: 200
   Damage: 25
@@ -735,28 +611,15 @@ OpenField_Enemy_モフィモ_ゾラノ_MCLove32:
   Equipment:
   - player_head{skulltexture=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjQwOWM0ZmE1YzQzNTJhZDAzZDM0ZDE1MTBjMDdkY2E3M2YwZmNiZDRhZDQ2MDQxMWFmZTY5NjAxOTExMDMyNiJ9fX0} HEAD
   Options:
-    Collidable: true 
     DigOutOfGround: false
     FollowRange: 48
-    Despawn: true 
     KnockbackResistance: 1
-    NoDamageTicks: 0
-    NoAI: false
-    PreventJockeyMounts: true
-    #PassthroughDamage: true
     NoGravity: true
     AttackSpeed: 2
-    #NoGravity: true
-    PreventMobKillDrops: true 
-    PreventRandomEquipment: true 
-    PreventSunburn: true
-    PreventVanillaDamage: true 
     Silent: true 
     MovementSpeed: 0.0001
     Scale: 1.5
     Invisible: true
-  Modules:
-    ThreatTable: true
   DamageModifiers:
   - SUFFOCATION 0
   - FALL 0
@@ -771,82 +634,21 @@ OpenField_Enemy_モフィモ_ゾラノ_MCLove32:
   Skills:
   - remove{delay=105} @self ~onSpawn
 
-OpenField_Enemy_プライベートヤドカリ_MCLove32:
-  Type: silverfish
-  Display: "プライベートヤドカリ"
-  Health: 20
-  Damage: 3
-  Armor: 2
+OpenField_Enemy_ウッドライク_MCLove32:
+  Template: OpenField_Enemy_Base_MCLove32
+  Type: baby_zombie
+  Health: 50
+  Damage: 5
+  Armor: 0
+  Equipment:
+  - player_head{skulltexture=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODAxNzFmN2ZhY2M2Zjc4NDMxMDNiODIxZDlmOGE2OWZlYmUwNzE0MDQzMjUzMTNhY2JmMGI5MzE2YTAzN2UwNiJ9fX0} HEAD
+  - leather_chestplate{color=GREEN} CHEST 
+  - leather_leggings{color=GREEN} LEGS 
+  - leather_boots{color=GREEN} FEET
   Options:
-    Collidable: true 
-    DigOutOfGround: false
-    FollowRange: 8
-    Despawn: true 
-    KnockbackResistance: 1
     NoDamageTicks: 0
-    NoAI: false
-    #PreventJockeyMounts: true
-    #PassthroughDamage: true
-    NoGravity: true
-    AttackSpeed: 0.5
-    #NoGravity: true
-    PreventMobKillDrops: true 
-    PreventRandomEquipment: true 
-    PreventSunburn: true
-    PreventVanillaDamage: true 
     Silent: true 
-    MovementSpeed: 0.1
-    Scale: 1.25
-    #Invisible: true
-  Modules:
-    ThreatTable: true
-  DamageModifiers:
-  - SUFFOCATION 0
-  - FALL 0
-  AITargetSelectors:
-  - clear
-  - attacker
-  - players 
-  AIGoalSelectors:
-  - randomstroll
-  - gotoowner
-  - meleeattack
-  Skills:
-  - remove @parent ~onDeath
-
-OpenField_Enemy_パブリックヤドカリ_MCLove32:
-  Type: block_display
-  Display: "パブリックヤドカリ"
-  DisplayOptions:
-    Block: red_sand
-    Translation: -0.25,-0.325,-0.25
-    Scale: 1,0.5,0.75
-  Health: 20
-  Damage: 3
-  Armor: 2
-  Mount: OpenField_Enemy_プライベートヤドカリ_MCLove32
-  Options:
-    Collidable: true 
-    DigOutOfGround: false
-    FollowRange: 8
-    Despawn: true 
-    KnockbackResistance: 0
-    NoDamageTicks: 0
-    NoAI: false
-    #PreventJockeyMounts: true
-    #PassthroughDamage: true
-    NoGravity: true
-    AttackSpeed: 0.5
-    #NoGravity: true
-    PreventMobKillDrops: true 
-    PreventRandomEquipment: true 
-    PreventSunburn: true
-    PreventVanillaDamage: true 
-    Silent: true 
-    MovementSpeed: 0.1
-    #Invisible: true
-  Modules:
-    ThreatTable: true
+    Scale: 1.5
   DamageModifiers:
   - SUFFOCATION 0
   - FALL 0

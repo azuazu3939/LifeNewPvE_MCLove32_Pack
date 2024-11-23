@@ -47,25 +47,6 @@ OpenField_Guard_ヒィツジー_MCLove32_Leader_Spawn:
     mythicinradius{a=<5;r=48} 
     ) true  
 
-OpenField_Enemy_枯れた抜け殻_MCLove32_Spawn:
-  Type: OpenField_Enemy_枯れた抜け殻_MCLove32
-  Worlds: open_field
-  Action: ADD 
-  PositionType: LAND
-  Chance: 0.25
-  Priority: 1
-  Conditions:
-  - mobsinworld{a=<1000} true 
-  - blocktype{type=water,air} false 
-  - height{h=40to120} true 
-  - region{r=spawn} false 
-  - (
-    mythicinradius{a=<1;r=20} ||
-    mythicinradius{a=<2;r=32} ||
-    mythicinradius{a=<3;r=48} 
-    ) true
-  - mobsInRadius{types=OpenField_Enemy_枯れた抜け殻_MCLove32;amount=<1;radius=64} true  
-
 OpenField_Enemy_エリミネーター_MCLove32_Spawn:
   Type: OpenField_Enemy_エリミネーター_MCLove32
   Worlds: open_field
@@ -233,3 +214,23 @@ OpenField_Enemy_雪原キラーラビット_MCLove32_Leader_Spawn:
     ) true
   - mobsInRadius{types=OpenField_Enemy_雪原ラビット_MCLove32,OpenField_Enemy_雪原キラーラビット_MCLove32;amount=<5;radius=32} true
   - biome{b=terra:origen/origen/snowy_mountains} true
+
+OpenField_Enemy_ウッドライク_MCLove32_Spawn:
+  Type: OpenField_Enemy_ウッドライク_MCLove32
+  Worlds: open_field
+  Action: ADD 
+  PositionType: LAND
+  Chance: 0.25
+  Priority: 4
+  Conditions:
+  - mobsinworld{a=<1000} true 
+  - blocktype{type=water,air} false 
+  - height{h=60to100} true 
+  - region{r=spawn} false 
+  - (
+    mythicinradius{a=<1;r=20} ||
+    mythicinradius{a=<3;r=32} ||
+    mythicinradius{a=<5;r=48} 
+    ) true  
+  - mobsInRadius{types=OpenField_Enemy_ウッドライク_MCLove32;amount=<3;radius=32} true
+  - biome{b=terra:origen/origen/pillow_plains_outer} true
