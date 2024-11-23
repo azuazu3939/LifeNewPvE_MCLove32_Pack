@@ -160,15 +160,12 @@ OpenField_Enemy_コロニアル_MCLove32:
   Modules:
     ThreatTable: true
   AIGoalSelectors:
-  - randomstroll
   - gotoparent
   - gotoowner
   Drops:
   - exp 20
   AITargetSelectors:
   - clear
-  - attacker
-  - players 
   Skills:
   - damage{a=<caster.damage>;ii=true;pi=true;cd=1} @trigger ~onAttack 
   - skill:OpenField_Enemy_コロニアル_MCLove32_Skills @self ~onEnterCombat
