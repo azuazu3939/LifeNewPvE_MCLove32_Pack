@@ -56,6 +56,8 @@ OpenField_Weapon_ビットブレードTypeMA_MCLove32:
       Damage: 7
   Skills:
   - skill:OpenField_Weapon_ビットブレードTypeMA_MCLove32_Skills @self ~onUse
+  NBT:
+    enchantment-glint-override: boolean/true
 
 OpenField_Weapon_ビットブレードTypeMB_MCLove32:
   Id: netherite_sword
@@ -73,6 +75,8 @@ OpenField_Weapon_ビットブレードTypeMB_MCLove32:
       Damage: 9
   Skills:
   - skill:OpenField_Weapon_ビットブレードTypeMB_MCLove32_Skills @self ~onUse
+  NBT:
+    enchantment-glint-override: boolean/true
 
 OpenField_Weapon_サンドストーム_MCLove32:
   Id: bow
@@ -109,7 +113,8 @@ OpenField_Weapon_エアブラスタ_MCLove32:
   Group: "Weapon"
   Skills:
   - skill:OpenField_Weapon_エアブラスタ_MCLove32_Skills @tl ~onUse
-  - skill{s=OpenField_Weapon_エアブラスタ_MCLove32_Skills} @tl ~onUse
+  NBT:
+    enchantment-glint-override: boolean/true
 
 OpenField_Weapon_牙狼ノ壱_MCLove32:
   Id: stone_sword 
@@ -265,6 +270,8 @@ OpenField_Weapon_赫灼大斧ラヴァン_MCLove32:
   Group: "Weapon"
   Skills:
   - skill:OpenField_Weapon_赫灼大斧ラヴァン_MCLove32_Skills @self ~onUse
+  NBT:
+    enchantment-glint-override: boolean/true
 
 OpenField_Weapon_ダブルパンチ_MCLove32:
   Id: bow
