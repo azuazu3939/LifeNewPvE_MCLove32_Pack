@@ -109,8 +109,6 @@ OpenField_Weapon_エアブラスタ_MCLove32:
   Group: "Main-Weapon"
   Skills:
   - skill:OpenField_Weapon_エアブラスタ_MCLove32_Skills @tl ~onUse
-  Enchantments:
-  - mana_steal 3
 
 OpenField_Weapon_牙狼ノ壱_MCLove32:
   Id: stone_sword 
