@@ -19,10 +19,7 @@ OpenField_Armor_アルドーナH_MCLove32:
 OpenField_Armor_アルドーナT_MCLove32:
   Id: golden_helmet
   Display: "&eアルドーナティアラ"
-  Lore: 
-  - "&7森と自然の加護の効果として、"
-  - "&7エンチャントが付与されている。"
-  - "&4&l砥石使用不可"
+  Lore: []
   Model: 1001
   Options:
     Destroy: false
@@ -40,7 +37,6 @@ OpenField_Armor_アルドーナT_MCLove32:
   Group: 'Armor'
   NBT:
     PublicBukkitValues:
-      lifenewpve:prevent_grindstone: "true"
       lifenewpve:max_mana: "50"
 
 OpenField_Armor_アルドーナC_MCLove32:
@@ -119,19 +115,13 @@ OpenField_Armor_イルドーナH_MCLove32:
 OpenField_Armor_イルドーナT_MCLove32:
   Id: golden_helmet
   Display: "&eイルドーナティアラ"
-  Lore: 
-  - "&7海と自然の加護の効果として、"
-  - "&7エンチャントが付与されている。"
-  - "&4&l砥石使用不可"
+  Lore: []
   Model: 1002
   Options:
     Destroy: false
     CancelDamage: true
     ItemVersion: 1
     Unbreakable: true
-  Enchantments:
-  - PROTECTION 4
-  - FIRE_PROTECTION 4
   Attributes:
     Head:
       Armor: 20 ADD
@@ -142,7 +132,6 @@ OpenField_Armor_イルドーナT_MCLove32:
   Group: 'Armor'
   NBT:
     PublicBukkitValues:
-      lifenewpve:prevent_grindstone: "true"
       lifenewpve:max_mana: "100"
 
 OpenField_Armor_イルドーナC_MCLove32:
