@@ -1,0 +1,57 @@
+Utils_MobUtils_ダメージ測定_MCLove32:
+  Type: VILLAGER
+  Health: 1000000
+  Options:
+    Collidable: true 
+    DigOutOfGround: true 
+    FollowRange: 0
+    Despawn: true 
+    KnockbackResistance: 0
+    NoDamageTicks: 0
+    VisibleByDefault: true 
+    NoAI: true
+    PreventSlimeSplit: true
+    NoGravity: false
+    PreventMobKillDrops: true 
+    PreventRandomEquipment: true
+    PreventVanillaDamage: true 
+    PreventSunburn: true
+    PreventJockeyMounts: true
+    Invisible: false
+    AttackSpeed: 1
+    Scale: 1
+    Silent: true
+  Modules:
+    ThreatTable: true
+  Skills:
+  - message{m="<skill.var.damage-amount>"} @trigger ~onDamaged
+  - healpercent{m=1} @self ~onDamaged
+
+Utils_MobUtils_ダメージ測定Scale2_MCLove32:
+  Type: VILLAGER
+  Health: 1000000
+  Options:
+    Collidable: true 
+    DigOutOfGround: true 
+    FollowRange: 0
+    Despawn: true 
+    KnockbackResistance: 0
+    NoDamageTicks: 0
+    VisibleByDefault: true 
+    NoAI: true
+    PreventSlimeSplit: true
+    NoGravity: false
+    PreventMobKillDrops: true 
+    PreventRandomEquipment: true
+    PreventVanillaDamage: true 
+    PreventSunburn: true
+    PreventJockeyMounts: true
+    Invisible: false
+    AttackSpeed: 1
+    Scale: 2
+    Silent: true
+  Modules:
+    ThreatTable: true
+  Skills:
+  - message{m="<skill.var.damage-amount>"} @trigger ~onDamaged
+  - healpercent{m=1} @self ~onDamaged
