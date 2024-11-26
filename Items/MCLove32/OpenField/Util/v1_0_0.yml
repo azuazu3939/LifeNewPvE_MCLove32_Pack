@@ -1,0 +1,17 @@
+OpenField_Util_エンチャントプロテクター_MCLove32:
+  Id: paper
+  Display: "&dエンチャントプロテクター"
+  Lore:
+  - "&f右クリで使用することで消費。"
+  - "&fインベントリ内の保護したいエンチャントがある"
+  - "&fアイテムをクリック。"
+  - "&fその後、保護したいエンチャントをクリック後、"
+  - "&fインベントリを閉じると、保護が完了。"
+  - "&f次回エンチャント時に、保護を消して、エンチャント反映。"
+  Model: 1000
+  Options:
+    ItemVersion: 1
+    Unbreakable: true 
+  Group: 'Util'
+  Skills:
+  - skill:OpenField_Util_エンチャントプロテクター_MCLove32_Skills @self ~onUse

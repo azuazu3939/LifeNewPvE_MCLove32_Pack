@@ -1,49 +1,9 @@
-LifeNewPvE_Utils_RightRotation_MCLove32_Settings:
+OpenField_Util_エンチャントプロテクター_MCLove32_Skills:
+  Cooldown: 2
   Conditions:
-  - wearing{s=HAND;m=LifeNewPvE_Utils_RightRotation_MCLove32}
-  - crouching true 
-  - hasTag{t=x1} castinstead LifeNewPvE_Utils_RightRotation_MCLove32_Settings1
+  - wearing{m=OpenField_Util_エンチャントプロテクター_MCLove32;s=HAND} 
   Skills:
-  - addTag{t=x} @self 
-  - addTag{t=x1} @self 
-  - message{m="xを追加"} @self 
-
-LifeNewPvE_Utils_RightRotation_MCLove32_Settings1:
-  Conditions:
-  - crouching true 
-  - hasTag{t=y1} castinstead LifeNewPvE_Utils_RightRotation_MCLove32_Settings2
-  Skills:
-  - addTag{t=y} @self 
-  - addTag{t=y1} @self 
-  - message{m="yを追加"} @self 
-
-LifeNewPvE_Utils_RightRotation_MCLove32_Settings2:
-  Conditions:
-  - crouching true 
-  - hasTag{t=z1} castinstead LifeNewPvE_Utils_RightRotation_MCLove32_Settings3
-  Skills:
-  - addTag{t=z} @self 
-  - addTag{t=z1} @self 
-  - message{m="zを追加"} @self 
-
-LifeNewPvE_Utils_RightRotation_MCLove32_Settings3: 
-  Conditions:
-  - crouching
-  Skills:
-  - removetag{t=x} @self 
-  - removetag{t=t} @self 
-  - removetag{t=z} @self 
-  - removetag{t=x1} @self 
-  - removetag{t=t1} @self 
-  - removetag{t=z1} @self 
-  - message{m="全消し"} @self 
-
-LifeNewPvE_Utils_RightRotation_MCLove32_Do:
-  Conditions:
-  - crouching false
-  Skills:
-  - setVar{var=skill.x;val="0.25";t=FLOAT} @self ?hasTag{t=x}
-  - setVar{var=skill.y;val="0.25";t=FLOAT} @self ?hasTag{t=y} 
-  - setVar{var=skill.z;val="0.25";t=FLOAT} @self ?hasTag{t=z} 
-  - displaytransformation{action=ADD;transformation=LEFT_ROTATION;value=<skill.var.x>,<skill.var.y>,<skill.var.z>,1;delay=1} @EIR{l=false;r=16;sort=NEAREST;limit=1;c=[ - entitytype{t=BLOCK_DISPLAY,ITEM_DISPLAY,TEXT_DISPLAY} true ]}
-  - message{m="完了"} @self 
+  - takeitem{a=1;m=OpenField_Util_エンチャントプロテクター_MCLove32} @self
+  - message{m="&f&lエンチャントプロテクターメニューを1度だけ開きます。"} @self
+  - delay 20
+  - menuprotect @self 
