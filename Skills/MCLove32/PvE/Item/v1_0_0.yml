@@ -1,0 +1,4 @@
+PvE_Weapon_チュートリアル_MCLove32_Skills:
+  Conditions:
+  - wearing{s=HAND;m=PvE_Weapon_チュートリアル_MCLove32}
+  Skills:

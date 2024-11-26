@@ -497,10 +497,10 @@ OpenField_Enemy_エリミネーター_MCLove32:
   - attribute{attr=GENERIC_FOLLOW_RANGE;a=24} @self ~onDropcombat 
   - skill:OpenField_Enemy_エリミネーター_MCLove32_Skills @self ~onEntercombat
   - skill:OpenField_Enemy_エリミネーター_MCLove32_Damaged_Skills @self ~onDamaged
-  - cmd{c="mlg <target.name> OpenField_Armor_エリミネーターH_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.025
-  - cmd{c="mlg <target.name> OpenField_Armor_エリミネーターC_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.025
-  - cmd{c="mlg <target.name> OpenField_Armor_エリミネーターL_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.025
-  - cmd{c="mlg <target.name> OpenField_Armor_エリミネーターB_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.025
+  - cmd{c="mlg <target.name> OpenField_Armor_エリミネーターH_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.1
+  - cmd{c="mlg <target.name> OpenField_Armor_エリミネーターC_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.1
+  - cmd{c="mlg <target.name> OpenField_Armor_エリミネーターL_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.1
+  - cmd{c="mlg <target.name> OpenField_Armor_エリミネーターB_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.1
   - cmd{c="lmg <target.name> 500 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath
   BossBar:
     Enabled: true
