@@ -18,4 +18,4 @@ PvE_Weapon_チュートリアル_MCLove32_Skills:
         - isLiving true
         - isMythicMob true
       ];
-      roll=<random.-45to45>;fo=-10;duration=20;p=16} @self
+      roll=<random.-45to45>;fo=-10;duration=20;p=8} @self
