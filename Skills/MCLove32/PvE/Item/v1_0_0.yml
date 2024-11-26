@@ -5,11 +5,11 @@ PvE_Weapon_チュートリアル_MCLove32_Skills:
   Skills:
   - sound{s=entity.drowned.shoot;p=0} @self
   - sound{s=entity.iron_golem.repair;p=2;delay=5;v=0.5} @self
-  - slash{y=1;w=8;h=16;mpd=true;a=90;radius=5;hnp=true;hp=false;
+  - slash{y=1;w=8;h=16;mpd=true;a=90;radius=4;hnp=true;hp=false;
       oP=[ 
         - e:p{p=sweep_attack;a=5;vs=0.2;hs=1;audience=caster} 
-        - e:p{a=25;vs=0.2;hs=0.25;c=#D4134E;audience=caster} 
-         e:p{a=35;vs=0.25;hs=0.25;c=#EEBD45;audience=caster} 
+        - e:p{p=red_dust;a=25;vs=0.2;hs=0.25;color=#D4134E;audience=caster} 
+         e:p{p=red_dust;a=35;vs=0.25;hs=0.25;color=#EEBD45;audience=caster} 
       ];
       oH=[ 
         - damage{a=10;pi=true;ii=true} 
@@ -18,4 +18,4 @@ PvE_Weapon_チュートリアル_MCLove32_Skills:
         - isLiving true
         - isMythicMob true
       ];
-      roll=<random.-45to45>;fo=-4;duration=20;p=16} @self
+      roll=<random.-45to45>;fo=-10;duration=20;p=16} @self
