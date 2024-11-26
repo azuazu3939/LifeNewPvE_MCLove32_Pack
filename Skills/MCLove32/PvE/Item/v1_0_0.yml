@@ -6,8 +6,8 @@ PvE_Weapon_チュートリアル_MCLove32_Skills:
   - projectile{
     ot=[
       - e:p{p=crit;a=5;vs=0.25;hs=0.5;audience=caster} @origin
-      - e:p{p=clound;a=5;vs=0.25;hs=0.5;d=true;dir=0,1,0;s=0.05;audience=caster} @origin
+      - e:p{p=cloud;a=5;vs=0.25;hs=0.5;d=true;dir=0,1,0;s=0.05;audience=caster} @origin
     ];
     oh=[
-      - damage{a=15;pi=true;ii=true}
-    ];v=8;i=4;vr=1.25;hr=1.5;hnp=true;hp=false;mr=20;md=40} @TL
+      - damage{a=10;pi=true;ii=true}
+    ];v=15;i=1;vr=1.25;hr=1.5;hnp=true;hp=false;mr=20;md=40} @TL
