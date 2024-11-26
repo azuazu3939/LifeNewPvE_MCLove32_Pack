@@ -2,8 +2,8 @@ PvE_Weapon_チュートリアル_MCLove32:
   Id: stone_sword
   Display: "&fチュートリアル"
   Lore: 
-  - "&f右クリ時に、衝撃波を飛ばす。"
-  - "&f誰でも使用可能。"
+  - "&f右クリ時に、剣を振って攻撃する。"
+  - "&f誰でも扱える。"
   Model: 1000
   Options: 
     ItemVersion: 1
