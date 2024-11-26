@@ -9,7 +9,7 @@ PvE_Weapon_チュートリアル_MCLove32_Skills:
       oP=[ 
         - e:p{p=sweep_attack;a=5;vs=0.2;hs=1;audience=caster} 
         - e:p{p=red_dust;a=25;vs=0.2;hs=0.25;color=#D4134E;audience=caster} 
-         e:p{p=red_dust;a=35;vs=0.25;hs=0.25;color=#EEBD45;audience=caster} 
+        - e:p{p=red_dust;a=35;vs=0.25;hs=0.25;color=#EEBD45;audience=caster} 
       ];
       oH=[ 
         - damage{a=10;pi=true;ii=true} 
