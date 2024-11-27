@@ -92,4 +92,4 @@ Resource_Food_ポーション_MCLove32:
     #Unbreakable: true
   Group: 'Food'
   PotionEffects:
-  - SPEED 144000 4 
+  - SPEED 36000 2 

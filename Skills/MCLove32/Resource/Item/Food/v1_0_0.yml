@@ -5,8 +5,7 @@ Resource_ItemFood_ブドウ_MCLove32_Skills:
   Cooldown: 1
   Skills:
   - feed{a=-2;s=1.6;o=true} @self
-  - potion{t=HASTE;l=3;d=1200;p=false} @self
-  - potion{t=SPEED;l=1;d=1200;p=false} @self
+  - modifyMana{a=0.05;m=true} @self 
   - heal{a=5} @self
 
 #@Hand、OffHand使用可能アイテムスキル
@@ -14,8 +13,7 @@ Resource_ItemFood_イチゴ_MCLove32_Skills:
   Cooldown: 1
   Skills:
   - feed{a=-1;s=-0.4;o=true} @self
-  - potion{t=HASTE;l=4;d=1200;p=false} @self
-  - potion{t=SPEED;l=0;d=1200;p=false} @self
+  - modifyMana{a=0.05;m=true} @self 
   - heal{a=2} @self
 
 #@Hand、OffHand使用可能アイテムスキル
@@ -23,8 +21,7 @@ Resource_ItemFood_キウイ_MCLove32_Skills:
   Cooldown: 1
   Skills:
   - feed{a=1;s=0.6;o=true} @self
-  - potion{t=HASTE;l=2;d=1200;p=false} @self
-  - potion{t=SPEED;l=2;d=1200;p=false} @self
+  - modifyMana{a=0.05;m=true} @self 
   - heal{a=3} @self
 
 #@Hand、OffHand使用可能アイテムスキル
@@ -32,8 +29,7 @@ Resource_ItemFood_バナナ_MCLove32_Skills:
   Cooldown: 1
   Skills:
   - feed{a=0;s=-0.4;o=true} @self
-  - potion{t=HASTE;l=1;d=1200;p=false} @self
-  - potion{t=SPEED;l=3;d=1200;p=false} @self
+  - modifyMana{a=0.05;m=true} @self 
   - heal{a=4} @self
 
 #@Hand、OffHand使用可能アイテムスキル
@@ -41,8 +37,7 @@ Resource_ItemFood_フルーツポンチ_MCLove32_Skills:
   Cooldown: 1
   Skills:
   - feed{a=20;s=20;o=true} @self
-  - potion{t=HASTE;l=4;d=2400;p=false} @self
-  - potion{t=SPEED;l=4;d=2400;p=false} @self
   - potion{t=HEALTH_BOOST;l=4;d=2400;p=false} @self
   - potion{t=RESISTANCE;l=0;d=600;p=false} @self
+  - modifyMana{a=0.25;m=true} @self 
   - heal{a=20} @self
