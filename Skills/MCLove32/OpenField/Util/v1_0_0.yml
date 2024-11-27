@@ -4,6 +4,7 @@ OpenField_Util_エンチャントプロテクター_MCLove32_Skills:
   - wearing{m=OpenField_Util_エンチャントプロテクター_MCLove32;s=HAND} 
   Skills:
   - takeitem{a=1;m=OpenField_Util_エンチャントプロテクター_MCLove32} @self
-  - message{m="&f&lエンチャントプロテクターメニューを1度だけ開きます。"} @self
+  - message{m="&f&lエンチャントプロテクターは、"} @self
+  - message{m="1つのアイテムに付き&c&lエンチャントまで&f&lしか保護できません。"} @self 
   - delay 20
   - menuprotect @self 
