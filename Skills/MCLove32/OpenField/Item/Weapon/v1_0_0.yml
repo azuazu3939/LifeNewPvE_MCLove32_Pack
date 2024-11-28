@@ -551,16 +551,17 @@ OpenField_Weapon_火炎球_MCLove32_Skill_Use_Location:
       - isLiving true 
       - isMythicMob true
     ];
-    os=[
-      - e:pr{p=cloud;a=3;vs=0.05;hs=0.05;s=0.15;d=true;dir=0,-1,0;points=24;radius=5} @origen 
-      - sound{s=entity.generic.explode;p=1.21} @origin
-      - sound{s=block.fire.ambient;p=2;audience=caster} @self 
-      - sound{s=entity.blaze.shoot;p=2;audience=caster} @self 
-    ];
     oe=[
       - e:pr{p=cloud;a=3;vs=0.05;hs=0.05;s=0.15;d=true;dir=0,-1,0;points=24;radius=5} @origen 
-      - sound{s=entity.generic.explode;p=1.21} @origin{}
+      - sound{s=entity.generic.explode;p=1.25} @origin
+      - sound{s=block.fire.ambient;p=2;audience=caster} @self 
+      - sound{s=entity.blaze.shoot;p=2;audience=caster} @self 
+      - sound{s=entity.generic.explode;p=1.25} @origin{}
       - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Effects @self 
+    ];
+    os=[
+      - sound{s=block.fire.ambient;p=2;audience=caster} @self 
+      - sound{s=entity.blaze.shoot;p=2;audience=caster} @self 
     ];
     bulletType=MOB;mob=OpenField_Util_火炎球_MCLove32;bmd=true;byo=0;bfo=0;
     v=16;i=1;vr=2;hr=1.5;hp=false;hnp=true;mr=24;md=60;
@@ -579,7 +580,7 @@ OpenField_Weapon_火炎球_MCLove32_Skill_Swing_Location:
     oe=[
       - damage{a=<skill.damage>;ii=true;pi=true} @ENO{r=6;limit=3;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
       - e:pr{p=cloud;a=3;vs=0.05;hs=0.05;s=0.15;d=true;dir=0,-1,0;points=24;radius=5} @origen 
-      - sound{s=entity.generic.explode;p=1.21} @origin
+      - sound{s=entity.generic.explode;p=1.25} @origin
       - sound{s=block.fire.ambient;p=2;audience=caster} @self 
       - sound{s=entity.blaze.shoot;p=2;audience=caster} @self 
       - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Effects @self 
