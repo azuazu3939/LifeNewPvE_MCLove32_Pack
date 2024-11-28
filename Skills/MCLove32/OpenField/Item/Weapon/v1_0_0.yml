@@ -778,3 +778,34 @@ OpenField_Weapon_火炎レーザー_MCLove32_Skill_Loop:
       - isMythicMob true
     ];
     v=50;i=1;sb=false;mr=16;md=80;hp=false;hnp=true;fo=true;ti=4;syo=0;sfo=0} @ENO{r=16;conditions=[ - isLiving true   - isMythicMob true ];limit=1;sort=RANDOM}
+
+OpenField_Weapon_火炎球_MCLove32_Skills:
+  Cooldown: 5
+  Conditions:
+  - wearing{m=OpenField_Weapon_火炎球_MCLove32;s=HAND}
+  - hasMana{a=>40;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]} 
+  - hasAura{n=サブウェポン;
+    onfail=[
+      - message{m="&cサブウェポン共通CT中です。"} @self 
+    ]} false  
+  Skills:
+  - modifyMana{a=-40} @self 
+  - aura{n=サブウェポン;i=20;rd=true;t=60} @self 
+  - missile{
+    ot=[
+      - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.75} @self 
+    ];
+    oh=[
+      - damage{a=30;ii=true;pi=true}
+
+    ];
+    conditions=[
+      - isLiving true 
+      - isMythicMob true
+    ];
+    bulletType=MOB;mob=OpenField_Util_火炎球_MCLove32;bspin=1;bmd=true;
+    v=30;i=1;vr=2;hr=2;hp=false;hnp=true;mr=24;
+    in=15;vo=1.5} @EIC{r=20;a=120;limit=3;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}

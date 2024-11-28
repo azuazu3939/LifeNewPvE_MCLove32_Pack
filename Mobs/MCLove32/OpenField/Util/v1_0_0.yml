@@ -55,3 +55,11 @@ Utils_MobUtils_ダメージ測定Scale2_MCLove32:
   Skills:
   - message{m="<skill.var.damage-amount>"} @trigger ~onDamaged
   - healpercent{m=1} @self ~onDamaged
+
+OpenField_Util_火炎球_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: magma_block
+    BlockLight: 15
+    SkyLight: 15
+
