@@ -550,5 +550,5 @@ OpenField_Weapon_火炎球_MCLove32_Skills:
       - isMythicMob true
     ];
     bulletType=MOB;mob=OpenField_Util_火炎球_MCLove32;bmd=true;byo=0;bfo=0;
-    v=24;i=1;vr=2;hr=2;hp=false;hnp=true;mr=24;
-    in=6;vo=1.5} @EIC{r=20;a=120;limit=3;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
+    v=6;i=1;vr=2;hr=2;hp=false;hnp=true;mr=24;
+    in=15;vo=1.5} @EIC{r=20;a=120;limit=3;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
