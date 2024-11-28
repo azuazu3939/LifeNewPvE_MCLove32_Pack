@@ -73,7 +73,7 @@ OpenField_Util_火炎球_灰1_MCLove32:
     Block: coal_block
     BlockLight: 15
     SkyLight: 15
-    Scale: 0.5,0.5,0.5
+    Scale: 0.2,0.2,0.2
   Skills:
 
 OpenField_Util_火炎球_灰2_MCLove32:
@@ -82,7 +82,7 @@ OpenField_Util_火炎球_灰2_MCLove32:
     Block: coal_block
     BlockLight: 15
     SkyLight: 15
-    Scale: 0.75,0.75,0.75
+    Scale: 0.3,0.3,0.3
   Skills:
 
 OpenField_Util_火炎球_灰3_MCLove32:
@@ -91,7 +91,7 @@ OpenField_Util_火炎球_灰3_MCLove32:
     Block: coal_block
     BlockLight: 15
     SkyLight: 15
-    Scale: 1,1,1
+    Scale: 0.5,0.5,0.5
   Skills:
 
 OpenField_Util_火炎球_灰4_MCLove32:
@@ -100,7 +100,7 @@ OpenField_Util_火炎球_灰4_MCLove32:
     Block: magma_block
     BlockLight: 15
     SkyLight: 15
-    Scale: 0.5,0.5,0.5
+    Scale: 0.2,0.2,0.2
   Skills:
 
 OpenField_Util_火炎球_灰5_MCLove32:
@@ -109,7 +109,7 @@ OpenField_Util_火炎球_灰5_MCLove32:
     Block: magma_block
     BlockLight: 15
     SkyLight: 15
-    Scale: 0.75,0.75,0.75
+    Scale: 0.3,0.3,0.3
   Skills:
 
 OpenField_Util_火炎球_灰6_MCLove32:
@@ -118,7 +118,7 @@ OpenField_Util_火炎球_灰6_MCLove32:
     Block: magma_block
     BlockLight: 15
     SkyLight: 15
-    Scale: 1,1,1
+    Scale: 0.5,0.5,0.5
   Skills:
 
 OpenField_Util_火炎球_灰7_MCLove32:
@@ -127,7 +127,7 @@ OpenField_Util_火炎球_灰7_MCLove32:
     Block: stone
     BlockLight: 15
     SkyLight: 15
-    Scale: 0.5,0.5,0.5
+    Scale: 0.2,0.2,0.2
   Skills:
 
 OpenField_Util_火炎球_灰8_MCLove32:
@@ -136,7 +136,7 @@ OpenField_Util_火炎球_灰8_MCLove32:
     Block: stone
     BlockLight: 15
     SkyLight: 15
-    Scale: 0.75,0.75,0.75
+    Scale: 0.3,0.3,0.3
   Skills:
 
 OpenField_Util_火炎球_灰9_MCLove32:
@@ -145,5 +145,5 @@ OpenField_Util_火炎球_灰9_MCLove32:
     Block: stone
     BlockLight: 15
     SkyLight: 15
-    Scale: 1,1,1
+    Scale: 0.5,0.5,0.5
   Skills:

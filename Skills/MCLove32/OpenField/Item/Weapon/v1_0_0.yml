@@ -622,7 +622,7 @@ OpenField_Weapon_火炎球_MCLove32_Skill_EffectT1:
       - isMythicMob true
     ];
     bulletType=MOB;mob=OpenField_Util_火炎球_灰1_MCLove32;bmd=true;byo=0;bfo=0;
-    v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=60;
+    v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=60;fo=true;
     in=8;vo=3} 
   - missile{
     ot=[
@@ -633,7 +633,7 @@ OpenField_Weapon_火炎球_MCLove32_Skill_EffectT1:
       - isMythicMob true
     ];
     bulletType=MOB;mob=OpenField_Util_火炎球_灰2_MCLove32;bmd=true;byo=0;bfo=0;
-    v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=60;
+    v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=60;fo=true;
     in=8;vo=3} 0.75
   - missile{
     ot=[
@@ -644,7 +644,7 @@ OpenField_Weapon_火炎球_MCLove32_Skill_EffectT1:
       - isMythicMob true
     ];
     bulletType=MOB;mob=OpenField_Util_火炎球_灰3MCLove32;bmd=true;byo=0;bfo=0;
-    v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=60;
+    v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=60;fo=true;
     in=8;vo=3} 0.5
 
 OpenField_Weapon_火炎球_MCLove32_Skill_EffectT2:
@@ -658,7 +658,7 @@ OpenField_Weapon_火炎球_MCLove32_Skill_EffectT2:
       - isMythicMob true
     ];
     bulletType=MOB;mob=OpenField_Util_火炎球_灰4_MCLove32;bmd=true;byo=0;bfo=0;
-    v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=60;
+    v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=60;fo=true;
     in=8;vo=3} 
   - missile{
     ot=[
@@ -669,7 +669,7 @@ OpenField_Weapon_火炎球_MCLove32_Skill_EffectT2:
       - isMythicMob true
     ];
     bulletType=MOB;mob=OpenField_Util_火炎球_灰5_MCLove32;bmd=true;byo=0;bfo=0;
-    v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=60;
+    v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=60;fo=true;
     in=8;vo=3} 0.75
   - missile{
     ot=[
@@ -680,7 +680,7 @@ OpenField_Weapon_火炎球_MCLove32_Skill_EffectT2:
       - isMythicMob true
     ];
     bulletType=MOB;mob=OpenField_Util_火炎球_灰6_MCLove32;bmd=true;byo=0;bfo=0;
-    v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=60;
+    v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=60;fo=true;
     in=8;vo=3} 0.5
 
 OpenField_Weapon_火炎球_MCLove32_Skill_EffectT3:
@@ -694,7 +694,7 @@ OpenField_Weapon_火炎球_MCLove32_Skill_EffectT3:
       - isMythicMob true
     ];
     bulletType=MOB;mob=OpenField_Util_火炎球_灰7_MCLove32;bmd=true;byo=0;bfo=0;
-    v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=60;
+    v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=60;fo=true;
     in=8;vo=3} 
   - missile{
     ot=[
@@ -705,7 +705,7 @@ OpenField_Weapon_火炎球_MCLove32_Skill_EffectT3:
       - isMythicMob true
     ];
     bulletType=MOB;mob=OpenField_Util_火炎球_灰8_MCLove32;bmd=true;byo=0;bfo=0;
-    v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=60;
+    v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=60;fo=true;
     in=8;vo=3} 0.75
   - missile{
     ot=[
@@ -716,5 +716,5 @@ OpenField_Weapon_火炎球_MCLove32_Skill_EffectT3:
       - isMythicMob true
     ];
     bulletType=MOB;mob=OpenField_Util_火炎球_灰9_MCLove32;bmd=true;byo=0;bfo=0;
-    v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=60;
+    v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=60;fo=true;
     in=8;vo=3} 0.5
