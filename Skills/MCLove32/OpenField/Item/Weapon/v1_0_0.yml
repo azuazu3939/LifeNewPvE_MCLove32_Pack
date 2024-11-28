@@ -608,9 +608,9 @@ OpenField_Weapon_火炎球_MCLove32_Skills_Swing:
   Skills:
   - modifyMana{a=-30} @self 
   - aura{n=サブウェポン;i=20;rd=true;t=60} @self 
-  - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Swing_Location{damage=30} @forward{f=16;uel=true}
-  - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Swing_Location{damage=30} @forward{f=16;so=8;uel=true}
-  - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Swing_Location{damage=30} @forward{f=16;so=-8;uel=true}
+  - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Swing_Location{damage=30} @forward{f=16;uel=true;y=-10}
+  - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Swing_Location{damage=30} @forward{f=16;so=8;uel=true;y=-10}
+  - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Swing_Location{damage=30} @forward{f=16;so=-8;uel=true;y=-10}
 
 OpenField_Weapon_火炎球_MCLove32_Skill_Effects:
   Skills:
