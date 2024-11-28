@@ -536,7 +536,7 @@ OpenField_Weapon_火炎球_MCLove32_Skills_Use:
   Skills:
   - modifyMana{a=-40} @self 
   - aura{n=サブウェポン;i=20;rd=true;t=60} @self 
-  - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Location{damage=30} @EIC{r=24;a=120;limit=3;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
+  - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Location{damage=25} @EIC{r=24;a=120;limit=3;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
 
 OpenField_Weapon_火炎球_MCLove32_Skill_Location:
    Skills:
@@ -553,7 +553,7 @@ OpenField_Weapon_火炎球_MCLove32_Skill_Location:
       - isMythicMob true
     ];
     bulletType=MOB;mob=OpenField_Util_火炎球_MCLove32;bmd=true;byo=0;bfo=0;
-    v=16;i=1;vr=1.25;hr=1.5;hp=false;hnp=true;mr=24;md=60;
+    v=16;i=1;vr=1.5;hr=1.8;hp=false;hnp=true;mr=24;md=50;
     in=8;vo=3} 
 
 OpenField_Weapon_火炎球_MCLove32_Skills_Swing:
@@ -571,6 +571,4 @@ OpenField_Weapon_火炎球_MCLove32_Skills_Swing:
   Skills:
   - modifyMana{a=-40} @self 
   - aura{n=サブウェポン;i=20;rd=true;t=60} @self 
-  - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Location @forward{f=16;damage=30;uel=true}
-  - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Location @forward{f=16;so=8;damage=30;uel=true}
-  - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Location @forward{f=16;so=-8;damage=30;uel=true}
+  - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Location{damage=30} @Ring{r=16;p=8}
