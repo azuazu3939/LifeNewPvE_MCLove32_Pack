@@ -555,4 +555,4 @@ OpenField_Weapon_火炎球_MCLove32_Skill_Location:
     ];
     bulletType=MOB;mob=OpenField_Util_火炎球_MCLove32;bmd=true;byo=0;bfo=0;
     v=16;i=1;vr=0.25;hr=1;hp=false;hnp=true;mr=24;
-    in=15;vo=3} @targetedTarget
+    in=12;vo=3} @targetedTarget
