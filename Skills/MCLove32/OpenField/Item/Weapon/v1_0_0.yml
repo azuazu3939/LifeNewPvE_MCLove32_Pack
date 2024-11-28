@@ -543,7 +543,6 @@ OpenField_Weapon_火炎球_MCLove32_Skill_Location:
    - missile{
     ot=[
       - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.95} @self 
-      - modifyProjectile{trait=VELOCITY;action=MULTIPLY;value=0.975} @self 
     ];
     oh=[
       - damage{a=30;ii=true;pi=true}
