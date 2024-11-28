@@ -539,7 +539,7 @@ OpenField_Weapon_火炎球_MCLove32_Skills:
   - missile{
     ot=[
       - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.75} @self 
-      - modifyProjectile{trait=VELOCITY;action=MULTIPLY;value=1.25} @self 
+      - modifyProjectile{trait=VELOCITY;action=MULTIPLY;value=1.15} @self 
     ];
     oh=[
       - damage{a=30;ii=true;pi=true}
