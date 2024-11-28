@@ -66,3 +66,84 @@ OpenField_Util_火炎球_MCLove32:
   Skills:
   #- setscale{s=3;d=40} @self ~onSpawn 
 
+
+OpenField_Util_火炎球_灰1_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: coal_block
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 0.5,0.5,0.5
+  Skills:
+
+OpenField_Util_火炎球_灰2_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: coal_block
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 0.75,0.75,0.75
+  Skills:
+
+OpenField_Util_火炎球_灰3_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: coal_block
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 1,1,1
+  Skills:
+
+OpenField_Util_火炎球_灰4_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: magma_block
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 0.5,0.5,0.5
+  Skills:
+
+OpenField_Util_火炎球_灰5_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: magma_block
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 0.75,0.75,0.75
+  Skills:
+
+OpenField_Util_火炎球_灰6_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: magma_block
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 1,1,1
+  Skills:
+
+OpenField_Util_火炎球_灰7_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: stone
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 0.5,0.5,0.5
+  Skills:
+
+OpenField_Util_火炎球_灰8_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: stone
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 0.75,0.75,0.75
+  Skills:
+
+OpenField_Util_火炎球_灰9_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: stone
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 1,1,1
+  Skills:
