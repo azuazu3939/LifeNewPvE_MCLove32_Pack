@@ -261,4 +261,5 @@ OpenField_Weapon_火炎球_MCLove32:
     Unbreakable: true 
   Group: 'Sub-Weapon'
   Skills:
-  - skill:OpenField_Weapon_火炎球_MCLove32_Skills @self ~onUse
+  - skill:OpenField_Weapon_火炎球_MCLove32_Skills_Use @self ~onUse
+  - skill:OpenField_Weapon_火炎球_MCLove32_Skills_Swing @self ~onSwing
