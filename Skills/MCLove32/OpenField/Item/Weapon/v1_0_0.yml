@@ -566,7 +566,7 @@ OpenField_Weapon_火炎球_MCLove32_Skill_Swing_Location:
       - isMythicMob true
     ];
     oe=[
-      - damage{a=<skill.damage>;ii=true;pi=true} @ENO{r=4;limit=3;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
+      - damage{a=<skill.damage>;ii=true;pi=true} @ENO{r=6;limit=3;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
     ];
     bulletType=MOB;mob=OpenField_Util_火炎球_MCLove32;bmd=true;byo=0;bfo=0;
     v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=60;
