@@ -1,0 +1,257 @@
+OpenField_Weapon_火炎レーザー_MCLove32_Skills:
+  Cooldown: 10
+  Conditions:
+  - wearing{s=HAND;m=OpenField_Weapon_火炎レーザー_MCLove32} true 
+  - materialIsOnCooldown{m=iron_hoe} false 
+  - hasMana{a=>100;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]} 
+  - hasAura{n=サブウェポン;onfail=[
+      - message{m="&cサブウェポン共通CT中です。"} @self 
+    ]} false  
+  Skills:
+  - modifyMana{a=-100} @self 
+  - aura{n=サブウェポン;i=20;rd=true;t=60} @self  
+  - setMaterialCooldown{d=200;m=iron_hoe} @self
+  - setVar{var=skill.x;val="<life.l.x>";t=FLOAT} @TL{d=40}
+  - setVar{var=skill.y;val="<life.l.y>";t=FLOAT} @TL{d=40}
+  - setVar{var=skill.z;val="<life.l.z>";t=FLOAT} @TL{d=40}
+  - sound{s=entity.blaze.shoot;repeat=2;repeatI=10} @self
+  - skill:OpenField_Weapon_火炎レーザー_MCLove32_Skill_Starts{repeat=15;repeatI=1} @forward{f=8;lockpitch=true}
+
+OpenField_Weapon_火炎レーザー_MCLove32_Skill_Starts:
+  Skills:
+  - vskill{s=OpenField_Weapon_火炎レーザー_MCLove32_Skill_Start_<skill.var.itr>;f=true;count=<skill.var.itr>} @self 
+
+OpenField_Weapon_火炎レーザー_MCLove32_Skill_Start_1:
+  Conditions:
+  - (varrange{var=skill.loop;val=>0} true  || varset{var=skill.loop} false) true 
+  Skills:
+  - setVar{var=skill.loop;val="4";t=INTEGER} @self ?!varset{var=skill.loop}
+  - setVar{var=skill.ho;val="<skill.var.ho> * -1";t=INTEGER} @self ?varset{var=skill.ho}
+  - setVar{var=skill.vo;val="<skill.var.vo> * -1";t=FLOAT} @self ?varset{var=skill.vo}
+  - setVar{var=skill.ho;val="<random.-45to45>";t=INTEGER} @self ?!varset{var=skill.vo}
+  - setVar{var=skill.vo;val="<random.float.0.05to0.5>";t=FLOAT} @self ?!varset{var=skill.vo}
+  - setVar{var=skill.loop;val="<skill.var.loop> - 1";t=INTEGER} @self ?varset{var=skill.loop}
+  - skill:OpenField_Weapon_火炎レーザー_MCLove32_Skill_Process{ho=<skill.var.ho>;vo=<skill.var.vo>;count=<skill.count>} @self 
+
+OpenField_Weapon_火炎レーザー_MCLove32_Skill_Start_2:
+  Conditions:
+  - (varrange{var=skill.loop;val=>0} true  || varset{var=skill.loop} false) true 
+  Skills:
+  - setVar{var=skill.loop;val="4";t=INTEGER} @self ?!varset{var=skill.loop}
+  - setVar{var=skill.ho;val="<skill.var.ho> * -1";t=INTEGER} @self ?varset{var=skill.ho}
+  - setVar{var=skill.vo;val="<skill.var.vo> * -1";t=FLOAT} @self ?varset{var=skill.vo}
+  - setVar{var=skill.ho;val="<random.-45to45>";t=INTEGER} @self ?!varset{var=skill.vo}
+  - setVar{var=skill.vo;val="<random.float.0.05to0.5>";t=FLOAT} @self ?!varset{var=skill.vo}
+  - setVar{var=skill.loop;val="<skill.var.loop> - 1";t=INTEGER} @self ?varset{var=skill.loop}
+  - skill:OpenField_Weapon_火炎レーザー_MCLove32_Skill_Process{ho=<skill.var.ho>;vo=<skill.var.vo>;count=<skill.count>} @self 
+
+OpenField_Weapon_火炎レーザー_MCLove32_Skill_Start_3:
+  Conditions:
+  - (varrange{var=skill.loop;val=>0} true  || varset{var=skill.loop} false) true 
+  Skills:
+  - setVar{var=skill.loop;val="4";t=INTEGER} @self ?!varset{var=skill.loop}
+  - setVar{var=skill.ho;val="<skill.var.ho> * -1";t=INTEGER} @self ?varset{var=skill.ho}
+  - setVar{var=skill.vo;val="<skill.var.vo> * -1";t=FLOAT} @self ?varset{var=skill.vo}
+  - setVar{var=skill.ho;val="<random.-45to45>";t=INTEGER} @self ?!varset{var=skill.vo}
+  - setVar{var=skill.vo;val="<random.float.0.05to0.5>";t=FLOAT} @self ?!varset{var=skill.vo}
+  - setVar{var=skill.loop;val="<skill.var.loop> - 1";t=INTEGER} @self ?varset{var=skill.loop}
+  - skill:OpenField_Weapon_火炎レーザー_MCLove32_Skill_Process{ho=<skill.var.ho>;vo=<skill.var.vo>;count=<skill.count>} @self 
+
+OpenField_Weapon_火炎レーザー_MCLove32_Skill_Start_4:
+  Conditions:
+  - (varrange{var=skill.loop;val=>0} true  || varset{var=skill.loop} false) true 
+  Skills:
+  - setVar{var=skill.loop;val="4";t=INTEGER} @self ?!varset{var=skill.loop}
+  - setVar{var=skill.ho;val="<skill.var.ho> * -1";t=INTEGER} @self ?varset{var=skill.ho}
+  - setVar{var=skill.vo;val="<skill.var.vo> * -1";t=FLOAT} @self ?varset{var=skill.vo}
+  - setVar{var=skill.ho;val="<random.-45to45>";t=INTEGER} @self ?!varset{var=skill.vo}
+  - setVar{var=skill.vo;val="<random.float.0.05to0.5>";t=FLOAT} @self ?!varset{var=skill.vo}
+  - setVar{var=skill.loop;val="<skill.var.loop> - 1";t=INTEGER} @self ?varset{var=skill.loop}
+  - skill:OpenField_Weapon_火炎レーザー_MCLove32_Skill_Process{ho=<skill.var.ho>;vo=<skill.var.vo>;count=<skill.count>} @self 
+
+OpenField_Weapon_火炎レーザー_MCLove32_Skill_Start_5:
+  Conditions:
+  - (varrange{var=skill.loop;val=>0} true  || varset{var=skill.loop} false) true 
+  Skills:
+  - setVar{var=skill.loop;val="4";t=INTEGER} @self ?!varset{var=skill.loop}
+  - setVar{var=skill.ho;val="<skill.var.ho> * -1";t=INTEGER} @self ?varset{var=skill.ho}
+  - setVar{var=skill.vo;val="<skill.var.vo> * -1";t=FLOAT} @self ?varset{var=skill.vo}
+  - setVar{var=skill.ho;val="<random.-45to45>";t=INTEGER} @self ?!varset{var=skill.vo}
+  - setVar{var=skill.vo;val="<random.float.0.05to0.5>";t=FLOAT} @self ?!varset{var=skill.vo}
+  - setVar{var=skill.loop;val="<skill.var.loop> - 1";t=INTEGER} @self ?varset{var=skill.loop}
+  - skill:OpenField_Weapon_火炎レーザー_MCLove32_Skill_Process{ho=<skill.var.ho>;vo=<skill.var.vo>;count=<skill.count>} @self 
+
+OpenField_Weapon_火炎レーザー_MCLove32_Skill_Start_6:
+  Conditions:
+  - (varrange{var=skill.loop;val=>0} true  || varset{var=skill.loop} false) true 
+  Skills:
+  - setVar{var=skill.loop;val="4";t=INTEGER} @self ?!varset{var=skill.loop}
+  - setVar{var=skill.ho;val="<skill.var.ho> * -1";t=INTEGER} @self ?varset{var=skill.ho}
+  - setVar{var=skill.vo;val="<skill.var.vo> * -1";t=FLOAT} @self ?varset{var=skill.vo}
+  - setVar{var=skill.ho;val="<random.-45to45>";t=INTEGER} @self ?!varset{var=skill.vo}
+  - setVar{var=skill.vo;val="<random.float.0.05to0.5>";t=FLOAT} @self ?!varset{var=skill.vo}
+  - setVar{var=skill.loop;val="<skill.var.loop> - 1";t=INTEGER} @self ?varset{var=skill.loop}
+  - skill:OpenField_Weapon_火炎レーザー_MCLove32_Skill_Process{ho=<skill.var.ho>;vo=<skill.var.vo>;count=<skill.count>} @self 
+
+OpenField_Weapon_火炎レーザー_MCLove32_Skill_Start_7:
+  Conditions:
+  - (varrange{var=skill.loop;val=>0} true  || varset{var=skill.loop} false) true 
+  Skills:
+  - setVar{var=skill.loop;val="4";t=INTEGER} @self ?!varset{var=skill.loop}
+  - setVar{var=skill.ho;val="<skill.var.ho> * -1";t=INTEGER} @self ?varset{var=skill.ho}
+  - setVar{var=skill.vo;val="<skill.var.vo> * -1";t=FLOAT} @self ?varset{var=skill.vo}
+  - setVar{var=skill.ho;val="<random.-45to45>";t=INTEGER} @self ?!varset{var=skill.vo}
+  - setVar{var=skill.vo;val="<random.float.0.05to0.5>";t=FLOAT} @self ?!varset{var=skill.vo}
+  - setVar{var=skill.loop;val="<skill.var.loop> - 1";t=INTEGER} @self ?varset{var=skill.loop}
+  - skill:OpenField_Weapon_火炎レーザー_MCLove32_Skill_Process{ho=<skill.var.ho>;vo=<skill.var.vo>;count=<skill.count>} @self 
+
+OpenField_Weapon_火炎レーザー_MCLove32_Skill_Start_8:
+  Conditions:
+  - (varrange{var=skill.loop;val=>0} true  || varset{var=skill.loop} false) true 
+  Skills:
+  - setVar{var=skill.loop;val="4";t=INTEGER} @self ?!varset{var=skill.loop}
+  - setVar{var=skill.ho;val="<skill.var.ho> * -1";t=INTEGER} @self ?varset{var=skill.ho}
+  - setVar{var=skill.vo;val="<skill.var.vo> * -1";t=FLOAT} @self ?varset{var=skill.vo}
+  - setVar{var=skill.ho;val="<random.-45to45>";t=INTEGER} @self ?!varset{var=skill.vo}
+  - setVar{var=skill.vo;val="<random.float.0.05to0.5>";t=FLOAT} @self ?!varset{var=skill.vo}
+  - setVar{var=skill.loop;val="<skill.var.loop> - 1";t=INTEGER} @self ?varset{var=skill.loop}
+  - skill:OpenField_Weapon_火炎レーザー_MCLove32_Skill_Process{ho=<skill.var.ho>;vo=<skill.var.vo>;count=<skill.count>} @self 
+
+OpenField_Weapon_火炎レーザー_MCLove32_Skill_Start_9:
+  Conditions:
+  - (varrange{var=skill.loop;val=>0} true  || varset{var=skill.loop} false) true 
+  Skills:
+  - setVar{var=skill.loop;val="4";t=INTEGER} @self ?!varset{var=skill.loop}
+  - setVar{var=skill.ho;val="<skill.var.ho> * -1";t=INTEGER} @self ?varset{var=skill.ho}
+  - setVar{var=skill.vo;val="<skill.var.vo> * -1";t=FLOAT} @self ?varset{var=skill.vo}
+  - setVar{var=skill.ho;val="<random.-45to45>";t=INTEGER} @self ?!varset{var=skill.vo}
+  - setVar{var=skill.vo;val="<random.float.0.05to0.5>";t=FLOAT} @self ?!varset{var=skill.vo}
+  - setVar{var=skill.loop;val="<skill.var.loop> - 1";t=INTEGER} @self ?varset{var=skill.loop}
+  - skill:OpenField_Weapon_火炎レーザー_MCLove32_Skill_Process{ho=<skill.var.ho>;vo=<skill.var.vo>;count=<skill.count>} @self 
+
+OpenField_Weapon_火炎レーザー_MCLove32_Skill_Start_10:
+  Conditions:
+  - (varrange{var=skill.loop;val=>0} true  || varset{var=skill.loop} false) true 
+  Skills:
+  - setVar{var=skill.loop;val="4";t=INTEGER} @self ?!varset{var=skill.loop}
+  - setVar{var=skill.ho;val="<skill.var.ho> * -1";t=INTEGER} @self ?varset{var=skill.ho}
+  - setVar{var=skill.vo;val="<skill.var.vo> * -1";t=FLOAT} @self ?varset{var=skill.vo}
+  - setVar{var=skill.ho;val="<random.-45to45>";t=INTEGER} @self ?!varset{var=skill.vo}
+  - setVar{var=skill.vo;val="<random.float.0.05to0.5>";t=FLOAT} @self ?!varset{var=skill.vo}
+  - setVar{var=skill.loop;val="<skill.var.loop> - 1";t=INTEGER} @self ?varset{var=skill.loop}
+  - skill:OpenField_Weapon_火炎レーザー_MCLove32_Skill_Process{ho=<skill.var.ho>;vo=<skill.var.vo>;count=<skill.count>} @self 
+
+OpenField_Weapon_火炎レーザー_MCLove32_Skill_Start_11:
+  Conditions:
+  - (varrange{var=skill.loop;val=>0} true  || varset{var=skill.loop} false) true 
+  Skills:
+  - setVar{var=skill.loop;val="4";t=INTEGER} @self ?!varset{var=skill.loop}
+  - setVar{var=skill.ho;val="<skill.var.ho> * -1";t=INTEGER} @self ?varset{var=skill.ho}
+  - setVar{var=skill.vo;val="<skill.var.vo> * -1";t=FLOAT} @self ?varset{var=skill.vo}
+  - setVar{var=skill.ho;val="<random.-45to45>";t=INTEGER} @self ?!varset{var=skill.vo}
+  - setVar{var=skill.vo;val="<random.float.0.05to0.5>";t=FLOAT} @self ?!varset{var=skill.vo}
+  - setVar{var=skill.loop;val="<skill.var.loop> - 1";t=INTEGER} @self ?varset{var=skill.loop}
+  - skill:OpenField_Weapon_火炎レーザー_MCLove32_Skill_Process{ho=<skill.var.ho>;vo=<skill.var.vo>;count=<skill.count>} @self 
+
+OpenField_Weapon_火炎レーザー_MCLove32_Skill_Start_12:
+  Conditions:
+  - (varrange{var=skill.loop;val=>0} true  || varset{var=skill.loop} false) true 
+  Skills:
+  - setVar{var=skill.loop;val="4";t=INTEGER} @self ?!varset{var=skill.loop}
+  - setVar{var=skill.ho;val="<skill.var.ho> * -1";t=INTEGER} @self ?varset{var=skill.ho}
+  - setVar{var=skill.vo;val="<skill.var.vo> * -1";t=FLOAT} @self ?varset{var=skill.vo}
+  - setVar{var=skill.ho;val="<random.-45to45>";t=INTEGER} @self ?!varset{var=skill.vo}
+  - setVar{var=skill.vo;val="<random.float.0.05to0.5>";t=FLOAT} @self ?!varset{var=skill.vo}
+  - setVar{var=skill.loop;val="<skill.var.loop> - 1";t=INTEGER} @self ?varset{var=skill.loop}
+  - skill:OpenField_Weapon_火炎レーザー_MCLove32_Skill_Process{ho=<skill.var.ho>;vo=<skill.var.vo>;count=<skill.count>} @self 
+
+OpenField_Weapon_火炎レーザー_MCLove32_Skill_Start_13:
+  Conditions:
+  - (varrange{var=skill.loop;val=>0} true  || varset{var=skill.loop} false) true 
+  Skills:
+  - setVar{var=skill.loop;val="4";t=INTEGER} @self ?!varset{var=skill.loop}
+  - setVar{var=skill.ho;val="<skill.var.ho> * -1";t=INTEGER} @self ?varset{var=skill.ho}
+  - setVar{var=skill.vo;val="<skill.var.vo> * -1";t=FLOAT} @self ?varset{var=skill.vo}
+  - setVar{var=skill.ho;val="<random.-45to45>";t=INTEGER} @self ?!varset{var=skill.vo}
+  - setVar{var=skill.vo;val="<random.float.0.05to0.5>";t=FLOAT} @self ?!varset{var=skill.vo}
+  - setVar{var=skill.loop;val="<skill.var.loop> - 1";t=INTEGER} @self ?varset{var=skill.loop}
+  - skill:OpenField_Weapon_火炎レーザー_MCLove32_Skill_Process{ho=<skill.var.ho>;vo=<skill.var.vo>;count=<skill.count>} @self 
+
+OpenField_Weapon_火炎レーザー_MCLove32_Skill_Start_14:
+  Conditions:
+  - (varrange{var=skill.loop;val=>0} true  || varset{var=skill.loop} false) true 
+  Skills:
+  - setVar{var=skill.loop;val="4";t=INTEGER} @self ?!varset{var=skill.loop}
+  - setVar{var=skill.ho;val="<skill.var.ho> * -1";t=INTEGER} @self ?varset{var=skill.ho}
+  - setVar{var=skill.vo;val="<skill.var.vo> * -1";t=FLOAT} @self ?varset{var=skill.vo}
+  - setVar{var=skill.ho;val="<random.-45to45>";t=INTEGER} @self ?!varset{var=skill.vo}
+  - setVar{var=skill.vo;val="<random.float.0.05to0.5>";t=FLOAT} @self ?!varset{var=skill.vo}
+  - setVar{var=skill.loop;val="<skill.var.loop> - 1";t=INTEGER} @self ?varset{var=skill.loop}
+  - skill:OpenField_Weapon_火炎レーザー_MCLove32_Skill_Process{ho=<skill.var.ho>;vo=<skill.var.vo>;count=<skill.count>} @self 
+
+OpenField_Weapon_火炎レーザー_MCLove32_Skill_Start_15:
+  Conditions:
+  - (varrange{var=skill.loop;val=>0} true  || varset{var=skill.loop} false) true 
+  Skills:
+  - setVar{var=skill.loop;val="4";t=INTEGER} @self ?!varset{var=skill.loop}
+  - setVar{var=skill.ho;val="<skill.var.ho> * -1";t=INTEGER} @self ?varset{var=skill.ho}
+  - setVar{var=skill.vo;val="<skill.var.vo> * -1";t=FLOAT} @self ?varset{var=skill.vo}
+  - setVar{var=skill.ho;val="<random.-45to45>";t=INTEGER} @self ?!varset{var=skill.vo}
+  - setVar{var=skill.vo;val="<random.float.0.05to0.5>";t=FLOAT} @self ?!varset{var=skill.vo}
+  - setVar{var=skill.loop;val="<skill.var.loop> - 1";t=INTEGER} @self ?varset{var=skill.loop}
+  - skill:OpenField_Weapon_火炎レーザー_MCLove32_Skill_Process{ho=<skill.var.ho>;vo=<skill.var.vo>;count=<skill.count>} @self 
+
+OpenField_Weapon_火炎レーザー_MCLove32_Skill_Start_16:
+  Conditions:
+  - (varrange{var=skill.loop;val=>0} true  || varset{var=skill.loop} false) true 
+  Skills:
+  - setVar{var=skill.loop;val="4";t=INTEGER} @self ?!varset{var=skill.loop}
+  - setVar{var=skill.ho;val="<skill.var.ho> * -1";t=INTEGER} @self ?varset{var=skill.ho}
+  - setVar{var=skill.vo;val="<skill.var.vo> * -1";t=FLOAT} @self ?varset{var=skill.vo}
+  - setVar{var=skill.ho;val="<random.-45to45>";t=INTEGER} @self ?!varset{var=skill.vo}
+  - setVar{var=skill.vo;val="<random.float.0.05to0.5>";t=FLOAT} @self ?!varset{var=skill.vo}
+  - setVar{var=skill.loop;val="<skill.var.loop> - 1";t=INTEGER} @self ?varset{var=skill.loop}
+  - skill:OpenField_Weapon_火炎レーザー_MCLove32_Skill_Process{ho=<skill.var.ho>;vo=<skill.var.vo>;count=<skill.count>} @self 
+
+OpenField_Weapon_火炎レーザー_MCLove32_Skill_Process:
+  Skills:
+  - projectile{
+    ot=[
+      - e:p{p=flame;a=1;audience=@self} @origin
+    ];
+    oe=[
+      - skill:OpenField_Weapon_火炎レーザー_MCLove32_Skill_Loop{count=<skill.count>} @origin
+    ];
+    oh=[
+      - damage{a=5;pi=true;ii=true;e=RED}
+    ];
+    conditions=[
+      - isLiving true 
+      - isMythicMob true
+    ];
+    v=40;i=1;se=false;mr=8;md=80;hp=false;hnp=true;syo=0;sfo=0;fo=true;ho=<skill.ho>;vo=<skill.vo>;ti=4} @Location{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
+
+OpenField_Weapon_火炎レーザー_MCLove32_Skill_Loop:
+  TargetConditions:
+  - mythicinradius{r=4;a=>0;
+    onFail=[
+      - vskill{s=OpenField_Weapon_火炎レーザー_MCLove32_Skill_Start_<skill.count>} @self 
+    ]} true
+  - distance{d=<48} true 
+  Skills:
+  - projectile{
+    ot=[
+      - e:p{p=flame;a=1;audience=@self} @origin
+    ];
+    oh=[
+      - damage{a=20;pi=true;ii=true;e=RED}
+      - ignite{t=10} 
+    ];
+    conditions=[
+      - isLiving true 
+      - isMythicMob true
+    ];
+    v=50;i=1;sb=false;mr=16;md=80;hp=false;hnp=true;fo=true;ti=4;syo=0;sfo=0} @ENO{r=16;conditions=[ - isLiving true   - isMythicMob true ];limit=1;sort=RANDOM}
