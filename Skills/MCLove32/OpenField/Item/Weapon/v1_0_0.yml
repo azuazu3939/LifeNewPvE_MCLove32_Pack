@@ -623,7 +623,7 @@ OpenField_Weapon_火炎球_MCLove32_Skill_EffectT1:
     ];
     bulletType=MOB;mob=OpenField_Util_火炎球_灰1_MCLove32;bmd=true;byo=0;bfo=0;
     v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=60;fo=true;
-    in=8;vo=3} 0.5
+    in=8;vo=2} 0.5
   - missile{
     ot=[
       - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.95} @self 
@@ -634,7 +634,7 @@ OpenField_Weapon_火炎球_MCLove32_Skill_EffectT1:
     ];
     bulletType=MOB;mob=OpenField_Util_火炎球_灰2_MCLove32;bmd=true;byo=0;bfo=0;
     v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=60;fo=true;
-    in=8;vo=3} 0.35
+    in=8;vo=2} 0.35
   - missile{
     ot=[
       - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.95} @self 
@@ -645,7 +645,7 @@ OpenField_Weapon_火炎球_MCLove32_Skill_EffectT1:
     ];
     bulletType=MOB;mob=OpenField_Util_火炎球_灰3MCLove32;bmd=true;byo=0;bfo=0;
     v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=60;fo=true;
-    in=8;vo=3} 0.25
+    in=8;vo=2} 0.25
 
 OpenField_Weapon_火炎球_MCLove32_Skill_EffectT2:
   Skills:
@@ -659,7 +659,7 @@ OpenField_Weapon_火炎球_MCLove32_Skill_EffectT2:
     ];
     bulletType=MOB;mob=OpenField_Util_火炎球_灰4_MCLove32;bmd=true;byo=0;bfo=0;
     v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=60;fo=true;
-    in=8;vo=3} 0.5
+    in=8;vo=2} 0.5
   - missile{
     ot=[
       - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.95} @self 
@@ -670,7 +670,7 @@ OpenField_Weapon_火炎球_MCLove32_Skill_EffectT2:
     ];
     bulletType=MOB;mob=OpenField_Util_火炎球_灰5_MCLove32;bmd=true;byo=0;bfo=0;
     v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=60;fo=true;
-    in=8;vo=3} 0.35
+    in=8;vo=2} 0.35
   - missile{
     ot=[
       - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.95} @self 
@@ -681,7 +681,7 @@ OpenField_Weapon_火炎球_MCLove32_Skill_EffectT2:
     ];
     bulletType=MOB;mob=OpenField_Util_火炎球_灰6_MCLove32;bmd=true;byo=0;bfo=0;
     v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=60;fo=true;
-    in=8;vo=3} 0.25
+    in=8;vo=2} 0.25
 
 OpenField_Weapon_火炎球_MCLove32_Skill_EffectT3:
   Skills:
@@ -695,7 +695,7 @@ OpenField_Weapon_火炎球_MCLove32_Skill_EffectT3:
     ];
     bulletType=MOB;mob=OpenField_Util_火炎球_灰7_MCLove32;bmd=true;byo=0;bfo=0;
     v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=60;fo=true;
-    in=8;vo=3} 0.5
+    in=8;vo=2} 0.5
   - missile{
     ot=[
       - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.95} @self 
@@ -706,7 +706,7 @@ OpenField_Weapon_火炎球_MCLove32_Skill_EffectT3:
     ];
     bulletType=MOB;mob=OpenField_Util_火炎球_灰8_MCLove32;bmd=true;byo=0;bfo=0;
     v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=60;fo=true;
-    in=8;vo=3} 0.35
+    in=8;vo=2} 0.35
   - missile{
     ot=[
       - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.95} @self 
@@ -717,4 +717,4 @@ OpenField_Weapon_火炎球_MCLove32_Skill_EffectT3:
     ];
     bulletType=MOB;mob=OpenField_Util_火炎球_灰9_MCLove32;bmd=true;byo=0;bfo=0;
     v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=60;fo=true;
-    in=8;vo=3} 0.25
+    in=8;vo=2} 0.25
