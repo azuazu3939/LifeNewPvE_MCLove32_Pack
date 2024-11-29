@@ -532,8 +532,11 @@ OpenField_Weapon_火炎球_MCLove32_Skill_Use_Location:
       - isLiving true 
       - isMythicMob true
     ];
+    oh=[
+      - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Use_Final 
+    ];
     oe=[
-      - damage{a=35 * <skill.var.size>;ii=true;pi=true} @ENO{r=4;limit=3;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
+      - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Use_Final @ENO{r=4;limit=3;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
       - e:pr{p=cloud;a=3;vs=0.05;hs=0.05;s=0.15;r=4} @origin
       - sound{s=entity.generic.explode;p=1.25;v=0.5} @origin
       - sound{s=block.fire.ambient;p=2;audience=caster;v=0.5} @origin
@@ -542,7 +545,13 @@ OpenField_Weapon_火炎球_MCLove32_Skill_Use_Location:
     ];
     bulletType=MOB;mob=OpenField_Util_火炎球_MCLove32;bmd=true;byo=0;bfo=0;
     v=16;i=1;vr=1.25;hr=1.25;hp=false;hnp=true;mr=24;md=60;fo=true;
-    in=6;vo=3} 
+    in=6;vo=3}
+
+OpenField_Weapon_火炎球_MCLove32_Skill_Use_Final:
+  Skills:
+  - damage{a=35 * <skill.var.size>;ii=true;pi=true} @targetedTarget{c=[ - hasTag{t=Cancel} false ]} 
+  - addtag{t=Cancel} @targetedTarget{c=[ - hasTag{t=Cancel} false ]}
+  - removeTag{t=Cancel;delay=1} @targetedTarget{c=[ - hasTag{t=Cancel} false ]}
 
 OpenField_Weapon_火炎球_MCLove32_Skills_Use:
   Cooldown: 5
