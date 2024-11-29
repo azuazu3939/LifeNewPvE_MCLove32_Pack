@@ -545,7 +545,7 @@ OpenField_Weapon_火炎球_MCLove32_Skill_Use_Location:
    - missile{
     ot=[
       - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.95} @self 
-      - modifyProjectile{trait=VELOCITY;action=MULTIPLY;value=1.1} @self 
+      - modifyProjectile{trait=VELOCITY;action=MULTIPLY;value=1.05} @self 
     ];
     conditions=[
       - isLiving true 
@@ -568,7 +568,7 @@ OpenField_Weapon_火炎球_MCLove32_Skill_Swing_Location:
   - missile{
     ot=[
       - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.975} @self 
-      - modifyProjectile{trait=VELOCITY;action=MULTIPLY;value=1.1} @self 
+      - modifyProjectile{trait=VELOCITY;action=MULTIPLY;value=1.05} @self 
     ];
     conditions=[
       - isLiving true 
