@@ -123,9 +123,12 @@ OpenField_Enemy_コロニアル_MCLove32_Skill1:
     ];
     oh=[
       - sound{s=entity.witch.ambient;v=0.25} @self  
-      - damage{a=15;pi=true;ii=true}
+      - damage{a=15;pi=true;ii=true} 
       - pull{v=5}
       - heal{a=10} @self 
+    ];
+    conditions=[
+       - hasTag{t=Slime_Melee} false
     ];
     v=5;i=1} @TL
 
