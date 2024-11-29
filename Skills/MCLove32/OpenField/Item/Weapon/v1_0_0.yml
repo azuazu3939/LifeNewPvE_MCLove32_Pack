@@ -565,9 +565,11 @@ OpenField_Weapon_火炎弾_MCLove32_Skills_Use:
     onfail=[
       - message{m="&cサブウェポン共通CT中です。"} @self 
     ]} false  
+  - materialIsOnCooldown{m=iron_hoe} false 
   Skills:
   - modifyMana{a=-30} @self 
   - aura{n=サブウェポン;i=20;rd=true;t=60} @self 
+  - setMaterialCooldown{m=IRON_HOE;d=100} @self 
   - setVar{var=skill.size;val="0.5";t=FLOAT} @self 
   - setVar{var=skill.size;val="1.0";t=FLOAT;delay=10} @self 
   - skill:OpenField_Weapon_火炎弾_MCLove32_Skill_Use_Location @forward{f=16;uel=true;y=-10}
