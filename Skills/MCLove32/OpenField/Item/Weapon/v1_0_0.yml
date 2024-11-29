@@ -551,7 +551,7 @@ OpenField_Weapon_火炎球_MCLove32_Skill_Use_Final:
   Skills:
   - damage{a=35 * <skill.var.size>;ii=true;pi=true} @targetedTarget{c=[ - hasTag{t=Cancel} false ]} 
   - addtag{t=Cancel} @targetedTarget{c=[ - hasTag{t=Cancel} false ]}
-  - removeTag{t=Cancel;delay=1} @targetedTarget{c=[ - hasTag{t=Cancel} false ]}
+  - removeTag{t=Cancel;delay=1} @targetedTarget{c=[ - hasTag{t=Cancel} true ]}
 
 OpenField_Weapon_火炎球_MCLove32_Skills_Use:
   Cooldown: 5
