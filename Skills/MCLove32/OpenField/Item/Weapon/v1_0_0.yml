@@ -536,10 +536,8 @@ OpenField_Weapon_火炎球_MCLove32_Skills_Use:
   Skills:
   - modifyMana{a=-40} @self 
   - aura{n=サブウェポン;i=20;rd=true;t=60} @self
-  - setVar{var=skill.size;val="0.1";t=FLOAT} @self 
-  - setVar{var=skill.size;val="0.5";t=FLOAT;delay=15} @self 
-  - setVar{var=skill.size;val="0.8";t=FLOAT;delay=25} @self 
-  - setVar{var=skill.size;val="1.0";t=FLOAT;delay=30} @self 
+  - setVar{var=skill.size;val="0.5";t=FLOAT} @self 
+  - setVar{var=skill.size;val="1.0";t=FLOAT;delay=15} @self 
   - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Use_Location @EIC{r=24;a=120;limit=3;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
 
 OpenField_Weapon_火炎球_MCLove32_Skill_Use_Location:
@@ -601,10 +599,8 @@ OpenField_Weapon_火炎球_MCLove32_Skills_Swing:
   Skills:
   - modifyMana{a=-30} @self 
   - aura{n=サブウェポン;i=20;rd=true;t=60} @self 
-  - setVar{var=skill.size;val="0.1";t=FLOAT} @self 
-  - setVar{var=skill.size;val="0.5";t=FLOAT;delay=15} @self 
-  - setVar{var=skill.size;val="0.8";t=FLOAT;delay=25} @self 
-  - setVar{var=skill.size;val="1.0";t=FLOAT;delay=30} @self 
+  - setVar{var=skill.size;val="0.5";t=FLOAT} @self 
+  - setVar{var=skill.size;val="1.0";t=FLOAT;delay=15} @self 
   - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Swing_Location @forward{f=16;uel=true;y=-10}
   - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Swing_Location @forward{f=16;so=8;uel=true;y=-10}
   - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Swing_Location @forward{f=16;so=-8;uel=true;y=-10}
