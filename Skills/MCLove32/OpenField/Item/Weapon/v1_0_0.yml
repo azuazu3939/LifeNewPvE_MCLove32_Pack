@@ -540,60 +540,57 @@ OpenField_Weapon_火炎球_MCLove32_Skills_Use:
 
 OpenField_Weapon_火炎球_MCLove32_Skill_Use_Location:
    Skills:
-   - missile{
-    ot=[
-      - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.95} @self 
-    ];
-    oh=[
-      - damage{a=<skill.damage>;ii=true;pi=true}
-    ];
-    conditions=[
-      - isLiving true 
-      - isMythicMob true
-    ];
-    oe=[
-      - e:pr{p=cloud;a=3;vs=0.05;hs=0.05;s=0.15;d=true;dir=0,-1,0;points=24;radius=5} @origin
-      - sound{s=entity.generic.explode;p=1.25;v=0.5} @origin
-      - sound{s=block.fire.ambient;p=2;audience=caster;v=0.5} @self 
-      - sound{s=entity.blaze.shoot;p=2;audience=caster;v=0.5} @self 
-      - sound{s=entity.generic.explode;p=1.25;v=0.5} @origin
-      - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Effects @self 
-    ];
-    os=[
-      - delay 8
-      - sound{s=block.fire.ambient;p=2;audience=caster;v=0.5;cd=1} @self 
-      - sound{s=entity.blaze.shoot;p=2;audience=caster;v=0.5;p=0;cd=1} @self 
-    ];
-    bulletType=MOB;mob=OpenField_Util_火炎球_MCLove32;bmd=true;byo=0;bfo=0;
-    v=16;i=1;vr=1.25;hr=1.25;hp=false;hnp=true;mr=24;md=60;ham=true;
-    in=8;vo=3} 
+   - projectile{
+     oe=[
+      - missile{
+        ot=[
+          - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.95} @self 
+        ];
+        conditions=[
+          - isLiving true 
+          - isMythicMob true
+        ];
+        oe=[
+          - damage{a=<skill.damage>;ii=true;pi=true}
+          - e:pr{p=cloud;a=3;vs=0.05;hs=0.05;s=0.15;r=4} @origin
+          - sound{s=entity.generic.explode;p=1.25;v=0.5} @origin
+          - sound{s=block.fire.ambient;p=2;audience=caster;v=0.5} @origin
+          - sound{s=entity.blaze.shoot;p=2;audience=caster;v=0.5} @origin
+          - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Effects @origin
+        ];
+        bulletType=MOB;mob=OpenField_Util_火炎球_MCLove32;bmd=true;byo=0;bfo=0;bspin=4
+        v=16;i=1;vr=1.25;hr=1.25;hp=false;hnp=true;mr=24;md=60;fo=true
+        in=8;vo=3;syo=0;sfo=0} 
+     ];
+     bulletType=MOB;mob=OpenField_Util_火炎球_MCLove32;bmd=true;byo=0;bfo=0;bspin=4;i=1;
+     md=30;hp=false}
 
 OpenField_Weapon_火炎球_MCLove32_Skill_Swing_Location:
    Skills:
-   - missile{
-    ot=[
-      - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.95} @self 
-    ];
-    conditions=[
-      - isLiving true 
-      - isMythicMob true
-    ];
-    oe=[
-      - damage{a=<skill.damage>;ii=true;pi=true} @ENO{r=4;limit=3;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
-      - e:pr{p=cloud;a=3;vs=0.05;hs=0.05;s=0.15;r=4} @origin
-      - sound{s=entity.generic.explode;p=1.25;v=0.5} @origin
-      - sound{s=block.fire.ambient;p=2;audience=caster;v=0.5} @self 
-      - sound{s=entity.blaze.shoot;p=2;audience=caster;v=0.5} @self 
-      - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Effects @self 
-    ];
-    os=[
-      - delay 8
-      - sound{s=block.fire.ambient;p=2;audience=caster;v=0.5;cd=1} @self 
-      - sound{s=entity.blaze.shoot;p=2;audience=caster;v=0.5;p=0;cd=1} @self 
-    ];
-    bulletType=MOB;mob=OpenField_Util_火炎球_MCLove32;bmd=true;byo=0;bfo=0;
-    v=16;i=1;vr=1.25;hr=1.25;hp=false;hnp=true;mr=24;md=60;ham=true;
-    in=8;vo=3} 
+   - projectile{
+     oe=[
+      - missile{
+        ot=[
+          - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.95} @self 
+        ];
+        conditions=[
+          - isLiving true 
+          - isMythicMob true
+        ];
+        oe=[
+          - damage{a=<skill.damage>;ii=true;pi=true} @ENO{r=4;limit=3;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
+          - e:pr{p=cloud;a=3;vs=0.05;hs=0.05;s=0.15;r=4} @origin
+          - sound{s=entity.generic.explode;p=1.25;v=0.5} @origin
+          - sound{s=block.fire.ambient;p=2;audience=caster;v=0.5} @origin
+          - sound{s=entity.blaze.shoot;p=2;audience=caster;v=0.5} @origin
+          - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Effects @origin
+        ];
+        bulletType=MOB;mob=OpenField_Util_火炎球_MCLove32;bmd=true;byo=0;bfo=0;bspin=4
+        v=16;i=1;vr=1.25;hr=1.25;hp=false;hnp=true;mr=24;md=60;fo=true
+        in=8;vo=3;syo=0;sfo=0} 
+     ];
+     bulletType=MOB;mob=OpenField_Util_火炎球_MCLove32;bmd=true;byo=0;bfo=0;bspin=4;i=1;
+     md=30;hp=false}
 
 OpenField_Weapon_火炎球_MCLove32_Skills_Swing:
   Cooldown: 5
