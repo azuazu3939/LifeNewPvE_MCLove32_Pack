@@ -143,6 +143,8 @@ OpenField_Enemy_コロニア_MCLove32:
 
 OpenField_Enemy_コロニアル_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
+  Exclude:
+  - Skills
   Type: slime
   Display: "&fコロニアル"
   Health: 20
@@ -158,11 +160,19 @@ OpenField_Enemy_コロニアル_MCLove32:
   Drops:
   - exp 20
   Skills:
+  - skill{
+    s=[
+      - damage{a=<caster.damage>;ii=true;pi=true} @targetedTarget{c=[ - hasTag{t=Slime_Melee} false ]}
+      - addtag{t=Slime_Melee} @targetedTarget{c=[ - hasTag{t=Slime_Melee} false ]}
+      - removetag{t=Slime_Melee;delay=10} @targetedTarget{c=[ - hasTag{t=Slime_Melee} true ]}
+    ]} @trigger ~onAttack 
   - skill:OpenField_Enemy_コロニアル_MCLove32_Skills @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=24} @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16} @self ~onDropCombat
   - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
   - cmd{c="mlg <target.name> OpenField_Material_エアラプト結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.2
+  - cmd{c="mlg <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.0001"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Material_魔力結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true]} ~onDeath 0.1
   - cmd{c="lmg <target.name> 20 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
 
 OpenField_Enemy_コロニアル_MCLove32_Leader: 
