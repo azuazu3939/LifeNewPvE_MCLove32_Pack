@@ -262,4 +262,3 @@ OpenField_Weapon_火炎球_MCLove32:
   Group: 'Sub-Weapon'
   Skills:
   - skill:OpenField_Weapon_火炎球_MCLove32_Skills_Use @self ~onUse
-  - skill:OpenField_Weapon_火炎球_MCLove32_Skills_Swing @self ~onSwing
