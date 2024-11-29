@@ -118,9 +118,6 @@ OpenField_Enemy_コロニアル_MCLove32_Skills:
 OpenField_Enemy_コロニアル_MCLove32_Skill1:
   Skills:
   - projectile{
-    ot=[
-      - e:p{p=crit;a=5;vs=0.35;hs=0.35} @origin
-    ];
     oh=[
       - sound{s=entity.witch.ambient;v=0.25} @self  
       - damage{a=15;pi=true;ii=true} 
@@ -130,7 +127,11 @@ OpenField_Enemy_コロニアル_MCLove32_Skill1:
     conditions=[
        - hasTag{t=Slime_Melee} false
     ];
-    v=5;i=1} @TL
+    bulletType=MOB;mob=OpenField_Util_スライムブロック_75_MCLove32;bmd=true;byo=0;bfo=0;
+    v=5;i=1;Interactable=true;
+    onInteract=[
+      - damage{a=10;pi=true;ii=true} @self
+    ]} @TL
 
 OpenField_Guard_牙狼ノ零_MCLove32_Skills: 
   Cooldown: 0.1
