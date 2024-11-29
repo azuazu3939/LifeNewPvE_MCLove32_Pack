@@ -556,7 +556,7 @@ OpenField_Weapon_火炎球_MCLove32_Skill_Use_Location:
       - sound{s=entity.blaze.shoot;p=2;audience=caster;v=0.5} @origin
       - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Effects @origin
     ];
-    bulletType=MOB;mob=OpenField_Util_火炎球_MCLove32;bmd=true;byo=0;bfo=0;bspin=4;
+    bulletType=MOB;mob=OpenField_Util_火炎球_MCLove32;bmd=true;byo=0;bfo=0;bspin=12;
     v=16;i=1;vr=1.25;hr=1.25;hp=false;hnp=true;mr=24;md=60;fo=true;
     in=8;vo=3} 
 
@@ -578,7 +578,7 @@ OpenField_Weapon_火炎球_MCLove32_Skill_Swing_Location:
       - sound{s=entity.blaze.shoot;p=2;audience=caster;v=0.5} @origin
       - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Effects @origin
     ];
-    bulletType=MOB;mob=OpenField_Util_火炎球_MCLove32;bmd=true;byo=0;bfo=0;bspin=4;
+    bulletType=MOB;mob=OpenField_Util_火炎球_MCLove32;bmd=true;byo=0;bfo=0;bspin=12;
     v=16;i=1;vr=1.25;hr=1.25;hp=false;hnp=true;mr=24;md=60;fo=true;
     in=8;vo=3} 
 
