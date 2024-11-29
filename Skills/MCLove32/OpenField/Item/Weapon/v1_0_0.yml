@@ -521,7 +521,7 @@ OpenField_Weapon_ラヴァン_MCLove32_Skill_Handler:
       - sound{s=block.note_block.harp;p=<skill.var.pitch>} @self
     ];repeat=5;repeatI=2} @self 
 
-OpenField_Weapon_火炎球_MCLove32_Skill_Use_Location:
+OpenField_Weapon_火炎弾_MCLove32_Skill_Use_Location:
   Skills:
   - missile{
     ot=[
@@ -533,30 +533,30 @@ OpenField_Weapon_火炎球_MCLove32_Skill_Use_Location:
       - isMythicMob true
     ];
     oh=[
-      - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Use_Final 
+      - skill:OpenField_Weapon_火炎弾_MCLove32_Skill_Use_Final 
     ];
     oe=[
-      - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Use_Final @ENO{r=4;limit=3;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
+      - skill:OpenField_Weapon_火炎弾_MCLove32_Skill_Use_Final @ENO{r=4;limit=3;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
       - e:pr{p=cloud;a=3;vs=0.05;hs=0.05;s=0.15;r=4} @origin
       - sound{s=entity.generic.explode;p=1.25;v=0.5} @origin
       - sound{s=block.fire.ambient;p=2;audience=caster;v=0.5} @origin
       - sound{s=entity.blaze.shoot;p=2;audience=caster;v=0.5} @origin
-      - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Effects @origin
+      - skill:OpenField_Weapon_火炎弾_MCLove32_Skill_Effects @origin
     ];
-    bulletType=MOB;mob=OpenField_Util_火炎球_MCLove32;bmd=true;byo=0;bfo=0;
+    bulletType=MOB;mob=OpenField_Util_火炎弾_MCLove32;bmd=true;byo=0;bfo=0;
     v=16;i=1;vr=1.25;hr=1.25;hp=false;hnp=true;mr=24;md=60;fo=true;
     in=6;vo=3}
 
-OpenField_Weapon_火炎球_MCLove32_Skill_Use_Final:
+OpenField_Weapon_火炎弾_MCLove32_Skill_Use_Final:
   Skills:
   - damage{a=35 * <skill.var.size>;ii=true;pi=true} @targetedTarget{c=[ - hasTag{t=Cancel} false ]} 
   - addtag{t=Cancel} @targetedTarget{c=[ - hasTag{t=Cancel} false ]}
   - removeTag{t=Cancel;delay=1} @targetedTarget{c=[ - hasTag{t=Cancel} true ]}
 
-OpenField_Weapon_火炎球_MCLove32_Skills_Use:
+OpenField_Weapon_火炎弾_MCLove32_Skills_Use:
   Cooldown: 5
   Conditions:
-  - wearing{m=OpenField_Weapon_火炎球_MCLove32;s=HAND}
+  - wearing{m=OpenField_Weapon_火炎弾_MCLove32;s=HAND}
   - hasMana{a=>30;
     onFail=[
       - message{m="&cマナが足りません。"} @self 
@@ -570,57 +570,57 @@ OpenField_Weapon_火炎球_MCLove32_Skills_Use:
   - aura{n=サブウェポン;i=20;rd=true;t=60} @self 
   - setVar{var=skill.size;val="0.5";t=FLOAT} @self 
   - setVar{var=skill.size;val="1.0";t=FLOAT;delay=10} @self 
-  - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Use_Location @forward{f=16;uel=true;y=-10}
-  - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Use_Location @forward{f=16;so=8;uel=true;y=-10}
-  - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Use_Location @forward{f=16;so=-8;uel=true;y=-10}
+  - skill:OpenField_Weapon_火炎弾_MCLove32_Skill_Use_Location @forward{f=16;uel=true;y=-10}
+  - skill:OpenField_Weapon_火炎弾_MCLove32_Skill_Use_Location @forward{f=16;so=8;uel=true;y=-10}
+  - skill:OpenField_Weapon_火炎弾_MCLove32_Skill_Use_Location @forward{f=16;so=-8;uel=true;y=-10}
 
-OpenField_Weapon_火炎球_MCLove32_Skill_Effects:
+OpenField_Weapon_火炎弾_MCLove32_Skill_Effects:
   Skills:
-  - skill:OpenField_Weapon_火炎球_MCLove32_Skill_EffectT1{repeat=3;repeatI=1}
-  - skill:OpenField_Weapon_火炎球_MCLove32_Skill_EffectT2{repeat=3;repeatI=1} 
-  - skill:OpenField_Weapon_火炎球_MCLove32_Skill_EffectT3{repeat=3;repeatI=1}
+  - skill:OpenField_Weapon_火炎弾_MCLove32_Skill_EffectT1{repeat=3;repeatI=1}
+  - skill:OpenField_Weapon_火炎弾_MCLove32_Skill_EffectT2{repeat=3;repeatI=1} 
+  - skill:OpenField_Weapon_火炎弾_MCLove32_Skill_EffectT3{repeat=3;repeatI=1}
 
-OpenField_Weapon_火炎球_MCLove32_Skill_EffectT1:
+OpenField_Weapon_火炎弾_MCLove32_Skill_EffectT1:
   Skills:
   - projectile{
-    bulletType=MOB;mob=OpenField_Util_火炎球_灰1_MCLove32;bmd=true;byo=0;bfo=0;
+    bulletType=MOB;mob=OpenField_Util_火炎弾_灰1_MCLove32;bmd=true;byo=0;bfo=0;
     v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=false;mr=24;md=60;fo=true;
     in=8;vo=2;ho=<random.0to360>;g=2} 0.5
   - projectile{
-    bulletType=MOB;mob=OpenField_Util_火炎球_灰2_MCLove32;bmd=true;byo=0;bfo=0;
+    bulletType=MOB;mob=OpenField_Util_火炎弾_灰2_MCLove32;bmd=true;byo=0;bfo=0;
     v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=false;mr=24;md=60;fo=true;
     in=8;vo=2;ho=<random.0to360>;g=2} 0.35
   - projectile{
-    bulletType=MOB;mob=OpenField_Util_火炎球_灰3_MCLove32;bmd=true;byo=0;bfo=0;
+    bulletType=MOB;mob=OpenField_Util_火炎弾_灰3_MCLove32;bmd=true;byo=0;bfo=0;
     v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=false;mr=24;md=60;fo=true;
     in=8;vo=2;ho=<random.0to360>;g=2} 0.25
 
-OpenField_Weapon_火炎球_MCLove32_Skill_EffectT2:
+OpenField_Weapon_火炎弾_MCLove32_Skill_EffectT2:
   Skills:
   - projectile{
-    bulletType=MOB;mob=OpenField_Util_火炎球_灰4_MCLove32;bmd=true;byo=0;bfo=0;
+    bulletType=MOB;mob=OpenField_Util_火炎弾_灰4_MCLove32;bmd=true;byo=0;bfo=0;
     v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=false;mr=24;md=60;fo=true;
     in=8;vo=2;ho=<random.0to360>;g=2} 0.5
   - projectile{
-    bulletType=MOB;mob=OpenField_Util_火炎球_灰5_MCLove32;bmd=true;byo=0;bfo=0;
+    bulletType=MOB;mob=OpenField_Util_火炎弾_灰5_MCLove32;bmd=true;byo=0;bfo=0;
     v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=false;mr=24;md=60;fo=true;
     in=8;vo=2;ho=<random.0to360>;g=2} 0.35
   - projectile{
-    bulletType=MOB;mob=OpenField_Util_火炎球_灰6_MCLove32;bmd=true;byo=0;bfo=0;
+    bulletType=MOB;mob=OpenField_Util_火炎弾_灰6_MCLove32;bmd=true;byo=0;bfo=0;
     v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=false;mr=24;md=60;fo=true;
     in=8;vo=2;ho=<random.0to360>;g=2} 0.25
 
-OpenField_Weapon_火炎球_MCLove32_Skill_EffectT3:
+OpenField_Weapon_火炎弾_MCLove32_Skill_EffectT3:
   Skills:
   - projectile{
-    bulletType=MOB;mob=OpenField_Util_火炎球_灰7_MCLove32;bmd=true;byo=0;bfo=0;
+    bulletType=MOB;mob=OpenField_Util_火炎弾_灰7_MCLove32;bmd=true;byo=0;bfo=0;
     v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=false;mr=24;md=60;fo=true;
     in=8;vo=2;ho=<random.0to360>;g=2} 0.5
   - projectile{
-    bulletType=MOB;mob=OpenField_Util_火炎球_灰8_MCLove32;bmd=true;byo=0;bfo=0;
+    bulletType=MOB;mob=OpenField_Util_火炎弾_灰8_MCLove32;bmd=true;byo=0;bfo=0;
     v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=false;mr=24;md=60;fo=true;
     in=8;vo=2;ho=<random.0to360>;g=2} 0.35
   - projectile{
-    bulletType=MOB;mob=OpenField_Util_火炎球_灰9_MCLove32;bmd=true;byo=0;bfo=0;
+    bulletType=MOB;mob=OpenField_Util_火炎弾_灰9_MCLove32;bmd=true;byo=0;bfo=0;
     v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=false;mr=24;md=60;fo=true;
     in=8;vo=2;ho=<random.0to360>;g=2} 0.25

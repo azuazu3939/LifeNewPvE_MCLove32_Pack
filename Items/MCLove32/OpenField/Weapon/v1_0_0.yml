@@ -251,9 +251,9 @@ OpenField_Weapon_火炎レーザー_MCLove32:
   Skills:
   - skill:OpenField_Weapon_火炎レーザー_MCLove32_Skills @self ~onUse
 
-OpenField_Weapon_火炎球_MCLove32:
+OpenField_Weapon_火炎弾_MCLove32:
   Id: iron_hoe
-  Display: "&f火炎球"
+  Display: "&f火炎弾"
   Lore: []
   Model: 1001
   Options:
@@ -261,4 +261,4 @@ OpenField_Weapon_火炎球_MCLove32:
     Unbreakable: true 
   Group: 'Sub-Weapon'
   Skills:
-  - skill:OpenField_Weapon_火炎球_MCLove32_Skills_Use @self ~onUse
+  - skill:OpenField_Weapon_火炎弾_MCLove32_Skills_Use @self ~onUse
