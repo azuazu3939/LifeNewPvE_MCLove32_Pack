@@ -64,7 +64,7 @@ OpenField_Util_火炎球_MCLove32:
     SkyLight: 15
     Scale: 0.2,0.2,0.2
   Skills:
-  - setscale{s=2.5;d=30;delay=2} @self ~onSpawn 
+  - setscale{s=2.5;d=25;delay=2} @self ~onSpawn 
 
 OpenField_Util_火炎球_灰1_MCLove32:
   Type: block_display

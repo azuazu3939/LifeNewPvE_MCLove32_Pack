@@ -569,7 +569,7 @@ OpenField_Weapon_火炎球_MCLove32_Skills_Use:
   - modifyMana{a=-30} @self 
   - aura{n=サブウェポン;i=20;rd=true;t=60} @self 
   - setVar{var=skill.size;val="0.5";t=FLOAT} @self 
-  - setVar{var=skill.size;val="1.0";t=FLOAT;delay=15} @self 
+  - setVar{var=skill.size;val="1.0";t=FLOAT;delay=10} @self 
   - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Use_Location @forward{f=16;uel=true;y=-10}
   - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Use_Location @forward{f=16;so=8;uel=true;y=-10}
   - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Use_Location @forward{f=16;so=-8;uel=true;y=-10}
