@@ -563,7 +563,7 @@ OpenField_Weapon_火炎球_MCLove32_Skill_Use_Location:
         in=8;vo=3;syo=0;sfo=0} 
      ];
      bulletType=MOB;mob=OpenField_Util_火炎球_MCLove32;bmd=true;byo=0;bfo=0;bspin=4;i=1;
-     md=30;hp=false}
+     md=30;hp=false;v=0}
 
 OpenField_Weapon_火炎球_MCLove32_Skill_Swing_Location:
    Skills:
@@ -590,7 +590,7 @@ OpenField_Weapon_火炎球_MCLove32_Skill_Swing_Location:
         in=8;vo=3;syo=0;sfo=0} 
      ];
      bulletType=MOB;mob=OpenField_Util_火炎球_MCLove32;bmd=true;byo=0;bfo=0;bspin=4;i=1;
-     md=30;hp=false}
+     md=30;hp=false;v=0}
 
 OpenField_Weapon_火炎球_MCLove32_Skills_Swing:
   Cooldown: 5
