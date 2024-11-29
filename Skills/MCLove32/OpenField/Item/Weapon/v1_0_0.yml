@@ -560,7 +560,7 @@ OpenField_Weapon_火炎球_MCLove32_Skill_Use_Location:
       - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Effects @self 
     ];
     os=[
-      - delay 10
+      - delay 8
       - sound{s=block.fire.ambient;p=2;audience=caster;v=0.5;cd=1} @self 
       - sound{s=entity.blaze.shoot;p=2;audience=caster;v=0.5;p=0;cd=1} @self 
     ];
@@ -587,7 +587,7 @@ OpenField_Weapon_火炎球_MCLove32_Skill_Swing_Location:
       - skill:OpenField_Weapon_火炎球_MCLove32_Skill_Effects @self 
     ];
     os=[
-      - delay 10
+      - delay 8
       - sound{s=block.fire.ambient;p=2;audience=caster;v=0.5;cd=1} @self 
       - sound{s=entity.blaze.shoot;p=2;audience=caster;v=0.5;p=0;cd=1} @self 
     ];
