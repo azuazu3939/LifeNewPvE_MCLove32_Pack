@@ -884,14 +884,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷:
   Skills:
   - o{
     oh=[
-      - damage{a=5;pi=true;ii=true}
-      - addtag{t=Cancel} 
-      - removetag{t=Cancel;delay=100} 
-    ];
-    conditions=[
-      - isLiving true 
-      - isMythicMob true
-      - hasTag{t=Cancel} false
+      - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_Hit{damage=5}
     ];
     ot=[
       - auraremove{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷} @self ?hasTag{t=remove}
@@ -921,14 +914,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊:
   Skills:
   - o{
     oh=[
-      - damage{a=10;pi=true;ii=true}
-      - addtag{t=Cancel} 
-      - removetag{t=Cancel;delay=100} 
-    ];
-    conditions=[
-      - isLiving true 
-      - isMythicMob true
-      - hasTag{t=Cancel} false
+      - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_Hit{damage=10}
     ];
     ot=[
       - auraremove{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊} @self ?hasTag{t=remove}
@@ -958,14 +944,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_青氷:
   Skills:
   - o{
     oh=[
-      - damage{a=15;pi=true;ii=true}
-      - addtag{t=Cancel} 
-      - removetag{t=Cancel;delay=100} 
-    ];
-    conditions=[
-      - isLiving true 
-      - isMythicMob true
-      - hasTag{t=Cancel} false
+      - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_Hit{damage=15}
     ];
     ot=[
       - auraremove{n=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷} @self ?hasTag{t=remove}
@@ -1001,3 +980,13 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_RemoveTag:
   - addTag{t=SwingTag_3} @self ?hasTag{t=SwingTag_1} ?hasTag{t=SwingTag_2} ?!hasTag{t=SwingTag_3}
   - addTag{t=SwingTag_2} @self ?hasTag{t=SwingTag_1} ?!hasTag{t=SwingTag_2} ?!hasTag{t=SwingTag_3}
   - addTag{t=SwingTag_1} @self ?!hasTag{t=SwingTag_1} ?!hasTag{t=SwingTag_2} ?!hasTag{t=SwingTag_3}
+
+OpenField_Weapon_オービニウム_MCLove32_Skill_Hit:
+  TargetConditions:
+  - isLiving true 
+  - isMythicMob true
+  - hasTag{t=Cancel} false
+  Skills:
+  - damage{a=<skill.var.damage>;pi=true;ii=true}
+  - addtag{t=Cancel} 
+  - removetag{t=Cancel;delay=100} 
