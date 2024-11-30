@@ -644,13 +644,15 @@ OpenField_Weapon_アイシクルショット_MCLove32_Skills:
   - modifyMana{a=-30} @self 
   - aura{n=メインウェポン;i=20;rd=true;t=20} @self 
   - setMaterialCooldown{m=diamond_hoe;d=30} @self 
-  - skill:OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process{repeat=<random.4to18>;repeatI=2}
+  - skill:OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_20{repeat=<random.1to4>;repeatI=4}
+  - skill:OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_25{repeat=<random.1to4>;repeatI=4}
+  - skill:OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_30{repeat=<random.1to4>;repeatI=4}
+  - skill:OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_35{repeat=<random.1to4>;repeatI=4}
+  - skill:OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_40{repeat=<random.1to4>;repeatI=4}
+  - skill:OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_45{repeat=<random.1to4>;repeatI=4}
 
-OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process:
+OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_20:
   Skills:
-  - setVar{var=skill.damage;val="20";t=INTEGER} @self 
-  - setVar{var=skill.mmid;val="OpenField_Util_氷_75_MCLove32";t=STRING} @self 
-  - skill:OpenField_Weapon_アイシクルショット_MCLove32_Skill_Chance @self 
   - projectile{
     os=[
       - modifyprojectile{t=VELOCITY;a=SET;v=12;delay=25} @self
@@ -663,36 +665,108 @@ OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process:
       - isMythicMob true
     ];
     oh=[
-      - damage{a=<skill.var.damage>;ii=true;pi=true;e=BLUE}
+      - damage{a=20;ii=true;pi=true;e=BLUE}
     ];
-    bulletType=MOB;mm=<skill.var.mmid>;
+    bulletType=MOB;mm=OpenField_Util_氷_75_MCLove32;
     bmd=true;byo=0;bfo=0;v=0;i=1;vr=1.5;r=1.5;hp=false;hnp=true;mr=28;md=60;
     syo=<random.1to5>;sfo=<random.-3to3>;sso=<random.-4to4>} @TL
 
-OpenField_Weapon_アイシクルショット_MCLove32_Skill_Chance:
+OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_25:
   Skills:
-  - skill{
-    s=[
-      - setVar{var=skill.damage;val="25";t=INTEGER} @self
-      - setVar{var=skill.mmid;val="OpenField_Util_氷_100_MCLove32";t=STRING} @self
-    ]} ?chance{chance=0.2}
-  - skill{
-    s=[
-      - setVar{var=skill.damage;val="30";t=INTEGER} @self
-      - setVar{var=skill.mmid;val="OpenField_Util_氷塊_75_MCLove32";t=STRING} @self
-    ]} ?chance{chance=0.2}
-  - skill{
-    s=[
-      - setVar{var=skill.damage;val="35";t=INTEGER} @self
-      - setVar{var=skill.mmid;val="OpenField_Util_氷塊_100_MCLove32";t=STRING} @self
-    ]} ?chance{chance=0.2}
-  - skill{
-    s=[
-      - setVar{var=skill.damage;val="40";t=INTEGER} @self
-      - setVar{var=skill.mmid;val="OpenField_Util_青氷_75_MCLove32";t=STRING} @self
-    ]} ?chance{chance=0.2}
-  - skill{
-    s=[
-      - setVar{var=skill.damage;val="45";t=INTEGER} @self
-      - setVar{var=skill.mmid;val="OpenField_Util_青氷_100_MCLove32";t=STRING} @self
-    ]} ?chance{chance=0.2}
+  - projectile{
+    os=[
+      - modifyprojectile{t=VELOCITY;a=SET;v=12;delay=25} @self
+    ];
+    ot=[
+      - modifyProjectile{trait=VELOCITY;action=MULTIPLY;value=1.05} @self 
+    ];
+    conditions=[
+      - isLiving true 
+      - isMythicMob true
+    ];
+    oh=[
+      - damage{a=25;ii=true;pi=true;e=BLUE}
+    ];
+    bulletType=MOB;mm=OpenField_Util_氷_100_MCLove32;
+    bmd=true;byo=0;bfo=0;v=0;i=1;vr=1.5;r=1.5;hp=false;hnp=true;mr=28;md=60;
+    syo=<random.1to5>;sfo=<random.-3to3>;sso=<random.-4to4>} @TL
+
+OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_30:
+  Skills:
+  - projectile{
+    os=[
+      - modifyprojectile{t=VELOCITY;a=SET;v=12;delay=25} @self
+    ];
+    ot=[
+      - modifyProjectile{trait=VELOCITY;action=MULTIPLY;value=1.05} @self 
+    ];
+    conditions=[
+      - isLiving true 
+      - isMythicMob true
+    ];
+    oh=[
+      - damage{a=30;ii=true;pi=true;e=BLUE}
+    ];
+    bulletType=MOB;mm=OpenField_Util_氷塊_75_MCLove32;
+    bmd=true;byo=0;bfo=0;v=0;i=1;vr=1.5;r=1.5;hp=false;hnp=true;mr=28;md=60;
+    syo=<random.1to5>;sfo=<random.-3to3>;sso=<random.-4to4>} @TL
+
+OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_35:
+  Skills:
+  - projectile{
+    os=[
+      - modifyprojectile{t=VELOCITY;a=SET;v=12;delay=25} @self
+    ];
+    ot=[
+      - modifyProjectile{trait=VELOCITY;action=MULTIPLY;value=1.05} @self 
+    ];
+    conditions=[
+      - isLiving true 
+      - isMythicMob true
+    ];
+    oh=[
+      - damage{a=35;ii=true;pi=true;e=BLUE}
+    ];
+    bulletType=MOB;mm=OpenField_Util_氷塊_100_MCLove32;
+    bmd=true;byo=0;bfo=0;v=0;i=1;vr=1.5;r=1.5;hp=false;hnp=true;mr=28;md=60;
+    syo=<random.1to5>;sfo=<random.-3to3>;sso=<random.-4to4>} @TL
+
+OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_40:
+  Skills:
+  - projectile{
+    os=[
+      - modifyprojectile{t=VELOCITY;a=SET;v=12;delay=25} @self
+    ];
+    ot=[
+      - modifyProjectile{trait=VELOCITY;action=MULTIPLY;value=1.05} @self 
+    ];
+    conditions=[
+      - isLiving true 
+      - isMythicMob true
+    ];
+    oh=[
+      - damage{a=40;ii=true;pi=true;e=BLUE}
+    ];
+    bulletType=MOB;mm=OpenField_Util_青氷_75_MCLove32;
+    bmd=true;byo=0;bfo=0;v=0;i=1;vr=1.5;r=1.5;hp=false;hnp=true;mr=28;md=60;
+    syo=<random.1to5>;sfo=<random.-3to3>;sso=<random.-4to4>} @TL
+
+OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_45:
+  Skills:
+  - projectile{
+    os=[
+      - modifyprojectile{t=VELOCITY;a=SET;v=12;delay=25} @self
+    ];
+    ot=[
+      - modifyProjectile{trait=VELOCITY;action=MULTIPLY;value=1.05} @self 
+    ];
+    conditions=[
+      - isLiving true 
+      - isMythicMob true
+    ];
+    oh=[
+      - damage{a=45;ii=true;pi=true;e=BLUE}
+    ];
+    bulletType=MOB;mm=OpenField_Util_青氷_100_MCLove32;
+    bmd=true;byo=0;bfo=0;v=0;i=1;vr=1.5;r=1.5;hp=false;hnp=true;mr=28;md=60;
+    syo=<random.1to5>;sfo=<random.-3to3>;sso=<random.-4to4>} @TL
