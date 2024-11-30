@@ -886,7 +886,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷:
     oh=[
       - damage{a=10;pi=true;ii=true} @targetedTarget{c=[ - hasTag{t=Cancel} false ]}
       - addtag{t=Cancel}
-      - removetag{t=Cancel;delay=10}
+      - removetag{t=Cancel;delay=20}
     ];
     conditions=[
       - isLiving true 
@@ -907,8 +907,9 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷:
     os=[
       - onSwing{auraName=OpenField_Weapon_オービニウム_MCLove32_Skill_氷_Swing;d=6005;
         osw=[
-          - auraremove{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷_Swing} @self 
-          - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_Remove @self 
+          - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_RemoveTag @self 
+          - auraremove{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷_Swing} @self ?hasTag{t=SwingTag_1} 
+          - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_Remove @self ?hasTag{t=SwingTag_1}
         ]} @self
     ];
     i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;d=6000;
@@ -921,7 +922,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊:
     oh=[
       - damage{a=15;pi=true;ii=true} @targetedTarget{c=[ - hasTag{t=Cancel} false ]}
       - addtag{t=Cancel}
-      - removetag{t=Cancel;delay=10}
+      - removetag{t=Cancel;delay=20}
     ];
     conditions=[
       - isLiving true 
@@ -942,8 +943,9 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊:
     os=[
       - onSwing{auraName=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊_Swing;d=6005;
         osw=[
-          - auraremove{aura=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊_Swing} @self 
-          - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_Remove @self 
+          - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_RemoveTag @self 
+          - auraremove{aura=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊_Swing} @self ?hasTag{t=SwingTag_2}
+          - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_Remove @self ?hasTag{t=SwingTag_2} 
         ]} @self
     ];
     i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;d=6000;
@@ -955,8 +957,8 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_青氷:
   - o{
     oh=[
       - damage{a=20;pi=true;ii=true} @targetedTarget{c=[ - hasTag{t=Cancel} false ]}
-      - addtag{t=Cancel} @self
-      - removetag{t=Cancel;delay=10} @self
+      - addtag{t=Cancel}
+      - removetag{t=Cancel;delay=20} 
     ];
     conditions=[
       - isLiving true 
@@ -977,10 +979,22 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_青氷:
     os=[
       - onSwing{auraName=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷_Swing;d=6005;
         osw=[
-          - auraremove{aura=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷_Swing} @self 
-          - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_Remove @self 
+          - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_RemoveTag @self 
+          - auraremove{aura=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷_Swing} @self ?hasTag{t=SwingTag_3} 
+          - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_Remove @self ?hasTag{t=SwingTag_3}
         ]} @self
     ];
     i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;d=6000;
     b=MOB;mob=OpenField_Util_青氷_50_MCLove32;bmd=true;byo=0;bfo=0;r=3;rd=true;
     p=72;sp=48;auraName=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷} @self 
+
+OpenField_Weapon_オービニウム_MCLove32_Skill_RemoveTag:
+  Skills:
+  - skill{s=[
+    - removeTag{t=SwingTag_3}
+    - removeTag{t=SwingTag_2}
+    - removeTag{t=SwingTag_1}
+    ]} @self ?hasTag{t=SwingTag_1} ?hasTag{t=SwingTag_2} ?hasTag{t=SwingTag_3}
+  - addTag{t=SwingTag_3} @self ?hasTag{t=SwingTag_1} ?hasTag{t=SwingTag_2} ?!hasTag{t=SwingTag_3}
+  - addTag{t=SwingTag_2} @self ?hasTag{t=SwingTag_1} ?!hasTag{t=SwingTag_2} ?!hasTag{t=SwingTag_3}
+  - addTag{t=SwingTag_1} @self ?!hasTag{t=SwingTag_1} ?!hasTag{t=SwingTag_2} ?!hasTag{t=SwingTag_3}
