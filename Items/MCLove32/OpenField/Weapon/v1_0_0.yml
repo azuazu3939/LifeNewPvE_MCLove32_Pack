@@ -149,9 +149,9 @@ OpenField_Weapon_牙狼ノ零_MCLove32:
   Skills:
   - skill:OpenField_Weapon_牙狼ノ零_MCLove32_Skills @self ~onUse
 
-OpenField_Weapon_ライトワイドソード_MCLove32:
+OpenField_Weapon_スライムソード_MCLove32:
   Id: stone_sword 
-  Display: "&fライトワイドソード"
+  Display: "&fスライムソード"
   Lore: []
   Model: 1003
   Options:
@@ -160,26 +160,26 @@ OpenField_Weapon_ライトワイドソード_MCLove32:
   Attributes:
     MainHand:
       Damage: 9 ADD 
-      AttackSpeed: -0.5 MULTIPLY_BASE
-  Group: 'Weapon'
+      AttackSpeed: -0.4 MULTIPLY_BASE
+  Group: 'Melee-Weapon'
 
-OpenField_Weapon_ヘビーワイドソード_MCLove32:
-  Id: stone_sword 
-  Display: "&fヘビーワイドソード"
+OpenField_Weapon_アイロンスライムソード_MCLove32:
+  Id: iron_sword 
+  Display: "&fアイロンスライムソード"
   Lore: []
-  Model: 1004
+  Model: 1001
   Options:
     ItemVersion: 1
     Unbreakable: true 
   Attributes:
     MainHand:
       Damage: 19 ADD 
-      AttackSpeed: -0.75 MULTIPLY_BASE
-  Group: 'Weapon'
+      AttackSpeed: -0.6 MULTIPLY_BASE
+  Group: 'Melee-Weapon'
 
-OpenField_Weapon_樹木剣ライト_MCLove32:
+OpenField_Weapon_樹木剣_MCLove32:
   Id: wooden_sword
-  Display: "&f樹木剣ライト"
+  Display: "&f樹木剣"
   Lore: []
   Model: 1001
   Options:
@@ -189,22 +189,6 @@ OpenField_Weapon_樹木剣ライト_MCLove32:
     MainHand:
       Damage: 16.5 ADD 
       AttackSpeed: -0.4 MULTIPLY_BASE
-  Group: 'Sub-Weapon'
-  Skills:
-  - skill:OpenField_Weapon_樹木剣_MCLove32_Skills @self ~onUse
-
-OpenField_Weapon_樹木剣ヘビー_MCLove32:
-  Id: wooden_sword
-  Display: "&f樹木剣ヘビー"
-  Lore: []
-  Model: 1002
-  Options:
-    ItemVersion: 1
-    Unbreakable: true 
-  Attributes:
-    MainHand:
-      Damage: 30 ADD 
-      AttackSpeed: -0.7 MULTIPLY_BASE
   Group: 'Sub-Weapon'
   Skills:
   - skill:OpenField_Weapon_樹木剣_MCLove32_Skills @self ~onUse
@@ -261,4 +245,16 @@ OpenField_Weapon_火炎弾_MCLove32:
     Unbreakable: true 
   Group: 'Sub-Weapon'
   Skills:
-  - skill:OpenField_Weapon_火炎弾_MCLove32_Skills_Use @self ~onUse
+  - skill:OpenField_Weapon_火炎弾_MCLove32_Skills @self ~onUse
+
+OpenField_Weapon_アイシクルショット_MCLove32:
+  Id: diamond_hoe
+  Display: "&fアイシクルショット"
+  Lore: []
+  Model: 1007
+  Options:
+    ItemVersion: 1
+    Unbreakable: true 
+  Group: 'Sub-Weapon'
+  Skills:
+  - skill:OpenField_Weapon_アイシクルショット_MCLove32_Skills @self ~onUse
