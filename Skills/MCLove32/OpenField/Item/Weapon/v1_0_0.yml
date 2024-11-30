@@ -876,6 +876,8 @@ OpenField_Weapon_オービニウム_MCLove32_Skills:
 
 OpenField_Weapon_オービニウム_MCLove32_Skill_Remove:
   Skills:
+  - addtag{t=remove} @self 
+  - removetag{t=remove} @self 
   - remove @children
 
 OpenField_Weapon_オービニウム_MCLove32_Skill_氷:
@@ -888,9 +890,12 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷:
       - isLiving true 
       - isMythicMob  true
     ];
+    ot=[
+      - endprojectile ?hasTag{t=remove}
+    ];
     i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=6000;
     b=MOB;mm=OpenField_Util_氷_50_MCLove32;bmd=true;byo=0;bfo=0;
-    p=36;sp=0;ti=1} @self 
+    p=36;sp=0} @self 
 
 OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊:
   Skills:
@@ -902,9 +907,12 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊:
       - isLiving true 
       - isMythicMob  true
     ];
-    i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=6000;
+    ot=[
+      - endprojectile ?hasTag{t=remove}
+    ];
+    i=1;vr=1.5;hr=1.5;hp=false;hnp=true;md=6000;
     b=MOB;mm=OpenField_Util_氷塊_50_MCLove32;bmd=true;byo=0;bfo=0;
-    p=36;sp=24;ti=1} @self 
+    p=36;sp=24} @self 
 
 OpenField_Weapon_オービニウム_MCLove32_Skill_青氷:
   Skills:
@@ -916,6 +924,9 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_青氷:
       - isLiving true 
       - isMythicMob  true
     ];
-    i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=6000;
+    ot=[
+      - endprojectile ?hasTag{t=remove}
+    ];
+    i=1;vr=1.5;hr=1.5;hp=false;hnp=true;md=6000;
     b=MOB;mm=OpenField_Util_青氷_50_MCLove32;bmd=true;byo=0;bfo=0;
-    p=36;sp=12;ti=1} @self 
+    p=36;sp=12} @self 
