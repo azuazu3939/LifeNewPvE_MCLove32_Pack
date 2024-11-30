@@ -894,10 +894,19 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷:
     ot=[
       - endprojectile ?hasTag{t=remove}
     ];
+    oe=[
+      - missile{in=4;v=16;fo=true;hp=false;hnp=true;vr=1.5;hr=1.5;i=1;md=100;mr=28;syo=0;sfo=0;
+        b=MOB;mob=OpenField_Util_氷_50_MCLove32;bmd=true;byo=0;bfo=0;
+        oh=[
+          - damage{a=10;pi=true;ii=true}
+        ]} @EIC{r=32;a=150;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]} ?!hasAura{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷_Swing}
+      - auraremove{aura=OpenField_Weapon_オービニウム_MCLove32_Skill_氷_Swing} @self 
+    ];
     os=[
-      - onSwing{auraName=OpenField_Weapon_オービニウム_MCLove32_Skill_氷_Swing;d=6000;
+      - onSwing{auraName=OpenField_Weapon_オービニウム_MCLove32_Skill_氷_Swing;d=6005;
         osw=[
-          - endprojectile @self 
+          - auraremove{aura=OpenField_Weapon_オービニウム_MCLove32_Skill_氷_Swing} @self 
+          - endprojectile @self
         ]} @self
     ];
     i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;d=6000;
@@ -919,6 +928,21 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊:
     ot=[
       - endprojectile ?hasTag{t=remove}
     ];
+    oe=[
+      - missile{in=4;v=16;fo=true;hp=false;hnp=true;vr=1.5;hr=1.5;i=1;md=100;mr=28;syo=0;sfo=0;
+        b=MOB;mob=OpenField_Util_氷塊_50_MCLove32;bmd=true;byo=0;bfo=0;
+        oh=[
+          - damage{a=15;pi=true;ii=true}
+        ]} @EIC{r=32;a=150;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]} ?!hasAura{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊_Swing}
+      - auraremove{aura=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊_Swing} @self 
+    ];
+    os=[
+      - onSwing{auraName=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊_Swing;d=6005;
+        osw=[
+          - auraremove{aura=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊_Swing} @self 
+          - endprojectile @self
+        ]} @self
+    ];
     i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;d=6000;
     b=MOB;mob=OpenField_Util_氷塊_50_MCLove32;bmd=true;byo=0;bfo=0;r=3;rd=true;
     p=72;sp=24;auraName=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊} @self 
@@ -937,6 +961,21 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_青氷:
     ];
     ot=[
       - endprojectile ?hasTag{t=remove}
+    ];
+    oe=[
+      - missile{in=4;v=16;fo=true;hp=false;hnp=true;vr=1.5;hr=1.5;i=1;md=100;mr=28;syo=0;sfo=0;
+        b=MOB;mob=OpenField_Util_青氷_50_MCLove32;bmd=true;byo=0;bfo=0;
+        oh=[
+          - damage{a=20;pi=true;ii=true}
+        ]} @EIC{r=32;a=150;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]} ?!hasAura{n=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷_Swing}
+      - auraremove{aura=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷_Swing} @self 
+    ];
+    os=[
+      - onSwing{auraName=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷_Swing;d=6005;
+        osw=[
+          - auraremove{aura=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷_Swing} @self 
+          - endprojectile @self
+        ]} @self
     ];
     i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;d=6000;
     b=MOB;mob=OpenField_Util_青氷_50_MCLove32;bmd=true;byo=0;bfo=0;r=3;rd=true;
