@@ -813,7 +813,6 @@ OpenField_Weapon_グリーンテラフォーム_MCLove32_Process:
     ];
     ot=[
       - damage{a=10;pi=true;ii=true} @ENO{r=5;limit=5;sort=RANDOM;c=[ - isLiving true - isMythicMob true ]}
-      - damage{a=5;pi=true;ii=true} @ENO{r=8;limit=5;sort=RANDOM;c=[ - isLiving true - isMythicMob true ]}
     ];
     oh=[
       - potion{t=SLOW;l=1;d=60;p=false}
