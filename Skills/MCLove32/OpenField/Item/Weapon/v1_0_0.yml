@@ -808,8 +808,8 @@ OpenField_Weapon_ツリーハウス_MCLove32_Process:
   Skills:
   - totem{
     os=[
-      - faketree @origin
       - effect:blockMask{b=lime_terracotta;r=5;d=100} @origin
+      - faketree @origin
     ];
     ot=[
       - damage{a=12;pi=true;ii=true} @ENO{r=5;limit=5;sort=RANDOM;c=[ - isLiving true - isMythicMob true ]}
