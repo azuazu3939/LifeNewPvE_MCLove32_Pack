@@ -877,7 +877,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skills:
 OpenField_Weapon_オービニウム_MCLove32_Skill_Remove:
   Skills:
   - addtag{t=remove} @self 
-  - removetag{t=remove} @self 
+  - removetag{t=remove;delay=1} @self 
   - remove @children
 
 OpenField_Weapon_オービニウム_MCLove32_Skill_氷:
