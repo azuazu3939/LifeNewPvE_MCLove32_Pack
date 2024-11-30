@@ -874,7 +874,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skills:
 
 OpenField_Weapon_オービニウム_MCLove32_Skill_氷:
   Skills:
-  - projectile{
+  - missile{
     oh=[
       - damage{a=10;pi=true;ii=true}
     ];
@@ -883,11 +883,11 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷:
       - isMythicMob  true
     ];
     v=12;in=25;i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=100;
-    b=MOB;mob=OpenField_Util_氷_50_MCLove32;bmd=true;byo=0;bfo=0;sb=false} @parent
+    b=MOB;mm=OpenField_Util_氷_50_MCLove32;bmd=true;byo=0;bfo=0;sb=false} @self
 
 OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊:
   Skills:
-  - projectile{
+  - missile{
     oh=[
       - damage{a=15;pi=true;ii=true}
     ];
@@ -896,11 +896,11 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊:
       - isMythicMob  true
     ];
     v=12;in=25;i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=100;
-    b=MOB;mob=OpenField_Util_氷塊_50_MCLove32;bmd=true;byo=0;bfo=0;sb=false} @parent
+    b=MOB;mm=OpenField_Util_氷塊_50_MCLove32;bmd=true;byo=0;bfo=0;sb=false} @self
 
 OpenField_Weapon_オービニウム_MCLove32_Skill_青氷:
   Skills:
-  - projectile{
+  - missile{
     oh=[
       - damage{a=20;pi=true;ii=true}
     ];
@@ -909,4 +909,4 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_青氷:
       - isMythicMob  true
     ];
     v=12;in=25;i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=100;
-    b=MOB;mob=OpenField_Util_青氷_50_MCLove32;bmd=true;byo=0;bfo=0;sb=false} @parent
+    b=MOB;mm=OpenField_Util_青氷_50_MCLove32;bmd=true;byo=0;bfo=0;sb=false} @self
