@@ -654,7 +654,7 @@ OpenField_Weapon_アイシクルショット_MCLove32_Skills:
   - e:p{p=red_dust;c=#00ffff;a=10;vs=3;hs=4;audience=caster;s=0.5;repeat=6;repeati=2;size=2} @origin
   - e:p{p=red_dust;c=#ffffff;a=10;vs=3;hs=4;audience=caster;s=0.5;repeat=6;repeati=2;size=2} @origin
   - sound{s=entity.experience_orb.pickup;p=1;repeat=3;repeati=5} @self
-  - delay 20
+  - delay 10
   - sound{s=entity.experience_orb.pickup;p=1.21;repeat=1;repeati=5} @self
   - delay 10
   - sound{s=entity.experience_orb.pickup;p=1.21;repeat=2;repeati=10} @self
