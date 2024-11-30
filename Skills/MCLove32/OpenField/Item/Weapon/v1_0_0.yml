@@ -883,7 +883,9 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷:
   Skills:
   - o{
     oh=[
-      - damage{a=10;pi=true;ii=true}
+      - damage{a=10;pi=true;ii=true} @targetedTarget{c=[ - hasTag{t=Cancel} false ]}
+      - addtag{t=Cancel}
+      - removetag{t=Cancel;delay=10}
     ];
     conditions=[
       - isLiving true 
@@ -900,7 +902,9 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊:
   Skills:
   - o{
     oh=[
-      - damage{a=10;pi=true;ii=true}
+      - damage{a=15;pi=true;ii=true} @targetedTarget{c=[ - hasTag{t=Cancel} false ]}
+      - addtag{t=Cancel}
+      - removetag{t=Cancel;delay=10}
     ];
     conditions=[
       - isLiving true 
@@ -917,7 +921,9 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_青氷:
   Skills:
   - o{
     oh=[
-      - damage{a=10;pi=true;ii=true}
+      - damage{a=20;pi=true;ii=true} @targetedTarget{c=[ - hasTag{t=Cancel} false ]}
+      - addtag{t=Cancel}
+      - removetag{t=Cancel;delay=10}
     ];
     conditions=[
       - isLiving true 
