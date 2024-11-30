@@ -809,7 +809,7 @@ OpenField_Weapon_ツリーハウス_MCLove32_Process:
   - totem{
     os=[
       - effect:blockMask{b=lime_terracotta;r=10;d=100} @origin
-      - faketree{delay=2} @origin{y=-1}
+      - faketree{delay=0} @origin{y=-1}
     ];
     ot=[
       - damage{a=12;pi=true;ii=true} @ENO{r=10;limit=5;sort=RANDOM;c=[ - isLiving true - isMythicMob true ]}
