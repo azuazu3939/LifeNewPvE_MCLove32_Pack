@@ -807,7 +807,6 @@ OpenField_Weapon_グリーンテラフォーム_MCLove32_Process:
   Skills:
   - totem{
     os=[
-      #- e:blockMask{b=BROWN_TERRACOTTA;r=8;ry=2;oa=true;d=100} @origin{y=1}
       - e:blockMask{b=LIME_TERRACOTTA;r=5;ry=2;oa=true;d=100} @origin{y=1}
     ];
     ot=[
