@@ -813,13 +813,13 @@ OpenField_Weapon_毒沼_MCLove32_Process:
       - fakeblock{m=lime_terracotta;d=100} @BNO{r=8;ry=2;na=false;oa=true;y=-3}
     ];
     ot=[
-      - damage{a=10;pi=true;ii=true} @ENO{r=5;limit=6;sort=RANDOM;c=[ - isLiving true - (isMythicMob || isPlayer) true ]}
+      - damage{a=10;pi=true;ii=true} @ENO{r=5;limit=5;sort=RANDOM;c=[ - isLiving true - isMythicMob true ]}
     ];
     oh=[
       - potion{t=SLOW;l=3;d=40;p=false}
     ];
     conditions=[
       - isLiving true 
-      - (isMythicMob || isPlayer) true
+      - isMythicMob  true
     ];
-    md=100;vr=1;r=5;hp=true;hnp=true;i=10;fo=true;sb=false} @origin
+    md=100;vr=1;r=5;hp=false;hnp=true;i=10;fo=true;sb=false} @origin
