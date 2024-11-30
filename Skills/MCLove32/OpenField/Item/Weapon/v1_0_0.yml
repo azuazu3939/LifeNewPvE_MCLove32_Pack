@@ -644,12 +644,12 @@ OpenField_Weapon_アイシクルショット_MCLove32_Skills:
   - modifyMana{a=-30} @self 
   - aura{n=メインウェポン;i=20;rd=true;t=20} @self 
   - setMaterialCooldown{m=diamond_hoe;d=30} @self 
-  - skill:OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_20{repeat=<random.1to3>;repeatI=4}
-  - skill:OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_25{repeat=<random.1to3>;repeatI=4}
-  - skill:OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_30{repeat=<random.1to3>;repeatI=4}
-  - skill:OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_35{repeat=<random.1to2>;repeatI=4}
-  - skill:OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_40{repeat=<random.1to2>;repeatI=4}
-  - skill:OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_45{repeat=<random.1to2>;repeatI=4}
+  - skill:OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_20{repeat=<random.1to3>;repeatI=4} 
+  - skill:OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_25{repeat=<random.1to3>;repeatI=4} 0.85
+  - skill:OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_30{repeat=<random.1to3>;repeatI=4} 0.75
+  - skill:OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_35{repeat=<random.1to2>;repeatI=4} 0.65
+  - skill:OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_40{repeat=<random.1to2>;repeatI=4} 0.6
+  - skill:OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_45{repeat=<random.1to2>;repeatI=4} 0.55
 
 OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_20:
   Skills:
