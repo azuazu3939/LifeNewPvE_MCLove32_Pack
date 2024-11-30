@@ -527,6 +527,8 @@ OpenField_Weapon_火炎弾_MCLove32_Skill_Location:
     ot=[
       - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.95} @self 
       - modifyProjectile{trait=VELOCITY;action=MULTIPLY;value=1.05} @self 
+      - e:p{p=lava;a=3;vs=0.05;hs=0.05;audience=caster} @origin 
+      - e:p{p=flame;a=5;vs=0.15;hs=0.15;audience=caster;s=0.25} @origin 
     ];
     conditions=[
       - isLiving true 
@@ -581,6 +583,8 @@ OpenField_Weapon_火炎弾_MCLove32_Skill_Effects:
   - skill:OpenField_Weapon_火炎弾_MCLove32_Skill_EffectT1{repeat=3;repeatI=1}
   - skill:OpenField_Weapon_火炎弾_MCLove32_Skill_EffectT2{repeat=3;repeatI=1} 
   - skill:OpenField_Weapon_火炎弾_MCLove32_Skill_EffectT3{repeat=3;repeatI=1}
+  - e:p{p=lava;a=5;vs=0.5;hs=0.5;audience=caster;s=1} @origin 
+  - e:p{p=flame;a=10;vs=1.25;hs=1.25;audience=caster;s=1.25} @origin 
 
 OpenField_Weapon_火炎弾_MCLove32_Skill_EffectT1:
   Skills:
@@ -844,3 +848,21 @@ OpenField_Weapon_ツリーハウス_MCLove32_Process:
       - isMythicMob  true
     ];
     md=100;vr=1;r=10;hp=false;hnp=true;i=10;fo=true;sb=false} @origin
+  
+OpenField_Weapon_オービニウム_MCLove32_Skills:
+  Cooldown: 1.2
+  Conditions:
+  - wearing{m=OpenField_Weapon_オービニウム_MCLove32;s=HAND}
+  - hasMana{a=>10;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]} 
+  - hasAura{n=メインウェポン;
+    onfail=[
+      - message{m="&cメインウェポン共通CT中です。"} @self 
+    ]} false  
+  - materialIsOnCooldown{m=diamond_shovel} false 
+  Skills:
+  - modifyMana{a=-10} @self 
+  - aura{n=メインウェポン;i=20;rd=true;t=60} @self 
+  - setMaterialCooldown{m=diamond_shovel;d=24} @self 
