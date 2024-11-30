@@ -812,7 +812,7 @@ OpenField_Weapon_ツリーハウス_MCLove32_Process:
       - faketree{delay=0} @origin{y=-1}
     ];
     ot=[
-      - damage{a=12;pi=true;ii=true} @ENO{r=10;limit=5;sort=RANDOM;c=[ - isLiving true - isMythicMob true ]}
+      - damage{a=8;pi=true;ii=true} @ENO{r=10;limit=5;sort=RANDOM;c=[ - isLiving true - isMythicMob true ]}
       - skill{
         s=[
           - modifyMana{a=5}
