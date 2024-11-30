@@ -885,8 +885,8 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷:
   - o{
     oh=[
       - damage{a=5;pi=true;ii=true}
-      - addtag{t=Cancel} ?!hasTag{t=Cancel}
-      - removetag{t=Cancel;delay=100} ?hasTag{t=Cancel}
+      - addtag{t=Cancel} @targetedTarget{c=[ - hasTag{t=Cancel} false ]}
+      - removetag{t=Cancel;delay=100} @targetedTarget{c=[ - hasTag{t=Cancel} true ]}
     ];
     conditions=[
       - isLiving true 
@@ -922,8 +922,8 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊:
   - o{
     oh=[
       - damage{a=10;pi=true;ii=true}
-      - addtag{t=Cancel} ?!hasTag{t=Cancel}
-      - removetag{t=Cancel;delay=100} ?hasTag{t=Cancel}
+      - addtag{t=Cancel} @targetedTarget{c=[ - hasTag{t=Cancel} false ]}
+      - removetag{t=Cancel;delay=100} @targetedTarget{c=[ - hasTag{t=Cancel} true ]}
     ];
     conditions=[
       - isLiving true 
@@ -959,8 +959,8 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_青氷:
   - o{
     oh=[
       - damage{a=15;pi=true;ii=true}
-      - addtag{t=Cancel} ?!hasTag{t=Cancel}
-      - removetag{t=Cancel;delay=100} ?hasTag{t=Cancel}
+      - addtag{t=Cancel} @targetedTarget{c=[ - hasTag{t=Cancel} false ]}
+      - removetag{t=Cancel;delay=100} @targetedTarget{c=[ - hasTag{t=Cancel} true ]}
     ];
     conditions=[
       - isLiving true 
