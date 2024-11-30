@@ -527,8 +527,8 @@ OpenField_Weapon_火炎弾_MCLove32_Skill_Location:
     ot=[
       - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.95} @self 
       - modifyProjectile{trait=VELOCITY;action=MULTIPLY;value=1.05} @self 
-      - e:p{p=lava;a=1;vs=0.05;hs=0.05;audience=caster} @origin 0.25
-      - e:p{p=flame;a=2;vs=0.15;hs=0.15;audience=caster;s=0.25} @origin 0.5 
+      - e:p{p=lava;a=1;vs=0.05;hs=0.05;audience=caster} @origin 0.5
+      - e:p{p=flame;a=2;vs=0.15;hs=0.15;audience=caster;s=0.25} @origin 0.75 
     ];
     conditions=[
       - isLiving true 
@@ -574,6 +574,7 @@ OpenField_Weapon_火炎弾_MCLove32_Skills:
   - setMaterialCooldown{m=IRON_HOE;d=100} @self 
   - setVar{var=skill.size;val="0.5";t=FLOAT} @self 
   - setVar{var=skill.size;val="1.0";t=FLOAT;delay=10} @self 
+  - sound{s=entity.blaze.shoot;p=0;v=0.5} @self
   - skill:OpenField_Weapon_火炎弾_MCLove32_Skill_Location @forward{f=16;uel=true;y=-10}
   - skill:OpenField_Weapon_火炎弾_MCLove32_Skill_Location @forward{f=16;so=8;uel=true;y=-10}
   - skill:OpenField_Weapon_火炎弾_MCLove32_Skill_Location @forward{f=16;so=-8;uel=true;y=-10}
