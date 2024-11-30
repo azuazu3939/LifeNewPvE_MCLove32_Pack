@@ -894,14 +894,14 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷:
       - endprojectile ?hasTag{t=remove}
     ];
     i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=6000;
-    b=MOB;mm=OpenField_Util_氷_50_MCLove32;bmd=true;byo=0;bfo=0;se=false;sb=false;
+    b=MOB;mm=OpenField_Util_氷_50_MCLove32;bmd=true;byo=0;bfo=0;
     p=36;sp=0} @self 
 
 OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊:
   Skills:
   - o{
     oh=[
-      - damage{a=15;pi=true;ii=true}
+      - damage{a=10;pi=true;ii=true}
     ];
     conditions=[
       - isLiving true 
@@ -910,15 +910,15 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊:
     ot=[
       - endprojectile ?hasTag{t=remove}
     ];
-    i=1;vr=1.5;hr=1.5;hp=false;hnp=true;md=6000;
-    b=MOB;mm=OpenField_Util_氷塊_50_MCLove32;bmd=true;byo=0;bfo=0;vz=30;se=false;sb=false;
-    p=36;sp=24} @self 
+    i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=6000;
+    b=MOB;mm=OpenField_Util_氷塊_50_MCLove32;bmd=true;byo=0;bfo=0;
+    p=36;sp=0} @self 
 
 OpenField_Weapon_オービニウム_MCLove32_Skill_青氷:
   Skills:
   - o{
     oh=[
-      - damage{a=20;pi=true;ii=true}
+      - damage{a=10;pi=true;ii=true}
     ];
     conditions=[
       - isLiving true 
@@ -927,6 +927,6 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_青氷:
     ot=[
       - endprojectile ?hasTag{t=remove}
     ];
-    i=1;vr=1.5;hr=1.5;hp=false;hnp=true;md=6000;
-    b=MOB;mm=OpenField_Util_青氷_50_MCLove32;bmd=true;byo=0;bfo=0;vx=30;se=false;sb=false;
-    p=36;sp=12} @self 
+    i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;md=6000;
+    b=MOB;mm=OpenField_Util_青氷_50_MCLove32;bmd=true;byo=0;bfo=0;
+    p=36;sp=0} @self 
