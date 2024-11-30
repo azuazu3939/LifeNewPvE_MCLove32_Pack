@@ -770,3 +770,55 @@ OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_45:
     bulletType=MOB;mm=OpenField_Util_青氷_50_MCLove32;
     bmd=true;byo=0;bfo=0;v=1;i=1;vr=1.5;r=1.5;hp=false;hnp=true;mr=28;md=60;
     syo=<random.1to5>;sfo=<random.-5to1>;sso=<random.-4to4>} @forward{f=16}
+
+OpenField_Weapon_グリーンテラフォーム_MCLove32_Skills:
+  Cooldown: 10
+  Conditions:
+  - wearing{m=OpenField_Weapon_グリーンテラフォーム_MCLove32;s=HAND}
+  - hasMana{a=>125;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]} 
+  - hasAura{n=サブウェポン;
+    onfail=[
+      - message{m="&cサブウェポン共通CT中です。"} @self 
+    ]} false  
+  - materialIsOnCooldown{m=wooden_hoe} false 
+  Skills:
+  - modifyMana{a=-125} @self 
+  - aura{n=サブウェポン;i=20;rd=true;t=60} @self 
+  - setMaterialCooldown{m=wooden_hoe;d=200} @self 
+  - projectile{
+    oh=[
+      - damage{a=20;pi=true;ii=true}
+    ];
+    oe=[
+      - skill:OpenField_Weapon_グリーンテラフォーム_MCLove32_Process @origin
+    ];
+    conditions=[
+      - isLiving true 
+      - isMythicMob true
+    ];
+    tyo=5;g=1;
+    bmd=true;byo=0;bfo=0;v=16;i=1;vr=1.5;r=1.5;hp=false;hnp=true;mr=28;md=60;
+    b=MOB;mm=OpenField_Util_黄緑色のテラコッタ_100_MCLove32} @forward{f=16}
+
+OpenField_Weapon_グリーンテラフォーム_MCLove32_Process:
+  Skills:
+  - totem{
+    os=[
+      - e:blockMask{b=BROWN_TERRACOTTA;r=8;ry=1;na=false;oa=true;d=100} @origin
+      - e:blockMask{b=LIME_TERRACOTTA;r=5;ry=1;na=false;oa=true;d=100} @origin
+    ];
+    ot=[
+      - damage{a=10;pi=true;ii=true} @ENO{r=5;limit=5;sort=RANDOM;c=[ - isLiving true - isMythicMob true ]}
+      - damage{a=5;pi=true;ii=true} @ENO{r=8;limit=5;sort=RANDOM;c=[ - isLiving true - isMythicMob true ]}
+    ];
+    oh=[
+      - potion{t=SLOW;l=1;d=60;p=false}
+    ];
+    conditions=[
+      - isLiving true 
+      - isMythicMob true
+    ];
+    md=100;vr=5;r=5;hp=false;hnp=true;i=20} @origin

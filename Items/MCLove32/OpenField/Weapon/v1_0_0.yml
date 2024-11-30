@@ -258,3 +258,16 @@ OpenField_Weapon_アイシクルショット_MCLove32:
   Group: 'Main-Weapon'
   Skills:
   - skill:OpenField_Weapon_アイシクルショット_MCLove32_Skills @self ~onUse
+
+OpenField_Weapon_グリーンテラフォーム_MCLove32:
+  Id: wooden_hoe
+  Display: "&fグリーンテラフォーム"
+  Lore: []
+  Model: 1000
+  Options:
+    ItemVersion: 1
+    Unbreakable: true 
+  Group: 'Sub-Weapon'
+  Skills:
+  - skill:OpenField_Weapon_グリーンテラフォーム_MCLove32_Skills @self ~onUse
+
