@@ -656,9 +656,9 @@ OpenField_Weapon_アイシクルショット_MCLove32_Skills:
   - skill:OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_35{repeat=<random.0to1>;repeatI=4} 0.65
   - skill:OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_40{repeat=<random.0to1>;repeatI=4} 0.6
   - skill:OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_45{repeat=<random.0to1>;repeatI=4} 0.55
-  - e:p{p=red_dust;c=#4c4cff;a=5;vs=3;hs=4;audience=caster;s=0.5;repeat=6;repeati=2;size=2} @origin
-  - e:p{p=red_dust;c=#00ffff;a=5;vs=3;hs=4;audience=caster;s=0.5;repeat=6;repeati=2;size=2} @origin
-  - e:p{p=red_dust;c=#ffffff;a=5;vs=3;hs=4;audience=caster;s=0.5;repeat=6;repeati=2;size=2} @origin
+  - e:p{p=red_dust;c=#4c4cff;a=3;vs=3;hs=4;audience=caster;s=0.5;repeat=6;repeati=2;size=1.5} @origin
+  - e:p{p=red_dust;c=#00ffff;a=3;vs=3;hs=4;audience=caster;s=0.5;repeat=6;repeati=2;size=1.5} @origin
+  - e:p{p=red_dust;c=#ffffff;a=3;vs=3;hs=4;audience=caster;s=0.5;repeat=6;repeati=2;size=1.5} @origin
   - sound{s=entity.experience_orb.pickup;p=1.21;repeat=4;repeati=5;v=0.5} @self
   - sound{s=entity.experience_orb.pickup;p=1.41;repeat=2;repeati=5;delay=10;v=0.5} @self
   - sound{s=entity.experience_orb.pickup;p=1.58;repeat=3;repeati=5;delay=6;v=0.5} @self
