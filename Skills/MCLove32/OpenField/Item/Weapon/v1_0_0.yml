@@ -890,7 +890,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷:
     ];
     conditions=[
       - isLiving true 
-      - isMythicMob  true
+      - isMythicMob true
       - hasTag{t=Cancel} false
     ];
     ot=[
@@ -927,7 +927,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊:
     ];
     conditions=[
       - isLiving true 
-      - isMythicMob  true
+      - isMythicMob true
       - hasTag{t=Cancel} false
     ];
     ot=[
@@ -964,7 +964,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_青氷:
     ];
     conditions=[
       - isLiving true 
-      - isMythicMob  true
+      - isMythicMob true
       - hasTag{t=Cancel} false
     ];
     ot=[
