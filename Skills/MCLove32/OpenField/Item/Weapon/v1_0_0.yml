@@ -798,7 +798,7 @@ OpenField_Weapon_毒沼_MCLove32_Skills:
     ];
     conditions=[
       - isLiving true 
-      - (isMythicMob || isPlayer) true
+      - isMythicMob true
     ];
     tyo=5;g=1;
     bmd=true;byo=0;bfo=0;v=16;i=1;vr=1.5;r=1.5;hp=false;hnp=true;mr=28;md=60;
@@ -813,7 +813,7 @@ OpenField_Weapon_毒沼_MCLove32_Process:
       - fakeblock{m=lime_terracotta;d=100} @BNO{r=8;ry=2;na=false;oa=true;y=-3}
     ];
     ot=[
-      - damage{a=10;pi=true;ii=true} @ENO{r=5;limit=5;sort=RANDOM;c=[ - isLiving true - isMythicMob true ]}
+      - damage{a=10;pi=true;ii=true} @ENO{r=5;limit=6;sort=RANDOM;c=[ - isLiving true - (isMythicMob || isPlayer) true ]}
     ];
     oh=[
       - potion{t=SLOW;l=3;d=40;p=false}
