@@ -807,7 +807,7 @@ OpenField_Weapon_グリーンテラフォーム_MCLove32_Process:
   Skills:
   - totem{
     os=[
-      - fakeblock{m=lime_terracotta;d=100} @BNO{r=5;na=false;oa=true}
+      - fakeblock{m=lime_terracotta;d=100} @BNO{r=5;ry=1;na=false;oa=true}
     ];
     ot=[
       - damage{a=10;pi=true;ii=true} @ENO{r=5;limit=5;sort=RANDOM;c=[ - isLiving true - isMythicMob true ]}
