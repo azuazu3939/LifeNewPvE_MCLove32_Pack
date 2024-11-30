@@ -259,9 +259,9 @@ OpenField_Weapon_アイシクルショット_MCLove32:
   Skills:
   - skill:OpenField_Weapon_アイシクルショット_MCLove32_Skills @self ~onUse
 
-OpenField_Weapon_毒沼_MCLove32:
+OpenField_Weapon_ツリーハウス_MCLove32:
   Id: wooden_hoe
-  Display: "&f毒沼"
+  Display: "&fツリーハウス"
   Lore: []
   Model: 1000
   Options:
@@ -269,5 +269,5 @@ OpenField_Weapon_毒沼_MCLove32:
     Unbreakable: true 
   Group: 'Sub-Weapon'
   Skills:
-  - skill:OpenField_Weapon_毒沼_MCLove32_Skills @self ~onUse
+  - skill:OpenField_Weapon_ツリーハウス_MCLove32_Skills @self ~onUse
 
