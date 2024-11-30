@@ -815,7 +815,7 @@ OpenField_Weapon_ツリーハウス_MCLove32_Process:
       - damage{a=8;pi=true;ii=true} @ENO{r=10;limit=5;sort=RANDOM;c=[ - isLiving true - isMythicMob true ]}
       - skill{
         s=[
-          - modifyMana{a=10}
+          - modifyMana{a=5}
           - potion{t=speed;l=1;d=20;p=false}
         ]} @PlayersNearOrigin{r=10;limit=5;sort=RANDOM}
     ];
