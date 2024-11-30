@@ -650,9 +650,9 @@ OpenField_Weapon_アイシクルショット_MCLove32_Skills:
   - skill:OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_35{repeat=<random.0to1>;repeatI=4} 0.65
   - skill:OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_40{repeat=<random.0to1>;repeatI=4} 0.6
   - skill:OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_45{repeat=<random.0to1>;repeatI=4} 0.55
-  - e:p{p=red_dust;c=#4c4cff;a=10;vs=3;hs=4;audience=caster;s=0.5;repeat=3;repeati=2;size=2} @origin
-  - e:p{p=red_dust;c=#00ffff;a=10;vs=3;hs=4;audience=caster;s=0.5;repeat=3;repeati=2;size=2} @origin
-  - e:p{p=red_dust;c=#ffffff;a=10;vs=3;hs=4;audience=caster;s=0.5;repeat=3;repeati=2;size=2} @origin
+  - e:p{p=red_dust;c=#4c4cff;a=10;vs=3;hs=4;audience=caster;s=0.5;repeat=6;repeati=2;size=2} @origin
+  - e:p{p=red_dust;c=#00ffff;a=10;vs=3;hs=4;audience=caster;s=0.5;repeat=6;repeati=2;size=2} @origin
+  - e:p{p=red_dust;c=#ffffff;a=10;vs=3;hs=4;audience=caster;s=0.5;repeat=6;repeati=2;size=2} @origin
 
 OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_20:
   Skills:
