@@ -892,7 +892,8 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷:
       - isMythicMob  true
     ];
     ot=[
-      - endprojectile ?hasTag{t=remove}
+      - endprojectile @self ?hasTag{t=remove}
+      - endprojectile @self ?!wearing{m=OpenField_Weapon_オービニウム_MCLove32;s=HAND}
     ];
     oe=[
       - missile{in=4;v=16;fo=true;hp=false;hnp=true;vr=1.5;hr=1.5;i=1;md=100;mr=28;syo=0;sfo=0;
@@ -926,7 +927,8 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊:
       - isMythicMob  true
     ];
     ot=[
-      - endprojectile ?hasTag{t=remove}
+      - endprojectile @self ?hasTag{t=remove}
+      - endprojectile @self ?!wearing{m=OpenField_Weapon_オービニウム_MCLove32;s=HAND}
     ];
     oe=[
       - missile{in=4;v=16;fo=true;hp=false;hnp=true;vr=1.5;hr=1.5;i=1;md=100;mr=28;syo=0;sfo=0;
@@ -960,7 +962,8 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_青氷:
       - isMythicMob  true
     ];
     ot=[
-      - endprojectile ?hasTag{t=remove}
+      - endprojectile @self ?hasTag{t=remove}
+      - endprojectile @self ?!wearing{m=OpenField_Weapon_オービニウム_MCLove32;s=HAND}
     ];
     oe=[
       - missile{in=4;v=16;fo=true;hp=false;hnp=true;vr=1.5;hr=1.5;i=1;md=100;mr=28;syo=0;sfo=0;
