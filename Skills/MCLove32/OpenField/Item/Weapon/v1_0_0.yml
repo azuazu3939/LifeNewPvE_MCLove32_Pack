@@ -682,7 +682,7 @@ OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_20:
     ];
     bulletType=MOB;mm=OpenField_Util_氷_25_MCLove32;
     bmd=true;byo=0;bfo=0;v=1;i=1;vr=1.5;r=1.5;hp=false;hnp=true;mr=28;md=60;
-    syo=<random.1to5>;sfo=<random.-5to1>;sso=<random.-4to4>} @forward{f=16}
+    syo=<random.1to5>;sfo=<random.-5to1>;sso=<random.-4to4>} @TL{d=16}
 
 OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_25:
   Skills:
@@ -702,7 +702,7 @@ OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_25:
     ];
     bulletType=MOB;mm=OpenField_Util_氷_50_MCLove32;
     bmd=true;byo=0;bfo=0;v=1;i=1;vr=1.5;r=1.5;hp=false;hnp=true;mr=28;md=60;
-    syo=<random.1to5>;sfo=<random.-5to1>;sso=<random.-4to4>} @forward{f=16}
+    syo=<random.1to5>;sfo=<random.-5to1>;sso=<random.-4to4>} @TL{d=16}
 
 OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_30:
   Skills:
@@ -722,7 +722,7 @@ OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_30:
     ];
     bulletType=MOB;mm=OpenField_Util_氷塊_25_MCLove32;
     bmd=true;byo=0;bfo=0;v=1;i=1;vr=1.5;r=1.5;hp=false;hnp=true;mr=28;md=60;
-    syo=<random.1to5>;sfo=<random.-5to1>;sso=<random.-4to4>} @forward{f=16}
+    syo=<random.1to5>;sfo=<random.-5to1>;sso=<random.-4to4>} @TL{d=16}
 
 OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_35:
   Skills:
@@ -742,7 +742,7 @@ OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_35:
     ];
     bulletType=MOB;mm=OpenField_Util_氷塊_50_MCLove32;
     bmd=true;byo=0;bfo=0;v=1;i=1;vr=1.5;r=1.5;hp=false;hnp=true;mr=28;md=60;
-    syo=<random.1to5>;sfo=<random.-5to1>;sso=<random.-4to4>} @forward{f=16}
+    syo=<random.1to5>;sfo=<random.-5to1>;sso=<random.-4to4>} @TL{d=16}
 
 OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_40:
   Skills:
@@ -762,7 +762,7 @@ OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_40:
     ];
     bulletType=MOB;mm=OpenField_Util_青氷_25_MCLove32;
     bmd=true;byo=0;bfo=0;v=1;i=1;vr=1.5;r=1.5;hp=false;hnp=true;mr=28;md=60;
-    syo=<random.1to5>;sfo=<random.-5to1>;sso=<random.-4to4>} @forward{f=16}
+    syo=<random.1to5>;sfo=<random.-5to1>;sso=<random.-4to4>} @TL{d=16}
 
 OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_45:
   Skills:
@@ -782,10 +782,10 @@ OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_45:
     ];
     bulletType=MOB;mm=OpenField_Util_青氷_50_MCLove32;
     bmd=true;byo=0;bfo=0;v=1;i=1;vr=1.5;r=1.5;hp=false;hnp=true;mr=28;md=60;
-    syo=<random.1to5>;sfo=<random.-5to1>;sso=<random.-4to4>} @forward{f=16}
+    syo=<random.1to5>;sfo=<random.-5to1>;sso=<random.-4to4>} @TL{d=16}
 
 OpenField_Weapon_ツリーハウス_MCLove32_Skills:
-  Cooldown: 12
+  Cooldown: 15
   Conditions:
   - wearing{m=OpenField_Weapon_ツリーハウス_MCLove32;s=HAND}
   - hasMana{a=>100;
@@ -800,7 +800,7 @@ OpenField_Weapon_ツリーハウス_MCLove32_Skills:
   Skills:
   - modifyMana{a=-100} @self 
   - aura{n=サブウェポン;i=20;rd=true;t=60} @self 
-  - setMaterialCooldown{m=wooden_hoe;d=240} @self 
+  - setMaterialCooldown{m=wooden_hoe;d=300} @self 
   - effect:glow{color=DARK_GREEN;duration=100} @self 
   - projectile{
     oh=[
