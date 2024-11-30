@@ -656,11 +656,11 @@ OpenField_Weapon_アイシクルショット_MCLove32_Skills:
   - sound{s=entity.experience_orb.pickup;p=1;repeat=3;repeati=5} @self
   - delay 10
   - sound{s=entity.experience_orb.pickup;p=1.21;repeat=1;repeati=5} @self
-  - delay 10
+  - delay 5
   - sound{s=entity.experience_orb.pickup;p=1.21;repeat=2;repeati=10} @self
   - delay 5
   - sound{s=entity.experience_orb.pickup;p=1.41;repeat=2;repeati=10} @self
-  - delay 10
+  - delay 5
   - sound{s=entity.experience_orb.pickup;p=1.58;repeat=3;repeati=5} @self
   - delay 5
   - sound{s=entity.experience_orb.pickup;p=1.41;repeat=1;repeati=10} @self
