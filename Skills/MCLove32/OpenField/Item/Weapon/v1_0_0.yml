@@ -831,6 +831,7 @@ OpenField_Weapon_ツリーハウス_MCLove32_Process:
         s=[
           - modifyMana{a=5}
           - potion{t=speed;l=1;d=20;p=false}
+          - potion{t=RESISTANCE;l=0;d=5;p=false}
         ]} @PlayersNearOrigin{r=10;limit=5;sort=RANDOM}
       - sound{s=entity.experience_orb.pickup;p=1.21} @origin
       - e:p{p=villager_happy;a=20;vs=2;hs=3;s=0.5} @origin
