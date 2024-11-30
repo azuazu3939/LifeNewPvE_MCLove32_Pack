@@ -255,6 +255,6 @@ OpenField_Weapon_アイシクルショット_MCLove32:
   Options:
     ItemVersion: 1
     Unbreakable: true 
-  Group: 'Sub-Weapon'
+  Group: 'Main-Weapon'
   Skills:
   - skill:OpenField_Weapon_アイシクルショット_MCLove32_Skills @self ~onUse
