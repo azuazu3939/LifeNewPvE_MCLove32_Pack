@@ -662,6 +662,7 @@ OpenField_Weapon_アイシクルショット_MCLove32_Skills:
   - sound{s=entity.experience_orb.pickup;p=1.41;repeat=2;repeati=5;delay=10;v=0.5} @self
   - sound{s=entity.experience_orb.pickup;p=1.58;repeat=3;repeati=5;delay=6;v=0.5} @self
   - sound{s=entity.experience_orb.pickup;p=1.41;repeat=1;repeati=5;delay=15;v=0.5} @self
+  - sound{s=entity.firework_rocket.launch;v=0.5;p=1.3;delay=20;repeat=1;repeati=4} @self
 
 OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_20:
   Skills:
