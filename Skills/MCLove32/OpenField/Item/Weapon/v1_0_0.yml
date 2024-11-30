@@ -191,7 +191,7 @@ OpenField_Weapon_サンドストーム_MCLove32_Skills:
       - setvar{var=skill.y;val="<random.float.-5to5>";t=FLOAT} @self 
       - setvar{var=skill.z;val="<random.float.-5to5>";t=FLOAT} @self 
       - e:p{p=campfire_cosy_smoke;audience=caster;a=5;s=0.1;d=true;dr=true;eo=true;origin=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};fo=true} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
-      - e:p{p=blockcrack;material=SAND;audience=caster;a=10;s=0.1;d=true;dr=true;eo=true;origin=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};fo=true} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
+      - e:p{p=blockcrack;audience=caster;a=10;s=0.1;d=true;dr=true;eo=true;origin=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};fo=true} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
     ];
     os=[
       - e:p{p=sculk_soul;a=3;vs=0.25;hs=0.25;repeat=5;repeatI=10;audience=caster} @origin
