@@ -543,7 +543,7 @@ OpenField_Weapon_火炎弾_MCLove32_Skill_Location:
       - sound{s=entity.blaze.shoot;p=2;audience=caster;v=0.5} @origin
       - skill:OpenField_Weapon_火炎弾_MCLove32_Skill_Effects @origin
     ];
-    bulletType=MOB;mob=OpenField_Util_火炎弾_MCLove32;bmd=true;byo=0;bfo=0;
+    bulletType=MOB;mm=OpenField_Util_火炎弾_MCLove32;bmd=true;byo=0;bfo=0;
     v=16;i=1;vr=1.25;hr=1.25;hp=false;hnp=true;mr=24;md=60;fo=true;
     in=6;vo=3}
 
