@@ -865,11 +865,12 @@ OpenField_Weapon_オービニウム_MCLove32_Skills:
       - message{m="&cメインウェポン共通CT中です。"} @self 
     ]} false  
   - materialIsOnCooldown{m=diamond_shovel} false 
-  - children{a=>0} cast OpenField_Weapon_オービニウム_MCLove32_Skill_Remove
   Skills:
   - modifyMana{a=-10} @self 
   - aura{n=メインウェポン;i=20;rd=true;t=60} @self 
-  - setMaterialCooldown{m=diamond_shovel;d=24} @self 
+  - setMaterialCooldown{m=diamond_shovel;d=24} @self
+  - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_Remove @self ?children{a=>0}
+  - delay 4
   - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_氷 @self 
   - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_青氷 @self 
   - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊 @self 
@@ -877,7 +878,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skills:
 OpenField_Weapon_オービニウム_MCLove32_Skill_Remove:
   Skills:
   - addtag{t=remove} @self ?!hasTag{t=remove}
-  - removetag{t=remove;delay=10} @self 
+  - removetag{t=remove;delay=2} @self 
 
 OpenField_Weapon_オービニウム_MCLove32_Skill_氷:
   Skills:
