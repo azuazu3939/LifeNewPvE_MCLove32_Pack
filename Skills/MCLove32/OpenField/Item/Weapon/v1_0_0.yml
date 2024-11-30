@@ -660,6 +660,8 @@ OpenField_Weapon_アイシクルショット_MCLove32_Skills:
   - sound{s=entity.experience_orb.pickup;p=1.21;repeat=2;repeati=10} @self
   - delay 5
   - sound{s=entity.experience_orb.pickup;p=1.41;repeat=2;repeati=10} @self
+  - delay 15
+  - sound{s=entity.experience_orb.pickup;p=1.58;repeat=2;repeati=5} @self
 
 OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_20:
   Skills:
