@@ -775,7 +775,7 @@ OpenField_Weapon_ツリーハウス_MCLove32_Skills:
   Cooldown: 12
   Conditions:
   - wearing{m=OpenField_Weapon_ツリーハウス_MCLove32;s=HAND}
-  - hasMana{a=>250;
+  - hasMana{a=>100;
     onFail=[
       - message{m="&cマナが足りません。"} @self 
     ]} 
@@ -785,7 +785,7 @@ OpenField_Weapon_ツリーハウス_MCLove32_Skills:
     ]} false  
   - materialIsOnCooldown{m=wooden_hoe} false 
   Skills:
-  - modifyMana{a=-250} @self 
+  - modifyMana{a=-100} @self 
   - aura{n=サブウェポン;i=20;rd=true;t=60} @self 
   - setMaterialCooldown{m=wooden_hoe;d=240} @self 
   - effect:glow{color=DARK_GREEN;duration=100} @self 
