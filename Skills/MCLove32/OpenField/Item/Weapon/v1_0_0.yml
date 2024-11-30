@@ -668,7 +668,7 @@ OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_20:
       - damage{a=20;ii=true;pi=true;e=BLUE}
     ];
     bulletType=MOB;mm=OpenField_Util_氷_75_MCLove32;
-    bmd=true;byo=0;bfo=0;v=0;i=1;vr=1.5;r=1.5;hp=false;hnp=true;mr=28;md=60;
+    bmd=true;byo=0;bfo=0;v=1;i=1;vr=1.5;r=1.5;hp=false;hnp=true;mr=28;md=60;
     syo=<random.1to5>;sfo=<random.-3to3>;sso=<random.-4to4>} @TL
 
 OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_25:
@@ -688,7 +688,7 @@ OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_25:
       - damage{a=25;ii=true;pi=true;e=BLUE}
     ];
     bulletType=MOB;mm=OpenField_Util_氷_100_MCLove32;
-    bmd=true;byo=0;bfo=0;v=0;i=1;vr=1.5;r=1.5;hp=false;hnp=true;mr=28;md=60;
+    bmd=true;byo=0;bfo=0;v=1;i=1;vr=1.5;r=1.5;hp=false;hnp=true;mr=28;md=60;
     syo=<random.1to5>;sfo=<random.-3to3>;sso=<random.-4to4>} @TL
 
 OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_30:
@@ -708,7 +708,7 @@ OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_30:
       - damage{a=30;ii=true;pi=true;e=BLUE}
     ];
     bulletType=MOB;mm=OpenField_Util_氷塊_75_MCLove32;
-    bmd=true;byo=0;bfo=0;v=0;i=1;vr=1.5;r=1.5;hp=false;hnp=true;mr=28;md=60;
+    bmd=true;byo=0;bfo=0;v=1;i=1;vr=1.5;r=1.5;hp=false;hnp=true;mr=28;md=60;
     syo=<random.1to5>;sfo=<random.-3to3>;sso=<random.-4to4>} @TL
 
 OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_35:
@@ -728,7 +728,7 @@ OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_35:
       - damage{a=35;ii=true;pi=true;e=BLUE}
     ];
     bulletType=MOB;mm=OpenField_Util_氷塊_100_MCLove32;
-    bmd=true;byo=0;bfo=0;v=0;i=1;vr=1.5;r=1.5;hp=false;hnp=true;mr=28;md=60;
+    bmd=true;byo=0;bfo=0;v=1;i=1;vr=1.5;r=1.5;hp=false;hnp=true;mr=28;md=60;
     syo=<random.1to5>;sfo=<random.-3to3>;sso=<random.-4to4>} @TL
 
 OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_40:
@@ -748,7 +748,7 @@ OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_40:
       - damage{a=40;ii=true;pi=true;e=BLUE}
     ];
     bulletType=MOB;mm=OpenField_Util_青氷_75_MCLove32;
-    bmd=true;byo=0;bfo=0;v=0;i=1;vr=1.5;r=1.5;hp=false;hnp=true;mr=28;md=60;
+    bmd=true;byo=0;bfo=0;v=1;i=1;vr=1.5;r=1.5;hp=false;hnp=true;mr=28;md=60;
     syo=<random.1to5>;sfo=<random.-3to3>;sso=<random.-4to4>} @TL
 
 OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_45:
@@ -768,5 +768,5 @@ OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_45:
       - damage{a=45;ii=true;pi=true;e=BLUE}
     ];
     bulletType=MOB;mm=OpenField_Util_青氷_100_MCLove32;
-    bmd=true;byo=0;bfo=0;v=0;i=1;vr=1.5;r=1.5;hp=false;hnp=true;mr=28;md=60;
+    bmd=true;byo=0;bfo=0;v=1;i=1;vr=1.5;r=1.5;hp=false;hnp=true;mr=28;md=60;
     syo=<random.1to5>;sfo=<random.-3to3>;sso=<random.-4to4>} @TL
