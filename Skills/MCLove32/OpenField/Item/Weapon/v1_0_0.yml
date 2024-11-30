@@ -527,8 +527,8 @@ OpenField_Weapon_火炎弾_MCLove32_Skill_Location:
     ot=[
       - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.95} @self 
       - modifyProjectile{trait=VELOCITY;action=MULTIPLY;value=1.05} @self 
-      - e:p{p=lava;a=3;vs=0.05;hs=0.05;audience=caster} @origin 
-      - e:p{p=flame;a=5;vs=0.15;hs=0.15;audience=caster;s=0.25} @origin 
+      - e:p{p=lava;a=1;vs=0.05;hs=0.05;audience=caster} @origin 0.25
+      - e:p{p=flame;a=2;vs=0.15;hs=0.15;audience=caster;s=0.25} @origin 0.5 
     ];
     conditions=[
       - isLiving true 
