@@ -893,7 +893,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷:
       - endprojectile ?hasTag{t=remove}
     ];
     i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;d=6000;
-    b=MOB;mob=OpenField_Util_氷_50_MCLove32;bmd=true;byo=0;bfo=0;r=2.5
+    b=MOB;mob=OpenField_Util_氷_50_MCLove32;bmd=true;byo=0;bfo=0;r=3.5;rd=true;
     p=36;sp=0;auraName=OpenField_Weapon_オービニウム_MCLove32_Skill_氷} @self 
 
 OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊:
@@ -910,7 +910,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊:
       - endprojectile ?hasTag{t=remove}
     ];
     i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;d=6000;
-    b=MOB;mob=OpenField_Util_氷塊_50_MCLove32;bmd=true;byo=0;bfo=0;r=2.5
+    b=MOB;mob=OpenField_Util_氷塊_50_MCLove32;bmd=true;byo=0;bfo=0;r=3.5;rd=true;
     p=36;sp=12;auraName=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊} @self 
 
 OpenField_Weapon_オービニウム_MCLove32_Skill_青氷:
@@ -927,5 +927,5 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_青氷:
       - endprojectile ?hasTag{t=remove}
     ];
     i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;d=6000;
-    b=MOB;mob=OpenField_Util_青氷_50_MCLove32;bmd=true;byo=0;bfo=0;r=2.5
+    b=MOB;mob=OpenField_Util_青氷_50_MCLove32;bmd=true;byo=0;bfo=0;r=3.5;rd=true;
     p=36;sp=24;auraName=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷} @self 
