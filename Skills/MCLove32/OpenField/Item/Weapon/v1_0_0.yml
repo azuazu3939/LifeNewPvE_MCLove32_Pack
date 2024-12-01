@@ -904,6 +904,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷:
           - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_RemoveTag @self 
           - auraremove{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷_Swing} @self ?hasTag{t=SwingTag_1} 
           - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_Remove @self ?hasTag{t=SwingTag_1}
+          - removetag{t=SwingTag_1} ?hasTag{t=SwingTag_1}
         ]} @self
     ];
     i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;d=6000;
@@ -934,6 +935,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊:
           - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_RemoveTag @self 
           - auraremove{aura=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊_Swing} @self ?hasTag{t=SwingTag_2}
           - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_Remove @self ?hasTag{t=SwingTag_2} 
+          - removetag{t=SwingTag_2} ?hasTag{t=SwingTag_2}
         ]} @self
     ];
     i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;d=6000;
@@ -964,6 +966,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_青氷:
           - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_RemoveTag @self 
           - auraremove{aura=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷_Swing} @self ?hasTag{t=SwingTag_3} 
           - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_Remove @self ?hasTag{t=SwingTag_3}
+          - removetag{t=SwingTag_3} ?hasTag{t=SwingTag_3}
         ]} @self
     ];
     i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;d=6000;
