@@ -973,6 +973,12 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_青氷:
 OpenField_Weapon_オービニウム_MCLove32_Skill_RemoveTag:
   Cooldown: 0.2
   Skills:
+  - skill{
+    s=[
+      - removetag{t=SwingTag_1}
+      - removetag{t=SwingTag_2}
+      - removetag{t=SwingTag_3}
+    ]} @self ?hasTag{t=SwingTag_1} ?hasTag{t=SwingTag_2} ?hasTag{t=SwingTag_3}
   - addTag{t=SwingTag_3} @self ?hasTag{t=SwingTag_1} ?hasTag{t=SwingTag_2} ?!hasTag{t=SwingTag_3}
   - addTag{t=SwingTag_2} @self ?hasTag{t=SwingTag_1} ?!hasTag{t=SwingTag_2} ?!hasTag{t=SwingTag_3}
   - addTag{t=SwingTag_1} @self ?!hasTag{t=SwingTag_1} ?!hasTag{t=SwingTag_2} ?!hasTag{t=SwingTag_3}
