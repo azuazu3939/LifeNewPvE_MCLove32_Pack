@@ -891,10 +891,10 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷:
       - auraremove{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷} @self ?!wearing{m=OpenField_Weapon_オービニウム_MCLove32;s=HAND}
     ];
     oe=[
-      - missile{in=4;v=16;fo=true;hp=false;hnp=true;vr=1.5;hr=1.5;i=1;md=100;mr=28;syo=0;sfo=0;
+      - missile{in=4;v=16;fo=true;hp=false;hnp=true;vr=3;hr=3;i=1;md=100;mr=32;syo=0;sfo=0;sb=false;
         b=MOB;mob=OpenField_Util_氷_50_MCLove32;bmd=true;byo=0;bfo=0;
         oh=[
-          - damage{a=10;pi=true;ii=true}
+          - damage{a=15;pi=true;ii=true}
         ]} @TL{d=16} ?!hasAura{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷_Swing}
       - auraremove{aura=OpenField_Weapon_オービニウム_MCLove32_Skill_氷_Swing} @self 
     ];
@@ -921,10 +921,10 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊:
       - auraremove{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊} @self ?!wearing{m=OpenField_Weapon_オービニウム_MCLove32;s=HAND}
     ];
     oe=[
-      - missile{in=4;v=16;fo=true;hp=false;hnp=true;vr=1.5;hr=1.5;i=1;md=100;mr=28;syo=0;sfo=0;
+      - missile{in=4;v=16;fo=true;hp=false;hnp=true;vr=3;hr=3;i=1;md=100;mr=32;syo=0;sfo=0;sb=false;
         b=MOB;mob=OpenField_Util_氷塊_50_MCLove32;bmd=true;byo=0;bfo=0;
         oh=[
-          - damage{a=15;pi=true;ii=true}
+          - damage{a=20;pi=true;ii=true}
         ]} @TL{d=16} ?!hasAura{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊_Swing}
       - auraremove{aura=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊_Swing} @self 
     ];
@@ -951,10 +951,10 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_青氷:
       - auraremove{n=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷} @self ?!wearing{m=OpenField_Weapon_オービニウム_MCLove32;s=HAND}
     ];
     oe=[
-      - missile{in=4;v=16;fo=true;hp=false;hnp=true;vr=1.5;hr=1.5;i=1;md=100;mr=28;syo=0;sfo=0;
+      - missile{in=4;v=16;fo=true;hp=false;hnp=true;vr=3;hr=3;i=1;md=100;mr=32;syo=0;sfo=0;sb=false;
         b=MOB;mob=OpenField_Util_青氷_50_MCLove32;bmd=true;byo=0;bfo=0;
         oh=[
-          - damage{a=20;pi=true;ii=true}
+          - damage{a=25;pi=true;ii=true}
         ]} @TL{d=16} ?!hasAura{n=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷_Swing}
       - auraremove{aura=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷_Swing} @self 
     ];
