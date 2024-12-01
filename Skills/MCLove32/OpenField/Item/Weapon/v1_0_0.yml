@@ -897,7 +897,6 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷:
           - damage{a=10;pi=true;ii=true}
         ]} @TL{d=16} ?!hasAura{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷_Swing}
       - auraremove{aura=OpenField_Weapon_オービニウム_MCLove32_Skill_氷_Swing} @self 
-      - removetag{t=SwingTag_1} @self 
     ];
     os=[
       - onSwing{auraName=OpenField_Weapon_オービニウム_MCLove32_Skill_氷_Swing;d=6005;
@@ -928,7 +927,6 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊:
           - damage{a=15;pi=true;ii=true}
         ]} @TL{d=16} ?!hasAura{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊_Swing}
       - auraremove{aura=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊_Swing} @self 
-      - removetag{t=SwingTag_2} @self 
     ];
     os=[
       - onSwing{auraName=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊_Swing;d=6005;
@@ -959,7 +957,6 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_青氷:
           - damage{a=20;pi=true;ii=true}
         ]} @TL{d=16} ?!hasAura{n=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷_Swing}
       - auraremove{aura=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷_Swing} @self 
-      - removetag{t=SwingTag_3} @self 
     ];
     os=[
       - onSwing{auraName=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷_Swing;d=6005;
