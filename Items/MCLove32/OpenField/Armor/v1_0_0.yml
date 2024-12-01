@@ -215,6 +215,7 @@ OpenField_Armor_エリミネーターH_MCLove32:
   - skill:OpenField_Armor_エリミネーターFull_MCLove32 @self ~onDamaged 
   - skill:OpenField_Armor_エリミネーターFull_MCLove32 @self ~onUse
   - skill:OpenField_Armor_エリミネーターFull_MCLove32 @self ~onSwing
+  Group: 'Armor'
 
 OpenField_Armor_エリミネーターC_MCLove32:
   Id: leather_chestplate
@@ -236,6 +237,7 @@ OpenField_Armor_エリミネーターC_MCLove32:
   NBT:
     PublicBukkitValues:
       lifenewpve:max_mana: "50"
+  Group: 'Armor'
 
 OpenField_Armor_エリミネーターL_MCLove32:
   Id: leather_leggings
@@ -257,6 +259,7 @@ OpenField_Armor_エリミネーターL_MCLove32:
   NBT:
     PublicBukkitValues:
       lifenewpve:max_mana: "50"
+  Group: 'Armor'
 
 OpenField_Armor_エリミネーターB_MCLove32:
   Id: leather_boots
@@ -278,6 +281,7 @@ OpenField_Armor_エリミネーターB_MCLove32:
   NBT:
     PublicBukkitValues:
       lifenewpve:max_mana: "50"
+  Group: 'Armor'
 
 OpenField_Armor_モフィモスH_MCLove32:
   Id: netherite_helmet
@@ -298,6 +302,7 @@ OpenField_Armor_モフィモスH_MCLove32:
   NBT:
     PublicBukkitValues:
       lifenewpve:max_mana: "150"
+  Group: 'Armor'
 
 OpenField_Armor_モフィモスC_MCLove32:
   Id: netherite_chestplate
@@ -318,6 +323,7 @@ OpenField_Armor_モフィモスC_MCLove32:
   NBT:
     PublicBukkitValues:
       lifenewpve:max_mana: "100"
+  Group: 'Armor'
 
 OpenField_Armor_モフィモスL_MCLove32:
   Id: netherite_leggings
@@ -338,6 +344,7 @@ OpenField_Armor_モフィモスL_MCLove32:
   NBT:
     PublicBukkitValues:
       lifenewpve:max_mana: "100"
+  Group: 'Armor'
 
 OpenField_Armor_モフィモスB_MCLove32:
   Id: netherite_boots
@@ -358,3 +365,4 @@ OpenField_Armor_モフィモスB_MCLove32:
   NBT:
     PublicBukkitValues:
       lifenewpve:max_mana: "150"
+  Group: 'Armor'
