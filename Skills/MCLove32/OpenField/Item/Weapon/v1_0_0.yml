@@ -895,7 +895,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷:
         b=MOB;mob=OpenField_Util_氷_50_MCLove32;bmd=true;byo=0;bfo=0;
         oh=[
           - damage{a=10;pi=true;ii=true}
-        ]} @EIC{r=32;a=150;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]} ?!hasAura{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷_Swing}
+        ]} @TL{d=16} ?!hasAura{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷_Swing}
       - auraremove{aura=OpenField_Weapon_オービニウム_MCLove32_Skill_氷_Swing} @self 
     ];
     os=[
@@ -925,7 +925,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊:
         b=MOB;mob=OpenField_Util_氷塊_50_MCLove32;bmd=true;byo=0;bfo=0;
         oh=[
           - damage{a=15;pi=true;ii=true}
-        ]} @EIC{r=32;a=150;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]} ?!hasAura{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊_Swing}
+        ]} @TL{d=16} ?!hasAura{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊_Swing}
       - auraremove{aura=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊_Swing} @self 
     ];
     os=[
@@ -955,7 +955,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_青氷:
         b=MOB;mob=OpenField_Util_青氷_50_MCLove32;bmd=true;byo=0;bfo=0;
         oh=[
           - damage{a=20;pi=true;ii=true}
-        ]} @EIC{r=32;a=150;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]} ?!hasAura{n=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷_Swing}
+        ]} @TL{d=16} ?!hasAura{n=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷_Swing}
       - auraremove{aura=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷_Swing} @self 
     ];
     os=[
