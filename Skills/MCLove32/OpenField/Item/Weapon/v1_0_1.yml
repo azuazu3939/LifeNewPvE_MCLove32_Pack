@@ -48,6 +48,11 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷:
         oh=[
           - damage{a=5;pi=true;ii=true}
           - sound{s=entity.splash_potion.break} @origin
+        ];
+        ot=[
+          - e:p{p=red_dust;c=#4c4cff;a=1;audience=caster;s=0.5} @origin
+          - e:p{p=red_dust;c=#00ffff;a=1;audience=caster;s=0.5} @origin
+          - e:p{p=red_dust;c=#ffffff;a=1;audience=caster;s=0.5} @origin
         ]} @TL{d=16} ?!hasAura{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷_Swing}
       - auraremove{aura=OpenField_Weapon_オービニウム_MCLove32_Skill_氷_Swing} @self 
       - sound{s=entity.witch.throw;p=0.785;v=0.5;audience=caster} @self 
@@ -84,6 +89,11 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊:
         oh=[
           - damage{a=10;pi=true;ii=true}
           - sound{s=entity.splash_potion.break} @origin
+        ];
+        ot=[
+          - e:p{p=red_dust;c=#4c4cff;a=1;audience=caster;s=0.5} @origin
+          - e:p{p=red_dust;c=#00ffff;a=1;audience=caster;s=0.5} @origin
+          - e:p{p=red_dust;c=#ffffff;a=1;audience=caster;s=0.5} @origin
         ]} @TL{d=16} ?!hasAura{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊_Swing}
       - auraremove{aura=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊_Swing} @self 
       - sound{s=entity.witch.throw;p=0.785;v=0.5;audience=caster} @self
@@ -120,6 +130,11 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_青氷:
         oh=[
           - damage{a=15;pi=true;ii=true}
           - sound{s=entity.splash_potion.break} @origin
+        ];
+        ot=[
+          - e:p{p=red_dust;c=#4c4cff;a=1;audience=caster;s=0.5} @origin
+          - e:p{p=red_dust;c=#00ffff;a=1;audience=caster;s=0.5} @origin
+          - e:p{p=red_dust;c=#ffffff;a=1;audience=caster;s=0.5} @origin
         ]} @TL{d=16} ?!hasAura{n=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷_Swing}
       - auraremove{aura=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷_Swing} @self 
       - sound{s=entity.witch.throw;p=0.785;v=0.5;audience=caster} @self
