@@ -971,6 +971,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_青氷:
     p=72;sp=48;auraName=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷} @self 
 
 OpenField_Weapon_オービニウム_MCLove32_Skill_RemoveTag:
+  Cooldown: 0.2
   Skills:
   - skill{s=[
     - removeTag{t=SwingTag_3}
