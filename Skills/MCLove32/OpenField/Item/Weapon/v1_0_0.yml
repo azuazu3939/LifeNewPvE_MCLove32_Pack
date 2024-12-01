@@ -998,7 +998,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_RemoveTag:
 OpenField_Weapon_オービニウム_MCLove32_Skill_ParticleRing:
   Cooldown: 1
   Skills:
-  - e:pr{p=cloud;a=1;pts=12;vs=0.05;hs=0.1;s=0.025;r=3;audience=caster} @self
+  - e:pr{p=cloud;a=1;pts=8;vs=0.05;hs=0.1;s=0.025;r=3;audience=caster} @self
 
 OpenField_Weapon_オービニウム_MCLove32_Skill_Hit1:
   TargetConditions:
