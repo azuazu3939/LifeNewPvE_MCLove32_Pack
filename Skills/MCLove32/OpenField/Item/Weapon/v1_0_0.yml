@@ -889,6 +889,9 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷:
     ot=[
       - auraremove{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷} @self ?hasTag{t=remove}
       - auraremove{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷} @self ?!wearing{m=OpenField_Weapon_オービニウム_MCLove32;s=HAND}
+      - e:p{p=red_dust;c=#4c4cff;a=1;audience=caster;s=0.5;vs=0.5;hs=0.5} @origin
+      - e:p{p=red_dust;c=#00ffff;a=1;audience=caster;s=0.5;vs=0.5;hs=0.5} @origin
+      - e:p{p=red_dust;c=#ffffff;a=1;audience=caster;s=0.5;vs=0.5;hs=0.5} @origin
     ];
     oe=[
       - missile{in=4;v=16;fo=true;hp=false;hnp=true;vr=3;hr=3;i=1;md=100;mr=32;syo=0;sfo=0;sb=false;
@@ -919,6 +922,9 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊:
     ot=[
       - auraremove{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊} @self ?hasTag{t=remove}
       - auraremove{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊} @self ?!wearing{m=OpenField_Weapon_オービニウム_MCLove32;s=HAND}
+      - e:p{p=red_dust;c=#4c4cff;a=1;audience=caster;s=0.5;vs=0.5;hs=0.5} @origin
+      - e:p{p=red_dust;c=#00ffff;a=1;audience=caster;s=0.5;vs=0.5;hs=0.5} @origin
+      - e:p{p=red_dust;c=#ffffff;a=1;audience=caster;s=0.5;vs=0.5;hs=0.5} @origin
     ];
     oe=[
       - missile{in=4;v=16;fo=true;hp=false;hnp=true;vr=3;hr=3;i=1;md=100;mr=32;syo=0;sfo=0;sb=false;
@@ -949,6 +955,9 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_青氷:
     ot=[
       - auraremove{n=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷} @self ?hasTag{t=remove}
       - auraremove{n=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷} @self ?!wearing{m=OpenField_Weapon_オービニウム_MCLove32;s=HAND}
+      - e:p{p=red_dust;c=#4c4cff;a=1;audience=caster;s=0.5;vs=0.5;hs=0.5} @origin
+      - e:p{p=red_dust;c=#00ffff;a=1;audience=caster;s=0.5;vs=0.5;hs=0.5} @origin
+      - e:p{p=red_dust;c=#ffffff;a=1;audience=caster;s=0.5;vs=0.5;hs=0.5} @origin
     ];
     oe=[
       - missile{in=4;v=16;fo=true;hp=false;hnp=true;vr=3;hr=3;i=1;md=100;mr=32;syo=0;sfo=0;sb=false;
