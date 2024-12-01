@@ -999,7 +999,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_Hit2:
   - isMythicMob true
   - hasTag{t=Cancel_2} false
   Skills:
-  - damage{a=10;pi=true;ii=true}
+  - damage{a=8;pi=true;ii=true}
   - addtag{t=Cancel_2} 
   - removetag{t=Cancel_2;delay=5} 
 
@@ -1009,6 +1009,6 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_Hit3:
   - isMythicMob true
   - hasTag{t=Cancel_3} false
   Skills:
-  - damage{a=15;pi=true;ii=true}
+  - damage{a=10;pi=true;ii=true}
   - addtag{t=Cancel_3} 
   - removetag{t=Cancel_3;delay=5} 
