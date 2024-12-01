@@ -884,7 +884,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷:
   Skills:
   - o{
     oh=[
-      - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_Hit{damage=5}
+      - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_Hit1
     ];
     ot=[
       - auraremove{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷} @self ?hasTag{t=remove}
@@ -914,7 +914,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊:
   Skills:
   - o{
     oh=[
-      - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_Hit{damage=10}
+      - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_Hit2
     ];
     ot=[
       - auraremove{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊} @self ?hasTag{t=remove}
@@ -944,7 +944,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_青氷:
   Skills:
   - o{
     oh=[
-      - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_Hit{damage=15}
+      - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_Hit3
     ];
     ot=[
       - auraremove{n=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷} @self ?hasTag{t=remove}
@@ -983,12 +983,32 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_RemoveTag:
   - addTag{t=SwingTag_2} @self ?hasTag{t=SwingTag_1} ?!hasTag{t=SwingTag_2} ?!hasTag{t=SwingTag_3}
   - addTag{t=SwingTag_1} @self ?!hasTag{t=SwingTag_1} ?!hasTag{t=SwingTag_2} ?!hasTag{t=SwingTag_3}
 
-OpenField_Weapon_オービニウム_MCLove32_Skill_Hit:
+OpenField_Weapon_オービニウム_MCLove32_Skill_Hit1:
   TargetConditions:
   - isLiving true 
   - isMythicMob true
-  - hasTag{t=Cancel} false
+  - hasTag{t=Cancel_1} false
   Skills:
-  - damage{a=<skill.var.damage>;pi=true;ii=true}
-  - addtag{t=Cancel} 
-  - removetag{t=Cancel;delay=100} 
+  - damage{a=5;pi=true;ii=true}
+  - addtag{t=Cancel_1} 
+  - removetag{t=Cancel_1;delay=10} 
+
+OpenField_Weapon_オービニウム_MCLove32_Skill_Hit2:
+  TargetConditions:
+  - isLiving true 
+  - isMythicMob true
+  - hasTag{t=Cancel_2} false
+  Skills:
+  - damage{a=10;pi=true;ii=true}
+  - addtag{t=Cancel_2} 
+  - removetag{t=Cancel_2;delay=10} 
+
+OpenField_Weapon_オービニウム_MCLove32_Skill_Hit3:
+  TargetConditions:
+  - isLiving true 
+  - isMythicMob true
+  - hasTag{t=Cancel_3} false
+  Skills:
+  - damage{a=15;pi=true;ii=true}
+  - addtag{t=Cancel_3} 
+  - removetag{t=Cancel_3;delay=10} 
