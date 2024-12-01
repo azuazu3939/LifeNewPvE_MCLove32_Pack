@@ -853,7 +853,7 @@ OpenField_Weapon_ツリーハウス_MCLove32_Process:
     md=100;vr=1;r=10;hp=false;hnp=true;i=10;fo=true;sb=false} @origin
   
 OpenField_Weapon_オービニウム_MCLove32_Skills:
-  Cooldown: 3
+  Cooldown: 1.2
   Conditions:
   - wearing{m=OpenField_Weapon_オービニウム_MCLove32;s=HAND}
   - hasMana{a=>10;
