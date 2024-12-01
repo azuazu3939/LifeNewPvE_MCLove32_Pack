@@ -385,10 +385,7 @@ OpenField_Weapon_牙狼ノ零_MCLove32_Skill_Wait:
 OpenField_Weapon_樹木剣_MCLove32_Skills:
   Cooldown: 10
   Conditions:
-  - (
-    wearing{s=HAND;m=OpenField_Weapon_樹木剣ヘビー_MCLove32} ||
-    wearing{s=HAND;m=OpenField_Weapon_樹木剣ライト_MCLove32}
-    ) true
+  - wearing{s=HAND;m=OpenField_Weapon_樹木剣_MCLove32} true
   - crouching true 
   - materialcooldown{m=wooden_sword} false 
   - hasMana{a=>80;
