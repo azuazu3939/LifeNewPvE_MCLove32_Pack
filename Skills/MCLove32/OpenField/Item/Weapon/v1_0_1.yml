@@ -49,6 +49,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷:
           - damage{a=5;pi=true;ii=true}
         ]} @TL{d=16} ?!hasAura{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷_Swing}
       - auraremove{aura=OpenField_Weapon_オービニウム_MCLove32_Skill_氷_Swing} @self 
+      - sound{s=entity.witch.throw;p=0.785;v=0.5;audience=caster} @self 
     ];
     os=[
       - onSwing{auraName=OpenField_Weapon_オービニウム_MCLove32_Skill_氷_Swing;d=6005;
@@ -83,6 +84,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊:
           - damage{a=10;pi=true;ii=true}
         ]} @TL{d=16} ?!hasAura{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊_Swing}
       - auraremove{aura=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊_Swing} @self 
+      - sound{s=entity.witch.throw;p=0.785;v=0.5;audience=caster} @self
     ];
     os=[
       - onSwing{auraName=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊_Swing;d=6005;
@@ -109,6 +111,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_青氷:
       - e:p{p=red_dust;c=#00ffff;a=1;audience=caster;s=0.5;vs=0.5;hs=0.5} @origin
       - e:p{p=red_dust;c=#ffffff;a=1;audience=caster;s=0.5;vs=0.5;hs=0.5} @origin
       - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_ParticleRing @self 
+      - sound{s=entity.witch.throw;p=0.785;v=0.5;audience=caster} @self
     ];
     oe=[
       - missile{in=4;v=16;fo=true;hp=false;hnp=true;vr=3;hr=3;i=1;md=100;mr=32;syo=0;sfo=0;sb=false;
