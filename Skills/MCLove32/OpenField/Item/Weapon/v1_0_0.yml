@@ -869,6 +869,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skills:
   - aura{n=メインウェポン;i=20;rd=true;t=20} @self 
   - setMaterialCooldown{m=diamond_shovel;d=24} @self
   - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_Remove @self ?children{a=>0}
+  - sound{s=entity.zombie_villager.cure;v=0.5} @self
   - delay 4
   - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_氷 @self 
   - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_青氷 @self 
