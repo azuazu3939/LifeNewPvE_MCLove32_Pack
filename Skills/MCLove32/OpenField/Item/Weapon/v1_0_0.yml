@@ -906,8 +906,8 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷:
           - auraremove{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷} @self ?hasTag{t=SwingTag_1} 
         ]} @self
     ];
-    i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;d=6000;r=6;
-    b=MOB;mob=OpenField_Util_氷_50_MCLove32;bmd=true;byo=0;bfo=0;r=3;rd=true;
+    i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;d=6000;r=5;
+    b=MOB;mob=OpenField_Util_氷_50_MCLove32;bmd=true;byo=0;bfo=0;rd=true;
     p=72;sp=0;auraName=OpenField_Weapon_オービニウム_MCLove32_Skill_氷} @self 
 
 OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊:
@@ -936,8 +936,8 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊:
           - auraremove{aura=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊} @self ?hasTag{t=SwingTag_2}
         ]} @self
     ];
-    i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;d=6000;r=6;
-    b=MOB;mob=OpenField_Util_氷塊_50_MCLove32;bmd=true;byo=0;bfo=0;r=3;rd=true;
+    i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;d=6000;r=5;
+    b=MOB;mob=OpenField_Util_氷塊_50_MCLove32;bmd=true;byo=0;bfo=0;rd=true;
     p=72;sp=24;auraName=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊} @self 
 
 OpenField_Weapon_オービニウム_MCLove32_Skill_青氷:
@@ -966,8 +966,8 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_青氷:
           - auraremove{aura=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷} @self ?hasTag{t=SwingTag_3} 
         ]} @self
     ];
-    i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;d=6000;r=6;
-    b=MOB;mob=OpenField_Util_青氷_50_MCLove32;bmd=true;byo=0;bfo=0;r=3;rd=true;
+    i=1;vr=1.5;hr=1.5;hp=false;hnp=true;mr=24;d=6000;r=5;
+    b=MOB;mob=OpenField_Util_青氷_50_MCLove32;bmd=true;byo=0;bfo=0;rd=true;
     p=72;sp=48;auraName=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷} @self 
 
 OpenField_Weapon_オービニウム_MCLove32_Skill_RemoveTag:
@@ -991,7 +991,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_Hit1:
   Skills:
   - damage{a=5;pi=true;ii=true}
   - addtag{t=Cancel_1} 
-  - removetag{t=Cancel_1;delay=10} 
+  - removetag{t=Cancel_1;delay=5} 
 
 OpenField_Weapon_オービニウム_MCLove32_Skill_Hit2:
   TargetConditions:
@@ -1001,7 +1001,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_Hit2:
   Skills:
   - damage{a=10;pi=true;ii=true}
   - addtag{t=Cancel_2} 
-  - removetag{t=Cancel_2;delay=10} 
+  - removetag{t=Cancel_2;delay=5} 
 
 OpenField_Weapon_オービニウム_MCLove32_Skill_Hit3:
   TargetConditions:
@@ -1011,4 +1011,4 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_Hit3:
   Skills:
   - damage{a=15;pi=true;ii=true}
   - addtag{t=Cancel_3} 
-  - removetag{t=Cancel_3;delay=10} 
+  - removetag{t=Cancel_3;delay=5} 
