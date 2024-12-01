@@ -2,7 +2,6 @@ OpenField_Enemy_Abstract_Generic:
   Type: zombie
   Display: ""
   Faction: Enemy
-  Drop:
   Options:
     Collidable: true 
     DigOutOfGround: true 
