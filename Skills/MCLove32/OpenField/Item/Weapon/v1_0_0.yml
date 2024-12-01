@@ -808,7 +808,6 @@ OpenField_Weapon_ツリーハウス_MCLove32_Skills:
   - modifyMana{a=-100} @self 
   - aura{n=サブウェポン;i=20;rd=true;t=60} @self 
   - setMaterialCooldown{m=wooden_hoe;d=300} @self 
-  - effect:glow{color=DARK_GREEN;duration=100} @self 
   - projectile{
     oh=[
       - damage{a=20;pi=true;ii=true}
