@@ -1,0 +1,34 @@
+OpenField_Weapon_ラヴァン_MCLove32_Skills:
+  Cooldown: 5
+  Conditions:
+  - wearing{s=HAND;m=OpenField_Weapon_ラヴァン_MCLove32}
+  - materialcooldown{m=diamond_axe} false 
+  - hasMana{a=>75;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]} 
+  - hasAura{n=サブウェポン;
+    onfail=[
+      - message{m="&cサブウェポン共通CT中です。"} @self 
+    ]} false  
+  Skills:
+  - modifyMana{a=-75} @self
+  - aura{n=サブウェポン;i=20;rd=true;t=60} @self  
+  - skill:OpenField_Weapon_ラヴァン_MCLove32_Skill_Handler @self 
+  - setvar{var=skill.radius;val="1";t=INTEGER} @self 
+  - skill{
+    s=[
+      - setvar{var=skill.radius;val="<skill.var.radius> + 2";t=INTEGER} @self 
+      - e:pr{particle=explosion_large;radius=<skill.var.radius>;points=16;amount=3;hS=1;vS=0;audience=@self} @self
+    ];repeat=2;repeatI=4} @self 
+  - damage{a=75;pi=true;ii=true;e=RED} @EIR{r=7;c=[ - isLiving true - isMythicMob true ]}
+
+OpenField_Weapon_ラヴァン_MCLove32_Skill_Handler:
+  Skills:
+  - setmaterialcooldown{m=diamond_axe;d=100} @self
+  - setvar{var=skill.pitch;val="0.5";t=FLOAT} @self 
+  - skill{
+    s=[
+      - setvar{var=skill.pitch;val="<skill.var.pitch> + 0.25";t=FLOAT} @self 
+      - sound{s=block.note_block.harp;p=<skill.var.pitch>} @self
+    ];repeat=5;repeatI=2} @self 

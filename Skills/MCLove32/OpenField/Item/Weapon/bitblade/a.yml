@@ -1,0 +1,46 @@
+OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills:
+  Cooldown: 5
+  Conditions:
+  - wearing{m=OpenField_Weapon_ビットブレードTypeA_MCLove32;s=HAND}
+  - materialIsOnCooldown{m=diamond_sword} false
+  - hasMana{a=>30;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]} 
+  - hasAura{n=サブウェポン;
+    onfail=[
+      - message{m="&cサブウェポン共通CT中です。"} @self 
+    ]} false 
+  Skills:
+  - modifyMana{a=-30} @self 
+  - aura{n=サブウェポン;i=20;rd=true;t=60} @self  
+  - setMaterialCooldown{m=diamond_sword;d=100} @self 
+  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Start @EIC{r=20;a=120;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
+
+OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Start:
+  Skills:
+  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=90;vo=1;so=3;y=3;damage=12} 
+  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=270;vo=1;so=3;y=3;damage=12} 
+  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=90;vo=1.5;so=3;y=5;delay=2;damage=12}
+  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=270;vo=1.5;so=3;y=5;delay=2;damage=12}
+  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=90;vo=2;so=3;y=7;delay=4;damage=12} 
+  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=270;vo=2;so=3;y=7;delay=4;damage=12}
+
+OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process:
+  Skills:
+  - missile{
+    ot=[
+      - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.8} @self 
+    ];
+    oh=[
+      - damage{a=<skill.damage>;ii=true;pi=true}
+      - sound{s=block.anvil.land;p=2;v=0.5}
+      - sound{s=entity.breeze.inhale;p=2;v=0.5}
+    ];
+    conditions=[
+      - isLiving true 
+      - isMythicMob true
+    ];
+    bulletType=DISPLAY;mat=diamond_sword;scale=1.25,1.25,1.25;yaw=3.14;pitch=1.57;roll=0.785;
+    v=30;i=1;vr=2;hr=2;hp=false;hnp=true;mr=32;se=true;
+    in=12;ho=<skill.ho>;vo=<skill.vo>} 

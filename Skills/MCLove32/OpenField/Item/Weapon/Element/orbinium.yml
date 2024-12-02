@@ -1,0 +1,200 @@
+OpenField_Weapon_オービニウム_MCLove32_Skills:
+  Cooldown: 1.2
+  Conditions:
+  - wearing{m=OpenField_Weapon_オービニウム_MCLove32;s=HAND}
+  - hasMana{a=>10;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]} 
+  - hasAura{n=メインウェポン;
+    onfail=[
+      - message{m="&cメインウェポン共通CT中です。"} @self 
+    ]} false  
+  - materialIsOnCooldown{m=diamond_shovel} false 
+  Skills:
+  - modifyMana{a=-10} @self 
+  - aura{n=メインウェポン;i=20;rd=true;t=20} @self 
+  - setMaterialCooldown{m=diamond_shovel;d=24} @self
+  - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_Remove @self ?children{a=>0}
+  - sound{s=entity.zombie_villager.converted;v=0.5;p=2} @self ?children{a=>0}
+  - delay 4
+  - sound{s=entity.zombie_villager.cure;v=0.15;p=2} @self ?!children{a=>0}
+  - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_氷 @self 
+  - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_青氷 @self 
+  - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊 @self 
+
+OpenField_Weapon_オービニウム_MCLove32_Skill_Remove:
+  Skills:
+  - addtag{t=remove} @self ?!hasTag{t=remove}
+  - removetag{t=remove;delay=2} @self 
+
+OpenField_Weapon_オービニウム_MCLove32_Skill_氷:
+  Skills:
+  - o{
+    oh=[
+      - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_Hit1
+    ];
+    ot=[
+      - auraremove{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷} @self ?hasTag{t=remove}
+      - auraremove{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷} @self ?!wearing{m=OpenField_Weapon_オービニウム_MCLove32;s=HAND}
+      - e:p{p=red_dust;c=#4c4cff;a=1;audience=caster;s=0.5;vs=0.5;hs=0.5} @origin
+      - e:p{p=red_dust;c=#00ffff;a=1;audience=caster;s=0.5;vs=0.5;hs=0.5} @origin
+      - e:p{p=red_dust;c=#ffffff;a=1;audience=caster;s=0.5;vs=0.5;hs=0.5} @origin
+      - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_ParticleRing @self 
+    ];
+    oe=[
+      - missile{in=4;v=16;fo=true;hp=false;hnp=true;vr=3;hr=3;i=1;md=100;mr=32;syo=0;sfo=0;sb=false;
+        b=MOB;mob=OpenField_Util_氷_50_MCLove32;bmd=true;byo=0;bfo=0;
+        oh=[
+          - damage{a=5;pi=true;ii=true}
+          - sound{s=entity.splash_potion.break} @origin
+        ];
+        ot=[
+          - e:p{p=red_dust;c=#4c4cff;a=1;audience=caster;s=0.5} @origin
+          - e:p{p=red_dust;c=#00ffff;a=1;audience=caster;s=0.5} @origin
+          - e:p{p=red_dust;c=#ffffff;a=1;audience=caster;s=0.5} @origin
+        ]} @TL{d=16} ?!hasAura{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷_Swing}
+      - auraremove{aura=OpenField_Weapon_オービニウム_MCLove32_Skill_氷_Swing} @self 
+      - sound{s=entity.witch.throw;p=0.785;v=0.5;audience=caster} @self 
+    ];
+    os=[
+      - onSwing{auraName=OpenField_Weapon_オービニウム_MCLove32_Skill_氷_Swing;d=6005;
+        osw=[
+          - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_RemoveTag @self 
+          - auraremove{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷_Swing} @self ?hasTag{t=SwingTag_1} 
+          - auraremove{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷} @self ?hasTag{t=SwingTag_1} 
+        ]} @self
+    ];
+    i=1;vr=2;hr=2;hp=false;hnp=true;mr=24;d=6000;r=3;
+    b=MOB;mob=OpenField_Util_氷_50_MCLove32;bmd=true;byo=0;bfo=0;rd=true;
+    p=72;sp=0;auraName=OpenField_Weapon_オービニウム_MCLove32_Skill_氷} @self 
+
+OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊:
+  Skills:
+  - o{
+    oh=[
+      - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_Hit2
+    ];
+    ot=[
+      - auraremove{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊} @self ?hasTag{t=remove}
+      - auraremove{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊} @self ?!wearing{m=OpenField_Weapon_オービニウム_MCLove32;s=HAND}
+      - e:p{p=red_dust;c=#4c4cff;a=1;audience=caster;s=0.5;vs=0.5;hs=0.5} @origin
+      - e:p{p=red_dust;c=#00ffff;a=1;audience=caster;s=0.5;vs=0.5;hs=0.5} @origin
+      - e:p{p=red_dust;c=#ffffff;a=1;audience=caster;s=0.5;vs=0.5;hs=0.5} @origin
+      - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_ParticleRing @self 
+    ];
+    oe=[
+      - missile{in=4;v=16;fo=true;hp=false;hnp=true;vr=3;hr=3;i=1;md=100;mr=32;syo=0;sfo=0;sb=false;
+        b=MOB;mob=OpenField_Util_氷塊_50_MCLove32;bmd=true;byo=0;bfo=0;
+        oh=[
+          - damage{a=10;pi=true;ii=true}
+          - sound{s=entity.splash_potion.break} @origin
+        ];
+        ot=[
+          - e:p{p=red_dust;c=#4c4cff;a=1;audience=caster;s=0.5} @origin
+          - e:p{p=red_dust;c=#00ffff;a=1;audience=caster;s=0.5} @origin
+          - e:p{p=red_dust;c=#ffffff;a=1;audience=caster;s=0.5} @origin
+        ]} @TL{d=16} ?!hasAura{n=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊_Swing}
+      - auraremove{aura=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊_Swing} @self 
+      - sound{s=entity.witch.throw;p=0.785;v=0.5;audience=caster} @self
+    ];
+    os=[
+      - onSwing{auraName=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊_Swing;d=6005;
+        osw=[
+          - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_RemoveTag @self 
+          - auraremove{aura=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊_Swing} @self ?hasTag{t=SwingTag_2}
+          - auraremove{aura=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊} @self ?hasTag{t=SwingTag_2}
+        ]} @self
+    ];
+    i=1;vr=2;hr=2;hp=false;hnp=true;mr=24;d=6000;r=3;
+    b=MOB;mob=OpenField_Util_氷塊_50_MCLove32;bmd=true;byo=0;bfo=0;rd=true;
+    p=72;sp=24;auraName=OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊} @self 
+
+OpenField_Weapon_オービニウム_MCLove32_Skill_青氷:
+  Skills:
+  - o{
+    oh=[
+      - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_Hit3
+    ];
+    ot=[
+      - auraremove{n=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷} @self ?hasTag{t=remove}
+      - auraremove{n=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷} @self ?!wearing{m=OpenField_Weapon_オービニウム_MCLove32;s=HAND}
+      - e:p{p=red_dust;c=#4c4cff;a=1;audience=caster;s=0.5;vs=0.5;hs=0.5} @origin
+      - e:p{p=red_dust;c=#00ffff;a=1;audience=caster;s=0.5;vs=0.5;hs=0.5} @origin
+      - e:p{p=red_dust;c=#ffffff;a=1;audience=caster;s=0.5;vs=0.5;hs=0.5} @origin
+      - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_ParticleRing @self 
+    ];
+    oe=[
+      - missile{in=4;v=16;fo=true;hp=false;hnp=true;vr=3;hr=3;i=1;md=100;mr=32;syo=0;sfo=0;sb=false;
+        b=MOB;mob=OpenField_Util_青氷_50_MCLove32;bmd=true;byo=0;bfo=0;
+        oh=[
+          - damage{a=15;pi=true;ii=true}
+          - sound{s=entity.splash_potion.break} @origin
+        ];
+        ot=[
+          - e:p{p=red_dust;c=#4c4cff;a=1;audience=caster;s=0.5} @origin
+          - e:p{p=red_dust;c=#00ffff;a=1;audience=caster;s=0.5} @origin
+          - e:p{p=red_dust;c=#ffffff;a=1;audience=caster;s=0.5} @origin
+        ]} @TL{d=16} ?!hasAura{n=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷_Swing}
+      - auraremove{aura=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷_Swing} @self 
+      - sound{s=entity.witch.throw;p=0.785;v=0.5;audience=caster} @self
+    ];
+    os=[
+      - onSwing{auraName=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷_Swing;d=6005;
+        osw=[
+          - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_RemoveTag @self 
+          - auraremove{aura=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷_Swing} @self ?hasTag{t=SwingTag_3} 
+          - auraremove{aura=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷} @self ?hasTag{t=SwingTag_3} 
+        ]} @self
+    ];
+    i=1;vr=2;hr=2;hp=false;hnp=true;mr=24;d=6000;r=3;
+    b=MOB;mob=OpenField_Util_青氷_50_MCLove32;bmd=true;byo=0;bfo=0;rd=true;
+    p=72;sp=48;auraName=OpenField_Weapon_オービニウム_MCLove32_Skill_青氷} @self 
+
+OpenField_Weapon_オービニウム_MCLove32_Skill_RemoveTag:
+  Cooldown: 0.4
+  Skills:
+  - skill{
+    s=[
+      - removetag{t=SwingTag_1}
+      - removetag{t=SwingTag_2}
+      - removetag{t=SwingTag_3}
+    ]} @self ?hasTag{t=SwingTag_1} ?hasTag{t=SwingTag_2} ?hasTag{t=SwingTag_3}
+  - addTag{t=SwingTag_3} @self ?hasTag{t=SwingTag_1} ?hasTag{t=SwingTag_2} ?!hasTag{t=SwingTag_3}
+  - addTag{t=SwingTag_2} @self ?hasTag{t=SwingTag_1} ?!hasTag{t=SwingTag_2} ?!hasTag{t=SwingTag_3}
+  - addTag{t=SwingTag_1} @self ?!hasTag{t=SwingTag_1} ?!hasTag{t=SwingTag_2} ?!hasTag{t=SwingTag_3}
+
+OpenField_Weapon_オービニウム_MCLove32_Skill_ParticleRing:
+  Cooldown: 1
+  Skills:
+  - e:pr{p=cloud;a=1;pts=8;vs=0.05;hs=0.1;s=0.025;r=3;audience=caster} @self
+
+OpenField_Weapon_オービニウム_MCLove32_Skill_Hit1:
+  TargetConditions:
+  - isLiving true 
+  - isMythicMob true
+  - hasTag{t=Cancel_1} false
+  Skills:
+  - damage{a=5;pi=true;ii=true}
+  - addtag{t=Cancel_1} 
+  - removetag{t=Cancel_1;delay=5} 
+
+OpenField_Weapon_オービニウム_MCLove32_Skill_Hit2:
+  TargetConditions:
+  - isLiving true 
+  - isMythicMob true
+  - hasTag{t=Cancel_2} false
+  Skills:
+  - damage{a=8;pi=true;ii=true}
+  - addtag{t=Cancel_2} 
+  - removetag{t=Cancel_2;delay=5} 
+
+OpenField_Weapon_オービニウム_MCLove32_Skill_Hit3:
+  TargetConditions:
+  - isLiving true 
+  - isMythicMob true
+  - hasTag{t=Cancel_3} false
+  Skills:
+  - damage{a=10;pi=true;ii=true}
+  - addtag{t=Cancel_3} 
+  - removetag{t=Cancel_3;delay=5} 

@@ -1,0 +1,45 @@
+OpenField_Weapon_牙狼ノ零_MCLove32_Skills:
+  Cooldown: 60
+  Conditions:
+  - wearing{m=OpenField_Weapon_牙狼ノ零_MCLove32;s=HAND}
+  - materialcooldown{m=stone_sword} false 
+  Skills:
+  - setmaterialcooldown{m=stone_sword;d=1200} @self 
+  - setvar{var=skill.v;val="400";t=INTEGER} @self
+  - skill:OpenField_Weapon_牙狼ノ零_MCLove32_Skill_Velocity @self
+
+OpenField_Weapon_牙狼ノ零_MCLove32_Skill_Velocity:
+  Conditions:
+  - wearing{m=OpenField_Weapon_牙狼ノ零_MCLove32;s=HAND} true
+  - onground orElseCast OpenField_Weapon_牙狼ノ零_MCLove32_Skill_Wait
+  - hasMana{a=>400;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]} 
+  - hasAura{n=サブウェポン;
+    onfail=[
+      - message{m="&cサブウェポン共通CT中です。"} @self 
+    ]} false  
+  Skills:
+  - modifyMana{a=-400} @self 
+  - aura{n=サブウェポン;i=20;rd=true;t=60} @self  
+  - leap{v=<skill.var.v>} @TL{cpitch=min(<caster.l.pitch>, 40)} 
+  - setFallDistance{a=0} @self
+  - setvar{var=skill.v;val="<skill.var.v> * 0.9";t=INTEGER} @self
+  - sound{s=entity.wolf.growl;v=0.25;p=0;cd=2} @self 0.5
+  - projectile{
+    ot=[
+      - e:p{p=cloud;a=1;vs=0.025;hs=0.025;audience=@self} @origin
+      - skill{s=[
+        - summon{t=OpenField_Guard_牙狼ノ零_MCLove32;a=1;r=0;s=true} 
+        - sound{s=entity.wolf.howl;v=0.5} 
+        ]} @origin 0.003 ?children{a=<10} ?wearing{m=OpenField_Weapon_牙狼ノ零_MCLove32;s=HAND}
+    ];
+    v=8;i=2;se=false;sb=true;hp=false;hnp=false;mr=8;hr=1.5;vr=1.5} @Ring{r=8;p=16}
+  - delay 2
+  - skill:OpenField_Weapon_牙狼ノ零_MCLove32_Skill_Velocity @self ?!varrange{var=skill.v;val=<100}
+
+OpenField_Weapon_牙狼ノ零_MCLove32_Skill_Wait:
+  Skills:
+  - delay 2
+  - skill:OpenField_Weapon_牙狼ノ零_MCLove32_Skill_Velocity
