@@ -147,6 +147,7 @@ OpenField_Weapon_スライムソード_MCLove32:
       Damage: 9 ADD 
       AttackSpeed: -0.4 MULTIPLY_BASE
   Group: 'Melee-Weapon'
+  Skills:
   - hit @EIC{r=8;a=120;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ];cd=0.25} ~onSwing
 
 OpenField_Weapon_アイロンスライムソード_MCLove32:
