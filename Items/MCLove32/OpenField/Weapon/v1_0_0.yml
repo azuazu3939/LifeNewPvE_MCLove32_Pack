@@ -8,7 +8,7 @@ OpenField_Weapon_サイスオブデーモン_MCLove32:
     Unbreakable: true
   Group: 'Sub-Weapon'
   Skills:
-  - skill:OpenField_Weapon_サイスオブデーモン_MCLove32_Skills @EIC{r=5;a=120;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]} ~onSwing
+  - skill:OpenField_Weapon_サイスオブデーモン_MCLove32_Skills @EIC{r=6;a=120;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]} ~onSwing
 
 OpenField_Weapon_ビットブレードTypeA_MCLove32:
   Id: diamond_sword
@@ -147,6 +147,7 @@ OpenField_Weapon_スライムソード_MCLove32:
       Damage: 9 ADD 
       AttackSpeed: -0.4 MULTIPLY_BASE
   Group: 'Melee-Weapon'
+  - hit @EIC{r=8;a=120;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ];cd=0.25} ~onSwing
 
 OpenField_Weapon_アイロンスライムソード_MCLove32:
   Id: iron_sword 
@@ -161,6 +162,8 @@ OpenField_Weapon_アイロンスライムソード_MCLove32:
       Damage: 19 ADD 
       AttackSpeed: -0.6 MULTIPLY_BASE
   Group: 'Melee-Weapon'
+  Skills:
+  - hit @EIC{r=8;a=120;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ];cd=0.25} ~onSwing
 
 OpenField_Weapon_樹木剣_MCLove32:
   Id: wooden_sword
