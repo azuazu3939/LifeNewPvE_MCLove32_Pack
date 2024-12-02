@@ -2,7 +2,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skills:
   Cooldown: 1.2
   Conditions:
   - wearing{m=OpenField_Weapon_オービニウム_MCLove32;s=HAND}
-  - hasMana{a=>10;
+  - hasMana{a=>30;
     onFail=[
       - message{m="&cマナが足りません。"} @self 
     ]} 
@@ -12,7 +12,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skills:
     ]} false  
   - materialIsOnCooldown{m=diamond_shovel} false 
   Skills:
-  - modifyMana{a=-10} @self 
+  - modifyMana{a=-30} @self 
   - aura{n=メインウェポン;i=20;rd=true;t=20} @self 
   - setMaterialCooldown{m=diamond_shovel;d=24} @self
   - skill:OpenField_Weapon_オービニウム_MCLove32_Skill_Remove @self ?children{a=>0}

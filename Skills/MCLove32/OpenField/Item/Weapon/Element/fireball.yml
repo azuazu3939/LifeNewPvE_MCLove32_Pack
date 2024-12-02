@@ -3,7 +3,7 @@ OpenField_Weapon_火炎弾_MCLove32_Skills:
   Conditions:
   - wearing{m=OpenField_Weapon_火炎弾_MCLove32;s=HAND}
   - materialCooldown{m=iron_pickaxe} false 
-  - hasMana{a=>30;
+  - hasMana{a=>60;
     onFail=[
       - message{m="&cマナが足りません。"} @self 
     ]} 
@@ -12,7 +12,7 @@ OpenField_Weapon_火炎弾_MCLove32_Skills:
       - message{m="&cサブウェポン共通CT中です。"} @self 
     ]} false  
   Skills:
-  - modifyMana{a=-30} @self 
+  - modifyMana{a=-60} @self 
   - aura{n=サブウェポン;i=20;rd=true;t=60} @self 
   - setMaterialCooldown{m=iron_pickaxe;d=100} @self 
   - setVar{var=skill.size;val="0.5";t=FLOAT} @self 

@@ -1,0 +1,26 @@
+OpenField_Weapon_サイスオブデーモン_MCLove32_Skills:
+  Cooldown: 8
+  TargetConditions:
+  - isMythicMob true
+  Conditions:
+  - wearing{m=OpenField_Weapon_サイスオブデーモン_MCLove32;s=HAND}
+  - materialIsOnCooldown{m=netherite_hoe} false
+  - hasMana{a=>50;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]} 
+  - hasAura{n=サブウェポン;
+    onfail=[
+      - message{m="&cサブウェポン共通CT中です。"} @self 
+    ]} false 
+  Skills:
+  - modifyMana{a=-50} @self 
+  - aura{n=サブウェポン;i=20;rd=true;t=60} @self  
+  - setMaterialCooldown{m=netherite_hoe;d=160} @self 
+  - damage{a=75;ii=true;pi=true;e=PURPLE}
+  - sound{s=entity.warden.death} @self 
+  - potion{t=SPEED;l=4;d=50;p=false} @self 
+  - potion{t=BLINDNESS;l=0;d=50;p=false} 
+  - potion{t=LEVITATION;l=0;d=50;p=false} 
+  - potion{t=WEAKNESS;l=4;d=50;p=false} 
+  - potion{t=SLOWNESS;l=2;d=50;p=false} 

@@ -3,7 +3,7 @@ OpenField_Weapon_アイシクルショット_MCLove32_Skills:
   Conditions:
   - wearing{m=OpenField_Weapon_アイシクルショット_MCLove32;s=HAND}
   - materialCooldown{m=diamond_pickaxe} false
-  - hasMana{a=>15;
+  - hasMana{a=>20;
     onFail=[
       - message{m="&cマナが足りません。"} @self 
     ]} 
@@ -12,7 +12,7 @@ OpenField_Weapon_アイシクルショット_MCLove32_Skills:
       - message{m="&cメインウェポン共通CT中です。"} @self 
     ]} false  
   Skills:
-  - modifyMana{a=-30} @self 
+  - modifyMana{a=-20} @self 
   - aura{n=メインウェポン;i=20;rd=true;t=20} @self 
   - setMaterialCooldown{m=diamond_pickaxe;d=30} @self 
   - skill:OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_20{repeat=1;repeatI=4} 
