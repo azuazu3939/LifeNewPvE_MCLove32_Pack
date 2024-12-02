@@ -4,7 +4,7 @@ OpenField_Weapon_ビットブレードTypeMA_MCLove32_Skills:
   - targets{a=0} false 
   - wearing{m=OpenField_Weapon_ビットブレードTypeMA_MCLove32;s=HAND}
   - materialCooldown{m=diamond_sword} false 
-  - hasMana{a=>30;
+  - hasMana{a=>20;
     onFail=[
       - message{m="&cマナが足りません。"} @self 
     ]} 
@@ -13,7 +13,7 @@ OpenField_Weapon_ビットブレードTypeMA_MCLove32_Skills:
       - message{m="&cメインウェポン共通CT中です。"} @self 
     ]} false  
   Skills:
-  - modifyMana{a=-30} @self 
+  - modifyMana{a=-20} @self 
   - aura{n=メインウェポン;i=20;rd=true;t=20} @self
   - setMaterialCooldown{m=diamond_sword;d=24} @self 
   - skill:OpenField_Weapon_ビットブレードTypeMA_MCLove32_Skills_Start @EIC{r=20;a=120;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
