@@ -1,6 +1,6 @@
 OpenField_Weapon_サイスオブデーモン_MCLove32_Skills:
   Cooldown: 8
-  TargetConditions:
+  TriggerConditions:
   - isMythicMob true
   Conditions:
   - wearing{m=OpenField_Weapon_サイスオブデーモン_MCLove32;s=HAND}
