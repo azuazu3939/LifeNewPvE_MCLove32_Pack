@@ -1,6 +1,7 @@
 OpenField_Weapon_ビットブレードTypeMB_MCLove32_Skills:
   Cooldown: 2
   Conditions:
+  - targets{a=0} false 
   - wearing{m=OpenField_Weapon_ビットブレードTypeMB_MCLove32;s=HAND}
   - materialCooldown{m=netherite_sword} false 
   - hasMana{a=>60;

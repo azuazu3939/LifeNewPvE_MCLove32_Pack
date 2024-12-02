@@ -8,7 +8,7 @@ OpenField_Weapon_サイスオブデーモン_MCLove32:
     Unbreakable: true
   Group: 'Sub-Weapon'
   Skills:
-  - skill:OpenField_Weapon_サイスオブデーモン_MCLove32_Skills @trigger ~onAttack
+  - skill:OpenField_Weapon_サイスオブデーモン_MCLove32_Skills @EIC{r=5;a=120;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]} ~onSwing
 
 OpenField_Weapon_ビットブレードTypeA_MCLove32:
   Id: diamond_sword

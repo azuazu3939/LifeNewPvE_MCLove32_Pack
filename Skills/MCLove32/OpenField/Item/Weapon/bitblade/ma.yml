@@ -1,6 +1,7 @@
 OpenField_Weapon_ビットブレードTypeMA_MCLove32_Skills:
   Cooldown: 1.2
   Conditions:
+  - targets{a=0} false 
   - wearing{m=OpenField_Weapon_ビットブレードTypeMA_MCLove32;s=HAND}
   - materialCooldown{m=diamond_sword} false 
   - hasMana{a=>30;
