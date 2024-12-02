@@ -1,9 +1,7 @@
 OpenField_Weapon_サイスオブデーモン_MCLove32:
   Id: netherite_hoe
   Display: "&fサイスオブデーモン"
-  Lore: 
-  - "&f相手を呪い、私は力を得る。"
-  - "&fこれはまさにデーモンの力ではないだろうか？"
+  Lore: []
   Model: 1000
   Options: 
     ItemVersion: 1
@@ -15,9 +13,7 @@ OpenField_Weapon_サイスオブデーモン_MCLove32:
 OpenField_Weapon_ビットブレードTypeA_MCLove32:
   Id: diamond_sword
   Display: "&fビットブレードTypeA"
-  Lore: 
-  - "&f使用することでブレードビットが攻撃を行う。"
-  - "&fあなたはただ、そこにいればいい。それだけ"
+  Lore: []
   Model: 1000
   Options: 
     ItemVersion: 1
@@ -29,9 +25,7 @@ OpenField_Weapon_ビットブレードTypeA_MCLove32:
 OpenField_Weapon_ビットブレードTypeB_MCLove32:
   Id: netherite_sword
   Display: "&fビットブレードTypeB"
-  Lore: 
-  - "&f使用することでブレードビットが攻撃を行う。"
-  - "&fあなたはただ、そこにいればいい。それだけ"
+  Lore: []
   Model: 1000
   Options: 
     ItemVersion: 1
@@ -43,9 +37,7 @@ OpenField_Weapon_ビットブレードTypeB_MCLove32:
 OpenField_Weapon_ビットブレードTypeMA_MCLove32:
   Id: diamond_sword
   Display: "&fビットブレードTypeM/A"
-  Lore: 
-  - "&f使用することでブレードビットが攻撃を行う。"
-  - "&fあなたはただ、そこにいればいい。それだけ"
+  Lore: []
   Model: 1001
   Options: 
     ItemVersion: 1
@@ -60,9 +52,7 @@ OpenField_Weapon_ビットブレードTypeMA_MCLove32:
 OpenField_Weapon_ビットブレードTypeMB_MCLove32:
   Id: netherite_sword
   Display: "&fビットブレードTypeM/B"
-  Lore: 
-  - "&f使用することでブレードビットが攻撃を行う。"
-  - "&fあなたはただ、そこにいればいい。それだけ"
+  Lore: []
   Model: 1001
   Options: 
     ItemVersion: 1
@@ -99,9 +89,7 @@ OpenField_Weapon_サンドストーム_MCLove32:
 OpenField_Weapon_エアブラスタ_MCLove32:
   Id: iron_sword
   Display: "&fエアブラスタ"
-  Lore:
-  - "&f空気の波動を前方に3つ同時に放つ。"
-  - "&f相手を押し出す。"
+  Lore: []
   Model: 1000
   Options:
     ItemVersion: 1
@@ -113,8 +101,7 @@ OpenField_Weapon_エアブラスタ_MCLove32:
 OpenField_Weapon_牙狼ノ壱_MCLove32:
   Id: stone_sword 
   Display: "&f牙狼ノ壱"
-  Lore:
-  - "&f狼が狼であるのは何故か？"
+  Lore: []
   Model: 1000
   Options:
     ItemVersion: 1
@@ -126,8 +113,7 @@ OpenField_Weapon_牙狼ノ壱_MCLove32:
 OpenField_Weapon_牙狼ノ弐_MCLove32:
   Id: stone_sword 
   Display: "&f牙狼ノ弐"
-  Lore:
-  - "&f統率がモノ言う。"
+  Lore: []
   Model: 1001
   Options:
     ItemVersion: 1
@@ -139,8 +125,7 @@ OpenField_Weapon_牙狼ノ弐_MCLove32:
 OpenField_Weapon_牙狼ノ零_MCLove32:
   Id: stone_sword 
   Display: "&f牙狼ノ零"
-  Lore:
-  - "&f狼となり、蹂躙せよ。"
+  Lore: []
   Model: 1002
   Options:
     ItemVersion: 1

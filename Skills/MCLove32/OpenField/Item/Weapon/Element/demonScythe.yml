@@ -1,7 +1,5 @@
 OpenField_Weapon_サイスオブデーモン_MCLove32_Skills:
   Cooldown: 8
-  TriggerConditions:
-  - isMythicMob true
   Conditions:
   - wearing{m=OpenField_Weapon_サイスオブデーモン_MCLove32;s=HAND}
   - materialIsOnCooldown{m=netherite_hoe} false
