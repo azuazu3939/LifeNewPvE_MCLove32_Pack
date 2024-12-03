@@ -27,3 +27,47 @@ OpenField_Util_テストビーコン_MCLove32:
   Group: 'Util'
   Skills:
   - fakebeacon @TL ~onUse
+
+OpenField_Util_テストウォール_MCLove32:
+  Id: stick
+  Display: "&fテストウォール"
+  Lore: []
+  Model: 1000
+  Options:
+    ItemVersion: 1
+    Unbreakable: true 
+  Group: 'Util'
+  Skills:
+  - skill{s=[
+    - fakewall @loc{x=-83;y=261;z=38}
+    - fakewall @loc{x=-83;y=261;z=37}
+    - fakewall @loc{x=-83;y=261;z=36}
+    - fakewall @loc{x=-83;y=261;z=35}
+    - fakewall @loc{x=-83;y=261;z=34}
+
+    - fakewall @loc{x=-83;y=262;z=38}
+    - fakewall @loc{x=-83;y=262;z=37}
+    - fakewall @loc{x=-83;y=262;z=36}
+    - fakewall @loc{x=-83;y=262;z=35}
+    - fakewall @loc{x=-83;y=262;z=34}
+
+    - fakewall @loc{x=-83;y=263;z=38}
+    - fakewall @loc{x=-83;y=263;z=37}
+    - fakewall @loc{x=-83;y=263;z=36}
+    - fakewall @loc{x=-83;y=263;z=35}
+    - fakewall @loc{x=-83;y=263;z=34}
+
+    - fakewall @loc{x=-83;y=264;z=38}
+    - fakewall @loc{x=-83;y=264;z=37}
+    - fakewall @loc{x=-83;y=264;z=36}
+    - fakewall @loc{x=-83;y=264;z=35}
+    - fakewall @loc{x=-83;y=264;z=34}
+
+    - fakewall @loc{x=-83;y=265;z=38}
+    - fakewall @loc{x=-83;y=265;z=37}
+    - fakewall @loc{x=-83;y=265;z=36}
+    - fakewall @loc{x=-83;y=265;z=35}
+    - fakewall @loc{x=-83;y=265;z=34}
+
+    - fakebeacon @loc{x=-83;y=258;z=36}
+  ]} @self ~onUse
