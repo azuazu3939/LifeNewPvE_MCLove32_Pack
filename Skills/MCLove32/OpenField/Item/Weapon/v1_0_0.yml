@@ -122,7 +122,7 @@ OpenField_Weapon_風輪斬_MCLove32_Skills:
   Conditions:
   - wearing{s=HAND;m=OpenField_Weapon_風輪斬_MCLove32} true
   - materialcooldown{m=iron_sword} false 
-  - hasMana{a=>80;
+  - hasMana{a=>60;
     onFail=[
       - message{m="&cマナが足りません。"} @self 
     ]} 
@@ -131,7 +131,7 @@ OpenField_Weapon_風輪斬_MCLove32_Skills:
       - message{m="&cサブウェポン共通CT中です。"} @self 
     ]} false  
   Skills:
-  - modifyMana{a=-80} @self 
+  - modifyMana{a=-60} @self 
   - aura{n=サブウェポン;i=20;rd=true;t=60} @self  
   - setmaterialcooldown{m=iron_sword;d=60} @self
   - setVar{var=skill.radius;val="0.1";t=FLOAT} @self 
