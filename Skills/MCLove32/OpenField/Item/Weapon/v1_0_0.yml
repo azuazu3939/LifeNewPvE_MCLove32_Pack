@@ -118,7 +118,7 @@ OpenField_Weapon_樹木剣_MCLove32_Skill_Process:
     v=-20;i=2;se=false;hp=false;hnp=true;mr=24;vr=1.5;hr=1.5;fo=true}
 
 OpenField_Weapon_風輪斬_MCLove32_Skills:
-  Cooldown: 2
+  Cooldown: 3
   Conditions:
   - wearing{s=HAND;m=OpenField_Weapon_風輪斬_MCLove32} true
   - materialcooldown{m=iron_sword} false 
@@ -134,11 +134,19 @@ OpenField_Weapon_風輪斬_MCLove32_Skills:
   - modifyMana{a=-80} @self 
   - aura{n=サブウェポン;i=20;rd=true;t=60} @self  
   - setmaterialcooldown{m=iron_sword;d=200} @self
+  - setVar{var=skill.radius;val="0.1";t=FLOAT} @self 
+  - setVar{var=skill.radius;val="0.5";t=FLOAT;delay=10} @self 
+  - setVar{var=skill.radius;val="1";t=FLOAT;delay=20} @self 
   - projectile{
     oh=[
-      - damage{a=40;pi=true;ii=true}
+      - damage{a=40 * <skill.var.radius>;pi=true;ii=true}
     ];
-    i=1;vr=2;hr=2;hp=false;hnp=true;mr=32;md=100;v=16;
+    ot=[
+      - e:p{p=totem;a=3;audience=caster;s=0.5;vs=0.2;hs=2} @origin
+      - e:p{p=spore_blossom_air;a=3;audience=caster;s=0.5;vs=0.5;hs=2.5} @origin
+      - e:pr{p=sweepattack;a=1;audience=caster;s=0.5;r=4;pts=16} @origin 0.2
+    ];
+    i=1;vr=3.5;hr=3.5;hp=false;hnp=true;mr=32;md=200;v=5;
     b=MOB;mob=OpenField_Util_風輪斬センター_100_MCLove32;bmd=true;byo=0;bfo=0;
     conditions=[
       - isLiving true 
