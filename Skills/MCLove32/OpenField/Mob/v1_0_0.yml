@@ -431,22 +431,22 @@ OpenField_Enemy_モフィモス_MCLove32_Skill_Process_Shot:
 OpenField_Util_風輪斬センター_100_MCLove32_Skills:
   Skills:
   - o{
-    i=1;vr=1.5;hr=1.5;hp=false;hnp=true;d=200;r=2.75;
+    i=1;vr=1.5;hr=1.5;hp=false;hnp=true;d=300;r=2.25;
     b=MOB;mob=OpenField_Util_オークの葉_100_MCLove32;bmd=true;byo=0;bfo=0;rd=true;
     p=40;sp=0;auraName=OpenField_Util_オークの葉_100_MCLove32_Aura1} @self 
   - o{
-    i=1;vr=1.5;hr=1.5;hp=false;hnp=true;d=200;r=2.75;
+    i=1;vr=1.5;hr=1.5;hp=false;hnp=true;d=300;r=2.25;
     b=MOB;mob=OpenField_Util_オークの葉_100_MCLove32;bmd=true;byo=0;bfo=0;rd=true;
     p=40;sp=8;auraName=OpenField_Util_オークの葉_100_MCLove32_Aura2} @self 
   - o{
-    i=1;vr=1.5;hr=1.5;hp=false;hnp=true;d=200;r=2.75;
+    i=1;vr=1.5;hr=1.5;hp=false;hnp=true;d=300;r=2.25;
     b=MOB;mob=OpenField_Util_オークの葉_100_MCLove32;bmd=true;byo=0;bfo=0;rd=true;
     p=40;sp=16;auraName=OpenField_Util_オークの葉_100_MCLove32_Aura3} @self 
   - o{
-    i=1;vr=1.5;hr=1.5;hp=false;hnp=true;d=200;r=2.75;
+    i=1;vr=1.5;hr=1.5;hp=false;hnp=true;d=300;r=2.25;
     b=MOB;mob=OpenField_Util_オークの葉_100_MCLove32;bmd=true;byo=0;bfo=0;rd=true;
     p=40;sp=24;auraName=OpenField_Util_オークの葉_100_MCLove32_Aura4} @self 
   - o{
-    i=1;vr=1.5;hr=1.5;hp=false;hnp=true;d=200;r=2.75;
+    i=1;vr=1.5;hr=1.5;hp=false;hnp=true;d=300;r=2.25;
     b=MOB;mob=OpenField_Util_オークの葉_100_MCLove32;bmd=true;byo=0;bfo=0;rd=true;
     p=40;sp=32;auraName=OpenField_Util_オークの葉_100_MCLove32_Aura5} @self 
