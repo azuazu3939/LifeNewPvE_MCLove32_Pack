@@ -150,7 +150,7 @@ OpenField_Weapon_風輪斬_MCLove32_Skills:
     os=[
       - sound{s=item.trident.riptide_3;p=1;v=0.5;audience=caster} @self
     ];
-    i=1;vr=3;hr=3;hp=false;hnp=true;mr=32;md=300;v=8;
+    i=1;vr=3;hr=3;hp=false;hnp=true;mr=32;md=300;v=8;se=false;
     b=MOB;mob=OpenField_Util_風輪斬センター_100_MCLove32;bmd=true;byo=0;bfo=0;
     conditions=[
       - isLiving true 
