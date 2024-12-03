@@ -121,7 +121,6 @@ OpenField_Weapon_風輪斬_MCLove32_Skills:
   Cooldown: 2
   Conditions:
   - wearing{s=HAND;m=OpenField_Weapon_風輪斬_MCLove32} true
-  - crouching true 
   - materialcooldown{m=iron_sword} false 
   - hasMana{a=>80;
     onFail=[
