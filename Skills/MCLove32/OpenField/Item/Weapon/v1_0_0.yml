@@ -133,7 +133,7 @@ OpenField_Weapon_風輪斬_MCLove32_Skills:
   Skills:
   - modifyMana{a=-80} @self 
   - aura{n=サブウェポン;i=20;rd=true;t=60} @self  
-  - setmaterialcooldown{m=iron_sword;d=200} @self
+  - setmaterialcooldown{m=iron_sword;d=60} @self
   - setVar{var=skill.radius;val="0.1";t=FLOAT} @self 
   - setVar{var=skill.radius;val="0.5";t=FLOAT;delay=10} @self 
   - setVar{var=skill.radius;val="1";t=FLOAT;delay=20} @self 
