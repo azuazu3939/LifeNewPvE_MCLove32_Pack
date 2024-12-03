@@ -68,7 +68,7 @@ OpenField_Util_黄緑色のテラコッタ_100_MCLove32:
 OpenField_Util_風輪斬センター_100_MCLove32:
   Type: block_display
   DisplayOptions:
-    Block: oak_leaves
+    Block: oak_log
     BlockLight: 15
     SkyLight: 15
     Scale: 1,1,1
