@@ -146,7 +146,7 @@ OpenField_Weapon_風輪斬_MCLove32_Skills:
       - e:p{p=spore_blossom_air;a=3;audience=caster;s=0.5;vs=0.5;hs=2.5} @origin
       - e:pr{p=sweepattack;a=1;audience=caster;s=0.5;r=3;pts=16} @origin 0.5
       - sound{s=item.trident.riptide_3;p=2;v=0.25;cd=0.25;audience=caster} @origin
-      - pull{v=4.5;to=true} @ENO{r=3;limit=3;sort=NEAREST;c=[ - isLiving true - isMythicMob true ]} 
+      - pull{v=4;to=true} @ENO{r=5;limit=3;sort=NEAREST;c=[ - isLiving true - isMythicMob true ]} 0.75
     ];
     os=[
       - sound{s=item.trident.riptide_3;p=1;v=0.5;audience=caster} @self
