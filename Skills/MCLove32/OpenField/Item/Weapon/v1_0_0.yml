@@ -145,7 +145,7 @@ OpenField_Weapon_風輪斬_MCLove32_Skills:
       - e:p{p=totem;a=3;audience=caster;s=0.5;vs=0.2;hs=2} @origin
       - e:p{p=spore_blossom_air;a=3;audience=caster;s=0.5;vs=0.5;hs=2.5} @origin
       - e:pr{p=sweepattack;a=1;audience=caster;s=0.5;r=3;pts=16} @origin 0.5
-      - sound{s=item.trident.riptide_3;p=2;v=0.5;cd=0.25;audience=caster} @origin
+      - sound{s=item.trident.riptide_3;p=2;v=0.25;cd=0.25;audience=caster} @origin
     ];
     os=[
       - sound{s=item.trident.riptide_3;p=1;v=0.5;audience=caster} @self
