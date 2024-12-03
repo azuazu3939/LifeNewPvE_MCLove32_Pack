@@ -39,6 +39,39 @@ OpenField_Util_テストウォール_MCLove32:
   Group: 'Util'
   Skills:
   - skill{s=[
+    - fakewall{m=stripped_oak_wood} @loc{x=-83;y=261;z=38}
+    - fakewall{m=stripped_oak_wood} @loc{x=-83;y=261;z=37}
+    - fakewall{m=stripped_oak_wood} @loc{x=-83;y=261;z=36}
+    - fakewall{m=stripped_oak_wood} @loc{x=-83;y=261;z=35}
+    - fakewall{m=stripped_oak_wood} @loc{x=-83;y=261;z=34}
+
+    - fakewall{m=stripped_oak_wood} @loc{x=-83;y=262;z=38}
+    - fakewall{m=stripped_oak_wood} @loc{x=-83;y=262;z=37}
+    - fakewall{m=stripped_oak_wood} @loc{x=-83;y=262;z=36}
+    - fakewall{m=stripped_oak_wood} @loc{x=-83;y=262;z=35}
+    - fakewall{m=stripped_oak_wood} @loc{x=-83;y=262;z=34}
+
+    - fakewall{m=stripped_oak_wood} @loc{x=-83;y=263;z=38}
+    - fakewall{m=stripped_oak_wood} @loc{x=-83;y=263;z=37}
+    - fakewall{m=stripped_oak_wood} @loc{x=-83;y=263;z=36}
+    - fakewall{m=stripped_oak_wood} @loc{x=-83;y=263;z=35}
+    - fakewall{m=stripped_oak_wood} @loc{x=-83;y=263;z=34}
+
+    - fakewall{m=stripped_oak_wood} @loc{x=-83;y=264;z=38}
+    - fakewall{m=stripped_oak_wood} @loc{x=-83;y=264;z=37}
+    - fakewall{m=stripped_oak_wood} @loc{x=-83;y=264;z=36}
+    - fakewall{m=stripped_oak_wood} @loc{x=-83;y=264;z=35}
+    - fakewall{m=stripped_oak_wood} @loc{x=-83;y=264;z=34}
+
+    - fakewall{m=stripped_oak_wood} @loc{x=-83;y=265;z=38}
+    - fakewall{m=stripped_oak_wood} @loc{x=-83;y=265;z=37}
+    - fakewall{m=stripped_oak_wood} @loc{x=-83;y=265;z=36}
+    - fakewall{m=stripped_oak_wood} @loc{x=-83;y=265;z=35}
+    - fakewall{m=stripped_oak_wood} @loc{x=-83;y=265;z=34}
+
+    - fakebeacon @loc{x=-83;y=258;z=36}
+    ]} @self ~onUse ?crouching
+  - skill{s=[
     - fakewall @loc{x=-83;y=261;z=38}
     - fakewall @loc{x=-83;y=261;z=37}
     - fakewall @loc{x=-83;y=261;z=36}
@@ -70,4 +103,4 @@ OpenField_Util_テストウォール_MCLove32:
     - fakewall @loc{x=-83;y=265;z=34}
 
     - fakebeacon @loc{x=-83;y=258;z=36}
-    ]} @self ~onUse
+    ]} @self ~onUse 
