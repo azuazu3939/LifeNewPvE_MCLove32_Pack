@@ -65,6 +65,34 @@ OpenField_Util_黄緑色のテラコッタ_100_MCLove32:
     Scale: 1,1,1
   Skills:
 
+OpenField_Util_風輪斬センター_100_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: oak_leaves
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 1,1,1
+  Skills:
+  - skill:OpenField_Util_風輪斬センター_100_MCLove32_Skills @self ~onSpawn 
+
+OpenField_Util_オークの葉_100_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: oak_leaves
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 1,1,1
+  Skills:
+
+OpenField_Util_オークの原木_100_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: oak_log
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 1,1,1
+  Skills:
+
 OpenField_Util_青氷_50_MCLove32:
   Type: block_display
   DisplayOptions:

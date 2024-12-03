@@ -271,3 +271,15 @@ OpenField_Weapon_オービニウム_MCLove32:
   Group: 'Main-Weapon'
   Skills:
   - skill:OpenField_Weapon_オービニウム_MCLove32_Skills @self ~onUse
+
+OpenField_Weapon_風輪斬_MCLove32:
+  Id: iron_sword
+  Display: "&f風輪斬"
+  Lore: []
+  Model: 1002
+  Options:
+    ItemVersion: 1
+    Unbreakable: true 
+  Group: 'Main-Weapon'
+  Skills:
+  - skill:OpenField_Weapon_風輪斬_MCLove32_Skills @self ~onUse

@@ -116,3 +116,32 @@ OpenField_Weapon_樹木剣_MCLove32_Skill_Process:
       - isMythicMob true
     ];
     v=-20;i=2;se=false;hp=false;hnp=true;mr=24;vr=1.5;hr=1.5;fo=true}
+
+OpenField_Weapon_風輪斬_MCLove32_Skills:
+  Cooldown: 2
+  Conditions:
+  - wearing{s=HAND;m=OpenField_Weapon_風輪斬_MCLove32} true
+  - crouching true 
+  - materialcooldown{m=iron_sword} false 
+  - hasMana{a=>80;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]} 
+  - hasAura{n=サブウェポン;
+    onfail=[
+      - message{m="&cサブウェポン共通CT中です。"} @self 
+    ]} false  
+  Skills:
+  - modifyMana{a=-80} @self 
+  - aura{n=サブウェポン;i=20;rd=true;t=60} @self  
+  - setmaterialcooldown{m=iron_sword;d=200} @self
+  - projectile{
+    oh=[
+      - damage{a=40;pi=true;ii=true}
+    ];
+    i=1;vr=2;hr=2;hp=false;hnp=true;mr=32;md=100;v=16;
+    b=MOB;mob=OpenField_Util_風輪斬センター_100_MCLove32;bmd=true;byo=0;bfo=0;
+    conditions=[
+      - isLiving true 
+      - isMythicMob true
+    ]} @forward{f=10}
