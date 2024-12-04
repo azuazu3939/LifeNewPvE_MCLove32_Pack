@@ -36,7 +36,7 @@ OpenField_Weapon_ツリーハウス_MCLove32_Process:
     os=[
       - sound{s=:block.composter.fill_success;p=0.85;v=1.5} @origin
       - effect:blockMask{b=lime_terracotta;r=10;d=100} @origin
-      - faketree{delay=0} @origin{y=-1}
+      - skill:Utils_OpenField_Tree_MCLove32{delay=0} @origin
     ];
     ot=[
       - damage{a=8;pi=true;ii=true;e=GREEN} @ENO{r=10;limit=5;sort=RANDOM;c=[ - isLiving true - isMythicMob true ]}

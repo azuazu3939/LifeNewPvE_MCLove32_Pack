@@ -1,0 +1,11 @@
+Utils_OakWoodLand_Wall_AIR_1_1_MCLove32:
+  Skills:
+  - fake{m=air;t=NONE} @region{min=0,0,0;max=10,10,10} 
+
+Utils_OakWoodLand_Wall_StrippedOakWood_1_1_MCLove32:
+  Skills:
+  - fake{m=stripped_oak_wood;t=NONE} @region{min=0,0,0;max=10,10,10} 
+
+Utils_OakWoodLand_Wall_StrippedOakWood_1_1_MCLove32:
+  Skills:
+  - fake{m=iron_block;t=BEACON} @loc{x=0;y=0;z=0}

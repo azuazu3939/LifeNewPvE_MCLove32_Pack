@@ -1,0 +1,7 @@
+Utils_Generic_Object_1_1_MCLove32:
+  Skills:
+  - fake{m=<skill.var.material>} @origin
+
+Utils_Generic_Object_1_2_MCLove32:
+  Skills:
+  - fake{m=<skill.var.material>;d=<skill.var.duration>} @origin
