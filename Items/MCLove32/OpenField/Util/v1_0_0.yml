@@ -15,19 +15,3 @@ OpenField_Util_エンチャントプロテクター_MCLove32:
   Group: 'Util'
   Skills:
   - skill:OpenField_Util_エンチャントプロテクター_MCLove32_Skills @self ~onUse
-
-OpenField_Util_テストウォール_MCLove32:
-  Id: stick
-  Display: "&fテストウォール"
-  Lore: []
-  Model: 1000
-  Options:
-    ItemVersion: 1
-    Unbreakable: true 
-  Group: 'Util'
-  Skills:
-  - fake{m=stripped_oak_wood;t=NONE;min=-83,261,34;max=-83,265,38} @self ~onUse ?crouching
-  - skill{s=[
-    - fake{m=air;min=-83,261,34;max=-83,265,38} @self
-    - fake{d=1200;t=BEACON} @loc{x=-83;y=258;z=36}
-    ]} @self ~onUse ?!crouching
