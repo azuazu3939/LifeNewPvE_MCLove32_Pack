@@ -187,7 +187,7 @@ OpenField_Enemy_ジャイアントボグド_MCLove32_Skill_Process:
       - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.8} @self 
     ];
     oh=[
-      - damage{a=18;ii=true;pi=true}
+      - damage{a=10;ii=true;pi=true}
       - sound{s=block.anvil.land;p=2;v=0.5}
       - sound{s=entity.breeze.inhale;p=2;v=0.5}
     ];
