@@ -26,8 +26,8 @@ OpenField_Util_テストウォール_MCLove32:
     Unbreakable: true 
   Group: 'Util'
   Skills:
-  - fake{m=stripped_oak_wood} @region{min=-83,261,38;max=-83,265,34} ~onUse ?crouching
+  - fake{m=stripped_oak_wood} @region{min=-83,261,34;max=-83,265,38} ~onUse ?crouching
   - skill{s=[
-    - fake{m=air} @region{min=-83,261,38;max=-83,265,34} 
+    - fake{m=air} @region{min=-83,261,34;max=-83,265,38} 
     - fake{d=1200;t=BEACON} @loc{x=-83;y=258;z=36}
     ]} @self ~onUse ?!crouching
