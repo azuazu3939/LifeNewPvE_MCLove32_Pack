@@ -1,335 +1,335 @@
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_1:
   Skills:
-  - fake{m=stripped_oak_wood;t=NONE;min=-83,261,34;max=-83,265,38} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-94,261,34;max=-94,265,38} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-94,261,21;max=-94,265,17} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-83,261,21;max=-83,265,17} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-94,261,2;max=-94,265,-2} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-83,265,2;max=-83,261,-2} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-93,261,28;max=-84,268,26} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-84,268,8;max=-93,261,10} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-84,261,-8;max=-93,268,-10} @self
+  - fake{m=stripped_oak_wood;t=NONE;min=-83,261,34;max=-83,265,38} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-94,261,34;max=-94,265,38} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-94,261,21;max=-94,265,17} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-83,261,21;max=-83,265,17} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-94,261,2;max=-94,265,-2} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-83,265,2;max=-83,261,-2} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-93,261,28;max=-84,268,26} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-84,268,8;max=-93,261,10} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-84,261,-8;max=-93,268,-10} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_1_AIR_1:
   Skills:
-  - fake{m=AIR;t=NONE;min=-83,261,34;max=-83,265,38} @self
+  - fake{m=AIR;t=NONE;min=-83,261,34;max=-83,265,38} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_1_AIR_2:
   Skills:
-  - fake{m=AIR;t=NONE;min=-94,261,34;max=-94,265,38} @self
+  - fake{m=AIR;t=NONE;min=-94,261,34;max=-94,265,38} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_1_AIR_3:
   Skills:
-  - fake{m=AIR;t=NONE;min=-94,261,21;max=-94,265,17} @self
+  - fake{m=AIR;t=NONE;min=-94,261,21;max=-94,265,17} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_1_AIR_4:
   Skills:
-  - fake{m=AIR;t=NONE;min=-83,261,21;max=-83,265,17} @self
+  - fake{m=AIR;t=NONE;min=-83,261,21;max=-83,265,17} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_1_AIR_5:
   Skills:
-  - fake{m=AIR;t=NONE;min=-94,261,2;max=-94,265,-2} @self
+  - fake{m=AIR;t=NONE;min=-94,261,2;max=-94,265,-2} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_1_AIR_6:
   Skills:
-  - fake{m=AIR;t=NONE;min=-83,265,2;max=-83,261,-2} @self
+  - fake{m=AIR;t=NONE;min=-83,265,2;max=-83,261,-2} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_1_AIR_7:
   Skills:
-  - fake{m=AIR;t=NONE;min=-93,261,28;max=-84,268,26} @self
+  - fake{m=AIR;t=NONE;min=-93,261,28;max=-84,268,26} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_1_AIR_8:
   Skills:
-  - fake{m=AIR;t=NONE;min=-84,268,8;max=-93,261,10} @self
+  - fake{m=AIR;t=NONE;min=-84,268,8;max=-93,261,10} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_1_AIR_9:
   Skills:
-  - fake{m=AIR;t=NONE;min=-84,261,-8;max=-93,268,-10} @self
+  - fake{m=AIR;t=NONE;min=-84,261,-8;max=-93,268,-10} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_2:
   Skills:
-  - fake{m=stripped_oak_wood;t=NONE;min=-83,211,34;max=-83,215,38} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-94,211,34;max=-94,215,38} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-94,211,21;max=-94,215,17} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-83,211,21;max=-83,215,17} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-94,211,2;max=-94,215,-2} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-83,211,2;max=-83,215,-2} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-93,211,28;max=-84,218,26} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-84,211,8;max=-93,218,10} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-84,211,-8;max=-93,218,-10} @self
+  - fake{m=stripped_oak_wood;t=NONE;min=-83,211,34;max=-83,215,38} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-94,211,34;max=-94,215,38} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-94,211,21;max=-94,215,17} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-83,211,21;max=-83,215,17} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-94,211,2;max=-94,215,-2} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-83,211,2;max=-83,215,-2} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-93,211,28;max=-84,218,26} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-84,211,8;max=-93,218,10} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-84,211,-8;max=-93,218,-10} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_2_AIR_1:
   Skills:
-  - fake{m=AIR;t=NONE;min=-83,211,34;max=-83,215,38} @self
+  - fake{m=AIR;t=NONE;min=-83,211,34;max=-83,215,38} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_2_AIR_2:
   Skills:
-  - fake{m=AIR;t=NONE;min=-94,211,34;max=-94,215,38} @self
+  - fake{m=AIR;t=NONE;min=-94,211,34;max=-94,215,38} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_2_AIR_3:
   Skills:
-  - fake{m=AIR;t=NONE;min=-94,211,21;max=-94,215,17} @self
+  - fake{m=AIR;t=NONE;min=-94,211,21;max=-94,215,17} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_2_AIR_4:
   Skills:
-  - fake{m=AIR;t=NONE;min=-83,211,21;max=-83,215,17} @self
+  - fake{m=AIR;t=NONE;min=-83,211,21;max=-83,215,17} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_2_AIR_5:
   Skills:
-  - fake{m=AIR;t=NONE;min=-94,211,2;max=-94,215,-2} @self
+  - fake{m=AIR;t=NONE;min=-94,211,2;max=-94,215,-2} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_2_AIR_6:
   Skills:
-  - fake{m=AIR;t=NONE;min=-83,215,2;max=-83,211,-2} @self
+  - fake{m=AIR;t=NONE;min=-83,215,2;max=-83,211,-2} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_2_AIR_7:
   Skills:
-  - fake{m=AIR;t=NONE;min=-93,211,28;max=-84,218,26} @self
+  - fake{m=AIR;t=NONE;min=-93,211,28;max=-84,218,26} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_2_AIR_8:
   Skills:
-  - fake{m=AIR;t=NONE;min=-84,218,8;max=-93,211,10} @self
+  - fake{m=AIR;t=NONE;min=-84,218,8;max=-93,211,10} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_2_AIR_9:
   Skills:
-  - fake{m=AIR;t=NONE;min=-84,211,-8;max=-93,218,-10} @self
+  - fake{m=AIR;t=NONE;min=-84,211,-8;max=-93,218,-10} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_3:
   Skills:
-  - fake{m=stripped_oak_wood;t=NONE;min=-83,161,34;max=-83,165,38} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-94,161,34;max=-94,165,38} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-94,161,16;max=-94,165,17} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-83,161,16;max=-83,165,17} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-94,161,2;max=-94,165,-2} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-83,161,2;max=-83,165,-2} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-93,161,28;max=-84,168,26} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-84,161,8;max=-93,168,10} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-84,161,-8;max=-93,168,-10} @self
+  - fake{m=stripped_oak_wood;t=NONE;min=-83,161,34;max=-83,165,38} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-94,161,34;max=-94,165,38} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-94,161,16;max=-94,165,17} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-83,161,16;max=-83,165,17} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-94,161,2;max=-94,165,-2} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-83,161,2;max=-83,165,-2} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-93,161,28;max=-84,168,26} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-84,161,8;max=-93,168,10} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-84,161,-8;max=-93,168,-10} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_3_AIR_1:
   Skills:
-  - fake{m=AIR;t=NONE;min=-83,161,34;max=-83,165,38} @self
+  - fake{m=AIR;t=NONE;min=-83,161,34;max=-83,165,38} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_3_AIR_2:
   Skills:
-  - fake{m=AIR;t=NONE;min=-94,161,34;max=-94,165,38} @self
+  - fake{m=AIR;t=NONE;min=-94,161,34;max=-94,165,38} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_3_AIR_3:
   Skills:
-  - fake{m=AIR;t=NONE;min=-94,161,21;max=-94,165,17} @self
+  - fake{m=AIR;t=NONE;min=-94,161,21;max=-94,165,17} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_3_AIR_4:
   Skills:
-  - fake{m=AIR;t=NONE;min=-83,161,21;max=-83,165,17} @self
+  - fake{m=AIR;t=NONE;min=-83,161,21;max=-83,165,17} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_3_AIR_5:
   Skills:
-  - fake{m=AIR;t=NONE;min=-94,161,2;max=-94,165,-2} @self
+  - fake{m=AIR;t=NONE;min=-94,161,2;max=-94,165,-2} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_3_AIR_6:
   Skills:
-  - fake{m=AIR;t=NONE;min=-83,165,2;max=-83,161,-2} @self
+  - fake{m=AIR;t=NONE;min=-83,165,2;max=-83,161,-2} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_3_AIR_7:
   Skills:
-  - fake{m=AIR;t=NONE;min=-93,161,28;max=-84,168,26} @self
+  - fake{m=AIR;t=NONE;min=-93,161,28;max=-84,168,26} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_3_AIR_8:
   Skills:
-  - fake{m=AIR;t=NONE;min=-84,168,8;max=-93,161,10} @self
+  - fake{m=AIR;t=NONE;min=-84,168,8;max=-93,161,10} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_3_AIR_9:
   Skills:
-  - fake{m=AIR;t=NONE;min=-84,161,-8;max=-93,168,-10} @self
+  - fake{m=AIR;t=NONE;min=-84,161,-8;max=-93,168,-10} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_4:
   Skills:
-  - fake{m=stripped_oak_wood;t=NONE;min=-83,111,34;max=-83,115,38} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-94,111,34;max=-94,115,38} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-94,111,16;max=-94,115,17} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-83,111,16;max=-83,115,17} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-94,111,2;max=-94,115,-2} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-83,111,2;max=-83,115,-2} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-93,111,28;max=-84,118,26} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-84,111,8;max=-93,118,10} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-84,111,-8;max=-93,118,-10} @self
+  - fake{m=stripped_oak_wood;t=NONE;min=-83,111,34;max=-83,115,38} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-94,111,34;max=-94,115,38} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-94,111,16;max=-94,115,17} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-83,111,16;max=-83,115,17} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-94,111,2;max=-94,115,-2} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-83,111,2;max=-83,115,-2} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-93,111,28;max=-84,118,26} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-84,111,8;max=-93,118,10} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-84,111,-8;max=-93,118,-10} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_4_AIR_1:
   Skills:
-  - fake{m=AIR;t=NONE;min=-83,111,34;max=-83,115,38} @self
+  - fake{m=AIR;t=NONE;min=-83,111,34;max=-83,115,38} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_4_AIR_2:
   Skills:
-  - fake{m=AIR;t=NONE;min=-94,111,34;max=-94,115,38} @self
+  - fake{m=AIR;t=NONE;min=-94,111,34;max=-94,115,38} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_4_AIR_3:
   Skills:
-  - fake{m=AIR;t=NONE;min=-94,111,21;max=-94,115,17} @self
+  - fake{m=AIR;t=NONE;min=-94,111,21;max=-94,115,17} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_4_AIR_4:
   Skills:
-  - fake{m=AIR;t=NONE;min=-83,111,21;max=-83,115,17} @self
+  - fake{m=AIR;t=NONE;min=-83,111,21;max=-83,115,17} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_4_AIR_5:
   Skills:
-  - fake{m=AIR;t=NONE;min=-94,111,2;max=-94,115,-2} @self
+  - fake{m=AIR;t=NONE;min=-94,111,2;max=-94,115,-2} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_4_AIR_6:
   Skills:
-  - fake{m=AIR;t=NONE;min=-83,115,2;max=-83,111,-2} @self
+  - fake{m=AIR;t=NONE;min=-83,115,2;max=-83,111,-2} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_4_AIR_7:
   Skills:
-  - fake{m=AIR;t=NONE;min=-93,111,28;max=-84,118,26} @self
+  - fake{m=AIR;t=NONE;min=-93,111,28;max=-84,118,26} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_4_AIR_8:
   Skills:
-  - fake{m=AIR;t=NONE;min=-84,118,8;max=-93,111,10} @self
+  - fake{m=AIR;t=NONE;min=-84,118,8;max=-93,111,10} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_4_AIR_9:
   Skills:
-  - fake{m=AIR;t=NONE;min=-84,111,-8;max=-93,118,-10} @self
+  - fake{m=AIR;t=NONE;min=-84,111,-8;max=-93,118,-10} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_5:
   Skills:
-  - fake{m=stripped_oak_wood;t=NONE;min=-83,61,34;max=-83,65,38} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-94,61,34;max=-94,65,38} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-94,61,16;max=-94,65,17} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-83,61,16;max=-83,65,17} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-94,61,2;max=-94,65,-2} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-83,61,2;max=-83,65,-2} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-93,61,28;max=-84,68,26} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-84,61,8;max=-93,68,10} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-84,61,-8;max=-93,68,-10} @self
+  - fake{m=stripped_oak_wood;t=NONE;min=-83,61,34;max=-83,65,38} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-94,61,34;max=-94,65,38} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-94,61,16;max=-94,65,17} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-83,61,16;max=-83,65,17} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-94,61,2;max=-94,65,-2} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-83,61,2;max=-83,65,-2} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-93,61,28;max=-84,68,26} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-84,61,8;max=-93,68,10} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-84,61,-8;max=-93,68,-10} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_5_AIR_1:
   Skills:
-  - fake{m=AIR;t=NONE;min=-83,61,34;max=-83,65,38} @self
+  - fake{m=AIR;t=NONE;min=-83,61,34;max=-83,65,38} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_5_AIR_2:
   Skills:
-  - fake{m=AIR;t=NONE;min=-94,61,34;max=-94,65,38} @self
+  - fake{m=AIR;t=NONE;min=-94,61,34;max=-94,65,38} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_5_AIR_3:
   Skills:
-  - fake{m=AIR;t=NONE;min=-94,61,21;max=-94,65,17} @self
+  - fake{m=AIR;t=NONE;min=-94,61,21;max=-94,65,17} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_5_AIR_4:
   Skills:
-  - fake{m=AIR;t=NONE;min=-83,61,21;max=-83,65,17} @self
+  - fake{m=AIR;t=NONE;min=-83,61,21;max=-83,65,17} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_5_AIR_5:
   Skills:
-  - fake{m=AIR;t=NONE;min=-94,61,2;max=-94,65,-2} @self
+  - fake{m=AIR;t=NONE;min=-94,61,2;max=-94,65,-2} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_5_AIR_6:
   Skills:
-  - fake{m=AIR;t=NONE;min=-83,65,2;max=-83,61,-2} @self
+  - fake{m=AIR;t=NONE;min=-83,65,2;max=-83,61,-2} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_5_AIR_7:
   Skills:
-  - fake{m=AIR;t=NONE;min=-93,61,28;max=-84,68,26} @self
+  - fake{m=AIR;t=NONE;min=-93,61,28;max=-84,68,26} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_5_AIR_8:
   Skills:
-  - fake{m=AIR;t=NONE;min=-84,61,8;max=-93,68,10} @self
+  - fake{m=AIR;t=NONE;min=-84,61,8;max=-93,68,10} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_5_AIR_9:
   Skills:
-  - fake{m=AIR;t=NONE;min=-84,61,-8;max=-93,68,-10} @self
+  - fake{m=AIR;t=NONE;min=-84,61,-8;max=-93,68,-10} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_6:
   Skills:
-  - fake{m=stripped_oak_wood;t=NONE;min=-83,11,34;max=-83,15,38} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-94,11,34;max=-94,15,38} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-94,11,16;max=-94,15,17} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-83,11,16;max=-83,15,17} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-94,11,2;max=-94,15,-2} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-83,11,2;max=-83,15,-2} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-93,11,28;max=-84,18,26} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-84,11,8;max=-93,18,10} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-84,11,-8;max=-93,18,-10} @self
+  - fake{m=stripped_oak_wood;t=NONE;min=-83,11,34;max=-83,15,38} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-94,11,34;max=-94,15,38} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-94,11,16;max=-94,15,17} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-83,11,16;max=-83,15,17} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-94,11,2;max=-94,15,-2} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-83,11,2;max=-83,15,-2} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-93,11,28;max=-84,18,26} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-84,11,8;max=-93,18,10} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-84,11,-8;max=-93,18,-10} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_6_AIR_1:
   Skills:
-  - fake{m=AIR;t=NONE;min=-83,11,34;max=-83,15,38} @self
+  - fake{m=AIR;t=NONE;min=-83,11,34;max=-83,15,38} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_6_AIR_2:
   Skills:
-  - fake{m=AIR;t=NONE;min=-94,11,34;max=-94,15,38} @self
+  - fake{m=AIR;t=NONE;min=-94,11,34;max=-94,15,38} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_6_AIR_3:
   Skills:
-  - fake{m=AIR;t=NONE;min=-94,11,21;max=-94,15,17} @self
+  - fake{m=AIR;t=NONE;min=-94,11,21;max=-94,15,17} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_6_AIR_4:
   Skills:
-  - fake{m=AIR;t=NONE;min=-83,11,21;max=-83,15,17} @self
+  - fake{m=AIR;t=NONE;min=-83,11,21;max=-83,15,17} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_6_AIR_5:
   Skills:
-  - fake{m=AIR;t=NONE;min=-94,11,2;max=-94,15,-2} @self
+  - fake{m=AIR;t=NONE;min=-94,11,2;max=-94,15,-2} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_6_AIR_6:
   Skills:
-  - fake{m=AIR;t=NONE;min=-83,15,2;max=-83,11,-2} @self
+  - fake{m=AIR;t=NONE;min=-83,15,2;max=-83,11,-2} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_6_AIR_7:
   Skills:
-  - fake{m=AIR;t=NONE;min=-93,11,28;max=-84,18,26} @self
+  - fake{m=AIR;t=NONE;min=-93,11,28;max=-84,18,26} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_6_AIR_8:
   Skills:
-  - fake{m=AIR;t=NONE;min=-84,18,8;max=-93,11,10} @self
+  - fake{m=AIR;t=NONE;min=-84,18,8;max=-93,11,10} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_6_AIR_9:
   Skills:
-  - fake{m=AIR;t=NONE;min=-84,11,-8;max=-93,18,-10} @self
+  - fake{m=AIR;t=NONE;min=-84,11,-8;max=-93,18,-10} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_7:
   Skills:
-  - fake{m=stripped_oak_wood;t=NONE;min=-83,-39,34;max=-83,-35,38} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-94,-39,34;max=-94,-35,38} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-94,-39,16;max=-94,-35,17} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-83,-39,16;max=-83,-35,17} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-94,-39,2;max=-94,-35,-2} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-83,-39,2;max=-83,-35,-2} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-93,-39,28;max=-84,-32,26} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-84,-39,8;max=-93,-32,10} @self
-  - fake{m=stripped_oak_wood;t=NONE;min=-84,-39,-8;max=-93,-32,-10} @self
+  - fake{m=stripped_oak_wood;t=NONE;min=-83,-39,34;max=-83,-35,38} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-94,-39,34;max=-94,-35,38} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-94,-39,16;max=-94,-35,17} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-83,-39,16;max=-83,-35,17} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-94,-39,2;max=-94,-35,-2} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-83,-39,2;max=-83,-35,-2} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-93,-39,28;max=-84,-32,26} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-84,-39,8;max=-93,-32,10} @selfLocation
+  - fake{m=stripped_oak_wood;t=NONE;min=-84,-39,-8;max=-93,-32,-10} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_7_AIR_1:
   Skills:
-  - fake{m=AIR;t=NONE;min=-83,-39,34;max=-83,-35,38} @self
+  - fake{m=AIR;t=NONE;min=-83,-39,34;max=-83,-35,38} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_7_AIR_2:
   Skills:
-  - fake{m=AIR;t=NONE;min=-94,-39,34;max=-94,-35,38} @self
+  - fake{m=AIR;t=NONE;min=-94,-39,34;max=-94,-35,38} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_7_AIR_3:
   Skills:
-  - fake{m=AIR;t=NONE;min=-94,-39,21;max=-94,-35,17} @self
+  - fake{m=AIR;t=NONE;min=-94,-39,21;max=-94,-35,17} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_7_AIR_4:
   Skills:
-  - fake{m=AIR;t=NONE;min=-83,-39,21;max=-83,-35,17} @self
+  - fake{m=AIR;t=NONE;min=-83,-39,21;max=-83,-35,17} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_7_AIR_5:
   Skills:
-  - fake{m=AIR;t=NONE;min=-94,-39,2;max=-94,-35,-2} @self
+  - fake{m=AIR;t=NONE;min=-94,-39,2;max=-94,-35,-2} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_7_AIR_6:
   Skills:
-  - fake{m=AIR;t=NONE;min=-83,15,2;max=-83,-35,-2} @self
+  - fake{m=AIR;t=NONE;min=-83,15,2;max=-83,-35,-2} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_7_AIR_7:
   Skills:
-  - fake{m=AIR;t=NONE;min=-93,-39,28;max=-84,-32,26} @self
+  - fake{m=AIR;t=NONE;min=-93,-39,28;max=-84,-32,26} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_7_AIR_8:
   Skills:
-  - fake{m=AIR;t=NONE;min=-84,-39,8;max=-93,-32,10} @self
+  - fake{m=AIR;t=NONE;min=-84,-39,8;max=-93,-32,10} @selfLocation
 
 Utils_OakWoodLand_Wall_StrippedOakWood_Spawn_7_AIR_9:
   Skills:
-  - fake{m=AIR;t=NONE;min=-84,-39,-8;max=-93,-32,-10} @self
+  - fake{m=AIR;t=NONE;min=-84,-39,-8;max=-93,-32,-10} @selfLocation
