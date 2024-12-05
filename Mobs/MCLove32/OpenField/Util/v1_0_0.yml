@@ -269,7 +269,7 @@ OpenField_util_ウズラミリィ_毒_MCLove32:
   - remove{delay=600} @self ~onSpawn 
   - skill{
     s=[
-      - potion{t=POISON;l=4;p=false;d=60} @PIR{r=<caster.var.scale|1>}
+      - potion{t=POISON;l=2;p=false;d=60} @PIR{r=<caster.var.scale|1>}
       - e:blockMask{m=PURPLE_TERRACOTTA;d=9;r=<caster.var.scale|1>}
     ]} @self ~onTimer:10
 
