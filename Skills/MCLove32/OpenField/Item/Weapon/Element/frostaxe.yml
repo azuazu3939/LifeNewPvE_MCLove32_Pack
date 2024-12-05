@@ -7,7 +7,7 @@ OpenField_Weapon_フロストメイス_MCLove32_Skill_Loop:
   Conditions:
   - onGround orElseCast OpenField_Weapon_フロストメイス_MCLove32_Skill_Loop_wait
   Skills:
-  - skill:OpenField_Weapon_フロストメイス_MCLove32_Skill_Finish @self 
+  - skill:OpenField_Weapon_フロストメイス_MCLove32_Skill_Finish{origin=@self} @self 
 
 OpenField_Weapon_フロストメイス_MCLove32_Skill_Loop_wait:
   Skills:
