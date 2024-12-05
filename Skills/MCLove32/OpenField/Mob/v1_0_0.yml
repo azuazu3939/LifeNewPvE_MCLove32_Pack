@@ -530,22 +530,25 @@ OpenField_Enemy_ウズラミリィ_MCLove32_Skill_3:
 OpenField_Enemy_ウズラミリィ_MCLove32_Skill_4:
   Cooldown: 5
   Skills:
-  - projectile{
-    oe=[
-      - e:pl{p=witch;a=1} @origin
-    ];
-    v=24;i=1} @TL
-  - projectile{
-    ot=[
-      - e:p{p=flame;a=1} @origin
-    ];
-    oh=[
-      - damage{a=1;pi=true;ii=true}
-    ];
-    oe=[
-      - e:explode @origin
-    ];
-    v=24;i=1;delay=40} @TL
+  - skill{
+    s=[
+      - projectile{
+        oe=[
+          - e:pl{p=witch;a=1} @origin
+        ];
+        v=24;i=1}
+      - projectile{
+        ot=[
+          - e:p{p=flame;a=1} @origin
+        ];
+        oh=[
+          - damage{a=1;pi=true;ii=true}
+        ];
+        oe=[
+          - e:explode @origin
+        ];
+        v=24;i=1;delay=40}
+    ]} @TL
 
 OpenField_Enemy_ウズラミリィ_MCLove32_Skill_5:
   Cooldown: 5
