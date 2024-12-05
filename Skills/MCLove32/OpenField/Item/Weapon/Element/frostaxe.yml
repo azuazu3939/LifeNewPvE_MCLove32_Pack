@@ -11,9 +11,16 @@ OpenField_Weapon_フロストメイス_MCLove32_Skill_Loop:
   - potion{t=SLOW;l=3;d=40;p=true} @self
   - sound{s=block.anvil.place;v=0.125;p=0.5} @self
 
-  - summon{t=OpenField_util_氷塊_200_MCLove32;a=1;r=0;pitch=0} @RAO{r=9;p=8;y=-1.75}
-  - summon{t=OpenField_util_氷塊_100_MCLove32;a=1;r=0;pitch=0} @RAO{r=9;p=8;y=0}
   - summon{t=OpenField_util_氷塊_50_MCLove32;a=1;r=0;pitch=0} @RAO{r=9;p=8;y=0.75}
+  - summon{t=OpenField_util_氷塊_100_MCLove32;a=1;r=0;pitch=0} @RAO{r=9;p=8}
+
+  - summon{t=OpenField_util_氷塊_50_MCLove32;a=1;r=0;pitch=0} @origin{y=0.75}
+  - summon{t=OpenField_util_氷塊_100_MCLove32;a=1;r=0;pitch=0} @origin
+  - summon{t=OpenField_util_氷塊_200_MCLove32;a=1;r=0;pitch=0} @origin{y=-1.75}
+
+  - summon{t=OpenField_util_青氷_50_MCLove32;a=1;r=0;pitch=0} @RAO{r=9;p=13;y=0.75}
+  - summon{t=OpenField_util_青氷_100_MCLove32;a=1;r=0;pitch=0} @RAO{r=9;p=13;y=0}
+  - summon{t=OpenField_util_青氷_200_MCLove32;a=1;r=0;pitch=0} @RAO{r=9;p=13;y=-1.75}
   - e:blockMask{m=packed_ice;r=10;d=10} @origin
 
   - e:p{c=#6ea2bd;a=10;speed=2;vs=1;hs=3.25;size=3} @origin{y=1.5}
