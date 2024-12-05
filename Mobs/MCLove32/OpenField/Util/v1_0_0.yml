@@ -258,4 +258,4 @@ OpenField_util_ウズラミリィ_MCLove32:
   - setscale{s=2.5;d=60;repeat=4;repeatI=120} @self ~onSpawn 
   - setscale{s=-1;d=60;repeat=4;repeatI=120;delay=60} @self ~onSpawn 
   - remove{delay=600} @self ~onSpawn 
-  - potion{t=POISON;l=25;p=false;d=100} @PIR{r=8} ~onTimer:20
+  - potion{t=POISON;l=5;p=false;d=100} @PIR{r=8} ~onTimer:20
