@@ -683,7 +683,7 @@ OpenField_Enemy_ウズラミリィ_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
   Display: "&fウズラミリィ"
   Type: skeleton
-  Health: 1200
+  Health: 1500
   Damage: 40
   Armor: 15
   Equipment:
@@ -703,8 +703,12 @@ OpenField_Enemy_ウズラミリィ_MCLove32:
   DamageModifiers:
   - SUFFOCATION 0
   - FALL 0
+  - BLUE 1.2
+  - RED 1.2
+  - GREEN 0.8
+  - YELLOW 0.8
   Drops:
-  - exp 100
+  - exp 1000
   AITargetSelectors:
   - clear
   - attacker
