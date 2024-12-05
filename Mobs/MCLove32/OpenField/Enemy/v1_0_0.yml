@@ -43,6 +43,13 @@ OpenField_Enemy_ハロウルフ_MCLove32:
   Damage: 3
   Faction: Wolf
   Armor: 1
+  DamageModifiers:
+  - SUFFOCATION 0
+  - FALL 0
+  - RED 1.2
+  - YELLOW 1.2
+  - BLUE 1.2
+  - GREEN 1.2
   Drop:
   Options:
     FollowRange: 8
@@ -152,6 +159,12 @@ OpenField_Enemy_コロニアル_MCLove32:
   Display: "&fコロニアル"
   Health: 20
   Damage: 5
+  DamageModifiers:
+  - FALL 0
+  - RED 1.2
+  - YELLOW 1.2
+  - BLUE 1.2
+  - GREEN 1.2
   Options:
     FollowRange: 16
     Size: 4
@@ -203,6 +216,9 @@ OpenField_Enemy_スパイディ_MCLove32:
   DamageModifiers:
   - SUFFOCATION 0
   - FALL 0
+  - RED 1.2
+  - YELLOW 1.2
+  - BLUE 1.2
   AITargetSelectors:
   - clear
   - attacker
@@ -234,6 +250,9 @@ OpenField_Enemy_スパイディ_MCLove32_Leader:
   DamageModifiers:
   - SUFFOCATION 0
   - FALL 0
+  - RED 1.2
+  - YELLOW 1.2
+  - BLUE 1.2
   AIGoalSelectors:
   - clear
   - randomstroll
@@ -262,7 +281,7 @@ OpenField_Enemy_生命生い茂る森のボグド_MCLove32:
   - Skills
   Type: BOGGED
   Display: "&b&l生命&a&l生い茂る森&f&lの&2&lボグド"
-  Health: 50
+  Health: 30
   Damage: 5
   Armor: 3
   Equipment:
@@ -277,6 +296,8 @@ OpenField_Enemy_生命生い茂る森のボグド_MCLove32:
   DamageModifiers:
   - SUFFOCATION 0
   - FALL 0
+  - RED 1.2
+  - GREEN 0.8
   AITargetSelectors:
   - clear
   - attacker
@@ -415,6 +436,8 @@ OpenField_Enemy_雪原キラーラビット_MCLove32:
     RabbitType: WHITE
   DamageModifiers:
   - SUFFOCATION 0
+  - RED 1.2
+  - GREEN 0.8
   Drops:
   - exp 10
   AITargetSelectors:
@@ -449,6 +472,11 @@ OpenField_Enemy_ワイルドハンター_MCLove32:
   Health: 40
   Damage: 10
   Armor: 3
+  DamageModifiers:
+  - SUFFOCATION 0
+  - FALL 0
+  - RED 1.2
+  - GREEN 0.8
   Equipment:
   - leather_helmet{color=81,126,88} HEAD
   - leather_chestplate{color=81,126,88} CHEST 
@@ -495,6 +523,9 @@ OpenField_Enemy_エリミネーター_MCLove32:
   DamageModifiers:
   - SUFFOCATION 0
   - FALL 0
+  - BLUE 1.2
+  - YELLOW 1.2
+  - GREEN 1.2
   AITargetSelectors:
   - clear
   - players 
@@ -546,6 +577,8 @@ OpenField_Enemy_モフィモス_MCLove32:
   DamageModifiers:
   - SUFFOCATION 0
   - FALL 0
+  - BLUE 1.2
+  - YELLOW 1.2
   AITargetSelectors:
   - clear
   - players 
@@ -594,6 +627,8 @@ OpenField_Enemy_モフィモ_ゾラ_MCLove32:
   DamageModifiers:
   - SUFFOCATION 0
   - FALL 0
+  - BLUE 1.2
+  - YELLOW 1.2
   AITargetSelectors:
   - clear
   - attacker
@@ -635,6 +670,8 @@ OpenField_Enemy_モフィモ_ゾラノ_MCLove32:
   DamageModifiers:
   - SUFFOCATION 0
   - FALL 0
+  - BLUE 1.2
+  - YELLOW 1.2
   AITargetSelectors:
   - clear
   - attacker
@@ -665,6 +702,8 @@ OpenField_Enemy_ウッドライク_MCLove32:
   DamageModifiers:
   - SUFFOCATION 0
   - FALL 0
+  - RED 1.2
+  - GREEN 0.8
   Drops:
   - exp 100
   AITargetSelectors:
