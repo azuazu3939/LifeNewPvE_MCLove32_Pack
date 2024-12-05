@@ -467,4 +467,4 @@ OpenField_Enemy_ウズラミリィ_MCLove32_Skill_1:
     ];
     ot=[
       - summon{t=OpenField_util_ウズラミリィ_MCLove32;a=1;r=0} @origin
-    ];i=4;v=16;g=1;hr=2;vr=2;mr=20;md=100} @TL
+    ];i=4;v=16;g=1;hr=2;vr=2;mr=20;md=100;tyo=4} @TL
