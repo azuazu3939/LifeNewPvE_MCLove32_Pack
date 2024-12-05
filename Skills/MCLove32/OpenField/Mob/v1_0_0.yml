@@ -466,5 +466,15 @@ OpenField_Enemy_ウズラミリィ_MCLove32_Skill_1:
       - damage{a=20;pi=true;ii=true} 
     ];
     ot=[
-      - summon{t=OpenField_util_ウズラミリィ_MCLove32;a=1;r=0} @origin
+      - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_1_seed @origin
     ];i=4;v=16;g=1;hr=2;vr=2;mr=20;md=100;tyo=4} @TL
+
+OpenField_Enemy_ウズラミリィ_MCLove32_Skill_1_seed:
+  Skills:
+  - projectile{
+    oe=[
+      - summon{t=OpenField_util_ウズラミリィ_MCLove32;a=1;r=0} @origin{y=-1.5}
+    ];
+    bulletType=MOB;mob=OpenField_util_ウズラミリィ_MCLove32;bmd=true;byo=0;bfo=0;
+    v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=false;mr=24;md=60;fo=true;fo=true;
+    vo=2;ho=<random.0to360>;g=2} 
