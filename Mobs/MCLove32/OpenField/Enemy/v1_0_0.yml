@@ -91,7 +91,7 @@ OpenField_Enemy_枯れた抜け殻_MCLove32:
   Display: "&f枯れた抜け殻"
   Health: 800
   Damage: 50
-  Armor: 40
+  Armor: 20
   Equipment:
   - golden_helmet HEAD
   - netherite_hoe HAND 
@@ -195,7 +195,7 @@ OpenField_Enemy_スパイディ_MCLove32:
   Display: "&fスパイディ"
   Health: 20
   Damage: 8
-  Armor: 8
+  Armor: 3
   Options:
     FollowRange: 16
     KnockbackResistance: 0.25
@@ -230,7 +230,7 @@ OpenField_Enemy_スパイディ_MCLove32_Leader:
   Display: "&fスパイディ"
   Health: 50
   Damage: 15
-  Armor: 8
+  Armor: 5
   DamageModifiers:
   - SUFFOCATION 0
   - FALL 0
@@ -264,7 +264,7 @@ OpenField_Enemy_生命生い茂る森のボグド_MCLove32:
   Display: "&b&l生命&a&l生い茂る森&f&lの&2&lボグド"
   Health: 50
   Damage: 5
-  Armor: 5
+  Armor: 3
   Equipment:
   - leather_chestplate{color=81,126,88} CHEST 
   - iron_sword HAND 
@@ -320,7 +320,7 @@ OpenField_Enemy_ジャイアントボグド_MCLove32:
   Display: "&2&lジャイアントボグド"
   Health: 300
   Damage: 8
-  Armor: 10
+  Armor: 4
   Equipment:
   - leather_chestplate{color=81,126,88} CHEST 
   - netherite_sword HAND 
@@ -347,7 +347,7 @@ OpenField_Enemy_マザーボグド_MCLove32:
   Display: "&5&lマザーボグド"
   Health: 1000
   Damage: 13
-  Armor: 20
+  Armor: 5
   Equipment:
   - leather_chestplate{color=81,126,88} CHEST 
   - bone HAND 
@@ -379,7 +379,7 @@ OpenField_Enemy_臆病なオセロット_MCLove32:
   Display: "&7&l臆病なオセロット"
   Health: 200
   Damage: 20
-  Armor: 35
+  Armor: 5
   Options:
     FollowRange: 16
     Scale: 2
@@ -408,7 +408,7 @@ OpenField_Enemy_雪原キラーラビット_MCLove32:
   Display: "&f&l雪原ラビット"
   Health: 100
   Damage: 50
-  Armor: 35
+  Armor: 3
   Options:
     Scale: 1
     IsKillerBunny: true
@@ -474,7 +474,7 @@ OpenField_Enemy_エリミネーター_MCLove32:
   Type: WITHER_SKELETON
   Display: "&7&lエリミネーター"
   Health: 200
-  Damage: 10
+  Damage: 5
   Armor: 0
   Equipment:
   - player_head{skulltexture=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODBkNzkyMjAxZmRjZTkxZTg4NGZmMzJhMDZkZDRjYzdjZDk4MzgyMmIxNjVkNDUzZWNjYjRjNjBhZWRjM2JhYSJ9fX0} HEAD 
@@ -526,7 +526,7 @@ OpenField_Enemy_モフィモス_MCLove32:
   Display: "&7&lモフィモス"
   Health: 1000
   Damage: 32
-  Armor: 80
+  Armor: 25
   Equipment:
   - player_head{skulltexture=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWUwZGRmNDEyYzYwYTdiZWY4NGE3YjhlNmZjYTcxNGQ0ODgyYWYxMTE4ZTk3NDAwYzg4ZDExYmE1YTk0N2RjYSJ9fX0} HEAD 
   - netherite_chestplate CHEST
@@ -577,7 +577,7 @@ OpenField_Enemy_モフィモ_ゾラ_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
   Type: baby_zombie
   Health: 200
-  Damage: 25
+  Damage: 15
   Armor: 0
   Equipment:
   - player_head{skulltexture=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjQwOWM0ZmE1YzQzNTJhZDAzZDM0ZDE1MTBjMDdkY2E3M2YwZmNiZDRhZDQ2MDQxMWFmZTY5NjAxOTExMDMyNiJ9fX0} HEAD
@@ -618,7 +618,7 @@ OpenField_Enemy_モフィモ_ゾラノ_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
   Type: baby_zombie
   Health: 200
-  Damage: 25
+  Damage: 15
   Armor: 0
   Equipment:
   - player_head{skulltexture=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjQwOWM0ZmE1YzQzNTJhZDAzZDM0ZDE1MTBjMDdkY2E3M2YwZmNiZDRhZDQ2MDQxMWFmZTY5NjAxOTExMDMyNiJ9fX0} HEAD
