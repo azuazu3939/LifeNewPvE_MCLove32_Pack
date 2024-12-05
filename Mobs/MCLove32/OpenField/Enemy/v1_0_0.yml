@@ -689,8 +689,10 @@ OpenField_Enemy_ウズラミリィ_MCLove32:
   Equipment:
   - calibrated_sculk_sensor HEAD
   - leather_chestplate{color=PURPLE} CHEST 
-  - leather_leggings{color=PURPLE} LEGS 
+  - netherite_leggings LEGS 
   - leather_boots{color=PURPLE} FEET
+  - amethyst_cluster HAND 
+  - sculk_sensor OFFHAND
   Options:
     NoDamageTicks: 0
     Silent: true 
