@@ -7,6 +7,16 @@ OpenField_Weapon_フロストメイス_MCLove32_Skill_Loop:
   Conditions:
   - onGround orElseCast OpenField_Weapon_フロストメイス_MCLove32_Skill_Loop_wait
   Skills:
+  - skill:OpenField_Weapon_フロストメイス_MCLove32_Skill_Finish @self 
+
+OpenField_Weapon_フロストメイス_MCLove32_Skill_Loop_wait:
+  Skills:
+  - setVar{var=skill.fall;val="<skill.var.fall> + 1";t=INTEGER} @self
+  - delay 1
+  - skill:OpenField_Weapon_フロストメイス_MCLove32_Skill_Loop @self
+
+OpenField_Weapon_フロストメイス_MCLove32_Skill_Finish:
+  Skills:
   - damage{a=min(<skill.var.fall>, 60);pi=true;ii=true} @PIR{r=10}
   - potion{t=SLOW;l=3;d=40;p=true} @self
   - sound{s=block.anvil.place;v=0.125;p=0.5} @self
@@ -28,9 +38,3 @@ OpenField_Weapon_フロストメイス_MCLove32_Skill_Loop:
   - sound{s=block.glass.break;v=0.75} 
   - sound{s=block.enchantment_table.use;v=0.75;p=2} 
   - sound{s=block.note_block.chime;v=0.75;p=2} 
-
-OpenField_Weapon_フロストメイス_MCLove32_Skill_Loop_wait:
-  Skills:
-  - setVar{var=skill.fall;val="<skill.var.fall> + 1";t=INTEGER} @self
-  - delay 1
-  - skill:OpenField_Weapon_フロストメイス_MCLove32_Skill_Loop @self
