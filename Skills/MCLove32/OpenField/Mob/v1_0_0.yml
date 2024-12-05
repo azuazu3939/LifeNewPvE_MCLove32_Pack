@@ -466,7 +466,7 @@ OpenField_Enemy_ウズラミリィ_MCLove32_Skill_1:
   Skills:
   - projectile{
     oh=[
-      - damage{a=20;pi=true;ii=true} 
+      - damage{a=50;pi=true;ii=true} 
     ];
     ot=[
       - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_1_seed @origin
@@ -503,7 +503,7 @@ OpenField_Enemy_ウズラミリィ_MCLove32_Skill_2_Process:
   - setVar{var=skill.ho;val="<skill.var.itr> * 6";t=INTEGER} @self
   - projectile{
     oh=[
-      - damage{a=50;pi=true;ii=true}
+      - damage{a=100;pi=true;ii=true}
       - summon{t=OpenField_util_ウズラミリィ_MCLove32;a=1;r=0} @origin
     ];
     conditions=[
@@ -526,3 +526,38 @@ OpenField_Enemy_ウズラミリィ_MCLove32_Skill_3:
   - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_2_Process{repeat=59;repeatI=1;tyo=2;delay=180}
   - delay 280
   - removetag{t=NOW} @self
+
+OpenField_Enemy_ウズラミリィ_MCLove32_Skill_4:
+  Cooldown: 5
+  Skills:
+  - projectile{
+    oe=[
+      - e:pl{p=witch;a=1} @origin
+    ];
+    v=24;i=1} @TL
+  - projectile{
+    ot=[
+      - e:p{p=flame;a=1} @origin
+    ];
+    oh=[
+      - damage{a=1;pi=true;ii=true}
+    ];
+    oe=[
+      - e:explode @origin
+    ];
+    v=24;i=1;delay=40} @TL
+
+OpenField_Enemy_ウズラミリィ_MCLove32_Skill_5:
+  Cooldown: 5
+  Skills:
+  - projectile{
+    ot=[
+      - e:p{p=flame;a=1} @origin
+    ];
+    oe=[
+      - e:blockMask{b=RED_TERRACOTTA;r=5;d=60} @origin
+      - delay 60
+      - damage{a=40;pi=true;ii=true} @PlayersNearOrigin{r=5}
+    ];
+    v=24;i=1;delay=40} @TL
+  

@@ -683,9 +683,9 @@ OpenField_Enemy_ウズラミリィ_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
   Display: "&fウズラミリィ"
   Type: skeleton
-  Health: 500
-  Damage: 32
-  Armor: 20
+  Health: 1200
+  Damage: 40
+  Armor: 15
   Equipment:
   - calibrated_sculk_sensor HEAD
   - leather_chestplate{color=PURPLE} CHEST 
@@ -713,6 +713,7 @@ OpenField_Enemy_ウズラミリィ_MCLove32:
   - gotoowner
   - meleeattack
   Skills:
+  - raidBoss @self ~onSpawn 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=48} @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=12} @self ~onDropCombat
   - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skills @self ~onEntercombat
