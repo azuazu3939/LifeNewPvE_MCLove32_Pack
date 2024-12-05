@@ -261,4 +261,8 @@ OpenField_util_ウズラミリィ_MCLove32:
   - setscale{s=2;d=60;repeat=4;repeatI=120} @self ~onSpawn 
   - setscale{s=-1.5;d=60;repeat=4;repeatI=120;delay=60} @self ~onSpawn 
   - remove{delay=600} @self ~onSpawn 
-  - potion{t=POISON;l=1;p=false;d=40} @PIR{r=<caster.var.scale|1>} ~onTimer:20
+  - skill{
+    s=[
+      - potion{t=POISON;l=1;p=false;d=40} @PIR{r=<caster.var.scale|1>}
+      - e:blockMask{m=PURPLE_TERRACOTTA;d=19;r=<caster.var.scale|1>}
+    ]} @self ~onTimer:20
