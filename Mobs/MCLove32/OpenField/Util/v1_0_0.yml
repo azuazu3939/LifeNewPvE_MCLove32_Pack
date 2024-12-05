@@ -308,7 +308,7 @@ OpenField_util_氷塊_50_MCLove32:
     ShadowStrength: 0
     Scale: 0.5,0.5,0.5
   Skills:
-  - remove{delay=10} @self ~onSpawn
+  - remove{delay=30} @self ~onSpawn
 
 OpenField_util_氷塊_100_MCLove32:
   Type: block_display
@@ -319,7 +319,7 @@ OpenField_util_氷塊_100_MCLove32:
     ShadowStrength: 0
     Scale: 1,1,1
   Skills:
-  - remove{delay=10} @self ~onSpawn
+  - remove{delay=30} @self ~onSpawn
 
 OpenField_util_氷塊_200_MCLove32:
   Type: block_display
@@ -330,7 +330,7 @@ OpenField_util_氷塊_200_MCLove32:
     ShadowStrength: 0
     Scale: 2,2,2
   Skills:
-  - remove{delay=10} @self ~onSpawn
+  - remove{delay=30} @self ~onSpawn
 
 OpenField_util_青氷_200_MCLove32:
   Type: block_display
@@ -341,7 +341,7 @@ OpenField_util_青氷_200_MCLove32:
     ShadowStrength: 0
     Scale: 2,2,2
   Skills:
-  - remove{delay=10} @self ~onSpawn
+  - remove{delay=30} @self ~onSpawn
 
 OpenField_util_青氷_100_MCLove32:
   Type: block_display
@@ -352,7 +352,7 @@ OpenField_util_青氷_100_MCLove32:
     ShadowStrength: 0
     Scale: 1,1,1
   Skills:
-  - remove{delay=10} @self ~onSpawn
+  - remove{delay=30} @self ~onSpawn
 
 OpenField_util_青氷_50_MCLove32:
   Type: block_display
@@ -363,4 +363,4 @@ OpenField_util_青氷_50_MCLove32:
     ShadowStrength: 0
     Scale: 0.5,0.5,0.5
   Skills:
-  - remove{delay=10} @self ~onSpawn
+  - remove{delay=30} @self ~onSpawn

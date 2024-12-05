@@ -21,7 +21,7 @@ OpenField_Weapon_フロストメイス_MCLove32_Skill_Loop:
   - summon{t=OpenField_util_青氷_50_MCLove32;a=1;r=0;pitch=0} @RAO{r=9;p=13;y=0.75}
   - summon{t=OpenField_util_青氷_100_MCLove32;a=1;r=0;pitch=0} @RAO{r=9;p=13;y=0}
   - summon{t=OpenField_util_青氷_200_MCLove32;a=1;r=0;pitch=0} @RAO{r=9;p=13;y=-1.75}
-  - e:blockMask{m=packed_ice;r=10;d=10} @origin
+  - e:blockMask{m=packed_ice;r=10;d=30} @origin
 
   - e:p{c=#6ea2bd;a=10;speed=2;vs=1;hs=3.25;size=3} @origin{y=1.5}
   - e:p{c=#ffffff;a=10;speed=2;vs=1;hs=3.25;size=3} @origin{y=1.5}
