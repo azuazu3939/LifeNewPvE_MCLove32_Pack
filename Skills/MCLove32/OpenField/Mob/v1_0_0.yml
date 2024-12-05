@@ -533,7 +533,7 @@ OpenField_Enemy_ウズラミリィ_MCLove32_Skill_4:
   Cooldown: 5
   Skills:
   - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_4_Process @RandomLocationsNearCaster{a=20;r=32;y=-1} 
-  - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_4_Process @PlayerLocationsInRadius{r=32;y=-1}
+  #- skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_4_Process @PlayerLocationsInRadius{r=32;y=-1}
 
 OpenField_Enemy_ウズラミリィ_MCLove32_Skill_4_Process:
   Skills:
