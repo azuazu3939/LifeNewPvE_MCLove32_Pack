@@ -247,7 +247,7 @@ OpenField_Util_火炎弾_灰9_MCLove32:
     Scale: 0.5,0.5,0.5
   Skills:
 
-OpenField_util_ウズラミリィ_MCLove32:
+OpenField_util_ウズラミリィ_毒_MCLove32:
   Type: block_display
   DisplayOptions:
     Block: amethyst_cluster
@@ -272,3 +272,27 @@ OpenField_util_ウズラミリィ_MCLove32:
       - potion{t=POISON;l=1;p=false;d=30} @PIR{r=<caster.var.scale|1>}
       - e:blockMask{m=PURPLE_TERRACOTTA;d=9;r=<caster.var.scale|1>}
     ]} @self ~onTimer:10
+
+OpenField_util_ウズラミリィ_柱_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: amethyst_cluster
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 1,2,1
+  Skills:
+  - skill{
+    s=[
+      - damage{a=30;pi=true;ii=true} @PIR{r=3;limit=5;sort=NEAREST}
+      - sound{s=entity.evoker_fangs.attack} @self
+      - settransformation{tt=SCALE;a=set;val=1,3,1;delay=1} @self
+      - settransformation{tt=SCALE;a=set;val=1,4,1;delay=2} @self
+      - settransformation{tt=SCALE;a=set;val=1,5,1;delay=3} @self
+      - settransformation{tt=SCALE;a=set;val=1,6,1;delay=4} @self
+      - settransformation{tt=SCALE;a=set;val=1,7,1;delay=5} @self
+      - settransformation{tt=SCALE;a=set;val=1,8,1;delay=6} @self
+      - settransformation{tt=SCALE;a=set;val=1,9,1;delay=7} @self
+      - settransformation{tt=SCALE;a=set;val=1,10,1;delay=8} @self
+      - delay 20
+      - remove @self
+    ]} ~onSpawn 

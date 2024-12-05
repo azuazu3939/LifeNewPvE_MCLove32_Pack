@@ -458,6 +458,7 @@ OpenField_Enemy_ウズラミリィ_MCLove32_Skills:
   - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_1 0.2
   - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_2 @self 0.1
   - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_3 @self 0.1
+  - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_4 @self 0.5
   - delay <random.80to160>
   - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skills @self 
 
@@ -477,9 +478,9 @@ OpenField_Enemy_ウズラミリィ_MCLove32_Skill_1_seed:
   Skills:
   - projectile{
     oe=[
-      - summon{t=OpenField_util_ウズラミリィ_MCLove32;a=1;r=0} @origin{y=-1.5}
+      - summon{t=OpenField_util_ウズラミリィ_毒_MCLove32;a=1;r=0} @origin{y=-1.5}
     ];
-    bulletType=MOB;mob=OpenField_util_ウズラミリィ_MCLove32;bmd=true;byo=0;bfo=0;
+    bulletType=MOB;mob=OpenField_util_ウズラミリィ_毒_MCLove32;bmd=true;byo=0;bfo=0;
     v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=false;mr=24;md=60;fo=true;fo=true;hn=1;vn=1;
     vo=2;ho=<random.0to360>;g=2} 
 
@@ -505,12 +506,12 @@ OpenField_Enemy_ウズラミリィ_MCLove32_Skill_2_Process:
     oh=[
       - damage{a=50;pi=true;ii=true}
       - potion{t=POISON;l=4;d=100;p=false}
-      - summon{t=OpenField_util_ウズラミリィ_MCLove32;a=1;r=0} @origin
+      - summon{t=OpenField_util_ウズラミリィ_毒_MCLove32;a=1;r=0} @origin
     ];
     conditions=[
       - onground true
     ];
-    bulletType=MOB;mob=OpenField_util_ウズラミリィ_MCLove32;bmd=true;byo=0;bfo=0;
+    bulletType=MOB;mob=OpenField_util_ウズラミリィ_毒_MCLove32;bmd=true;byo=0;bfo=0;
     i=2;v=15;g=0.1;hr=1.5;vr=1.5;mr=20;md=100;tyo=<skill.tyo>;ho=<skill.var.ho>} @TL
 
 OpenField_Enemy_ウズラミリィ_MCLove32_Skill_3:
@@ -527,4 +528,15 @@ OpenField_Enemy_ウズラミリィ_MCLove32_Skill_3:
   - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_2_Process{repeat=59;repeatI=1;tyo=2;delay=180}
   - delay 280
   - removetag{t=NOW} @self
-  
+
+OpenField_Enemy_ウズラミリィ_MCLove32_Skill_4:
+  Cooldown: 5
+  Skills:
+  - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_4_Process @RandomLocationsNearCaster{a=20;r=32;y=-1} 
+  - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_4_Process @PlayerLocationsInRadius{r=32;y=-1}
+
+OpenField_Enemy_ウズラミリィ_MCLove32_Skill_4_Process:
+  Skills:
+  - e:blockMask{m=RED_TERRACOTTA;r=3;d=30}
+  - delay 30
+  - summon{t=OpenField_util_ウズラミリィ_柱_MCLove32;a=1;r=0}
