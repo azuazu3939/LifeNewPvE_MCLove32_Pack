@@ -210,11 +210,6 @@ OpenField_Armor_エリミネーターH_MCLove32:
   NBT:
     PublicBukkitValues:
       lifenewpve:max_mana: "100"
-  Skills:
-  - skill:OpenField_Armor_エリミネーターFull_MCLove32 @self ~onAttack 
-  - skill:OpenField_Armor_エリミネーターFull_MCLove32 @self ~onDamaged 
-  - skill:OpenField_Armor_エリミネーターFull_MCLove32 @self ~onUse
-  - skill:OpenField_Armor_エリミネーターFull_MCLove32 @self ~onSwing
   Group: 'Armor'
 
 OpenField_Armor_エリミネーターC_MCLove32:
