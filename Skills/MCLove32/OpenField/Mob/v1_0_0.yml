@@ -450,3 +450,21 @@ OpenField_Util_風輪斬センター_100_MCLove32_Skills:
     i=1;vr=1.5;hr=1.5;hp=false;hnp=true;d=300;r=2.25;
     b=MOB;mob=OpenField_Util_オークの葉_100_MCLove32;bmd=true;byo=0;bfo=0;rd=true;
     p=40;sp=32;auraName=OpenField_Util_オークの葉_100_MCLove32_Aura5} @self 
+
+OpenField_Enemy_ウズラミリィ_MCLove32_Skills:
+  Conditions:
+  - incombat
+  Skills:
+  - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_1 0.2
+  - delay <random.60to120>
+  - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skills @self 
+
+OpenField_Enemy_ウズラミリィ_MCLove32_Skill_1:
+  Skills:
+  - projectile{
+    oh=[
+      - damage{a=20;pi=true;ii=true} 
+    ];
+    ot=[
+      - summon{t=OpenField_util_ウズラミリィ_MCLove32;a=1;r=0} @origin
+    ];i=4;v=16;g=1;hr=2;vr=2;mr=20;md=100} @TL

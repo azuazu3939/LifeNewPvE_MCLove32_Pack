@@ -246,3 +246,16 @@ OpenField_Util_火炎弾_灰9_MCLove32:
     SkyLight: 15
     Scale: 0.5,0.5,0.5
   Skills:
+
+OpenField_util_ウズラミリィ_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: amethyst_cluster
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 1,1,1
+  Skills:
+  - setscale{s=2.5;d=60;repeat=4;repeatI=120} @self ~onSpawn 
+  - setscale{s=1.5;d=60;repeat=4;repeatI=120;delay=60} @self ~onSpawn 
+  - remove{delay=600} @self ~onSpawn 
+  - potion{t=POISON;l=25;p=false;d=100} @PIR{r=8} ~onTimer:20

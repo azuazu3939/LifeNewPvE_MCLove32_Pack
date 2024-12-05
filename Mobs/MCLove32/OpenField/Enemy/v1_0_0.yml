@@ -677,3 +677,37 @@ OpenField_Enemy_ウッドライク_MCLove32:
   - meleeattack
   Skills:
   - cmd{c="lmg <target.name> 100 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath
+
+
+OpenField_Enemy_ウズラミリィ_MCLove32:
+  Template: OpenField_Enemy_Base_MCLove32
+  Display: "&fウズラミリィ"
+  Type: baby_zombie
+  Health: 500
+  Damage: 32
+  Armor: 20
+  Equipment:
+  - calibrated_sculk_sensor HEAD
+  - netherite_chestplate CHEST 
+  - diamond_leggings LEGS 
+  - iron_boots FEET
+  Options:
+    NoDamageTicks: 0
+    Silent: true 
+    Scale: 2
+    MovementSpeed: 0.1
+  DamageModifiers:
+  - SUFFOCATION 0
+  - FALL 0
+  Drops:
+  - exp 100
+  AITargetSelectors:
+  - clear
+  - attacker
+  - players 
+  AIGoalSelectors:
+  - randomstroll
+  - gotoowner
+  - meleeattack
+  Skills:
+  - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skills @self ~onEntercombat
