@@ -207,7 +207,7 @@ OpenField_Enemy_マザーボグド_MCLove32_Skills:
   - skill{
     s=[
       - e:p{p=heart;a=3;vs=1;hs=1;size=1.25} 
-      - healpercent{m=0.2} 
+      - healpercent{m=0.05} 
       - e:p{p=flash;a=1;delay=10} @origin
     ]} @mir{t=OpenField_Enemy_生命生い茂る森のボグド_MCLove32,OpenField_Enemy_ジャイアントボグド_MCLove32;r=16} 
   - e:p{p=flash;a=1;delay=10} @origin
