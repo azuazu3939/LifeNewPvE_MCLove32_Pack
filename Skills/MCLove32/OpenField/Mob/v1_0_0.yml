@@ -466,7 +466,7 @@ OpenField_Enemy_ウズラミリィ_MCLove32_Skill_1:
   Skills:
   - projectile{
     oh=[
-      - damage{a=50;pi=true;ii=true} 
+      - damage{a=40;pi=true;ii=true} 
     ];
     ot=[
       - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_1_seed @origin
@@ -503,7 +503,8 @@ OpenField_Enemy_ウズラミリィ_MCLove32_Skill_2_Process:
   - setVar{var=skill.ho;val="<skill.var.itr> * 6";t=INTEGER} @self
   - projectile{
     oh=[
-      - damage{a=100;pi=true;ii=true}
+      - damage{a=50;pi=true;ii=true}
+      - potion{t=POISON;l=4;d=100;p=false}
       - summon{t=OpenField_util_ウズラミリィ_MCLove32;a=1;r=0} @origin
     ];
     conditions=[
