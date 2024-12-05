@@ -259,11 +259,11 @@ OpenField_util_ウズラミリィ_MCLove32:
   - skill{
     s=[
       - setVar{var=caster.scale;val="<caster.var.scale|1> + 0.2";t=FLOAT;repeat=9;repeati=6} @self
-    ];repeat=4;repeatI=120;delay=60} @self ~onSpawn 
+    ];repeat=4;repeatI=120} @self ~onSpawn 
   - skill{
     s=[
       - setVar{var=caster.scale;val="<caster.var.scale|1> - 0.18";t=FLOAT;repeat=9;repeati=6} @self
-    ];repeat=4;repeatI=120;delay=120} @self ~onSpawn 
+    ];repeat=4;repeatI=120;delay=60} @self ~onSpawn 
   - setscale{s=2;d=60;repeat=4;repeatI=120} @self ~onSpawn 
   - setscale{s=-1.8;d=60;repeat=4;repeatI=120;delay=60} @self ~onSpawn 
   - remove{delay=600} @self ~onSpawn 
