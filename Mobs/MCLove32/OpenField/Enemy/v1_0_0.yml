@@ -712,3 +712,4 @@ OpenField_Enemy_ウズラミリィ_MCLove32:
   - meleeattack
   Skills:
   - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skills @self ~onEntercombat
+  - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_1 @self ~onEntercombat

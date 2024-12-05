@@ -456,10 +456,11 @@ OpenField_Enemy_ウズラミリィ_MCLove32_Skills:
   - incombat
   Skills:
   - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_1 0.2
-  - delay <random.60to120>
+  - delay <random.80to160>
   - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skills @self 
 
 OpenField_Enemy_ウズラミリィ_MCLove32_Skill_1:
+  Cooldown: 5
   Skills:
   - projectile{
     oh=[
