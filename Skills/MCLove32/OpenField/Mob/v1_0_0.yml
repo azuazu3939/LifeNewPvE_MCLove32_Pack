@@ -507,7 +507,7 @@ OpenField_Enemy_ウズラミリィ_MCLove32_Skill_2_Process:
       - summon{t=OpenField_util_ウズラミリィ_MCLove32;a=1;r=0} @origin
     ];
     bulletType=MOB;mob=OpenField_util_ウズラミリィ_MCLove32;bmd=true;byo=0;bfo=0;
-    i=1;v=15;g=0.1;hr=1.5;vr=1.5;mr=32;md=100;tyo=<skill.tyo>;ho=<skill.var.ho>} @TL
+    i=2;v=15;g=0.1;hr=1.5;vr=1.5;mr=32;md=100;tyo=<skill.tyo>;ho=<skill.var.ho>} @TL
 
 OpenField_Enemy_ウズラミリィ_MCLove32_Skill_3:
   Cooldown: 18
