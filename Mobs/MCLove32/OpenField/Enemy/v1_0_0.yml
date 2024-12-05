@@ -682,7 +682,7 @@ OpenField_Enemy_ウッドライク_MCLove32:
 OpenField_Enemy_ウズラミリィ_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
   Display: "&fウズラミリィ"
-  Type: baby_zombie
+  Type: skeleton
   Health: 500
   Damage: 32
   Armor: 20
