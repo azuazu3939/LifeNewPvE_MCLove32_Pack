@@ -255,6 +255,7 @@ OpenField_util_ウズラミリィ_MCLove32:
     SkyLight: 15
     Scale: 1,1,1
   Skills:
+  - teleport @origin{x=0.5;z=0.5} ~onSpawn 
   - setVar{var=caster.scale;val="2";t=FLOAT} @self ~onSpawn 
   - setVar{var=caster.scale;val="<caster.var.scale|1> + 2";t=FLOAT;repeat=4;repeatI=120;delay=60} @self ~onSpawn 
   - setVar{var=caster.scale;val="<caster.var.scale|1> - 1.5";t=FLOAT;repeat=4;repeatI=120;delay=120} @self ~onSpawn 
