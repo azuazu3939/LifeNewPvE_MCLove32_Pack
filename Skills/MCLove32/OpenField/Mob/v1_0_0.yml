@@ -545,7 +545,7 @@ OpenField_Enemy_ウズラミリィ_MCLove32_Skill_4:
             oe=[
               - e:explode @origin
             ];
-            v=24;i=1}
+            v=24;i=1;delay=40}
         ];
         v=24;i=1}
     ]} @TL
