@@ -298,3 +298,58 @@ OpenField_util_ウズラミリィ_柱_MCLove32:
       - delay 20
       - remove @self
     ]} ~onSpawn 
+
+OpenField_util_氷塊_100_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: packed_ice
+    BlockLight: 15
+    SkyLight: 15
+    ShadowStrength: 0
+    Scale: 1,1,1
+  Skills:
+  - remove{delay=10} @self ~onSpawn
+
+OpenField_util_氷塊_200_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: packed_ice
+    BlockLight: 15
+    SkyLight: 15
+    ShadowStrength: 0
+    Scale: 2,2,2
+  Skills:
+  - remove{delay=10} @self ~onSpawn
+
+OpenField_util_青氷_200_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: blue_ice
+    BlockLight: 15
+    SkyLight: 15
+    ShadowStrength: 0
+    Scale: 2,2,2
+  Skills:
+  - remove{delay=10} @self ~onSpawn
+
+OpenField_util_青氷_100_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: blue_ice
+    BlockLight: 15
+    SkyLight: 15
+    ShadowStrength: 0
+    Scale: 1,1,1
+  Skills:
+  - remove{delay=10} @self ~onSpawn
+
+OpenField_util_青氷_50_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: blue_ice
+    BlockLight: 15
+    SkyLight: 15
+    ShadowStrength: 0
+    Scale: 0.5,0.5,0.5
+  Skills:
+  - remove{delay=10} @self ~onSpawn

@@ -1,0 +1,29 @@
+OpenField_Weapon_フロストメイス_MCLove32_Skills:
+  Skills:
+  - setVar{var=skill.fall;val="30";t=INTEGER} @self
+  - skill:OpenField_Weapon_フロストメイス_MCLove32_Skill_Loop @self
+
+OpenField_Weapon_フロストメイス_MCLove32_Skill_Loop:
+  Conditions:
+  - onGround orElseCast OpenField_Weapon_フロストメイス_MCLove32_Skill_Loop_wait
+  Skills:
+  - damage{a=min(<skill.var.fall>, 60);pi=true;ii=true} @PIR{r=10}
+  - potion{t=SLOW;l=3;d=40;p=true} @self
+  - sound{s=block.anvil.place;v=0.125;p=0.5} @self
+
+  - summon{t=OpenField_util_氷塊_200_MCLove32;a=1;r=0;pitch=0} @RAO{r=9;p=8;y=-1.75}
+  - summon{t=OpenField_util_氷塊_100_MCLove32;a=1;r=0;pitch=0} @RAO{r=9;p=8;y=0}
+  - summon{t=OpenField_util_氷塊_50_MCLove32;a=1;r=0;pitch=0} @RAO{r=9;p=8;y=0.75}
+  - e:blockMask{m=packed_ice;r=10;d=10} @origin
+
+  - e:p{c=#6ea2bd;a=10;speed=2;vs=1;hs=3.25;size=3} @origin{y=1.5}
+  - e:p{c=#ffffff;a=10;speed=2;vs=1;hs=3.25;size=3} @origin{y=1.5}
+  - sound{s=block.glass.break;v=0.75} 
+  - sound{s=block.enchantment_table.use;v=0.75;p=2} 
+  - sound{s=block.note_block.chime;v=0.75;p=2} 
+
+OpenField_Weapon_フロストメイス_MCLove32_Skill_Loop_wait:
+  Skills:
+  - setVar{var=skill.fall;val="<skill.var,fall> + 1";t=INTEGER} @self
+  - delay 1
+  - skill:OpenField_Weapon_フロストメイス_MCLove32_Skill_Loop @self
