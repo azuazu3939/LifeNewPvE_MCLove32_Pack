@@ -253,7 +253,7 @@ OpenField_util_ウズラミリィ_MCLove32:
     Block: amethyst_cluster
     BlockLight: 15
     SkyLight: 15
-    Scale: 1,1,1
+    Scale: 2,2,2
   Skills:
   - setVar{var=caster.scale;val="2";t=FLOAT} @self ~onSpawn 
   - skill{
