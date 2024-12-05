@@ -260,7 +260,7 @@ OpenField_util_ウズラミリィ_MCLove32:
     s=[
       - setVar{var=caster.scale;val="<caster.var.scale|1> + 0.2";t=FLOAT;repeat=9;repeati=6} @self
     ];repeat=4;repeatI=120;delay=60} @self ~onSpawn 
-   - skill{
+  - skill{
     s=[
       - setVar{var=caster.scale;val="<caster.var.scale|1> - 0.18";t=FLOAT;repeat=9;repeati=6} @self
     ];repeat=4;repeatI=120;delay=120} @self ~onSpawn 
