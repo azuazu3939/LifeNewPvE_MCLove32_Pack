@@ -696,6 +696,7 @@ OpenField_Enemy_ウズラミリィ_MCLove32:
     Silent: true 
     Scale: 2
     MovementSpeed: 0.1
+    FollowRange: 32
   DamageModifiers:
   - SUFFOCATION 0
   - FALL 0
