@@ -234,3 +234,24 @@ OpenField_Enemy_ウッドライク_MCLove32_Spawn:
     ) true  
   - mobsInRadius{types=OpenField_Enemy_ウッドライク_MCLove32;amount=<3;radius=32} true
   - biome{b=terra:origen/origen/pillow_plains_outer} true
+
+OpenField_Enemy_ウズラミリィ_MCLove32_Spawn:
+  Type: OpenField_Enemy_ウズラミリィ_MCLove32
+  Worlds: open_field
+  Action: ADD 
+  PositionType: LAND
+  Chance: 0.05
+  Priority: 1
+  Conditions:
+  - mobsinworld{a=<1000} true 
+  - blocktype{type=water,air} false 
+  - height{h=50to100} true 
+  - region{r=spawn} false 
+  - region{r=daily_bosses} true
+  - (
+    mythicinradius{a=<1;r=20} ||
+    mythicinradius{a=<3;r=32} ||
+    mythicinradius{a=<5;r=48} 
+    ) true  
+  - mobsInRadius{types=OpenField_Enemy_ウズラミリィ_MCLove32;amount=<1;radius=64} true
+ 
