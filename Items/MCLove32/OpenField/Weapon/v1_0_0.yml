@@ -283,15 +283,3 @@ OpenField_Weapon_風輪斬_MCLove32:
   Group: 'Main-Weapon'
   Skills:
   - skill:OpenField_Weapon_風輪斬_MCLove32_Skills @self ~onUse
-
-OpenField_Weapon_フロストメイス_MCLove32:
-  Id: mace
-  Display: "&fフロストメイス"
-  Lore: []
-  Model: 1007
-  Options:
-    ItemVersion: 1
-    Unbreakable: true 
-  Group: 'Sub-Weapon'
-  Skills:
-  - skill:OpenField_Weapon_フロストメイス_MCLove32_Skills @self ~onUse
