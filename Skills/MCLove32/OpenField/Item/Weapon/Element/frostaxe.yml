@@ -31,6 +31,6 @@ OpenField_Weapon_フロストメイス_MCLove32_Skill_Loop:
 
 OpenField_Weapon_フロストメイス_MCLove32_Skill_Loop_wait:
   Skills:
-  - setVar{var=skill.fall;val="<skill.var,fall> + 1";t=INTEGER} @self
+  - setVar{var=skill.fall;val="<skill.var.fall> + 1";t=INTEGER} @self
   - delay 1
   - skill:OpenField_Weapon_フロストメイス_MCLove32_Skill_Loop @self
