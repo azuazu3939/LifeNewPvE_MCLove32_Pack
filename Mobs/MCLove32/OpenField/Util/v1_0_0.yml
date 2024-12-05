@@ -293,6 +293,7 @@ OpenField_util_ウズラミリィ_柱_MCLove32:
       - settransformation{tt=SCALE;a=set;val=1,8,1;delay=6} @self
       - settransformation{tt=SCALE;a=set;val=1,9,1;delay=7} @self
       - settransformation{tt=SCALE;a=set;val=1,10,1;delay=8} @self
+      - potion{t=SLOW;l=3;d=100;delay=10} @PIR{r=4;limit=5;sort=NEAREST}
       - delay 20
       - remove @self
     ]} ~onSpawn 
