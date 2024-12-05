@@ -456,6 +456,8 @@ OpenField_Enemy_ウズラミリィ_MCLove32_Skills:
   - incombat
   Skills:
   - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_1 0.2
+  - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_2 @self 0.1
+  - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_3 @self 0.1
   - delay <random.80to160>
   - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skills @self 
 
@@ -468,7 +470,8 @@ OpenField_Enemy_ウズラミリィ_MCLove32_Skill_1:
     ];
     ot=[
       - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_1_seed @origin
-    ];i=4;v=12;g=1;hr=2;vr=2;mr=20;md=100;tyo=4;hn=5;vn=1} @TL
+    ];
+    i=4;v=12;g=1;hr=2;vr=2;mr=20;md=100;tyo=4;hn=5;vn=1} @TL
 
 OpenField_Enemy_ウズラミリィ_MCLove32_Skill_1_seed:
   Skills:
@@ -479,3 +482,44 @@ OpenField_Enemy_ウズラミリィ_MCLove32_Skill_1_seed:
     bulletType=MOB;mob=OpenField_util_ウズラミリィ_MCLove32;bmd=true;byo=0;bfo=0;
     v=16;i=1;vr=1.5;hr=1.5;hp=false;hnp=false;mr=24;md=60;fo=true;fo=true;hn=1;vn=1;
     vo=2;ho=<random.0to360>;g=2} 
+
+OpenField_Enemy_ウズラミリィ_MCLove32_Skill_2:
+  Cooldown: 18
+  Conditions:
+  - hasTag{t=NOW} false
+  Skills:
+  - addtag{t=NOW} @self
+  - stun{d=300} @self
+  - delay 40
+  - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_2_Process{repeat=59;repeatI=1;tyo=10}
+  - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_2_Process{repeat=59;repeatI=1;tyo=8;delay=60}
+  - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_2_Process{repeat=59;repeatI=1;tyo=6;delay=120}
+  - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_2_Process{repeat=59;repeatI=1;tyo=4;delay=180}
+  - delay 280
+  - removetag{t=NOW} @self
+
+OpenField_Enemy_ウズラミリィ_MCLove32_Skill_2_Process:
+  Skills:
+  - setVar{var=skill.ho;val="<skill.var.itr> * 6";t=INTEGER} @self
+  - projectile{
+    oh=[
+      - damage{a=20;pi=true;ii=true}
+      - summon{t=OpenField_util_ウズラミリィ_MCLove32;a=1;r=0} @origin
+    ]
+    bulletType=MOB;mob=OpenField_util_ウズラミリィ_MCLove32;bmd=true;byo=0;bfo=0;
+    i=1;v=12;g=0.25;hr=1.5;vr=1.5;mr=32;md=100;tyo=<skill.tyo>;ho=<skill.var.ho>} @TL
+
+OpenField_Enemy_ウズラミリィ_MCLove32_Skill_3:
+  Cooldown: 18
+  Conditions:
+  - hasTag{t=NOW} false
+  Skills:
+  - addtag{t=NOW} @self
+  - stun{d=300} @self
+  - delay 40
+  - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_2_Process{repeat=59;repeatI=1;tyo=-4}
+  - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_2_Process{repeat=59;repeatI=1;tyo=-2;delay=60}
+  - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_2_Process{repeat=59;repeatI=1;tyo=0;delay=120}
+  - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_2_Process{repeat=59;repeatI=1;tyo=2;delay=180}
+  - delay 280
+  - removetag{t=NOW} @self
