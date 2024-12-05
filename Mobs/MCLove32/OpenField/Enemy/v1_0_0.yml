@@ -688,9 +688,9 @@ OpenField_Enemy_ウズラミリィ_MCLove32:
   Armor: 20
   Equipment:
   - calibrated_sculk_sensor HEAD
-  - netherite_chestplate CHEST 
-  - diamond_leggings LEGS 
-  - iron_boots FEET
+  - leather_chestplate{color=PURPLE} CHEST 
+  - leather_leggings{color=PURPLE} LEGS 
+  - leather_boots{color=PURPLE} FEET
   Options:
     NoDamageTicks: 0
     Silent: true 
