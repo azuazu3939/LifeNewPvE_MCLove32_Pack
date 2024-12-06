@@ -194,6 +194,6 @@ OpenField_Weapon_氷剣_MCLove32_Skill_Process:
       - isLiving true 
       - isMythicMob true
     ];
-    v=24;i=1;vr=1.5;r=1.5;hp=false;hnp=true;mr=20;md=24;tyo=1.6
+    v=24;i=1;vr=1.5;r=1.5;hp=false;hnp=true;mr=20;md=24;tyo=1.6;
     b=MOB;mob=OpenField_util_氷塊_50_MCLove32;bmd=true;byo=0;bfo=0;
     ho=<skill.ho>} @forward{f=5;lockpitch=true}
