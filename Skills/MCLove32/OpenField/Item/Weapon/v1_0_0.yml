@@ -190,7 +190,7 @@ OpenField_Weapon_氷剣_MCLove32_Skill_Process:
     oh=[
       - damage{a=5;pi=true;ii=true;e=BLUE}
       - addtag{t=NO_DAMAGE} 
-      - remove{t=NO_DAMAGE;delay=5}
+      - removeTag{t=NO_DAMAGE;delay=5}
     ];
     conditions=[
       - isLiving true 
