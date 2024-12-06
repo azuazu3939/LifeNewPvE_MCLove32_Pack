@@ -174,7 +174,7 @@ OpenField_Weapon_氷剣_MCLove32_Skills:
   Skills:
   - modifyMana{a=-8} @self 
   - aura{n=メインウェポン;i=20;rd=true;t=20} @self  
-  - setmaterialcooldown{m=diamond_sword;d=60} @self
+  - setmaterialcooldown{m=diamond_sword;d=24} @self
   - skill:OpenField_Weapon_氷剣_MCLove32_Skill_Process{ho=30} @self 
   - skill:OpenField_Weapon_氷剣_MCLove32_Skill_Process{ho=0} @self 
   - skill:OpenField_Weapon_氷剣_MCLove32_Skill_Process{ho=-30} @self 
