@@ -163,7 +163,7 @@ OpenField_Weapon_氷剣_MCLove32_Skills:
   Conditions: 
   - wearing{s=HAND;m=OpenField_Weapon_氷剣_MCLove32} true
   - materialcooldown{m=diamond_sword} false 
-  - hasMana{a=>8;
+  - hasMana{a=>10;
     onFail=[
       - message{m="&cマナが足りません。"} @self 
     ]} 
@@ -172,7 +172,7 @@ OpenField_Weapon_氷剣_MCLove32_Skills:
       - message{m="&cメインウェポン共通CT中です。"} @self 
     ]} false  
   Skills:
-  - modifyMana{a=-8} @self 
+  - modifyMana{a=-10} @self 
   - aura{n=メインウェポン;i=20;rd=true;t=20} @self  
   - setmaterialcooldown{m=diamond_sword;d=24} @self
   - skill:OpenField_Weapon_氷剣_MCLove32_Skill_Process{ho=30} @self 
@@ -206,7 +206,7 @@ OpenField_Weapon_炎剣_MCLove32_Skills:
   Conditions: 
   - wearing{s=HAND;m=OpenField_Weapon_炎剣_MCLove32} true
   - materialcooldown{m=netherite_sword} false 
-  - hasMana{a=>10;
+  - hasMana{a=>40;
     onFail=[
       - message{m="&cマナが足りません。"} @self 
     ]} 
@@ -215,7 +215,7 @@ OpenField_Weapon_炎剣_MCLove32_Skills:
       - message{m="&cメインウェポン共通CT中です。"} @self 
     ]} false  
   Skills:
-  - modifyMana{a=-10} @self 
+  - modifyMana{a=-40} @self 
   - aura{n=メインウェポン;i=20;rd=true;t=20} @self  
   - setmaterialcooldown{m=netherite_sword;d=20} @self
   - setVar{var=skill.x;val="<life.l.x>";t=FLOAT} @TL{d=40}
