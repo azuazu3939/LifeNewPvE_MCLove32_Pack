@@ -160,6 +160,7 @@ OpenField_Weapon_風輪斬_MCLove32_Skills:
 
 OpenField_Weapon_氷剣_MCLove32_Skills:
   Cooldown: 1.2
+  Cooldown: 
   - wearing{s=HAND;m=OpenField_Weapon_氷剣_MCLove32} true
   - materialcooldown{m=diamond_sword} false 
   - hasMana{a=>8;
