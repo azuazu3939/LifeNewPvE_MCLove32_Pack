@@ -189,10 +189,13 @@ OpenField_Weapon_氷剣_MCLove32_Skill_Process:
     ];
     oh=[
       - damage{a=5;pi=true;ii=true;e=BLUE}
+      - addtag{t=NO_DAMAGE} 
+      - remove{t=NO_DAMAGE;delay=5}
     ];
     conditions=[
       - isLiving true 
       - isMythicMob true
+      - hasTag{t=NO_DAMAGE} false
     ];
     v=24;i=1;vr=1.5;r=1.5;hp=false;hnp=true;mr=20;md=24;tyo=1.6;
     b=MOB;mob=OpenField_util_氷塊_50_MCLove32;bmd=true;byo=0;bfo=0;
