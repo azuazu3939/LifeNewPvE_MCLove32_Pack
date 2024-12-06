@@ -240,8 +240,8 @@ OpenField_Enemy_ウズラミリィ_MCLove32_Spawn:
   Worlds: open_field
   Action: ADD 
   PositionType: LAND
-  Chance: 0.05
-  Priority: 1
+  Chance: 1
+  Priority: 3
   Conditions:
   - mobsinworld{a=<1000} true 
   - blocktype{type=water,air} false 
