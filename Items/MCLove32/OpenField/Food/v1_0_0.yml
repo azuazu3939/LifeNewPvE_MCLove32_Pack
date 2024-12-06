@@ -13,3 +13,31 @@ OpneField_Armor_ゾンビ化ビーフ_MCLove32:
   Group: 'Food'
   Skills:
   - skill:OpneField_Armor_ゾンビ化ビーフ_MCLove32_Skills @self ~onConsume
+
+OpneField_Armor_金のリンゴ_MCLove32:
+  Id: golden_apple
+  Display: "&f金のリンゴ"
+  Lore:
+  Hide:
+  - ATTRIBUTES
+  Model: 1000
+  Options:
+    Destroy: false
+    CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: true
+  Group: 'Food'
+
+OpneField_Armor_金の人参_MCLove32:
+  Id: golden_carrot
+  Display: "&f金の人参"
+  Lore:
+  Hide:
+  - ATTRIBUTES
+  Model: 1000
+  Options:
+    Destroy: false
+    CancelDamage: true
+    ItemVersion: 1
+    #Unbreakable: true
+  Group: 'Food'
