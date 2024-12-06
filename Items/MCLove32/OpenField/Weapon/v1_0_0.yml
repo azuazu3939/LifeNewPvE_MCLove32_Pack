@@ -299,3 +299,19 @@ OpenField_Weapon_氷剣_MCLove32:
   Group: 'Main-Weapon'
   Skills:
   - skill:OpenField_Weapon_氷剣_MCLove32_Skills @self ~onUse
+
+OpenField_Weapon_炎剣_MCLove32:
+  Id: netherite_sword
+  Display: "&f炎剣"
+  Lore: []
+  Model: 1002
+  Options:
+    ItemVersion: 1
+    Unbreakable: true 
+  Attributes:
+    MainHand:
+      Damage: 3 ADD
+      AttackSpeed: 0.5 
+  Group: 'Main-Weapon'
+  Skills:
+  - skill:OpenField_Weapon_炎剣_MCLove32_Skills @self ~onUse
