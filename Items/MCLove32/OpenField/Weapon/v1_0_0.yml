@@ -310,8 +310,7 @@ OpenField_Weapon_炎剣_MCLove32:
     Unbreakable: true 
   Attributes:
     MainHand:
-      Damage: 3 ADD
-      AttackSpeed: 0.5 
+      Damage: 4 ADD
   Group: 'Main-Weapon'
   Skills:
   - skill:OpenField_Weapon_炎剣_MCLove32_Skills @self ~onUse
