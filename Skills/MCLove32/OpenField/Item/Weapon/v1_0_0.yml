@@ -329,114 +329,21 @@ OpenField_Weapon_炎剣_MCLove32_Skill_Start_5:
 
 OpenField_util_ストーン_5_MCLove32:
   Skills:
+  - skill:OpenField_util_ストーン_5_MCLove32_Orb{sp=0;r=3;y=0}
+  - skill:OpenField_util_ストーン_5_MCLove32_Orb{sp=12;r=3;y=0}
+  - skill:OpenField_util_ストーン_5_MCLove32_Orb{sp=24;r=3;y=0}
+  - skill:OpenField_util_ストーン_5_MCLove32_Orb{sp=0;r=4;y=2}
+  - skill:OpenField_util_ストーン_5_MCLove32_Orb{sp=12;r=4;y=2}
+  - skill:OpenField_util_ストーン_5_MCLove32_Orb{sp=24;r=4;y=2}
+  - skill:OpenField_util_ストーン_5_MCLove32_Orb{sp=0;r=5;y=4}
+  - skill:OpenField_util_ストーン_5_MCLove32_Orb{sp=12;r=5;y=4}
+  - skill:OpenField_util_ストーン_5_MCLove32_Orb{sp=24;r=5;y=4}
+
+OpenField_util_ストーン_5_MCLove32_Orb:
+  Skills:
   - o{
-    n=OpenField_util_ストーン_5_MCLove32_Y-2_0;t=200;r=2.5;hr=3;vr=2;p=36;
-    sp=0;i=1;hp=false;hnp=true;oy=-2;fo=true;
-    conditions=[
-      - isLiving true 
-      - isMythicMob true
-    ];
-    oh=[
-      - damage{a=5;pi=true;ii=true;e=GREEN}
-    ];
-    ot=[
-      - e:p{p=cloud;a=2;size=2;s=0.05;d=true;dir=0,1,0} @origin
-    ]} 
-  - o{
-    n=OpenField_util_ストーン_5_MCLove32_Y0_0;t=200;r=3;hr=3;vr=2;p=36;
-    sp=0;i=1;hp=false;hnp=true;oy=0;fo=true;
-    conditions=[
-      - isLiving true 
-      - isMythicMob true
-    ];
-    oh=[
-      - damage{a=5;pi=true;ii=true;e=GREEN}
-    ];
-    ot=[
-      - e:p{p=cloud;a=2;size=2;s=0.05;d=true;dir=0,1,0} @origin
-    ]} 
-  - o{
-    n=OpenField_util_ストーン_5_MCLove32_Y2_0;t=200;r=4;hr=3;vr=2;p=36;
-    sp=0;i=1;hp=false;hnp=true;oy=2;fo=true;
-    conditions=[
-      - isLiving true 
-      - isMythicMob true
-    ];
-    oh=[
-      - damage{a=5;pi=true;ii=true;e=GREEN}
-    ];
-    ot=[
-      - e:p{p=cloud;a=2;size=2;s=0.05;dir=0,1,0} @origin
-    ]} 
-  
-  - o{
-    n=OpenField_util_ストーン_5_MCLove32_Y-2_1;t=200;r=2.5;hr=3;vr=2;p=36;
-    sp=12;i=1;hp=false;hnp=true;oy=-2;fo=true;
-    conditions=[
-      - isLiving true 
-      - isMythicMob true
-    ];
-    oh=[
-      - damage{a=5;pi=true;ii=true;e=GREEN}
-    ];
-    ot=[
-      - e:p{p=cloud;a=2;size=2;s=0.05;d=true;dir=0,1,0} @origin
-    ]} 
-  - o{
-    n=OpenField_util_ストーン_5_MCLove32_Y0_1;t=200;r=3;hr=3;vr=2;p=36;
-    sp=12;i=1;hp=false;hnp=true;oy=0;fo=true;
-    conditions=[
-      - isLiving true 
-      - isMythicMob true
-    ];
-    oh=[
-      - damage{a=5;pi=true;ii=true;e=GREEN}
-    ];
-    ot=[
-      - e:p{p=cloud;a=2;size=2;s=0.05;d=true;dir=0,1,0} @origin
-    ]} 
-  - o{
-    n=OpenField_util_ストーン_5_MCLove32_Y2_2;t=200;r=4;hr=3;vr=2;p=36;
-    sp=12;i=1;hp=false;hnp=true;oy=2;fo=true;
-    conditions=[
-      - isLiving true 
-      - isMythicMob true
-    ];
-    oh=[
-      - damage{a=5;pi=true;ii=true;e=GREEN}
-    ];
-    ot=[
-      - e:p{p=cloud;a=2;size=2;s=0.05;dir=0,1,0} @origin
-    ]} 
-  - o{
-    n=OpenField_util_ストーン_5_MCLove32_Y-2_2;t=200;r=2.5;hr=3;vr=2;p=36;
-    sp=24;i=1;hp=false;hnp=true;oy=-2;fo=true;
-    conditions=[
-      - isLiving true 
-      - isMythicMob true
-    ];
-    oh=[
-      - damage{a=5;pi=true;ii=true;e=GREEN}
-    ];
-    ot=[
-      - e:p{p=cloud;a=2;size=2;s=0.05;d=true;dir=0,1,0} @origin
-    ]} 
-  - o{
-    n=OpenField_util_ストーン_5_MCLove32_Y0_2;t=200;r=3;hr=3;vr=2;p=36;
-    sp=24;i=1;hp=false;hnp=true;oy=0;fo=true;
-    conditions=[
-      - isLiving true 
-      - isMythicMob true
-    ];
-    oh=[
-      - damage{a=5;pi=true;ii=true;e=GREEN}
-    ];
-    ot=[
-      - e:p{p=cloud;a=2;size=2;s=0.05;d=true;dir=0,1,0} @origin
-    ]} 
-  - o{
-    n=OpenField_util_ストーン_5_MCLove32_Y2_2;t=200;r=4;hr=3;vr=2;p=36;
-    sp=24;i=1;hp=false;hnp=true;oy=2;fo=true;
+    n=<random.0to9999999>;t=200;r=<skill.r>;hr=3;vr=2;p=36;
+    sp=<skill.sp>;i=1;hp=false;hnp=true;oy=<skill.y>;fo=true;
     conditions=[
       - isLiving true 
       - isMythicMob true

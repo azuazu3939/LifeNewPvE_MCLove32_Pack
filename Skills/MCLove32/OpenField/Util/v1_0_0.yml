@@ -16,4 +16,4 @@ OpenField_Util_エリアダメージ_MCLove32_Skills:
   - projectile{
     b=MOB;mm=OpenField_util_ストーン_5_MCLove32;bmd=true;bfo=0;byo=0;
     v=5;i=1;hp=false;hnp=false;
-    se=false;hs=true;hfs=2.5;huglava=true} @forward{f=5}
+    se=false;hs=true;huglava=true} @forward{f=5}
