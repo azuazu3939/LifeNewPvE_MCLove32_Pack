@@ -504,12 +504,12 @@ OpenField_Enemy_ウズラミリィ_MCLove32_Skill_2_Process:
   - setVar{var=skill.ho;val="<skill.var.itr> * 6";t=INTEGER} @self
   - projectile{
     oh=[
-      - damage{a=50;pi=true;ii=true}
-      - potion{t=POISON;l=4;d=100;p=false}
+      - damage{a=60;pi=true;ii=true}
+      - potion{t=POISON;l=4;d=120;p=false}
       - summon{t=OpenField_util_ウズラミリィ_毒_MCLove32;a=1;r=0} @origin
     ];
     conditions=[
-      - onground true
+      - (onground && distance{d=<6}) true
     ];
     bulletType=MOB;mob=OpenField_util_ウズラミリィ_毒_MCLove32;bmd=true;byo=0;bfo=0;
     i=2;v=15;g=0.1;hr=1.5;vr=1.5;mr=20;md=100;tyo=<skill.tyo>;ho=<skill.var.ho>} @TL
@@ -539,3 +539,19 @@ OpenField_Enemy_ウズラミリィ_MCLove32_Skill_4_Process:
   - e:blockMask{m=RED_TERRACOTTA;r=3;d=30}
   - delay 30
   - summon{t=OpenField_util_ウズラミリィ_柱_MCLove32;a=1;r=0}
+
+OpenField_Enemy_ウズラミリィ_MCLove32_Skill_5:
+  Cooldown: 5
+  Conditions:
+  - incombat
+  Skills:
+  - setVar{var=skill.ring;val="1";t=INTEGER} @self
+  - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_5_Process
+
+OpenField_Enemy_ウズラミリィ_MCLove32_Skill_5_Process:
+  Conditions:
+  - varrange{var=skill.ring;r=>40} orElseCast OpenField_Enemy_ウズラミリィ_MCLove32_Skill_5
+  Skills:
+  - summon{t=OpenField_util_ウズラミリィ_毒_MCLove32;a=1;r=0} @ring{r=<skill.var.ring>;p=32}
+  - delay 200
+  - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_5_Process @self 
