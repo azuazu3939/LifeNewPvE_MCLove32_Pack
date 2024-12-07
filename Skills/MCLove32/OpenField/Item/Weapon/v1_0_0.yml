@@ -340,7 +340,7 @@ OpenField_util_ストーン_5_MCLove32:
       - damage{a=5;pi=true;ii=true;e=GREEN}
     ];
     ot=[
-      - e:p{p=cloud;a=2;size=2;s=1;d=true;dir=@origin} @origin
+      - e:p{p=cloud;a=2;size=2;s=0.05;d=true;dir=0,1,0} @origin
     ]} 
   - o{
     n=OpenField_util_ストーン_5_MCLove32_Y2;t=200;r=3.5;hr=3;vr=2;p=32;
@@ -353,7 +353,7 @@ OpenField_util_ストーン_5_MCLove32:
       - damage{a=5;pi=true;ii=true;e=GREEN}
     ];
     ot=[
-      - e:p{p=cloud;a=2;size=2;s=1;d=true;dir=@origin} @origin
+      - e:p{p=cloud;a=2;size=2;s=0.05;d=true;dir=0,1,0} @origin
     ]} 
   - o{
     n=OpenField_util_ストーン_5_MCLove32_Y-2;t=200;r=3;hr=3;vr=2;p=32;
@@ -366,5 +366,5 @@ OpenField_util_ストーン_5_MCLove32:
       - damage{a=5;pi=true;ii=true;e=GREEN}
     ];
     ot=[
-      - e:p{p=cloud;a=2;size=2;s=1;d=true;dir=@origin} @origin
+      - e:p{p=cloud;a=2;size=2;s=0.05;dir=0,1,0} @origin
     ]} 
