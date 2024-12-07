@@ -10,3 +10,32 @@ OpenField_Util_エンチャントプロテクター_MCLove32_Skills:
   - message{m="&b&lエンチャントプロテクターメニューを&c&l一度だけ&b&l開きます。"} @self
   - delay 20
   - menuprotect @self 
+
+OpenField_Util_エリアダメージ_MCLove32_Skills:
+  Cooldown: 1
+  Skills:
+  - skill:OpenField_Util_エリアダメージ_MCLove32_Skill_1 @self
+  - delay 20
+  - skill:OpenField_Util_エリアダメージ_MCLove32_Skill_2 @self
+  - delay 20
+  - skill:OpenField_Util_エリアダメージ_MCLove32_Skill_3 @self
+
+OpenField_Util_エリアダメージ_MCLove32_Skill_1:
+  Skills:
+  - e:blockMask{b=red_terracotta;d=19} @cone{a=120;r=24;s=32;e=true;mp=4}
+  - delay 20
+  - damage{a=10;pi=true;ii=true} @EIC{a=120;r=8;c=[- isLiving true - isMythicMob true ]}
+
+OpenField_Util_エリアダメージ_MCLove32_Skill_2:
+  Skills:
+  - e:blockMask{b=red_terracotta;d=19} @cone{a=120;r=24;s=32;e=true;mp=4}
+  - e:blockunmask @cone{a=120;r=8;s=16;e=true;mp=4}
+  - delay 20
+  - damage{a=10;pi=true;ii=true} @EIC{a=120;r=16;c=[- isLiving true - isMythicMob true - distance{d=<9} false ]}
+
+OpenField_Util_エリアダメージ_MCLove32_Skill_3:
+  Skills:
+  - e:blockMask{b=red_terracotta;d=19} @cone{a=120;r=24;s=32;e=true;mp=4}
+  - e:blockunmask @cone{a=120;r=16;s=16;e=true;mp=4}
+  - delay 20
+  - damage{a=10;pi=true;ii=true} @EIC{a=120;r=24;c=[- isLiving true - isMythicMob true - distance{d=<17} false ]}
