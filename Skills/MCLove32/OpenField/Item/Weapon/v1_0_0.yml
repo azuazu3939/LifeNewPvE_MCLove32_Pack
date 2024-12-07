@@ -329,15 +329,15 @@ OpenField_Weapon_炎剣_MCLove32_Skill_Start_5:
 
 OpenField_util_ストーン_5_MCLove32:
   Skills:
-  - skill:OpenField_util_ストーン_5_MCLove32_Orb{sp=0;r=3;y=0}
-  - skill:OpenField_util_ストーン_5_MCLove32_Orb{sp=12;r=3;y=0}
-  - skill:OpenField_util_ストーン_5_MCLove32_Orb{sp=24;r=3;y=0}
-  - skill:OpenField_util_ストーン_5_MCLove32_Orb{sp=0;r=4;y=2}
-  - skill:OpenField_util_ストーン_5_MCLove32_Orb{sp=12;r=4;y=2}
-  - skill:OpenField_util_ストーン_5_MCLove32_Orb{sp=24;r=4;y=2}
-  - skill:OpenField_util_ストーン_5_MCLove32_Orb{sp=0;r=5;y=4}
-  - skill:OpenField_util_ストーン_5_MCLove32_Orb{sp=12;r=5;y=4}
-  - skill:OpenField_util_ストーン_5_MCLove32_Orb{sp=24;r=5;y=4}
+  - skill:OpenField_util_ストーン_5_MCLove32_Orb{sp=0;r=3;y=2}
+  - skill:OpenField_util_ストーン_5_MCLove32_Orb{sp=12;r=3;y=2}
+  - skill:OpenField_util_ストーン_5_MCLove32_Orb{sp=24;r=3;y=2}
+  - skill:OpenField_util_ストーン_5_MCLove32_Orb{sp=0;r=4;y=4}
+  - skill:OpenField_util_ストーン_5_MCLove32_Orb{sp=12;r=4;y=4}
+  - skill:OpenField_util_ストーン_5_MCLove32_Orb{sp=24;r=4;y=4}
+  - skill:OpenField_util_ストーン_5_MCLove32_Orb{sp=0;r=5;y=6}
+  - skill:OpenField_util_ストーン_5_MCLove32_Orb{sp=12;r=5;y=6}
+  - skill:OpenField_util_ストーン_5_MCLove32_Orb{sp=24;r=5;y=6}
 
 OpenField_util_ストーン_5_MCLove32_Orb:
   Skills:
