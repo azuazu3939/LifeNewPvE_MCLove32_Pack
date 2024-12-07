@@ -46,7 +46,7 @@ OpenField_Util_エリアダメージ_MCLove32_Skills:
 
 OpenField_Util_エリアダメージ_MCLove32_Skill_Ring_2:
   Skills:
-  - e:pr{p=flame;a=10;vs=0.25;hs=0.5;s=1;d=true;dir=@forward{f=8;lockpitch=true};pts=16;r=4}
+  - e:pr{p=flame;a=10;vs=0.25;hs=0.5;s=1;d=true;dir=@forward{f=8;lockpitch=true};pts=16;r=4} @forward{f=8;lockpitch=true}
 
 OpenField_Util_エリアダメージ_MCLove32_Skill_Ring:
   Skills:
