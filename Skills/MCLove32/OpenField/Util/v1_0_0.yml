@@ -36,7 +36,7 @@ OpenField_Util_エリアダメージ_MCLove32_Skills:
       - setVar{var=skill.x;val="<life.l.x> - <caster.l.x>";t=FLOAT} @forward{f=8;lockpitch=true}
       - setVar{var=skill.y;val="<life.l.y> - <caster.l.y>";t=FLOAT} @forward{f=8;lockpitch=true}
       - setVar{var=skill.z;val="<life.l.z> - <caster.l.z>";t=FLOAT} @forward{f=8;lockpitch=true}
-      - skill:OpenField_Util_エリアダメージ_MCLove32_Skill_Ring_2
+      - skill:OpenField_Util_エリアダメージ_MCLove32_Skill_Ring
     ];
     i=1;vr=3.5;hr=3.5;hp=false;hnp=true;mr=32;md=300;v=8;se=false;
     conditions=[
@@ -44,17 +44,13 @@ OpenField_Util_エリアダメージ_MCLove32_Skills:
       - isMythicMob true
     ]} @forward{f=8;lockpitch=true}
 
-OpenField_Util_エリアダメージ_MCLove32_Skill_Ring_2:
-  Skills:
-  - e:pr{p=flame;a=10;vs=0.25;hs=0.5;s=1;d=true;dir=@forward{f=8;lockpitch=true};pts=16;r=4} @forward{f=8;lockpitch=true}
-
 OpenField_Util_エリアダメージ_MCLove32_Skill_Ring:
   Skills:
-  - e:p{p=flame;a=10;vs=0.25;hs=0.5;s=1;d=true;dir=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};origin=@origin{so=2}}
-  - e:p{p=flame;a=10;vs=0.25;hs=0.5;s=1;d=true;dir=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};origin=@origin{so=-2}}
-  - e:p{p=flame;a=10;vs=0.25;hs=0.5;s=1;d=true;dir=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};origin=@origin{fo=2}}
-  - e:p{p=flame;a=10;vs=0.25;hs=0.5;s=1;d=true;dir=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};origin=@origin{fo=-2}}
-  - e:p{p=flame;a=10;vs=0.25;hs=0.5;s=1;d=true;dir=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};origin=@origin{so=-sqrt(2);fo=-sqrt(2)}}
-  - e:p{p=flame;a=10;vs=0.25;hs=0.5;s=1;d=true;dir=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};origin=@origin{so=sqrt(2);fo=-sqrt(2)}}
-  - e:p{p=flame;a=10;vs=0.25;hs=0.5;s=1;d=true;dir=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};origin=@origin{so=-sqrt(2);fo=sqrt(2)}}
-  - e:p{p=flame;a=10;vs=0.25;hs=0.5;s=1;d=true;dir=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};origin=@origin{so=sqrt(2);fo=sqrt(2)}}
+  - e:p{p=flame;a=10;vs=0.25;hs=0.5;s=1;fo=true;d=true;dir=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};origin=@origin{so=2}} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
+  - e:p{p=flame;a=10;vs=0.25;hs=0.5;s=1;fo=true;d=true;dir=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};origin=@origin{so=-2}} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
+  - e:p{p=flame;a=10;vs=0.25;hs=0.5;s=1;fo=true;d=true;dir=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};origin=@origin{fo=2}} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
+  - e:p{p=flame;a=10;vs=0.25;hs=0.5;s=1;fo=true;d=true;dir=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};origin=@origin{fo=-2}} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
+  - e:p{p=flame;a=10;vs=0.25;hs=0.5;s=1;fo=true;d=true;dir=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};origin=@origin{so=-sqrt(2);fo=-sqrt(2)}} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
+  - e:p{p=flame;a=10;vs=0.25;hs=0.5;s=1;fo=true;d=true;dir=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};origin=@origin{so=sqrt(2);fo=-sqrt(2)}} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
+  - e:p{p=flame;a=10;vs=0.25;hs=0.5;s=1;fo=true;d=true;dir=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};origin=@origin{so=-sqrt(2);fo=sqrt(2)}} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
+  - e:p{p=flame;a=10;vs=0.25;hs=0.5;s=1;fo=true;d=true;dir=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};origin=@origin{so=sqrt(2);fo=sqrt(2)}} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
