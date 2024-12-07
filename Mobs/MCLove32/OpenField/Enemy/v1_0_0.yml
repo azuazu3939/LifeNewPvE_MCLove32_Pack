@@ -152,7 +152,7 @@ OpenField_Enemy_コロニア_MCLove32:
   - cmd{c="lmg <target.name> 100 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
 
 OpenField_Enemy_コロニアル_MCLove32:
-  Template: OpenField_Enemy_Base_MCLove32
+  Template: OpenField_Enemy_Abstract_Generic
   Exclude:
   - Skills
   Type: slime
@@ -232,7 +232,6 @@ OpenField_Enemy_スパイディ_MCLove32:
   - gotoowner
   Skills:
   - potion{t=SPEED;l=1;d=14400;p=false} @self ~onEnterCombat
-  - potionclear{t=SPEED} @self ~onDropCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=32} @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16} @self ~onDropCombat
   - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
@@ -269,11 +268,9 @@ OpenField_Enemy_スパイディ_MCLove32_Leader:
   - exp 30
   Skills:
   - potion{t=SLOWNESS;l=5;d=14400;p=false} @self ~onEnterCombat
-  - potionclear{t=SLOWNESS} @self ~onDropCombat
   - summon{t=OpenField_Enemy_スパイディ_MCLove32;a=1;r=3;s=true} @self ~onDamaged 0.001
   - summon{t=OpenField_Enemy_スパイディ_MCLove32;a=1;r=3;s=true;cd=1200} @self ~onEnterCombat
   - cmd{c="lmg <target.name> 30 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
-  - potion{t=LEVITATION;l=2;d=8;p=false} @self ~onSpawn
 
 OpenField_Enemy_生命生い茂る森のボグド_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
@@ -320,7 +317,6 @@ OpenField_Enemy_生命生い茂る森のボグド_MCLove32:
       - potion{t=SPEED;l=3;d=200;p=false} @self ~onEnterCombat
     ];sync=true} @self ~onDeath ?!hastag{t=death}
   - potion{t=SPEED;l=1;d=14400;p=false} @self ~onEnterCombat
-  - potionclear{t=SPEED} @self ~onDropCombat 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=48} @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16} @self ~onDropCombat
   - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
@@ -452,7 +448,6 @@ OpenField_Enemy_雪原キラーラビット_MCLove32:
   - attribute{attr=GENERIC_FOLLOW_RANGE;a=64} @self ~onEntercombat 
   - attribute{attr=GENERIC_FOLLOW_RANGE;a=8} @self ~onDropcombat 
   - potion{t=speed;l=5;d=144000;p=false} @self ~onEntercombat 
-  - potionclear{t=SPEED} @self ~onDropcombat 
   - cmd{c="lmg <target.name> 10 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true]} ~onDeath
 
 OpenField_Enemy_雪原キラーラビット_MCLove32_Leader:
