@@ -521,7 +521,7 @@ OpenField_Enemy_ウズラミリィ_MCLove32_Skill_3:
   Conditions:
   - hasTag{t=NOW} false
   Skills:
-  - addtag{t=NOW} @self
+  - addtag{t=NOW} @self >70%
   - stun{d=300} @self
   - delay 40
   - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_2_Process{repeat=59;repeatI=1;tyo=-4}

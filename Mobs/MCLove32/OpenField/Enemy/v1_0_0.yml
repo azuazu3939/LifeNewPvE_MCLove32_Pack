@@ -722,9 +722,9 @@ OpenField_Enemy_ウズラミリィ_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
   Display: "&fウズラミリィ"
   Type: skeleton
-  Health: 3650
+  Health: 11250
   Damage: 40
-  Armor: 15
+  Armor: 25
   Equipment:
   - calibrated_sculk_sensor HEAD
   - leather_chestplate{color=PURPLE} CHEST 
