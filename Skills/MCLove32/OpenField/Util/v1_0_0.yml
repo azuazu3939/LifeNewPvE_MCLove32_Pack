@@ -36,7 +36,7 @@ OpenField_Util_エリアダメージ_MCLove32_Skills:
       - setVar{var=skill.x;val="<life.l.x>";t=FLOAT} @forward{f=8;lockpitch=true}
       - setVar{var=skill.y;val="<life.l.y>";t=FLOAT} @forward{f=8;lockpitch=true}
       - setVar{var=skill.z;val="<life.l.z>";t=FLOAT} @forward{f=8;lockpitch=true}
-      - e:pr{particle=flame;pts=16;r=4;a=1;s=1;d=true} @self
+      - e:pr{particle=flame;pts=16;r=4;a=1;s=1;d=true} @Location{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
     ];
     i=1;vr=3.5;hr=3.5;hp=false;hnp=true;mr=32;md=300;v=8;se=false;
     conditions=[
