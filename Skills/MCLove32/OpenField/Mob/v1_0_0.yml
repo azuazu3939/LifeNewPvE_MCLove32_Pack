@@ -553,5 +553,6 @@ OpenField_Enemy_ウズラミリィ_MCLove32_Skill_5_Process:
   - varrange{var=skill.ring;r=>40} orElseCast OpenField_Enemy_ウズラミリィ_MCLove32_Skill_5
   Skills:
   - summon{t=OpenField_util_ウズラミリィ_毒_MCLove32;a=1;r=0} @ring{r=<skill.var.ring>;p=32}
+  - setVar{var=skill.ring;val="<skill.var.ring> + 2";t=INTEGER} @self
   - delay 200
   - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_5_Process @self 
