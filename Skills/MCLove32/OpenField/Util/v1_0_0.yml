@@ -46,7 +46,11 @@ OpenField_Util_エリアダメージ_MCLove32_Skills:
 
 OpenField_Util_エリアダメージ_MCLove32_Skill_Rings:
   Skills:
-  - e:pr{p=flame;audience=caster;pts=16;r=4;a=10;vs=0.05;hs=0.15;s=1;fo=true;d=true;dir=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>;cpitch=0}
+  - skill:OpenField_Util_エリアダメージ_MCLove32_Skill_Rings_Override{origin=@ring{r=4;r=16}}
+
+OpenField_Util_エリアダメージ_MCLove32_Skill_Rings_Override:
+  Skills:
+  - e:p{p=flame;audience=caster;a=10;vs=0.05;hs=0.15;s=1;fo=true;d=true;dir=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};origin=@origin} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>;cpitch=0}
 
 OpenField_Util_エリアダメージ_MCLove32_Skill_Ring:
   Skills:
