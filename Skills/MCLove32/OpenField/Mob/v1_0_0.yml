@@ -459,6 +459,7 @@ OpenField_Enemy_ウズラミリィ_MCLove32_Skills:
   - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_2 @self 0.1
   - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_3 @self 0.1
   - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_4 @self 0.75
+  - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_4{delay=30} @self ?healthpercent{p=<50%}
   - delay <random.80to160>
   - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skills @self 
 
@@ -501,7 +502,8 @@ OpenField_Enemy_ウズラミリィ_MCLove32_Skill_2:
 
 OpenField_Enemy_ウズラミリィ_MCLove32_Skill_2_Process:
   Skills:
-  - setVar{var=skill.ho;val="<skill.var.itr> * 6";t=INTEGER} @self
+  - setVar{var=skill.ho;val="<skill.var.itr> * 6";t=INTEGER} @self ?!healthpercent{p=<50%}
+  - setVar{var=skill.ho;val="<skill.var.itr> * 8";t=INTEGER} @self ?healthpercent{p=<50%}
   - projectile{
     oh=[
       - damage{a=60;pi=true;ii=true}
