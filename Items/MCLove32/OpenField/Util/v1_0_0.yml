@@ -29,15 +29,3 @@ OpenField_Util_ルートチェスト_MCLove32:
     DestroyOnDrop: true
   Group: 'Util'
   Skills:
-
-OpenField_Util_エリアダメージ_MCLove32:
-  Id: stick
-  Display: "&fエリアダメージ"
-  Lore: []
-  Model: 1002
-  Options:
-    ItemVersion: 1
-    Unbreakable: true 
-  Group: 'Util'
-  Skills:
-  - skill:OpenField_Util_エリアダメージ_MCLove32_Skills @self ~onUse
