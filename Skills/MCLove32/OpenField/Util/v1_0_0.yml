@@ -14,28 +14,33 @@ OpenField_Util_エンチャントプロテクター_MCLove32_Skills:
 OpenField_Util_エリアダメージ_MCLove32_Skills:
   Cooldown: 1
   Skills:
-  - skill:OpenField_Util_エリアダメージ_MCLove32_Skill_1 @self
-  - delay 20
-  - skill:OpenField_Util_エリアダメージ_MCLove32_Skill_2 @self
-  - delay 20
-  - skill:OpenField_Util_エリアダメージ_MCLove32_Skill_3 @self
-
-OpenField_Util_エリアダメージ_MCLove32_Skill_1:
-  Skills:
-  - e:blockMask{b=red_terracotta;d=19} @cone{a=120;r=24;s=32;e=true;mp=4}
-  - delay 19
-  - damage{a=10;pi=true;ii=true} @EIC{a=120;r=8;c=[- isLiving true - isMythicMob true ]}
-
-OpenField_Util_エリアダメージ_MCLove32_Skill_2:
-  Skills:
-  - e:blockMask{b=red_terracotta;d=19} @cone{a=120;r=24;s=32;e=true;mp=4}
-  - e:blockunmask @cone{a=120;r=8;s=16;e=true;mp=4}
-  - delay 19
-  - damage{a=10;pi=true;ii=true} @EIC{a=120;r=16;c=[- isLiving true - isMythicMob true - distance{d=<9} false ]}
-
-OpenField_Util_エリアダメージ_MCLove32_Skill_3:
-  Skills:
-  - e:blockMask{b=red_terracotta;d=19} @cone{a=120;r=24;s=32;e=true;mp=4}
-  - e:blockunmask @cone{a=120;r=16;s=16;e=true;mp=4}
-  - delay 19
-  - damage{a=10;pi=true;ii=true} @EIC{a=120;r=24;c=[- isLiving true - isMythicMob true - distance{d=<17} false ]}
+  - slash{
+    y=1.8;w=4;h=2;mpd=true;a=180;
+    oP=[
+       - effect:particles{p=White_Smoke} 
+    ];roll=<random.-65to245>;
+    oH=[
+      - damage{a=20;pi=true;ii=true;e=GREEN} 
+    ];
+    oS=[
+      - sound{s=block.trial_spawner.ominous_activate;v=0.5;p=2}
+    ];
+    repeat=4;repeati=1} @self
+  - delay 35
+  - projectile{
+    oh=[
+      - damage{a=40;pi=true;ii=true}
+    ];
+    os=[
+      - sound{s=item.trident.thunder;p=1;v=0.5;audience=caster} @self
+      - setVar{var=skill.x;val="<life.l.x>";t=FLOAT} @forward{f=32}
+      - setVar{var=skill.y;val="<life.l.y>";t=FLOAT} @forward{f=32}
+      - setVar{var=skill.z;val="<life.l.z>";t=FLOAT} @forward{f=32}
+      - e:p{p=small_gust;audience=caster;a=1;s=0.1;d=true;dr=true;origin=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
+    ];
+    i=1;vr=3.5;hr=3.5;hp=false;hnp=true;mr=32;md=300;v=8;se=false;
+    conditions=[
+      - isLiving true 
+      - isMythicMob true
+    ]} @forward{f=32}
+    
