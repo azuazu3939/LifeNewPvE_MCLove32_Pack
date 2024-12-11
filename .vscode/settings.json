@@ -8,4 +8,5 @@
     "MythicScribe.enableShortcuts": true,
     "MythicScribe.enableMythicScriptSyntax": true,
     "workbench.colorTheme": "Default Dark Modern",
+    "editor.acceptSuggestionOnEnter": "off",
 }

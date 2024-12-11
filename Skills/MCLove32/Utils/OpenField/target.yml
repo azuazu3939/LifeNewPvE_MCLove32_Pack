@@ -1,0 +1,5 @@
+Utils_Generic_ターゲットランダムプレイヤー_MCLove32:
+  Conditions:
+  - incombat
+  Skills:
+  - setTarget @TTP{sort=RANDOM;limit=1}
