@@ -34,6 +34,6 @@ OpenField_Util_い_MCLove32_Skills:
       - pl{p=flame;a=1;fo=true}
       - delay 30
       - pl{p=flame;a=1;fo=true} 
-      - damage{a=10;pi=true;ii=true} @EIL{r=2;fo=true}
+      - damage{a=10;pi=true;ii=true} @EIL{r=3}
     ];
     fcm=ALWAYS} @TL
