@@ -40,4 +40,4 @@ OpenField_Util_い_MCLove32_Skills:
 
 OpenField_Util_い_MCLove32_Skill_Process:
   Skills:
-  - damage{a=10;pi=true;ii=true} @EIL{r=3}
+  - damage{a=10;pi=true;ii=true;fo=true} @EIL{r=3;fo=true}
