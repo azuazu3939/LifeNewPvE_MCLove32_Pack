@@ -35,6 +35,9 @@ OpenField_Util_い_MCLove32_Skills:
       - skill:OpenField_Util_い_MCLove32_Skill_Process{origin=@targetedLoc;delay=30} @Line{r=2}
       - delay 30
       - pl{p=flame;a=1;fo=true} 
+    ];
+    raytraceConditions=[
+      - blocktype{type=air} false
     ]} @TL
   
 OpenField_Util_い_MCLove32_Skill_Process:
