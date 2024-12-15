@@ -287,8 +287,8 @@ OpenField_Enemy_エリミネーター_MCLove32_Skill_Knife_D:
   Skills:
   - projectile{
     os=[
-      - sound{s=item.trident.return;p=1} @self
-      - sound{s=block.grindstone.use;p=2} @self
+      - sound{s=item.trident.return;p=1;v=0.2} @self
+      - sound{s=block.grindstone.use;p=2;v=0.5} @self
     ];
     ot=[
       - e:p{p=crit;a=3;vs=0.5;hs=0.5} @origin
@@ -317,7 +317,7 @@ OpenField_Enemy_エリミネーター_MCLove32_Skill_Knife_N:
     ];
     oh=[
       - damage{a=<caster.damage> * 1.5;ii=true;pi=true}
-      - sound{s=entity.blaze.hurt;p=2;v=0.5} 
+      - sound{s=entity.blaze.hurt;p=2;v=0.25} 
     ];
     conditions=[
       - (isPlayer || faction{f=Guard}) true
@@ -335,7 +335,7 @@ OpenField_Enemy_エリミネーター_MCLove32_Skill_DeathField:
   - delay 60
   - skill{
     s=[
-      - sound{s=entity.wither.break_block;v=0.75} @self
+      - sound{s=entity.wither.break_block;v=0.2} @self
       - shieldbreak{duration=600}
       - damage{a=<caster.damage> * 10;ii=true;pi=true;e=GREEN} @EIR{r=10;c=[ - (isPlayer || faction{f=Guard}) true ]}
     ];repeat=10;repeati=2} @self 
@@ -347,12 +347,12 @@ OpenField_Enemy_エリミネーター_MCLove32_Damaged_Skills:
   - incombat
   Skills:
   - delay 200
-  - sound{s=item.totem.use;p=2;v=0.5} @self
+  - sound{s=item.totem.use;p=2;v=0.1} @self
   - delay 10
-  - sound{s=item.totem.use;p=2;v=0.5} @self
+  - sound{s=item.totem.use;p=2;v=0.1} @self
   - delay 10
   - teleport @T{c=[ - (isPlayer || faction{f=Guard}) true - ]} ?targetwithin{d=64}
-  - sound{s=item.totem.use;p=2;v=0.5} @self
+  - sound{s=item.totem.use;p=2;v=0.1} @self
   - delay 40
   - skill:OpenField_Enemy_エリミネーター_MCLove32_Damaged_Skills_Process{repeat=2;repeatI=30}
   - delay 10
@@ -360,12 +360,12 @@ OpenField_Enemy_エリミネーター_MCLove32_Damaged_Skills:
 
 OpenField_Enemy_エリミネーター_MCLove32_Damaged_Skills_Process:
   Skills:
-  - sound{s=item.totem.use;p=2} @self
-  - sound{s=item.totem.use;p=2;v=0.5} @self
+  - sound{s=item.totem.use;p=2;v=0.2} @self
+  - sound{s=item.totem.use;p=2;v=0.1} @self
   - damage{a=<caster.damage>;ii=true;pi=true;e=GREEN} @EIR{r=10;c=[ - (isPlayer || faction{f=Guard}) true ]}
   - delay 5
-  - sound{s=item.totem.use;p=2} @self
-  - sound{s=item.totem.use;p=2;v=0.5} @self
+  - sound{s=item.totem.use;p=2;v=0.2} @self
+  - sound{s=item.totem.use;p=2;v=0.1} @self
   - damage{a=<caster.damage> * 1.25;ii=true;pi=true;e=GREEN} @EIR{r=10;c=[ - (isPlayer || faction{f=Guard}) true ]}
 
 OpenField_Enemy_モフィモス_MCLove32_Skills: 
