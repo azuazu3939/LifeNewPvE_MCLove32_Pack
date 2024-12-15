@@ -13,4 +13,4 @@ OpenField_Util_エンチャントプロテクター_MCLove32_Skills:
 
 OpenField_Util_あ_MCLove32_Skills:
   Skills:
-  - e:p{p=witch;a=1;s=0.5;d=true;dr=true;dir=@Sphere{r=3;points=64;fo=5;cpitch=0}} @Sphere{r=3;points=64;fo=5;cpitch=0}
+  - e:p{p=witch;a=1;s=0.5;fo=true;d=true;dr=true;dir=@forward{fo=true;lockpitch=true}} @Sphere{r=3;points=64;fo=5;cpitch=0}
