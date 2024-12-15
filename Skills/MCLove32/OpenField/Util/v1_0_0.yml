@@ -37,4 +37,5 @@ OpenField_Util_い_MCLove32_Skills:
       - pl{p=flame;a=1} @origin
       - delay 30
       - pl{p=flame;a=1} @origin
-    ]} @TL
+    ];
+    fcm=ALWAYS} @TL
