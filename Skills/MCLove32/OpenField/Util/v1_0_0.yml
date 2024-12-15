@@ -34,8 +34,8 @@ OpenField_Util_い_MCLove32_Skills:
       - damage{a=10;pi=true;ii=true}
     ];
     ls=[
-      - pl{p=flame;a=1} @origin
+      - pl{p=flame;a=1}
       - delay 30
-      - pl{p=flame;a=1} @origin
+      - pl{p=flame;a=1} 
     ];
     fcm=ALWAYS} @TL
