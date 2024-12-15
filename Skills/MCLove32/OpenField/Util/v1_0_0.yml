@@ -23,5 +23,5 @@ OpenField_Util_あ_MCLove32_Skill_Start:
 
 OpenField_Util_あ_MCLove32_Skill_Process:
   Skills:
-  - setVar{var=skill.speed;val="<skill.var.radius> * 0.25";t=FLOAT} @self
+  - setVar{var=skill.speed;val="<skill.var.radius> * 0.1";t=FLOAT} @self
   - e:p{p=end_rod;a=1;s=<skill.var.speed>;fo=true;d=true;dr=true;dir=@origin} @Sphere{r=<skill.var.radius>;points=128;e=true}
