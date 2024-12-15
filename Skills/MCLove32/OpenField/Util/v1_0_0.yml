@@ -34,7 +34,7 @@ OpenField_Util_い_MCLove32_Skills:
 OpenField_Util_い_MCLove32_Skill_ray:
   Skills:
   - pl{p=flame;a=1;fo=true} 
-  - skill:OpenField_Util_い_MCLove32_Skill_Process{origin=@targetedLoc;delay=30} @Line{r=4;fo=true}
+  - skill:OpenField_Util_い_MCLove32_Skill_Process{origin=@targetedLoc;delay=30} @Line{r=4}
   - delay 30
   - pl{p=flame;a=1;fo=true} 
 
