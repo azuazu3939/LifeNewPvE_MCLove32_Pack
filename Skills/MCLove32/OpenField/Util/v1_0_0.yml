@@ -14,7 +14,7 @@ OpenField_Util_エンチャントプロテクター_MCLove32_Skills:
 OpenField_Util_あ_MCLove32_Skills:
   Skills:
   - setVar{var=skill.radius;val="2";t=INTEGER} @self
-  - setVar{var=skill.radius;val="<skill.var.radius> + 2";t=INTEGER;repeat=2;repeati=20;delay=20} @self
+  - setVar{var=skill.radius;val="<skill.var.radius> + 1";t=INTEGER;repeat=2;repeati=20;delay=20} @self
   - skill:OpenField_Util_あ_MCLove32_Skill_Start{repeat=15;repeati=5;origin=@forward{f=<skill.var.radius>;lockpitch=true}} @forward{f=<skill.var.radius>;lockpitch=true}
 
 OpenField_Util_あ_MCLove32_Skill_Start:
