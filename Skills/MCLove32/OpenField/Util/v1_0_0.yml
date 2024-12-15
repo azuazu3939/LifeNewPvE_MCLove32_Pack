@@ -25,3 +25,16 @@ OpenField_Util_あ_MCLove32_Skill_Process:
   Skills:
   - setVar{var=skill.speed;val="<skill.var.radius> * 0.1";t=FLOAT} @self
   - e:p{p=end_rod;a=1;s=<skill.var.speed>;fo=true;d=true;dr=true;dir=@origin} @Sphere{r=<skill.var.radius>;points=128;e=true}
+
+
+OpenField_Util_い_MCLove32_Skills:
+  Skills:
+  - raytrace{
+      es=[
+        - damage{a=10;pi=true;ii=true}
+      ];
+      ls=[
+        - pl{p=flame;a=1} @origin
+        - delay 30
+        - pl{p=flame;a=1} @origin
+      ]} @TL

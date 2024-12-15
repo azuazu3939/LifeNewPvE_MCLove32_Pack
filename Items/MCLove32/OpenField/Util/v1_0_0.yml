@@ -41,3 +41,15 @@ OpenField_Util_あ_MCLove32:
   Group: 'Sub-Weapon'
   Skills:
   - skill:OpenField_Util_あ_MCLove32_Skills @self ~onUse
+
+OpenField_Util_い_MCLove32:
+  Id: stick
+  Display: "&fあ"
+  Lore: []
+  Model: 10000
+  Options:
+    ItemVersion: 1
+    Unbreakable: true 
+  Group: 'Sub-Weapon'
+  Skills:
+  - skill:OpenField_Util_い_MCLove32_Skills @self ~onUse
