@@ -15,16 +15,12 @@ OpenField_Util_あ_MCLove32_Skills:
   Skills:
   - setVar{var=skill.radius;val="4";t=INTEGER} @self
   - setVar{var=skill.radius;val="<skill.var.radius> + 2";t=INTEGER;repeat=2;repeati=20;delay=20} @self
-  - skill:OpenField_Util_あ_MCLove32_Skill_Repeat{repeat=5;repeati=10} @self
-
-OpenField_Util_あ_MCLove32_Skill_Repeat:
-  Skills:
-  - skill:OpenField_Util_あ_MCLove32_Skill_Start{radius=<skill.var.radius>}
+  - skill:OpenField_Util_あ_MCLove32_Skill_Start{repeat=8;repeati=10} @self
 
 OpenField_Util_あ_MCLove32_Skill_Start:
   Skills:
-  - skill:OpenField_Util_あ_MCLove32_Skill_Process{origin=@forward{f=<skill.radius>;lockpitch=true}} @forward{f=<skill.radius>;lockpitch=true}
+  - skill:OpenField_Util_あ_MCLove32_Skill_Process{origin=@forward{f=<skill.var.radius>;lockpitch=true}} @forward{f=<skill.var.radius>;lockpitch=true}
 
 OpenField_Util_あ_MCLove32_Skill_Process:
   Skills: 
-  - e:p{p=end_rod;a=1;s=0.5;fo=true;d=true;dr=true;dir=@origin} @Sphere{r=<skill.radius>;points=128;e=true}
+  - e:p{p=end_rod;a=1;s=0.5;fo=true;d=true;dr=true;dir=@origin} @Sphere{r=<skill.var.radius>;points=128;e=true}
