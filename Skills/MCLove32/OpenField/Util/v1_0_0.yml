@@ -30,11 +30,11 @@ OpenField_Util_あ_MCLove32_Skill_Process:
 OpenField_Util_い_MCLove32_Skills:
   Skills:
   - raytrace{
-      es=[
-        - damage{a=10;pi=true;ii=true}
-      ];
-      ls=[
-        - pl{p=flame;a=1} @origin
-        - delay 30
-        - pl{p=flame;a=1} @origin
-      ]} @TL
+    es=[
+      - damage{a=10;pi=true;ii=true}
+    ];
+    ls=[
+      - pl{p=flame;a=1} @origin
+      - delay 30
+      - pl{p=flame;a=1} @origin
+    ]} @TL
