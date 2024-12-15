@@ -15,7 +15,7 @@ OpenField_Util_あ_MCLove32_Skills:
   Skills:
   - setVar{var=skill.radius;val="2";t=INTEGER} @self
   - setVar{var=skill.radius;val="<skill.var.radius> + 2";t=INTEGER;repeat=2;repeati=20;delay=20} @self
-  - skill:OpenField_Util_あ_MCLove32_Skill_Start{repeat=8;repeati=10;fo=@forward{f=<skill.var.radius>;lockpitch=true}} @forward{f=<skill.var.radius>;lockpitch=true}
+  - skill:OpenField_Util_あ_MCLove32_Skill_Start{repeat=8;repeati=10;origin=@forward{f=<skill.var.radius>;lockpitch=true}} @forward{f=<skill.var.radius>;lockpitch=true}
 
 OpenField_Util_あ_MCLove32_Skill_Start:
   Skills:
