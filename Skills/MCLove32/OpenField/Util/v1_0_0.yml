@@ -47,7 +47,7 @@ OpenField_Util_い_MCLove32_Skills:
 
 OpenField_Util_い_MCLove32_Skills_Start:
   Skills:
-  - skill:OpenField_Util_い_MCLove32_Skill_ray{fo=true} @selfLocation{fo=-15}
+  - skill:OpenField_Util_い_MCLove32_Skill_ray{fo=true} @origin
 
 OpenField_Util_い_MCLove32_Skill_ray:
   Skills:
