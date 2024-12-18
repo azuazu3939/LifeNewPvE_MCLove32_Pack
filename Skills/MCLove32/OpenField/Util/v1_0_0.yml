@@ -112,7 +112,7 @@ OpenField_Util_い_MCLove32_Skills_Start_4:
 OpenField_Util_い_MCLove32_Skills_Start_Remove:
   Cooldown: 1
   Skills:
-  - tagremove{t=invert} @self
+  - removetag{t=invert} @self
 
 OpenField_Util_い_MCLove32_Skill_ray:
   Skills:
