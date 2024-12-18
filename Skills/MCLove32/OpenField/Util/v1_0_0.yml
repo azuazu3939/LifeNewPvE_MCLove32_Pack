@@ -56,8 +56,12 @@ OpenField_Util_い_MCLove32_Skills_Start_1:
     s=[
       - auraRemove{n=OpenField_Util_い_MCLove32_Skills_1} @self
       - o{p=360;i=1;t=200;r=15;hp=true;hnp=false;
-        ot=OpenField_Util_い_MCLove32_Skills_Start;sp=100;oy=2;reverse=true;
-        n=OpenField_Util_い_MCLove32_Skills_1;delay=4} @self
+        ot=OpenField_Util_い_MCLove32_Skills_Startt_1;sp=100;oy=2;reverse=true;
+        n=OpenField_Util_い_MCLove32_Skills_1;delay=4;
+        os=[
+          - delay 100
+          - addtag{t=invert} @self
+        ]} @self
       - skill:OpenField_Util_い_MCLove32_Skills_Start_Remove{delay=2}
     ];cd=1} @self ?hasTag{t=invert}
   
@@ -70,8 +74,12 @@ OpenField_Util_い_MCLove32_Skills_Start_2:
     s=[
       - auraRemove{n=OpenField_Util_い_MCLove32_Skills_2} @self
       - o{p=360;i=1;t=200;r=15;hp=true;hnp=false;
-        ot=OpenField_Util_い_MCLove32_Skills_Start;sp=190;oy=2;reverse=true;
-        n=OpenField_Util_い_MCLove32_Skills_2;delay=4} @self
+        ot=OpenField_Util_い_MCLove32_Skills_Startt_2;sp=190;oy=2;reverse=true;
+        n=OpenField_Util_い_MCLove32_Skills_2;delay=4;
+        os=[
+          - delay 100
+          - addtag{t=invert} @self
+        ]} @self
       - skill:OpenField_Util_い_MCLove32_Skills_Start_Remove{delay=2}
     ];cd=1} @self ?hasTag{t=invert}
 
@@ -83,8 +91,12 @@ OpenField_Util_い_MCLove32_Skills_Start_3:
     s=[
       - auraRemove{n=OpenField_Util_い_MCLove32_Skills_3} @self
       - o{p=360;i=1;t=200;r=15;hp=true;hnp=false;
-        ot=OpenField_Util_い_MCLove32_Skills_Start;sp=280;oy=2;reverse=true;
-        n=OpenField_Util_い_MCLove32_Skills_3;delay=4} @self
+        ot=OpenField_Util_い_MCLove32_Skills_Startt_3;sp=280;oy=2;reverse=true;
+        n=OpenField_Util_い_MCLove32_Skills_3;delay=4;
+        os=[
+          - delay 100
+          - addtag{t=invert} @self
+        ]} @self
       - skill:OpenField_Util_い_MCLove32_Skills_Start_Remove{delay=2}
     ];cd=1} @self ?hasTag{t=invert}
 
@@ -96,8 +108,12 @@ OpenField_Util_い_MCLove32_Skills_Start_4:
     s=[
       - auraRemove{n=OpenField_Util_い_MCLove32_Skills_4} @self
       - o{p=360;i=1;t=200;r=15;hp=true;hnp=false;
-        ot=OpenField_Util_い_MCLove32_Skills_Start;sp=10;oy=2;reverse=true;
-        n=OpenField_Util_い_MCLove32_Skills_4;delay=4} @self
+        ot=OpenField_Util_い_MCLove32_Skills_Start_4;sp=10;oy=2;reverse=true;
+        n=OpenField_Util_い_MCLove32_Skills_4;delay=4;
+        os=[
+          - delay 100
+          - addtag{t=invert} @self
+        ]} @self
       - skill:OpenField_Util_い_MCLove32_Skills_Start_Remove{delay=2}
     ];cd=1} @self ?hasTag{t=invert}
 
