@@ -57,7 +57,7 @@ OpenField_Util_い_MCLove32_Skills_Start_1:
   - o{p=360;i=1;t=200;r=15;hp=true;hnp=false;
     ot=OpenField_Util_い_MCLove32_Skills_Start;sp=<skill.var.sp>;oy=2;
     sp=0;n=OpenField_Util_い_MCLove32_Skills_1} @self ?hasTag{t=invert}
-  - skill:OpenField_Util_い_MCLove32_Skills_Start_Remove{delay=1}
+  - skill:OpenField_Util_い_MCLove32_Skills_Start_Remove{delay=1} ?hasTag{t=invert}
 
 OpenField_Util_い_MCLove32_Skills_Start_2:
   Skills:
@@ -69,7 +69,7 @@ OpenField_Util_い_MCLove32_Skills_Start_2:
   - o{p=360;i=1;t=200;r=15;hp=true;hnp=false;
     ot=OpenField_Util_い_MCLove32_Skills_Start;sp=<skill.var.sp>;oy=2;
     n=OpenField_Util_い_MCLove32_Skills_2} @self ?hasTag{t=invert}
-  - skill:OpenField_Util_い_MCLove32_Skills_Start_Remove{delay=1}
+  - skill:OpenField_Util_い_MCLove32_Skills_Start_Remove{delay=1} ?hasTag{t=invert}
 
 OpenField_Util_い_MCLove32_Skills_Start_3:
   Skills:
@@ -81,7 +81,7 @@ OpenField_Util_い_MCLove32_Skills_Start_3:
   - o{p=360;i=1;t=200;r=15;hp=true;hnp=false;
     ot=OpenField_Util_い_MCLove32_Skills_Start;sp=<skill.var.sp>;oy=2;
     n=OpenField_Util_い_MCLove32_Skills_3} @self ?hasTag{t=invert}
-  - skill:OpenField_Util_い_MCLove32_Skills_Start_Remove{delay=1}
+  - skill:OpenField_Util_い_MCLove32_Skills_Start_Remove{delay=1} ?hasTag{t=invert}
 
 OpenField_Util_い_MCLove32_Skills_Start_4:
   Skills:
@@ -93,7 +93,7 @@ OpenField_Util_い_MCLove32_Skills_Start_4:
   - o{p=360;i=1;t=200;r=15;hp=true;hnp=false;
     ot=OpenField_Util_い_MCLove32_Skills_Start;sp=<skill.var.sp>;oy=2;
     n=OpenField_Util_い_MCLove32_Skills_4} @self ?hasTag{t=invert}
-  - skill:OpenField_Util_い_MCLove32_Skills_Start_Remove{delay=1}
+  - skill:OpenField_Util_い_MCLove32_Skills_Start_Remove{delay=1} ?hasTag{t=invert}
 
 OpenField_Util_い_MCLove32_Skills_Start_Remove:
   Cooldown: 1
