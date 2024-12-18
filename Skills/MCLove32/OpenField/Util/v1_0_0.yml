@@ -29,7 +29,25 @@ OpenField_Util_あ_MCLove32_Skill_Process:
 
 OpenField_Util_い_MCLove32_Skills:
   Skills:
-  - skill:OpenField_Util_い_MCLove32_Skill_ray @TL{d=30}
+  - o{p=32;i=1;t=200;r=15;hp=true;hnp=false;
+    ot=OpenField_Util_い_MCLove32_Skills_Start;
+    sp=0;n=OpenField_Util_い_MCLove32_Skills_1} @self
+
+  - o{p=32;i=1;t=200;r=15;hp=true;hnp=false;
+    ot=OpenField_Util_い_MCLove32_Skills_Start;sp=8;
+    n=OpenField_Util_い_MCLove32_Skills_2} @self
+
+  - o{p=32;i=1;t=200;r=15;hp=true;hnp=false;
+    ot=OpenField_Util_い_MCLove32_Skills_Start;sp=16;
+    n=OpenField_Util_い_MCLove32_Skills_3} @self
+
+  - o{p=32;i=1;t=200;r=15;hp=true;hnp=false;
+    ot=OpenField_Util_い_MCLove32_Skills_Start;sp=24;
+    n=OpenField_Util_い_MCLove32_Skills_4} @self
+
+OpenField_Util_い_MCLove32_Skills_Start:
+  Skills:
+  - skill:OpenField_Util_い_MCLove32_Skill_ray{fo=true;origin=@selfLocation{fo=-15}} @origin
 
 OpenField_Util_い_MCLove32_Skill_ray:
   Skills:
