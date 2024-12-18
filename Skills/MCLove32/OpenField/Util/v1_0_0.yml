@@ -29,19 +29,19 @@ OpenField_Util_あ_MCLove32_Skill_Process:
 
 OpenField_Util_い_MCLove32_Skills:
   Skills:
-  - o{p=32;i=1;t=200;r=15;hp=true;hnp=false;
+  - o{p=360;i=1;t=200;r=15;hp=true;hnp=false;
     ot=OpenField_Util_い_MCLove32_Skills_Start;
     sp=0;n=OpenField_Util_い_MCLove32_Skills_1} @self
 
-  - o{p=32;i=1;t=200;r=15;hp=true;hnp=false;
+  - o{p=360;i=1;t=200;r=15;hp=true;hnp=false;
     ot=OpenField_Util_い_MCLove32_Skills_Start;sp=8;
     n=OpenField_Util_い_MCLove32_Skills_2} @self
 
-  - o{p=32;i=1;t=200;r=15;hp=true;hnp=false;
+  - o{p=360;i=1;t=200;r=15;hp=true;hnp=false;
     ot=OpenField_Util_い_MCLove32_Skills_Start;sp=16;
     n=OpenField_Util_い_MCLove32_Skills_3} @self
 
-  - o{p=32;i=1;t=200;r=15;hp=true;hnp=false;
+  - o{p=360;i=1;t=200;r=15;hp=true;hnp=false;
     ot=OpenField_Util_い_MCLove32_Skills_Start;sp=24;
     n=OpenField_Util_い_MCLove32_Skills_4} @self
 
@@ -52,9 +52,7 @@ OpenField_Util_い_MCLove32_Skills_Start:
 OpenField_Util_い_MCLove32_Skill_ray:
   Skills:
   - pl{p=flame;a=1;fo=true;db=0.5} 
-  - skill:OpenField_Util_い_MCLove32_Skill_Process{origin=@targetedLoc;delay=30} @Line{r=4}
-  - delay 30
-  - pl{p=Sonic_Boom;a=1;fo=true;db=0.5} 
+  - skill:OpenField_Util_い_MCLove32_Skill_Process{origin=@targetedLoc} @Line{r=4}
 
 OpenField_Util_い_MCLove32_Skill_Process:
   Skills:
