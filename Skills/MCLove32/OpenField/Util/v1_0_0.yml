@@ -61,6 +61,7 @@ OpenField_Util_い_MCLove32_Skills_Start_1:
       - o{p=360;i=1;t=200;r=15;hp=true;hnp=false;
         ot=OpenField_Util_い_MCLove32_Skills_Start;sp=<skill.var.sp>;oy=2;reverse=true;
         n=OpenField_Util_い_MCLove32_Skills_1;delay=4} @self
+      - message{m="<skill.var.sp>"} @self
       - skill:OpenField_Util_い_MCLove32_Skills_Start_Remove{delay=2}
     ];cd=1} @self ?hasTag{t=invert}
   
@@ -78,6 +79,7 @@ OpenField_Util_い_MCLove32_Skills_Start_2:
       - o{p=360;i=1;t=200;r=15;hp=true;hnp=false;
         ot=OpenField_Util_い_MCLove32_Skills_Start;sp=<skill.var.sp>;oy=2;reverse=true;
         n=OpenField_Util_い_MCLove32_Skills_2;delay=4} @self
+      - message{m="<skill.var.sp>"} @self
       - skill:OpenField_Util_い_MCLove32_Skills_Start_Remove{delay=2}
     ];cd=1} @self ?hasTag{t=invert}
 
@@ -94,6 +96,7 @@ OpenField_Util_い_MCLove32_Skills_Start_3:
       - o{p=360;i=1;t=200;r=15;hp=true;hnp=false;
         ot=OpenField_Util_い_MCLove32_Skills_Start;sp=<skill.var.sp>;oy=2;reverse=true;
         n=OpenField_Util_い_MCLove32_Skills_3;delay=4} @self
+      - message{m="<skill.var.sp>"} @self
       - skill:OpenField_Util_い_MCLove32_Skills_Start_Remove{delay=2}
     ];cd=1} @self ?hasTag{t=invert}
 
@@ -110,6 +113,7 @@ OpenField_Util_い_MCLove32_Skills_Start_4:
       - o{p=360;i=1;t=200;r=15;hp=true;hnp=false;
         ot=OpenField_Util_い_MCLove32_Skills_Start;sp=<skill.var.sp>;oy=2;reverse=true;
         n=OpenField_Util_い_MCLove32_Skills_4;delay=4} @self
+      - message{m="<skill.var.sp>"} @self
       - skill:OpenField_Util_い_MCLove32_Skills_Start_Remove{delay=2}
     ];cd=1} @self ?hasTag{t=invert}
 
