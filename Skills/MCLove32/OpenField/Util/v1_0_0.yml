@@ -30,19 +30,19 @@ OpenField_Util_あ_MCLove32_Skill_Process:
 OpenField_Util_い_MCLove32_Skills:
   Skills:
   - o{p=360;i=1;t=200;r=15;hp=true;hnp=false;
-    ot=OpenField_Util_い_MCLove32_Skills_Start;oy=2;
+    ot=OpenField_Util_い_MCLove32_Skills_Start_1;oy=2;
     sp=0;n=OpenField_Util_い_MCLove32_Skills_1} @self
 
   - o{p=360;i=1;t=200;r=15;hp=true;hnp=false;
-    ot=OpenField_Util_い_MCLove32_Skills_Start;sp=90;oy=2;
+    ot=OpenField_Util_い_MCLove32_Skills_Start_2;sp=90;oy=2;
     n=OpenField_Util_い_MCLove32_Skills_2} @self
 
   - o{p=360;i=1;t=200;r=15;hp=true;hnp=false;
-    ot=OpenField_Util_い_MCLove32_Skills_Start;sp=180;oy=2;
+    ot=OpenField_Util_い_MCLove32_Skills_Start_3;sp=180;oy=2;
     n=OpenField_Util_い_MCLove32_Skills_3} @self
 
   - o{p=360;i=1;t=200;r=15;hp=true;hnp=false;
-    ot=OpenField_Util_い_MCLove32_Skills_Start;sp=270;oy=2;
+    ot=OpenField_Util_い_MCLove32_Skills_Start_4;sp=270;oy=2;
     n=OpenField_Util_い_MCLove32_Skills_4} @self
   - delay 100
   - addtag{t=invert} @self
