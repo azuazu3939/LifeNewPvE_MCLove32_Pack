@@ -56,3 +56,4 @@ Endless_Enemy_ウィウ_MCLove32:
   - attacker
   - players
   Skills:
+  - cmd{c="mlg <target.name> cooked_chicken 1 0.5"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 
