@@ -1,0 +1,58 @@
+Endless_Enemy_Base_MCLove32:
+  Type: zombie
+  Display: ""
+  Faction: Enemy
+  Options:
+    Collidable: true 
+    DigOutOfGround: true 
+    FollowRange: 8
+    Despawn: true 
+    KnockbackResistance: 0
+    NoDamageTicks: 0
+    VisibleByDefault: true 
+    NoAI: false 
+    PreventSlimeSplit: true
+    NoGravity: false
+    PreventMobKillDrops: true 
+    PreventRandomEquipment: true
+    PreventVanillaDamage: true 
+    PreventSunburn: true
+    PreventJockeyMounts: true
+    Invisible: false
+    AttackSpeed: 1
+    Scale: 1
+    MovementSpeed: 0.15
+    Silent: false
+  Modules:
+    ThreatTable: true
+  Skills:
+
+Endless_Enemy_ウィウ_MCLove32:
+  Template: Endless_Enemy_Base_MCLove32
+  Type: wither_skeleton
+  Display: "&fウィウ"
+  Health: 10
+  Damage: 1
+  Faction: Wolf
+  Armor: 1
+  DamageModifiers:
+  - SUFFOCATION 0
+  - FALL 0
+  - RED 0.8
+  - YELLOW 1
+  - BLUE 1.2
+  - GREEN 1
+  Equipment:
+  - bow HAND
+  Options:
+    FollowRange: 12
+    KnockbackResistance: 0.35
+    Scale: 1.5
+    Silent: false 
+  Drops:
+  - exp 50
+  AITargetSelectors:
+  - clear
+  - attacker
+  - players
+  Skills:
