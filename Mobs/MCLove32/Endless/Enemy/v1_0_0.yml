@@ -54,7 +54,6 @@ Endless_Enemy_ウィウ_MCLove32:
     NoGravity: false
     PreventMobKillDrops: true 
     PreventRandomEquipment: true
-    PreventVanillaDamage: true 
     PreventSunburn: true
     PreventJockeyMounts: true
     Invisible: false
