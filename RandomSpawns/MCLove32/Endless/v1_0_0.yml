@@ -7,5 +7,5 @@ Endless_Enemy_ウィウ_MCLove32_Spawn:
   Priority: 50
   Conditions:
   - mobsinworld{a=<2000} true
-  - blocktype{type=coarse_dirt} true  
+  - blocktype{type=stone} false 
   - region{r=spawn} false 
