@@ -5,17 +5,7 @@ Endless_Enemy_ウィウ_MCLove32_Spawn:
   PositionType: LAND
   Chance: 1
   Priority: 5
-  Cooldown: 1
   Conditions:
-  - mobsinworld{a=<2000} true 
-  - blocktype{type=water,air} false 
-  - blocktype{
-    type=
-    grass_block,
-    moss_block,
-    snow_block,
-    snow,
-    podzol,
-    coarse_dirt
-    } true  
+  - mobsinworld{a=<2000} true
+  - blocktype{type=coarse_dirt} true  
   - region{r=spawn} false 
