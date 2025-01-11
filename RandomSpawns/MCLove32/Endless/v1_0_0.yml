@@ -3,7 +3,7 @@ Endless_Enemy_ウィウ_MCLove32_Spawn:
   Worlds: The_Endless
   Action: ADD 
   PositionType: LAND
-  Chance: 0.25
+  Chance: 1
   Priority: 5
   Cooldown: 1
   Conditions:
