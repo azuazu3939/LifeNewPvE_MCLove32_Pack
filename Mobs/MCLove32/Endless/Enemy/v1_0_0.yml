@@ -69,7 +69,7 @@ Endless_Enemy_ウィウ_MCLove32:
   - exp 50
   AIGoalSelectors:
   - clear
-  - rangedAttack{speed=1.5;smax=40;amin=10;radius=20}
+  - rangedAttack{speed=1.5;smax=40;amin=10;radius=24}
   - fleeplayers{d=10;s=1.5;ss=1.2}
   AITargetSelectors:
   - clear
