@@ -59,7 +59,7 @@ Endless_Enemy_ウィウ_MCLove32:
     Invisible: false
     AttackSpeed: 3
     MovementSpeed: 0.15
-    FollowRange: 12
+    FollowRange: 24
     KnockbackResistance: 0.35
     Scale: 1.5
     Silent: false 
@@ -67,6 +67,10 @@ Endless_Enemy_ウィウ_MCLove32:
     ThreatTable: true
   Drops:
   - exp 50
+  AIGoalSelectors:
+  - clear
+  - rangedAttack{speed=10;smax=10;amin=5;radius=20}
+  - fleeplayers{d=10;s=4;ss=2}
   AITargetSelectors:
   - clear
   - attacker
