@@ -4,7 +4,8 @@ Endless_Enemy_ウィウ_MCLove32_Spawn:
   Action: ADD 
   PositionType: LAND
   Chance: 1
-  Priority: 50
+  Priority: 5
+  Cooldown: 5
   Conditions:
   - mobsinworld{a=<2000} true
   - blocktype{type=stone} false 
