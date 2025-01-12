@@ -24,7 +24,7 @@ PVE_Util_トーチフラワーS_100_MCLove32:
     SkyLight: 15
     Scale: 1,1,1
   Skills:
-  - setscale{s=0.75;d=100} @self ~onSpawn 
+  - setscale{s=1;d=100} @self ~onSpawn 
 
 PVE_Util_トーチフラワーS_50_MCLove32:
   Type: block_display
@@ -34,4 +34,4 @@ PVE_Util_トーチフラワーS_50_MCLove32:
     SkyLight: 15
     Scale: 0.5,0.5,0.5
   Skills:
-  - setscale{s=0.75;d=100} @self ~onSpawn 
+  - setscale{s=1;d=100} @self ~onSpawn 
