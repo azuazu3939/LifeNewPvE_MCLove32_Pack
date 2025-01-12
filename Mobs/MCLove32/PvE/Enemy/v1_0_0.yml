@@ -3,7 +3,7 @@ PVE_Enemy_トーチフラワーSeed_MCLove32:
   Type: cave_spider
   Display: "&fトーチフラワーSeed"
   Health: 300
-  Damage: 5
+  Damage: 6
   Armor: 0
   Options:
     FollowRange: 24
