@@ -22,6 +22,6 @@ PVE_Enemy_トーチフラワーSeed_MCLove32_Skill_1_Run:
       - healpercent{m=0.01} @self
     ];
     os=[
-      - modifyprojectile{t=VELOCITY;v=4;a=SET;delay=8} @self
+      - modifyprojectile{t=VELOCITY;v=4;a=SET;delay=10} @self
     ];
     b=MOB;mob=PVE_Util_トーチフラワーS_100_MCLove32;bmd=true;byo=0;bfo=0;bspin=4} @T
