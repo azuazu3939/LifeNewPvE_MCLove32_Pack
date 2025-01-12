@@ -13,7 +13,7 @@ PVE_Enemy_トーチフラワーSeed_MCLove32_Skill_1:
 
 PVE_Enemy_トーチフラワーSeed_MCLove32_Skill_1_Run:
   Skills:
-  - missile{v=5;i=1;mr=30;md=120;vr=1.5;hr=1.5;vn=2;hn=2;syo=0;hs=true;in=20;
+  - missile{v=5;i=1;mr=30;md=60;vr=1.5;hr=1.5;vn=2;hn=2;syo=0;hs=true;in=20;
     oh=[
       - damage{a=10;pi=true;ii=true;e=GREEN} 
       - potion{t=POISON;l=1;p=false;d=60}
