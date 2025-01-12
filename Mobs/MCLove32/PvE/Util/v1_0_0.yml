@@ -1,0 +1,37 @@
+PVE_Util_トーチフラワー_100_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: torchflower
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 1,1,1
+  Skills:
+
+PVE_Util_トーチフラワー_50_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: torchflower
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 0.5,0.5,0.5
+  Skills:
+
+PVE_Util_トーチフラワーS_100_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: torchflower
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 1,1,1
+  Skills:
+  - setscale{s=0.75;d=100} @self ~onSpawn 
+
+PVE_Util_トーチフラワーS_50_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: torchflower
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 0.5,0.5,0.5
+  Skills:
+  - setscale{s=0.75;d=100} @self ~onSpawn 

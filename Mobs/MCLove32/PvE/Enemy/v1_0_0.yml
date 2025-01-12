@@ -1,0 +1,32 @@
+PVE_Enemy_トーチフラワーSeed_MCLove32:
+  Template: OpenField_Enemy_Abstract_Generic
+  Type: cave_spider
+  Display: "&fトーチフラワーSeed"
+  Health: 300
+  Damage: 5
+  Armor: 0
+  Options:
+    FollowRange: 24
+    KnockbackResistance: 1
+    Scale: 1.5
+  DamageModifiers:
+  - SUFFOCATION 0
+  - FALL 0
+  - RED 1.2
+  - NONE 0.8
+  - GREEN 1
+  - YELLOW 1.2
+  - BLUE 0.8
+  AITargetSelectors:
+  - clear
+  - attacker
+  - players 
+  Drops:
+  - exp 60
+  AIGoalSelectors:
+  - randomstroll
+  - meleeattack
+  - gotoparent
+  - gotoowner
+  Skills:
+  - skill:PVE_Enemy_トーチフラワーSeed_MCLove32_Skills @self ~onEntercombat 
