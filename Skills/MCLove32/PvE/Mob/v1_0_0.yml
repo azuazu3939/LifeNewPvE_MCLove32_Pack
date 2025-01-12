@@ -19,4 +19,4 @@ PVE_Enemy_トーチフラワーSeed_MCLove32_Skill_1_Run:
       - potion{t=POISON;l=1;p=false;d=60}
       - healpercent{m=0.01} @self
     ];
-    b=MOB;mob=PVE_Util_トーチフラワーS_100_MCLove32;bmd=true;byo=0;bfo=0;bspin=4} @forward{lockpitch=true}
+    b=MOB;mob=PVE_Util_トーチフラワーS_100_MCLove32;bmd=true;byo=0;bfo=0;bspin=4} @T
