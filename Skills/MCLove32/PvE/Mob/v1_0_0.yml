@@ -3,7 +3,7 @@ PVE_Enemy_トーチフラワーSeed_MCLove32_Skills:
   Conditions:
   - incombat
   Skills:
-  - skill:PVE_Enemy_トーチフラワーSeed_MCLove32_Skill_1 @self 0.75
+  - skill:PVE_Enemy_トーチフラワーSeed_MCLove32_Skill_1 @self 0.5
   - delay 105
   - skill:PVE_Enemy_トーチフラワーSeed_MCLove32_Skills @self
 
