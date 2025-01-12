@@ -9,7 +9,7 @@ PVE_Enemy_トーチフラワーSeed_MCLove32_Skills:
 
 PVE_Enemy_トーチフラワーSeed_MCLove32_Skill_1:
   Skills:
-  - skill:PVE_Enemy_トーチフラワーSeed_MCLove32_Skill_1_Run{repeat=2;interval=10} @self 
+  - skill:PVE_Enemy_トーチフラワーSeed_MCLove32_Skill_1_Run{repeat=2;repeatI=10} @self 
 
 PVE_Enemy_トーチフラワーSeed_MCLove32_Skill_1_Run:
   Skills:
