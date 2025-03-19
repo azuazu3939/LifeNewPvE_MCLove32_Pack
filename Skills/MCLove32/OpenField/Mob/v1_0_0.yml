@@ -686,4 +686,4 @@ OpenField_Enemy_黒ヤギ_MCLove32_Teleport:
   - setVar{var=skill.x1;val="<caster.l.x> - <target.l.x>";t=FLOAT} @T
   - setVar{var=skill.z1;val="<caster.l.z> - <target.l.z>";t=FLOAT} @T
   - setVar{var=skill.yaw;val="(<skill.var.z1> / <skill.var.x1>) + 180";t=FLOAT} @self
-  - setrot{y=<skill.var.yaw>} @self
+  - look{f=true} @T
