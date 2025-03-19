@@ -660,10 +660,11 @@ OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_1:
   Skills:
   - setVar{var=skill.dmg;val="<caster.damage>";t=FLOAT} @self
   - skill:OpenField_Enemy_黒ヤギ_MCLove32_BUFF @self
+  - look{i=true;fp=true;ho=true} @T
+  - delay 4
   - projectile{
     ot=[
       - teleport @origin
-      - look{fp=true} @T
     ];
     oh=[
       - damage{a=<skill.var.dmg>;pi=true;ii=true}
