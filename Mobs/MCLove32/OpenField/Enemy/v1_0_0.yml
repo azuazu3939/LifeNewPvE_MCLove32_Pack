@@ -797,3 +797,5 @@ OpenField_Enemy_黒ヤギ_MCLove32:
   - skill:OpenField_Enemy_黒ヤギ_MCLove32_EnterCombat @self ~onEntercombat
   - skill:OpenField_Enemy_黒ヤギ_MCLove32_ATTACK @self ~onEntercombat
   - skill:OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_1 @self ~onDamaged 
+  - addtag{t=MIDDLE_HEALTH} @self ~onDamaged <70%
+  - addtag{t=LOW_HEALTH} @self ~onDamaged <40%

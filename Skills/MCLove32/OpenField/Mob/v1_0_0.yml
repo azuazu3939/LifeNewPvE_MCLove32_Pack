@@ -567,6 +567,8 @@ OpenField_Enemy_黒ヤギ_MCLove32_BUFF:
   - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.025";t=FLOAT} @self ?hasTag{t=P3}
   - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.02";t=FLOAT} @self ?hasTag{t=P4}
   - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.015";t=FLOAT} @self ?hasTag{t=P5}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.05";t=FLOAT} @self ?hasTag{t=MIDDLE_HEALTH}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.1";t=FLOAT} @self ?hasTag{t=LOW_HEALTH}
 
 OpenField_Enemy_黒ヤギ_MCLove32_EnterCombat:
   Conditions:
@@ -658,7 +660,11 @@ OpenField_Enemy_黒ヤギ_MCLove32_ATTACK:
   Conditions:
   - incombat
   Skills:
-  - randomskill{s=OpenField_ENEMY_黒ヤギ_MCLove32_ATTACK_1,OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_2} @self
+  - randomskill{
+    s=OpenField_ENEMY_黒ヤギ_MCLove32_ATTACK_1,
+    OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_2,
+    OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_3,
+    OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_4} @self
   - delay <random.100to160>
   - skill:OpenField_Enemy_黒ヤギ_MCLove32_ATTACK @self
 
@@ -704,6 +710,47 @@ OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_2:
       - skill:OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_2_Process @self
     ];
     v=35;syo=0;sfo=0;tyo=25;g=1.5;se=false;sb=true;mr=64;i=1;vr=1.5;hr=1.5} @TL
+
+OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_3:
+  Cooldown: 4
+  Conditions:
+  - incombat
+  - hasTag{t=DOWN} false 
+  - playerwithin{d=24}
+  - targetWithin{d=24} false
+  Skills:
+  - setVar{var=skill.dmg;val="<caster.damage> + 4";t=FLOAT} @self
+  - skill:OpenField_Enemy_黒ヤギ_MCLove32_BUFF @self
+  - look{f=true} @T
+  - projectile{
+    ot=[
+      - teleport @origin
+    ];
+    oh=[
+      - throw{v=4;vy=4}
+      - damage{a=<skill.var.dmg>;pi=true;ii=true}
+    ];
+    v=10;syo=0;sfo=0;se=false;sb=false;mr=32;i=1;vr=3;hr=2.5;hs=true;mdh=10;mch=8;hfs=0.0;md=100} @TL
+
+OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_4:
+  Cooldown: 2
+  Conditions:
+  - incombat
+  - hasTag{t=DOWN} false 
+  - playerwithin{d=24} false 
+  - targetWithin{d=28} false
+  Skills:
+  - potion{t=SLOW;l=10;d=40;p=false} @self
+  - setrot{p=90;repeat=39;repeati=1} @self
+  - heal{a=5;repeat=39;repeati=1} @self
+  - skill:OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_4_Process{repeat=3;repeati=10} @self 
+
+OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_4_Process:
+  Skills:
+  - setvar{var=skill.x;val="<random.float.-5to5>";t=FLOAT} @self 
+  - setvar{var=skill.y;val="<random.float.-5to5>";t=FLOAT} @self 
+  - setvar{var=skill.z;val="<random.float.-5to5>";t=FLOAT} @self 
+  - e:p{p=heart;a=5;s=2;d=true;dr=true;origin=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};fo=true} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
 
 OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_2_Process:
   Skills:
