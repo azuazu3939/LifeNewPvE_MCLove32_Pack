@@ -759,3 +759,40 @@ OpenField_Enemy_ウズラミリィ_MCLove32:
   - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skills @self ~onEntercombat
   - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_1 @self ~onEntercombat
   - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_5 @self ~onEntercombat 
+
+OpenField_Enemy_黒ヤギ_MCLove32:
+  Template: OpenField_Enemy_Base_MCLove32
+  Display: "&f黒ヤギ"
+  Type: sheep
+  Health: 3250
+  Armor: 25
+  Options:
+    NoDamageTicks: 0
+    Silent: true 
+    Scale: 3
+    MovementSpeed: 0.25
+    KnockbackResistance: 1
+    MaxCombatDistance: 40
+    FollowRange: 12
+  DamageModifiers:
+  - SUFFOCATION 0
+  - FALL 0
+  - BLUE 1.2
+  - RED 1.2
+  - GREEN 0.8
+  - YELLOW 0.8
+  Drops:
+  - exp 1000
+  AITargetSelectors:
+  - clear
+  - attacker
+  - players 
+  AIGoalSelectors:
+  - randomstroll
+  - gotoowner
+  - moveTowardsTarget
+  Skills:
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=48} @self ~onEnterCombat
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=12} @self ~onDropCombat
+  - skill:OpenField_Enemy_黒ヤギ_MCLove32_EnterCombat @self ~onEntercombat
+  - skill:OpenField_Enemy_黒ヤギ_MCLove32_ATTACK @self ~onEntercombat

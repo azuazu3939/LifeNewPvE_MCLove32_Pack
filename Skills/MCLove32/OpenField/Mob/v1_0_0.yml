@@ -559,3 +559,85 @@ OpenField_Enemy_ウズラミリィ_MCLove32_Skill_5_Process:
   - setVar{var=skill.ring;val="<skill.var.ring> + 2";t=INTEGER} @self
   - delay 320
   - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_5_Process @self 
+
+OpenField_Enemy_黒ヤギ_MCLove32_EnterCombat:
+  Cooldown: 1
+  Conditions:
+  - incombat
+  - hasTag{t=DOWN} castinstead OpenField_Enemy_黒ヤギ_MCLove32_NEXT
+  Skills:
+  - setVar{var=skill.dmg;val="0";t=FLOAT} @self
+  - setVar{var=skill.break;val="<caster.mhp> / 25";t=FLOAT} @self
+  - ondamaged{auraName=OpenField_Enemy_黒ヤギ_MCLove32_Damaged;d=1200;
+    oh=[ 
+      - setVar{var=skill.dmg;val="<skill.var.dmg> + <skill.var.damage-type>";t=FLOAT} @self
+      - skill:OpenField_Enemy_黒ヤギ_MCLove32_DamagedAndBreak @self
+    ]} @self
+  - addtag{t=P1} @self
+  - addtag{t=P2} @self
+  - addtag{t=P3} @self
+  - addtag{t=P4} @self
+  - addtag{t=P5} @self
+  - o{
+    oe=[
+      - removetag{t=P1} @self
+    ];
+    i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;
+    b=ITEM;mat=DIAMOND;enchanted=true;rd=true;75;sp=0;auraName=OpenField_Enemy_黒ヤギ_MCLove32_Aura1} @self
+  - o{
+    oe=[
+      - removetag{t=P2} @self
+    ];
+    i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;
+    b=ITEM;mat=DIAMOND;enchanted=true;rd=true;75;sp=15;auraName=OpenField_Enemy_黒ヤギ_MCLove32_Aura2} @self
+  - o{
+    oe=[
+      - removetag{t=P3} @self
+    ];
+    i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;
+    b=ITEM;mat=DIAMOND;enchanted=true;rd=true;75;sp=30;auraName=OpenField_Enemy_黒ヤギ_MCLove32_Aura3} @self
+  - o{
+    oe=[
+      - removetag{t=P4} @self
+    ];
+    i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;
+    b=ITEM;mat=DIAMOND;enchanted=true;rd=true;75;sp=45;auraName=OpenField_Enemy_黒ヤギ_MCLove32_Aura4} @self
+  - o{
+    oe=[
+      - removetag{t=P5} @self
+    ];
+    i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;
+    b=ITEM;mat=DIAMOND;enchanted=true;rd=true;75;sp=60;auraName=OpenField_Enemy_黒ヤギ_MCLove32_Aura5} @self
+  - delay 1200
+  - skill:OpenField_Enemy_黒ヤギ_MCLove32_EnterCombat @self
+
+OpenField_Enemy_黒ヤギ_MCLove32_DamagedAndBreak:
+  Conditions:
+  - varrange{var=skill.dmg;val=>skill.break} true
+  Skills:
+  - setVar{var=skill.dmg;val="<skill.var.dmg> - <skill.var.break>";t=FLOAT} @self
+  - setcolor{c=GRAY} @self
+  - auraRemove{aura=OpenField_Enemy_黒ヤギ_MCLove32_Aura5} @self ?!hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura1} ?!hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura2} ?!hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura3} ?!hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura4} ?hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura5}
+  - auraRemove{aura=OpenField_Enemy_黒ヤギ_MCLove32_Aura4} @self ?!hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura1} ?!hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura2} ?!hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura3} ?hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura4} ?hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura5}
+  - auraRemove{aura=OpenField_Enemy_黒ヤギ_MCLove32_Aura3} @self ?!hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura1} ?!hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura2} ?hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura3} ?hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura4} ?hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura5}
+  - auraRemove{aura=OpenField_Enemy_黒ヤギ_MCLove32_Aura2} @self ?!hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura1} ?hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura2} ?hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura3} ?hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura4} ?hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura5}
+  - auraRemove{aura=OpenField_Enemy_黒ヤギ_MCLove32_Aura1} @self ?hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura1} ?hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura2} ?hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura3} ?hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura4} ?hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura5}
+  
+  - skill:OpenField_Enemy_黒ヤギ_MCLove32_Down @self ?hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura1} ?hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura2} ?hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura3} ?hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura4} ?!hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura5}
+
+OpenField_Enemy_黒ヤギ_MCLove32_Down:
+  Skills:
+  - addtag{t=DOWN} @self
+  - stun{t=140} @self
+  - setcolor{c=WHITE} @self
+  - delay 140
+  - setcolor{c=BLACK} @self
+  - removetag{t=DOWN} @self
+
+OpenField_Enemy_黒ヤギ_MCLove32_NEXT:
+  Skills:
+  - delay 20
+  - skill:OpenField_Enemy_黒ヤギ_MCLove32_EnterCombat @self
+
+OpenField_Enemy_黒ヤギ_MCLove32_ATTACK:
+  Skills:
