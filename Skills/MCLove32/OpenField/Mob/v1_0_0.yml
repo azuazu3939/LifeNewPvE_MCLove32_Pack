@@ -561,7 +561,6 @@ OpenField_Enemy_ウズラミリィ_MCLove32_Skill_5_Process:
   - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_5_Process @self 
 
 OpenField_Enemy_黒ヤギ_MCLove32_EnterCombat:
-  Cooldown: 1
   Conditions:
   - incombat
   - hasTag{t=DOWN} castinstead OpenField_Enemy_黒ヤギ_MCLove32_NEXT
