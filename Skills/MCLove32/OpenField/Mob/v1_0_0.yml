@@ -696,7 +696,7 @@ OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_1:
     oe=[
       - removetag{t=ATTACK} @self
     ];
-    v=8;syo=0;sfo=0;mr=12;se=true;i=1;vr=2.5;hr=3;hs=true;mdh=3;mch=3;hfs=0.0} @TL
+    v=8;syo=0;sfo=0;mr=12;se=true;i=1;vr=2.5;hr=3;hs=true;mdh=3;mch=3;hfs=0.0} @T
 
 OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_2:
   Cooldown: 15
@@ -719,7 +719,7 @@ OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_2:
     oe=[
       - skill:OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_2_Process @self
     ];
-    v=35;syo=0;sfo=0;tyo=25;g=1.5;se=false;sb=true;mr=64;i=1;vr=1.5;hr=1.5} @TL
+    v=35;syo=0;sfo=0;tyo=25;g=1.5;se=false;sb=true;mr=64;i=1;vr=1.5;hr=1.5} @T
 
 OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_3:
   Cooldown: 4
@@ -743,9 +743,33 @@ OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_3:
       - damage{a=<skill.var.dmg>;pi=true;ii=true}
     ];
     oe=[
-      - removetag{t=ATTACK} @self
+      - projectile{
+        ot=[
+          - teleport @origin
+          - look{f=true} @T
+        ];
+        oh=[
+          - throw{v=4;vy=4}
+          - damage{a=<skill.var.dmg>;pi=true;ii=true}
+        ];
+        oe=[
+          - projectile{
+            ot=[
+              - teleport @origin
+              - look{f=true} @T
+            ];
+            oh=[
+              - throw{v=4;vy=4}
+              - damage{a=<skill.var.dmg>;pi=true;ii=true}
+            ];
+            oe=[
+              - removetag{t=ATTACK} @self
+            ];
+            v=10;syo=0;sfo=0;se=false;sb=false;mr=11;i=1;vr=3;hr=2.5;hs=true;mdh=10;mch=8;hfs=0.0;md=100} @T
+        ];
+        v=10;syo=0;sfo=0;se=false;sb=false;mr=10;i=1;vr=3;hr=2.5;hs=true;mdh=10;mch=8;hfs=0.0;md=100} @T
     ];
-    v=10;syo=0;sfo=0;se=false;sb=false;mr=32;i=1;vr=3;hr=2.5;hs=true;mdh=10;mch=8;hfs=0.0;md=100} @TL
+    v=10;syo=0;sfo=0;se=false;sb=false;mr=11;i=1;vr=3;hr=2.5;hs=true;mdh=10;mch=8;hfs=0.0;md=100} @T
 
 OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_4:
   Cooldown: 2
@@ -805,6 +829,17 @@ OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_5:
       - damage{a=<skill.var.dmg>;pi=true;ii=true}
     ];
     oe=[
-      - removetag{t=ATTACK} @self
+      - projectile{
+        ot=[
+          - teleport @origin
+          - look{f=true} @T
+        ];
+        oh=[
+          - damage{a=<skill.var.dmg>;pi=true;ii=true}
+        ];
+        oe=[
+          - removetag{t=ATTACK} @self
+        ];
+        v=15;syo=0;sfo=0;mr=12;se=true;i=1;vr=2.5;hr=3;hs=true;mdh=3;mch=3;hfs=0.0} @T
     ];
-    v=15;syo=0;sfo=0;mr=24;se=true;i=1;vr=2.5;hr=3;hs=true;mdh=3;mch=3;hfs=0.0} @TL
+    v=15;syo=0;sfo=0;mr=12;se=true;i=1;vr=2.5;hr=3;hs=true;mdh=3;mch=3;hfs=0.0} @T
