@@ -682,7 +682,7 @@ OpenField_Enemy_黒ヤギ_MCLove32_BUFF:
 
 OpenField_Enemy_黒ヤギ_MCLove32_Teleport:
   Skills:
-  - setVar{var=skill.x1;val="<target.l.x> - <caster.l.x>";t=FLOAT} @T
-  - setVar{var=skill.z1;val="<target.l.z> - <caster.l.z>";t=FLOAT} @T
+  - setVar{var=skill.x1;val="<caster.l.x> - <target.l.x>";t=FLOAT} @T
+  - setVar{var=skill.z1;val="<caster.l.z> - <target.l.z>";t=FLOAT} @T
   - setVar{var=skill.yaw;val="<skill.var.z1> / <skill.var.x1>";t=FLOAT} @self
   - teleport @Location{x=<caster.l.x.double>;y=<caster.l.y.double>;z=<caster.l.z.double>;yaw=<skill.var.yaw>;pitch=0} @self
