@@ -756,16 +756,9 @@ OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_4:
   - addtag{t=ATTACK} @self
   - potion{t=SLOW;l=10;d=40;p=false} @self
   - setrot{p=-90;repeat=39;repeati=1} @self
-  - heal{a=5;repeat=39;repeati=1} @self
-  - skill:OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_4_Process{repeat=3;repeati=10} @selfLocation
+  - healpercent{m=0.05;repeat=3;repeati=10}
+  - e:p{p=heart;a=5;vs=2.5;hs=0.15;d=true;dir=0,1,0;s=0.5;size=2} @origin
   - removetag{t=ATTACK} @self
-
-OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_4_Process:
-  Skills:
-  - setvar{var=skill.x;val="<random.float.-5to5>";t=FLOAT} @self 
-  - setvar{var=skill.y;val="<random.float.-5to5>";t=FLOAT} @self 
-  - setvar{var=skill.z;val="<random.float.-5to5>";t=FLOAT} @self 
-  - e:p{p=heart;a=5;s=1;d=true;dr=true;fo=true} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
 
 OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_2_Process:
   Skills:
