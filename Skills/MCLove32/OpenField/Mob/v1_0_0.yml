@@ -660,13 +660,12 @@ OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_1:
   Skills:
   - setVar{var=skill.dmg;val="<caster.damage>";t=FLOAT} @self
   - skill:OpenField_Enemy_黒ヤギ_MCLove32_BUFF @self
-  - setVar{var=skill.yaw;val="0";t=FLOAT} @self
-  - skill:OpenField_Enemy_黒ヤギ_MCLove32_Teleport @self
+  - look{fp=true} @T
   - delay 2
   - projectile{
     ot=[
       - teleport @origin
-      - look{f=true} @T
+      - look{fp=true} @T
     ];
     oh=[
       - damage{a=<skill.var.dmg>;pi=true;ii=true}
@@ -680,10 +679,3 @@ OpenField_Enemy_黒ヤギ_MCLove32_BUFF:
   - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.025";t=FLOAT} @self ?hasTag{t=P3}
   - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.02";t=FLOAT} @self ?hasTag{t=P4}
   - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.015";t=FLOAT} @self ?hasTag{t=P5}
-
-OpenField_Enemy_黒ヤギ_MCLove32_Teleport:
-  Skills:
-  - setVar{var=skill.x1;val="<caster.l.x> - <target.l.x>";t=FLOAT} @T
-  - setVar{var=skill.z1;val="<caster.l.z> - <target.l.z>";t=FLOAT} @T
-  - setVar{var=skill.yaw;val="(<skill.var.z1> / <skill.var.x1>) + 180";t=FLOAT} @self
-  - look{f=true} @T
