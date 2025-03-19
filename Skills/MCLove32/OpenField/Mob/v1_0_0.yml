@@ -647,4 +647,33 @@ OpenField_Enemy_黒ヤギ_MCLove32_NEXT:
   - skill:OpenField_Enemy_黒ヤギ_MCLove32_EnterCombat @self
 
 OpenField_Enemy_黒ヤギ_MCLove32_ATTACK:
+  Conditions:
+  - incombat
   Skills:
+  - skill:OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_1 @self
+  - delay <random.100to160>
+  - skill:OpenField_Enemy_黒ヤギ_MCLove32_ATTACK @self
+
+OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_1:
+  Conditions:
+  - incombat
+  Skills:
+  - setVar{var=skill.dmg;val="<caster.damage>";t=FLOAT} @self
+  - skill:OpenField_Enemy_黒ヤギ_MCLove32_BUFF @self
+  - projectile{
+    ot=[
+      - teleport @origin
+      - look{fp=true} @T
+    ];
+    oh=[
+      - damage{a=<skill.var.dmg>;pi=true;ii=true}
+    ];
+    v=12;syo=0;sfo=0;mr=8;se=true;sb=true;i=2;vr=2.5;hr=3} @TL
+
+OpenField_Enemy_黒ヤギ_MCLove32_BUFF:
+  Skills:
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.035";t=FLOAT} @self ?hasTag{t=P1}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.03";t=FLOAT} @self ?hasTag{t=P2}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.025";t=FLOAT} @self ?hasTag{t=P3}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.02";t=FLOAT} @self ?hasTag{t=P4}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.015";t=FLOAT} @self ?hasTag{t=P5}
