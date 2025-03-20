@@ -690,7 +690,7 @@ OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_1:
     oe=[
       - removetag{t=ATTACK} @self
     ];
-    v=8;syo=0;sfo=0;mr=12;se=true;i=1;vr=2.5;hr=3;hs=true;mdh=3;mch=3;hfs=0.0} @T
+    v=6;syo=0;sfo=0;mr=12;se=true;i=1;vr=2.5;hr=3;hs=true;mdh=3;mch=3;hfs=0.0} @T
 
 OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_2:
   Cooldown: 15
@@ -760,11 +760,11 @@ OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_3:
             oe=[
               - removetag{t=ATTACK} @self
             ];
-            v=10;syo=0;sfo=0;se=false;sb=false;mr=11;i=1;vr=3;hr=2.5;hs=true;mdh=10;mch=8;hfs=0.0;md=100;delay=10} @T
+            v=8;syo=0;sfo=0;se=false;sb=false;mr=11;i=1;vr=3;hr=2.5;hs=true;mdh=10;mch=8;hfs=0.0;md=100;delay=10} @T
         ];
-        v=10;syo=0;sfo=0;se=false;sb=false;mr=10;i=1;vr=3;hr=2.5;hs=true;mdh=10;mch=8;hfs=0.0;md=100;delay=10} @T
+        v=8;syo=0;sfo=0;se=false;sb=false;mr=10;i=1;vr=3;hr=2.5;hs=true;mdh=10;mch=8;hfs=0.0;md=100;delay=10} @T
     ];
-    v=10;syo=0;sfo=0;se=false;sb=false;mr=11;i=1;vr=3;hr=2.5;hs=true;mdh=10;mch=8;hfs=0.0;md=100} @T
+    v=8;syo=0;sfo=0;se=false;sb=false;mr=11;i=1;vr=3;hr=2.5;hs=true;mdh=10;mch=8;hfs=0.0;md=100} @T
 
 OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_4:
   Cooldown: 2
@@ -799,7 +799,7 @@ OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_2_Process:
     oe=[
       - removetag{t=ATTACK;cd=2} @self
     ];
-    v=25;hs=true;mdh=5;mch=3;hr=1.25;vr=1.5;mr=20;i=2;syo=0;sfo=0} @ring{r=16;p=8}
+    v=20;hs=true;mdh=5;mch=3;hr=1.25;vr=1.5;mr=20;i=2;syo=0;sfo=0} @ring{r=16;p=8}
 
 OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_5:
   Cooldown: 12
@@ -835,6 +835,6 @@ OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_5:
         oe=[
           - removetag{t=ATTACK} @self
         ];
-        v=15;syo=0;sfo=0;mr=12;se=true;i=1;vr=2.5;hr=3;hs=true;mdh=3;mch=3;hfs=0.0;delay=10} @T
+        v=12;syo=0;sfo=0;mr=12;se=true;i=1;vr=2.5;hr=3;hs=true;mdh=3;mch=3;hfs=0.0;delay=10} @T
     ];
-    v=15;syo=0;sfo=0;mr=12;se=true;i=1;vr=2.5;hr=3;hs=true;mdh=3;mch=3;hfs=0.0} @T
+    v=12;syo=0;sfo=0;mr=12;se=true;i=1;vr=2.5;hr=3;hs=true;mdh=3;mch=3;hfs=0.0} @T
