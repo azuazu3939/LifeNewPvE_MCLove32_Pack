@@ -145,7 +145,7 @@ OpenField_Guard_牙狼_MCLove32:
   - potion{t=SPEED;d=144000;l=2;p=false} @self ~onSpawn
   - cancelevent{sync=true} @trigger{c=[ - isPlayer true ]} ~onDamaged
   - cancelevent{sync=true} @trigger{c=[ - isPlayer true ]} ~onAttack 
-  - remove @self ~onAttack 0.25
+  - remove{delay=5} @self ~onAttack 0.25
 
 OpenField_Guard_牙狼ノ零_MCLove32:
   Type: wolf
@@ -195,5 +195,5 @@ OpenField_Guard_牙狼ノ零_MCLove32:
   - cancelevent{sync=true} @trigger{c=[ - isPlayer true ]} ~onDamaged
   - cancelevent{sync=true} @trigger{c=[ - isPlayer true ]} ~onAttack 
   - healpercent{p=0.01} @self ~onDamaged 
-  - remove @self ~onAttack 0.1
+  - remove{delay=5} @self ~onAttack 0.1
   - skill:OpenField_Guard_牙狼ノ零_MCLove32_Skills @trigger{c=[ - isparent true ]} ~onInteract

@@ -583,7 +583,7 @@ OpenField_Enemy_モフィモス_MCLove32:
   - meleeattack{ar=8}
   Skills:
   - raidBoss @self ~onSpawn 
-  - remove @children ~onDeath 
+  - remove{delay=10} @children ~onDeath 
   - attribute{attr=GENERIC_FOLLOW_RANGE;a=48} @self ~onEntercombat 
   - attribute{attr=GENERIC_FOLLOW_RANGE;a=24} @self ~onDropcombat 
   - skill:OpenField_Enemy_モフィモス_MCLove32_Skills @self ~onEntercombat
@@ -642,7 +642,7 @@ OpenField_Enemy_モフィモ_ゾラール_MCLove32:
   Health: 250
   Skills:
   - summon{t=OpenField_Enemy_モフィモ_ゾラ_MCLove32;a=2;r=0} @self ~onSpawn 
-  - remove @children ~onDeath 
+  - remove{delay=10} @children ~onDeath 
 
 OpenField_Enemy_モフィモ_ゾラノ_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32

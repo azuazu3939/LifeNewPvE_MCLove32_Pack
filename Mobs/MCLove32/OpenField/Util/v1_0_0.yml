@@ -296,7 +296,7 @@ OpenField_util_ウズラミリィ_柱_MCLove32:
       - potion{t=SLOW;l=3;d=100;delay=10} @PIR{r=4;limit=5;sort=NEAREST}
       - potion{t=POISON;l=1;d=100;delay=10} @PIR{r=4;limit=5;sort=NEAREST}
       - delay 20
-      - remove @self
+      - remove{delay=1} @self
     ]} ~onSpawn 
 
 OpenField_util_氷塊_50_MCLove32:
