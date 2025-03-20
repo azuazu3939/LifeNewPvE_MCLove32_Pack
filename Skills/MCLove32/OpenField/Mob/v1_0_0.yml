@@ -642,7 +642,7 @@ OpenField_Enemy_黒ヤギ_MCLove32_DamagedAndBreak:
 OpenField_Enemy_黒ヤギ_MCLove32_Down:
   Skills:
   - addtag{t=DOWN} @self
-  - stun{t=140} @self
+  - stun{t=300} @self
   - setcolor{c=WHITE} @self
   - auraRemove{aura=OpenField_Enemy_黒ヤギ_MCLove32_Damaged} @self
   - delay 300
