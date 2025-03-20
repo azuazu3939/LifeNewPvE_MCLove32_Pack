@@ -764,7 +764,9 @@ OpenField_Enemy_黒ヤギ_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
   Display: "&f黒ヤギ"
   Type: sheep
-  Health: 5000
+  Health: 6000
+  Armor: 20
+  Damage: 80
   Options:
     NoDamageTicks: 0
     Silent: true 
@@ -791,7 +793,14 @@ OpenField_Enemy_黒ヤギ_MCLove32:
   - randomstroll
   - gotoowner
   - moveTowardsTarget
+  BossBar:
+    Enabled: true
+    Title: "&7&l<caster.name>"
+    Range: 32
+    Color: WHWHITE
+    Style: SEGMENTED_12
   Skills:
+  - raidBoss @self ~onSpawn 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=48} @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=12} @self ~onDropCombat
   - skill:OpenField_Enemy_黒ヤギ_MCLove32_EnterCombat @self ~onEntercombat
