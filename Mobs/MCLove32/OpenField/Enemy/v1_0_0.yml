@@ -182,7 +182,7 @@ OpenField_Enemy_コロニアル_MCLove32:
     ]} @trigger ~onAttack 
   - skill:OpenField_Enemy_コロニアル_MCLove32_Skills @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=24} @self ~onEnterCombat
-  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16} @self ~onDropCombat
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16;delay=5} @self ~onDropCombat
   - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
   - cmd{c="mlg <target.name> OpenField_Material_エアラプト結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.2
   - cmd{c="mlg <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.0001"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 
@@ -233,7 +233,7 @@ OpenField_Enemy_スパイディ_MCLove32:
   Skills:
   - potion{t=SPEED;l=1;d=14400;p=false} @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=32} @self ~onEnterCombat
-  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16} @self ~onDropCombat
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16;delay=5} @self ~onDropCombat
   - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
   - cmd{c="mlg <target.name> OpenField_Material_驚異の糸_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.01
   - cmd{c="lmg <target.name> 10 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath
@@ -318,7 +318,7 @@ OpenField_Enemy_生命生い茂る森のボグド_MCLove32:
     ];sync=true} @self ~onDeath ?!hastag{t=death}
   - potion{t=SPEED;l=1;d=14400;p=false} @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=48} @self ~onEnterCombat
-  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16} @self ~onDropCombat
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16;delay=5} @self ~onDropCombat
   - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
   - cmd{c="mlg <target.name> OpenField_Weapon_サンドストーム_MCLove32 1 0.0001"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath ?hastag{t=death} 
   - cmd{c="mlg <target.name> OpenField_Material_魔力結晶_MCLove32 1 0.8"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true]} ~onDeath 0.1 ?hastag{t=death}
@@ -446,7 +446,7 @@ OpenField_Enemy_雪原キラーラビット_MCLove32:
   - meleeattack{ar=8}
   Skills:
   - attribute{attr=GENERIC_FOLLOW_RANGE;a=64} @self ~onEntercombat 
-  - attribute{attr=GENERIC_FOLLOW_RANGE;a=8} @self ~onDropcombat 
+  - attribute{attr=GENERIC_FOLLOW_RANGE;a=8;delay=5} @self ~onDropcombat 
   - potion{t=speed;l=5;d=144000;p=false} @self ~onEntercombat 
   - cmd{c="lmg <target.name> 10 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true]} ~onDeath
 
@@ -531,7 +531,7 @@ OpenField_Enemy_エリミネーター_MCLove32:
   Skills:
   - raidBoss @self ~onSpawn 
   - attribute{attr=GENERIC_FOLLOW_RANGE;a=64} @self ~onEntercombat 
-  - attribute{attr=GENERIC_FOLLOW_RANGE;a=24} @self ~onDropcombat 
+  - attribute{attr=GENERIC_FOLLOW_RANGE;a=24;delay=5} @self ~onDropcombat 
   - skill:OpenField_Enemy_エリミネーター_MCLove32_Skills @self ~onEntercombat
   - skill:OpenField_Enemy_エリミネーター_MCLove32_Damaged_Skills @self ~onDamaged
   - cmd{c="mlg <target.name> OpenField_Armor_エリミネーターH_MCLove32 1 0.5"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 0.1
@@ -585,7 +585,7 @@ OpenField_Enemy_モフィモス_MCLove32:
   - raidBoss @self ~onSpawn 
   - remove{delay=10} @children ~onDeath 
   - attribute{attr=GENERIC_FOLLOW_RANGE;a=48} @self ~onEntercombat 
-  - attribute{attr=GENERIC_FOLLOW_RANGE;a=24} @self ~onDropcombat 
+  - attribute{attr=GENERIC_FOLLOW_RANGE;a=24;delay=5} @self ~onDropcombat 
   - skill:OpenField_Enemy_モフィモス_MCLove32_Skills @self ~onEntercombat
   - skill:OpenField_Enemy_モフィモス_MCLove32_Skills @self ~onDamaged 
   - healpercent{m=0.01;cd=5} @self ~onSignal:death
@@ -755,7 +755,7 @@ OpenField_Enemy_ウズラミリィ_MCLove32:
   Skills:
   - raidBoss @self ~onSpawn 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=48} @self ~onEnterCombat
-  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=12} @self ~onDropCombat
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=12;delay=5} @self ~onDropCombat
   - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skills @self ~onEntercombat
   - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_1 @self ~onEntercombat
   - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_5 @self ~onEntercombat 
@@ -802,7 +802,7 @@ OpenField_Enemy_黒ヤギ_MCLove32:
   Skills:
   - raidBoss @self ~onSpawn 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=48} @self ~onEnterCombat
-  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=12} @self ~onDropCombat
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=12;delay=5} @self ~onDropCombat
   - skill:OpenField_Enemy_黒ヤギ_MCLove32_EnterCombat @self ~onEntercombat
   - skill:OpenField_Enemy_黒ヤギ_MCLove32_ATTACK @self ~onEntercombat
   - skill:OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_1 @self ~onDamaged 

@@ -36,7 +36,7 @@ OpenField_Guard_ヒィツジー_MCLove32:
     Silent: false 
   Skills:
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=24} @self ~onEnterCombat 
-  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=12} @self ~onDropCombat
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=12;delay=5} @self ~onDropCombat
   - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
   - cmd{c="lmg <target.name> 10 MYTHIC_KILL"} @TTP{conditions=[ - targetwithin{d=32} true - isLiving true - targets{a=>0} true ]} ~onDeath 
 
