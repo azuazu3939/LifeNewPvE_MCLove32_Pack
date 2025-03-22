@@ -113,36 +113,6 @@ OpenField_Enemy_臆病なオセロット_MCLove32:
   - skill:OpenField_Enemy_臆病なオセロット_MCLove32_Skills{delay=5} @T ~onEntercombat
   - velocity{x=2.5;y=3;z=2.5;m=MULTIPLY} @self ~onDamaged ?!hasTag{t=combat}
 
-
-OpenField_Enemy_ワイルドハンター_MCLove32:
-  Template: OpenField_Enemy_Base_MCLove32
-  Type: BOGGED
-  Display: "&2&lワイルドハンター"
-  Health: 40
-  Damage: 10
-  Armor: 3
-  DamageModifiers:
-  - SUFFOCATION 0
-  - FALL 0
-  - RED 1.2
-  - GREEN 0.8
-  Equipment:
-  - leather_helmet{color=81,126,88} HEAD
-  - leather_chestplate{color=81,126,88} CHEST 
-  - chainmail_leggings LEGS 
-  - leather_boots FEET
-  - bow HAND 
-  Options:
-    FollowRange: 16
-    AttackSpeed: 2
-    MovementSpeed: 0.3
-  Drops:
-  - exp 100
-  Skills:
-  - skill:OpenField_Enemy_ワイルドハンター_MCLove32_Skills @self ~onShoot
-  - cancelevent{sync=true} @self ~onShoot
-  - equip{e=BOW HAND} @self ~onDamaged 0.05
-
 OpenField_Enemy_エリミネーター_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
   Type: WITHER_SKELETON
