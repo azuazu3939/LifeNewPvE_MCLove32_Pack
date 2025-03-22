@@ -60,10 +60,10 @@ OpenField_Enemy_黒ヤギ_MCLove32_Spawn:
   - height{h=50to180} true 
   - region{r=spawn} false 
   - (
-    mythicinradius{a=<1;r=32} ||
-    mythicinradius{a=<3;r=48} ||
-    mythicinradius{a=<5;r=64} 
+    mythicinradius{a=<1;r=32} &&
+    mythicinradius{a=<2;r=48} &&
+    mythicinradius{a=<3;r=64} 
     ) true 
-  - mobsInRadius{types=OpenField_Enemy_黒ヤギ_MCLove32;amount=<2;radius=64} true
+  - mobsInRadius{types=OpenField_Enemy_黒ヤギ_MCLove32;amount=<1;radius=64} true
   - biome{b=terra:origen/origen/scarlet_sanctuary} true
  
