@@ -853,7 +853,7 @@ OpenField_Enemy_黒小ヤギ_MCLove32_Skills:
   Skills:
   - missile{
     ot=[
-      - e:p{p=heart;a=5;vs=1;hs=1} @origin
+      - e:p{p=heart;a=1} @origin
     ];
     oh=[
       - healpercent{m=0.005}
