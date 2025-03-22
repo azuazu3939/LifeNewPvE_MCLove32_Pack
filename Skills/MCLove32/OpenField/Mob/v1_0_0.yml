@@ -848,15 +848,14 @@ OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_5:
 
 OpenField_Enemy_黒小ヤギ_MCLove32_Skills:
   Skills:
-  - delay 140
   - missile{
     ot=[
       - e:p{p=heart;a=5;vs=1;hs=1} @origin
     ];
     oh=[
-      - healpercent{m=0.05}
+      - healpercent{m=0.005}
     ];
-    v=16;in=12;se=true;sb=true;hp=false;hnp=true;c=[ - isParent true ];vo=1.5;i=2} @parent
-  - delay 60
-  - remove{delay=1} @self 0.1
+    v=40;in=1;se=true;sb=true;hp=false;hnp=true;c=[ - isParent true ];vo=1.5;i=2;repeat=9;repeati=10;delay=60} @parent
+  - delay 200
+  - remove{delay=1} @self 0.3
   - skill:OpenField_Enemy_黒小ヤギ_MCLove32_Skills @self
