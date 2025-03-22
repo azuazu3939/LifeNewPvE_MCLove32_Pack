@@ -66,4 +66,23 @@ OpenField_Enemy_黒ヤギ_MCLove32_Spawn:
     ) true 
   - mobsInRadius{types=OpenField_Enemy_黒ヤギ_MCLove32;amount=<1;radius=100} true
   - biome{b=terra:origen/origen/scarlet_sanctuary} true
- 
+  
+OpenField_Enemy_ウィスピット_MCLove32_Spawn:
+  Type: OpenField_Enemy_ウィスピット_MCLove32
+  Worlds: open_field
+  Action: ADD 
+  PositionType: LAND
+  Chance: 0.1
+  Priority: 12
+  Conditions:
+  - mobsinworld{a=<1000} true 
+  - blocktype{type=water,air} false 
+  - height{h=50to180} true 
+  - region{r=spawn} false 
+  - (
+    mythicinradius{a=<4;r=48} &&
+    mythicinradius{a=<6;r=64} &&
+    mythicinradius{a=<9;r=80} 
+    ) true 
+  - mobsInRadius{types=OpenField_Enemy_ウィスピット_MCLove32;amount=<1;radius=24} true
+  - biome{b=terra:origen/origen/scarlet_sanctuary} true

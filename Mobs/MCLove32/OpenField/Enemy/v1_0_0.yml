@@ -71,7 +71,6 @@ OpenField_Enemy_ハロウルフ_MCLove32:
   Skills:
   - potion{t=SPEED;d=144000;l=1;p=false} @self ~onSpawn
   - skill:Generic_Enemy_ウォーク追従_MCLove32{v=45} @self ~onTimer:20 ?!incombat
-  - drop{i=OpenField_Material_ハロウルフの希少な牙_MCLove32} @Trigger{conditions=[ - isPlayer false ]} ~onAttack 0.05
 
 OpenField_Enemy_ハロウルフ_MCLove32_Leader:
   Template: OpenField_Enemy_ハロウルフ_MCLove32
@@ -85,266 +84,6 @@ OpenField_Enemy_ハロウルフ_MCLove32_Leader:
   Skills:
   - summon{t=OpenField_Enemy_ハロウルフ_MCLove32;a=2to3;r=5;s=true} @self ~onSpawn
   - skill:Generic_Enemy_ウォーク_MCLove32{v=45} @self ~onTimer:20 ?!incombat
-
-OpenField_Enemy_枯れた抜け殻_MCLove32:
-  Template: OpenField_Enemy_Base_MCLove32
-  Type: wither_skeleton
-  Display: "&f枯れた抜け殻"
-  Health: 800
-  Damage: 50
-  Armor: 20
-  Equipment:
-  - golden_helmet HEAD
-  - netherite_hoe HAND 
-  - netherite_chestplate CHEST 
-  KillMessages:
-  - '&7<target.name>は無謀な戦いを挑んだ…'
-  Options:
-    FollowRange: 12
-    KnockbackResistance: 0
-    VisibleByDefault: true 
-    Invisible: true
-    Silent: true 
-    Scale: 2
-  Drops:
-  - exp 500
-  AITargetSelectors:
-  - clear
-  - attacker
-  AIGoalSelectors:
-  - randomstroll
-  Skills:
-  - raidBoss @self ~onSpawn 
-  - healpercent{m=0.5} @self ~onTimer:200
-  - e:p{p=sculk_soul;a=20;vs=1.25;hs=1;vd=32} @Forward{f=-2} ~onTimer:5
-  - skill:OpenField_Enemy_枯れた抜け殻_MCLove32_Effect @self ~onEnterCombat
-  - damage{a=200;pi=true;ii=true} @trigger ~onDamaged 0.1
-  - skill:OpenField_Enemy_枯れた抜け殻_MCLove32_Skills @self ~onEnterCombat
-  - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
-
-  BossBar:
-    Enabled: true
-    Title: "<caster.name>"
-    Range: 10
-    Color: RED
-    Style: SEGMENTED_6
-
-OpenField_Enemy_コロニア_MCLove32:
-  Template: OpenField_Enemy_コロニアル_MCLove32
-  Health: 10
-  Damage: 2
-  Drops:
-  - exp 100
-  Options:
-    Size: 2
-  Skills:
-
-OpenField_Enemy_コロニアル_MCLove32:
-  Template: OpenField_Enemy_Abstract_Generic
-  Exclude:
-  - Skills
-  Type: slime
-  Display: "&fコロニアル"
-  Health: 20
-  Damage: 5
-  DamageModifiers:
-  - FALL 0
-  - RED 1.2
-  - YELLOW 1.2
-  - BLUE 1.2
-  - GREEN 1.2
-  Options:
-    FollowRange: 16
-    Size: 4
-  AIGoalSelectors:
-  - gotoparent
-  - gotoowner
-  Drops:
-  - exp 20
-  Skills:
-  - skill{
-    s=[
-      - damage{a=<caster.damage>;ii=true;pi=true} @targetedTarget{c=[ - hasTag{t=Slime_Melee} false ]}
-      - addtag{t=Slime_Melee} @targetedTarget{c=[ - hasTag{t=Slime_Melee} false ]}
-      - removetag{t=Slime_Melee;delay=10} @targetedTarget{c=[ - hasTag{t=Slime_Melee} true ]}
-    ]} @trigger ~onAttack 
-  - skill:OpenField_Enemy_コロニアル_MCLove32_Skills @self ~onEnterCombat
-  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=24} @self ~onEnterCombat
-  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16;delay=5} @self ~onDropCombat
-  - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
-
-OpenField_Enemy_コロニアル_MCLove32_Leader: 
-  Template: OpenField_Enemy_コロニアル_MCLove32
-  Health: 50
-  Damage: 8
-  Options:
-    Size: 6
-  Drops:
-  - exp 30
-  Skills:
-  - summon{t=OpenField_Enemy_コロニアル_MCLove32;a=1to2;r=3;s=true} @self ~onSpawn
-  - summon{t=OpenField_Enemy_コロニア_MCLove32;a=<random.2to5>;r=4;s=true;delay=20} @self ~onDeath 
-
-OpenField_Enemy_スパイディ_MCLove32:
-  Template: OpenField_Enemy_Base_MCLove32
-  Type: cave_spider
-  Display: "&fスパイディ"
-  Health: 20
-  Damage: 8
-  Armor: 3
-  Options:
-    FollowRange: 16
-    KnockbackResistance: 0.25
-    Scale: 1.5
-  DamageModifiers:
-  - SUFFOCATION 0
-  - FALL 0
-  - RED 1.2
-  - YELLOW 1.2
-  - BLUE 1.2
-  AITargetSelectors:
-  - clear
-  - attacker
-  - players 
-  Drops:
-  - exp 10
-  AIGoalSelectors:
-  - randomstroll
-  - meleeattack
-  - gotoparent
-  - gotoowner
-  Skills:
-  - potion{t=SPEED;l=1;d=14400;p=false} @self ~onEnterCombat
-  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=32} @self ~onEnterCombat
-  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16;delay=5} @self ~onDropCombat
-  - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
-
-OpenField_Enemy_スパイディ_MCLove32_Leader:
-  Template: OpenField_Enemy_スパイディ_MCLove32
-  Type: spider 
-  Display: "&fスパイディ"
-  Health: 50
-  Damage: 15
-  Armor: 5
-  DamageModifiers:
-  - SUFFOCATION 0
-  - FALL 0
-  - RED 1.2
-  - YELLOW 1.2
-  - BLUE 1.2
-  AIGoalSelectors:
-  - clear
-  - randomstroll
-  - meleeattack
-  - movetowardsconditional{d=2;r=16;conditions=[ - inlineofsight true ]}
-  AITargetSelectors:
-  - clear
-  - attacker
-  - players 
-  Options:
-    KnockbackResistance: 0.35
-    Scale: 2
-  Drops:
-  - exp 30
-  Skills:
-  - potion{t=SLOWNESS;l=5;d=14400;p=false} @self ~onEnterCombat
-  - summon{t=OpenField_Enemy_スパイディ_MCLove32;a=1;r=3;s=true} @self ~onDamaged 0.001
-  - summon{t=OpenField_Enemy_スパイディ_MCLove32;a=1;r=3;s=true;cd=1200} @self ~onEnterCombat
-
-OpenField_Enemy_生命生い茂る森のボグド_MCLove32:
-  Template: OpenField_Enemy_Base_MCLove32
-  Exclude:
-  - Skills
-  Type: BOGGED
-  Display: "&b&l生命&a&l生い茂る森&f&lの&2&lボグド"
-  Health: 30
-  Damage: 5
-  Armor: 3
-  Equipment:
-  - leather_chestplate{color=81,126,88} CHEST 
-  - iron_sword HAND 
-  - totem_of_undying OFFHAND 
-  Options:
-    FollowRange: 16
-    KnockbackResistance: 0.75
-    Scale: 1.25
-    ReviveHealth: -1
-  DamageModifiers:
-  - SUFFOCATION 0
-  - FALL 0
-  - RED 1.2
-  - GREEN 0.8
-  AITargetSelectors:
-  - clear
-  - attacker
-  - players 
-  AIGoalSelectors:
-  - randomstroll
-  - meleeattack
-  - gotoparent
-  - gotoowner
-  Drops:
-  - exp 150
-  Skills:
-  - damage{a=<caster.damage>;ii=true;pi=true} @trigger ~onAttack 
-  - skill{
-    s=[
-      - cancelevent @self
-      - addtag{t=death;delay=2} @self 
-      - equip{item=air OFFHAND} @self 
-      - sound{s=item.totem.use;v=0.5} @self
-      - potion{t=SPEED;l=3;d=200;p=false} @self ~onEnterCombat
-    ];sync=true} @self ~onDeath ?!hastag{t=death}
-  - potion{t=SPEED;l=1;d=14400;p=false} @self ~onEnterCombat
-  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=48} @self ~onEnterCombat
-  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16;delay=5} @self ~onDropCombat
-  - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
-  - healpercent{m=0.05} @EIR{r=20;limit=5;sort=NEAREST;c=[ - isLiving true - isMythicMob true ]} ~onDeath ?!hastag{t=death}
-
-OpenField_Enemy_ジャイアントボグド_MCLove32:
-  Template: OpenField_Enemy_生命生い茂る森のボグド_MCLove32
-  Display: "&2&lジャイアントボグド"
-  Health: 300
-  Damage: 8
-  Armor: 4
-  Equipment:
-  - leather_chestplate{color=81,126,88} CHEST 
-  - netherite_sword HAND 
-  - totem_of_undying OFFHAND 
-  Drops:
-  - exp 600
-  Options:
-    ReviveHealth: 100
-    Scale: 2.25
-    MovementSpeed: 0.15
-  Skills:
-  - skill:OpenField_Enemy_ジャイアントボグド_MCLove32_Skills @self ~onEnterCombat
-
-OpenField_Enemy_マザーボグド_MCLove32:
-  Template: OpenField_Enemy_生命生い茂る森のボグド_MCLove32
-  Display: "&5&lマザーボグド"
-  Health: 1000
-  Damage: 13
-  Armor: 5
-  Equipment:
-  - leather_chestplate{color=81,126,88} CHEST 
-  - bone HAND 
-  - totem_of_undying OFFHAND 
-  Options:
-    ReviveHealth: 300
-    Scale: 4
-    MovementSpeed: 0.1
-  Drops:
-  - exp 2500
-  Skills:
-  - raidBoss @self ~onSpawn 
-  - skill:OpenField_Enemy_マザーボグド_MCLove32_Skills @self ~onEnterCombat 
-  BossBar:
-    Enabled: true
-    Title: "&c&lバイオームBoss&r <caster.name> &f&lHP &a&l<caster.hp{round=2}> &f&l/ &b&l<caster.mhp{round=2}>"
-    Range: 32
-    Color: GREEN
-    Style: SEGMENTED_12
 
 OpenField_Enemy_臆病なオセロット_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
@@ -374,44 +113,6 @@ OpenField_Enemy_臆病なオセロット_MCLove32:
   - skill:OpenField_Enemy_臆病なオセロット_MCLove32_Skills{delay=5} @T ~onEntercombat
   - velocity{x=2.5;y=3;z=2.5;m=MULTIPLY} @self ~onDamaged ?!hasTag{t=combat}
 
-OpenField_Enemy_雪原キラーラビット_MCLove32:
-  Template: OpenField_Enemy_Base_MCLove32
-  Type: rabbit
-  Display: "&f&l雪原ラビット"
-  Health: 100
-  Damage: 50
-  Armor: 3
-  Options:
-    Scale: 1
-    IsKillerBunny: true
-    RabbitType: WHITE
-  DamageModifiers:
-  - SUFFOCATION 0
-  - RED 1.2
-  - GREEN 0.8
-  Drops:
-  - exp 10
-  AITargetSelectors:
-  - clear
-  - attacker
-  - players 
-  AIGoalSelectors:
-  - randomstroll
-  - gotoowner
-  - meleeattack{ar=8}
-  Skills:
-  - attribute{attr=GENERIC_FOLLOW_RANGE;a=64} @self ~onEntercombat 
-  - attribute{attr=GENERIC_FOLLOW_RANGE;a=8;delay=5} @self ~onDropcombat 
-  - potion{t=speed;l=5;d=144000;p=false} @self ~onEntercombat 
-
-OpenField_Enemy_雪原キラーラビット_MCLove32_Leader:
-  Template: OpenField_Enemy_雪原ラビット_MCLove32
-  Type: rabbit
-  Display: "&f&l雪原ラビット"
-  Drops:
-  - exp 15
-  Skills:
-  - summon{t=OpenField_Enemy_雪原キラーラビット_MCLove32;a=2to5;r=4;s=true} @self ~onSpawn 
 
 OpenField_Enemy_ワイルドハンター_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
@@ -775,3 +476,39 @@ OpenField_Enemy_黒小ヤギ_MCLove32:
   - YELLOW 0.8
   Skills:
   - skill:OpenField_Enemy_黒小ヤギ_MCLove32_Skills @self ~onSpawn 
+
+
+OpenField_Enemy_ウィスピット_MCLove32:
+  Template: OpenField_Enemy_Base_MCLove32
+  Display: "jeb_"
+  Type: ghast
+  Health: 20
+  Armor: 0
+  Damage: 8
+  Options:
+    NoDamageTicks: 0
+    Silent: true 
+    Scale: 0.2
+    Color: BLACK
+    MovementSpeed: 0.15
+    KnockbackResistance: 1
+    MaxCombatDistance: 40
+    FollowRange: 12
+  DamageModifiers:
+  - SUFFOCATION 0
+  - FALL 0
+  - BLUE 1.2
+  - RED 1.2
+  - GREEN 0.8
+  - YELLOW 0.8
+  AITargetSelectors:
+  - clear
+  - attacker
+  - players 
+  AIGoalSelectors:
+  - randomstroll
+  - gotoowner
+  - moveTowardsTarget
+  Skills:
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=48} @self ~onEnterCombat
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=12;delay=5} @self ~onDropCombat
