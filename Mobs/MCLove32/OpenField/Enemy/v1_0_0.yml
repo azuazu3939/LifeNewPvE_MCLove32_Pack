@@ -808,6 +808,10 @@ OpenField_Enemy_黒ヤギ_MCLove32:
   - addtag{t=LOW_HEALTH} @self ~onDamaged <40%
   - remove{delay=10} @self ~onDeath
 
+  - removetag{t=START} @self ~onDropcombat 
+  - removetag{t=ATTACK} @self ~onDropcombat
+  - removetag{t=DOWN} @self ~onDropcombat
+
 OpenField_Enemy_黒小ヤギ_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
   Display: "&f黒小ヤギ"
