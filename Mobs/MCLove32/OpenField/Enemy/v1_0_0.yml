@@ -484,11 +484,11 @@ OpenField_Enemy_ウィスピット_MCLove32:
   Type: ghast
   Health: 20
   Armor: 0
-  Damage: 8
+  Damage: 3
   Options:
     NoDamageTicks: 0
     Silent: true 
-    Scale: 0.2
+    Scale: 0.15
     Color: BLACK
     MovementSpeed: 0.01
     KnockbackResistance: 1
@@ -508,8 +508,40 @@ OpenField_Enemy_ウィスピット_MCLove32:
   AIGoalSelectors:
   - randomstroll
   - gotoowner
+  Skills:
+
+
+OpenField_Enemy_フウィスピット_MCLove32:
+  Template: OpenField_Enemy_Base_MCLove32
+  Display: "フウィスピット"
+  Type: bat
+  Health: 30
+  Armor: 0
+  Damage: 5
+  Options:
+    NoDamageTicks: 0
+    Silent: true 
+    Scale: 0.5
+    Color: BLACK
+    MovementSpeed: 0.01
+    KnockbackResistance: 1
+    MaxCombatDistance: 40
+    FollowRange: 12
+    Invisible: true
+  DamageModifiers:
+  - SUFFOCATION 0
+  - FALL 0
+  - BLUE 1.2
+  - RED 1.2
+  - GREEN 0.8
+  - YELLOW 0.8
+  AITargetSelectors:
+  - clear
+  - attacker
+  - players 
+  AIGoalSelectors:
+  - randomstroll
+  - gotoowner
   - moveTowardsTarget
   Skills:
-  - attribute{attr=GENERIC_FLYING_SPEED};a=0.01} @self ~onSpawn
-  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=48} @self ~onEnterCombat
-  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=12;delay=5} @self ~onDropCombat
+  - summon{t=OpenField_Enemy_ウィスピット_MCLove32;a=3to5;r=0} @self ~onSpawn
