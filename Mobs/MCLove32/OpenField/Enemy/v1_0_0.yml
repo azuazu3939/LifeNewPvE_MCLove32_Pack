@@ -506,7 +506,6 @@ OpenField_Enemy_ウィスピット_MCLove32:
   - attacker
   - players 
   AIGoalSelectors:
-  - randomstroll
   - gotoowner
   Skills:
 
@@ -522,7 +521,6 @@ OpenField_Enemy_フウィスピット_MCLove32:
     NoDamageTicks: 0
     Silent: true 
     Scale: 0.5
-    Color: BLACK
     MovementSpeed: 0.01
     KnockbackResistance: 1
     MaxCombatDistance: 40
