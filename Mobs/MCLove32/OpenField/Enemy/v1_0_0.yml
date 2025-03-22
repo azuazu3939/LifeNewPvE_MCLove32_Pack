@@ -783,8 +783,6 @@ OpenField_Enemy_黒ヤギ_MCLove32:
   - RED 1.2
   - GREEN 0.8
   - YELLOW 0.8
-  Drops:
-  - exp 1000
   AITargetSelectors:
   - clear
   - attacker
@@ -808,3 +806,30 @@ OpenField_Enemy_黒ヤギ_MCLove32:
   - skill:OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_1 @self ~onDamaged 
   - addtag{t=MIDDLE_HEALTH} @self ~onDamaged <70%
   - addtag{t=LOW_HEALTH} @self ~onDamaged <40%
+  - remove{delay=10} @self ~onDeath
+
+OpenField_Enemy_黒小ヤギ_MCLove32:
+  Template: OpenField_Enemy_Base_MCLove32
+  Display: "&f黒小ヤギ"
+  Type: sheep
+  Health: 300
+  Armor: 0
+  Damage: 0
+  Options:
+    NoDamageTicks: 0
+    Silent: true 
+    Scale: 0.75
+    Color: WHITE
+    MovementSpeed: 0.01
+    KnockbackResistance: 1
+    MaxCombatDistance: 40
+    FollowRange: 12
+  DamageModifiers:
+  - SUFFOCATION 0
+  - FALL 0
+  - BLUE 1.2
+  - RED 1.2
+  - GREEN 0.8
+  - YELLOW 0.8
+  Skills:
+  - skill:OpenField_Enemy_黒小ヤギ_MCLove32_Skills @self ~onSpawn 
