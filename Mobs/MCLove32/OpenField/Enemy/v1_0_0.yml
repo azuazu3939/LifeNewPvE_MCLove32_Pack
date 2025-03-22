@@ -816,7 +816,7 @@ OpenField_Enemy_黒小ヤギ_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
   Display: "&f黒小ヤギ"
   Type: sheep
-  Health: 300
+  Health: 50
   Armor: 0
   Damage: 0
   Options:
