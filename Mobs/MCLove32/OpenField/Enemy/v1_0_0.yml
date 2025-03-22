@@ -480,7 +480,7 @@ OpenField_Enemy_黒小ヤギ_MCLove32:
 
 OpenField_Enemy_ウィスピット_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
-  Display: "jeb_"
+  Display: "Grumm"
   Type: ghast
   Health: 20
   Armor: 0
@@ -490,7 +490,7 @@ OpenField_Enemy_ウィスピット_MCLove32:
     Silent: true 
     Scale: 0.2
     Color: BLACK
-    MovementSpeed: 0.15
+    MovementSpeed: 0.01
     KnockbackResistance: 1
     MaxCombatDistance: 40
     FollowRange: 12
@@ -510,5 +510,6 @@ OpenField_Enemy_ウィスピット_MCLove32:
   - gotoowner
   - moveTowardsTarget
   Skills:
+  - attribute{attr=GENERIC_FLYING_SPEED};a=0.01} @self ~onSpawn
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=48} @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=12;delay=5} @self ~onDropCombat
