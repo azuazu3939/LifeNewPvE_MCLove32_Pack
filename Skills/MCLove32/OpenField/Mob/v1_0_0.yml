@@ -856,9 +856,9 @@ OpenField_Enemy_黒小ヤギ_MCLove32_Skills:
       - e:p{p=heart;a=1} @origin
     ];
     oh=[
-      - healpercent{m=0.005}
+      - healpercent{m=0.01}
     ];
-    v=40;in=1;se=true;sb=true;hp=false;hnp=true;c=[ - isParent true ];vo=1.5;i=2;repeat=9;repeati=10;delay=60} @parent
+    v=40;in=1;se=true;sb=true;hp=false;hnp=true;c=[ - isParent true ];vo=1.5;i=2;delay=60} @parent
   - delay 200
-  - remove{delay=1} @self 0.3
+  - remove{delay=1} @self 0.05
   - skill:OpenField_Enemy_黒小ヤギ_MCLove32_Skills @self
