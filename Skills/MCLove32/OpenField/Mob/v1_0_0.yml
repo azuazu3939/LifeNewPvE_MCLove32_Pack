@@ -986,7 +986,7 @@ OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot:
       - setVar{var=skill.delay;val="<skill.var.delay> - 1";t=INTEGER} @self
       - e:p{p=spark;a=1;delay=<skill.var.delay>} @origin
       - delay <skill.var.delay>
-      - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot_Damage @PNO{r=2;c=[ - hasTag{t=HIT} false ]}
+      - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot_Damage @PNO{r=1;c=[ - hasTag{t=HIT} false ]}
     ];
     v=4;se=false;sb=false;mr=40;i=1;vr=2.5;hr=2.5;sfo=3;syo=2;tyo=2;md=40;ho=<skill.var.ho>} @forward{lockpitch=true}
 
