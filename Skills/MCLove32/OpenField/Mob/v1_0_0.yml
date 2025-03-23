@@ -743,7 +743,7 @@ OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1:
   Skills:
   - addtag{t=ATTACK} @self
   - look{f=true} @T
-  - stun{t=100;f=false} @self
+  - stun{t=100;f=true} @self
   - setVar{var=skill.ho;val="45";t=INTEGER} @self
   - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process{repeat=44;repeati=1} @self
   - delay 100
