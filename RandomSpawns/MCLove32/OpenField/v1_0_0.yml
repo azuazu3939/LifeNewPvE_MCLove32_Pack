@@ -40,7 +40,7 @@ OpenField_Guard_ヒィツジー_MCLove32_Leader_Spawn:
     moss_block
     } true  
   - height{h=60to100} true 
-  #- region{r=spawn} false  温厚mobは除外
+  - region{r=spawn} false
   - (
     mythicinradius{a=<1;r=20} ||
     mythicinradius{a=<3;r=32} ||
