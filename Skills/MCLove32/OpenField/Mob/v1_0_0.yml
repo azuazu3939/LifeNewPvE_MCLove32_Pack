@@ -993,4 +993,4 @@ OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot:
       - removetag{t=HIT}
     ];
     v=4;se=false;sb=false;mr=40;i=1;vr=2.5;hr=2.5;sfo=3;syo=2;tyo=2;md=40;ho=<skill.var.ho>} @forward{lockpitch=true}
-  - message{m="<skill.var.ho>"} @PIR{r=32}
+  - message{m="<skill.var.itr>"} @PIR{r=32}
