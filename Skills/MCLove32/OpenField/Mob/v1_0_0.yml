@@ -699,3 +699,58 @@ OpenField_Enemy_黒小ヤギ_MCLove32_Skills:
   - delay 250
   - remove{delay=1} @self 0.05
   - skill:OpenField_Enemy_黒小ヤギ_MCLove32_Skills @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_EnterCombat:
+  Conditions:
+  - incombat
+  - hasTag{t=START} false
+  - hasTag{t=DOWN} castinstead OpenField_Enemy_月下のオオカミ_MCLove32_NEXT
+  Skills:
+  - addtag{t=START} @self
+  - setVar{var=skill.dmg;val="<caster.damage> + 4";t=FLOAT} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_BUFF @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1 @self
+  - delay 200
+  - removeTag{t=START} @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_NEXT:
+  Skills:
+  - delay 20
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_NEXT @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_BUFF:
+  Skills:
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.035";t=FLOAT} @self ?hasTag{t=P1}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.03";t=FLOAT} @self ?hasTag{t=P2}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.025";t=FLOAT} @self ?hasTag{t=P3}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.02";t=FLOAT} @self ?hasTag{t=P4}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.015";t=FLOAT} @self ?hasTag{t=P5}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.05";t=FLOAT} @self ?hasTag{t=MIDDLE_HEALTH}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.1";t=FLOAT} @self ?hasTag{t=LOW_HEALTH}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.2";t=FLOAT} @self ?night
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1:
+  Conditions:
+  - incombat
+  - hasTag{t=DOWN} false
+  - hasTag{t=ATTACK} false 
+  Skills:
+  - addtag{t=ATTACK} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process{ho=0} @TL
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process{ho=30} @TL
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process{ho=-30} @TL
+  - delay 100
+  - removeTag{t=ATTACK} @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process:
+  Skills:
+  - projectile{
+    oh=[
+      - damage{a=<skill.var.dmg>;pi=true;ii=true}
+    ];
+    ot=[
+      - modifyprojectile{t=VELOCITY;v=1.1;a=MULTIPLY} @self
+    ];
+    b=MOB;mm=OpenField_Enemy_月下の小オオカミ_MCLove32;
+    v=1;i=1;hs=true;mr=32;mdh=3;mch=3;se=true;sb=true;
+    ho=<skill.ho>} 

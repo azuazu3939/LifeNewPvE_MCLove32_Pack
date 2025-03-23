@@ -37,9 +37,9 @@ OpenField_Enemy_ハロウルフ_MCLove32:
   Type: wolf 
   Display: "&a&lハロウルフ"
   Health: 20
-  Damage: 3
+  Damage: 2
   Faction: Wolf
-  Armor: 1
+  Armor: 0
   DamageModifiers:
   - SUFFOCATION 0
   - FALL 0
@@ -75,8 +75,8 @@ OpenField_Enemy_ハロウルフ_MCLove32:
 OpenField_Enemy_ハロウルフ_MCLove32_Leader:
   Template: OpenField_Enemy_ハロウルフ_MCLove32
   Health: 30
-  Damage: 4
-  Armor: 4
+  Damage: 3
+  Armor: 0
   Drops:
   - exp 30
   Variables:
@@ -425,7 +425,7 @@ OpenField_Enemy_黒小ヤギ_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
   Display: "&f黒小ヤギ"
   Type: sheep
-  Health: 50
+  Health: 10
   Armor: 0
   Damage: 0
   Options:
@@ -513,3 +513,77 @@ OpenField_Enemy_フウィスピット_MCLove32:
   - moveTowardsTarget
   Skills:
   - summon{t=OpenField_Enemy_ウィスピット_MCLove32;a=3to5;r=0} @self ~onSpawn
+
+OpenField_Enemy_月下のオオカミ_MCLove32:
+  Template: OpenField_Enemy_Base_MCLove32
+  Display: "&f月下のオオカミ"
+  Type: wolf
+  Health: 1280
+  Armor: 0
+  Damage: 6
+  Options:
+    NoDamageTicks: 0
+    Silent: true 
+    Scale: 3.25
+    MovementSpeed: 0.2
+    KnockbackResistance: 1
+    MaxCombatDistance: 40
+    FollowRange: 12
+  DamageModifiers:
+  - SUFFOCATION 0
+  - FALL 0
+  - BLUE 1.2
+  - RED 1.2
+  - GREEN 0.8
+  - YELLOW 0.8
+  AITargetSelectors:
+  - clear
+  - attacker
+  - players 
+  AIGoalSelectors:
+  - randomstroll
+  - gotoowner
+  - moveTowardsTarget
+  BossBar:
+    Enabled: true
+    Title: "&7&l<caster.name>"
+    Range: 32
+    Color: WHWHITE
+    Style: SEGMENTED_12
+  Skills:
+  - raidBoss @self ~onSpawn 
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=48} @self ~onEnterCombat
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=12;delay=5} @self ~onDropCombat
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_EnterCombat @self ~onEntercombat
+  - addtag{t=MIDDLE_HEALTH} @self ~onDamaged <70%
+  - addtag{t=LOW_HEALTH} @self ~onDamaged <40%
+  - remove{delay=10} @self ~onDeath
+
+  - removetag{t=START} @self ~onDropcombat 
+  - removetag{t=ATTACK} @self ~onDropcombat
+  - removetag{t=DOWN} @self ~onDropcombat
+
+OpenField_Enemy_月下の小オオカミ_MCLove32:
+  Template: OpenField_Enemy_Base_MCLove32
+  Display: "&f月下の小オオカミ"
+  Type: wolf
+  Health: 10
+  Armor: 0
+  Damage: 0
+  Options:
+    Angry: true
+    NoDamageTicks: 0
+    Silent: true 
+    Scale: 0.75
+    MovementSpeed: 0.01
+    KnockbackResistance: 1
+    MaxCombatDistance: 40
+    FollowRange: 12
+  DamageModifiers:
+  - SUFFOCATION 0
+  - FALL 0
+  - BLUE 1.2
+  - RED 1.2
+  - GREEN 0.8
+  - YELLOW 0.8
+  Skills:

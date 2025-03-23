@@ -3,7 +3,7 @@ OpenField_Guard_ヒィツジー_MCLove32:
   Display: "&fヒィツジー"
   Faction: Sheep
   Health: 20
-  Armor: 1
+  Armor: 0
   Modules:
     ThreatTable: true
   AIGoalSelectors:
@@ -43,7 +43,7 @@ OpenField_Guard_ヒィツジー_MCLove32:
 OpenField_Guard_ヒィツジー_MCLove32_Leader:
   Template: OpenField_Guard_ヒィツジー_MCLove32
   Health: 25
-  Armor: 2
+  Armor: 0
   Drops:
   - exp 50
   Skills:
