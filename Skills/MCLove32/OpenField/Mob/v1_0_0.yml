@@ -767,4 +767,4 @@ OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Effect:
   - setvar{var=skill.x;val="<random.float.-5to5>";t=FLOAT} @self 
   - setvar{var=skill.y;val="<random.float.-5to5>";t=FLOAT} @self 
   - setvar{var=skill.z;val="<random.float.-5to5>";t=FLOAT} @self 
-  - e:p{p=cloud;a=30;s=1;d=true;dr=true;origin=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};fo=true} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
+  - e:p{p=cloud;a=1;s=0.8;d=true;dr=true;origin=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};fo=true;size=4} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
