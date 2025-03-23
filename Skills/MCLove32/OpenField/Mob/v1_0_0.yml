@@ -1007,7 +1007,7 @@ OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot:
     ot=[
       - setVar{var=skill.delay;val="<skill.var.delay> - 1";t=INTEGER} @self
       - e:p{p=spark;a=5;vs=0.5;hs=0.25;delay=<skill.var.delay>} @origin
-      - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Projectile_Effect{delay=<skill.var.delay>} @origin
+      - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Projectile_Effect{delay=<skill.var.delay>} @origin 0.5
       - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot_Damage{delay=<skill.var.delay>} @PlayersNearOrigin{r=1.5}
     ];
     v=8;se=false;sb=false;mr=20;i=1;sfo=3;syo=2;tyo=2;md=40;ho=<skill.var.ho>} @forward{lockpitch=true}
