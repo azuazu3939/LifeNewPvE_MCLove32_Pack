@@ -758,6 +758,7 @@ OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Effect:
   - projectile{syo=2;sfo=3;d=10;v=0;se=false;sb=false;hp=false;
     os=[
       - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Effect_Loop{repeat=9;repeati=0} @origin
+      - e:pr{r=4;pts=32;p=cloud;a=1;s=0.5;d=true;dr=true;dir=0,2,0;fo=true} @origin
     ]} 
 
 OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Effect_Loop:
@@ -765,7 +766,7 @@ OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Effect_Loop:
   - setvar{var=skill.x;val="<random.float.-5to5> * <skill.var.size>";t=FLOAT} @self 
   - setvar{var=skill.y;val="<random.float.-5to5> * <skill.var.size>";t=FLOAT} @self 
   - setvar{var=skill.z;val="<random.float.-5to5> * <skill.var.size>";t=FLOAT} @self 
-  - e:p{p=cloud;a=25;vs=0.1;hs=0.1;s=1.25;d=true;dr=true;origin=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};fo=true} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
+  - e:p{p=cloud;a=25;vs=0.1;hs=0.1;s=1.5;d=true;dr=true;origin=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};fo=true} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
   - setVar{var=skill.size;val="<skill.var.size> - 0.01";t=FLOAT} @self
 
 OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Projectile_Effect:
