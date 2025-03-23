@@ -742,8 +742,8 @@ OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1:
   - stun{t=320;f=true} @self
   - look{f=true;repeat=79;repeati=1} @T
   - sound{s=entity.wolf.growl;p=0;v=1.5} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Effet{repeat=8;repeati=10;origin=@forward{fo=3;y=1.5}} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Effet_Loop2{repeat=79;repeati=1;origin=@forward{fo=3;y=1.5}} @self
+  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Effet{repeat=8;repeati=10;origin=@forward{fo=4;y=2}} @self
+  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Effet_Loop2{repeat=79;repeati=1;origin=@forward{fo=4;y=2}} @self
   - delay 80
   - setVar{var=skill.dmg;val="<caster.damage> + 10";t=FLOAT} @self
   - skill:OpenField_Enemy_巨大オオカミ_MCLove32_BUFF @self
@@ -762,7 +762,7 @@ OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Effet_Loop:
   - setvar{var=skill.x;val="<random.float.-5to5>";t=FLOAT} @self 
   - setvar{var=skill.y;val="<random.float.-5to5>";t=FLOAT} @self 
   - setvar{var=skill.z;val="<random.float.-5to5>";t=FLOAT} @self 
-  - e:p{p=cloud;a=15;vs=0.1;hs=0.1;s=2;d=true;dr=true;origin=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};fo=true} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
+  - e:p{p=cloud;a=15;vs=0.1;hs=0.1;s=1.5;d=true;dr=true;origin=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};fo=true} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
 
 OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Effet_Loop2:
   Skills:
