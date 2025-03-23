@@ -742,23 +742,27 @@ OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1:
   - hasTag{t=ATTACK} false 
   Skills:
   - addtag{t=ATTACK} @self
-  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process{ho=0} @self
-  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process{ho=30} @self
-  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process{ho=-30} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process @self
   - delay 100
   - removeTag{t=ATTACK} @self
 
 OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process:
   Skills:
+  - setVar{var=skill.delay;val="55";t=INTEGER} @self
   - projectile{
-    oh=[
-      - damage{a=<skill.var.dmg>;pi=true;ii=true}
+    os=[
+      - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Effect{repeat=29;repeatI=1} @origin
     ];
     ot=[
-      - modifyprojectile{t=VELOCITY;v=1.125;a=MULTIPLY} @self
-      - delay 20
-      - modifyprojectile{t=VELOCITY;v=0.9;a=MULTIPLY} @self
+      - setVar{var=skill.delay;val="<skill.var.delay> - 1";t=INTEGER} @self
+      - delay <skill.var.delay>
+      - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Effect @origin
     ];
-    b=MOB;mm=OpenField_Enemy_月下の小オオカミ_MCLove32;
-    v=1;i=1;hs=true;mr=32;mdh=3;mch=3;se=true;sb=false;syo=1;tyo=1;hfs=1;
-    ho=<skill.ho>} @TL
+    v=20;se=false;sb=true;tyo=1;mr=40;i=1;vr=2.5;hr=2.5} @TL
+  
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Effect:
+  Skills:
+  - setvar{var=skill.x;val="<random.float.-5to5>";t=FLOAT} @self 
+  - setvar{var=skill.y;val="<random.float.-5to5>";t=FLOAT} @self 
+  - setvar{var=skill.z;val="<random.float.-5to5>";t=FLOAT} @self 
+  - e:p{p=cloud;a=1;s=0.5;d=true;dr=true;origin=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};fo=true} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}

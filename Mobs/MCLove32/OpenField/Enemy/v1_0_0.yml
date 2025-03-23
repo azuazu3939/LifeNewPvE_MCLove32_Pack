@@ -515,7 +515,7 @@ OpenField_Enemy_フウィスピット_MCLove32:
   - summon{t=OpenField_Enemy_ウィスピット_MCLove32;a=3to5;r=0} @self ~onSpawn
 
 OpenField_Enemy_月下のオオカミ_MCLove32:
-  Template: OpenField_Enemy_Base_MCLove32
+  Template: OpenField_Enemy_Abstract_Generic
   Display: "&f月下のオオカミ"
   Type: wolf
   Health: 1280
@@ -564,7 +564,7 @@ OpenField_Enemy_月下のオオカミ_MCLove32:
   - removetag{t=DOWN} @self ~onDropcombat
 
 OpenField_Enemy_月下の小オオカミ_MCLove32:
-  Template: OpenField_Enemy_Base_MCLove32
+  Template: OpenField_Enemy_Abstract_Generic
   Display: "&f月下の小オオカミ"
   Type: wolf
   Health: 20
