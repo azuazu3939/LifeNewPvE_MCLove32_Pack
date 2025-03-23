@@ -497,10 +497,15 @@ OpenField_Enemy_黒ヤギ_MCLove32_ATTACK:
   Conditions:
   - incombat
   Skills:
+  - skill:OpenField_Enemy_黒ヤギ_MCLove32_Target @self 0.5
   - randomskill{s=OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_1,OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_2,OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_3,OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_4,OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_5;
     repeati=20;repeat=2} @self
   - delay <random.140to200>
   - skill:OpenField_Enemy_黒ヤギ_MCLove32_ATTACK @self
+
+OpenField_Enemy_黒ヤギ_MCLove32_Target:
+  Skills:
+  - setTarget @ThreatTablePlayers{sort=RANDOM;limit=1}
 
 OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_1:
   Cooldown: 5
