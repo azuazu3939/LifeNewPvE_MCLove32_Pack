@@ -641,10 +641,8 @@ OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_2_Process:
       - e:p{p=cloud;a=5;vs=2.5;hs=0.15;d=true;dir=0,1,0;s=0.5} @origin
     ];
     oh=[
-      - damage{a=<skill.var.dmg>;pi=true;ii=true} @targetedTarget{c=[ - hasTag{t=HIT} false ]}
-      - addtag{t=HIT}
-      - delay 20
-      - removetag{t=HIT}
+      - damage{a=<skill.var.dmg>;pi=true;ii=true} @targetedTarget{c=[ - hasAura{n=HIT} false ]}
+      - aura{n=HIT;i=20;t=20} 
     ];
     oe=[
       - removetag{t=ATTACK;cd=2} @self
