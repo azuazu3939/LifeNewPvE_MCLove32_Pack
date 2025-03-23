@@ -548,7 +548,7 @@ OpenField_Enemy_月下のオオカミ_MCLove32:
     Enabled: true
     Title: "&7&l<caster.name>"
     Range: 32
-    Color: WHWHITE
+    Color: WHITE
     Style: SEGMENTED_12
   Skills:
   - raidBoss @self ~onSpawn 
