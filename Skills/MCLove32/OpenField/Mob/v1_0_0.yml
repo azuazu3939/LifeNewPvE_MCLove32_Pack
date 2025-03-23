@@ -745,16 +745,243 @@ OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1:
   - stun{t=100} @self
   - look{f=true;repeati=1;repeat=19} @T
   - setVar{var=skill.ho;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process{repeat=40;repeatI=1} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process{repeat=44;repeati=1} @self
   - delay 100
   - removeTag{t=ATTACK} @self
 
 OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process:
   Skills:
+  - vskill{s=OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V<skill.var.itr>;f=true}
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V1:
+  Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V2:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V3:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V4:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V5:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V6:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V7:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V8:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V9:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V10:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V11:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V12:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V13:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V14:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V15:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V16:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V17:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V18:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V19:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V20:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V21:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V22:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V23:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V24:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V25:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V26:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V27:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V28:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V29:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V30:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V31:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V32:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V33:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V34:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V35:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V36:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V37:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V38:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V39:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V40:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V41:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V42:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V43:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V44:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V45:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot:
+  Skills:
   - projectile{
     ot=[
-      - setVar{var=skill.delay;val="<skill.var.delay> - 1";t=INTEGER} @self
       - e:p{p=spark;a=1;fo=true;size=4;delay=<skill.var.delay>} @origin
     ];
     oh=[
