@@ -980,10 +980,10 @@ OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V45:
 
 OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot:
   Skills:
-  - setVar{var=skill.ho;val="<skill.var.ho> - 1";t=INTEGER} @self
+  - setVar{var=skill.ho;val="<skill.var.ho> - 2";t=INTEGER} @self
   - projectile{
     ot=[
-      - setVar{var=skill.delay;val="<skill.var.delay> - 2";t=INTEGER} @self
+      - setVar{var=skill.delay;val="<skill.var.delay> - 1";t=INTEGER} @self
       - e:p{p=spark;a=1;delay=<skill.var.delay>} @origin
     ];
     oh=[
