@@ -990,6 +990,6 @@ OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot:
       - addtag{t=HIT}
       - delay 40
       - removetag{t=HIT}
-    ]
-    v=4;se=false;sb=false;mr=40;i=1;vr=2.5;hr=2.5;sfo=3;syo=2;md=40;ho=<skill.var.ho>} @TL
+    ];
+    v=4;se=false;sb=false;mr=40;i=1;vr=2.5;hr=2.5;sfo=3;syo=2;tyo=1;md=40;ho=<skill.var.ho>} @TL
   - setVar{var=skill.ho;val="<skill.var.ho> - 4";t=INTEGER} @self
