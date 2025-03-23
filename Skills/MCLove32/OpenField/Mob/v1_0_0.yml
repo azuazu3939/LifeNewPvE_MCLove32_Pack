@@ -755,9 +755,9 @@ OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1:
 
 OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Effect:
   Skills:
-  - e:pr{r=4;pts=32;p=cloud;a=1;s=1;d=true;dir=0,1,0} @origin
-  - e:pr{r=8;pts=32;p=cloud;a=1;s=1;d=true;dir=0,1,0} @origin
-  - e:pr{r=10;pts=32;p=cloud;a=1;s=1;d=true;dir=0,1,0} @origin
+  - e:pr{r=4;pts=32;p=cloud;a=1;s=1;d=true;dir=0,1,0;dr=true} @origin
+  - e:pr{r=8;pts=32;p=cloud;a=1;s=1;d=true;dir=0,1,0;dr=true} @origin
+  - e:pr{r=10;pts=32;p=cloud;a=1;s=1;d=true;dir=0,1,0;dr=true} @origin
 
 OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Projectile_Effect:
   Skills:
