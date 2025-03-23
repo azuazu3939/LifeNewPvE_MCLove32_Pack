@@ -754,10 +754,10 @@ OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1:
 
 OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Effect:
   Skills:
-  - totem{yo=2;sfo=8;d=20;
+  - projectile{syo=2;sfo=8;d=10;v=0;se=false;sb=false;hp=false;
     os=[
       - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Effect_Loop{repeat=9;repeati=0} @origin
-    ]} @self
+    ]} @forward{lockpitch=true}
 
 OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Effect_Loop:
   Skills:
