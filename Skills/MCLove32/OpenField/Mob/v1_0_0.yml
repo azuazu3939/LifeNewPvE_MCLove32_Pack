@@ -769,6 +769,7 @@ OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Projectile_Effect:
   - setvar{var=skill.y;val="<random.float.-2to2>";t=FLOAT} @self 
   - setvar{var=skill.z;val="<random.float.-2to2>";t=FLOAT} @self 
   - e:p{p=cloud;a=1;vs=0.1;hs=0.1;s=0.3;d=true;dr=true;origin=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};fo=true} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
+  - e:p{p=sweep_attack;a=1;vs=0.1;hs=0.1;s=0.3;d=true;dr=true;origin=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};fo=true} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
 
 OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process:
   Skills:
