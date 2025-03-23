@@ -750,7 +750,7 @@ OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process:
       - damage{a=<skill.var.dmg>;pi=true;ii=true}
     ];
     ot=[
-      - modifyprojectile{t=VELOCITY;v=1.15;a=MULTIPLY} @self
+      - modifyprojectile{t=VELOCITY;v=1.05;a=MULTIPLY} @self
       - delay 20
       - modifyprojectile{t=VELOCITY;v=0.9;a=MULTIPLY} @self
     ];
