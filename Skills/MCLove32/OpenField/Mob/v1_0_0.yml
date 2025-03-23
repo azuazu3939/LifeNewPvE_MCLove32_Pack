@@ -753,5 +753,5 @@ OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process:
       - modifyprojectile{t=VELOCITY;v=1.25;a=MULTIPLY} @self
     ];
     b=MOB;mm=OpenField_Enemy_月下の小オオカミ_MCLove32;
-    v=2;i=1;hs=true;mr=32;mdh=3;mch=3;se=true;sb=false;syo=0;hfs=0.0;
+    v=4;i=1;hs=true;mr=32;mdh=3;mch=3;se=true;sb=false;syo=1;tyo=1;
     ho=<skill.ho>} @TL

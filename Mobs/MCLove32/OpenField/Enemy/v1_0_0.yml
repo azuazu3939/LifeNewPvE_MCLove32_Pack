@@ -567,14 +567,14 @@ OpenField_Enemy_月下の小オオカミ_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
   Display: "&f月下の小オオカミ"
   Type: wolf
-  Health: 10
+  Health: 20
   Armor: 0
   Damage: 0
   Options:
     Angry: true
     NoDamageTicks: 0
     Silent: true 
-    Scale: 0.75
+    Scale: 1
     MovementSpeed: 0.01
     KnockbackResistance: 1
     MaxCombatDistance: 40
