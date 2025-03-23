@@ -990,5 +990,8 @@ OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot:
     v=4;se=false;sb=false;mr=20;i=1;sfo=3;syo=2;tyo=2;md=40;ho=<skill.var.ho>} @forward{lockpitch=true}
 
 OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot_Damage:
+  TargetConditions:
+  - hasAura{n=HIT} false
   Skills:
+  - aura{n=HIT;i=20;t=100} 
   - damage{a=<skill.var.dmg>} 
