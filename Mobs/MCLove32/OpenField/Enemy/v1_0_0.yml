@@ -514,9 +514,9 @@ OpenField_Enemy_フウィスピット_MCLove32:
   Skills:
   - summon{t=OpenField_Enemy_ウィスピット_MCLove32;a=3to5;r=0} @self ~onSpawn
 
-OpenField_Enemy_月下のオオカミ_MCLove32:
+OpenField_Enemy_巨大オオカミ_MCLove32:
   Template: OpenField_Enemy_Abstract_Generic
-  Display: "&f月下のオオカミ"
+  Display: "&f巨大オオカミ"
   Type: wolf
   Health: 1280
   Armor: 0
@@ -554,7 +554,7 @@ OpenField_Enemy_月下のオオカミ_MCLove32:
   - raidBoss @self ~onSpawn 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=48} @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=12;delay=5} @self ~onDropCombat
-  - skill:OpenField_Enemy_月下のオオカミ_MCLove32_EnterCombat @self ~onEntercombat
+  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_EnterCombat @self ~onEntercombat
   - addtag{t=MIDDLE_HEALTH} @self ~onDamaged <70%
   - addtag{t=LOW_HEALTH} @self ~onDamaged <40%
   - remove{delay=10} @self ~onDeath
@@ -563,9 +563,9 @@ OpenField_Enemy_月下のオオカミ_MCLove32:
   - removetag{t=ATTACK} @self ~onDropcombat
   - removetag{t=DOWN} @self ~onDropcombat
 
-OpenField_Enemy_月下の小オオカミ_MCLove32:
+OpenField_Enemy_小オオカミ_MCLove32:
   Template: OpenField_Enemy_Abstract_Generic
-  Display: "&f月下の小オオカミ"
+  Display: "&f小オオカミ"
   Type: wolf
   Health: 20
   Armor: 0
