@@ -742,16 +742,16 @@ OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1:
   - hasTag{t=ATTACK} false 
   Skills:
   - addtag{t=ATTACK} @self
-  - stun{t=100} @self
+  - stun{t=100;f=false} @self
   - look{f=true;repeati=1;repeat=19} @T
-  - setVar{var=skill.ho;val="45";t=INTEGER} @self
+  - setVar{var=skill.ho;val="90";t=INTEGER} @self
   - skill:OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process{repeat=44;repeati=1} @self
   - delay 100
   - removeTag{t=ATTACK} @self
 
 OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process:
   Skills:
-  - vskill{s=OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V<skill.var.itr>;f=true}
+  - vskill{s=OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V<skill.var.itr>;f=true} @TL
 
 OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_V1:
   Skills:
@@ -992,4 +992,4 @@ OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process_Shoot:
       - removetag{t=HIT}
     ]
     v=4;se=false;sb=false;mr=40;i=1;vr=2.5;hr=2.5;sfo=3;syo=2;md=40;ho=<skill.var.ho>} @TL
-  - setVar{var=skill.ho;val="<skill.var.ho> - 1";t=INTEGER} @self
+  - setVar{var=skill.ho;val="<skill.var.ho> - 4";t=INTEGER} @self
