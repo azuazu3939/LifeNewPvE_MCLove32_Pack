@@ -751,8 +751,8 @@ OpenField_Enemy_月下のオオカミ_MCLove32_ATTACK_1_Process:
     ];
     ot=[
       - modifyprojectile{t=VELOCITY;v=1.15;a=MULTIPLY} @self
-      - delay 20
-      - modifyprojectile{t=VELOCITY;v=0.85;a=MULTIPLY} @self
+      - delay 10
+      - modifyprojectile{t=VELOCITY;v=0.8;a=MULTIPLY} @self
     ];
     b=MOB;mm=OpenField_Enemy_月下の小オオカミ_MCLove32;
     v=1;i=1;hs=true;mr=32;mdh=3;mch=3;se=true;sb=false;syo=1;tyo=1;hfs=1.6;
