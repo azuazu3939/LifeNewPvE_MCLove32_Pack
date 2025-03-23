@@ -740,7 +740,6 @@ OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1:
   Skills:
   - addtag{t=ATTACK} @self
   - look{f=true;repeat=79;repeati=1} @T
-  - delay 1
   - stun{t=320;f=true} @self
   - sound{s=entity.wolf.growl;p=0;v=1.5} @self
   - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Effet{repeat=8;repeati=10;origin=@forward{fo=8;y=2}} @self
