@@ -742,7 +742,7 @@ OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1:
   - look{f=true;repeat=79;repeati=1} @T
   - stun{t=320;f=true} @self
   - sound{s=entity.wolf.growl;p=0;v=1.5} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Effect{repeat=8;repeati=10} @self
+  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Effect{repeat=8;repeati=10} @origin
   - delay 80
   - setVar{var=skill.dmg;val="<caster.damage> + 10";t=FLOAT} @self
   - skill:OpenField_Enemy_巨大オオカミ_MCLove32_BUFF @self
@@ -754,7 +754,7 @@ OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1:
 
 OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Effect:
   Skills:
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Effect_Loop{repeat=9;repeati=0;origin=@forward{fo=8;y=2}} 
+  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Effect_Loop{repeat=9;repeati=0;fo=true;origin=@forward{fo=8;y=2}} @origin
 
 OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Effect_Loop:
   Skills:
