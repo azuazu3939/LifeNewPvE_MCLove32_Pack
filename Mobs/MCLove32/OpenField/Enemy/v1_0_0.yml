@@ -514,18 +514,18 @@ OpenField_Enemy_フウィスピット_MCLove32:
   Skills:
   - summon{t=OpenField_Enemy_ウィスピット_MCLove32;a=3to5;r=0} @self ~onSpawn
 
-OpenField_Enemy_巨大オオカミ_MCLove32:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32:
   Template: OpenField_Enemy_Abstract_Generic
-  Display: "&f巨大オオカミ"
+  Display: "&f風牙狼ウィディラー"
   Type: wolf
-  Health: 1280
+  Health: 1600
   Armor: 0
-  Damage: 6
+  Damage: 5
   Options:
     NoDamageTicks: 0
     Silent: true 
     Scale: 3.25
-    MovementSpeed: 0.2
+    MovementSpeed: 0.25
     KnockbackResistance: 1
     MaxCombatDistance: 40
     FollowRange: 12
@@ -546,7 +546,7 @@ OpenField_Enemy_巨大オオカミ_MCLove32:
   - moveTowardsTarget
   BossBar:
     Enabled: true
-    Title: "&7&l<caster.name>"
+    Title: "&1&l<caster.name>"
     Range: 32
     Color: WHITE
     Style: SEGMENTED_12
@@ -554,7 +554,7 @@ OpenField_Enemy_巨大オオカミ_MCLove32:
   - raidBoss @self ~onSpawn 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=48} @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=12;delay=5} @self ~onDropCombat
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_EnterCombat @self ~onEntercombat
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_EnterCombat @self ~onEntercombat
   - addtag{t=MIDDLE_HEALTH} @self ~onDamaged <70%
   - addtag{t=LOW_HEALTH} @self ~onDamaged <40%
   - remove{delay=10} @self ~onDeath

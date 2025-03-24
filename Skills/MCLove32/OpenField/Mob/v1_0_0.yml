@@ -703,24 +703,25 @@ OpenField_Enemy_黒小ヤギ_MCLove32_Skills:
   - remove{delay=1} @self 0.05
   - skill:OpenField_Enemy_黒小ヤギ_MCLove32_Skills @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_EnterCombat:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_EnterCombat:
+  Cooldown: 5
   Conditions:
   - incombat
   - hasTag{t=START} false
-  - hasTag{t=DOWN} castinstead OpenField_Enemy_巨大オオカミ_MCLove32_NEXT
+  - hasTag{t=DOWN} castinstead OpenField_Enemy_風牙狼ウィディラー_MCLove32_NEXT
   Skills:
   - addtag{t=START} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1 @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2 @self
   - delay 200
   - removeTag{t=START} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_EnterCombat @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_EnterCombat @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_NEXT:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_NEXT:
   Skills:
   - delay 20
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_NEXT @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_NEXT @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_BUFF:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_BUFF:
   Skills:
   - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.035";t=FLOAT} @self ?hasTag{t=P1}
   - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.03";t=FLOAT} @self ?hasTag{t=P2}
@@ -731,7 +732,8 @@ OpenField_Enemy_巨大オオカミ_MCLove32_BUFF:
   - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.1";t=FLOAT} @self ?hasTag{t=LOW_HEALTH}
   - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.2";t=FLOAT} @self ?night
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1:
+  Cooldown: 10
   Conditions:
   - incombat
   - hasTag{t=DOWN} false
@@ -743,23 +745,23 @@ OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1:
   - stun{t=180;f=true} @self
   - sound{s=entity.wolf.growl;p=0;v=1.5} @self
   - setVar{var=skill.size;val="1";t=FLOAT} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Effect{repeat=3;repeati=8} @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Effect{repeat=3;repeati=8} @self
   - delay 35
   - setVar{var=skill.dmg;val="<caster.damage> + 10";t=FLOAT} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_BUFF @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_BUFF @self
   - setVar{var=skill.ho;val="45";t=INTEGER} @self
   - sound{s=entity.wolf.howl;delay=10;v=1.5} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process{repeat=44;repeati=1} @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process{repeat=44;repeati=1} @self
   - delay 180
   - removeTag{t=ATTACK} @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Effect:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Effect:
   Skills:
   - e:pr{r=4;pts=32;p=cloud;a=1;s=1;d=true;dir=0,1,0} @selfLocation
   - e:pr{r=8;pts=32;p=cloud;a=1;s=1;d=true;dir=0,1,0} @selfLocation
   - e:pr{r=10;pts=32;p=cloud;a=1;s=1;d=true;dir=0,1,0} @selfLocation
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Projectile_Effect:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Projectile_Effect:
   Skills:
   - setvar{var=skill.x;val="<random.float.-1to1>";t=FLOAT} @self 
   - setvar{var=skill.y;val="<random.float.-1to1>";t=FLOAT} @self 
@@ -767,255 +769,255 @@ OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Projectile_Effect:
   - e:p{p=cloud;a=1;vs=0.05;hs=0.05;s=0.1;d=true;dr=true;origin=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};fo=true} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
   - e:p{p=sweep_attack;a=1;vs=0.05;hs=0.1;s=0.1;d=true;dr=true;origin=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};fo=true} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process:
   Skills:
-  - vskill{s=OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V<skill.var.itr>;f=true} @self
+  - vskill{s=OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V<skill.var.itr>;f=true} @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V1:
-  Skills:
-  - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
-
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V2:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V1:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V3:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V2:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V4:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V3:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V5:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V4:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V6:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V5:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V7:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V6:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V8:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V7:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V9:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V8:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V10:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V9:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V11:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V10:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V12:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V11:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V13:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V12:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V14:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V13:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V15:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V14:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V16:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V15:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V17:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V16:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V18:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V17:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V19:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V18:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V20:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V19:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V21:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V20:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V22:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V21:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V23:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V22:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V24:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V23:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V25:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V24:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V26:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V25:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V27:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V26:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V28:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V27:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V29:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V28:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V30:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V29:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V31:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V30:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V32:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V31:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V33:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V32:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V34:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V33:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V35:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V34:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V36:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V35:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V37:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V36:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V38:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V37:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V39:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V38:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V40:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V39:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V41:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V40:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V42:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V41:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V43:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V42:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V44:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V43:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_V45:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V44:
   Skills:
   - setVar{var=skill.delay;val="45";t=INTEGER} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V45:
+  Skills:
+  - setVar{var=skill.delay;val="45";t=INTEGER} @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot @self
+
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot:
   Skills:
   - setVar{var=skill.ho;val="<skill.var.ho> - 3 * <skill.var.itr>";t=INTEGER} @self
   - projectile{
     ot=[
       - setVar{var=skill.delay;val="<skill.var.delay> - 1";t=INTEGER} @self
       - e:p{p=spark;a=5;vs=0.5;hs=0.25;delay=<skill.var.delay>} @origin
-      - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Projectile_Effect{delay=<skill.var.delay>} @origin 0.25
-      - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot_Damage{delay=<skill.var.delay>} @PlayersNearOrigin{r=1.5}
+      - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Projectile_Effect{delay=<skill.var.delay>} @origin 0.25
+      - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot_Damage{delay=<skill.var.delay>} @PlayersNearOrigin{r=1.5}
     ];
     v=8;se=false;sb=false;mr=20;i=1;sfo=3;syo=2;tyo=2;md=40;ho=<skill.var.ho>} @forward{lockpitch=true}
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Process_Shoot_Damage:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot_Damage:
   TargetConditions:
   - hasAura{n=HIT} false
   Skills:
   - aura{n=HIT;i=20;t=100} 
   - damage{a=<skill.var.dmg>;pi=true;ii=true;e=GREEN}
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_2:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2:
   Conditions:
   - incombat
   - hasTag{t=DOWN} false
@@ -1026,14 +1028,14 @@ OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_2:
   - look{f=true;repeat=19;repeati=1} @T
   - stun{t=50;f=true} @self
   - setVar{var=skill.dmg;val="<caster.damage> + 6";t=FLOAT} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_BUFF @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_BUFF @self
   - sound{s=entity.wolf.ambient;p=0.75;v=1.5} @self
   - delay 10
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_Run{ho=0}
+  - leap{v=-1009} @forward{f=5;y=-5} 
   - delay 240
   - removeTag{t=ATTACK} @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_3:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_3:
   Conditions:
   - incombat
   - hasTag{t=DOWN} false
@@ -1044,30 +1046,30 @@ OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_3:
   - look{f=true;repeat=19;repeati=1} @T
   - stun{t=50;f=true} @self
   - setVar{var=skill.dmg;val="<caster.damage> + 4";t=FLOAT} @self
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_BUFF @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_BUFF @self
   - sound{s=entity.wolf.ambient;p=0.75;v=1.5;repeat=1;repeati=10} @self
   - delay 20
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_Run{ho=30}
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_Run{ho=30}
   - delay 10
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_Run{ho=30}
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_Run{ho=30}
   - delay 20
-  - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_Run{ho=0}
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_Run{ho=0}
   - delay 240
   - removeTag{t=ATTACK} @self
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_Run:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_Run:
   Skills:
   - projectile{
     ot=[
       - e:p{p=spark;a=5;vs=0.5;hs=0.25} @origin
-      - skill:OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Projectile_Effect2 @origin
+      - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Projectile_Effect2 @origin
     ];
     oh=[
       - damage{a=<skill.var.dmg>;pi=true;ii=true;e=GREEN}
     ];
     v=8;sb=false;mr=32;i=1;sfo=3;syo=2;tyo=2;md=120;ho=<skill.ho>;vr=1.5;hr=1.5} @TL
 
-OpenField_Enemy_巨大オオカミ_MCLove32_ATTACK_1_Projectile_Effect2:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Projectile_Effect2:
   Skills:
   - setvar{var=skill.x;val="<random.float.-1to1>";t=FLOAT} @self 
   - setvar{var=skill.y;val="<random.float.-1to1>";t=FLOAT} @self 
