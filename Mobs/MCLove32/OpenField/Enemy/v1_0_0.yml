@@ -207,7 +207,6 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32:
   - removetag{t=START} @self ~onDropcombat 
   - removetag{t=ATTACK} @self ~onDropcombat
   - removetag{t=DOWN} @self ~onDropcombat
-  - damage{a=<caster.damage> + 10;ii=true;pi=true} @trigger{c=[ - isPlayer false ]} ~onDamaged
 
 OpenField_Enemy_黒小ヤギ_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
@@ -287,7 +286,6 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32:
   - removetag{t=START} @self ~onDropcombat 
   - removetag{t=ATTACK} @self ~onDropcombat
   - removetag{t=DOWN} @self ~onDropcombat
-  - damage{a=<caster.damage> + 10;ii=true;pi=true} @trigger{c=[ - isPlayer false ]} ~onDamaged
 
 OpenField_Enemy_焔獣フェルドス_MCLove32:
   Template: OpenField_Enemy_Abstract_Generic
@@ -339,4 +337,3 @@ OpenField_Enemy_焔獣フェルドス_MCLove32:
   - removetag{t=START} @self ~onDropcombat 
   - removetag{t=ATTACK} @self ~onDropcombat
   - removetag{t=DOWN} @self ~onDropcombat
-  - damage{a=<caster.damage> + 10;ii=true;pi=true} @trigger{c=[ - isPlayer false ]} ~onDamaged
