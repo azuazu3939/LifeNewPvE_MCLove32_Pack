@@ -319,8 +319,8 @@ OpenField_Enemy_焔獣フェルドス_MCLove32:
   - clear
   - attacker
   - players 
-  - otherFaction
-  - otherFactionMonsters
+  - specificfaction{f=sheep}
+  - specificfaction{f=wolf}
   AIGoalSelectors:
   - randomstroll
   - gotoowner
