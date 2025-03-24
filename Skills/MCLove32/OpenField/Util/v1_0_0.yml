@@ -11,7 +11,7 @@ OpenField_Util_Bosses_MCLove32_Plains_Skill_1:
 
 OpenField_Util_Bosses_MCLove32_Plains_Skill_2:
   Skills:
-  - summon{t=OpenField_Enemy_風牙狼ウィディラー_MCLove32;a=1;r=0} @self
+  - summon{t=OpenField_Enemy_風牙狼ウィデラ_MCLove32;a=1;r=0} @self
 
 OpenField_Util_Bosses_MCLove32_Plains_Skill_3:
   Skills:

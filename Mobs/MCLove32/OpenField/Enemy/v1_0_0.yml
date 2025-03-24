@@ -236,9 +236,9 @@ OpenField_Enemy_黒小ヤギ_MCLove32:
   - skill:OpenField_Enemy_黒小ヤギ_MCLove32_Skills @self ~onSpawn 
   - remove{delay=600} @self ~onSpawn 
 
-OpenField_Enemy_風牙狼ウィディラー_MCLove32:
+OpenField_Enemy_風牙狼ウィデラー_MCLove32:
   Template: OpenField_Enemy_Abstract_Generic
-  Display: "&f風牙狼ウィディラー"
+  Display: "&f風牙狼ウィデラー"
   Type: wolf
   Health: 7950
   Armor: 1
@@ -278,8 +278,8 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32:
   - raidBoss @self ~onSpawn 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=32} @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=8;delay=5} @self ~onDropCombat
-  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_EnterCombat @self ~onEntercombat
-  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK @self ~onEntercombat
+  - skill:OpenField_Enemy_風牙狼ウィデラー_MCLove32_EnterCombat @self ~onEntercombat
+  - skill:OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK @self ~onEntercombat
   - addtag{t=MIDDLE_HEALTH} @self ~onDamaged <70%
   - addtag{t=LOW_HEALTH} @self ~onDamaged <40%
   - remove{delay=10} @self ~onDeath
