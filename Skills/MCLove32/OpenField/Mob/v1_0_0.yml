@@ -1028,51 +1028,33 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2:
   - delay 1
   - potion{t=SLOWNESS;l=7;d=20;p=false} @self
   - potion{t=SLOW_FALLING;l=7;d=25;p=false} @self
-  - setVar{var=skill.dmg;val="<caster.damage> + 6";t=FLOAT} @self
+  - setVar{var=skill.dmg;val="<caster.damage> + 8";t=FLOAT} @self
   - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_BUFF @self
   - sound{s=entity.wolf.ambient;p=0.75;v=1.5} @self
   - delay 10
-  - leap{v=-1050} @forward{f=10;y=-5} 
-  - delay 240
-  - removeTag{t=ATTACK} @self
-
-OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_3:
-  Conditions:
-  - incombat
-  - hasTag{t=DOWN} false
-  - hasTag{t=ATTACK} false 
-  - targetWithin{d=20}
-  Skills:
-  - addtag{t=ATTACK} @self
-  - look{f=true;repeat=19;repeati=1} @T
-  - stun{t=50;f=true} @self
-  - setVar{var=skill.dmg;val="<caster.damage> + 4";t=FLOAT} @self
-  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_BUFF @self
-  - sound{s=entity.wolf.ambient;p=0.75;v=1.5;repeat=1;repeati=10} @self
-  - delay 20
-  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_Run{ho=30}
+  - leap{v=-1050} @forward{f=10;y=-5}
   - delay 10
-  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_Run{ho=30}
-  - delay 20
-  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_Run{ho=0}
-  - delay 240
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2_Process @self
+  - delay 140
   - removeTag{t=ATTACK} @self
 
-OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_Run:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2_Process:
   Skills:
   - projectile{
     ot=[
-      - e:p{p=spark;a=5;vs=0.5;hs=0.25} @origin
-      - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Projectile_Effect2 @origin
+      - e:ps{p=spark;a=3;s=0.5;r=2} @origin 
+      - e:ps{p=cloud;a=5;s=1.5;r=1;cd=0.4} @origin
     ];
     oh=[
-      - damage{a=<skill.var.dmg>;pi=true;ii=true;e=GREEN}
+      - damage{a=<skill.var.dmg>;pi=true;ii=true}
     ];
-    v=8;sb=false;mr=32;i=1;sfo=3;syo=2;tyo=2;md=120;ho=<skill.ho>;vr=1.5;hr=1.5} @TL
+    oe=[
+      - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2_Process_Buff{repeat=15;repeati=10} @origin
+    ];
+    v=8;i=1;vr=2;hr=2;se=false;syo=2;sfo=3} @forward{f=10;y=-5}
 
-OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Projectile_Effect2:
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2_Process_Buff:
   Skills:
-  - setvar{var=skill.x;val="<random.float.-1to1>";t=FLOAT} @self 
-  - setvar{var=skill.y;val="<random.float.-1to1>";t=FLOAT} @self 
-  - setvar{var=skill.z;val="<random.float.-1to1>";t=FLOAT} @self 
-  - e:p{p=cloud;a=15;vs=0.1;hs=0.1;s=0.3;d=true;dr=true;origin=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};fo=true} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
+  - e:ps{p=spark;a=10;s=1.5;r=2;d=true;dir=0,2,0;hs=0.5} @origin 
+  - e:ps{p=cloud;a=15;s=1.5;r=3;d=true;dir=0,2,0;hs=1} @origin
+  - potion{t=SPEED;l=1;d=200;p=false} @ENO{r=5}
