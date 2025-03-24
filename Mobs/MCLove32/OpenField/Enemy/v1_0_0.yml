@@ -299,11 +299,11 @@ OpenField_Enemy_焔獣フェルドス_MCLove32:
   Options:
     NoDamageTicks: 0
     Silent: true 
-    Scale: 3
+    Scale: 5
     MovementSpeed: 0.25
     KnockbackResistance: 1
     MaxCombatDistance: 40
-    FollowRange: 8
+    FollowRange: 10
     ImmuneToZombification: true
   DamageModifiers:
   - SUFFOCATION 0
