@@ -1181,7 +1181,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_3:
     oe=[
       - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK
     ];
-    v=12;syo=0;sfo=0;i=1;md=180;hs=true;hfs=0;mdh=10;mch=10;hr=5;mr=15} @T
+    v=8;syo=0;sfo=0;i=1;md=180;hs=true;hfs=0;mdh=10;mch=10;hr=5;mr=15} @T
   - removeTag{t=ATTACK} @self
 
 OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_4:
@@ -1208,7 +1208,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_4:
     oe=[
       - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK
     ];
-    v=18;syo=0;sfo=0;i=1;md=120;hs=true;hfs=0;mdh=10;mch=10;hr=5;mr=15} @T
+    v=10;syo=0;sfo=0;i=1;md=120;hs=true;hfs=0;mdh=10;mch=10;hr=5;mr=15} @T
   - removeTag{t=ATTACK} @self
 
 OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_5:
