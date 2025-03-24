@@ -1053,6 +1053,11 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2_Process:
     oh=[
       - damage{a=<skill.var.dmg>;pi=true;ii=true}
     ];
+    oe=[
+      - e:pr{r=4;pts=32;p=cloud;a=1;s=1;d=true;dir=0,1,0} @origin
+      - e:pr{r=8;pts=32;p=cloud;a=1;s=1;d=true;dir=0,1,0} @origin
+      - e:pr{r=10;pts=32;p=cloud;a=1;s=1;d=true;dir=0,1,0} @origin
+    ];
     v=2;i=1;vr=2;hr=2;se=false;syo=2;sfo=3} @forward{f=10;y=-5}
 
 OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2_Process_Tick:
