@@ -480,10 +480,10 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_Down:
   Skills:
   - addtag{t=DOWN} @self
   - sound{s=item.shield.break;v=3;p=0} @self
-  - stun{t=300} @self
+  - stun{t=240} @self
   - setcolor{c=WHITE} @self
   - auraRemove{aura=OpenField_Enemy_羊獣カルーチェ_MCLove32_Damaged} @self
-  - delay 300
+  - delay 240
   - setcolor{c=BLACK} @self
   - removetag{t=DOWN} @self
   - removetag{t=START} @self
