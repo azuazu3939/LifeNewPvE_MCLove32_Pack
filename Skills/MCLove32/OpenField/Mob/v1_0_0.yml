@@ -1008,10 +1008,10 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_Down:
   Skills:
   - addtag{t=DOWN} @self
   - sound{s=item.shield.break;v=3;p=0} @self
-  - stun{t=100} @self
-  - ondamaged{m=2;n=Down;t=100;i=1} @self
+  - stun{t=200} @self
+  - ondamaged{m=2;n=Down;t=200;i=1} @self
   - auraRemove{aura=OpenField_Enemy_焔獣フェルドス_MCLove32_Damaged} @self
-  - delay 100
+  - delay 200
   - removetag{t=DOWN} @self
   - removetag{t=START} @self
   - sound{s=block.anvil.use;v=3;p=2} @self
