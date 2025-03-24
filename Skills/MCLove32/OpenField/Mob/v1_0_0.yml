@@ -1024,8 +1024,10 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2:
   - targetWithin{d=20}
   Skills:
   - addtag{t=ATTACK} @self
-  - look{f=true;repeat=19;repeati=1} @T
+  - look{f=true} @T
+  - delay 1
   - potion{t=SLOWNESS;l=7;d=20;p=false} @self
+  - potion{t=SLOW_FALLING;l=7;d=30;p=false} @self
   - setVar{var=skill.dmg;val="<caster.damage> + 6";t=FLOAT} @self
   - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_BUFF @self
   - sound{s=entity.wolf.ambient;p=0.75;v=1.5} @self
