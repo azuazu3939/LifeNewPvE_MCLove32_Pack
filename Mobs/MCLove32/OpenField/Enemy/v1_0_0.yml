@@ -546,7 +546,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32:
   - moveTowardsTarget
   BossBar:
     Enabled: true
-    Title: "&1&l<caster.name>"
+    Title: "<caster.name>"
     Range: 32
     Color: WHITE
     Style: SEGMENTED_12
