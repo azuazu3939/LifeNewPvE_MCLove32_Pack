@@ -555,6 +555,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32:
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=48} @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=12;delay=5} @self ~onDropCombat
   - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_EnterCombat @self ~onEntercombat
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK @self ~onEntercombat
   - addtag{t=MIDDLE_HEALTH} @self ~onDamaged <70%
   - addtag{t=LOW_HEALTH} @self ~onDamaged <40%
   - remove{delay=10} @self ~onDeath
