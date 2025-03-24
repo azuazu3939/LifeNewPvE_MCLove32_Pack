@@ -1231,7 +1231,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_5:
     oe=[
       - sound{s=item.totem.use;p=2} @origin
       - damage{a=<skill.var.dmg>;pi=true;ii=true} @PlayersNearOrigin{r=5}
-      - throw{v=8;vy=3} @PlayersNearOrigin{r=5}
+      - throw{v=15;vy=8} @PlayersNearOrigin{r=5}
       - e:pr{r=4;pts=32;p=cloud;a=1;s=0.7;d=true;dir=0,1,0} @origin
       - e:pr{r=8;pts=32;p=cloud;a=1;s=0.7;d=true;dir=0,1,0} @origin
       - e:pr{r=10;pts=32;p=cloud;a=1;s=0.7;d=true;dir=0,1,0} @origin
