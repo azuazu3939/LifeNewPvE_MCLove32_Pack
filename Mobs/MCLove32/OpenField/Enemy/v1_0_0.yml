@@ -563,3 +563,51 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32:
   - removetag{t=START} @self ~onDropcombat 
   - removetag{t=ATTACK} @self ~onDropcombat
   - removetag{t=DOWN} @self ~onDropcombat
+
+OpenField_Enemy_焔獣フェルドス_MCLove32:
+  Template: OpenField_Enemy_Base_MCLove32
+  Display: "&f焔獣フェルドス"
+  Type: hoglin
+  Health: 5950
+  Armor: 0
+  Damage: 0
+  Options:
+    NoDamageTicks: 0
+    Silent: true 
+    Scale: 3
+    MovementSpeed: 0.25
+    KnockbackResistance: 1
+    MaxCombatDistance: 40
+    FollowRange: 8
+  DamageModifiers:
+  - SUFFOCATION 0
+  - FALL 0
+  - BLUE 1.2
+  - RED 1.2
+  - GREEN 0.8
+  - YELLOW 0.8
+  AITargetSelectors:
+  - clear
+  - attacker
+  - players 
+  AIGoalSelectors:
+  - randomstroll
+  - gotoowner
+  - moveTowardsTarget
+  BossBar:
+    Enabled: true
+    Title: "<caster.name>"
+    Range: 32
+    Color: WHITE
+    Style: SEGMENTED_12
+  Skills:
+  - raidBoss @self ~onSpawn 
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=32} @self ~onEnterCombat
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=8;delay=5} @self ~onDropCombat
+  - addtag{t=MIDDLE_HEALTH} @self ~onDamaged <70%
+  - addtag{t=LOW_HEALTH} @self ~onDamaged <40%
+  - remove{delay=10} @self ~onDeath
+
+  - removetag{t=START} @self ~onDropcombat 
+  - removetag{t=ATTACK} @self ~onDropcombat
+  - removetag{t=DOWN} @self ~onDropcombat
