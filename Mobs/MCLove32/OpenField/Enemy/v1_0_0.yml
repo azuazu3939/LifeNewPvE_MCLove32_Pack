@@ -320,6 +320,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32:
   - attacker
   - players 
   - otherFaction
+  - otherFactionMonsters
   AIGoalSelectors:
   - randomstroll
   - gotoowner
