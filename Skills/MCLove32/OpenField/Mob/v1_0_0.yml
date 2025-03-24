@@ -1133,7 +1133,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_4:
   - removeTag{t=ATTACK} @self
 
 OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_5:
-  Cooldown: 5
+  Cooldown: 2
   Conditions:
   - incombat
   - hasTag{t=DOWN} false
