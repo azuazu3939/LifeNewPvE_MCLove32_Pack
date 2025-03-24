@@ -1084,7 +1084,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish_Projectil
     oh=[
       - damage{a="<skill.var.dmg> * 0.5";pi=true;ii=true;e=RED}
     ];
-    v=10;i=1;g=0.5;sfo=2;syo=1;tyo=5;mr=12;hnp=true;c=[ - samefaction false ];
+    v=10;i=1;g=0.5;sfo=2;syo=1;tyo=5;mr=12;hnp=true;c=[ - samefaction false ];vr=1.5;hr=1.5;
     ho=<skill.ho>;b=DISPLAY;mat=MAGMA_BLOCK;ps=1;rs=1;ys=1;scale=1,1,1} @forward
 
 OpenField_Enemy_焔獣フェルドス_MCLove32_BUFF:
