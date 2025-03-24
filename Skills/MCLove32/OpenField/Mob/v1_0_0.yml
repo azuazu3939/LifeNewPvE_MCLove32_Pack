@@ -1044,7 +1044,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2_Process:
     ot=[
       - e:ps{p=spark;a=100;r=1} @origin 
       - s:ps{p=sweep_attack;a=50;r=2} @origin
-      - e:ps{p=cloud;a=120;s=1;r=1;cd=0.2} @origin
+      - e:ps{p=cloud;a=120;s=0.6;r=1;cd=0.2} @origin
     ];
     oh=[
       - damage{a=<skill.var.dmg>;pi=true;ii=true}
