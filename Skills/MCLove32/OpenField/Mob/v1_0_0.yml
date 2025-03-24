@@ -1043,7 +1043,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2_Process:
   - projectile{
     ot=[
       - e:ps{p=spark;a=50;r=1} @origin 
-      - e:ps{p=sweep_attack;a=5;r=2} @origin
+      - e:ps{p=sweep_attack;a=10;r=2} @origin
       - e:ps{p=cloud;a=50;s=0.2;r=1;cd=0.2} @origin
     ];
     oh=[
