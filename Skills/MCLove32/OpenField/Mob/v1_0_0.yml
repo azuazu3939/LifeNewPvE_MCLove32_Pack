@@ -1026,8 +1026,15 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK:
   - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK
 
 OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1:
+  Conditions:
+  - incombat
+  - hasTag{t=DOWN} false
+  - hasTag{t=ATTACK} false 
   Skills:
+  - addtag{t=ATTACK} @self
   - setVar{var=skill.count;val="3";t=INTEGER} @self
+  - setVar{var=skill.dmg;val="<caster.damage> + 4";t=FLOAT} @self
+  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_BUFF @self
   - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process @self
 
 OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process:
@@ -1065,6 +1072,8 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish:
   - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish_Projectile{ho=30} @self 
   - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish_Projectile{ho=-0} @self 
   - stun{t=60;f=true} @self
+  - delay 60
+  - removetag{t=ATTACK} @self
 
 OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish_Projectile:
   Skills:
@@ -1077,3 +1086,13 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish_Projectil
     ];
     v=12;i=1;g=1;sfo=1;syo=1;tyo=1;mr=12;hnp=true;c=[ - samefaction false ];
     ho=<skill.ho>;b=DISPLAY;mat=MAGMA_BLOCK;ps=1;rs=1;ys=1;} @TL
+
+OpenField_Enemy_焔獣フェルドス_MCLove32_BUFF:
+  Skills:
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.045";t=FLOAT} @self ?hasTag{t=P1}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.035";t=FLOAT} @self ?hasTag{t=P2}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.03";t=FLOAT} @self ?hasTag{t=P3}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.025";t=FLOAT} @self ?hasTag{t=P4}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.02";t=FLOAT} @self ?hasTag{t=P5}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.1";t=FLOAT} @self ?hasTag{t=MIDDLE_HEALTH}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.1";t=FLOAT} @self ?hasTag{t=LOW_HEALTH}
