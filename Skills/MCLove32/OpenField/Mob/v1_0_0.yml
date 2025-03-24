@@ -1041,6 +1041,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2:
 OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2_Process:
   Skills:
   - setVar{var=skill.tick;val="0";t=INTEGER} @self
+  - sound{s=block.trial_spawner.ominous_activate;p=2;v=2} @self
   - projectile{
     ot=[
       - e:ps{p=spark;a=50;r=1} @origin 
