@@ -782,7 +782,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot_Dama
   - hasAura{n=HIT} false
   Skills:
   - aura{n=HIT;i=20;t=100} 
-  - damage{a=<skill.var.dmg>;pi=true;ii=true;e=GREEN}
+  - damage{a="<skill.var.dmg> * 1.5";pi=true;ii=true;e=GREEN}
 
 OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2:
   Cooldown: 5
