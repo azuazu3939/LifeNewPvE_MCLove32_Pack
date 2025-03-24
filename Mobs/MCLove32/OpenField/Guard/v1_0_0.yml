@@ -27,12 +27,9 @@ OpenField_Guard_ヒィツジー_MCLove32:
     NoDamageTicks: 0
     KnockbackResistance: 0.15
     NoAI: false 
-    #NoGravity: true
     PreventMobKillDrops: true 
     PreventRandomEquipment: true 
-    #PreventSunburn: true
     PreventVanillaDamage: true
-    #Scale: -1
     Silent: false 
   Skills:
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=24} @self ~onEnterCombat 
@@ -67,9 +64,9 @@ OpenField_Guard_牙狼_MCLove32:
   - doNothing{conditions=[ - isPlayer true ]}
   AITargetSelectors:
   - clear
-  - specificfaction{f=Enemy} 
-  - specificfaction{f=Sheep}
-  - specificfaction{f=Wolf}  
+  - specificfaction{f=enemy} 
+  - specificfaction{f=sheep}
+  - specificfaction{f=wolf}  
   - ownertarget
   - ownerattacker
   Options:
@@ -115,9 +112,9 @@ OpenField_Guard_牙狼ノ零_MCLove32:
   - doNothing{conditions=[ - isPlayer true ]}
   AITargetSelectors:
   - clear
-  - specificfaction{f=Enemy} 
-  - specificfaction{f=Sheep}
-  - specificfaction{f=Wolf}  
+  - specificfaction{f=enemy} 
+  - specificfaction{f=sheep}
+  - specificfaction{f=wolf}  
   - ownertarget
   - ownerattacker
   Options:

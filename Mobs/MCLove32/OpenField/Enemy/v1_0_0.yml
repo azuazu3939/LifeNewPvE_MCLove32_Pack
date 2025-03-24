@@ -1,7 +1,7 @@
 OpenField_Enemy_Abstract_Generic:
   Type: zombie
   Display: ""
-  Faction: Enemy
+  Faction: enemy
   Options:
     Collidable: true 
     DigOutOfGround: true 
@@ -67,7 +67,7 @@ OpenField_Enemy_ハロウルフ_MCLove32:
   - ownerattacker
   - ownertarget
   - attacker
-  - specificfaction{f=Sheep}
+  - specificfaction{f=sheep}
   Skills:
   - potion{t=SPEED;d=144000;l=1;p=false} @self ~onSpawn
   - skill:Generic_Enemy_ウォーク追従_MCLove32{v=45} @self ~onTimer:20 ?!incombat
@@ -113,10 +113,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32:
   - clear
   - attacker
   - players
-  - nearestconditionaltarget{mr=false;ms=false;
-    c=[ 
-      - facion{f=wolf} true
-    ]}
+  - specificfaction{f=wolf}
   AIGoalSelectors:
   - randomstroll
   - gotoowner
@@ -265,10 +262,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32:
   - clear
   - attacker
   - players
-  - nearestconditionaltarget{mr=false;ms=false;
-    c=[ 
-      - facion{f=sheep} true
-    ]}
+  - specificfaction{f=sheep}
   AIGoalSelectors:
   - randomstroll
   - gotoowner
