@@ -195,7 +195,6 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_1:
   - incombat
   - hasTag{t=DOWN} false
   - hasTag{t=ATTACK} false 
-  - playerwithin{d=15}
   - targetWithin{d=15}
   Skills:
   - addtag{t=ATTACK} @self
@@ -224,7 +223,6 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_2:
   - incombat
   - hasTag{t=DOWN} false
   - hasTag{t=ATTACK} false 
-  - playerwithin{d=20}
   - targetWithin{d=20}
   Skills:
   - addtag{t=ATTACK} @self
@@ -301,7 +299,6 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_4:
   - incombat
   - hasTag{t=DOWN} false 
   - hasTag{t=ATTACK} false 
-  - playerwithin{d=24} false 
   - targetWithin{d=24} false
   Skills:
   - addtag{t=ATTACK} @self
@@ -337,7 +334,6 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_5:
   - incombat
   - hasTag{t=DOWN} false
   - hasTag{t=ATTACK} false 
-  - playerwithin{d=20}
   - targetWithin{d=20}
   Skills:
   - addtag{t=ATTACK} @self
