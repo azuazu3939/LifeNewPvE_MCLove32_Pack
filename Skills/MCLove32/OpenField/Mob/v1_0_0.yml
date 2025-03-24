@@ -237,7 +237,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_2:
     oe=[
       - skill:OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_2_Process @self
     ];
-    v=35;syo=0;sfo=0;tyo=25;g=1.5;se=false;sb=true;mr=64;i=1;vr=1.5;hr=1.5} @T
+    v=35;syo=0;sfo=0;tyo=25;g=1.5;se=false;sb=true;mr=64;i=1;vr=1.5;hr=1.5;hnp=true;c=[ - samefaction false ]} @T
 
 OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_3:
   Cooldown: 4
@@ -760,7 +760,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot:
       - setVar{var=skill.delay;val="<skill.var.delay> - 1";t=INTEGER} @self
       - e:p{p=spark;a=5;vs=0.5;hs=0.25;delay=<skill.var.delay>} @origin
       - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Projectile_Effect{delay=<skill.var.delay>} @origin 0.25
-      - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot_Damage{delay=<skill.var.delay>} @PlayersNearOrigin{r=1.5}
+      - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot_Damage{delay=<skill.var.delay>} @EntitiesNearOrigin{r=1.5;c=[ - samefaction false ]}
     ];
     v=8;se=false;sb=false;mr=20;i=1;sfo=3;syo=2;tyo=2;md=40;ho=<skill.var.ho>;hnp=true;c=[ - samefaction false ]} @forward{lockpitch=true}
 
@@ -821,8 +821,8 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2_Process:
 
       - e:p{p=explosion_huge;a=1;vs=1;hs=1;repeat=3;repeati=5} @origin
       - sound{s=block.end_portal.spawn;p=2;v=1} @origin
-      - damage{a="<skill.var.dmg> * 1.25";pi=true;ii=true} @PlayersNearOrigin{r=5}
-      - potion{t=SLOW;l=2;d=100;p=false} @PlayersNearOrigin{r=5}
+      - damage{a="<skill.var.dmg> * 1.25";pi=true;ii=true} @EntitiesNearOrigin{r=6;c=[ - samefaction false ]}
+      - potion{t=SLOW;l=2;d=100;p=false} @EntitiesNearOrigin{r=6;c=[ - samefaction false ]}
     ];
     v=2;i=1;vr=2;hr=2;se=false;syo=2;sfo=3;hnp=true;c=[ - samefaction false ]} @forward{f=10;y=-5}
 

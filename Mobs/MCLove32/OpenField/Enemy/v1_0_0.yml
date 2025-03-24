@@ -234,6 +234,7 @@ OpenField_Enemy_黒小ヤギ_MCLove32:
   - YELLOW 0.8
   Skills:
   - skill:OpenField_Enemy_黒小ヤギ_MCLove32_Skills @self ~onSpawn 
+  - remove{delay=600} @self ~onSpawn 
 
 OpenField_Enemy_風牙狼ウィディラー_MCLove32:
   Template: OpenField_Enemy_Abstract_Generic
