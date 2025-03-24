@@ -528,7 +528,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32:
     MovementSpeed: 0.25
     KnockbackResistance: 1
     MaxCombatDistance: 40
-    FollowRange: 12
+    FollowRange: 8
   DamageModifiers:
   - SUFFOCATION 0
   - FALL 0
@@ -552,8 +552,8 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32:
     Style: SEGMENTED_12
   Skills:
   - raidBoss @self ~onSpawn 
-  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=48} @self ~onEnterCombat
-  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=12;delay=5} @self ~onDropCombat
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=32} @self ~onEnterCombat
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=8;delay=5} @self ~onDropCombat
   - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_EnterCombat @self ~onEntercombat
   - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK @self ~onEntercombat
   - addtag{t=MIDDLE_HEALTH} @self ~onDamaged <70%
