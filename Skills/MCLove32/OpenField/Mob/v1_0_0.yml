@@ -830,7 +830,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1:
   - setVar{var=skill.ho;val="90";t=INTEGER} @self
   - sound{s=entity.wolf.howl;delay=10;v=1.5} @self
   - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process{repeat=44;repeati=1} @self
-  - delay 180
+  - delay 150
   - removeTag{t=ATTACK} @self
 
 OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Effect:
@@ -1116,7 +1116,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2:
   - leap{v=-1050} @forward{f=10;y=-5}
   - delay 10
   - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2_Process @self
-  - delay 140
+  - delay 100
   - removeTag{t=ATTACK} @self
 
 OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2_Process:
@@ -1180,7 +1180,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_3:
       - damage{a=<skill.var.dmg>;pi=true;ii=true}
     ];
     v=24;g=1;bounce=true;bv=1.05;tyo=2;syo=0;sfo=0;i=1;md=160} @T
-  - delay 140
+  - delay 60
   - removeTag{t=ATTACK} @self
 
 OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_4:
@@ -1207,7 +1207,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_4:
       - damage{a=<skill.var.dmg>;pi=true;ii=true}
     ];
     v=32;g=1;bounce=true;bv=1.15;tyo=2;syo=0;sfo=0;i=1;md=100} @T
-  - delay 140
+  - delay 50
   - removeTag{t=ATTACK} @self
 
 OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_5:
