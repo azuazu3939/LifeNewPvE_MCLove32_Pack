@@ -1042,9 +1042,9 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2_Process:
   Skills:
   - projectile{
     ot=[
-      - e:ps{p=spark;a=100;r=2} @origin 
-      - s:ps{p=sweepattack;a=50;r=3} @origin
-      - e:ps{p=cloud;a=150;s=1.5;r=1;cd=0.4} @origin
+      - e:ps{p=spark;a=100;r=1} @origin 
+      - s:ps{p=sweep_attack;a=50;r=2} @origin
+      - e:ps{p=cloud;a=120;s=1;r=1;cd=0.2} @origin
     ];
     oh=[
       - damage{a=<skill.var.dmg>;pi=true;ii=true}
@@ -1057,6 +1057,6 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2_Process:
 OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2_Process_Buff:
   Skills:
   - e:ps{p=spark;a=100;s=1.5;r=2;d=true;dir=0,2,0;hs=0.5} @origin 
-  - s:ps{p=sweepattack;a=50;s=1.5;r=3;d=true;dir=0,2,0;hs=0.5} @origin
+  - s:ps{p=sweep_attack;a=50;s=1.5;r=3;d=true;dir=0,2,0;hs=0.5} @origin
   - e:ps{p=cloud;a=150;s=1.5;r=3;d=true;dir=0,2,0;hs=1} @origin
   - potion{t=SPEED;l=1;d=200;p=false} @ENO{r=5}
