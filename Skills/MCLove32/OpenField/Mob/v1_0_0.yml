@@ -531,7 +531,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_1:
       - look{f=true} @T
     ];
     oh=[
-      - damage{a=<skill.var.dmg>;pi=true;ii=true}
+      - damage{a=<skill.var.dmg>;pi=true;ii=true;e=wind}
     ];
     oe=[
       - removetag{t=ATTACK} @self
@@ -583,7 +583,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_3:
     ];
     oh=[
       - throw{v=4;vy=4}
-      - damage{a=<skill.var.dmg>;pi=true;ii=true}
+      - damage{a=<skill.var.dmg>;pi=true;ii=true;e=wind}
     ];
     oe=[
       - projectile{
@@ -593,7 +593,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_3:
         ];
         oh=[
           - throw{v=4;vy=4}
-          - damage{a=<skill.var.dmg>;pi=true;ii=true}
+          - damage{a=<skill.var.dmg>;pi=true;ii=true;e=wind}
         ];
         oe=[
           - delay 10
@@ -604,7 +604,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_3:
             ];
             oh=[
               - throw{v=4;vy=4}
-              - damage{a=<skill.var.dmg>;pi=true;ii=true}
+              - damage{a=<skill.var.dmg>;pi=true;ii=true;e=wind}
             ];
             oe=[
               - removetag{t=ATTACK} @self
@@ -636,14 +636,14 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_4:
 
 OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_2_Process:
   Skills:
-  - setVar{var=skill.dmg;val="<caster.damage> + 8";t=FLOAT} @self
+  - setVar{var=skill.dmg;val="<caster.damage> + 10";t=FLOAT} @self
   - skill:OpenField_Enemy_羊獣カルーチェ_MCLove32_BUFF @self
   - projectile{
     ot=[
       - e:p{p=cloud;a=5;vs=2.5;hs=0.15;d=true;dir=0,1,0;s=0.5} @origin
     ];
     oh=[
-      - damage{a=<skill.var.dmg>;pi=true;ii=true} @targetedTarget{c=[ - hasAura{n=HIT} false ]}
+      - damage{a=<skill.var.dmg>;pi=true;ii=true;e=wind} @targetedTarget{c=[ - hasAura{n=HIT} false ]}
       - aura{n=HIT;i=20;t=20} 
     ];
     oe=[
@@ -673,7 +673,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_5:
       - look{f=true} @T
     ];
     oh=[
-      - damage{a=<skill.var.dmg>;pi=true;ii=true}
+      - damage{a=<skill.var.dmg>;pi=true;ii=true;e=wind}
     ];
     oe=[
       - projectile{
@@ -682,7 +682,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_5:
           - look{f=true} @T
         ];
         oh=[
-          - damage{a=<skill.var.dmg>;pi=true;ii=true}
+          - damage{a=<skill.var.dmg>;pi=true;ii=true;e=wind}
         ];
         oe=[
           - removetag{t=ATTACK} @self
