@@ -402,7 +402,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32:
   - moveTowardsTarget
   BossBar:
     Enabled: true
-    Title: "&7&l<caster.name>"
+    Title: "<caster.name>"
     Range: 32
     Color: WHITE
     Style: SEGMENTED_12
