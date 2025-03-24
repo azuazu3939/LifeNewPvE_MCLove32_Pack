@@ -85,295 +85,12 @@ OpenField_Enemy_ハロウルフ_MCLove32_Leader:
   - summon{t=OpenField_Enemy_ハロウルフ_MCLove32;a=2to3;r=5;s=true} @self ~onSpawn
   - skill:Generic_Enemy_ウォーク_MCLove32{v=45} @self ~onTimer:20 ?!incombat
 
-OpenField_Enemy_臆病なオセロット_MCLove32:
-  Template: OpenField_Enemy_Base_MCLove32
-  Type: ocelot
-  Display: "&7&l臆病なオセロット"
-  Health: 200
-  Damage: 20
-  Armor: 5
-  Options:
-    FollowRange: 16
-    Scale: 2
-    MovementSpeed: 0.05
-  DamageModifiers:
-  - SUFFOCATION 0
-  Drops:
-  - exp 30
-  AITargetSelectors:
-  - clear
-  - attacker
-  - players 
-  AIGoalSelectors:
-  - randomstroll
-  - movetowardstarget
-  Skills:
-  - sound{s=entity.ocelot.death;v=4} @self ~onDeath 
-  - skill:OpenField_Enemy_臆病なオセロット_MCLove32_Skill_Checker @self ~onDamaged ?!hasTag{t=combat}
-  - skill:OpenField_Enemy_臆病なオセロット_MCLove32_Skills{delay=5} @T ~onEntercombat
-  - velocity{x=2.5;y=3;z=2.5;m=MULTIPLY} @self ~onDamaged ?!hasTag{t=combat}
-
-OpenField_Enemy_エリミネーター_MCLove32:
-  Template: OpenField_Enemy_Base_MCLove32
-  Type: WITHER_SKELETON
-  Display: "&7&lエリミネーター"
-  Health: 200
-  Damage: 5
-  Armor: 0
-  Equipment:
-  - player_head{skulltexture=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODBkNzkyMjAxZmRjZTkxZTg4NGZmMzJhMDZkZDRjYzdjZDk4MzgyMmIxNjVkNDUzZWNjYjRjNjBhZWRjM2JhYSJ9fX0} HEAD 
-  - leather_chestplate{color=GRAY} CHEST
-  - leather_leggings{color=GRAY} LEGS
-  - leather_boots{color=GRAY} FEET
-  - netherite_sword HAND 
-  - diamond_sword OFFHAND
-  Options:
-    FollowRange: 24
-    KnockbackResistance: 1
-    AttackSpeed: 2
-    Silent: true 
-    MovementSpeed: 0.22
-    Scale: 1
-  Drops:
-  - exp 500
-  DamageModifiers:
-  - SUFFOCATION 0
-  - FALL 0
-  - BLUE 1.2
-  - YELLOW 1.2
-  - GREEN 1.2
-  AITargetSelectors:
-  - clear
-  - players 
-  AIGoalSelectors:
-  - randomstroll
-  - gotoowner
-  - meleeattack{ar=8}
-  Skills:
-  - raidBoss @self ~onSpawn 
-  - attribute{attr=GENERIC_FOLLOW_RANGE;a=64} @self ~onEntercombat 
-  - attribute{attr=GENERIC_FOLLOW_RANGE;a=24;delay=5} @self ~onDropcombat 
-  - skill:OpenField_Enemy_エリミネーター_MCLove32_Skills @self ~onEntercombat
-  - skill:OpenField_Enemy_エリミネーター_MCLove32_Damaged_Skills @self ~onDamaged
-  BossBar:
-    Enabled: true
-    Title: "<caster.name>"
-    Range: 16
-    Color: PURPLE
-    Style: SEGMENTED_12
-
-OpenField_Enemy_モフィモス_MCLove32:
-  Template: OpenField_Enemy_Base_MCLove32
-  Type: wither_skeleton
-  Display: "&7&lモフィモス"
-  Health: 1000
-  Damage: 32
-  Armor: 25
-  Equipment:
-  - player_head{skulltexture=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWUwZGRmNDEyYzYwYTdiZWY4NGE3YjhlNmZjYTcxNGQ0ODgyYWYxMTE4ZTk3NDAwYzg4ZDExYmE1YTk0N2RjYSJ9fX0} HEAD 
-  - netherite_chestplate CHEST
-  - netherite_leggings LEGS
-  - netherite_boots FEET
-  - soul_lantern HAND
-  - soul_lantern OFFHAND
-  Options:
-    FollowRange: 24
-    KnockbackResistance: 1
-    AttackSpeed: 2
-    Silent: true 
-    MovementSpeed: 0.18
-    Scale: 1
-  Drops:
-  - exp 1000
-  DamageModifiers:
-  - SUFFOCATION 0
-  - FALL 0
-  - BLUE 1.2
-  - YELLOW 1.2
-  AITargetSelectors:
-  - clear
-  - players 
-  AIGoalSelectors:
-  - randomstroll
-  - gotoowner
-  - meleeattack{ar=8}
-  Skills:
-  - raidBoss @self ~onSpawn 
-  - remove{delay=10} @children ~onDeath 
-  - attribute{attr=GENERIC_FOLLOW_RANGE;a=48} @self ~onEntercombat 
-  - attribute{attr=GENERIC_FOLLOW_RANGE;a=24;delay=5} @self ~onDropcombat 
-  - skill:OpenField_Enemy_モフィモス_MCLove32_Skills @self ~onEntercombat
-  - skill:OpenField_Enemy_モフィモス_MCLove32_Skills @self ~onDamaged 
-  - healpercent{m=0.01;cd=5} @self ~onSignal:death
-  BossBar:
-    Enabled: true
-    Title: "<caster.name>"
-    Range: 16
-    Color: PURPLE
-    Style: SEGMENTED_12
-
-OpenField_Enemy_モフィモ_ゾラ_MCLove32:
-  Template: OpenField_Enemy_Base_MCLove32
-  Type: baby_zombie
-  Health: 200
-  Damage: 15
-  Armor: 0
-  Equipment:
-  - player_head{skulltexture=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjQwOWM0ZmE1YzQzNTJhZDAzZDM0ZDE1MTBjMDdkY2E3M2YwZmNiZDRhZDQ2MDQxMWFmZTY5NjAxOTExMDMyNiJ9fX0} HEAD
-  Options:
-    DigOutOfGround: false
-    KnockbackResistance: 1
-    NoDamageTicks: 0
-    NoGravity: true
-    AttackSpeed: 2
-    Silent: true 
-    MovementSpeed: 0.0001
-    Scale: 1.5
-    Invisible: true
-  DamageModifiers:
-  - SUFFOCATION 0
-  - FALL 0
-  - BLUE 1.2
-  - YELLOW 1.2
-  AITargetSelectors:
-  - clear
-  - attacker
-  - players 
-  AIGoalSelectors:
-  - randomstroll
-  - gotoowner
-  - meleeattack
-  Skills:
-  - skill:OpenField_Enemy_モフィモ_ゾラ_MCLove32_Skills @self ~onSpawn 
-  - signal{s=death} @MIR{r=48;t=OpenField_Enemy_モフィモス_MCLove32;limit=1;sort=NEAREST} ~onDeath 
-
-OpenField_Enemy_モフィモ_ゾラール_MCLove32:
-  Template: OpenField_Enemy_モフィモ_ゾラ_MCLove32
-  Type: baby_zombie
-  Health: 250
-  Skills:
-  - summon{t=OpenField_Enemy_モフィモ_ゾラ_MCLove32;a=2;r=0} @self ~onSpawn 
-  - remove{delay=10} @children ~onDeath 
-
-OpenField_Enemy_モフィモ_ゾラノ_MCLove32:
-  Template: OpenField_Enemy_Base_MCLove32
-  Type: baby_zombie
-  Health: 200
-  Damage: 15
-  Armor: 0
-  Equipment:
-  - player_head{skulltexture=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjQwOWM0ZmE1YzQzNTJhZDAzZDM0ZDE1MTBjMDdkY2E3M2YwZmNiZDRhZDQ2MDQxMWFmZTY5NjAxOTExMDMyNiJ9fX0} HEAD
-  Options:
-    DigOutOfGround: false
-    FollowRange: 48
-    KnockbackResistance: 1
-    NoGravity: true
-    AttackSpeed: 2
-    Silent: true 
-    MovementSpeed: 0.0001
-    Scale: 1.5
-    Invisible: true
-  DamageModifiers:
-  - SUFFOCATION 0
-  - FALL 0
-  - BLUE 1.2
-  - YELLOW 1.2
-  AITargetSelectors:
-  - clear
-  - attacker
-  - players 
-  AIGoalSelectors:
-  - randomstroll
-  - gotoowner
-  - meleeattack
-  Skills:
-  - remove{delay=105} @self ~onSpawn
-
-OpenField_Enemy_ウッドライク_MCLove32:
-  Template: OpenField_Enemy_Base_MCLove32
-  Display: "&2ウッドライク"
-  Type: baby_zombie
-  Health: 50
-  Damage: 5
-  Armor: 0
-  Equipment:
-  - player_head{skulltexture=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODAxNzFmN2ZhY2M2Zjc4NDMxMDNiODIxZDlmOGE2OWZlYmUwNzE0MDQzMjUzMTNhY2JmMGI5MzE2YTAzN2UwNiJ9fX0} HEAD
-  - leather_chestplate{color=GREEN} CHEST 
-  - leather_leggings{color=GREEN} LEGS 
-  - leather_boots{color=GREEN} FEET
-  Options:
-    NoDamageTicks: 0
-    Silent: true 
-    Scale: 1.5
-  DamageModifiers:
-  - SUFFOCATION 0
-  - FALL 0
-  - RED 1.2
-  - GREEN 0.8
-  Drops:
-  - exp 100
-  AITargetSelectors:
-  - clear
-  - attacker
-  - players 
-  AIGoalSelectors:
-  - randomstroll
-  - gotoowner
-  - meleeattack
-  Skills:
-
-OpenField_Enemy_ウズラミリィ_MCLove32:
-  Template: OpenField_Enemy_Base_MCLove32
-  Display: "&fウズラミリィ"
-  Type: skeleton
-  Health: 3250
-  Damage: 40
-  Armor: 25
-  Equipment:
-  - calibrated_sculk_sensor HEAD
-  - leather_chestplate{color=PURPLE} CHEST 
-  - netherite_leggings LEGS 
-  - leather_boots{color=PURPLE} FEET
-  - amethyst_cluster HAND 
-  - sculk_sensor OFFHAND
-  Options:
-    NoDamageTicks: 0
-    Silent: true 
-    Scale: 2
-    MovementSpeed: 0.1
-    KnockbackResistance: 1
-    MaxCombatDistance: 40
-    FollowRange: 12
-  DamageModifiers:
-  - SUFFOCATION 0
-  - FALL 0
-  - BLUE 1.2
-  - RED 1.2
-  - GREEN 0.8
-  - YELLOW 0.8
-  Drops:
-  - exp 1000
-  AITargetSelectors:
-  - clear
-  - attacker
-  - players 
-  AIGoalSelectors:
-  - randomstroll
-  - gotoowner
-  - meleeattack
-  Skills:
-  - raidBoss @self ~onSpawn 
-  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=48} @self ~onEnterCombat
-  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=12;delay=5} @self ~onDropCombat
-  - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skills @self ~onEntercombat
-  - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_1 @self ~onEntercombat
-  - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_5 @self ~onEntercombat 
-
 OpenField_Enemy_羊獣カルーチェ_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
   Display: "&f羊獣カルーチェ"
   Type: sheep
   Health: 4250
+  Faction: sheep
   Armor: 0
   Damage: 0
   Options:
@@ -395,7 +112,11 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32:
   AITargetSelectors:
   - clear
   - attacker
-  - players 
+  - players
+  - nearestconditionaltarget{mr=false;ms=false;
+    c=[ 
+      - facion{f=wolf} true
+    ]}
   AIGoalSelectors:
   - randomstroll
   - gotoowner
@@ -426,6 +147,7 @@ OpenField_Enemy_黒小ヤギ_MCLove32:
   Display: "&f黒小ヤギ"
   Type: sheep
   Health: 10
+  Faction: mob
   Armor: 0
   Damage: 0
   Options:
@@ -453,6 +175,7 @@ OpenField_Enemy_ウィスピット_MCLove32:
   Display: "Grumm"
   Type: ghast
   Health: 20
+  Faction: mob
   Armor: 0
   Damage: 3
   Options:
@@ -484,6 +207,7 @@ OpenField_Enemy_フウィスピット_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
   Display: "フウィスピット"
   Type: bat
+  Faction: mob
   Health: 30
   Armor: 0
   Damage: 5
@@ -520,6 +244,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32:
   Type: wolf
   Health: 7500
   Armor: 0
+  Faction: wolf
   Damage: 5
   Options:
     NoDamageTicks: 0
@@ -539,7 +264,11 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32:
   AITargetSelectors:
   - clear
   - attacker
-  - players 
+  - players
+  - nearestconditionaltarget{mr=false;ms=false;
+    c=[ 
+      - facion{f=sheep} true
+    ]}
   AIGoalSelectors:
   - randomstroll
   - gotoowner
@@ -570,6 +299,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32:
   Type: hoglin
   Health: 5950
   Armor: 0
+  Faction: hoglin
   Damage: 10
   Options:
     NoDamageTicks: 0
@@ -591,6 +321,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32:
   - clear
   - attacker
   - players 
+  - otherFaction
   AIGoalSelectors:
   - randomstroll
   - gotoowner
