@@ -210,7 +210,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_1:
       - look{f=true} @T
     ];
     oh=[
-      - damage{a=<skill.var.dmg>;pi=true;ii=true;e=wind}
+      - damage{a=<skill.var.dmg>;pi=true;ii=true;e=GREEN}
     ];
     oe=[
       - removetag{t=ATTACK} @self
@@ -261,7 +261,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_3:
     ];
     oh=[
       - throw{v=4;vy=4}
-      - damage{a=<skill.var.dmg>;pi=true;ii=true;e=wind}
+      - damage{a=<skill.var.dmg>;pi=true;ii=true;e=GREEN}
     ];
     oe=[
       - projectile{
@@ -271,7 +271,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_3:
         ];
         oh=[
           - throw{v=4;vy=4}
-          - damage{a=<skill.var.dmg>;pi=true;ii=true;e=wind}
+          - damage{a=<skill.var.dmg>;pi=true;ii=true;e=GREEN}
         ];
         oe=[
           - delay 10
@@ -282,7 +282,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_3:
             ];
             oh=[
               - throw{v=4;vy=4}
-              - damage{a=<skill.var.dmg>;pi=true;ii=true;e=wind}
+              - damage{a=<skill.var.dmg>;pi=true;ii=true;e=GREEN}
             ];
             oe=[
               - removetag{t=ATTACK} @self
@@ -320,7 +320,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_2_Process:
       - e:p{p=cloud;a=5;vs=2.5;hs=0.15;d=true;dir=0,1,0;s=0.5} @origin
     ];
     oh=[
-      - damage{a=<skill.var.dmg>;pi=true;ii=true;e=wind} @targetedTarget{c=[ - hasAura{n=HIT} false ]}
+      - damage{a=<skill.var.dmg>;pi=true;ii=true;e=GREEN} @targetedTarget{c=[ - hasAura{n=HIT} false ]}
       - aura{n=HIT;i=20;t=20} 
     ];
     oe=[
@@ -332,7 +332,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_2_Process:
       - e:p{p=cloud;a=5;vs=2.5;hs=0.15;d=true;dir=0,1,0;s=0.5} @origin
     ];
     oh=[
-      - damage{a=<skill.var.dmg>;pi=true;ii=true;e=wind} @targetedTarget{c=[ - hasAura{n=HIT} false ]}
+      - damage{a=<skill.var.dmg>;pi=true;ii=true;e=GREEN} @targetedTarget{c=[ - hasAura{n=HIT} false ]}
       - aura{n=HIT;i=20;t=20} 
     ];
     oe=[
@@ -361,7 +361,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_5:
       - look{f=true} @T
     ];
     oh=[
-      - damage{a=<skill.var.dmg>;pi=true;ii=true;e=wind}
+      - damage{a=<skill.var.dmg>;pi=true;ii=true;e=GREEN}
     ];
     oe=[
       - projectile{
@@ -370,7 +370,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_5:
           - look{f=true} @T
         ];
         oh=[
-          - damage{a=<skill.var.dmg>;pi=true;ii=true;e=wind}
+          - damage{a=<skill.var.dmg>;pi=true;ii=true;e=GREEN}
         ];
         oe=[
           - removetag{t=ATTACK} @self
@@ -822,7 +822,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2_Process:
       - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2_Process_Tick @self
     ];
     oh=[
-      - damage{a=<skill.var.dmg>;pi=true;ii=true}
+      - damage{a=<skill.var.dmg>;pi=true;ii=true;e=GREEN}
     ];
     oe=[
       - e:pr{r=4;pts=32;p=cloud;a=1;s=1;d=true;dir=0,1,0} @origin
@@ -834,7 +834,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2_Process:
 
       - e:p{p=explosion_huge;a=1;vs=1;hs=1;repeat=3;repeati=5} @origin
       - sound{s=block.end_portal.spawn;p=2;v=1} @origin
-      - damage{a="<skill.var.dmg> * 1.25";pi=true;ii=true} @ENO{r=6;c=[ - samefaction false ]}
+      - damage{a="<skill.var.dmg> * 1.25";pi=true;ii=true;e=GREEN} @ENO{r=6;c=[ - samefaction false ]}
       - potion{t=SLOW;l=2;d=100;p=false} @ENO{r=6;c=[ - samefaction false ]}
     ];
     v=2;i=1;vr=2;hr=2;se=false;syo=2;sfo=3;hnp=true;c=[ - samefaction false ]} @forward{f=10;y=-5}
@@ -920,7 +920,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_5:
     ];
     oe=[
       - sound{s=item.totem.use;p=2} @origin
-      - damage{a=<skill.var.dmg>;pi=true;ii=true} @ENO{r=5;c=[ - samefaction false ]}
+      - damage{a=<skill.var.dmg>;pi=true;ii=true;e=GREEN} @ENO{r=5;c=[ - samefaction false ]}
       - throw{v=15;vy=8} @ENO{r=5;c=[ - samefaction false ]}
       - potion{t=MINING_FATIGUE;l=2;d=200;p=false} @ENO{r=5;c=[ - samefaction false ]}
       - potion{t=SLOW;l=1;d=200;p=false} @ENO{r=5;c=[ - samefaction false ]} 0.5
