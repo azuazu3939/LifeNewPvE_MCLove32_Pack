@@ -182,8 +182,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32:
   - clear
   - attacker
   - players
-  - specificfaction{f=wolf}
-  - specificFaction{f=hoglin}
+  - otherFaction
   AIGoalSelectors:
   - randomstroll
   - gotoowner
@@ -264,8 +263,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32:
   - clear
   - attacker
   - players
-  - specificfaction{f=sheep}
-  - specificFaction{f=hoglin}
+  - otherFaction
   AIGoalSelectors:
   - randomstroll
   - gotoowner
@@ -319,8 +317,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32:
   - clear
   - attacker
   - players 
-  - specificfaction{f=sheep}
-  - specificfaction{f=wolf}
+  - otherFaction
   AIGoalSelectors:
   - randomstroll
   - gotoowner
