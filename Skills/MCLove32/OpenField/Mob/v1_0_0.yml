@@ -1149,5 +1149,8 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_5:
   - jump{v=0.5} @self
   - delay 25
   - damah{a=<skill.var.dmg>;pi=true;ii=true} @PIR{r=5} ?onGround
+  - e:pr{r=4;pts=32;p=cloud;a=1;s=0.7;d=true;dir=0,1,0} @origin
+  - e:pr{r=8;pts=32;p=cloud;a=1;s=0.7;d=true;dir=0,1,0} @origin
+  - e:pr{r=10;pts=32;p=cloud;a=1;s=0.7;d=true;dir=0,1,0} @origin
   - delay 50
   - removeTag{t=ATTACK} @self
