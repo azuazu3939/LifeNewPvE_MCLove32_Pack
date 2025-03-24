@@ -710,7 +710,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_EnterCombat:
   - hasTag{t=DOWN} castinstead OpenField_Enemy_風牙狼ウィディラー_MCLove32_NEXT
   Skills:
   - addtag{t=START} @self
-  - randomskill{s=OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1,OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2,OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_3;fbs=OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_4} @self
+  - randomskill{s=OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1,OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2,OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_3,OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_4,OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_5;fbs=OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_4} @self
     repeati=20;repeat=2} @self
   - delay 200
   - removeTag{t=START} @self
@@ -1018,6 +1018,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot_Dama
   - damage{a=<skill.var.dmg>;pi=true;ii=true;e=GREEN}
 
 OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2:
+   Cooldown: 8
   Conditions:
   - incombat
   - hasTag{t=DOWN} false
@@ -1077,6 +1078,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2_Process_Tick:
   - modifyprojectile{t=VELOCITY;v=2;a=MULTIPLY} @self
 
 OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_3:
+  Cooldown: 5
   Conditions:
   - incombat
   - hasTag{t=DOWN} false
@@ -1104,6 +1106,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_3:
   - removeTag{t=ATTACK} @self
 
 OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_4:
+  Cooldown: 1
   Conditions:
   - incombat
   - hasTag{t=DOWN} false
@@ -1127,4 +1130,24 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_4:
     ];
     v=32;g=1;bounce=true;bv=1.15;tyo=2;syo=0;sfo=0;i=1;md=100} @T
   - delay 140
+  - removeTag{t=ATTACK} @self
+
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_5:
+  Cooldown: 5
+  Conditions:
+  - incombat
+  - hasTag{t=DOWN} false
+  - hasTag{t=ATTACK} false
+  - targetWithin{d=6} true
+  Skills:
+  - addtag{t=ATTACK} @self
+  - look{f=true} @T
+  - setVar{var=skill.dmg;val="<caster.damage> + 5";t=FLOAT} @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_BUFF @self
+  - sound{s=entity.wolf.growl;p=1.414} @self
+  - delay 25
+  - jump{v=0.5} @self
+  - delay 25
+  - damah{a=<skill.var.dmg>;pi=true;ii=true} @PIR{r=5} ?onGround
+  - delay 50
   - removeTag{t=ATTACK} @self
