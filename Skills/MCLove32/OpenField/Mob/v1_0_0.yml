@@ -827,7 +827,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1:
   - delay 35
   - setVar{var=skill.dmg;val="<caster.damage> + 10";t=FLOAT} @self
   - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_BUFF @self
-  - setVar{var=skill.ho;val="45";t=INTEGER} @self
+  - setVar{var=skill.ho;val="90";t=INTEGER} @self
   - sound{s=entity.wolf.howl;delay=10;v=1.5} @self
   - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process{repeat=44;repeati=1} @self
   - delay 180
@@ -1078,7 +1078,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_V45:
 
 OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1_Process_Shoot:
   Skills:
-  - setVar{var=skill.ho;val="<skill.var.ho> - 3 * <skill.var.itr>";t=INTEGER} @self
+  - setVar{var=skill.ho;val="<skill.var.ho> - 4 * <skill.var.itr>";t=INTEGER} @self
   - projectile{
     ot=[
       - setVar{var=skill.delay;val="<skill.var.delay> - 1";t=INTEGER} @self
