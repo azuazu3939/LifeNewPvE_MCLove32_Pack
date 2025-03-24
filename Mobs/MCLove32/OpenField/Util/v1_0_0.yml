@@ -56,6 +56,27 @@ Utils_MobUtils_ダメージ測定Scale2_MCLove32:
   - message{m="<skill.var.damage-amount>"} @trigger ~onDamaged
   - healpercent{m=1} @self ~onDamaged
 
+OpenField_Util_Bosses_MCLove32_Plains:
+  Template: OpenField_Enemy_Abstract_Generic
+  Display: ""
+  Type: silverfish
+  Health: 99999999
+  Armor: 0
+  Faction: silverfish
+  Damage: 0
+  Options:
+    NoDamageTicks: 200
+    Silent: true 
+    Scale: 0.5
+    MovementSpeed: 0.001
+    KnockbackResistance: 1
+    MaxCombatDistance: 0
+    NoAI: true
+    Invisible: true
+  Skills:
+  - skill:OpenField_Util_Bosses_MCLove32_Plains_Skills @self ~onSpawn 
+  - remove{delay=1} @self ~onSpawn 
+
 OpenField_Util_黄緑色のテラコッタ_100_MCLove32:
   Type: block_display
   DisplayOptions:

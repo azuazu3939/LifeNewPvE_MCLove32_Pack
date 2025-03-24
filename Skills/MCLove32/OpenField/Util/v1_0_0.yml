@@ -1,0 +1,18 @@
+OpenField_Util_Bosses_MCLove32_Plains_Skills:
+  Skills:
+  - randomskill{s=
+    OpenField_Util_Bosses_MCLove32_Plains_Skill_1,
+    OpenField_Util_Bosses_MCLove32_Plains_Skill_2,
+    OpenField_Util_Bosses_MCLove32_Plains_Skill_3} @self
+
+OpenField_Util_Bosses_MCLove32_Plains_Skill_1:
+  Skills:
+  - summon{t=OpenField_Enemy_羊獣カルーチェ_MCLove32;a=1;r=0} @self
+
+OpenField_Util_Bosses_MCLove32_Plains_Skill_2:
+  Skills:
+  - summon{t=OpenField_Enemy_風牙狼ウィディラー_MCLove32;a=1;r=0} @self
+
+OpenField_Util_Bosses_MCLove32_Plains_Skill_3:
+  Skills:
+  - summon{t=OpenField_Enemy_焔獣フェルドス_MCLove32;a=1;r=0} @self
