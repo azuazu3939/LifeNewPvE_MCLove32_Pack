@@ -704,7 +704,6 @@ OpenField_Enemy_黒小ヤギ_MCLove32_Skills:
   - skill:OpenField_Enemy_黒小ヤギ_MCLove32_Skills @self
 
 OpenField_Enemy_風牙狼ウィディラー_MCLove32_EnterCombat:
-  Cooldown: 5
   Conditions:
   - incombat
   - hasTag{t=START} false
@@ -719,7 +718,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_EnterCombat:
 OpenField_Enemy_風牙狼ウィディラー_MCLove32_NEXT:
   Skills:
   - delay 20
-  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_NEXT @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_EnterCombat @self
 
 OpenField_Enemy_風牙狼ウィディラー_MCLove32_BUFF:
   Skills:
@@ -1031,7 +1030,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2:
   - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_BUFF @self
   - sound{s=entity.wolf.ambient;p=0.75;v=1.5} @self
   - delay 10
-  - leap{v=-1009} @forward{f=5;y=-5} 
+  - leap{v=-1000} @forward{f=5;y=-5} 
   - delay 240
   - removeTag{t=ATTACK} @self
 
