@@ -1065,6 +1065,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2_Process:
 
       - e:p{p=explosion_huge;a=1;vs=1;hs=1;repeat=3;repeati=5} @origin
       - sound{s=block.end_portal.spawn;p=2;v=1} @origin
+      - damage{a="<skill.var.dmg> * 1.25";pi=true;ii=true} @PlayersNearOrigin{r=4}
     ];
     v=2;i=1;vr=2;hr=2;se=false;syo=2;sfo=3} @forward{f=10;y=-5}
 
