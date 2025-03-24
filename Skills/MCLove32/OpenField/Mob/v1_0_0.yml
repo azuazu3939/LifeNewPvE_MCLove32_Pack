@@ -397,7 +397,7 @@ OpenField_Enemy_ウズラミリィ_MCLove32_Skill_5_Process:
   - delay 320
   - skill:OpenField_Enemy_ウズラミリィ_MCLove32_Skill_5_Process @self 
 
-OpenField_Enemy_黒ヤギ_MCLove32_BUFF:
+OpenField_Enemy_羊獣カルーチェ_MCLove32_BUFF:
   Skills:
   - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.035";t=FLOAT} @self ?hasTag{t=P1}
   - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.03";t=FLOAT} @self ?hasTag{t=P2}
@@ -407,20 +407,20 @@ OpenField_Enemy_黒ヤギ_MCLove32_BUFF:
   - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.05";t=FLOAT} @self ?hasTag{t=MIDDLE_HEALTH}
   - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.1";t=FLOAT} @self ?hasTag{t=LOW_HEALTH}
 
-OpenField_Enemy_黒ヤギ_MCLove32_EnterCombat:
+OpenField_Enemy_羊獣カルーチェ_MCLove32_EnterCombat:
   Conditions:
   - incombat
   - hasTag{t=START} false
-  - hasTag{t=DOWN} castinstead OpenField_Enemy_黒ヤギ_MCLove32_NEXT
+  - hasTag{t=DOWN} castinstead OpenField_Enemy_羊獣カルーチェ_MCLove32_NEXT
   Skills:
   - addtag{t=START} @self
   - setVar{var=skill.dmg;val="0";t=FLOAT} @self
   - setVar{var=skill.break;val="<caster.mhp> / 50";t=FLOAT} @self
-  - ondamaged{auraName=OpenField_Enemy_黒ヤギ_MCLove32_Damaged;d=1200;
+  - ondamaged{auraName=OpenField_Enemy_羊獣カルーチェ_MCLove32_Damaged;d=1200;
     oh=[ 
       - setVar{var=skill.dmg;val="<skill.var.dmg> + <skill.var.damage-amount>";t=FLOAT} @self
       - setVar{var=skill.temp;val="<skill.var.break> - <skill.var.dmg>";t=FLOAT} @self
-      - skill:OpenField_Enemy_黒ヤギ_MCLove32_DamagedAndBreak @self
+      - skill:OpenField_Enemy_羊獣カルーチェ_MCLove32_DamagedAndBreak @self
     ]} @self
   - addtag{t=P1} @self
   - addtag{t=P2} @self
@@ -432,84 +432,84 @@ OpenField_Enemy_黒ヤギ_MCLove32_EnterCombat:
       - removetag{t=P1} @self
     ];
     i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;
-    b=ITEM;mat=DIAMOND;enchanted=true;rd=true;p=75;sp=0;auraName=OpenField_Enemy_黒ヤギ_MCLove32_Aura1} @self
+    b=ITEM;mat=DIAMOND;enchanted=true;rd=true;p=75;sp=0;auraName=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura1} @self
   - o{
     oe=[
       - removetag{t=P2} @self
     ];
     i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;
-    b=ITEM;mat=DIAMOND;enchanted=true;rd=true;p=75;sp=15;auraName=OpenField_Enemy_黒ヤギ_MCLove32_Aura2} @self
+    b=ITEM;mat=DIAMOND;enchanted=true;rd=true;p=75;sp=15;auraName=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura2} @self
   - o{
     oe=[
       - removetag{t=P3} @self
     ];
     i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;
-    b=ITEM;mat=DIAMOND;enchanted=true;rd=true;p=75;sp=30;auraName=OpenField_Enemy_黒ヤギ_MCLove32_Aura3} @self
+    b=ITEM;mat=DIAMOND;enchanted=true;rd=true;p=75;sp=30;auraName=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura3} @self
   - o{
     oe=[
       - removetag{t=P4} @self
     ];
     i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;
-    b=ITEM;mat=DIAMOND;enchanted=true;rd=true;p=75;sp=45;auraName=OpenField_Enemy_黒ヤギ_MCLove32_Aura4} @self
+    b=ITEM;mat=DIAMOND;enchanted=true;rd=true;p=75;sp=45;auraName=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura4} @self
   - o{
     oe=[
       - removetag{t=P5} @self
     ];
     i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;
-    b=ITEM;mat=DIAMOND;enchanted=true;rd=true;p=75;sp=60;auraName=OpenField_Enemy_黒ヤギ_MCLove32_Aura5} @self
+    b=ITEM;mat=DIAMOND;enchanted=true;rd=true;p=75;sp=60;auraName=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura5} @self
   - delay 1200
   - removetag{t=START} @self
-  - skill:OpenField_Enemy_黒ヤギ_MCLove32_EnterCombat @self
+  - skill:OpenField_Enemy_羊獣カルーチェ_MCLove32_EnterCombat @self
 
-OpenField_Enemy_黒ヤギ_MCLove32_DamagedAndBreak:
+OpenField_Enemy_羊獣カルーチェ_MCLove32_DamagedAndBreak:
   Conditions:
   - varrange{var=skill.temp;val=<0} true
   Skills:
   - setVar{var=skill.dmg;val="<skill.var.dmg> - <skill.var.break>";t=FLOAT} @self
   - setcolor{c=GRAY} @self
-  - auraRemove{aura=OpenField_Enemy_黒ヤギ_MCLove32_Aura5} @self ?!hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura1} ?!hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura2} ?!hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura3} ?!hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura4} ?hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura5}
-  - auraRemove{aura=OpenField_Enemy_黒ヤギ_MCLove32_Aura4} @self ?!hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura1} ?!hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura2} ?!hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura3} ?hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura4} ?hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura5}
-  - auraRemove{aura=OpenField_Enemy_黒ヤギ_MCLove32_Aura3} @self ?!hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura1} ?!hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura2} ?hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura3} ?hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura4} ?hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura5}
-  - auraRemove{aura=OpenField_Enemy_黒ヤギ_MCLove32_Aura2} @self ?!hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura1} ?hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura2} ?hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura3} ?hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura4} ?hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura5}
-  - auraRemove{aura=OpenField_Enemy_黒ヤギ_MCLove32_Aura1} @self ?hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura1} ?hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura2} ?hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura3} ?hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura4} ?hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura5}
+  - auraRemove{aura=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura5} @self ?!hasAura{n=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura1} ?!hasAura{n=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura2} ?!hasAura{n=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura3} ?!hasAura{n=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura4} ?hasAura{n=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura5}
+  - auraRemove{aura=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura4} @self ?!hasAura{n=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura1} ?!hasAura{n=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura2} ?!hasAura{n=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura3} ?hasAura{n=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura4} ?hasAura{n=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura5}
+  - auraRemove{aura=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura3} @self ?!hasAura{n=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura1} ?!hasAura{n=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura2} ?hasAura{n=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura3} ?hasAura{n=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura4} ?hasAura{n=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura5}
+  - auraRemove{aura=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura2} @self ?!hasAura{n=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura1} ?hasAura{n=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura2} ?hasAura{n=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura3} ?hasAura{n=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura4} ?hasAura{n=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura5}
+  - auraRemove{aura=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura1} @self ?hasAura{n=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura1} ?hasAura{n=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura2} ?hasAura{n=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura3} ?hasAura{n=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura4} ?hasAura{n=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura5}
   
-  - setcolor{c=LIGHT_GRAY} @self ?!hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura3}
-  - skill:OpenField_Enemy_黒ヤギ_MCLove32_Down @self ?!hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura1} ?!hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura2} ?!hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura3} ?!hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura4} ?!hasAura{n=OpenField_Enemy_黒ヤギ_MCLove32_Aura5}
+  - setcolor{c=LIGHT_GRAY} @self ?!hasAura{n=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura3}
+  - skill:OpenField_Enemy_羊獣カルーチェ_MCLove32_Down @self ?!hasAura{n=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura1} ?!hasAura{n=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura2} ?!hasAura{n=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura3} ?!hasAura{n=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura4} ?!hasAura{n=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura5}
 
-OpenField_Enemy_黒ヤギ_MCLove32_Down:
+OpenField_Enemy_羊獣カルーチェ_MCLove32_Down:
   Skills:
   - addtag{t=DOWN} @self
   - sound{s=item.shield.break;v=3;p=0} @self
   - stun{t=300} @self
   - setcolor{c=WHITE} @self
-  - auraRemove{aura=OpenField_Enemy_黒ヤギ_MCLove32_Damaged} @self
+  - auraRemove{aura=OpenField_Enemy_羊獣カルーチェ_MCLove32_Damaged} @self
   - delay 300
   - setcolor{c=BLACK} @self
   - removetag{t=DOWN} @self
   - removetag{t=START} @self
   - sound{s=block.anvil.use;v=3;p=2} @self
-  - skill:OpenField_Enemy_黒ヤギ_MCLove32_NEXT @self
+  - skill:OpenField_Enemy_羊獣カルーチェ_MCLove32_NEXT @self
 
-OpenField_Enemy_黒ヤギ_MCLove32_NEXT:
+OpenField_Enemy_羊獣カルーチェ_MCLove32_NEXT:
   Skills:
   - delay 20
-  - skill:OpenField_Enemy_黒ヤギ_MCLove32_EnterCombat @self
+  - skill:OpenField_Enemy_羊獣カルーチェ_MCLove32_EnterCombat @self
 
-OpenField_Enemy_黒ヤギ_MCLove32_ATTACK:
+OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK:
   Conditions:
   - incombat
   Skills:
-  - skill:OpenField_Enemy_黒ヤギ_MCLove32_Target @self 0.5
-  - randomskill{s=OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_1,OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_2,OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_3,OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_4,OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_5;
+  - skill:OpenField_Enemy_羊獣カルーチェ_MCLove32_Target @self 0.5
+  - randomskill{s=OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_1,OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_2,OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_3,OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_4,OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_5;
     repeati=20;repeat=2} @self
   - delay <random.60to180>
-  - skill:OpenField_Enemy_黒ヤギ_MCLove32_ATTACK @self
+  - skill:OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK @self
 
-OpenField_Enemy_黒ヤギ_MCLove32_Target:
+OpenField_Enemy_羊獣カルーチェ_MCLove32_Target:
   Skills:
   - setTarget @ThreatTablePlayers{sort=RANDOM;limit=1}
 
-OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_1:
+OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_1:
   Cooldown: 5
   Conditions:
   - incombat
@@ -520,7 +520,7 @@ OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_1:
   Skills:
   - addtag{t=ATTACK} @self
   - setVar{var=skill.dmg;val="<caster.damage> + 6";t=FLOAT} @self
-  - skill:OpenField_Enemy_黒ヤギ_MCLove32_BUFF @self
+  - skill:OpenField_Enemy_羊獣カルーチェ_MCLove32_BUFF @self
   - look{f=true;repeat=9;repeati=1} @T
   - e:p{p=villager_angry;a=5;vs=2.5;hs=2;d=true;dir=0,1,0;s=0.5;size=2} @self
   - sound{s=entity.bee.death} @self
@@ -538,7 +538,7 @@ OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_1:
     ];
     v=6;syo=0;sfo=0;mr=12;se=true;i=1;vr=1.5;hr=2;hs=true;mdh=3;mch=3;hfs=0.0} @T
 
-OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_2:
+OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_2:
   Cooldown: 15
   Conditions:
   - incombat
@@ -557,11 +557,11 @@ OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_2:
       - throw{v=4;vy=4}
     ];
     oe=[
-      - skill:OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_2_Process @self
+      - skill:OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_2_Process @self
     ];
     v=35;syo=0;sfo=0;tyo=25;g=1.5;se=false;sb=true;mr=64;i=1;vr=1.5;hr=1.5} @T
 
-OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_3:
+OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_3:
   Cooldown: 4
   Conditions:
   - incombat
@@ -571,7 +571,7 @@ OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_3:
   Skills:
   - addtag{t=ATTACK} @self
   - setVar{var=skill.dmg;val="<caster.damage> + 4";t=FLOAT} @self
-  - skill:OpenField_Enemy_黒ヤギ_MCLove32_BUFF @self
+  - skill:OpenField_Enemy_羊獣カルーチェ_MCLove32_BUFF @self
   - look{f=true;repeat=29;repeati=1} @T
   - e:p{p=villager_angry;a=5;vs=2.5;hs=2;d=true;dir=0,1,0;s=0.5;size=2;repeat=2;repeati=10} @self
   - sound{s=entity.bee.death;repeat=2;repeati=10} @self
@@ -615,7 +615,7 @@ OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_3:
     ];
     v=8;syo=0;sfo=0;se=false;sb=false;mr=11;i=1;vr=2;hr=1.5;hs=true;mdh=10;mch=8;hfs=0.0;md=100} @T
 
-OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_4:
+OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_4:
   Cooldown: 2
   Conditions:
   - incombat
@@ -634,10 +634,10 @@ OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_4:
     ]} @ring{r=16;p=6}
   - removetag{t=ATTACK} @self
 
-OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_2_Process:
+OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_2_Process:
   Skills:
   - setVar{var=skill.dmg;val="<caster.damage> + 8";t=FLOAT} @self
-  - skill:OpenField_Enemy_黒ヤギ_MCLove32_BUFF @self
+  - skill:OpenField_Enemy_羊獣カルーチェ_MCLove32_BUFF @self
   - projectile{
     ot=[
       - e:p{p=cloud;a=5;vs=2.5;hs=0.15;d=true;dir=0,1,0;s=0.5} @origin
@@ -651,7 +651,7 @@ OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_2_Process:
     ];
     v=20;hs=true;mdh=5;mch=3;hr=1.25;vr=1.5;mr=20;i=2;syo=0;sfo=0} @ring{r=16;p=4}
 
-OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_5:
+OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_5:
   Cooldown: 12
   Conditions:
   - incombat
@@ -662,7 +662,7 @@ OpenField_Enemy_黒ヤギ_MCLove32_ATTACK_5:
   Skills:
   - addtag{t=ATTACK} @self
   - setVar{var=skill.dmg;val="<caster.damage> + 9";t=FLOAT} @self
-  - skill:OpenField_Enemy_黒ヤギ_MCLove32_BUFF @self
+  - skill:OpenField_Enemy_羊獣カルーチェ_MCLove32_BUFF @self
   - look{f=true;repeati=1;repeat=19} @T
   - e:p{p=villager_angry;a=5;vs=2.5;hs=2;d=true;dir=0,1,0;s=0.5;size=2;repeat=1;repeati=10} @self
   - sound{s=entity.bee.death;repeat=1;repeati=10} @self
