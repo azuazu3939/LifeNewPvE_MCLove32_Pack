@@ -993,7 +993,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_NEXT:
   - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_EnterCombat @self
 
 OpenField_Enemy_焔獣フェルドス_MCLove32_DamagedAndBreak:
- Conditions:
+  Conditions:
   - varrange{var=skill.temp;val=<0} true
   Skills:
   - auraRemove{aura=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura5} @self ?!hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura1} ?!hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura2} ?!hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura3} ?!hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura4} ?hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura5}
