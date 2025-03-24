@@ -332,6 +332,8 @@ OpenField_Enemy_焔獣フェルドス_MCLove32:
   - raidBoss @self ~onSpawn 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=32} @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=8;delay=5} @self ~onDropCombat
+  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_EnterCombat @self ~onEntercombat
+  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK @self ~onEntercombat
   - addtag{t=MIDDLE_HEALTH} @self ~onDamaged <70%
   - addtag{t=LOW_HEALTH} @self ~onDamaged <40%
   - remove{delay=10} @self ~onDeath

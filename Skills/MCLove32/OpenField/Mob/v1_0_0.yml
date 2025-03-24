@@ -931,3 +931,156 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_5:
     se=false;g=1;v=8;tyo=25;sfo=0;syo=0;i=1;md=100;hnp=true;c=[ - samefaction false ]} @T
   - delay 40
   - removeTag{t=ATTACK} @self
+
+OpenField_Enemy_焔獣フェルドス_MCLove32_EnterCombat:
+  Conditions:
+  - incombat
+  - hasTag{t=START} false
+  - hasTag{t=DOWN} castinstead OpenField_Enemy_焔獣フェルドス_MCLove32_NEXT
+  Skills:
+  - addtag{t=START} @self
+  - setVar{var=skill.dmg;val="0";t=FLOAT} @self
+  - setVar{var=skill.break;val="<caster.mhp> / 50";t=FLOAT} @self
+  - ondamaged{auraName=OpenField_Enemy_焔獣フェルドス_MCLove32_Damaged;d=1200;
+    oh=[ 
+      - setVar{var=skill.dmg;val="<skill.var.dmg> + <skill.var.damage-amount>";t=FLOAT} @self
+      - setVar{var=skill.temp;val="<skill.var.break> - <skill.var.dmg>";t=FLOAT} @self
+      - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_DamagedAndBreak @self
+    ]} @self
+  - addtag{t=P1} @self
+  - addtag{t=P2} @self
+  - addtag{t=P3} @self
+  - addtag{t=P4} @self
+  - addtag{t=P5} @self
+  - o{
+    oe=[
+      - removetag{t=P1} @self
+    ];
+    i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;
+    b=ITEM;mat=DIAMOND;enchanted=true;rd=true;p=75;sp=0;auraName=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura1} @self
+  - o{
+    oe=[
+      - removetag{t=P2} @self
+    ];
+    i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;
+    b=ITEM;mat=DIAMOND;enchanted=true;rd=true;p=75;sp=15;auraName=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura2} @self
+  - o{
+    oe=[
+      - removetag{t=P3} @self
+    ];
+    i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;
+    b=ITEM;mat=DIAMOND;enchanted=true;rd=true;p=75;sp=30;auraName=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura3} @self
+  - o{
+    oe=[
+      - removetag{t=P4} @self
+    ];
+    i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;
+    b=ITEM;mat=DIAMOND;enchanted=true;rd=true;p=75;sp=45;auraName=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura4} @self
+  - o{
+    oe=[
+      - removetag{t=P5} @self
+    ];
+    i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;
+    b=ITEM;mat=DIAMOND;enchanted=true;rd=true;p=75;sp=60;auraName=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura5} @self
+  - delay 1200
+  - healpercent{m=0.01} @self
+  - removeTag{t=START} @self
+  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_EnterCombat @self
+
+OpenField_Enemy_焔獣フェルドス_MCLove32_NEXT:
+  Skills:
+  - delay 20
+  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_EnterCombat @self
+
+OpenField_Enemy_焔獣フェルドス_MCLove32_DamagedAndBreak:
+ Conditions:
+  - varrange{var=skill.temp;val=<0} true
+  Skills:
+  - auraRemove{aura=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura5} @self ?!hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura1} ?!hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura2} ?!hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura3} ?!hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura4} ?hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura5}
+  - auraRemove{aura=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura4} @self ?!hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura1} ?!hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura2} ?!hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura3} ?hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura4} ?hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura5}
+  - auraRemove{aura=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura3} @self ?!hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura1} ?!hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura2} ?hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura3} ?hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura4} ?hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura5}
+  - auraRemove{aura=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura2} @self ?!hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura1} ?hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura2} ?hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura3} ?hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura4} ?hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura5}
+  - auraRemove{aura=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura1} @self ?hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura1} ?hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura2} ?hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura3} ?hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura4} ?hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura5}
+
+  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_Down @self ?!hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura1} ?!hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura2} ?!hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura3} ?!hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura4} ?!hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura5}
+
+OpenField_Enemy_焔獣フェルドス_MCLove32_Down:
+  Skills:
+  - addtag{t=DOWN} @self
+  - sound{s=item.shield.break;v=3;p=0} @self
+  - stun{t=100} @self
+  - ondamaged{m=2;n=Down;t=100;i=1} @self
+  - auraRemove{aura=OpenField_Enemy_焔獣フェルドス_MCLove32_Damaged} @self
+  - delay 100
+  - removetag{t=DOWN} @self
+  - removetag{t=START} @self
+  - sound{s=block.anvil.use;v=3;p=2} @self
+  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_NEXT @self
+
+OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK:
+  Conditions:
+  - incombat
+  Skills:
+  - randomskill{s=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1,OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1;
+    repeati=20;repeat=2} @self
+  - delay <random.100to160>
+  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK
+
+OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1:
+  Skills:
+  - setVar{var=skill.count;val="3";t=INTEGER} @self
+  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process @self
+
+OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process:
+  Conditions:
+  - varrange{var=skill.count;val=<0} castinstead OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish
+  Skills:
+  - projectile{
+    ot=[
+      - teleport @origin
+      - look{f=true} @projectileforward
+    ];
+    oh=[
+      - damage{a=<skill.var.dmg>;pi=true;ii=true}
+    ];
+    oe=[
+      - missile{
+        ot=[
+          - teleport @origin
+          - look{f=true} @projectileforward
+        ];
+        oh=[
+          - damage{a=<skill.var.dmg>;pi=true;ii=true}
+        ];
+        oe=[
+          - setVar{var=skill.count;val="<skill.var.count> - 1";t=INTEGER} @self
+          - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process @self
+        ];
+        v=8;in=12;i=1;se=false;sfo=0;syo=0;mr=10;hs=true;hfs=0;mdh=10;mch=10;hnp=true;c=[ - samefaction false ]} @T
+    ];
+    v=6;i=1;se=false;sfo=0;syo=0;mr=12;hs=true;hfs=0;mdh=10;mch=10;hnp=true;c=[ - samefaction false ]} @T
+
+OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish:
+  Skills:
+  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish_Projectile{ho=0} @self 
+  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish_Projectile{ho=30} @self 
+  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish_Projectile{ho=-0} @self 
+  - stun{t=60;f=true} @self
+
+OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish_Projectile:
+  Skills:
+  - projectile{
+    ot=[
+      - modifyprojectile{t=VELOCITY;v=1.025;a=MULTIPLY} @self
+    ];
+    oh=[
+      - damage{a="<skill.var.dmg> * 0.4";pi=true;ii=true}
+    ];
+    v=12;i=1;g=1;sfo=1;syo=1;tyo=1;mr=12;hnp=true;c=[ - samefaction false ];
+    ho=<skill.ho>;b=DISPLAY;mat=MAGMA_BLOCK;ps=1;rs=1;ys=1;} @TL
+
+OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2:
+  Skills:
+
+OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_FallBack:
+  Skills:
