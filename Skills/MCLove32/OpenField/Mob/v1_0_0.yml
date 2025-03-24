@@ -1053,17 +1053,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2_Process:
     oh=[
       - damage{a=<skill.var.dmg>;pi=true;ii=true}
     ];
-    oe=[
-      - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2_Process_Buff{repeat=15;repeati=10} @origin
-    ];
     v=2;i=1;vr=2;hr=2;se=false;syo=2;sfo=3} @forward{f=10;y=-5}
-
-OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2_Process_Buff:
-  Skills:
-  - e:ps{p=spark;a=50;s=1.5;r=2;d=true;dir=0,2,0;hs=0.5} @origin 
-  - e:ps{p=sweep_attack;a=30;s=1.5;r=3;d=true;dir=0,2,0;hs=0.5} @origin
-  - e:ps{p=cloud;a=150;s=1.5;r=3;d=true;dir=0,2,0;hs=1} @origin
-  - potion{t=SPEED;l=1;d=200;p=false} @ENO{r=5}
 
 OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2_Process_Tick:
   Conditions:
