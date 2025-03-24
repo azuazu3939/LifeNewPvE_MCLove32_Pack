@@ -1021,8 +1021,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK:
   Conditions:
   - incombat
   Skills:
-  - randomskill{s=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1,OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1;
-    repeati=20;repeat=2} @self
+  - skill{s=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1} @self
   - delay <random.100to160>
   - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK
 
