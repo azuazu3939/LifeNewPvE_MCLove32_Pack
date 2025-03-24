@@ -138,7 +138,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_EnterCombat:
     i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;
     b=ITEM;mat=DIAMOND;enchanted=true;rd=true;p=75;sp=60;auraName=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura5} @self
   - delay 1200
-  - healpercent{m=0.01} @self
+  - healpercent{m=0.015} @self
   - removetag{t=START} @self
   - skill:OpenField_Enemy_羊獣カルーチェ_MCLove32_EnterCombat @self
 
