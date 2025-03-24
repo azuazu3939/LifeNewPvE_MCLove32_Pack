@@ -138,7 +138,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_EnterCombat:
     i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;
     b=ITEM;mat=DIAMOND;enchanted=true;rd=true;p=75;sp=60;auraName=OpenField_Enemy_羊獣カルーチェ_MCLove32_Aura5} @self
   - delay 1200
-  - healpercent{m=0.005} @self
+  - healpercent{m=0.01} @self
   - removetag{t=START} @self
   - skill:OpenField_Enemy_羊獣カルーチェ_MCLove32_EnterCombat @self
 
@@ -161,6 +161,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_Down:
   - sound{s=item.shield.break;v=3;p=0} @self
   - stun{t=240} @self
   - setcolor{c=WHITE} @self
+  - ondamaged{m=2;n=Down;t=240;i=1} @self
   - auraRemove{aura=OpenField_Enemy_羊獣カルーチェ_MCLove32_Damaged} @self
   - delay 240
   - setcolor{c=BLACK} @self
@@ -431,7 +432,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_EnterCombat:
     i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;
     b=ITEM;mat=DIAMOND;enchanted=true;rd=true;p=75;sp=60;auraName=OpenField_Enemy_風牙狼ウィディラー_MCLove32_Aura5} @self
   - delay 1200
-  - healpercent{m=0.01} @self
+  - healpercent{m=0.03} @self
   - removeTag{t=START} @self
   - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_EnterCombat @self
 
@@ -466,6 +467,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_Down:
   - addtag{t=DOWN} @self
   - sound{s=item.shield.break;v=3;p=0} @self
   - stun{t=140} @self
+  - ondamaged{m=2;n=Down;t=140;i=1} @self
   - auraRemove{aura=OpenField_Enemy_風牙狼ウィディラー_MCLove32_Damaged} @self
   - delay 140
   - removetag{t=DOWN} @self
