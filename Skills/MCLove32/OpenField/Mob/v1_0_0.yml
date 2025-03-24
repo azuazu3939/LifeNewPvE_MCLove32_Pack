@@ -294,7 +294,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_3:
     v=8;syo=0;sfo=0;se=false;sb=false;mr=11;i=1;vr=2;hr=1.5;hs=true;mdh=10;mch=8;hfs=0.0;md=100;hnp=true;c=[ - samefaction false ]} @T
 
 OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_4:
-  Cooldown: 2
+  Cooldown: 30
   Conditions:
   - incombat
   - hasTag{t=DOWN} false 
