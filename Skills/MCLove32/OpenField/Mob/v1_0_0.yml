@@ -1223,11 +1223,16 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_5:
   - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_BUFF @self
   - sound{s=entity.wolf.growl;p=1.414} @self
   - delay 20
-  - jump{v=0.5} @self
+  - projectile{
+    ot=[
+      - teleport @origin
+    ];
+    oe=[
+      - damah{a=<skill.var.dmg>;pi=true;ii=true} @PlayersNearOrigin{r=5}
+      - e:pr{r=4;pts=32;p=cloud;a=1;s=0.7;d=true;dir=0,1,0} @origin
+      - e:pr{r=8;pts=32;p=cloud;a=1;s=0.7;d=true;dir=0,1,0} @origin
+      - e:pr{r=10;pts=32;p=cloud;a=1;s=0.7;d=true;dir=0,1,0} @origin
+    ];
+    se=false;g=1;v=8;tyo=25;sfo=0;syo=0;i=1;md=100} @T
   - delay 40
-  - damah{a=<skill.var.dmg>;pi=true;ii=true} @PIR{r=5} ?onGround
-  - e:pr{r=4;pts=32;p=cloud;a=1;s=0.7;d=true;dir=0,1,0} @selfLocation
-  - e:pr{r=8;pts=32;p=cloud;a=1;s=0.7;d=true;dir=0,1,0} @selfLocation
-  - e:pr{r=10;pts=32;p=cloud;a=1;s=0.7;d=true;dir=0,1,0} @selfLocation
-  - delay 20
   - removeTag{t=ATTACK} @self
