@@ -1222,8 +1222,8 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_5:
   - look{f=true} @T
   - setVar{var=skill.dmg;val="<caster.damage> + 5";t=FLOAT} @self
   - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_BUFF @self
-  - sound{s=entity.wolf.growl;p=1.414} @self
-  - delay 20
+  - sound{s=entity.wolf.growl;p=0} @self
+  - delay 30
   - projectile{
     ot=[
       - teleport @origin
