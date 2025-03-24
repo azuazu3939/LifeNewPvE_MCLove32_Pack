@@ -218,7 +218,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_1:
     v=6;syo=0;sfo=0;mr=12;se=true;i=1;vr=1.5;hr=2;hs=true;mdh=3;mch=3;hfs=0.0;hnp=true;c=[ - samefaction false ]} @T
 
 OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_2:
-  Cooldown: 15
+  Cooldown: 8
   Conditions:
   - incombat
   - hasTag{t=DOWN} false
@@ -237,7 +237,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_2:
     oe=[
       - skill:OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_2_Process @self
     ];
-    v=35;syo=0;sfo=0;tyo=25;g=1.5;se=false;sb=true;mr=64;i=1;vr=1.5;hr=1.5;hnp=true;c=[ - samefaction false ]} @T
+    v=25;syo=0;sfo=0;tyo=25;g=1.5;se=false;sb=true;mr=64;i=1;vr=1.5;hr=1.5;hnp=true;c=[ - samefaction false ]} @T
 
 OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_3:
   Cooldown: 4
