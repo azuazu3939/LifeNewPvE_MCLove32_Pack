@@ -519,7 +519,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32:
   Display: "&f風牙狼ウィディラー"
   Type: wolf
   Health: 1200
-  Armor: 0
+  Armor: 10
   Damage: 5
   Options:
     NoDamageTicks: 0
