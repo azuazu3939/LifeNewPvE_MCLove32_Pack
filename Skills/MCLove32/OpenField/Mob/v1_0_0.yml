@@ -1180,7 +1180,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_3:
     oh=[
       - damage{a=<skill.var.dmg>;pi=true;ii=true}
     ];
-    v=15;g=1;bounce=true;bv=1.05;tyo=2;syo=0;sfo=0;i=1;md=160} @T
+    v=12;syo=0;sfo=0;i=1;md=180;hs=true;hfs=0;mdh=10;mch=10} @T
   - delay 60
   - removeTag{t=ATTACK} @self
 
@@ -1207,7 +1207,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_4:
     oh=[
       - damage{a=<skill.var.dmg>;pi=true;ii=true}
     ];
-    v=18;g=1;bounce=true;bv=1.15;tyo=2;syo=0;sfo=0;i=1;md=100} @T
+    v=18;syo=0;sfo=0;i=1;md=120;hs=true;hfs=0;mdh=10;mch=10} @T
   - delay 50
   - removeTag{t=ATTACK} @self
 
