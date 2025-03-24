@@ -304,6 +304,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32:
     KnockbackResistance: 1
     MaxCombatDistance: 40
     FollowRange: 10
+    Adult: true
     ImmuneToZombification: true
   DamageModifiers:
   - SUFFOCATION 0
