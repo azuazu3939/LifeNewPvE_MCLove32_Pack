@@ -710,7 +710,8 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_EnterCombat:
   - hasTag{t=DOWN} castinstead OpenField_Enemy_風牙狼ウィディラー_MCLove32_NEXT
   Skills:
   - addtag{t=START} @self
-  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2 @self
+  - randomskill{s=OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_1,OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2,OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_3;fbs=OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_4} @self
+    repeati=20;repeat=2} @self
   - delay 200
   - removeTag{t=START} @self
   - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_EnterCombat @self
@@ -1074,3 +1075,56 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_2_Process_Tick:
   - (varrange{var=skill.tick;val=5} || varrange{var=skill.tick;val=10} || varrange{var=skill.tick;val=15} || varrange{var=skill.tick;val=20}) true
   Skills:
   - modifyprojectile{t=VELOCITY;v=2;a=MULTIPLY} @self
+
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_3:
+  Conditions:
+  - incombat
+  - hasTag{t=DOWN} false
+  - hasTag{t=ATTACK} false 
+  - targetWithin{d=20} false
+  Skills:
+  - addtag{t=ATTACK} @self
+  - look{f=true} @T
+  - delay 1
+  - potion{t=SLOWNESS;l=7;d=20;p=false} @self
+  - potion{t=SLOW_FALLING;l=7;d=25;p=false} @self
+  - setVar{var=skill.dmg;val="<caster.damage> + 4";t=FLOAT} @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_BUFF @self
+  - sound{s=entity.wolf.ambient;p=0.75;v=1.5;repeat=1;repeati=10} @self
+  - delay 20
+  - projectile{
+    ot=[
+      - teleport @origin
+    ];
+    oh=[
+      - damage{a=<skill.var.dmg>;pi=true;ii=true}
+    ];
+    v=24;g=1;bounce=true;bv=1.05;tyo=2;syo=0;sfo=0;i=1;md=160} @T
+  - delay 140
+  - removeTag{t=ATTACK} @self
+
+OpenField_Enemy_風牙狼ウィディラー_MCLove32_ATTACK_4:
+  Conditions:
+  - incombat
+  - hasTag{t=DOWN} false
+  - hasTag{t=ATTACK} false 
+  Skills:
+  - addtag{t=ATTACK} @self
+  - look{f=true} @T
+  - delay 1
+  - potion{t=SLOWNESS;l=7;d=20;p=false} @self
+  - potion{t=SLOW_FALLING;l=7;d=25;p=false} @self
+  - setVar{var=skill.dmg;val="<caster.damage> + 3";t=FLOAT} @self
+  - skill:OpenField_Enemy_風牙狼ウィディラー_MCLove32_BUFF @self
+  - sound{s=entity.wolf.ambient;p=0.75;v=1.5;repeat=1;repeati=10} @self
+  - delay 20
+  - projectile{
+    ot=[
+      - teleport @origin
+    ];
+    oh=[
+      - damage{a=<skill.var.dmg>;pi=true;ii=true}
+    ];
+    v=32;g=1;bounce=true;bv=1.15;tyo=2;syo=0;sfo=0;i=1;md=100} @T
+  - delay 140
+  - removeTag{t=ATTACK} @self
