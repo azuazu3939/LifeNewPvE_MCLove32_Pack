@@ -373,8 +373,8 @@ OpenField_Enemy_黒ヤギ_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
   Display: "&f黒ヤギ"
   Type: sheep
-  Health: 1500
-  Armor: 15
+  Health: 4250
+  Armor: 0
   Damage: 8
   Options:
     NoDamageTicks: 0
@@ -518,8 +518,8 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32:
   Template: OpenField_Enemy_Abstract_Generic
   Display: "&f風牙狼ウィディラー"
   Type: wolf
-  Health: 2000
-  Armor: 25
+  Health: 7500
+  Armor: 0
   Damage: 5
   Options:
     NoDamageTicks: 0
