@@ -1032,8 +1032,8 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1:
   - hasTag{t=ATTACK} false 
   Skills:
   - addtag{t=ATTACK} @self
-  - setVar{var=skill.count;val="3";t=INTEGER} @self
-  - setVar{var=skill.dmg;val="<caster.damage> + 4";t=FLOAT} @self
+  - setVar{var=skill.count;val="1";t=INTEGER} @self
+  - setVar{var=skill.dmg;val="<caster.damage> + 2";t=FLOAT} @self
   - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_BUFF @self
   - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process @self
 
@@ -1070,7 +1070,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish:
   Skills:
   - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish_Projectile{ho=0} @self 
   - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish_Projectile{ho=30} @self 
-  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish_Projectile{ho=-0} @self 
+  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish_Projectile{ho=-30} @self 
   - stun{t=60;f=true} @self
   - delay 60
   - removetag{t=ATTACK} @self
@@ -1084,8 +1084,8 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish_Projectil
     oh=[
       - damage{a="<skill.var.dmg> * 0.4";pi=true;ii=true;e=RED}
     ];
-    v=12;i=1;g=1;sfo=1;syo=1;tyo=1;mr=12;hnp=true;c=[ - samefaction false ];
-    ho=<skill.ho>;b=DISPLAY;mat=MAGMA_BLOCK;ps=1;rs=1;ys=1} @TL
+    v=12;i=1;g=0.5;sfo=1;syo=1;tyo=5;mr=12;hnp=true;c=[ - samefaction false ];
+    ho=<skill.ho>;b=DISPLAY;mat=MAGMA_BLOCK;ps=1;rs=1;ys=1;scale=1,1,1} @TL
 
 OpenField_Enemy_焔獣フェルドス_MCLove32_BUFF:
   Skills:
