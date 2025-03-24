@@ -326,7 +326,19 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_2_Process:
     oe=[
       - removetag{t=ATTACK;cd=2} @self
     ];
-    v=20;hs=true;mdh=5;mch=3;hr=1.25;vr=1.5;mr=20;i=2;syo=0;sfo=0;hnp=true;c=[ - samefaction false ]} @ring{r=16;p=6}
+    v=20;hs=true;mdh=5;mch=3;hr=1.5;vr=1.5;mr=20;i=2;syo=0;sfo=0} @ring{r=16;p=6}
+  - projectile{
+    ot=[
+      - e:p{p=cloud;a=5;vs=2.5;hs=0.15;d=true;dir=0,1,0;s=0.5} @origin
+    ];
+    oh=[
+      - damage{a=<skill.var.dmg>;pi=true;ii=true;e=wind} @targetedTarget{c=[ - hasAura{n=HIT} false ]}
+      - aura{n=HIT;i=20;t=20} 
+    ];
+    oe=[
+      - removetag{t=ATTACK;cd=2} @self
+    ];
+    v=20;hs=true;mdh=5;mch=3;hr=4;vr=4;mr=20;i=2;syo=0;sfo=0;hnp=true;c=[ - samefaction false ]} @ring{r=16;p=6}
 
 OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_5:
   Cooldown: 12
