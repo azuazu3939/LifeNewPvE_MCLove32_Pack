@@ -243,7 +243,7 @@ OpenField_Enemy_風牙狼ウィディラー_MCLove32:
   Health: 5950
   Armor: 10
   Faction: wolf
-  Damage: 5
+  Damage: 8
   Options:
     NoDamageTicks: 0
     Silent: true 
@@ -295,7 +295,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32:
   Health: 5950
   Armor: 10
   Faction: hoglin
-  Damage: 10
+  Damage: 12
   Options:
     NoDamageTicks: 0
     Silent: true 
