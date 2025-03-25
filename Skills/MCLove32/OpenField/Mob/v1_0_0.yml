@@ -1110,7 +1110,10 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2:
   - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_BUFF @self
   - setVar{var=skill.repeat;val="3";t=INTEGER} @self
   - sound{s=entity.blaze.ambient;p=1.414;v=2} @self
-  - aura{
+  - ondamaged{
+    oh=[
+      - auraRemove{n=ATTACK2} @self 0.01
+    ];
     ot=[
       - e:p{p=flame;a=50;vs=0.5;hs=0.5;s=0.25;y=2} @self
       - setVar{var=skill.repeat;val="<skill.var.repeat> + 1";t=INTEGER} @self
