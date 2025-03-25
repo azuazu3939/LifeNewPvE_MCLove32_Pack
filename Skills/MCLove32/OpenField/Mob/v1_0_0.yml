@@ -95,7 +95,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_EnterCombat:
   Skills:
   - addtag{t=START} @self
   - setVar{var=skill.dmg;val="0";t=FLOAT} @self
-  - setVar{var=skill.break;val="<caster.mhp> / 50";t=FLOAT} @self
+  - setVar{var=skill.break;val="<caster.mhp> / 20";t=FLOAT} @self
   - ondamaged{auraName=OpenField_Enemy_羊獣カルーチェ_MCLove32_Damaged;d=1200;
     oh=[ 
       - setVar{var=skill.dmg;val="<skill.var.dmg> + <skill.var.damage-amount>";t=FLOAT} @self
