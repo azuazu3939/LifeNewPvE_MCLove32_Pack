@@ -1112,7 +1112,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2:
   - sound{s=entity.blaze.ambient;p=1.414;v=2} @self
   - ondamaged{
     oh=[
-      - auraRemove{n=ATTACK2} @self 0.01
+      - auraRemove{n=ATTACK2;cd=0.2} @self 0.01
     ];
     ot=[
       - e:p{p=flame;a=50;vs=0.5;hs=0.5;s=0.25;y=2} @self
