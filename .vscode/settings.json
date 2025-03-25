@@ -5,7 +5,7 @@
     "MythicScribe.enableShortcuts": true,
     "MythicScribe.enableMythicScriptSyntax": true,
     "workbench.colorTheme": "Default Dark Modern",
-    "editor.acceptSuggestionOnEnter": "off",
+    "editor.acceptSuggestionOnEnter": "on",
     "MythicScribe.fileRegex": {
         "MythicMobs": "[\\\\\\/][Mm]ythic[Mm]obs[\\\\\\/]",
         "Mob": "[\\\\\\/][Mm]obs[\\\\\\/]",
