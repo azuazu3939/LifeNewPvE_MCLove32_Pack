@@ -1137,7 +1137,6 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process:
   - sound{s=entity.blaze.shoot;repeat=2;repeati=20;v=1.5} @self
   - potion{t=slow;d=300;l=2;p=false} @self
   - delay 60
-  - look{f=true;repeat="<skill.var.repeat> * 10";repeati=1} @forward{lockpitch=true}
   - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process_Loop{ho=0;rep=<skill.var.repeat>} @self
   - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process_Loop{ho=10;rep=<skill.var.repeat>} @self
   - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process_Loop{ho=-10;rep=<skill.var.repeat>} @self
