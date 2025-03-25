@@ -1109,7 +1109,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2:
   - setVar{var=skill.dmg;val="<caster.damage> + 1";t=FLOAT} @self
   - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_BUFF @self
   - setVar{var=skill.repeat;val="3";t=INTEGER} @self
-  - sound{s=entity.blaze.ambient;p=1.414} @self
+  - sound{s=entity.blaze.ambient;p=1.414;v=2} @self
   - aura{
     ot=[
       - e:p{p=flame;a=50;vs=0.5;hs=0.5;s=0.25;y=2} @self
@@ -1145,12 +1145,12 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process_Loop:
   Skills:
   - projectile{
     ot=[
-      - e:p{p=flame;vs=0.5;hs=0.5;a=3;d=true;dir=0,1,0;s=0.1} @origin
+      - e:p{p=flame;vs=0.5;hs=1;a=5;d=true;dir=0,1,0;s=0.1} @origin
       - sound{s=entity.blaze.burn;v=0.5} @origin
     ];
     oh=[
       - damage{a=<skill.var.dmg>;pi=true;ii=true;e=RED} @targetedTarget{c=[ - hasAura{n=HIT} false ]}
       - aura{n=HIT;i=20;t=20} 
     ];
-    v=12;i=2;syo=2;sfo=4;tyo=1.4;vr=1.5;hr=1.5;mr=16;g=-0.55;sb=false;
+    v=12;i=4;syo=2;sfo=4;tyo=1.4;vr=1.5;hr=1.5;mr=16;g=-0.55;sb=false;
     ho=<skill.ho>;repeat=<skill.rep>;repeati=10} @forward{lockpitch=true}
