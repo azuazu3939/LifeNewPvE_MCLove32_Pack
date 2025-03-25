@@ -489,13 +489,13 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_Down:
 
 OpenField_Enemy_風牙狼ウィデラー_MCLove32_BUFF:
   Skills:
-  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.045";t=FLOAT} @self ?hasTag{t=P1}
-  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.035";t=FLOAT} @self ?hasTag{t=P2}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.05";t=FLOAT} @self ?hasTag{t=P1}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.04";t=FLOAT} @self ?hasTag{t=P2}
   - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.03";t=FLOAT} @self ?hasTag{t=P3}
-  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.025";t=FLOAT} @self ?hasTag{t=P4}
-  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.02";t=FLOAT} @self ?hasTag{t=P5}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.02";t=FLOAT} @self ?hasTag{t=P4}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.01";t=FLOAT} @self ?hasTag{t=P5}
   - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.1";t=FLOAT} @self ?hasTag{t=MIDDLE_HEALTH}
-  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.1";t=FLOAT} @self ?hasTag{t=LOW_HEALTH}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.2";t=FLOAT} @self ?hasTag{t=LOW_HEALTH}
 
 OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1:
   Cooldown: 18
