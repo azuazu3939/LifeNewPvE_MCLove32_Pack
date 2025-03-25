@@ -1,7 +1,7 @@
 {
     "MythicScribe.alwaysEnabled": true,
     "MythicScribe.attributeAliasUsedInCompletions": "shorter",
-    "MythicScribe.datasetSource": "GitHub",
+    "MythicScribe.datasetSource": "Local",
     "MythicScribe.enableShortcuts": true,
     "MythicScribe.enableMythicScriptSyntax": true,
     "workbench.colorTheme": "Default Dark Modern",
@@ -13,5 +13,8 @@
         "Metaskill": "[\\\\\\/][Ss]kills[\\\\\\/]",
         "Droptable": "[\\\\\\/][Dd]rop[Tt]ables[\\\\\\/]",
         "Stat": "[\\\\\\/]stats.((yaml)|(yml)|(txt))"
+    },
+    "MythicScribe.enabledPlugins": {
+        "ModelEngine": false
     },
 }
