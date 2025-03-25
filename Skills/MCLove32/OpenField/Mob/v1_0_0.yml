@@ -1153,14 +1153,14 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process_Loop:
   - sound{s=entity.blaze.shoot;v=0.5;p=2} @self
   - projectile{
     ot=[
-      - e:p{p=flame;vs=0.5;hs=1;a=5;d=true;dir=0,1,0;s=0.1} @origin
-      - sound{s=entity.blaze.burn;v=0.25;sc=AMBIENT} @origin
+      - e:p{p=flame;vs=0.5;hs=1;a=3;d=true;dir=0,1,0;s=0.1} @origin
+      - sound{s=entity.blaze.burn;v=0.1;sc=AMBIENT} @origin
     ];
     oh=[
       - damage{a=<skill.var.dmg>;pi=true;ii=true;e=RED} @targetedTarget{c=[ - hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_HIT} false ]}
       - aura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_HIT;i=20;t=10;rd=true} @targetedTarget{c=[ - isPlayer false ]}
       - aura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_HIT;i=20;t=200;rd=true} @targetedTarget{c=[ - isPlayer false ]}
     ];
-    v=12;i=4;syo=2;sfo=4;tyo=1.4;vr=1.5;hr=1.5;mr=16;g=-0.55;sb=false;se=false;hnp=true;c=[ - samefaction false ];
+    v=12;i=1;syo=2;sfo=4;tyo=1.4;vr=1.5;hr=1.5;mr=16;g=-0.15;sb=false;se=false;hnp=true;c=[ - samefaction false ];
     b=DISPLAY;mat=MAGMA_BLOCK;scale=1,1,1;ps=1;rs=1;ys=1;
     ho=<skill.ho>;repeat=<skill.rep>;repeati=10} @forward{lockpitch=true}
