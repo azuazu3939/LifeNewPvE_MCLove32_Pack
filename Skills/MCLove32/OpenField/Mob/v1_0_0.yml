@@ -1143,6 +1143,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process:
 
 OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process_Loop:
   Skills:
+  - sound{s=entity.blaze.shoot;v=0.5;p=2} @self
   - projectile{
     ot=[
       - e:p{p=flame;vs=0.5;hs=1;a=5;d=true;dir=0,1,0;s=0.1} @origin
