@@ -1111,7 +1111,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2:
   - setVar{var=skill.repeat;val="3";t=INTEGER} @self
   - aura{
     ot=[
-      - e:p{p=flame;a=25;vs=0.5;hs=0.5;s=0.25} @self
+      - e:p{p=flame;a=50;vs=0.5;hs=0.5;s=0.25;y=2} @self
       - setVar{var=skill.repeat;val="<skill.var.repeat> + 1";t=INTEGER} @self
       - auraRemove{n=ATTACK2} @self 0.01
     ];
@@ -1127,7 +1127,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process:
   Conditions:
   - incombat
   Skills:
-  - e:p{p=flame;a=50;vs=0.5;hs=0.5;s=1.5;repeat=2;repeati=20} @self
+  - e:p{p=flame;a=120;vs=0.5;hs=0.5;s=1.5;repeat=2;repeati=20;y=2} @self
   - delay 60
   - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process_Loop{ho=0;rep=<skill.var.repeat>} @self
   - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process_Loop{ho=10;rep=<skill.var.repeat>} @self
@@ -1148,5 +1148,5 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process_Loop:
       - damage{a=<skill.var.dmg>;pi=true;ii=true;e=RED} @targetedTarget{c=[ - hasAura{n=HIT} false ]}
       - aura{n=HIT;i=20;t=20} 
     ];
-    v=5;i=2;syo=1;sfo=4;tyo=0.5;vr=1.5;hr=1.5;
+    v=8;i=2;syo=1;sfo=4;tyo=0.95;vr=1.5;hr=1.5;mr=10;
     ho=<skill.ho>;repeat=<skill.rep>;repeati=10} @forward{lockpitch=true}
