@@ -401,7 +401,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_EnterCombat:
   Skills:
   - addtag{t=START} @self
   - setVar{var=skill.dmg;val="0";t=FLOAT} @self
-  - setVar{var=skill.break;val="<caster.mhp> / 40";t=FLOAT} @self
+  - setVar{var=skill.break;val="<caster.mhp> / 35";t=FLOAT} @self
   - ondamaged{auraName=OpenField_Enemy_風牙狼ウィデラー_MCLove32_Damaged;d=1200;
     oh=[ 
       - setVar{var=skill.dmg;val="<skill.var.dmg> + <skill.var.damage-amount>";t=FLOAT} @self
