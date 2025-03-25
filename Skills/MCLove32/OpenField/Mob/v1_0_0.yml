@@ -1131,6 +1131,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2:
 OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process:
   Conditions:
   - incombat
+  - hasTag{t=DOWN} false
   Skills:
   - e:p{p=flame;a=120;vs=0.5;hs=0.5;s=1.5;repeat=2;repeati=20;y=2} @self
   - sound{s=entity.blaze.shoot;repeat=2;repeati=20;v=1.5} @self
@@ -1146,6 +1147,8 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process:
   - e:p{p=flame;a=25;vs=3;hs=3;s=0.25;repeat=<skill.var.repeat>;repeati=10} @self
 
 OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process_Loop:
+  Conditions:
+  - hasTag{t=DOWN} false
   Skills:
   - sound{s=entity.blaze.shoot;v=0.5;p=2} @self
   - projectile{
