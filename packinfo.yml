@@ -2,7 +2,8 @@ Name: LifeNewPvE MCLove32 Pack
 Version: 1.0.0
 Author: MCLove32
 Icon:
-  Material: diamond
+  Material: diamond_pickaxe
+  Model: 1002
 URL: https://github.com/azuazu3939
 Description:
 - MCLove32制作
