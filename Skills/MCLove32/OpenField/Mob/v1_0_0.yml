@@ -1162,5 +1162,5 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process_Loop:
       - aura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_HIT;i=20;t=200;rd=true} @targetedTarget{c=[ - isPlayer false ]}
     ];
     v=12;i=4;syo=2;sfo=4;tyo=1.4;vr=1.5;hr=1.5;mr=16;g=-0.55;sb=false;se=false;hnp=true;c=[ - samefaction false ];
-    b=DISPLAY;mat=FIRE;
+    b=DISPLAY;mat=MAGMA_BLOCK;
     ho=<skill.ho>;repeat=<skill.rep>;repeati=10} @forward{lockpitch=true}
