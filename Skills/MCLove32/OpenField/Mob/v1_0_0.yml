@@ -332,8 +332,8 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_2_Process:
       - e:p{p=cloud;a=5;vs=2.5;hs=0.15;d=true;dir=0,1,0;s=0.5} @origin
     ];
     oh=[
-      - damage{a=<skill.var.dmg>;pi=true;ii=true;e=GREEN} @targetedTarget{c=[ - hasAura{n=HIT} false ]}
-      - aura{n=HIT;i=20;t=20} 
+      - damage{a=<skill.var.dmg>;pi=true;ii=true;e=GREEN} @targetedTarget{c=[ - hasAura{n=OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_2_HIT} false ]}
+      - aura{n=OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_2_HIT;i=20;t=20} 
     ];
     oe=[
       - removetag{t=ATTACK;cd=2} @self
@@ -779,9 +779,9 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1_Process_Shoot:
 
 OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1_Process_Shoot_Damage:
   TargetConditions:
-  - hasAura{n=HIT} false
+  - hasAura{n=OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1_HIT} false
   Skills:
-  - aura{n=HIT;i=20;t=100} 
+  - aura{n=OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1_HIT;i=20;t=100} 
   - damage{a="<skill.var.dmg> * 1.5";pi=true;ii=true;e=GREEN}
 
 OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_2:
@@ -1157,8 +1157,9 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process_Loop:
       - sound{s=entity.blaze.burn;v=0.25;sc=AMBIENT} @origin
     ];
     oh=[
-      - damage{a=<skill.var.dmg>;pi=true;ii=true;e=RED} @targetedTarget{c=[ - hasAura{n=HIT} false ]}
-      - aura{n=HIT;i=20;t=20} 
+      - damage{a=<skill.var.dmg>;pi=true;ii=true;e=RED} @targetedTarget{c=[ - hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_HIT} false ]}
+      - aura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_HIT;i=20;t=20;rd=true} @targetedTarget{c=[ - isPlayer false ]}
+      - aura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_HIT;i=20;t=200;rd=true} @targetedTarget{c=[ - isPlayer false ]}
     ];
     v=12;i=4;syo=2;sfo=4;tyo=1.4;vr=1.5;hr=1.5;mr=16;g=-0.55;sb=false;hnp=true;c=[ - samefaction false ];
     ho=<skill.ho>;repeat=<skill.rep>;repeati=10} @forward{lockpitch=true}
