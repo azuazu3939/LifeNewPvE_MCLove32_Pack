@@ -1099,7 +1099,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_BUFF:
   - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.1";t=FLOAT} @self ?hasTag{t=LOW_HEALTH}
 
 OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2:
-  Cooldown: 20
+  Cooldown: 25
   Conditions:
   - incombat
   - hasTag{t=DOWN} false
@@ -1158,7 +1158,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process_Loop:
     ];
     oh=[
       - damage{a=<skill.var.dmg>;pi=true;ii=true;e=RED} @targetedTarget{c=[ - hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_HIT} false ]}
-      - aura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_HIT;i=20;t=20;rd=true} @targetedTarget{c=[ - isPlayer false ]}
+      - aura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_HIT;i=20;t=10;rd=true} @targetedTarget{c=[ - isPlayer false ]}
       - aura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_HIT;i=20;t=200;rd=true} @targetedTarget{c=[ - isPlayer false ]}
     ];
     v=12;i=4;syo=2;sfo=4;tyo=1.4;vr=1.5;hr=1.5;mr=16;g=-0.55;sb=false;hnp=true;c=[ - samefaction false ];
