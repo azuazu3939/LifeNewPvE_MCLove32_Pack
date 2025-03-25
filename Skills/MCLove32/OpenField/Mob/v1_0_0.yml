@@ -1149,5 +1149,5 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process_Loop:
       - damage{a=<skill.var.dmg>;pi=true;ii=true;e=RED} @targetedTarget{c=[ - hasAura{n=HIT} false ]}
       - aura{n=HIT;i=20;t=20} 
     ];
-    v=8;i=1;syo=2;sfo=4;tyo=1.4;vr=1.5;hr=1.5;mr=10;g=-0.2;sb=false;
+    v=12;i=1;syo=2;sfo=4;tyo=1.4;vr=1.5;hr=1.5;mr=10;g=-0.3;sb=false;
     ho=<skill.ho>;repeat=<skill.rep>;repeati=10} @forward{lockpitch=true}
