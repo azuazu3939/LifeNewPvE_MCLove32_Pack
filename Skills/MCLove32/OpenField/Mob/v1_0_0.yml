@@ -1142,7 +1142,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process_Loop:
   Skills:
   - projectile{
     ot=[
-      - e:p{p=flame;vs=1;hs=1;a=30;d=true;dir=@forward{y=2};s=0.1} @origin
+      - e:p{p=flame;vs=0.5;hs=0.5;a=3;d=true;dir=0,1,0;s=0.1} @origin
     ];
     oh=[
       - damage{a=<skill.var.dmg>;pi=true;ii=true;e=RED} @targetedTarget{c=[ - hasAura{n=HIT} false ]}
