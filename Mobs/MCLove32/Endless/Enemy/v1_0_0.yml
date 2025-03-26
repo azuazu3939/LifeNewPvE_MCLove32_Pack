@@ -16,6 +16,12 @@ OpenField_Enemy_鉄マイナー_MCLove32:
     FollowRange: 16
     PreventConversion: true
     PreventTransformation: true
+  Equipment:
+  - GOLDEN_HELMET HEAD 
+  - LEATHER_CHESTPLATE{color=GRAY} CHEST
+  - LEATHER_LEGGINGS{color=GRAY} LEGS 
+  - IRON_BOOTS FEET
+  - IRON_PICKAXE HAND
   DamageModifiers:
   - SUFFOCATION 0
   - FALL 0
