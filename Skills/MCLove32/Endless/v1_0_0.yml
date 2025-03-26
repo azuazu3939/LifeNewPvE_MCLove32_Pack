@@ -85,7 +85,7 @@ OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Consume:
 OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Cooldown:
   Cooldown: 1
   Conditions:
-  - (hasTag{t=P1} && hasTag{t=P2} && hasTag{t=P3} && hasTag{t=P4} && hasTag{t=P5}) false
+  - (hasTag{t=P1} || hasTag{t=P2} || hasTag{t=P3} || hasTag{t=P4} || hasTag{t=P5}) false
   - incombat
   Skills:
   - addtag{t=ESC} @self
