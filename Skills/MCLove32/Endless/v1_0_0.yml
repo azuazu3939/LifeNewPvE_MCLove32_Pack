@@ -13,8 +13,8 @@ OpenField_Enemy_鉄マイナー_MCLove32_ATTACK:
   Conditions:
   - (hasTag{t=P1} || hasTag{t=P2} || hasTag{t=P3} || hasTag{t=P4} || hasTag{t=P5}) orelsecast OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Cooldown
   Skills:
-  - potion{t=SLOWNESS;l=5;d=35;p=true} @self
-  - look{f=true;repeat=29;repeati=1} @self
+  - potion{t=SLOWNESS;l=5;d=35;p=false} @self
+  - look{f=true;repeat=29;repeati=1} @T
   - delay 30
   - projectile{
     os=[
