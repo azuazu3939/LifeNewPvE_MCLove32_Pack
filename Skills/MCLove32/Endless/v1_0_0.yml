@@ -41,31 +41,31 @@ OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Stock:
     oe=[
       - removetag{t=P1} @self
     ];
-    i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;
+    i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=1.5;oy=1;
     b=ITEM;mat=IRON_PICKAXE;rd=true;p=75;sp=0;auraName=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura1} @self
   - o{
     oe=[
       - removetag{t=P2} @self
     ];
-    i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;
+    i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=1.5;oy=1;
     b=ITEM;mat=IRON_PICKAXE;rd=true;p=75;sp=15;auraName=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura2} @self
   - o{
     oe=[
       - removetag{t=P3} @self
     ];
-    i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;
+    i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=1.5;oy=1;
     b=ITEM;mat=IRON_PICKAXE;rd=true;p=75;sp=30;auraName=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura3} @self
   - o{
     oe=[
       - removetag{t=P4} @self
     ];
-    i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;
+    i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=1.5;oy=1;
     b=ITEM;mat=IRON_PICKAXE;rd=true;p=75;sp=45;auraName=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura4} @self
   - o{
     oe=[
       - removetag{t=P5} @self
     ];
-    i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;
+    i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=1.5;oy=1;
     b=ITEM;mat=IRON_PICKAXE;rd=true;p=75;sp=60;auraName=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura5} @self
 
 OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Consume:
