@@ -1,0 +1,20 @@
+OpenField_Enemy_鉄マイナー_MCLove32:
+  Conditions:
+  - incombat
+  Skills:
+  - delay <random.40to100>
+  - setVar{var=skill.dmg;val="<caster.damage> + 2";t=FLOAT} @self
+  - skill:OpenField_Enemy_鉄マイナー_MCLove32_ATTACK @self
+  - skill:OpenField_Enemy_鉄マイナー_MCLove32 @self
+
+OpenField_Enemy_鉄マイナー_MCLove32_ATTACK:
+  Skills:
+  - projectile{
+    ot=[
+      - e:p{p=crit;a=2;vs=0.5;hs=0.5} @origin
+    ];
+    oh=[
+      - damage{a=<skill.var.dmg>;pi=true;ii=true;e=GREEN}
+    ];
+    v=6;i=1;g=1;tyo=3;mr=16;md=100;vr=1.25;hr=1.5;
+    b=DISPLAY;mat=IRON_PICKAXE;ys=1;ps=1;rs=1;scale=1,1,1} @forward{lockpitch=true}

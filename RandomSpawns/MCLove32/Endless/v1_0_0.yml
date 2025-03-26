@@ -1,12 +1,12 @@
-Endless_Enemy_ウィウ_MCLove32_Spawn:
-  Type: Endless_Enemy_ウィウ_MCLove32
+OpenField_Enemy_鉄マイナー_MCLove32_Spawn:
+  Type: OpenField_Enemy_鉄マイナー_MCLove32
   Worlds: The_Endless
   Action: ADD 
   PositionType: LAND
-  Chance: 1
+  Chance: 0.25
   Priority: 5
-  Cooldown: 5
   Conditions:
-  - mobsinworld{a=<2000} true
-  - blocktype{type=stone} false 
+  - mobsinworld{a=<1500} true
+  - blocktype{type=stone,water,air} false 
   - region{r=spawn} false 
+  - (mythicinradius{a=<5;r=48} || mythicinradius{a=<10;r=64} || mythicinradius{a=<15;r=80}) true 

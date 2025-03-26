@@ -1,80 +1,37 @@
-Endless_Enemy_Base_MCLove32:
+OpenField_Enemy_鉄マイナー_MCLove32:
+  Template: OpenField_Enemy_Abstract_Generic
+  Display: "&f鉄マイナー"
   Type: zombie
-  Display: ""
-  Faction: Enemy
+  Health: 600
+  Armor: 20
+  Faction: endless
+  Damage: 15
   Options:
-    Collidable: true 
-    DigOutOfGround: true 
-    FollowRange: 8
-    Despawn: true 
-    KnockbackResistance: 0
     NoDamageTicks: 0
-    VisibleByDefault: true 
-    NoAI: false 
-    PreventSlimeSplit: true
-    NoGravity: false
-    PreventMobKillDrops: true 
-    PreventRandomEquipment: true
-    PreventVanillaDamage: true 
-    PreventSunburn: true
-    PreventJockeyMounts: true
-    Invisible: false
-    AttackSpeed: 1
-    Scale: 1
-    MovementSpeed: 0.15
-    Silent: false
-  Modules:
-    ThreatTable: true
-  Skills:
-
-Endless_Enemy_ウィウ_MCLove32:
-  Type: wither_skeleton
-  Display: "&fウィウ"
-  Health: 10
-  Damage: 1
-  Faction: Enemy
-  Armor: 1
+    Silent: true 
+    Scale: 1.25
+    MovementSpeed: 0.25
+    KnockbackResistance: 0.5
+    MaxCombatDistance: 40
+    FollowRange: 16
+    PreventConversion: true
   DamageModifiers:
   - SUFFOCATION 0
   - FALL 0
-  - RED 0.8
-  - YELLOW 1
   - BLUE 1.2
-  - GREEN 1
-  Equipment:
-  - bow HAND
-  Options:
-    Collidable: true 
-    DigOutOfGround: true 
-    Despawn: true 
-    NoDamageTicks: 0
-    VisibleByDefault: true 
-    NoAI: false 
-    PreventSlimeSplit: true
-    NoGravity: false
-    PreventMobKillDrops: true 
-    PreventRandomEquipment: true
-    PreventSunburn: true
-    PreventJockeyMounts: true
-    Invisible: false
-    AttackSpeed: 3
-    MovementSpeed: 0.15
-    FollowRange: 24
-    KnockbackResistance: 0.35
-    Scale: 1.5
-    Silent: false 
-  Modules:
-    ThreatTable: true
-  Drops:
-  - exp 50
-  AIGoalSelectors:
-  - clear
-  - rangedAttack{speed=1.5;smax=40;amin=10;radius=24}
-  - fleeplayers{d=10;s=1.5;ss=1.2}
+  - RED 1.2
+  - GREEN 0.8
+  - YELLOW 0.8
   AITargetSelectors:
   - clear
   - attacker
-  - players
+  - players 
+  - otherFaction
+  AIGoalSelectors:
+  - randomstroll
+  - gotoowner
+  - moveTowardsTarget
   Skills:
-  - cmd{c="mlg <target.name> cooked_chicken 1 0.5"} @TTP{conditions=[ - targetwithin{d=64} true - isLiving true - targets{a=>0} true ]} ~onDeath 
-  - ignite{t=100} @trigger ~onBowHit
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=48} @self ~onEnterCombat
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16;delay=5} @self ~onDropCombat
+  - remove{delay=10} @self ~onDeath
