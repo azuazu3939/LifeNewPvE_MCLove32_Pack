@@ -42,3 +42,4 @@ OpenField_Enemy_鉄マイナー_MCLove32:
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=48} @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16;delay=5} @self ~onDropCombat
   - remove{delay=10} @self ~onDeath
+  - skill:OpenField_Enemy_鉄マイナー_MCLove32 @self ~onEnterCombat
