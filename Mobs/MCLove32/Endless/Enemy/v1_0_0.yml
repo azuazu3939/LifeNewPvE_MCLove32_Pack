@@ -35,6 +35,7 @@ OpenField_Enemy_鉄マイナー_MCLove32:
   - players 
   - otherFaction
   AIGoalSelectors:
+  - clear
   - randomstroll
   - gotoowner
   - moveTowardsTarget
