@@ -15,6 +15,7 @@ OpenField_Enemy_鉄マイナー_MCLove32:
     MaxCombatDistance: 40
     FollowRange: 16
     PreventConversion: true
+    PreventTransformation: true
   DamageModifiers:
   - SUFFOCATION 0
   - FALL 0
