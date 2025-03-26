@@ -16,5 +16,5 @@ OpenField_Enemy_鉄マイナー_MCLove32_ATTACK:
     oh=[
       - damage{a=<skill.var.dmg>;pi=true;ii=true;e=GREEN}
     ];
-    v=6;i=1;g=1;tyo=3;mr=16;md=100;vr=1.25;hr=1.5;
-    b=DISPLAY;mat=IRON_PICKAXE;ys=1;ps=1;rs=1;scale=1,1,1} @forward{lockpitch=true}
+    v=6;i=1;g=0.2;tyo=3;mr=16;md=100;vr=1.25;hr=1.5;
+    b=DISPLAY;mat=IRON_PICKAXE;ys=1;scale=1,1,1} @forward{lockpitch=true}
