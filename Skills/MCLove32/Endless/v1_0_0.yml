@@ -27,7 +27,7 @@ OpenField_Enemy_鉄マイナー_MCLove32_ATTACK:
     b=DISPLAY;mat=IRON_PICKAXE;ys=1;scale=1,1,1} @forward{lockpitch=true}
   
 OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Stock:
-  Cooldown: 15
+  Cooldown: 60
   Conditions:
   - incombat
   Skills:
