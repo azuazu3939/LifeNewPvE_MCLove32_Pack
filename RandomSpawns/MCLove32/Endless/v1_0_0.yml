@@ -7,6 +7,6 @@ OpenField_Enemy_鉄マイナー_MCLove32_Spawn:
   Priority: 5
   Conditions:
   - mobsinworld{a=<1500} true
-  - blocktype{type=stone,water,air} false 
+  - blocktype{type=stone,water} false 
   - region{r=spawn} false 
   - (mythicinradius{a=<5;r=48} || mythicinradius{a=<10;r=64} || mythicinradius{a=<15;r=80}) true 
