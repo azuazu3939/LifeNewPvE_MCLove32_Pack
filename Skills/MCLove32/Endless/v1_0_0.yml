@@ -26,6 +26,9 @@ OpenField_Enemy_鉄マイナー_MCLove32_ATTACK:
     oh=[
       - damage{a=<skill.var.dmg>;pi=true;ii=true;e=GREEN}
     ];
+    oe=[
+      - skill:OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Cooldown @self
+    ];
     v=6;i=1;g=0.2;tyo=3;mr=16;md=100;vr=1.25;hr=1.5;
     b=DISPLAY;mat=IRON_PICKAXE;ys=1;scale=1,1,1} @forward{lockpitch=true}
   
@@ -77,12 +80,10 @@ OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Consume:
   - auraRemove{aura=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura3} @self ?!hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura1} ?!hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura2} ?hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura3} ?hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura4} ?hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura5}
   - auraRemove{aura=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura2} @self ?!hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura1} ?hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura2} ?hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura3} ?hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura4} ?hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura5}
   - auraRemove{aura=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura1} @self ?hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura1} ?hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura2} ?hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura3} ?hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura4} ?hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura5}
-  - skill:OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Cooldown @self
 
 OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Cooldown:
   Conditions:
   - (hasTag{t=P1} && hasTag{t=P2} && hasTag{t=P3} && hasTag{t=P4} && hasTag{t=P5}) false
-  Conditions:
   - incombat
   Skills:
   - addtag{t=ESC} @self
