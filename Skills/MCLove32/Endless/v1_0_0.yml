@@ -73,6 +73,12 @@ OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Stock:
     ];
     i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=1.5;oy=1;
     b=ITEM;mat=IRON_PICKAXE;rd=true;p=75;sp=60;auraName=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura5} @self
+  - removetag{t=ESC} @self
+  - aigoal{goal=clear}
+  - aigoal{goal=randomstroll}
+  - aigoal{goal=gotoowner}
+  - aigoal{goal=moveTowardsTarget}
+  - equip{item=iron_pickaxe HAND} @self
 
 OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Consume:
   Skills:
@@ -92,10 +98,4 @@ OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Cooldown:
   - equip{item=air HAND} @self
   - aigoal{goal=clear}
   - aigoal{goal=fleeplayers}
-  - delay 200
-  - removetag{t=ESC} @self
-  - aigoal{goal=clear}
-  - aigoal{goal=randomstroll}
-  - aigoal{goal=gotoowner}
-  - aigoal{goal=moveTowardsTarget}
-  - equip{item=iron_pickaxe HAND} @self
+  
