@@ -12,7 +12,6 @@ OpenField_Enemy_鉄マイナー_MCLove32:
 OpenField_Enemy_鉄マイナー_MCLove32_ATTACK:
   Conditions:
   - (hasTag{t=P1} || hasTag{t=P2} || hasTag{t=P3} || hasTag{t=P4} || hasTag{t=P5}) orelsecast OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Cooldown
-  - targetnotwithin{d=8}
   Skills:
   - projectile{
     os=[
