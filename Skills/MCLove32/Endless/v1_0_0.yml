@@ -3,7 +3,7 @@ OpenField_Enemy_鉄マイナー_MCLove32:
   - incombat
   Skills:
   - skill:OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Stock @self
-  - delay <random.40to100>
+  - delay <random.60to120>
   - setVar{var=skill.dmg;val="<caster.damage> + 2";t=FLOAT} @self
   - skill:OpenField_Enemy_鉄マイナー_MCLove32_ATTACK @self
   - skill:OpenField_Enemy_鉄マイナー_MCLove32 @self
@@ -82,6 +82,7 @@ OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Cooldown:
   - incombat
   Skills:
   - addtag{t=ESC} @self
+  - equip{item=air HAND}
   - aigoal{goal=clear}
   - aigoal{goal=fleeplayers}
   - delay 200
@@ -90,3 +91,4 @@ OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Cooldown:
   - aigoal{goal=randomstroll}
   - aigoal{goal=gotoowner}
   - aigoal{goal=moveTowardsTarget}
+  - equip{item=iron_pickaxe HAND}
