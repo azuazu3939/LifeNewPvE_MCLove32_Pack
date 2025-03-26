@@ -2,14 +2,22 @@ OpenField_Enemy_鉄マイナー_MCLove32:
   Conditions:
   - incombat
   Skills:
+  - skill:OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Stock @self
   - delay <random.40to100>
   - setVar{var=skill.dmg;val="<caster.damage> + 2";t=FLOAT} @self
   - skill:OpenField_Enemy_鉄マイナー_MCLove32_ATTACK @self
   - skill:OpenField_Enemy_鉄マイナー_MCLove32 @self
 
+
 OpenField_Enemy_鉄マイナー_MCLove32_ATTACK:
+  Conditions:
+  - (hasTag{t=P1} || hasTag{t=P2} || hasTag{t=P3} || hasTag{t=P4} || hasTag{t=P5}) orelsecast OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Cooldown
+  - targetnotwithin{d=8}
   Skills:
   - projectile{
+    os=[
+      - skill:OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Consume @self
+    ];
     ot=[
       - e:p{p=crit;a=2;vs=0.5;hs=0.5} @origin
     ];
@@ -18,3 +26,66 @@ OpenField_Enemy_鉄マイナー_MCLove32_ATTACK:
     ];
     v=6;i=1;g=0.2;tyo=3;mr=16;md=100;vr=1.25;hr=1.5;
     b=DISPLAY;mat=IRON_PICKAXE;ys=1;scale=1,1,1} @forward{lockpitch=true}
+  
+OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Stock:
+  Cooldown: 15
+  Conditions:
+  - incombat
+  Skills:
+  - addtag{t=P1} @self
+  - addtag{t=P2} @self
+  - addtag{t=P3} @self
+  - addtag{t=P4} @self
+  - addtag{t=P5} @self
+  - o{
+    oe=[
+      - removetag{t=P1} @self
+    ];
+    i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;
+    b=ITEM;mat=IRON_PICKAXE;rd=true;p=75;sp=0;auraName=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura1} @self
+  - o{
+    oe=[
+      - removetag{t=P2} @self
+    ];
+    i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;
+    b=ITEM;mat=IRON_PICKAXE;rd=true;p=75;sp=15;auraName=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura2} @self
+  - o{
+    oe=[
+      - removetag{t=P3} @self
+    ];
+    i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;
+    b=ITEM;mat=IRON_PICKAXE;rd=true;p=75;sp=30;auraName=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura3} @self
+  - o{
+    oe=[
+      - removetag{t=P4} @self
+    ];
+    i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;
+    b=ITEM;mat=IRON_PICKAXE;rd=true;p=75;sp=45;auraName=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura4} @self
+  - o{
+    oe=[
+      - removetag{t=P5} @self
+    ];
+    i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;
+    b=ITEM;mat=IRON_PICKAXE;rd=true;p=75;sp=60;auraName=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura5} @self
+
+OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Consume:
+  Skills:
+  - auraRemove{aura=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura5} @self ?!hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura1} ?!hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura2} ?!hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura3} ?!hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura4} ?hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura5}
+  - auraRemove{aura=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura4} @self ?!hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura1} ?!hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura2} ?!hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura3} ?hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura4} ?hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura5}
+  - auraRemove{aura=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura3} @self ?!hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura1} ?!hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura2} ?hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura3} ?hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura4} ?hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura5}
+  - auraRemove{aura=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura2} @self ?!hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura1} ?hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura2} ?hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura3} ?hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura4} ?hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura5}
+  - auraRemove{aura=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura1} @self ?hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura1} ?hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura2} ?hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura3} ?hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura4} ?hasAura{n=OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Aura5}
+
+OpenField_Enemy_鉄マイナー_MCLove32_ATTACK_Cooldown:
+  Conditions:
+  - incombat
+  Skills:
+  - addtag{t=ESC} @self
+  - aigoal{goal=clear}
+  - aigoal{goal=fleeplayers}
+  - delay 200
+  - removetag{t=ESC} @self
+  - aigoal{goal=clear}
+  - aigoal{goal=randomstroll}
+  - aigoal{goal=gotoowner}
+  - aigoal{goal=moveTowardsTarget}
