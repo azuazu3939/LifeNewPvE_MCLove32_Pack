@@ -1,9 +1,9 @@
 OpenField_Enemy_鉄マイナー_MCLove32:
   Template: OpenField_Enemy_Abstract_Generic
   Display: "&f鉄マイナー"
-  Type: zombie
-  Health: 600
-  Armor: 20
+  Type: skeleton
+  Health: 100
+  Armor: 0
   Faction: endless
   Damage: 15
   Options:
