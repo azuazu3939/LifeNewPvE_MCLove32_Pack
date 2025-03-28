@@ -957,31 +957,31 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_EnterCombat:
       - removetag{t=P1} @self
     ];
     i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;
-    b=ITEM;mat=DIAMOND;enchanted=true;rd=true;p=75;sp=0;auraName=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura1} @self
+    b=ITEM;mat=LIGHT_BLUE_STAINED_GLASS_PANE;enchanted=true;rd=true;p=75;sp=0;auraName=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura1} @self
   - o{
     oe=[
       - removetag{t=P2} @self
     ];
     i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;
-    b=ITEM;mat=DIAMOND;enchanted=true;rd=true;p=75;sp=15;auraName=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura2} @self
+    b=ITEM;mat=LIGHT_BLUE_STAINED_GLASS_PANE;enchanted=true;rd=true;p=75;sp=15;auraName=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura2} @self
   - o{
     oe=[
       - removetag{t=P3} @self
     ];
     i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;
-    b=ITEM;mat=DIAMOND;enchanted=true;rd=true;p=75;sp=30;auraName=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura3} @self
+    b=ITEM;mat=LIGHT_BLUE_STAINED_GLASS_PANE;enchanted=true;rd=true;p=75;sp=30;auraName=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura3} @self
   - o{
     oe=[
       - removetag{t=P4} @self
     ];
     i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;
-    b=ITEM;mat=DIAMOND;enchanted=true;rd=true;p=75;sp=45;auraName=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura4} @self
+    b=ITEM;mat=LIGHT_BLUE_STAINED_GLASS_PANE;enchanted=true;rd=true;p=75;sp=45;auraName=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura4} @self
   - o{
     oe=[
       - removetag{t=P5} @self
     ];
     i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;
-    b=ITEM;mat=DIAMOND;enchanted=true;rd=true;p=75;sp=60;auraName=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura5} @self
+    b=ITEM;mat=LIGHT_BLUE_STAINED_GLASS_PANE;enchanted=true;rd=true;p=75;sp=60;auraName=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura5} @self
   - delay 1200
   - healpercent{m=0.005} @self
   - removeTag{t=START} @self
