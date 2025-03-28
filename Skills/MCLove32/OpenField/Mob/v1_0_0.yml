@@ -932,12 +932,26 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_5:
   - delay 40
   - removeTag{t=ATTACK} @self
 
+OpenField_Enemy_焔獣フェルドス_MCLove32_EnterCombat_Test:
+  Skills:
+  - setVar{n=skill.count;a="0";t=INTEGER} @self
+  - setVar{n=skill.point;a="75";t=INTEGER} @self
+  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_EnterCombat_Test2{repeat="<skill.var.point> - 1";repeati=0} @self
+
+OpenField_Enemy_焔獣フェルドス_MCLove32_EnterCombat_Test2:
+  Skills:
+  - o{
+    i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;oy=3;
+    b=DISPLAY;mat=LIGHT_BLUE_STAINED_GLASS_PANE;rd=true;p=<skill.var.point>;sp=<skill.var.count>;auraName=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura<skill.var.count>} @self
+  - setVar{n=skill.count;a="<skill.var.count> + 1";t=INTEGER} @self
+
 OpenField_Enemy_焔獣フェルドス_MCLove32_EnterCombat:
   Conditions:
   - incombat
   - hasTag{t=START} false
   - hasTag{t=DOWN} castinstead OpenField_Enemy_焔獣フェルドス_MCLove32_NEXT
   Skills:
+  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_EnterCombat_Test
   - addtag{t=START} @self
   - setVar{var=skill.dmg;val="0";t=FLOAT} @self
   - setVar{var=skill.break;val="<caster.mhp> / 50";t=FLOAT} @self
@@ -957,31 +971,31 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_EnterCombat:
       - removetag{t=P1} @self
     ];
     i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;
-    b=ITEM;mat=LIGHT_BLUE_STAINED_GLASS_PANE;enchanted=true;rd=true;p=75;sp=0;auraName=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura1} @self
+    b=DISPLAY;mat=LIGHT_BLUE_STAINED_GLASS_PANE;enchanted=true;rd=true;p=75;sp=0;auraName=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura1} @self
   - o{
     oe=[
       - removetag{t=P2} @self
     ];
     i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;
-    b=ITEM;mat=LIGHT_BLUE_STAINED_GLASS_PANE;enchanted=true;rd=true;p=75;sp=15;auraName=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura2} @self
+    b=DISPLAY;mat=LIGHT_BLUE_STAINED_GLASS_PANE;enchanted=true;rd=true;p=75;sp=15;auraName=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura2} @self
   - o{
     oe=[
       - removetag{t=P3} @self
     ];
     i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;
-    b=ITEM;mat=LIGHT_BLUE_STAINED_GLASS_PANE;enchanted=true;rd=true;p=75;sp=30;auraName=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura3} @self
+    b=DISPLAY;mat=LIGHT_BLUE_STAINED_GLASS_PANE;enchanted=true;rd=true;p=75;sp=30;auraName=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura3} @self
   - o{
     oe=[
       - removetag{t=P4} @self
     ];
     i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;
-    b=ITEM;mat=LIGHT_BLUE_STAINED_GLASS_PANE;enchanted=true;rd=true;p=75;sp=45;auraName=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura4} @self
+    b=DISPLAY;mat=LIGHT_BLUE_STAINED_GLASS_PANE;enchanted=true;rd=true;p=75;sp=45;auraName=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura4} @self
   - o{
     oe=[
       - removetag{t=P5} @self
     ];
     i=1;vr=1;hr=1;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;
-    b=ITEM;mat=LIGHT_BLUE_STAINED_GLASS_PANE;enchanted=true;rd=true;p=75;sp=60;auraName=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura5} @self
+    b=DISPLAY;mat=LIGHT_BLUE_STAINED_GLASS_PANE;enchanted=true;rd=true;p=75;sp=60;auraName=OpenField_Enemy_焔獣フェルドス_MCLove32_Aura5} @self
   - delay 1200
   - healpercent{m=0.005} @self
   - removeTag{t=START} @self
