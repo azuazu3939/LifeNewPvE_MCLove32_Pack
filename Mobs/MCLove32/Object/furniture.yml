@@ -37,5 +37,5 @@ Generic_Furniture_バラBlock_MCLove32_Around:
     NoAI: true
     Invisible: true
   Skills:
-  - setFurnitureAt{f=OpenField_Object_バラBlock;yaw=<random.float.0to360>;ow=true} @self
+  - setFurnitureAt{f=OpenField_Object_バラBlock;yaw=<random.float.0to360>;ow=true} @self ~onSpawn
   - remove{delay=1} @self ~onSpawn 
