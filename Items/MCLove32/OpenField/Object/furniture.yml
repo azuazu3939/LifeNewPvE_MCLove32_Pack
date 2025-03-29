@@ -7,29 +7,25 @@ OpenField_Object_不思議草Block:
     DropSelf: false
     Transform: GROUND
     Scale: 0.5,0.5,0.5
+    Height: 2
+    Width: 2
     Billboard: VERTICAL
     Hitbox:
       Height: 2
       Width: 1
     States:
       T1:
-        Material: fern
         Scale: 1,1,1
         Transform: GROUND
         Billboard: VERTICAL
-        DropSelf: false
       T2:
-        Material: fern
         Scale: 1.5,2,1.5
         Transform: GROUND
         Billboard: VERTICAL
-        DropSelf: false
       T3:
-        Material: fern
         Scale: 2,4,2
         Transform: GROUND
         Billboard: VERTICAL
-        DropSelf: false
   FurnitureSkills:
   - skill{
       s=[
