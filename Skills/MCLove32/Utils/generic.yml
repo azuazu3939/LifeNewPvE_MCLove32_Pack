@@ -97,7 +97,7 @@ Generic_Enemy_MCLove32_EnterCombat_DamagedAndBreak:
   Conditions:
   - varrange{var=skill.temp;val=<0} true
   Skills:
-  - setVar{var=skill.dmg;val="<skill.var.dmg> + <skill.var.break>";t=FLOAT} @self
+  - setVar{var=skill.dmg;val="<skill.var.dmg> - <skill.var.break>";t=FLOAT} @self
   - setVar{n=skill.shield;a="<skill.var.shield> + 1";t=INTEGER} @self
   - auraRemove{n=Generic_Enemy_MCLove32_Aura<skill.var.shield>} @self
   - auraRemove{n=Generic_Enemy_MCLove32_Damaged} ?varrange{k=skill.shield;r=20} #変更時追加入力必須
