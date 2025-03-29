@@ -82,6 +82,48 @@ Generic_Furniture_不思議花Block_MCLove32_Base:
   - summon{t=Generic_Furniture_不思議花Block_MCLove32_Around;a=15to25;r=64;s=true} @self ~onSpawn 
   - remove{delay=1} @self ~onSpawn 
 
+Generic_Furniture_不思議花Block_MCLove32_Around:
+  Template: OpenField_Enemy_Abstract_Generic
+  Display: ""
+  Type: silverfish
+  Health: 99999999
+  Armor: 0
+  Faction: silverfish
+  Damage: 0
+  Options:
+    NoDamageTicks: 200
+    Silent: true 
+    Scale: 0.5
+    MovementSpeed: 0.001
+    KnockbackResistance: 1
+    MaxCombatDistance: 0
+    NoAI: true
+    Invisible: true
+  Skills:
+  - setFurnitureAt{f=OpenField_Object_不思議花Block;yaw=<random.float.0to360>;ow=true} @selfLocation ~onSpawn
+  - remove{delay=1} @self ~onSpawn 
+
+Generic_Furniture_不思議種Block_MCLove32_Base:
+  Template: OpenField_Enemy_Abstract_Generic
+  Display: ""
+  Type: silverfish
+  Health: 99999999
+  Armor: 0
+  Faction: silverfish
+  Damage: 0
+  Options:
+    NoDamageTicks: 200
+    Silent: true 
+    Scale: 0.5
+    MovementSpeed: 0.001
+    KnockbackResistance: 1
+    MaxCombatDistance: 0
+    NoAI: true
+    Invisible: true
+  Skills:
+  - summon{t=Generic_Furniture_不思議種Block_MCLove32_Around;a=15to25;r=64;s=true} @self ~onSpawn 
+  - remove{delay=1} @self ~onSpawn 
+
 Generic_Furniture_不思議種Block_MCLove32_Around:
   Template: OpenField_Enemy_Abstract_Generic
   Display: ""
