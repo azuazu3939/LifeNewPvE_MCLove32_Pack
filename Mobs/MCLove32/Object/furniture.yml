@@ -37,5 +37,5 @@ Generic_Furniture_不思議草Block_MCLove32_Around:
     NoAI: true
     Invisible: true
   Skills:
-  - setFurnitureAt{f=OpenField_Object_不思議草Block;yaw=<random.float.0to360>;ow=true} @selfLocation{y=1} ~onSpawn
+  - setFurnitureAt{f=OpenField_Object_不思議草Block;yaw=<random.float.0to360>;ow=true} @selfLocation ~onSpawn
   - remove{delay=1} @self ~onSpawn 
