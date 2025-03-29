@@ -103,7 +103,7 @@ Generic_Enemy_MCLove32_EnterCombat_Process:
   Skills:
   - o{
     i=1;vr=0;hr=0;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;p=<skill.var.shield_point>;sp="<skill.var.count> * <skill.var.multiple>";
-    b=DISPLAY;mat=DIAMOND;scale=1,1,1;enchanted=true;
+    b=DISPLAY;mat=DIAMOND;enchanted=true;
     auraName=Generic_Enemy_MCLove32_Aura<skill.var.count>;rd=true} @self
   - setVar{n=skill.count;a="<skill.var.count> + 1";t=INTEGER} @self
 
