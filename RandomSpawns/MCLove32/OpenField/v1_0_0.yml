@@ -73,14 +73,14 @@ OpenField_Util_Bosses_MCLove32_Plains_Spawn:
 
 Generic_Furniture_バラBlock_MCLove32_Base_Spawn:
   Type: Generic_Furniture_バラBlock_MCLove32_Base
-  Worlds: open_field,Plains
+  Worlds: Plains
   Action: ADD 
   PositionType: LAND
   Chance: 0.5
   Priority: 2
-  Cooldown: 300
+  Cooldown: 1
   Conditions:
   - mobsinworld{a=<1200} true 
   - blocktype{type=water,air} false 
-  - (mythicinradius{a=<6;r=36} && mythicinradius{a=<8;r=64}) true 
+  - (mythicinradius{a=<6;r=16} && mythicinradius{a=<8;r=36}) true 
   - biome{b=terra:origen/origen/verdant_valleys} true
