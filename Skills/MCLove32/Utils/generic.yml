@@ -107,7 +107,7 @@ Generic_Enemy_MCLove32_EnterCombat_DamagedAndBreak:
 Generic_Enemy_MCLove32_EnterCombat_Process_EnterCombat:
   Skills:
   - setVar{n=skill.count;a="0";t=INTEGER} @self
-  - skill:Generic_Enemy_MCLove32_EnterCombat_Process{repeat="<skill.var.point> - 1";repeati=0} @self
+  - skill:Generic_Enemy_MCLove32_EnterCombat_Process{repeat=<skill.var.point>;repeati=0} @self
 
 #
 Generic_Enemy_MCLove32_EnterCombat_Process:
