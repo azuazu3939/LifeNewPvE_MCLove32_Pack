@@ -24,9 +24,8 @@ OpenField_Util_風輪斬センター_100_MCLove32_Skills:
 
 OpenField_Util_風輪斬センター_100_MCLove32_Skills_Process:
   Skills:
-  - setVar{k=skill.temp;a="<skill.var.count> - 1";t=INTEGER} @self
   - o{
     i=1;vr=1.5;hr=1.5;hp=false;hnp=true;d=300;r=2.25;
     b=MOB;mob=OpenField_Util_オークの葉_100_MCLove32;bmd=true;byo=0;bfo=0;rd=true;
-    p=40;sp="<skill.var.temp> * 8";auraName=OpenField_Util_オークの葉_100_MCLove32_Aura<skill.var.count>} @self 
+    p=40;sp="<skill.var.count> * 8";auraName=OpenField_Util_オークの葉_100_MCLove32_Aura<skill.var.count>} @self 
   - setVar{k=skill.count;a="<skill.var.count> + 1";t=INTEGER} @self
