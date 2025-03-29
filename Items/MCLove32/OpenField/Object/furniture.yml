@@ -34,6 +34,10 @@ OpenField_Object_不思議草Block:
       ]} @self ~onInteract ?furnitureState{s=T3}
   - skill{
       s=[
+        - removefurniture @self
+      ]} @self ~onInteract ?!furnitureState{s=T3}
+  - skill{
+      s=[
         - delay 100
         - furniturestate{s=T1}
         - sound{s=block.crop.break;p=0}
