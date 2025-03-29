@@ -39,7 +39,7 @@ Generic_Furniture_不思議草Block_MCLove32_Base:
     NoAI: true
     Invisible: true
   Skills:
-  - summon{t=Generic_Furniture_不思議草Block_MCLove32_Around;a=15to25;r=64;s=true} @self ~onSpawn 
+  - summon{t=Generic_Furniture_不思議草Block_MCLove32_Around;a=15to25;r=16;s=true} @self ~onSpawn 
   - remove{delay=1} @self ~onSpawn 
 
 #
@@ -83,7 +83,7 @@ Generic_Furniture_不思議花Block_MCLove32_Base:
     NoAI: true
     Invisible: true
   Skills:
-  - summon{t=Generic_Furniture_不思議花Block_MCLove32_Around;a=15to25;r=64;s=true} @self ~onSpawn 
+  - summon{t=Generic_Furniture_不思議花Block_MCLove32_Around;a=15to25;r=16;s=true} @self ~onSpawn 
   - remove{delay=1} @self ~onSpawn 
 
 #
@@ -127,7 +127,7 @@ Generic_Furniture_不思議種Block_MCLove32_Base:
     NoAI: true
     Invisible: true
   Skills:
-  - summon{t=Generic_Furniture_不思議種Block_MCLove32_Around;a=15to25;r=64;s=true} @self ~onSpawn 
+  - summon{t=Generic_Furniture_不思議種Block_MCLove32_Around;a=15to25;r=16;s=true} @self ~onSpawn 
   - remove{delay=1} @self ~onSpawn 
 
 #
