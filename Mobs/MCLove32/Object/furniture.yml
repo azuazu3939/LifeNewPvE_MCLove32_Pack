@@ -1,4 +1,4 @@
-Generic_Furniture_バラBlock_MCLove32_Base:
+Generic_Furniture_不思議草Block_MCLove32_Base:
   Template: OpenField_Enemy_Abstract_Generic
   Display: ""
   Type: silverfish
@@ -16,10 +16,10 @@ Generic_Furniture_バラBlock_MCLove32_Base:
     NoAI: true
     Invisible: true
   Skills:
-  - summon{t=Generic_Furniture_バラBlock_MCLove32_Around;a=15to25;r=64;s=true} @self ~onSpawn 
+  - summon{t=Generic_Furniture_不思議草Block_MCLove32_Around;a=15to25;r=64;s=true} @self ~onSpawn 
   - remove{delay=1} @self ~onSpawn 
 
-Generic_Furniture_バラBlock_MCLove32_Around:
+Generic_Furniture_不思議草Block_MCLove32_Around:
   Template: OpenField_Enemy_Abstract_Generic
   Display: ""
   Type: silverfish
@@ -37,5 +37,5 @@ Generic_Furniture_バラBlock_MCLove32_Around:
     NoAI: true
     Invisible: true
   Skills:
-  - setFurnitureAt{f=OpenField_Object_バラBlock;yaw=<random.float.0to360>;ow=true} @self ~onSpawn
+  - setFurnitureAt{f=OpenField_Object_不思議草Block;yaw=<random.float.0to360>;ow=true} @self ~onSpawn
   - remove{delay=1} @self ~onSpawn 

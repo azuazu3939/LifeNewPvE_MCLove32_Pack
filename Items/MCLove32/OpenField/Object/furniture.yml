@@ -1,10 +1,10 @@
-OpenField_Object_バラBlock:
+OpenField_Object_不思議草Block:
   Id: rose_bush
-  Display: "バラ"
+  Display: "不思議草"
   Type: FURNITURE
   Furniture:
     Type: DISPLAY
-    Material: rose_bush
+    Material: fern
     Health: 10
     DropSelf: false
     Transform: GROUND
