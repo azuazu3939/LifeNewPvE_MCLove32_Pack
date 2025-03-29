@@ -4,51 +4,57 @@ Generic_Enemy_ヘイト_MCLove32:
   - incombat
   Skills:
   - sudoskill{
-    s=[
-      - setTarget
-    ];target=@T} @Children
+      s=[
+        - setTarget
+      ];target=@T} @Children
   - sudoskill{
-    s=[
-      - setTarget @Targeted{conditions=[ - incombat false ]}
-    ];target=@T} @Parent
+      s=[
+        - setTarget @Targeted{
+            conditions=[
+              - incombat false
+            ]}
+      ];target=@T} @Parent
   - delay 100
   - skill:Generic_Enemy_ヘイト_MCLove32 @self
 
 #@Param / FLOAT: <skill.v>
 Generic_Enemy_ウォーク_MCLove32:
   Skills:
-  - setvar{var=skill.v;val="<skill.v> * 0.1";t=FLOAT} @self  
-  - setvar{var=skill.v2;val="(<skill.v> + 150) * (<skill.var.v> * 0.15)";t=FLOAT} @self 
+  - setvar{var=skill.v;val="<skill.v> * 0.1";t=FLOAT} @self
+  - setvar{var=skill.v2;val="(<skill.v> + 150) * (<skill.var.v> * 0.15)";t=FLOAT} @self
   - projectile{
-    ot=[
-      - teleport @origin
-      - look{f=true} @projectileforward
-      - setFallDistance{a=0} @self 
-    ];
-    v=<skill.var.v>;i=1;mr=16;se=false;sb=false;hs=true;hfs=0.5;mch=6;mdh=10;syo=0;sfo=0;hr=0;vr=0;md=25} @Forward{f=5;lockpitch=true;rot="<random.float.-5to5> + <caster.l.yaw>"} 
-  - skill:Generic_Enemy_ウォークRemoveCheck_MCLove32 @self 
+      ot=[
+        - teleport @origin
+        - look{f=true} @projectileforward
+        - setFallDistance{a=0} @self
+      ];
+      v=<skill.var.v>;i=1;mr=16;se=false;sb=false;hs=true;hfs=0.5;mch=6;mdh=10;syo=0;sfo=0;hr=0;vr=0;md=25} @Forward{f=5;lockpitch=true;rot="<random.float.-5to5> + <caster.l.yaw>"}
+  - skill:Generic_Enemy_ウォークRemoveCheck_MCLove32 @self
 
 #@Param / FLOAT: <skill.v>
 Generic_Enemy_ウォーク追従_MCLove32:
-  Skills: 
-  - setvar{var=skill.v;val="<skill.v> * 0.1";t=FLOAT} @self  
-  - setvar{var=skill.v2;val="(<skill.v> + 150) * (<skill.var.v> * 0.15)";t=FLOAT} @self 
+  Skills:
+  - setvar{var=skill.v;val="<skill.v> * 0.1";t=FLOAT} @self
+  - setvar{var=skill.v2;val="(<skill.v> + 150) * (<skill.var.v> * 0.15)";t=FLOAT} @self
   - projectile{
-    ot=[
-      - teleport @origin
-      - setFallDistance{a=0} @self 
-      - look{f=true} @Parent 
-    ];
-    v=<skill.var.v>;i=2;mr=16;se=true;sb=false;hs=true;hfs=0.5;mch=6;mdh=10;syo=0;sfo=0;hr=2;vr=2;md=25;conditions=[ - parent true ];hp=false;hnp=true} @Parent ?hasparent
-  - skill:Generic_Enemy_ウォークRemoveCheck_MCLove32 @self 
+      ot=[
+        - teleport @origin
+        - setFallDistance{a=0} @self
+        - look{f=true} @Parent
+      ];
+      v=<skill.var.v>;i=2;mr=16;se=true;sb=false;hs=true;hfs=0.5;mch=6;mdh=10;syo=0;sfo=0;hr=2;vr=2;md=25;ho=<random.-5to5>;
+      conditions=[
+        - parent true
+      ];hp=false;hnp=true} @Parent ?hasparent
+  - skill:Generic_Enemy_ウォークRemoveCheck_MCLove32 @self
 
 Generic_Enemy_ウォークRemoveCheck_MCLove32:
   Conditions:
-  - varset{var=caster.livingWater} true 
+  - varset{var=caster.livingWater} true
   - blocktype{type=water} true
   Skills:
   - varmath{var=caster.livingWater;e="<caster.var.livingWater> - 1"} @self
-  - remove @self ?!varrange{var=caster.livingWater;val=>0} 
+  - remove @self ?!varrange{var=caster.livingWater;val=>0}
 
 
 #@Param / INTEGER: <skill.down_tick> / INTEGER: <skill.shield_break> / FLOAT: <skill.heal_percent>
@@ -59,7 +65,7 @@ Generic_Enemy_MCLove32_EnterCombat:
   - hasTag{t=DOWN} castinstead Generic_Enemy_MCLove32_NEXT
   Skills:
   - addtag{t=START} @self
-  - setVar{n=skill.point;a="8";t=INTEGER} @self 
+  - setVar{n=skill.point;a="8";t=INTEGER} @self
   - setVar{n=skill.multiple;a="10";t=INTEGER} @self
   - setVar{n=skill.shield_point;a="<skill.var.point> * <skill.var.multiple>";t=INTEGER} @self
   - setVar{n=skill.shield;a="0";t=INTEGER} @self
@@ -76,11 +82,11 @@ Generic_Enemy_MCLove32_EnterCombat_Damaged:
   - setVar{var=skill.dmg;val="0";t=FLOAT} @self
   - setVar{var=skill.break;val="<caster.mhp> / <skill.break> * <skill.var.point>";t=FLOAT} @self
   - ondamaged{auraName=Generic_Enemy_MCLove32_Damaged;d=1200;
-    oh=[ 
-      - setVar{var=skill.dmg;val="<skill.var.dmg> + <skill.var.damage-amount>";t=FLOAT} @self
-      - setVar{var=skill.temp;val="<skill.var.break> - <skill.var.dmg>";t=FLOAT} @self
-      - skill:Generic_Enemy_MCLove32_EnterCombat_DamagedAndBreak @self
-    ]} @self
+      oh=[
+        - setVar{var=skill.dmg;val="<skill.var.dmg> + <skill.var.damage-amount>";t=FLOAT} @self
+        - setVar{var=skill.temp;val="<skill.var.break> - <skill.var.dmg>";t=FLOAT} @self
+        - skill:Generic_Enemy_MCLove32_EnterCombat_DamagedAndBreak @self
+      ]} @self
 
 Generic_Enemy_MCLove32_EnterCombat_DamagedAndBreak:
   Skills:
@@ -92,7 +98,7 @@ Generic_Enemy_MCLove32_EnterCombat_DamagedAndBreak:
   - auraRemove{n=Generic_Enemy_MCLove32_Aura<skill.var.shield>} @self
   - auraRemove{n=Generic_Enemy_MCLove32_Damaged} ?varrange{k=skill.shield;r=20} #変更時追加入力必須
   - skill:Generic_Enemy_MCLove32_Down @self
-  
+
 Generic_Enemy_MCLove32_EnterCombat_Process_EnterCombat:
   Skills:
   - setVar{n=skill.count;a="0";t=INTEGER} @self
@@ -101,9 +107,9 @@ Generic_Enemy_MCLove32_EnterCombat_Process_EnterCombat:
 Generic_Enemy_MCLove32_EnterCombat_Process:
   Skills:
   - o{
-    i=1;vr=0;hr=0;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;p=<skill.var.shield_point>;sp="<skill.var.count> * <skill.var.multiple>";
-    b=DISPLAY;mat=DIAMOND;enchanted=true;
-    auraName=Generic_Enemy_MCLove32_Aura<skill.var.count>;rd=true} @self
+      i=1;vr=0;hr=0;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;p=<skill.var.shield_point>;sp="<skill.var.count> * <skill.var.multiple>";
+      b=DISPLAY;mat=DIAMOND;enchanted=true;
+      auraName=Generic_Enemy_MCLove32_Aura<skill.var.count>;rd=true} @self
   - setVar{n=skill.count;a="<skill.var.count> + 1";t=INTEGER} @self
 
 Generic_Enemy_MCLove32_Down:
