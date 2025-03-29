@@ -19,15 +19,18 @@ OpenField_Object_不思議草Block:
     - 0,1,0 15 
     States:
       T1:
-        Scale: 0.5,0.5,0.5
+        Material: fern
+        Scale: 1,1,1
         Transform: GROUND
         Billboard: VERTICAL
       T2:
-        Scale: 0.5,0.5,0.5
+        Material: fern
+        Scale: 1.5,1.5,1.5
         Transform: GROUND
         Billboard: VERTICAL
       T3:
-        Scale: 1,1,1
+        Material: fern
+        Scale: 2,3,2
         Transform: GROUND
         Billboard: VERTICAL
   FurnitureSkills:
@@ -41,11 +44,11 @@ OpenField_Object_不思議草Block:
   - skill{
       s=[
         - delay 100
-        - setFurnitureState{s=T2}
+        - furniturestate{s=T2}
         - sound{s=block.crop.break;p=0}
         - e:p{p=composter;a=5;vs=0.5;hs=0.5} @self
         - delay 200
-        - setFurnitureState{s=T3}
+        - furniturestatee{s=T3}
         - sound{s=block.crop.break;p=0}
         - e:p{p=composter;a=5;vs=0.5;hs=0.5} @self
         - delay 1500
