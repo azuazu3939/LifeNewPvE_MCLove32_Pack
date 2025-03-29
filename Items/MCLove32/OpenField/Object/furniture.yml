@@ -1,0 +1,48 @@
+OpenField_Object_バラBlock:
+  Id: rose_bush
+  Type: FURNITURE
+  Model: 1000
+  Furniture:
+    Type: DISPLAY
+    Material: GRASS
+    Model: 1000
+    Health: 10
+    CanRotate: false
+    Placement: FLOOR
+    Barriers:
+    - 0,0,0 
+    - 0,1,0 
+    Lights:
+    - 0,0,0 15
+    - 0,1,0 15 
+    Scale: 0.5,0.5,0.5
+    Billboard: CENTER
+    FurnitureSkills:
+    - skill{
+        s=[
+          - sound{s=block.grass.break} @self
+          - delay 8
+          - sound{s=entity.arrow.hit_player} @self
+          - removefurniture @self
+        ]} @self ~onInteract ?furnitureState{s=T3}
+    - setFurnitureState{state=T1;delay=100} ~onBlockPlace
+    - setFurnitureState{state=T2;delay=300} ~onBlockPlace
+    - setFurnitureState{state=T3;delay=600} ~onBlockPlace
+    - removefurniture{delay=1800} @self ~onBlockPlace
+    - removefurniture @self ~onDamaged 0.5
+    States:
+      T1:
+        Model: 1001
+        Scale: 0.5,0.5,0.5
+        Material: TALL_BUSH
+      T1:
+        Model: 1002
+        Scale: 0.5,0.5,0.5
+        Material: ROSE_BUSH
+      T1:
+        Model: 1003
+        Scale: 1,1,1
+        Material: ROSE_BUSH
+
+
+

@@ -70,3 +70,17 @@ OpenField_Util_Bosses_MCLove32_Plains_Spawn:
   - (mythicinradius{a=<1;r=64} && mythicinradius{a=<2;r=80}) true 
   - mobsInRadius{types=OpenField_Enemy_風牙狼ウィデラー_MCLove32,OpenField_Enemy_羊獣カルーチェ_MCLove32,OpenField_Enemy_焔獣フェルドス_MCLove32;amount=<1;radius=128} true
   - biome{b=terra:origen/origen/verdant_valleys} true
+
+Generic_Furniture_バラBlock_MCLove32_Base_Spawn:
+  Type: Generic_Furniture_バラBlock_MCLove32_Base
+  Worlds: open_field,Plains
+  Action: ADD 
+  PositionType: LAND
+  Chance: 0.5
+  Priority: 2
+  Cooldown: 300
+  Conditions:
+  - mobsinworld{a=<1200} true 
+  - blocktype{type=water,air} false 
+  - (mythicinradius{a=<6;r=36} && mythicinradius{a=<8;r=64}) true 
+  - biome{b=terra:origen/origen/verdant_valleys} true
