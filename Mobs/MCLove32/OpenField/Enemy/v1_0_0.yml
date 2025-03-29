@@ -70,6 +70,7 @@ OpenField_Enemy_ハロウルフ_MCLove32:
   - specificfaction{f=sheep}
   Skills:
   - potion{t=SPEED;d=144000;l=1;p=false} @self ~onSpawn
+  - skill:Generic_Enemy_ウォーク追従_MCLove32{v=45} @self ~onTimer:20 ?!incombat
 
 OpenField_Enemy_ハロウルフ_MCLove32_Leader:
   Template: OpenField_Enemy_ハロウルフ_MCLove32
