@@ -121,6 +121,8 @@ Generic_Enemy_MCLove32_EnterCombat_Process:
 
 #
 Generic_Enemy_MCLove32_Down:
+  Conditions:
+  - hasAura{n=Generic_Enemy_MCLove32_Aura20} false
   Skills:
   - addtag{t=DOWN} @self
   - sound{s=item.shield.break;v=3;p=0} @self
