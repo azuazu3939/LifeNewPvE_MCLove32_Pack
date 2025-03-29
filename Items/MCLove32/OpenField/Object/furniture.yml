@@ -17,20 +17,23 @@ OpenField_Object_バラBlock:
     - 0,0,0 15
     - 0,1,0 15 
     Scale: 0.5,0.5,0.5
-    Billboard: FIXED
+    Billboard: VERTICAL
     States:
       T1:
         Model: 1001
         Scale: 0.5,0.5,0.5
         Material: TALL_BUSH
+        Billboard: VERTICAL
       T1:
         Model: 1002
         Scale: 0.5,0.5,0.5
         Material: ROSE_BUSH
+        Billboard: VERTICAL
       T1:
         Model: 1003
         Scale: 1,1,1
         Material: ROSE_BUSH
+        Billboard: VERTICAL
   FurnitureSkills:
   - skill{
       s=[
