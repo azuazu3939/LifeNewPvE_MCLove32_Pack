@@ -38,7 +38,7 @@ Generic_Enemy_ウォーク追従_MCLove32:
     ot=[
       - leap{v=<skill.var.v2>} @origin{y=-1}
       - setFallDistance{a=0} @self 
-      - look{f=true} @Parent 
+      - look{headOnly=false;immediately=false;fp=true} @Parent 
     ];
     v=<skill.var.v>;i=2;mr=16;se=true;sb=false;hs=true;hfs=0.5;mch=6;mdh=10;syo=0;sfo=0;hr=2;vr=2;md=25;conditions=[ - parent true ];hp=false;hnp=true} @Parent ?hasparent
   - skill:Generic_Enemy_ウォークRemoveCheck_MCLove32 @self 
