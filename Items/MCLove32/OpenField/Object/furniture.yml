@@ -45,6 +45,7 @@ OpenField_Object_不思議草Block:
         - delay 1200
         - removefurniture
       ]} @self ~onBlockplace 
+  - removefurniture ~onTimer:1800
 
 OpenField_Object_不思議花Block:
   Id: torchflower
@@ -93,6 +94,7 @@ OpenField_Object_不思議花Block:
         - delay 1200
         - removefurniture
       ]} @self ~onBlockplace 
+  - removefurniture ~onTimer:1800
 
 OpenField_Object_不思議種Block:
   Id: mangrove_propagule
@@ -141,3 +143,4 @@ OpenField_Object_不思議種Block:
         - delay 1200
         - removefurniture
       ]} @self ~onBlockplace 
+  - removefurniture ~onTimer:1800
