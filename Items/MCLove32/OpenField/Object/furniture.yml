@@ -17,7 +17,7 @@ OpenField_Object_不思議草Block:
         Transform: GUI
         Billboard: VERTICAL
       T2:
-        Scale: 4.5,4,4
+        Scale: 4,8,4
         Transform: GUI
         Billboard: VERTICAL
       T3:
