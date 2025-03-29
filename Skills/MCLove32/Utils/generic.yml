@@ -29,20 +29,6 @@ Generic_Enemy_ウォーク_MCLove32:
     v=<skill.var.v>;i=2;mr=16;se=false;sb=false;hs=true;hfs=0.5;mch=6;mdh=10;syo=0;sfo=0;hr=0;vr=0;md=25} @Forward{f=5;so=<random.float.-1to1>;lockpitch=true} 
   - skill:Generic_Enemy_ウォークRemoveCheck_MCLove32 @self 
 
-#@Param / FLOAT: <skill.v>
-Generic_Enemy_ウォーク追従_MCLove32:
-  Skills: 
-  - setvar{var=skill.v;val="<skill.v> * 0.1";t=FLOAT} @self  
-  - setvar{var=skill.v2;val="(<skill.v> + 150) * (<skill.var.v> * 0.15)";t=FLOAT} @self 
-  - projectile{
-    ot=[
-      - leap{v=<skill.var.v2>} @origin{y=-1}
-      - setFallDistance{a=0} @self 
-      - look{headOnly=false;immediately=false;fp=true} @Parent 
-    ];
-    v=<skill.var.v>;i=2;mr=16;se=true;sb=false;hs=true;hfs=0.5;mch=6;mdh=10;syo=0;sfo=0;hr=2;vr=2;md=25;conditions=[ - parent true ];hp=false;hnp=true} @Parent ?hasparent
-  - skill:Generic_Enemy_ウォークRemoveCheck_MCLove32 @self 
-
 Generic_Enemy_ウォークRemoveCheck_MCLove32:
   Conditions:
   - varset{var=caster.livingWater} true 
@@ -50,7 +36,6 @@ Generic_Enemy_ウォークRemoveCheck_MCLove32:
   Skills:
   - varmath{var=caster.livingWater;e="<caster.var.livingWater> - 1"} @self
   - remove @self ?!varrange{var=caster.livingWater;val=>0} 
-
 
 #@Param / INTEGER: <skill.down_tick> / INTEGER: <skill.shield_break> / FLOAT: <skill.heal_percent>
 Generic_Enemy_MCLove32_EnterCombat:
@@ -130,9 +115,9 @@ Generic_Enemy_MCLove32_BUFF:
   - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.05";t=FLOAT} @self ?hasAura{n=Generic_Enemy_MCLove32_Aura2}
   - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.05";t=FLOAT} @self ?hasAura{n=Generic_Enemy_MCLove32_Aura3}
   - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.05";t=FLOAT} @self ?hasAura{n=Generic_Enemy_MCLove32_Aura4}
-  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.025";t=FLOAT} @self ?hasAura{n=Generic_Enemy_MCLove32_Aura5}
-  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.025";t=FLOAT} @self ?hasAura{n=Generic_Enemy_MCLove32_Aura6}
-  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.025";t=FLOAT} @self ?hasAura{n=Generic_Enemy_MCLove32_Aura7}
-  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.025";t=FLOAT} @self ?hasAura{n=Generic_Enemy_MCLove32_Aura8}
-  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.1";t=FLOAT} @self ?hasTag{t=MIDDLE_HEALTH}
-  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.2";t=FLOAT} @self ?hasTag{t=LOW_HEALTH}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.05";t=FLOAT} @self ?hasAura{n=Generic_Enemy_MCLove32_Aura5}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.05";t=FLOAT} @self ?hasAura{n=Generic_Enemy_MCLove32_Aura6}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.05";t=FLOAT} @self ?hasAura{n=Generic_Enemy_MCLove32_Aura7}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.05";t=FLOAT} @self ?hasAura{n=Generic_Enemy_MCLove32_Aura8}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.2";t=FLOAT} @self ?hasTag{t=MIDDLE_HEALTH}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.25";t=FLOAT} @self ?hasTag{t=LOW_HEALTH}
