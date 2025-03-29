@@ -5,7 +5,7 @@ OpenField_Object_不思議草Block:
   Furniture:
     Type: DISPLAY
     DropSelf: false
-    Transform: GROUND
+    Transform: FIRSTPERSON_RIGHTHAND
     Scale: 0.5,0.5,0.5
     Billboard: VERTICAL
     Hitbox:
@@ -14,15 +14,15 @@ OpenField_Object_不思議草Block:
     States:
       T1:
         Scale: 1,2,1
-        Transform: GROUND
+        Transform: FIRSTPERSON_RIGHTHAND
         Billboard: VERTICAL
       T2:
         Scale: 1.5,4,1.5
-        Transform: GROUND
+        Transform: FIRSTPERSON_RIGHTHAND
         Billboard: VERTICAL
       T3:
         Scale: 3,16,3
-        Transform: GROUND
+        Transform: FIRSTPERSON_RIGHTHAND
         Billboard: VERTICAL
   FurnitureSkills:
   - skill{
