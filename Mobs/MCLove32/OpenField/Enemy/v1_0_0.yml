@@ -1,3 +1,4 @@
+#ベーステンプレMob
 OpenField_Enemy_Abstract_Generic:
   Type: zombie
   Display: ""
@@ -27,6 +28,7 @@ OpenField_Enemy_Abstract_Generic:
     ThreatTable: true
   Skills:
 
+#ベーステンプレMobに、直接攻撃時にダメージを与える処理をしたもの
 OpenField_Enemy_Base_MCLove32:
   Template: OpenField_Enemy_Abstract_Generic
   Skills:
@@ -84,7 +86,6 @@ OpenField_Enemy_ハロウルフ_MCLove32_Leader:
   Skills:
   - summon{t=OpenField_Enemy_ハロウルフ_MCLove32;a=2to3;r=5;s=true} @self ~onSpawn
   - skill:Generic_Enemy_ウォーク_MCLove32{v=45} @self ~onTimer:20 ?!incombat
-
 
 OpenField_Enemy_ウィスピット_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
