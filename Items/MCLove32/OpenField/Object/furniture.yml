@@ -5,7 +5,7 @@ OpenField_Object_不思議草Block:
   Furniture:
     Type: DISPLAY
     DropSelf: false
-    Transform: GUI
+    Transform: GROUND
     Scale: 0.5,0.5,0.5
     Billboard: VERTICAL
     Hitbox:
@@ -14,15 +14,15 @@ OpenField_Object_不思議草Block:
     States:
       T1:
         Scale: 0.5,1,0.5
-        Transform: GUI
+        Transform: GROUND
         Billboard: VERTICAL
       T2:
         Scale: 1,2,1
-        Transform: GUI
+        Transform: GROUND
         Billboard: VERTICAL
       T3:
         Scale: 2,4,2
-        Transform: GUI
+        Transform: GROUND
         Billboard: VERTICAL
   FurnitureSkills:
   - skill{
@@ -57,7 +57,7 @@ OpenField_Object_不思議花Block:
   Furniture:
     Type: DISPLAY
     DropSelf: false
-    Transform: GUI
+    Transform: GROUND
     Scale: 0.5,0.5,0.5
     Billboard: VERTICAL
     Hitbox:
@@ -66,15 +66,15 @@ OpenField_Object_不思議花Block:
     States:
       T1:
         Scale: 0.5,1,0.5
-        Transform: GUI
+        Transform: GROUND
         Billboard: VERTICAL
       T2:
         Scale: 1,2,1
-        Transform: GUI
+        Transform: GROUND
         Billboard: VERTICAL
       T3:
         Scale: 2,4,2
-        Transform: GUI
+        Transform: GROUND
         Billboard: VERTICAL
   FurnitureSkills:
   - skill{
@@ -109,7 +109,7 @@ OpenField_Object_不思議種Block:
   Furniture:
     Type: DISPLAY
     DropSelf: false
-    Transform: GUI
+    Transform: GROUND
     Scale: 0.5,0.5,0.5
     Billboard: VERTICAL
     Hitbox:
@@ -118,15 +118,15 @@ OpenField_Object_不思議種Block:
     States:
       T1:
         Scale: 0.5,1,0.5
-        Transform: GUI
+        Transform: GROUND
         Billboard: VERTICAL
       T2:
         Scale: 1,2,1
-        Transform: GUI
+        Transform: GROUND
         Billboard: VERTICAL
       T3:
         Scale: 2,4,2
-        Transform: GUI
+        Transform: GROUND
         Billboard: VERTICAL
   FurnitureSkills:
   - skill{
