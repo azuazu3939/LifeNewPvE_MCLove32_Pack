@@ -16,7 +16,7 @@ OpenField_Object_バラBlock:
     - 0,0,0 15
     - 0,1,0 15 
     Scale: 0.5,0.5,0.5
-    Billboard: CENTER
+    Billboard: FIXED
     FurnitureSkills:
     - skill{
         s=[
