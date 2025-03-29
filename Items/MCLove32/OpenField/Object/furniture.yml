@@ -6,20 +6,20 @@ OpenField_Object_不思議草Block:
     Type: DISPLAY
     DropSelf: false
     Scale: 0.5,0.5,0.5
-    Billboard: FIXED
+    Billboard: VERTICAL
     Hitbox:
       Height: 2
       Width: 1
     States:
       T1:
         Scale: 0.5,1,0.5
-        Billboard: FIXED
+        Billboard: VERTICAL
       T2:
         Scale: 1,2,1
-        Billboard: FIXED
+        Billboard: VERTICAL
       T3:
         Scale: 2,4,2
-        Billboard: FIXED
+        Billboard: VERTICAL
   FurnitureSkills:
   - skill{
       s=[
@@ -54,20 +54,20 @@ OpenField_Object_不思議花Block:
     Type: DISPLAY
     DropSelf: false
     Scale: 0.5,0.5,0.5
-    Billboard: FIXED
+    Billboard: VERTICAL
     Hitbox:
       Height: 2
       Width: 1
     States:
       T1:
         Scale: 0.5,1,0.5
-        Billboard: FIXED
+        Billboard: VERTICAL
       T2:
         Scale: 1,2,1
-        Billboard: FIXED
+        Billboard: VERTICAL
       T3:
         Scale: 2,4,2
-        Billboard: FIXED
+        Billboard: VERTICAL
   FurnitureSkills:
   - skill{
       s=[
@@ -102,20 +102,20 @@ OpenField_Object_不思議種Block:
     Type: DISPLAY
     DropSelf: false
     Scale: 0.5,0.5,0.5
-    Billboard: FIXED
+    Billboard: VERTICAL
     Hitbox:
       Height: 2
       Width: 1
     States:
       T1:
         Scale: 0.5,1,0.5
-        Billboard: FIXED
+        Billboard: VERTICAL
       T2:
         Scale: 1,2,1
-        Billboard: FIXED
+        Billboard: VERTICAL
       T3:
         Scale: 2,4,2
-        Billboard: FIXED
+        Billboard: VERTICAL
   FurnitureSkills:
   - skill{
       s=[
