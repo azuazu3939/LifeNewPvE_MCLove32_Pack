@@ -17,11 +17,11 @@ OpenField_Object_不思議草Block:
         Transform: GUI
         Billboard: VERTICAL
       T2:
-        Scale: 1.5,4,1.5
+        Scale: 4.5,4,4
         Transform: GUI
         Billboard: VERTICAL
       T3:
-        Scale: 3,16,3
+        Scale: 16,32,16
         Transform: GUI
         Billboard: VERTICAL
   FurnitureSkills:
