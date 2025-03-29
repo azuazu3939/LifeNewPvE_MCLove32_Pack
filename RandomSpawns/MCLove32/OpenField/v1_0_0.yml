@@ -78,7 +78,7 @@ Generic_Furniture_Object_MCLove32_Base_Spawn:
   PositionType: LAND
   Chance: 0.5
   Priority: 2
-  Cooldown: 1
+  Cooldown: 600
   Conditions:
   - mobsinworld{a=<1200} true 
   - blocktype{type=water,air} false 
