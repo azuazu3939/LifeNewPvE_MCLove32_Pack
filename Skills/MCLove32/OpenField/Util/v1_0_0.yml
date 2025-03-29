@@ -11,8 +11,31 @@ OpenField_Util_Bosses_MCLove32_Plains_Skill_1:
 
 OpenField_Util_Bosses_MCLove32_Plains_Skill_2:
   Skills:
-  - summon{t=OpenField_Enemy_風牙狼ウィデラ_MCLove32;a=1;r=0} @self
+  - summon{t=OpenField_Enemy_風牙狼ウィデラー_MCLove32;a=1;r=0} @self
 
 OpenField_Util_Bosses_MCLove32_Plains_Skill_3:
   Skills:
   - summon{t=OpenField_Enemy_焔獣フェルドス_MCLove32;a=1;r=0} @self
+
+OpenField_Util_風輪斬センター_100_MCLove32_Skills:
+  Skills:
+  - o{
+    i=1;vr=1.5;hr=1.5;hp=false;hnp=true;d=300;r=2.25;
+    b=MOB;mob=OpenField_Util_オークの葉_100_MCLove32;bmd=true;byo=0;bfo=0;rd=true;
+    p=40;sp=0;auraName=OpenField_Util_オークの葉_100_MCLove32_Aura1} @self 
+  - o{
+    i=1;vr=1.5;hr=1.5;hp=false;hnp=true;d=300;r=2.25;
+    b=MOB;mob=OpenField_Util_オークの葉_100_MCLove32;bmd=true;byo=0;bfo=0;rd=true;
+    p=40;sp=8;auraName=OpenField_Util_オークの葉_100_MCLove32_Aura2} @self 
+  - o{
+    i=1;vr=1.5;hr=1.5;hp=false;hnp=true;d=300;r=2.25;
+    b=MOB;mob=OpenField_Util_オークの葉_100_MCLove32;bmd=true;byo=0;bfo=0;rd=true;
+    p=40;sp=16;auraName=OpenField_Util_オークの葉_100_MCLove32_Aura3} @self 
+  - o{
+    i=1;vr=1.5;hr=1.5;hp=false;hnp=true;d=300;r=2.25;
+    b=MOB;mob=OpenField_Util_オークの葉_100_MCLove32;bmd=true;byo=0;bfo=0;rd=true;
+    p=40;sp=24;auraName=OpenField_Util_オークの葉_100_MCLove32_Aura4} @self 
+  - o{
+    i=1;vr=1.5;hr=1.5;hp=false;hnp=true;d=300;r=2.25;
+    b=MOB;mob=OpenField_Util_オークの葉_100_MCLove32;bmd=true;byo=0;bfo=0;rd=true;
+    p=40;sp=32;auraName=OpenField_Util_オークの葉_100_MCLove32_Aura5} @self 

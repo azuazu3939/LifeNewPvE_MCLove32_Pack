@@ -74,7 +74,6 @@ Generic_Enemy_MCLove32_EnterCombat_Damaged:
   Skills:
   - setVar{var=skill.dmg;val="0";t=FLOAT} @self
   - setVar{var=skill.break;val="<caster.mhp> / <skill.break> * <skill.var.point>";t=FLOAT} @self
-  - setVar{a=skill.count;}
   - ondamaged{auraName=Generic_Enemy_MCLove32_Damaged;d=1200;
     oh=[ 
       - setVar{var=skill.dmg;val="<skill.var.dmg> + <skill.var.damage-amount>";t=FLOAT} @self
