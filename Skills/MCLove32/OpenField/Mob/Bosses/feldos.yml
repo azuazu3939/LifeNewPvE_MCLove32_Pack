@@ -1,0 +1,137 @@
+OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK:
+  Conditions:
+  - incombat
+  Skills:
+  - randomskill{s=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1,OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2;
+    repeat=2;repeati=10} @self
+  - delay <random.100to160>
+  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK
+
+OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1:
+  Conditions:
+  - incombat
+  - hasTag{t=DOWN} false
+  - hasTag{t=ATTACK} false 
+  Skills:
+  - addtag{t=ATTACK} @self
+  - setVar{var=skill.count;val="1";t=INTEGER} @self
+  - setVar{var=skill.dmg;val="<caster.damage> + 6";t=FLOAT} @self
+  - skill:Generic_Enemy_MCLove32_BUFF @self
+  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process @self
+
+OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process:
+  Conditions:
+  - varrange{var=skill.count;val=<0} castinstead OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish
+  Skills:
+  - projectile{
+    ot=[
+      - teleport @origin
+      - look{f=true} @projectileforward
+    ];
+    oh=[
+      - damage{a=<skill.var.dmg>;pi=true;ii=true;e=RED}
+    ];
+    oe=[
+      - missile{
+        ot=[
+          - teleport @origin
+          - look{f=true} @projectileforward
+        ];
+        oh=[
+          - damage{a=<skill.var.dmg>;pi=true;ii=true;e=RED}
+        ];
+        oe=[
+          - setVar{var=skill.count;val="<skill.var.count> - 1";t=INTEGER} @self
+          - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process @self
+        ];
+        v=8;in=12;i=1;se=false;sfo=0;syo=0;mr=10;hs=true;hfs=0;mdh=10;mch=10;fo=true;hnp=true;c=[ - samefaction false ]} @T
+    ];
+    v=6;i=1;se=false;sfo=0;syo=0;mr=15;hs=true;hfs=0;mdh=10;mch=10;hnp=true;c=[ - samefaction false ]} @T
+
+OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish:
+  Skills:
+  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish_Projectile{ho=0} @self 
+  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish_Projectile{ho=30} @self 
+  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish_Projectile{ho=-30} @self 
+  - stun{t=60;f=true} @self
+  - delay 60
+  - removetag{t=ATTACK} @self
+
+OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish_Projectile:
+  Skills:
+  - projectile{
+    ot=[
+      - modifyprojectile{t=VELOCITY;v=1.025;a=MULTIPLY} @self
+    ];
+    oh=[
+      - damage{a="<skill.var.dmg> * 0.5";pi=true;ii=true;e=RED}
+    ];
+    v=10;i=1;g=0.5;sfo=2;syo=1;tyo=5;mr=12;hnp=true;c=[ - samefaction false ];vr=1.5;hr=1.5;
+    ho=<skill.ho>;b=DISPLAY;mat=MAGMA_BLOCK;ps=1;rs=1;ys=1;scale=1,1,1} @forward
+
+OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2:
+  Cooldown: 25
+  Conditions:
+  - incombat
+  - hasTag{t=DOWN} false
+  - hasTag{t=ATTACK} false 
+  Skills:
+  - addtag{t=ATTACK} @self
+  - setVar{var=skill.count;val="1";t=INTEGER} @self
+  - setVar{var=skill.dmg;val="<caster.damage> + 1";t=FLOAT} @self
+  - skill:Generic_Enemy_MCLove32_BUFF @self
+  - setVar{var=skill.repeat;val="3";t=INTEGER} @self
+  - sound{s=entity.blaze.ambient;p=1.414;v=2} @self
+  - ondamaged{
+    oh=[
+      - auraRemove{n=ATTACK2;cd=0.2} @self 0.01
+    ];
+    ot=[
+      - e:p{p=flame;a=50;vs=0.5;hs=0.5;s=0.25;y=2} @self
+      - setVar{var=skill.repeat;val="<skill.var.repeat> + 1";t=INTEGER} @self
+      - auraRemove{n=ATTACK2} @self 0.01
+    ];
+    oe=[
+      - delay 20
+      - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process
+    ];
+    n=ATTACK2;i=10;t=300;rd=true} @self
+  - delay 60
+  - removetag{t=ATTACK} @self
+
+OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process:
+  Conditions:
+  - incombat
+  - hasTag{t=DOWN} false
+  Skills:
+  - e:p{p=flame;a=120;vs=0.5;hs=0.5;s=1.5;repeat=2;repeati=20;y=2} @self
+  - sound{s=entity.blaze.shoot;repeat=2;repeati=20;v=1.5} @self
+  - potion{t=slow;d=300;l=2;p=false} @self
+  - delay 60
+  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process_Loop{ho=0;rep=<skill.var.repeat>} @self
+  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process_Loop{ho=10;rep=<skill.var.repeat>} @self
+  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process_Loop{ho=-10;rep=<skill.var.repeat>} @self
+  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process_Loop{ho=20;rep=<skill.var.repeat>} @self
+  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process_Loop{ho=-20;rep=<skill.var.repeat>} @self
+  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process_Loop{ho=30;rep=<skill.var.repeat>} @self
+  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process_Loop{ho=-30;rep=<skill.var.repeat>} @self
+  - e:p{p=flame;a=25;vs=3;hs=3;s=0.25;repeat=<skill.var.repeat>;repeati=10} @self
+
+OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process_Loop:
+  Conditions:
+  - hasTag{t=DOWN} false
+  Skills:
+  - sound{s=entity.blaze.shoot;v=0.5;p=2} @self
+  - projectile{
+    ot=[
+      - e:p{p=flame;vs=0.5;hs=1;a=3;d=true;dir=0,1,0;s=0.1} @origin
+      - sound{s=entity.blaze.burn;v=0.1;sc=AMBIENT} @origin
+    ];
+    oh=[
+      - damage{a=<skill.var.dmg>;pi=true;ii=true;e=RED} @targetedTarget{c=[ - hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_HIT} false ]}
+      - aura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_HIT;i=20;t=10;rd=true} @targetedTarget{c=[ - isPlayer false ]}
+      - aura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_HIT;i=20;t=200;rd=true} @targetedTarget{c=[ - isPlayer false ]}
+    ];
+    v=12;i=1;syo=2;sfo=4;tyo=1.4;vr=1.5;hr=1.5;mr=16;g=-0.15;sb=false;se=false;hnp=true;c=[ - samefaction false ];
+    b=DISPLAY;mat=MAGMA_BLOCK;scale=1,1,1;ps=1;rs=1;ys=1;
+    ho=<skill.ho>;repeat=<skill.rep>;repeati=10} @forward{lockpitch=true}
