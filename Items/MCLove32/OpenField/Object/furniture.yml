@@ -1,5 +1,5 @@
 OpenField_Object_不思議草Block:
-  Id: fern
+  Id: birch_sapling
   Display: "不思議草"
   Type: FURNITURE
   Furniture:
@@ -97,7 +97,7 @@ OpenField_Object_不思議花Block:
   - removefurniture ~onTimer:6000
 
 OpenField_Object_不思議種Block:
-  Id: mangrove_propagule
+  Id: spruce_sapling
   Display: "不思議種"
   Type: FURNITURE
   Furniture:
