@@ -60,10 +60,8 @@ Generic_Enemy_MCLove32_EnterCombat:
   - hasTag{t=DOWN} castinstead Generic_Enemy_MCLove32_NEXT
   Skills:
   - addtag{t=START} @self
-
-  - setVar{n=skill.point;a="20";t=INTEGER} @self #編集用
-  - setVar{n=skill.multiple;a="5";t=INTEGER} @self #編集用
-
+  - setVar{n=skill.point;a="8";t=INTEGER} @self 
+  - setVar{n=skill.multiple;a="2";t=INTEGER} @self
   - setVar{n=skill.shield_point;a="<skill.var.point> * <skill.var.multiple>";t=INTEGER} @self
   - setVar{n=skill.shield;a="0";t=INTEGER} @self
   - setVar{n=skill.downTick;a="<skill.down_tick>";t=INTEGER} @self
@@ -128,9 +126,13 @@ Generic_Enemy_MCLove32_NEXT:
 #@Param / FLOAT: <skill.var.dmg>
 Generic_Enemy_MCLove32_BUFF:
   Skills:
-  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.05";t=FLOAT} @self ?hasAura{n=Generic_Enemy_MCLove32_Aura20}
-  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.05";t=FLOAT} @self ?hasAura{n=Generic_Enemy_MCLove32_Aura15}
-  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.05";t=FLOAT} @self ?hasAura{n=Generic_Enemy_MCLove32_Aura10}
-  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.05";t=FLOAT} @self ?hasAura{n=Generic_Enemy_MCLove32_Aura5}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.05";t=FLOAT} @self ?hasAura{n=Generic_Enemy_MCLove32_Aura1}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.05";t=FLOAT} @self ?hasAura{n=Generic_Enemy_MCLove32_Aura2}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.05";t=FLOAT} @self ?hasAura{n=Generic_Enemy_MCLove32_Aura3}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.05";t=FLOAT} @self ?hasAura{n=Generic_Enemy_MCLove32_Aura4}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.025";t=FLOAT} @self ?hasAura{n=Generic_Enemy_MCLove32_Aura5}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.025";t=FLOAT} @self ?hasAura{n=Generic_Enemy_MCLove32_Aura6}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.025";t=FLOAT} @self ?hasAura{n=Generic_Enemy_MCLove32_Aura7}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.025";t=FLOAT} @self ?hasAura{n=Generic_Enemy_MCLove32_Aura8}
   - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.1";t=FLOAT} @self ?hasTag{t=MIDDLE_HEALTH}
   - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.2";t=FLOAT} @self ?hasTag{t=LOW_HEALTH}
