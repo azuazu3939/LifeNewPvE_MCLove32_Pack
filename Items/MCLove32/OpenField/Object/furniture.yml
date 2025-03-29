@@ -1,38 +1,35 @@
 OpenField_Object_不思議草Block:
-  Id: rose_bush
+  Id: fern
   Display: "不思議草"
   Type: FURNITURE
   Furniture:
     Type: DISPLAY
-    Material: fern
-    Health: 10
     DropSelf: false
     Transform: GROUND
     Scale: 0.5,0.5,0.5
     Billboard: VERTICAL
-    DefaultState: T1
-    Barriers:
-    - 0,0,0 
-    - 0,1,0 
-    Lights:
-    - 0,0,0 15
-    - 0,1,0 15 
+    Hitbox:
+      Height: 2
+      Width: 1
     States:
       T1:
         Material: fern
         Scale: 1,1,1
         Transform: GROUND
         Billboard: VERTICAL
+        DropSelf: false
       T2:
         Material: fern
-        Scale: 1.5,1.5,1.5
+        Scale: 1.5,2,1.5
         Transform: GROUND
         Billboard: VERTICAL
+        DropSelf: false
       T3:
         Material: fern
-        Scale: 2,3,2
+        Scale: 2,4,2
         Transform: GROUND
         Billboard: VERTICAL
+        DropSelf: false
   FurnitureSkills:
   - skill{
       s=[
@@ -44,14 +41,18 @@ OpenField_Object_不思議草Block:
   - skill{
       s=[
         - delay 100
+        - furniturestate{s=T1}
+        - sound{s=block.crop.break;p=0}
+        - e:p{p=composter;a=5;vs=0.5;hs=0.5} @self
+        - delay 100
         - furniturestate{s=T2}
         - sound{s=block.crop.break;p=0}
         - e:p{p=composter;a=5;vs=0.5;hs=0.5} @self
-        - delay 200
+        - delay 100
         - furniturestatee{s=T3}
         - sound{s=block.crop.break;p=0}
         - e:p{p=composter;a=5;vs=0.5;hs=0.5} @self
-        - delay 1500
+        - delay 1200
         - removefurniture
       ]} @self ~onBlockplace 
 
