@@ -97,9 +97,9 @@ Generic_Enemy_MCLove32_EnterCombat_DamagedAndBreak:
   - varrange{var=skill.temp;val=<0} true
   Skills:
   - setVar{var=skill.dmg;val="<skill.var.dmg> - <skill.var.break>";t=FLOAT} @self
-  - setVar{n=skill.shield;a="<skill.var.shield> + 1";t=INTEGER} @self
   - auraRemove{n=Generic_Enemy_MCLove32_Aura<skill.var.shield>} @self
-  - auraRemove{n=Generic_Enemy_MCLove32_Damaged} ?varrange{k=skill.shield;r=20} #変更時追加入力必須
+  - auraRemove{n=Generic_Enemy_MCLove32_Damaged} ?varrange{k=skill.shield;r=7} #変更時追加入力必須
+  - setVar{n=skill.shield;a="<skill.var.shield> + 1";t=INTEGER} @self
   - skill:Generic_Enemy_MCLove32_Down @self
 
 #
@@ -116,13 +116,12 @@ Generic_Enemy_MCLove32_EnterCombat_Process:
       i=1;vr=0;hr=0;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;p=<skill.var.shield_point>;sp=<skill.var.count_point>;
       b=DISPLAY;mat=DIAMOND;enchanted=true;
       auraName=Generic_Enemy_MCLove32_Aura<skill.var.count>;rd=true} @self
-  - message{m="<skill.var.count>"} @PIR{r=32}
   - setVar{n=skill.count;a="<skill.var.count> + 1";t=INTEGER} @self
 
 #
 Generic_Enemy_MCLove32_Down:
   Conditions:
-  - hasAura{n=Generic_Enemy_MCLove32_Aura20} false
+  - hasAura{n=Generic_Enemy_MCLove32_Aura7} false
   Skills:
   - addtag{t=DOWN} @self
   - sound{s=item.shield.break;v=3;p=0} @self
