@@ -31,11 +31,7 @@ OpenField_Object_不思議草Block:
         - delay 8
         - sound{s=entity.arrow.hit_player} @self
         - removefurniture @self
-      ]} @self ~onInteract ?furnitureState{s=T3}
-  - skill{
-      s=[
-        - removefurniture @self
-      ]} @self ~onInteract ?!furnitureState{s=T3}
+      ]} @self ~onInteract #?furnitureState{s=T3}
   - skill{
       s=[
         - delay 100
@@ -54,5 +50,106 @@ OpenField_Object_不思議草Block:
         - removefurniture
       ]} @self ~onBlockplace 
 
+OpenField_Object_不思議花Block:
+  Id: torchflower
+  Display: "不思議花"
+  Type: FURNITURE
+  Furniture:
+    Type: DISPLAY
+    DropSelf: false
+    Transform: GUI
+    Scale: 0.5,0.5,0.5
+    Billboard: VERTICAL
+    Hitbox:
+      Height: 2
+      Width: 1
+    States:
+      T1:
+        Scale: 0.5,1,0.5
+        Transform: GUI
+        Billboard: VERTICAL
+      T2:
+        Scale: 1,2,1
+        Transform: GUI
+        Billboard: VERTICAL
+      T3:
+        Scale: 2,4,2
+        Transform: GUI
+        Billboard: VERTICAL
+  FurnitureSkills:
+  - skill{
+      s=[
+        - sound{s=block.grass.break} @self
+        - delay 8
+        - sound{s=entity.arrow.hit_player} @self
+        - removefurniture @self
+      ]} @self ~onInteract #?furnitureState{s=T3}
+  - skill{
+      s=[
+        - delay 100
+        - furniturestate{s=T1}
+        - sound{s=block.crop.break;p=0}
+        - e:p{p=composter;a=5;vs=0.5;hs=0.5} @self
+        - delay 100
+        - furniturestate{s=T2}
+        - sound{s=block.crop.break;p=0}
+        - e:p{p=composter;a=5;vs=0.5;hs=0.5} @self
+        - delay 100
+        - furniturestate{s=T3}
+        - sound{s=block.crop.break;p=0}
+        - e:p{p=composter;a=5;vs=0.5;hs=0.5} @self
+        - delay 1200
+        - removefurniture
+      ]} @self ~onBlockplace 
 
-
+OpenField_Object_不思議種Block:
+  Id: mangrove_propagule
+  Display: "不思議種"
+  Type: FURNITURE
+  Furniture:
+    Type: DISPLAY
+    DropSelf: false
+    Transform: GUI
+    Scale: 0.5,0.5,0.5
+    Billboard: VERTICAL
+    Hitbox:
+      Height: 2
+      Width: 1
+    States:
+      T1:
+        Scale: 0.5,1,0.5
+        Transform: GUI
+        Billboard: VERTICAL
+      T2:
+        Scale: 1,2,1
+        Transform: GUI
+        Billboard: VERTICAL
+      T3:
+        Scale: 2,4,2
+        Transform: GUI
+        Billboard: VERTICAL
+  FurnitureSkills:
+  - skill{
+      s=[
+        - sound{s=block.grass.break} @self
+        - delay 8
+        - sound{s=entity.arrow.hit_player} @self
+        - removefurniture @self
+      ]} @self ~onInteract #?furnitureState{s=T3}
+  - skill{
+      s=[
+        - delay 100
+        - furniturestate{s=T1}
+        - sound{s=block.crop.break;p=0}
+        - e:p{p=composter;a=5;vs=0.5;hs=0.5} @self
+        - delay 100
+        - furniturestate{s=T2}
+        - sound{s=block.crop.break;p=0}
+        - e:p{p=composter;a=5;vs=0.5;hs=0.5} @self
+        - delay 100
+        - furniturestate{s=T3}
+        - sound{s=block.crop.break;p=0}
+        - e:p{p=composter;a=5;vs=0.5;hs=0.5} @self
+        - delay 1200
+        - removefurniture
+      ]} @self ~onBlockplace 

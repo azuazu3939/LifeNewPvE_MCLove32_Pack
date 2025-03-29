@@ -71,8 +71,8 @@ OpenField_Util_Bosses_MCLove32_Plains_Spawn:
   - mobsInRadius{types=OpenField_Enemy_風牙狼ウィデラー_MCLove32,OpenField_Enemy_羊獣カルーチェ_MCLove32,OpenField_Enemy_焔獣フェルドス_MCLove32;amount=<1;radius=128} true
   - biome{b=terra:origen/origen/verdant_valleys} true
 
-Generic_Furniture_不思議草Block_MCLove32_Base_Spawn:
-  Type: Generic_Furniture_不思議草Block_MCLove32_Base
+Generic_Furniture_Object_MCLove32_Base_Spawn:
+  Type: Generic_Furniture_Object_MCLove32_Base
   Worlds: Plains
   Action: ADD 
   PositionType: LAND

@@ -17,6 +17,25 @@ OpenField_Util_Bosses_MCLove32_Plains_Skill_3:
   Skills:
   - summon{t=OpenField_Enemy_焔獣フェルドス_MCLove32;a=1;r=0} @self
 
+Generic_Furniture_Object_MCLove32_Base_Skills:
+  Skills:
+  - randomskill{s=
+    Generic_Furniture_Object_MCLove32_Base_Skill1,
+    Generic_Furniture_Object_MCLove32_Base_Skill2,
+    Generic_Furniture_Object_MCLove32_Base_Skill3} @self
+
+Generic_Furniture_Object_MCLove32_Base_Skill1:
+  Skills:
+  - summon{t=Generic_Furniture_不思議草Block_MCLove32_Base;a=1;r=0} @self
+  
+Generic_Furniture_Object_MCLove32_Base_Skill2:
+  Skills:
+  - summon{t=Generic_Furniture_不思議花Block_MCLove32_Base;a=1;r=0} @self
+
+Generic_Furniture_Object_MCLove32_Base_Skill3:
+  Skills:
+  - summon{t=Generic_Furniture_不思議種Block_MCLove32_Base;a=1;r=0} @self
+
 OpenField_Util_風輪斬センター_100_MCLove32_Skills:
   Skills:
   - setVar{k=skill.count;a="0";t=INTEGER} @self
