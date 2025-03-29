@@ -60,8 +60,8 @@ Generic_Enemy_MCLove32_EnterCombat:
   - hasTag{t=DOWN} castinstead Generic_Enemy_MCLove32_NEXT
   Skills:
   - addtag{t=START} @self
-  - setVar{n=skill.point;a="8";t=INTEGER} @self 
-  - setVar{n=skill.multiple;a="2";t=INTEGER} @self
+  - setVar{n=skill.point;a="5";t=INTEGER} @self 
+  - setVar{n=skill.multiple;a="10";t=INTEGER} @self
   - setVar{n=skill.shield_point;a="<skill.var.point> * <skill.var.multiple>";t=INTEGER} @self
   - setVar{n=skill.shield;a="0";t=INTEGER} @self
   - setVar{n=skill.downTick;a="<skill.down_tick>";t=INTEGER} @self
