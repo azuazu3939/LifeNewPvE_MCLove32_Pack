@@ -84,6 +84,7 @@ Generic_Enemy_MCLove32_EnterCombat_Damaged:
   Skills:
   - setVar{var=skill.dmg;val="0";t=FLOAT} @self
   - setVar{var=skill.break;val="<caster.mhp> / <skill.break>";t=FLOAT} @self
+  - auraRemove{n=Generic_Enemy_MCLove32_Damaged} @self
   - ondamaged{auraName=Generic_Enemy_MCLove32_Damaged;d=1200;
       oh=[
         - setVar{var=skill.dmg;val="<skill.var.dmg> + <skill.var.damage-amount>";t=FLOAT} @self
@@ -112,6 +113,7 @@ Generic_Enemy_MCLove32_EnterCombat_Process_EnterCombat:
 Generic_Enemy_MCLove32_EnterCombat_Process:
   Skills:
   - setVar{n=skill.count_point;a="<skill.var.count> * <skill.var.multiple>";t=INTEGER} @self
+  - auraRemove{n=Generic_Enemy_MCLove32_Aura<skill.var.count>} @self
   - o{
       i=1;vr=0;hr=0;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;p=<skill.var.shield_point>;sp=<skill.var.count_point>;
       b=DISPLAY;mat=DIAMOND;enchanted=true;rd=true;
