@@ -43,9 +43,9 @@ OpenField_Object_バラBlock:
         - sound{s=entity.arrow.hit_player} @self
         - removefurniture @self
       ]} @self ~onInteract ?furnitureState{s=T3}
-  - setFurnitureState{state=T2;delay=100} ~onSpawn
-  - setFurnitureState{state=T3;delay=200} ~onSpawn
-  - removefurniture{delay=1800} @self ~onSpawn
+  - setFurnitureState{state=T2;delay=100} ~onBlockplace 
+  - setFurnitureState{state=T3;delay=200} ~onBlockplace 
+  - removefurniture{delay=1800} @self ~onBlockplace 
   - removefurniture @self ~onDamaged 0.5
 
 
