@@ -48,7 +48,7 @@ OpenField_Object_不思議草Block:
   - removefurniture ~onTimer:6000
 
 OpenField_Object_不思議花Block:
-  Id: torchflower
+  Id: oak_sapling
   Display: "不思議花"
   Type: FURNITURE
   Furniture:
