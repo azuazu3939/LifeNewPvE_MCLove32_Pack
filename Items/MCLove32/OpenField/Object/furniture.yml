@@ -13,15 +13,15 @@ OpenField_Object_不思議草Block:
       Width: 1
     States:
       T1:
-        Scale: 1,2,1
+        Scale: 1,1,1
         Transform: GUI
         Billboard: VERTICAL
       T2:
-        Scale: 3,4,3
+        Scale: 1,2,1
         Transform: GUI
         Billboard: VERTICAL
       T3:
-        Scale: 6,8,6
+        Scale: 2,4,2
         Transform: GUI
         Billboard: VERTICAL
   FurnitureSkills:
