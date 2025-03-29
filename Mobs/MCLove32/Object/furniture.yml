@@ -1,3 +1,4 @@
+#
 Generic_Furniture_Object_MCLove32_Base:
   Template: OpenField_Enemy_Abstract_Generic
   Display: ""
@@ -19,6 +20,7 @@ Generic_Furniture_Object_MCLove32_Base:
   - skill:Generic_Furniture_Object_MCLove32_Base_Skills @self ~onSpawn 
   - remove{delay=1} @self ~onSpawn 
 
+#
 Generic_Furniture_不思議草Block_MCLove32_Base:
   Template: OpenField_Enemy_Abstract_Generic
   Display: ""
@@ -40,6 +42,7 @@ Generic_Furniture_不思議草Block_MCLove32_Base:
   - summon{t=Generic_Furniture_不思議草Block_MCLove32_Around;a=15to25;r=64;s=true} @self ~onSpawn 
   - remove{delay=1} @self ~onSpawn 
 
+#
 Generic_Furniture_不思議草Block_MCLove32_Around:
   Template: OpenField_Enemy_Abstract_Generic
   Display: ""
@@ -61,6 +64,7 @@ Generic_Furniture_不思議草Block_MCLove32_Around:
   - setFurnitureAt{f=OpenField_Object_不思議草Block;yaw=<random.float.0to360>;ow=true} @selfLocation ~onSpawn
   - remove{delay=1} @self ~onSpawn 
 
+#
 Generic_Furniture_不思議花Block_MCLove32_Base:
   Template: OpenField_Enemy_Abstract_Generic
   Display: ""
@@ -82,6 +86,7 @@ Generic_Furniture_不思議花Block_MCLove32_Base:
   - summon{t=Generic_Furniture_不思議花Block_MCLove32_Around;a=15to25;r=64;s=true} @self ~onSpawn 
   - remove{delay=1} @self ~onSpawn 
 
+#
 Generic_Furniture_不思議花Block_MCLove32_Around:
   Template: OpenField_Enemy_Abstract_Generic
   Display: ""
@@ -103,6 +108,7 @@ Generic_Furniture_不思議花Block_MCLove32_Around:
   - setFurnitureAt{f=OpenField_Object_不思議花Block;yaw=<random.float.0to360>;ow=true} @selfLocation ~onSpawn
   - remove{delay=1} @self ~onSpawn 
 
+#
 Generic_Furniture_不思議種Block_MCLove32_Base:
   Template: OpenField_Enemy_Abstract_Generic
   Display: ""
@@ -124,6 +130,7 @@ Generic_Furniture_不思議種Block_MCLove32_Base:
   - summon{t=Generic_Furniture_不思議種Block_MCLove32_Around;a=15to25;r=64;s=true} @self ~onSpawn 
   - remove{delay=1} @self ~onSpawn 
 
+#
 Generic_Furniture_不思議種Block_MCLove32_Around:
   Template: OpenField_Enemy_Abstract_Generic
   Display: ""

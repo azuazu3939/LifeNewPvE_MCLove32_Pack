@@ -1,3 +1,4 @@
+#
 Generic_Enemy_ヘイト_MCLove32:
   Cooldown: 1
   Conditions:
@@ -48,6 +49,7 @@ Generic_Enemy_ウォーク追従_MCLove32:
       ];hp=false;hnp=true} @Parent ?hasparent
   - skill:Generic_Enemy_ウォークRemoveCheck_MCLove32 @self
 
+#
 Generic_Enemy_ウォークRemoveCheck_MCLove32:
   Conditions:
   - varset{var=caster.livingWater} true
@@ -77,6 +79,7 @@ Generic_Enemy_MCLove32_EnterCombat:
   - removetag{t=START} @self
   - skill:Generic_Enemy_MCLove32_EnterCombat @self
 
+#
 Generic_Enemy_MCLove32_EnterCombat_Damaged:
   Skills:
   - setVar{var=skill.dmg;val="0";t=FLOAT} @self
@@ -88,6 +91,7 @@ Generic_Enemy_MCLove32_EnterCombat_Damaged:
         - skill:Generic_Enemy_MCLove32_EnterCombat_DamagedAndBreak @self
       ]} @self
 
+#
 Generic_Enemy_MCLove32_EnterCombat_DamagedAndBreak:
   Skills:
   Conditions:
@@ -99,11 +103,13 @@ Generic_Enemy_MCLove32_EnterCombat_DamagedAndBreak:
   - auraRemove{n=Generic_Enemy_MCLove32_Damaged} ?varrange{k=skill.shield;r=20} #変更時追加入力必須
   - skill:Generic_Enemy_MCLove32_Down @self
 
+#
 Generic_Enemy_MCLove32_EnterCombat_Process_EnterCombat:
   Skills:
   - setVar{n=skill.count;a="0";t=INTEGER} @self
   - skill:Generic_Enemy_MCLove32_EnterCombat_Process{repeat="<skill.var.point> - 1";repeati=0} @self
 
+#
 Generic_Enemy_MCLove32_EnterCombat_Process:
   Skills:
   - o{
@@ -112,6 +118,7 @@ Generic_Enemy_MCLove32_EnterCombat_Process:
       auraName=Generic_Enemy_MCLove32_Aura<skill.var.count>;rd=true} @self
   - setVar{n=skill.count;a="<skill.var.count> + 1";t=INTEGER} @self
 
+#
 Generic_Enemy_MCLove32_Down:
   Skills:
   - addtag{t=DOWN} @self
@@ -123,6 +130,7 @@ Generic_Enemy_MCLove32_Down:
   - sound{s=block.anvil.use;v=3;p=2} @self
   - skill:Generic_Enemy_MCLove32_NEXT @self
 
+#
 Generic_Enemy_MCLove32_NEXT:
   Skills:
   - delay 20
