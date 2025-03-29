@@ -60,7 +60,11 @@ Generic_Enemy_MCLove32_EnterCombat:
   - hasTag{t=DOWN} castinstead Generic_Enemy_MCLove32_NEXT
   Skills:
   - addtag{t=START} @self
-  - setVar{n=skill.point;a="20";t=INTEGER} @self
+
+  - setVar{n=skill.point;a="20";t=INTEGER} @self #編集用
+  - setVar{n=skill.multiple;a="5";t=INTEGER} @self #編集用
+
+  - setVar{n=skill.shield_point;a="<skill.var.point> * <skill.var.multiple>";t=INTEGER} @self
   - setVar{n=skill.shield;a="0";t=INTEGER} @self
   - setVar{n=skill.downTick;a="<skill.down_tick>";t=INTEGER} @self
   - skill:Generic_Enemy_MCLove32_EnterCombat_Damaged{break=<skill.shield_break>} @self
@@ -100,7 +104,7 @@ Generic_Enemy_MCLove32_EnterCombat_Process_EnterCombat:
 Generic_Enemy_MCLove32_EnterCombat_Process:
   Skills:
   - o{
-    i=1;vr=0;hr=0;hp=false;hnp=false;mr=24;d=1200;r=3;oy=3;p=<skill.var.point>;sp=<skill.var.count>;
+    i=1;vr=0;hr=0;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;p=<skill.var.shield_point>;sp="<skill.var.count> * <skill.var.multiple>";
     b=DISPLAY;mat=DIAMOND;scale=1,1,1;enchanted=true;
     auraName=Generic_Enemy_MCLove32_Aura<skill.var.count>;rd=true} @self
   - setVar{n=skill.count;a="<skill.var.count> + 1";t=INTEGER} @self
