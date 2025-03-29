@@ -2,38 +2,33 @@ OpenField_Object_バラBlock:
   Id: rose_bush
   Display: "バラ"
   Type: FURNITURE
-  Model: 1000
   Furniture:
     Type: DISPLAY
-    Material: GRASS
-    Model: 1000
+    Material: rose_bush
     Health: 10
-    CanRotate: false
-    Placement: FLOOR
+    DropSelf: false
+    Transform: GROUND
+    Scale: 0.5,0.5,0.5
+    Billboard: VERTICAL
+    DefaultState: T1
     Barriers:
     - 0,0,0 
     - 0,1,0 
     Lights:
     - 0,0,0 15
     - 0,1,0 15 
-    Scale: 0.5,0.5,0.5
-    Billboard: VERTICAL
-    DefaultState: T1
     States:
       T1:
-        Model: 1001
         Scale: 0.5,0.5,0.5
-        Material: TALL_BUSH
+        Transform: GROUND
         Billboard: VERTICAL
-      T1:
-        Model: 1002
+      T2:
         Scale: 0.5,0.5,0.5
-        Material: ROSE_BUSH
+        Transform: GROUND
         Billboard: VERTICAL
-      T1:
-        Model: 1003
+      T3:
         Scale: 1,1,1
-        Material: ROSE_BUSH
+        Transform: GROUND
         Billboard: VERTICAL
   FurnitureSkills:
   - skill{
@@ -43,10 +38,19 @@ OpenField_Object_バラBlock:
         - sound{s=entity.arrow.hit_player} @self
         - removefurniture @self
       ]} @self ~onInteract ?furnitureState{s=T3}
-  - setFurnitureState{state=T2;delay=100} ~onBlockplace 
-  - setFurnitureState{state=T3;delay=200} ~onBlockplace 
-  - removefurniture{delay=1800} @self ~onBlockplace 
-  - removefurniture @self ~onDamaged 0.5
+  - skill{
+      s=[
+        - delay 100
+        - setFurnitureState{s=T2}
+        - sound{s=block.crop.break;p=0}
+        - e:p{p=composter;a=5;vs=0.5;hs=0.5} @self
+        - delay 200
+        - setFurnitureState{s=T3}
+        - sound{s=block.crop.break;p=0}
+        - e:p{p=composter;a=5;vs=0.5;hs=0.5} @self
+        - delay 1500
+        - removefurniture
+      ]} @self ~onBlockplace 
 
 
 
