@@ -198,8 +198,8 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32:
   - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=240;shield_break=40;heal_percent=0.01} @self ~onEntercombat
   - skill:OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK @self ~onEntercombat
   - skill:OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_1 @self ~onDamaged 
-  - addtag{t=MIDDLE_HEALTH} @self ~onDamaged <70%
-  - addtag{t=LOW_HEALTH} @self ~onDamaged <40%
+  - addtag{t=MIDDLE_HEALTH} @self ~onDamaged =70%
+  - addtag{t=LOW_HEALTH} @self ~onDamaged =40%
   - remove{delay=10} @self ~onDeath
   - removetag{t=START} @self ~onDropcombat 
   - removetag{t=ATTACK} @self ~onDropcombat
@@ -273,8 +273,8 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32:
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=8;delay=5} @self ~onDropCombat
   - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=140;shield_break=70;heal_percent=0.03} @self ~onEntercombat
   - skill:OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK @self ~onEntercombat
-  - addtag{t=MIDDLE_HEALTH} @self ~onDamaged <70%
-  - addtag{t=LOW_HEALTH} @self ~onDamaged <40%
+  - addtag{t=MIDDLE_HEALTH} @self ~onDamaged =70%
+  - addtag{t=LOW_HEALTH} @self ~onDamaged =40%
   - remove{delay=10} @self ~onDeath
   - removetag{t=START} @self ~onDropcombat 
   - removetag{t=ATTACK} @self ~onDropcombat
@@ -326,8 +326,8 @@ OpenField_Enemy_焔獣フェルドス_MCLove32:
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=8;delay=5} @self ~onDropCombat
   - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=200;shield_break=100;heal_percent=0.005} @self ~onEntercombat
   - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK @self ~onEntercombat
-  - addtag{t=MIDDLE_HEALTH} @self ~onDamaged <70%
-  - addtag{t=LOW_HEALTH} @self ~onDamaged <40%
+  - addtag{t=MIDDLE_HEALTH} @self ~onDamaged =70%
+  - addtag{t=LOW_HEALTH} @self ~onDamaged =40%
   - remove{delay=10} @self ~onDeath
   - removetag{t=START} @self ~onDropcombat 
   - removetag{t=ATTACK} @self ~onDropcombat
@@ -379,8 +379,8 @@ OpenField_Enemy_踊る巨人_MCLove32:
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=12;delay=5} @self ~onDropCombat
   - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=300;shield_break=60;heal_percent=0.01} @self ~onEntercombat
   - skill:OpenField_Enemy_踊る巨人_MCLove32_ATTACK @self ~onEntercombat
-  - addtag{t=MIDDLE_HEALTH} @self ~onDamaged <70%
-  - addtag{t=LOW_HEALTH} @self ~onDamaged <40%
+  - addtag{t=MIDDLE_HEALTH} @self ~onDamaged =70%
+  - addtag{t=LOW_HEALTH} @self ~onDamaged =40%
   - remove{delay=10} @self ~onDeath
   - removetag{t=START} @self ~onDropcombat 
   - removetag{t=ATTACK} @self ~onDropcombat
