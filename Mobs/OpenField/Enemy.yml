@@ -208,6 +208,8 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32:
   - removetag{t=START} @self ~onDropcombat 
   - removetag{t=ATTACK} @self ~onDropcombat
   - removetag{t=DOWN} @self ~onDropcombat
+  - skill:Generic_Enemy_MCLove32_DAMAGED @trigger ~onDamaged 
+  - skill:Generic_Enemy_MCLove32_SHOW_RANKING{lim=5;range=48} @self ~onDeath 
 
 OpenField_Enemy_黒小ヤギ_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
@@ -288,6 +290,8 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32:
   - removetag{t=START} @self ~onDropcombat 
   - removetag{t=ATTACK} @self ~onDropcombat
   - removetag{t=DOWN} @self ~onDropcombat
+  - skill:Generic_Enemy_MCLove32_DAMAGED @trigger ~onDamaged 
+  - skill:Generic_Enemy_MCLove32_SHOW_RANKING{lim=5;range=48} @self ~onDeath 
 
 OpenField_Enemy_焔獣フェルドス_MCLove32:
   Template: OpenField_Enemy_Abstract_Generic
@@ -342,12 +346,14 @@ OpenField_Enemy_焔獣フェルドス_MCLove32:
   - removetag{t=START} @self ~onDropcombat 
   - removetag{t=ATTACK} @self ~onDropcombat
   - removetag{t=DOWN} @self ~onDropcombat
+  - skill:Generic_Enemy_MCLove32_DAMAGED @trigger ~onDamaged 
+  - skill:Generic_Enemy_MCLove32_SHOW_RANKING{lim=5;range=48} @self ~onDeath 
 
 OpenField_Enemy_踊る巨人_MCLove32:
   Template: OpenField_Enemy_Abstract_Generic
   Display: "踊る巨人"
   Type: husk
-  Health: 99950
+  Health: 99999
   Armor: 0
   Faction: husk
   Damage: 15
@@ -359,14 +365,11 @@ OpenField_Enemy_踊る巨人_MCLove32:
     KnockbackResistance: 1
     MaxCombatDistance: 40
     FollowRange: 12
+    Glowing: true
     Adult: true
   DamageModifiers:
   - SUFFOCATION 0
   - FALL 0
-  - BLUE 1.2
-  - RED 1.2
-  - GREEN 0.8
-  - YELLOW 0.8
   AITargetSelectors:
   - clear
   - attacker
@@ -378,8 +381,8 @@ OpenField_Enemy_踊る巨人_MCLove32:
   - moveTowardsTarget
   BossBar:
     Enabled: true
-    Title: "<caster.name>"
-    Range: 32
+    Title: "&a&l<caster.name>"
+    Range: 128
     Color: PURPLE
     Style: SEGMENTED_12
   Skills:
