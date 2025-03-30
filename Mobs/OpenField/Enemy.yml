@@ -190,7 +190,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32:
   - moveTowardsTarget
   BossBar:
     Enabled: true
-    Title: <shadow:#58cfe4><caster.name>
+    Title: <shadow:#58cfe4><caster.name></shadow>!
     Range: 32
     Color: WHITE
     Style: SEGMENTED_12
@@ -274,7 +274,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32:
   - moveTowardsTarget
   BossBar:
     Enabled: true
-    Title: <shadow:#15d455><caster.name>
+    Title: <shadow:#15d455><caster.name></shadow>!
     Range: 32
     Color: WHITE
     Style: SEGMENTED_12
@@ -331,7 +331,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32:
   - moveTowardsTarget
   BossBar:
     Enabled: true
-    Title: <shadow:#c20a0a><caster.name>
+    Title: <shadow:#c20a0a><caster.name></shadow>!
     Range: 32
     Color: WHITE
     Style: SEGMENTED_12
@@ -384,7 +384,7 @@ OpenField_Enemy_踊る巨人_MCLove32:
   - moveTowardsTarget
   BossBar:
     Enabled: true
-    Title: <shadow:#cf55ff><caster.name>
+    Title: <shadow:#cf55ff><caster.name></shadow>!
     Range: 128
     Color: PURPLE
     Style: SEGMENTED_12
