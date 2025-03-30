@@ -33,27 +33,27 @@ OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process:
 
 OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process_Divide1:
   Skills:
-  - setVar{k=skill.name;a="<target.name>";t=STRING}
+  - setVar{k=skill.name;a="<target.name>";t=STRING} @targetedTarget
   - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process_Divide_End @self
 
 OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process_Divide2:
   Skills:
-  - setVar{k=skill.name;a="<target.name>";t=STRING}
+  - setVar{k=skill.name;a="<target.name>";t=STRING} @targetedTarget
   - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process_Divide_End @self
 
 OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process_Divide3:
   Skills:
-  - setVar{k=skill.name;a="<target.name>";t=STRING}
+  - setVar{k=skill.name;a="<target.name>";t=STRING} @targetedTarget
   - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process_Divide_End @self
 
 OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process_Divide4:
   Skills:
-  - setVar{k=skill.name;a="<target.name>";t=STRING}
+  - setVar{k=skill.name;a="<target.name>";t=STRING} @targetedTarget
   - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process_Divide_End @self
 
 OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process_Divide5:
   Skills:
-  - setVar{k=skill.name;a="<target.name>";t=STRING}
+  - setVar{k=skill.name;a="<target.name>";t=STRING} @targetedTarget
   - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process_Divide_End @self
 
 OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process_Divide_End:
