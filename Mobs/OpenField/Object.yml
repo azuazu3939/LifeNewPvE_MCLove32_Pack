@@ -1,0 +1,308 @@
+OpenField_Util_黄緑色のテラコッタ_100_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: lime_terracotta
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 1,1,1
+  Skills:
+
+OpenField_Util_風輪斬センター_100_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: oak_log
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 1,1,1
+  Skills:
+  - skill:OpenField_Util_風輪斬センター_100_MCLove32_Skills @self ~onSpawn 
+
+OpenField_Util_オークの葉_100_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: oak_leaves
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 1,1,1
+  Skills:
+
+OpenField_Util_オークの原木_100_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: oak_log
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 1,1,1
+  Skills:
+
+OpenField_Util_青氷_50_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: blue_ice
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 0.5,0.5,0.5
+  Skills:
+
+OpenField_Util_青氷_25_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: blue_ice
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 0.25,0.25,0.25
+  Skills:
+
+OpenField_Util_氷塊_50_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: packed_ice
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 0.5,0.5,0.5
+  Skills:
+
+OpenField_Util_氷塊_25_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: packed_ice
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 0.25,0.25,0.25
+  Skills:
+
+OpenField_Util_氷_50_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: ice
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 0.5,0.5,0.5
+  Skills:
+
+OpenField_Util_氷_25_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: ice
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 0.25,0.25,0.25
+  Skills:
+
+OpenField_Util_スライムブロック_100_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: slime_block
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 1,1,1
+  Skills:
+
+OpenField_Util_火炎弾_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: magma_block
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 0.2,0.2,0.2
+  Skills:
+  - setscale{s=2.5;d=25;delay=2} @self ~onSpawn 
+
+OpenField_Util_火炎弾_灰1_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: coal_block
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 0.2,0.2,0.2
+  Skills:
+
+OpenField_Util_火炎弾_灰2_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: coal_block
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 0.3,0.3,0.3
+  Skills:
+
+OpenField_Util_火炎弾_灰3_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: coal_block
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 0.5,0.5,0.5
+  Skills:
+
+OpenField_Util_火炎弾_灰4_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: magma_block
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 0.2,0.2,0.2
+  Skills:
+
+OpenField_Util_火炎弾_灰5_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: magma_block
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 0.3,0.3,0.3
+  Skills:
+
+OpenField_Util_火炎弾_灰6_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: magma_block
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 0.5,0.5,0.5
+  Skills:
+
+OpenField_Util_火炎弾_灰7_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: stone
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 0.2,0.2,0.2
+  Skills:
+
+OpenField_Util_火炎弾_灰8_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: stone
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 0.3,0.3,0.3
+  Skills:
+
+OpenField_Util_火炎弾_灰9_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: stone
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 0.5,0.5,0.5
+  Skills:
+
+OpenField_util_ウズラミリィ_毒_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: amethyst_cluster
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 2,2,2
+  Skills:
+  - setVar{var=caster.scale;val="2";t=FLOAT} @self ~onSpawn 
+  - skill{
+    s=[
+      - setVar{var=caster.scale;val="<caster.var.scale|1> + 0.2";t=FLOAT;repeat=9;repeati=6} @self
+    ];repeat=4;repeatI=120} @self ~onSpawn 
+  - skill{
+    s=[
+      - setVar{var=caster.scale;val="<caster.var.scale|1> - 0.18";t=FLOAT;repeat=9;repeati=6} @self
+    ];repeat=4;repeatI=120;delay=60} @self ~onSpawn 
+  - setscale{s=2;d=60;repeat=4;repeatI=120} @self ~onSpawn 
+  - setscale{s=-1.8;d=60;repeat=4;repeatI=120;delay=60} @self ~onSpawn 
+  - remove{delay=600} @self ~onSpawn 
+  - skill{
+    s=[
+      - potion{t=POISON;l=2;p=false;d=60} @PIR{r=<caster.var.scale|1>}
+      - e:blockMask{m=PURPLE_TERRACOTTA;d=9;r=<caster.var.scale|1>}
+    ]} @self ~onTimer:10
+
+OpenField_util_ウズラミリィ_柱_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: amethyst_cluster
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 1,2,1
+  Skills:
+  - skill{
+    s=[
+      - damage{a=30;pi=true;ii=true} @PIR{r=3;limit=5;sort=NEAREST}
+      - sound{s=entity.evoker_fangs.attack} @self
+      - settransformation{tt=SCALE;a=set;val=1,3,1;delay=1} @self
+      - settransformation{tt=SCALE;a=set;val=1,4,1;delay=2} @self
+      - settransformation{tt=SCALE;a=set;val=1,5,1;delay=3} @self
+      - settransformation{tt=SCALE;a=set;val=1,6,1;delay=4} @self
+      - settransformation{tt=SCALE;a=set;val=1,7,1;delay=5} @self
+      - settransformation{tt=SCALE;a=set;val=1,8,1;delay=6} @self
+      - settransformation{tt=SCALE;a=set;val=1,9,1;delay=7} @self
+      - settransformation{tt=SCALE;a=set;val=1,10,1;delay=8} @self
+      - potion{t=SLOW;l=3;d=100;delay=10} @PIR{r=4;limit=5;sort=NEAREST}
+      - potion{t=POISON;l=1;d=100;delay=10} @PIR{r=4;limit=5;sort=NEAREST}
+      - delay 20
+      - remove{delay=1} @self
+    ]} ~onSpawn 
+
+OpenField_util_氷塊_50_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: packed_ice
+    BlockLight: 15
+    SkyLight: 15
+    ShadowStrength: 0
+    Scale: 0.5,0.5,0.5
+  Skills:
+  - remove{delay=30} @self ~onSpawn
+
+OpenField_util_氷塊_100_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: packed_ice
+    BlockLight: 15
+    SkyLight: 15
+    ShadowStrength: 0
+    Scale: 1,1,1
+  Skills:
+  - remove{delay=30} @self ~onSpawn
+
+OpenField_util_氷塊_200_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: packed_ice
+    BlockLight: 15
+    SkyLight: 15
+    ShadowStrength: 0
+    Scale: 2,2,2
+  Skills:
+  - remove{delay=30} @self ~onSpawn
+
+OpenField_util_青氷_200_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: blue_ice
+    BlockLight: 15
+    SkyLight: 15
+    ShadowStrength: 0
+    Scale: 2,2,2
+  Skills:
+  - remove{delay=30} @self ~onSpawn
+
+OpenField_util_青氷_100_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: blue_ice
+    BlockLight: 15
+    SkyLight: 15
+    ShadowStrength: 0
+    Scale: 1,1,1
+  Skills:
+  - remove{delay=30} @self ~onSpawn
+
+OpenField_util_青氷_50_MCLove32:
+  Type: block_display
+  DisplayOptions:
+    Block: blue_ice
+    BlockLight: 15
+    SkyLight: 15
+    ShadowStrength: 0
+    Scale: 0.5,0.5,0.5
+  Skills:
+  - remove{delay=30} @self ~onSpawn

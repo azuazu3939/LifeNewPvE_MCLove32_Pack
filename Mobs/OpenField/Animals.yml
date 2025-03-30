@@ -1,0 +1,95 @@
+OpenField_Guard_ヒィツジー_MCLove32:
+  Type: sheep
+  Display: "&fヒィツジー"
+  Faction: sheep
+  Health: 20
+  Armor: 0
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  - randomstroll
+  - gotoparent
+  - gotoowner
+  - fleefaction{d=16;s=2;ss=1.5;f=wolf}
+  - fleeplayers{d=16;s=2;ss=1.5}
+  - fleeConditional{distance=16;speed=2;safespeed=1.5;conditions=[ - hasTag{t=BOSS} true ]}
+  AITargetSelectors:
+  - clear
+  - attacker
+  - specificfaction{f=wolf}
+  Drops:
+  - exp 30
+  Options:
+    Collidable: true 
+    DigOutOfGround: true 
+    FollowRange: 16
+    Despawn: true 
+    NoDamageTicks: 0
+    KnockbackResistance: 0.15
+    NoAI: false 
+    PreventMobKillDrops: true 
+    PreventRandomEquipment: true 
+    PreventVanillaDamage: true
+    Silent: false 
+  Skills:
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=24} @self ~onEnterCombat 
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16;delay=5} @self ~onDropCombat
+  - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
+
+OpenField_Guard_ヒィツジー_MCLove32_Leader:
+  Template: OpenField_Guard_ヒィツジー_MCLove32
+  Health: 25
+  Armor: 0
+  Drops:
+  - exp 50
+  Skills:
+  - summon{t=OpenField_Guard_ヒィツジー_MCLove32;a=2to4;r=5;s=true} @self ~onSpawn
+
+OpenField_Guard_モーカウ_MCLove32:
+  Type: cow
+  Display: "モーカウ"
+  Faction: cow
+  Health: 20
+  Armor: 0
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  - randomstroll
+  - gotoparent
+  - gotoowner
+  - fleefaction{d=16;s=2;ss=1.5;f=wolf}
+  - fleeplayers{d=16;s=2;ss=1.5}
+  - fleeConditional{distance=16;speed=2;safespeed=1.5;conditions=[ - hasTag{t=BOSS} true ]}
+  AITargetSelectors:
+  - clear
+  - attacker
+  - specificfaction{f=wolf}
+  Drops:
+  - exp 30
+  Options:
+    Collidable: true 
+    DigOutOfGround: true 
+    FollowRange: 16
+    Despawn: true 
+    NoDamageTicks: 0
+    KnockbackResistance: 0.15
+    NoAI: false 
+    PreventMobKillDrops: true 
+    PreventRandomEquipment: true 
+    PreventVanillaDamage: true
+    Silent: false 
+  Skills:
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=24} @self ~onEnterCombat 
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16;delay=5} @self ~onDropCombat
+  - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
+
+OpenField_Guard_モーカウ_MCLove32_Leader:
+  Template: OpenField_Guard_モーカウ_MCLove32
+  Health: 25
+  Armor: 0
+  Drops:
+  - exp 50
+  Skills:
+  - summon{t=OpenField_Guard_モーカウ_MCLove32;a=2to4;r=5;s=true} @self ~onSpawn
