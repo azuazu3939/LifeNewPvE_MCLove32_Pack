@@ -20,7 +20,12 @@ Generic_Enemy_ヘイト_MCLove32:
 
 #@Param / FLOAT: <skill.v>
 Generic_Enemy_ウォーク_MCLove32:
+  Conditions:
+  - incombat false
   Skills:
+  - setVar{k=skill.count;a="0";t=INTEGER} @self
+  - skill:Generic_Enemy_ウォーク_MCLove32_SearchBoss @EIR{r=16}
+  - skill:Generic_Enemy_ウォーク_MCLove32_Check @self
   - setvar{var=skill.v;val="<skill.v> * 0.1";t=FLOAT} @self
   - setvar{var=skill.v2;val="(<skill.v> + 150) * (<skill.var.v> * 0.15)";t=FLOAT} @self
   - projectile{
@@ -29,11 +34,32 @@ Generic_Enemy_ウォーク_MCLove32:
         - look{f=true} @projectileforward
         - setFallDistance{a=0} @self
       ];
-      v=<skill.var.v>;i=1;mr=16;se=false;sb=false;hs=true;hfs=0;mch=6;mdh=10;syo=0;sfo=0;hr=0;vr=0;md=25;ho=<random.-8to8>} @Forward{f=5;lockpitch=true}
+      v=<skill.var.v>;i=1;mr=16;se=false;sb=false;hs=true;hfs=0;mch=6;mdh=10;syo=0;sfo=0;hr=0;vr=0;md=25;ho=<random.-8to8>} @Forward{f=5;lockpitch=true} ?!hasTag{t=Found}
   - skill:Generic_Enemy_ウォークRemoveCheck_MCLove32 @self
+
+Generic_Enemy_ウォーク_MCLove32_SearchBoss:
+  TargetConditions:
+  - hasTag{t=BOSS} true
+  - samefaction true
+  - hasTag{t=Found} false 
+  Skills:
+  - setVar{k=skill.count;a="<skill.var.count> + 1";t=INTEGER} @self
+  - setOwner 
+  - addtag{t=Found} @self 
+  - addtag{t=Found} @children
+
+Generic_Enemy_ウォーク_MCLove32_Check:
+  Conditions:
+  - varrange{k=skill.count;r=0}
+  - hasTag{t=Found} true
+  Skills:
+  - removetag{t=Found} @self 
+  - removetag{t=Found} @children
 
 #@Param / FLOAT: <skill.v>
 Generic_Enemy_ウォーク追従_MCLove32:
+  Conditions:
+  - incombat false
   Skills:
   - setvar{var=skill.v;val="<skill.v> * 0.1";t=FLOAT} @self
   - setvar{var=skill.v2;val="(<skill.v> + 150) * (<skill.var.v> * 0.15)";t=FLOAT} @self
@@ -46,7 +72,7 @@ Generic_Enemy_ウォーク追従_MCLove32:
       v=<skill.var.v>;i=1;mr=16;se=true;sb=false;hs=true;hfs=0;mch=6;mdh=10;syo=0;sfo=0;hr=2;vr=2;md=25;ho=<random.-10to10>;
       conditions=[
         - parent true
-      ];hp=false;hnp=true} @Parent ?hasparent
+      ];hp=false;hnp=true} @Parent ?hasparent ?!hasTag{t=Found}
   - skill:Generic_Enemy_ウォークRemoveCheck_MCLove32 @self
 
 #
