@@ -23,18 +23,10 @@ OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING:
   - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process @self
 
 OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process:
-  Conditions:
-  - varrange{k=skill.ranking;r=5} false 
   Skills:
   - skill{
       s=[
         - setVar{k=skill.name;a="<target.name>";t=STRING}
-        - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process_Check 
-      ]} @EIR{r=48;sort=HIGHEST_THREAT;limit=5}
-
-OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process_Check:
-  Conditions:
-  - variableIsSet{k=caster.<skill.var.name>}
-  Skills:
-  - setVar{k=skill.ranking;a="<skill.var.ranking> + 1";t=INTEGER} @self 
-  - message{m="&a&l<skill.var.ranking>位 &6&l<skill.var.name> &f&lスコア &f<caster.var.<skill.var.name>|0>"} @PIR{r=32} ?variableIsSet{k=caster.<skill.var.name>}
+        - setVar{k=skill.ranking;a="<skill.var.ranking> + 1";t=INTEGER} @self ?variableIsSet{k=caster.<skill.var.name>}
+        - message{m="&a&l<skill.var.ranking>位 &6&l<skill.var.name> &f&lスコア &f<caster.var.<skill.var.name>|0>"} @PIR{r=32} ?variableIsSet{k=caster.<skill.var.name>}
+      ]} @EIR{r=48;sort=HIGHEST_THREAT;limit=8}
