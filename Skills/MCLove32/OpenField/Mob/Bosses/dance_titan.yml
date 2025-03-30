@@ -11,7 +11,7 @@ OpenField_Enemy_踊る巨人_MCLove32_ATTACK1:
 
 OpenField_Enemy_踊る巨人_MCLove32_DAMAGED:
   Skills: 
-  - setVar{k=skill.name;a="<target.name>";t=STRING} @trigger
+  - setVar{k=skill.name;a="<target.name>";t=STRING} @targetedTarget
   - setVar{k=caster.<skill.var.name>;a="<caster.var.<skill.var.name>|0> + <skill.var.damage-amount>";t=FLOAT} @self
 
 OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING:
@@ -26,8 +26,7 @@ OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process:
   - skill{
       s=[
         - setVar{k=skill.name;a="<target.name>";t=STRING} @targetedTarget
-        - setVar{k=skill.itr;a="<caster.var.<skill.var.name>> <skill.var.itr>";t=STRING} ?variableIsSet{k=skill.itr} ?variableIsSet{k=caster.<skill.var.name>}
-        - setVar{k=skill.itr;a="<caster.var.<skill.var.name>>";t=STRING} ?!variableIsSet{k=skill.itr} ?variableIsSet{k=caster.<skill.var.name>} 
+        - setVar{k=skill.itr;a="<caster.var.<skill.var.name>>";t=FLOAT} ?!variableIsSet{k=skill.itr} ?variableIsSet{k=caster.<skill.var.name>} 
       ]} @EIR{r=48;sort=HIGHEST_THREAT;limit=5}
-  - delay 1
+  - delay 2
   - message{m="<skill.var.itr>"} @PIR{r=32} ?variableIsSet{k=skill.itr}
