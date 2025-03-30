@@ -20,9 +20,13 @@ OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING:
   Cooldown: 5
   Skills:
   - setVar{k=skill.ranking;a="1";t=INTEGER} @self 
-  - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Loop{repeat=9;repeati=1} @TT{sort=HIGHEST_THREAT;limit=10}
+  - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Loop{repeat=9;repeati=1} @self
 
 OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Loop:
+  Skills:
+  - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process @TT{sort=HIGHEST_THREAT;limit=1;stuti="<skill.var.ranking> - 1"}
+
+OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process:
   Conditions:
   - variableInRange{k=skill.ranking;r=10} false 
   Skills:
