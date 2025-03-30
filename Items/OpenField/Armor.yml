@@ -1,363 +1,271 @@
-OpenField_Armor_アルドーナH_MCLove32:
-  Id: leather_helmet 
-  Display: "&fアルドーナヘルメット"
+
+OpenField_Armor_ハロ_MCLove32_H:
+  Id: leather_helmet
+  Display: "&fハロ-キャップ"
   Lore: []
-  Model: 1001
+  Model: 100
   Options:
-    Color: GREEN
-    Destroy: false
-    CancelDamage: true
     ItemVersion: 1
     Unbreakable: true
+    Color: WHITE
   Attributes:
     Head:
-      Armor: 10 ADD
-      Health: 1 ADD
-      ArmorToughness: 5 ADD
+      Health: 3 ADD 
+      ArmorToughness: 2 ADD 
+      Armor: 2 ADD 
   Group: 'Armor'
 
-OpenField_Armor_アルドーナT_MCLove32:
-  Id: golden_helmet
-  Display: "&eアルドーナティアラ"
-  Lore: []
-  Model: 1001
-  Options:
-    Destroy: false
-    CancelDamage: true
-    ItemVersion: 1
-    Unbreakable: true
-  Enchantments:
-  - PROTECTION 4
-  - FIRE_PROTECTION 4
-  Attributes:
-    Head:
-      Armor: 15 ADD
-      Health: 2 ADD
-      ArmorToughness: 10 ADD
-  Group: 'Armor'
-  NBT:
-    PublicBukkitValues:
-      lifenewpve:max_mana: "50"
-
-OpenField_Armor_アルドーナC_MCLove32:
+OpenField_Armor_ハロ_MCLove32_C:
   Id: leather_chestplate
-  Display: "&fアルドーナチェストプレート"
+  Display: "&fハロ-チェスト"
   Lore: []
-  Model: 1001
+  Model: 100
   Options:
-    Color: GREEN
-    Destroy: false
-    CancelDamage: true
     ItemVersion: 1
     Unbreakable: true
-  Attributes:
-   Chest:
-      Armor: 8 ADD
-      Health: 1 ADD
-      ArmorToughness: 4 ADD
-  Group: 'Armor'
-
-OpenField_Armor_アルドーナL_MCLove32:
-  Id: leather_leggings
-  Display: "&fアルドーナレギンス"
-  Lore: []
-  Model: 1001
-  Options:
-    Color: GREEN
-    Destroy: false
-    CancelDamage: true
-    ItemVersion: 1
-    Unbreakable: true
-  Attributes:
-    Legs:
-      Armor: 8 ADD
-      Health: 1 ADD
-      ArmorToughness: 3 ADD
-  Group: 'Armor'
-
-OpenField_Armor_アルドーナB_MCLove32:
-  Id: leather_boots
-  Display: "&fアルドーナブーツ"
-  Lore: []
-  Model: 1001
-  Options:
-    Color: GREEN
-    Destroy: false
-    CancelDamage: true
-    ItemVersion: 1
-    Unbreakable: true
-  Attributes:
-    Feet:
-      Armor: 4 ADD
-      Health: 1 ADD
-      ArmorToughness: 4 ADD
-  Group: 'Armor'
-
-OpenField_Armor_イルドーナH_MCLove32:
-  Id: leather_helmet 
-  Display: "&fイルドーナヘルメット"
-  Lore: []
-  Model: 1002
-  Options:
-    Color: BLUE
-    Destroy: false
-    CancelDamage: true
-    ItemVersion: 1
-    Unbreakable: true
-  Attributes:
-    Head:
-      Armor: 14 ADD
-      Health: 2 ADD
-      ArmorToughness: 8 ADD
-      Damage: 3 ADD 
-  Group: 'Armor'
-
-OpenField_Armor_イルドーナT_MCLove32:
-  Id: golden_helmet
-  Display: "&eイルドーナティアラ"
-  Lore: []
-  Model: 1002
-  Options:
-    Destroy: false
-    CancelDamage: true
-    ItemVersion: 1
-    Unbreakable: true
-  Attributes:
-    Head:
-      Armor: 20 ADD
-      Health: 4 ADD
-      ArmorToughness: 15 ADD
-      Damage: 3 ADD 
-      AttackSpeed: 0.1 MULTIPLY_BASE
-  Group: 'Armor'
-  NBT:
-    PublicBukkitValues:
-      lifenewpve:max_mana: "100"
-
-OpenField_Armor_イルドーナC_MCLove32:
-  Id: leather_chestplate
-  Display: "&fイルドーナチェストプレート"
-  Lore: []
-  Model: 1002
-  Options:
-    Color: BLUE
-    Destroy: false
-    CancelDamage: true
-    ItemVersion: 1
-    Unbreakable: true
+    Color: WHITE
   Attributes:
     Chest:
-      Armor: 10 ADD
-      Health: 2 ADD
-      ArmorToughness: 6 ADD
-      Damage: 2 ADD 
-  Group: 'Armor'
-
-OpenField_Armor_イルドーナL_MCLove32:
-  Id: leather_leggings
-  Display: "&fイルドーナレギンス"
-  Lore: []
-  Model: 1002
-  Options:
-    Color: BLUE
-    Destroy: false
-    CancelDamage: true
-    ItemVersion: 1
-    Unbreakable: true
-  Attributes:
-    Legs:
-      Armor: 10 ADD
-      Health: 2 ADD
-      ArmorToughness: 5 ADD
-      Damage: 3 ADD 
-  Group: 'Armor'
-
-OpenField_Armor_イルドーナB_MCLove32:
-  Id: leather_boots
-  Display: "&fイルドーナブーツ"
-  Lore: []
-  Model: 1002
-  Options:
-    Color: BLUE
-    Destroy: false
-    CancelDamage: true
-    ItemVersion: 1
-    Unbreakable: true
-  Attributes:
-    Feet:
-      Armor: 6 ADD
-      Health: 2 ADD
-      ArmorToughness: 7 ADD
-      Damage: 2 ADD 
-  Group: 'Armor'
-
-OpenField_Armor_エリミネーターH_MCLove32:
-  Id: netherite_helmet
-  Display: '&eエリミネーターヘッド'
-  Lore: []
-  Model: 1000
-  Options:
-    Destroy: false
-    CancelDamage: true
-    ItemVersion: 1
-    Unbreakable: true
-  Attributes:
-    Head:
-      Damage: 2 ADD 
       Health: 2 ADD 
-      ArmorToughness: 1 ADD 
-      Armor: 5 ADD 
-  NBT:
-    PublicBukkitValues:
-      lifenewpve:max_mana: "100"
+      ArmorToughness: 3 ADD 
+      Armor: 3 ADD 
   Group: 'Armor'
 
-OpenField_Armor_エリミネーターC_MCLove32:
-  Id: leather_chestplate
-  Display: '&eエリミネーターチェストプレート'
+OpenField_Armor_ハロ_MCLove32_L:
+  Id: leather_leggings
+  Display: "&fハロ-レギンス"
   Lore: []
-  Model: 1003
+  Model: 100
   Options:
-    Destroy: false
-    CancelDamage: true
     ItemVersion: 1
     Unbreakable: true
-    Color: GRAY
+    Color: WHITE
+  Attributes:
+    Legs:
+      Health: 1 ADD 
+      ArmorToughness: 4 ADD 
+      Armor: 4 ADD 
+  Group: 'Armor'
+
+OpenField_Armor_ハロ_MCLove32_B:
+  Id: leather_boots
+  Display: "&fハロ-ブーツ"
+  Lore: []
+  Model: 100
+  Options:
+    ItemVersion: 1
+    Unbreakable: true
+    Color: WHITE
+  Attributes:
+    Feet:
+      ArmorToughness: 5 ADD 
+      Armor: 5 ADD 
+  Group: 'Armor'
+
+OpenField_Armor_カルチェ_MCLove32_H:
+  Id: leather_helmet
+  Display: "&fカルチェ-ヘルム"
+  Lore: []
+  Model: 100
+  Options:
+    ItemVersion: 1
+    Unbreakable: true
+    Color: WHITE
+  Attributes:
+    Head:
+      Health: 5 ADD 
+      ArmorToughness: 6 ADD 
+      Armor: 6 ADD 
+  Group: 'Armor'
+
+OpenField_Armor_カルチェ_MCLove32_C:
+  Id: leather_chestplate
+  Display: "&fカルチェ-チェスト"
+  Lore: []
+  Model: 100
+  Options:
+    ItemVersion: 1
+    Unbreakable: true
+    Color: WHITE
   Attributes:
     Chest:
-      Damage: 2 ADD 
+      Health: 2 ADD 
+      ArmorToughness: 9 ADD 
+      Armor: 15 ADD 
+  Group: 'Armor'
+
+OpenField_Armor_カルチェ_MCLove32_L:
+  Id: leather_leggings
+  Display: "&fカルチェ-レギンス"
+  Lore: []
+  Model: 100
+  Options:
+    ItemVersion: 1
+    Unbreakable: true
+    Color: WHITE
+  Attributes:
+    Legs:
+      Health: 3 ADD 
+      ArmorToughness: 6 ADD 
+      Armor: 12 ADD 
+  Group: 'Armor'
+
+OpenField_Armor_カルチェ_MCLove32_B:
+  Id: leather_boots
+  Display: "&fカルチェ-ブーツ"
+  Lore: []
+  Model: 100
+  Options:
+    ItemVersion: 1
+    Unbreakable: true
+    Color: WHITE
+  Attributes:
+    Feet:
       Health: 1 ADD 
-      ArmorToughness: 3 ADD 
+      ArmorToughness: 18 ADD 
+      Armor: 9 ADD 
+  Group: 'Armor'
+
+OpenField_Armor_ウィド_MCLove32_H:
+  Id: leather_helmet
+  Display: "&fウィド-ヘルム"
+  Lore: []
+  Model: 100
+  Options:
+    ItemVersion: 1
+    Unbreakable: true
+    Color: GREEN
+  Attributes:
+    Head:
+      Health: 5 ADD 
+      ArmorToughness: 4 ADD 
+      Armor: 4 ADD 
+  NBT:
+    PublicBukkitValues:
+      lifenewpve:max_mana: "25"
+  Group: 'Armor'
+
+OpenField_Armor_ウィド_MCLove32_C:
+  Id: leather_chestplate
+  Display: "&fウィド-チェスト"
+  Lore: []
+  Model: 100
+  Options:
+    ItemVersion: 1
+    Unbreakable: true
+    Color: GREEN
+  Attributes:
+    Chest:
+      Health: 2 ADD 
+      ArmorToughness: 8 ADD 
       Armor: 8 ADD 
   NBT:
     PublicBukkitValues:
-      lifenewpve:max_mana: "50"
+      lifenewpve:max_mana: "25"
   Group: 'Armor'
 
-OpenField_Armor_エリミネーターL_MCLove32:
+OpenField_Armor_ウィド_MCLove32_L:
   Id: leather_leggings
-  Display: '&eエリミネーターレギンス'
+  Display: "&fウィド-レギンス"
   Lore: []
-  Model: 1003
+  Model: 100
   Options:
-    Destroy: false
-    CancelDamage: true
     ItemVersion: 1
     Unbreakable: true
-    Color: GRAY
+    Color: GREEN
   Attributes:
     Legs:
-      Damage: 2 ADD 
-      Health: 1 ADD 
-      ArmorToughness: 3 ADD 
-      Armor: 6 ADD 
+      Health: 3 ADD 
+      ArmorToughness: 4 ADD 
+      Armor: 8 ADD 
   NBT:
     PublicBukkitValues:
-      lifenewpve:max_mana: "50"
+      lifenewpve:max_mana: "25"
   Group: 'Armor'
 
-OpenField_Armor_エリミネーターB_MCLove32:
+OpenField_Armor_ウィド_MCLove32_B:
   Id: leather_boots
-  Display: '&eエリミネーターブーツ'
+  Display: "&fウィド-ブーツ"
   Lore: []
-  Model: 1003
+  Model: 100
   Options:
-    Destroy: false
-    CancelDamage: true
     ItemVersion: 1
     Unbreakable: true
-    Color: GRAY
+    Color: GREEN
   Attributes:
     Feet:
-      Damage: 2 ADD 
-      Health: 2 ADD 
-      ArmorToughness: 1 ADD 
-      Armor: 5 ADD 
+      Health: 1 ADD 
+      ArmorToughness: 12 ADD 
+      Armor: 8 ADD 
   NBT:
     PublicBukkitValues:
-      lifenewpve:max_mana: "50"
+      lifenewpve:max_mana: "25"
   Group: 'Armor'
 
-OpenField_Armor_モフィモスH_MCLove32:
-  Id: netherite_helmet
-  Display: "&eモフィモスヘルメット"
+OpenField_Armor_フェルム_MCLove32_H:
+  Id: leather_helmet
+  Display: "&fフェルム-ヘルム"
   Lore: []
-  Model: 1000
+  Model: 100
   Options:
-    Destroy: false
-    CancelDamage: true
     ItemVersion: 1
     Unbreakable: true
+    Color: RED
   Attributes:
     Head:
-      Damage: 1 ADD 
-      Health: 4 ADD 
-      ArmorToughness: 8 ADD 
-      Armor: 12.5 ADD 
-  NBT:
-    PublicBukkitValues:
-      lifenewpve:max_mana: "150"
+      Health: 5 ADD 
+      ArmorToughness: 3 ADD 
+      Armor: 3 ADD 
+      Damage: 1 ADD
   Group: 'Armor'
 
-OpenField_Armor_モフィモスC_MCLove32:
-  Id: netherite_chestplate
-  Display: "&eモフィモスチェストプレート"
+OpenField_Armor_フェルム_MCLove32_C:
+  Id: leather_chestplate
+  Display: "&fフェルム-チェスト"
   Lore: []
-  Model: 1000
+  Model: 100
   Options:
-    Destroy: false
-    CancelDamage: true
     ItemVersion: 1
     Unbreakable: true
+    Color: RED
   Attributes:
     Chest:
-      Damage: 1 ADD 
-      Health: 4 ADD 
-      ArmorToughness: 8 ADD 
-      Armor: 15 ADD 
-  NBT:
-    PublicBukkitValues:
-      lifenewpve:max_mana: "100"
+      Health: 2 ADD 
+      ArmorToughness: 6 ADD 
+      Armor: 6 ADD 
+      Damage: 1 ADD
   Group: 'Armor'
 
-OpenField_Armor_モフィモスL_MCLove32:
-  Id: netherite_leggings
-  Display: "&eモフィモスレギンス"
+OpenField_Armor_フェルム_MCLove32_L:
+  Id: leather_leggings
+  Display: "&fフェルム-レギンス"
   Lore: []
-  Model: 1000
+  Model: 100
   Options:
-    Destroy: false
-    CancelDamage: true
     ItemVersion: 1
     Unbreakable: true
+    Color: RED
   Attributes:
     Legs:
-      Damage: 1 ADD 
-      Health: 4 ADD 
-      ArmorToughness: 8 ADD 
-      Armor: 15 ADD 
-  NBT:
-    PublicBukkitValues:
-      lifenewpve:max_mana: "100"
+      Health: 3 ADD 
+      ArmorToughness: 5 ADD 
+      Armor: 5 ADD 
+      Damage: 1 ADD
   Group: 'Armor'
 
-OpenField_Armor_モフィモスB_MCLove32:
-  Id: netherite_boots
-  Display: "&eモフィモスブーツ"
+OpenField_Armor_フェルム_MCLove32_B:
+  Id: leather_boots
+  Display: "&fフェルム-ブーツ"
   Lore: []
-  Model: 1000
+  Model: 100
   Options:
-    Destroy: false
-    CancelDamage: true
     ItemVersion: 1
     Unbreakable: true
+    Color: RED
   Attributes:
     Feet:
-      Damage: 1 ADD 
-      Health: 4 ADD 
-      ArmorToughness: 8 ADD 
-      Armor: 12.5 ADD 
-  NBT:
-    PublicBukkitValues:
-      lifenewpve:max_mana: "150"
+      Health: 1 ADD 
+      ArmorToughness: 7 ADD 
+      Armor: 7 ADD 
+      Damage: 1 ADD
   Group: 'Armor'

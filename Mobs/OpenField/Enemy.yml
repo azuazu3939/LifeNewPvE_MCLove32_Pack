@@ -352,6 +352,12 @@ OpenField_Enemy_踊る巨人_MCLove32:
   Armor: 0
   Faction: husk
   Damage: 15
+  Equipment:
+  - DIAMOND_AXE HAND
+  - LEATHER_HELMET{color=BLACK} HEAD
+  - LEATHER_CHESTPLATE{color=BLACK} CHEST
+  - LEATHER_LEGGINGS{color=BLACK} LEGS 
+  - LEATHER_BOOTS{color=BLACK} FEET
   Options:
     NoDamageTicks: 0
     Silent: true 
