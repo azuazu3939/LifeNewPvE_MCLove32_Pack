@@ -37,7 +37,7 @@ OpenField_Enemy_Base_MCLove32:
 OpenField_Enemy_ハロウルフ_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
   Type: wolf 
-  Display: "&a&lハロウルフ"
+  Display: "ハロウルフ"
   Health: 20
   Damage: 2
   Faction: wolf
@@ -157,7 +157,7 @@ OpenField_Enemy_フウィスピット_MCLove32:
 
 OpenField_Enemy_羊獣カルーチェ_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
-  Display: "&f羊獣カルーチェ"
+  Display: "羊獣カルーチェ"
   Type: sheep
   Health: 5950
   Faction: sheep
@@ -211,7 +211,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32:
 
 OpenField_Enemy_黒小ヤギ_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
-  Display: "&f黒小ヤギ"
+  Display: "黒小ヤギ"
   Type: sheep
   Health: 10
   Faction: mob
@@ -239,7 +239,7 @@ OpenField_Enemy_黒小ヤギ_MCLove32:
 
 OpenField_Enemy_風牙狼ウィデラー_MCLove32:
   Template: OpenField_Enemy_Abstract_Generic
-  Display: "&f風牙狼ウィデラー"
+  Display: "風牙狼ウィデラー"
   Type: wolf
   Health: 7950
   Armor: 1
@@ -291,7 +291,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32:
 
 OpenField_Enemy_焔獣フェルドス_MCLove32:
   Template: OpenField_Enemy_Abstract_Generic
-  Display: "&f焔獣フェルドス"
+  Display: "焔獣フェルドス"
   Type: hoglin
   Health: 3950
   Armor: 0
@@ -345,7 +345,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32:
 
 OpenField_Enemy_踊る巨人_MCLove32:
   Template: OpenField_Enemy_Abstract_Generic
-  Display: "&f踊る巨人"
+  Display: "踊る巨人"
   Type: husk
   Health: 9950
   Armor: 0
