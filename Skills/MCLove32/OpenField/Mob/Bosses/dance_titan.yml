@@ -19,7 +19,7 @@ OpenField_Enemy_踊る巨人_MCLove32_DAMAGED:
 OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING:
   Skills:
   - setVar{k=skill.ranking;a="1";t=INTEGER} @self 
-  - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Loop @TTP{sort=HIGHEST_THREAT;limit=10}
+  - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Loop @TT{sort=HIGHEST_THREAT;limit=10}
 
 OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Loop:
   Conditions:
