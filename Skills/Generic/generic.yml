@@ -217,7 +217,7 @@ Generic_Enemy_MCLove32_SHOW_RANKING:
   Skills:
   - setVar{k=skill.ranking;a="1";t=INTEGER} @self 
   - setVar{k=skill.range;a="<skill.range>";t=INTEGER} @self
-  - message{m="&f&l<caster.name>&f-&f&l討伐戦 &f貢献度"} @PIR{r=<skill.var.range>}
+  - message{m="&f&l討伐戦: &f&l<caster.name> &f貢献度"} @PIR{r=<skill.var.range>}
   - sudoskill{s=Generic_Enemy_MCLove32_SHOW_RANKING_Sudo;cat=true} @EIR{r=<skill.range>;sort=HIGHEST_THREAT;limit=<skill.lim>}
 
 #
