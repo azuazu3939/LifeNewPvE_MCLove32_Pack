@@ -396,8 +396,8 @@ OpenField_Enemy_踊る巨人_MCLove32:
   - removetag{t=START} @self ~onDropcombat 
   - removetag{t=ATTACK} @self ~onDropcombat
   - removetag{t=DOWN} @self ~onDropcombat
-  - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING @TTP{sort=HIGHEST_THREAT} ~onDeath 
-  - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING @TTP{sort=HIGHEST_THREAT} ~onDamaged =30%
-  - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING @TTP{sort=HIGHEST_THREAT} ~onDamaged =50%
-  - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING @TTP{sort=HIGHEST_THREAT} ~onDamaged =70%
-  - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING @TTP{sort=HIGHEST_THREAT} ~onDamaged =90%
+  - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING @TTP{sort=HIGHEST_THREAT;limit=10} ~onDeath 
+  - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING @TTP{sort=HIGHEST_THREAT;limit=10} ~onDamaged =30%
+  - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING @TTP{sort=HIGHEST_THREAT;limit=10} ~onDamaged =50%
+  - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING @TTP{sort=HIGHEST_THREAT;limit=10} ~onDamaged =70%
+  - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING @TTP{sort=HIGHEST_THREAT;limit=10} ~onDamaged =90%
