@@ -242,7 +242,7 @@ OpenField_Enemy_黒小ヤギ_MCLove32:
 
 OpenField_Enemy_風牙狼ウィデラー_MCLove32:
   Template: OpenField_Enemy_Abstract_Generic
-  Display: "<shadow:#15d455>風牙狼ウィデラー</shadow>!"
+  Display: "<shadow:yellow>風牙狼ウィデラー</shadow>!"
   Type: wolf
   Health: 7950
   Armor: 1
