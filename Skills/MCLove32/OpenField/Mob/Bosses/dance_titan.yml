@@ -11,18 +11,18 @@ OpenField_Enemy_踊る巨人_MCLove32_ATTACK1:
 
 OpenField_Enemy_踊る巨人_MCLove32_DAMAGED:
   Skills: 
-  - setVar{k=skill.name;a="<target.name>";t=STRING} @targetedTarget
+  - setVar{k=skill.name;a="<target.name>";t=STRING} @trigger
   - setVar{k=caster.<skill.var.name>;a="<caster.var.<skill.var.name>|0> + <skill.var.damage-amount>";t=FLOAT} @self
 
 OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING:
   Cooldown: 1
   Skills:
   - setVar{k=skill.ranking;a="1";t=INTEGER} @self 
+  - delay 1
   - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process @self
 
 OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process:
   Skills:
-  - delay 1
   - skill{
       s=[
         - setVar{k=skill.name;a="<target.name>";t=STRING} @targetedTarget
