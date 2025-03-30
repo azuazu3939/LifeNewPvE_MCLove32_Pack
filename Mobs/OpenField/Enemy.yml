@@ -386,6 +386,7 @@ OpenField_Enemy_踊る巨人_MCLove32:
   - raidBoss @self ~onSpawn 
   - addtag{t=BOSS} @self ~onSpawn 
   - setVar{k=world.count;a="0";t=INTEGER;save=true} @self ~onSpawn 
+  - sudoskill{delay=6000} @self ~onSpawn 
 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=32} @self ~onEnterCombat
   - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=300;shield_break=60;heal_percent=0.01} @self ~onEntercombat
