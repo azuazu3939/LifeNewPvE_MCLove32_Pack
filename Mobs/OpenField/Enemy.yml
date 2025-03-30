@@ -289,7 +289,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32:
 
   - addtag{t=MIDDLE_HEALTH} @self ~onDamaged =70%
   - addtag{t=LOW_HEALTH} @self ~onDamaged =40%
-  - skill:Generic_Enemy_MCLove32_DAMAGED{delay=1} @trigger ~onDamaged 
+  - skill:Generic_Enemy_MCLove32_DAMAGED @trigger ~onDamaged 
 
   - remove{delay=10} @self ~onDeath
   - skill:Generic_Enemy_MCLove32_SHOW_RANKING{lim=5;range=48} @self ~onDeath 

@@ -1,3 +1,18 @@
+#
+OpenField_Util_風輪斬センター_100_MCLove32_Skills:
+  Skills:
+  - setVar{k=skill.count;a="0";t=INTEGER} @self
+  - skill:OpenField_Util_風輪斬センター_100_MCLove32_Skills_Process{repeat=5;repeati=0} @self
+
+#
+OpenField_Util_風輪斬センター_100_MCLove32_Skills_Process:
+  Skills:
+  - o{
+    i=1;vr=1.5;hr=1.5;hp=false;hnp=true;d=300;r=2.25;
+    b=MOB;mob=OpenField_Util_オークの葉_100_MCLove32;bmd=true;byo=0;bfo=0;rd=true;
+    p=40;sp="<skill.var.count> * 8";auraName=OpenField_Util_オークの葉_100_MCLove32_Aura<skill.var.count>} @self 
+  - setVar{k=skill.count;a="<skill.var.count> + 1";t=INTEGER} @self
+
 OpenField_Guard_牙狼ノ零_MCLove32_Skills: 
   Cooldown: 0.1
   Skills:

@@ -9,17 +9,17 @@ OpenField_Util_Bosses_MCLove32_Plains_Skills:
 #
 OpenField_Util_Bosses_MCLove32_Plains_Skill_1:
   Skills:
-  - summon{t=OpenField_Enemy_羊獣カルーチェ_MCLove32;a=1;r=0} @self
+  - summon{t=OpenField_Enemy_羊獣カルーチェ_MCLove32;a=1;r=0;if=false;sio=false;sip=false} @self
 
 #
 OpenField_Util_Bosses_MCLove32_Plains_Skill_2:
   Skills:
-  - summon{t=OpenField_Enemy_風牙狼ウィデラー_MCLove32;a=1;r=0} @self
+  - summon{t=OpenField_Enemy_風牙狼ウィデラー_MCLove32;a=1;r=0;if=false;sio=false;sip=false} @self
 
 #
 OpenField_Util_Bosses_MCLove32_Plains_Skill_3:
   Skills:
-  - summon{t=OpenField_Enemy_焔獣フェルドス_MCLove32;a=1;r=0} @self
+  - summon{t=OpenField_Enemy_焔獣フェルドス_MCLove32;a=1;r=0;if=false;sio=false;sip=false} @self
 
 #
 Generic_Furniture_Object_MCLove32_Base_Skills:
@@ -32,32 +32,17 @@ Generic_Furniture_Object_MCLove32_Base_Skills:
 #
 Generic_Furniture_Object_MCLove32_Base_Skill1:
   Skills:
-  - summon{t=Generic_Furniture_不思議草Block_MCLove32_Base;a=1;r=0} @self
+  - summon{t=Generic_Furniture_不思議草Block_MCLove32_Base;a=1;r=0;if=false;sio=false;sip=false} @self
 
 #
 Generic_Furniture_Object_MCLove32_Base_Skill2:
   Skills:
-  - summon{t=Generic_Furniture_不思議花Block_MCLove32_Base;a=1;r=0} @self
+  - summon{t=Generic_Furniture_不思議花Block_MCLove32_Base;a=1;r=0;if=false;sio=false;sip=false} @self
 
 #
 Generic_Furniture_Object_MCLove32_Base_Skill3:
   Skills:
-  - summon{t=Generic_Furniture_不思議種Block_MCLove32_Base;a=1;r=0} @self
-
-#
-OpenField_Util_風輪斬センター_100_MCLove32_Skills:
-  Skills:
-  - setVar{k=skill.count;a="0";t=INTEGER} @self
-  - skill:OpenField_Util_風輪斬センター_100_MCLove32_Skills_Process{repeat=5;repeati=0} @self
-
-#
-OpenField_Util_風輪斬センター_100_MCLove32_Skills_Process:
-  Skills:
-  - o{
-    i=1;vr=1.5;hr=1.5;hp=false;hnp=true;d=300;r=2.25;
-    b=MOB;mob=OpenField_Util_オークの葉_100_MCLove32;bmd=true;byo=0;bfo=0;rd=true;
-    p=40;sp="<skill.var.count> * 8";auraName=OpenField_Util_オークの葉_100_MCLove32_Aura<skill.var.count>} @self 
-  - setVar{k=skill.count;a="<skill.var.count> + 1";t=INTEGER} @self
+  - summon{t=Generic_Furniture_不思議種Block_MCLove32_Base;a=1;r=0;if=false;sio=false;sip=false} @self
 
 #
 OpenField_Util_Animals_MCLove32_Plains_Skills:
@@ -69,17 +54,17 @@ OpenField_Util_Animals_MCLove32_Plains_Skills:
 #
 OpenField_Util_Animals_MCLove32_Plains_Skill_1:
   Skills:
-  - summon{t=OpenField_Guard_ヒィツジー_MCLove32_Leader;a=1;r=0} @self
+  - summon{t=OpenField_Guard_ヒィツジー_MCLove32_Leader;a=1;r=0;if=false;sio=false;sip=false} @self
 
 #
 OpenField_Util_Animals_MCLove32_Plains_Skill_2:
   Skills:
-  - summon{t=OpenField_Enemy_ハロウルフ_MCLove32_Leader;a=1;r=0} @self
+  - summon{t=OpenField_Enemy_ハロウルフ_MCLove32_Leader;a=1;r=0;if=false;sio=false;sip=false} @self
 
 #
 OpenField_Util_Animals_MCLove32_Plains_Skill_3:
   Skills:
-  - summon{t=OpenField_Guard_モーカウ_MCLove32_Leader;a=1;r=0} @self
+  - summon{t=OpenField_Guard_モーカウ_MCLove32_Leader;a=1;r=0;if=false;sio=false;sip=false} @self
 
 #
 OpenField_Util_Bosses_MCLove32_KillCount:
