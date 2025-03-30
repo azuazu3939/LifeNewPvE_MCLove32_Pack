@@ -399,4 +399,4 @@ OpenField_Enemy_踊る巨人_MCLove32:
   - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING @TTP{sort=HIGHEST_THREAT} ~onDeath 
   - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING @TTP{sort=HIGHEST_THREAT} ~onDamaged =30%
   - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING @TTP{sort=HIGHEST_THREAT} ~onDamaged =50%
-  - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING @TTP{sort=HIGHEST_THREAT} ~onDamaged =80%
+  - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING @TTP{sort=HIGHEST_THREAT} ~onDamaged 

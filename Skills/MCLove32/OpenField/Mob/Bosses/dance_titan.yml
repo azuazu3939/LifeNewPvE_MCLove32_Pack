@@ -15,7 +15,6 @@ OpenField_Enemy_踊る巨人_MCLove32_DAMAGED:
   Skills: 
   - setVar{k=skill.name;a="<target.name>";t=STRING}
   - setVar{k=caster.<target.name>;a="<caster.var.<skill.var.name>|0> + <skill.var.damage-amount>";t=FLOAT} 
-  - message{m="<caster.var.<skill.var.name>> a<skill.var.damage-amount>"} 
 
 OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING:
   Skills:
@@ -26,6 +25,6 @@ OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Loop:
   Conditions:
   - variableInRange{k=skill.ranking;r=10} false 
   Skills:
-  - setVar{k=skill.name;a="<target.name>"}
+  - setVar{k=skill.name;a="<target.name>";t=STRING}
   - message{m="&a&l<skill.var.ranking>位 &6&l<skill.var.name> &f&lスコア &f<caster.var.<skill.var.name>|0>"} ?variableIsSet{k=caster.<skill.var.name>}
   - setVar{k=skill.ranking;a="<skill.var.ranking> + 1";t=INTEGER} @self 
