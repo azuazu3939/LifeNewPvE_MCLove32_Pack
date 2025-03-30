@@ -40,7 +40,7 @@ OpenField_Enemy_ハロウルフ_MCLove32:
   Display: "&a&lハロウルフ"
   Health: 20
   Damage: 2
-  Faction: Wolf
+  Faction: wolf
   Armor: 0
   DamageModifiers:
   - SUFFOCATION 0
@@ -64,6 +64,11 @@ OpenField_Enemy_ハロウルフ_MCLove32:
   - exp 50
   Variables:
     livingWater: int/2
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - randomstroll
+  - fleeConditional{distance=8;speed=2;safespeed=1.5;conditions=[ - hasTag{t=BOSS} true ]}
   AITargetSelectors:
   - clear
   - ownerattacker
@@ -196,6 +201,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32:
     Style: SEGMENTED_12
   Skills:
   - raidBoss @self ~onSpawn 
+  - addtag{t=BOSS} @self ~onSpawn 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=32} @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=8;delay=5} @self ~onDropCombat
   - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=240;shield_break=40;heal_percent=0.01} @self ~onEntercombat
@@ -276,6 +282,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32:
     Style: SEGMENTED_12
   Skills:
   - raidBoss @self ~onSpawn 
+  - addtag{t=BOSS} @self ~onSpawn 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=32} @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=8;delay=5} @self ~onDropCombat
   - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=140;shield_break=70;heal_percent=0.03} @self ~onEntercombat
@@ -329,6 +336,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32:
     Style: SEGMENTED_12
   Skills:
   - raidBoss @self ~onSpawn 
+  - addtag{t=BOSS} @self ~onSpawn 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=32} @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=8;delay=5} @self ~onDropCombat
   - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=200;shield_break=100;heal_percent=0.005} @self ~onEntercombat
