@@ -230,5 +230,5 @@ Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return:
   Skills:
   - setVar{k=skill.dmg;a="<caster.var.<skill.var.name>|0>";t=FLOAT} @self
   - setVar{k=skill.entity;a="<target.name>";t=STRING} @UniqueIdentifier{u=<skill.var.name>}
-  - message{m="&a&l<skill.var.ranking>位 &6&l<skill.var.entity> &f&lスコア &f<skill.var.dmg>"} @PIR{r=<skill.var.range>} ?!varrange{k=skill.dmg;r=0}
+  - message{m="<rainbow><b><skill.var.ranking>位 <skill.var.entity> スコア <skill.var.dmg></b></rainbow>"} @PIR{r=<skill.var.range>} ?!varrange{k=skill.dmg;r=0}
   - setVar{k=skill.ranking;a="1 + <skill.var.ranking>";t=INTEGER} @self ?!varrange{k=skill.dmg;r=0}
