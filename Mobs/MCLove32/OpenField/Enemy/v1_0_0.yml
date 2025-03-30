@@ -55,11 +55,6 @@ OpenField_Enemy_ハロウルフ_MCLove32:
     KnockbackResistance: 0.15
     Scale: 1.5
     Silent: false 
-  AIGoalSelectors:
-  - randomstroll
-  - meleeattack
-  - gotoparent
-  - gotoowner
   Drops:
   - exp 50
   Variables:
@@ -69,7 +64,8 @@ OpenField_Enemy_ハロウルフ_MCLove32:
   - meleeattack
   - randomstroll
   - fleeConditional{distance=8;speed=2;safespeed=1.5;conditions=[ - hasTag{t=BOSS} true - samefaction false ]}
-  - movetowardsconditional{d=1.2;r=24;conditions=[ - hasTag{t=BOSS} true - samefaction true ]}
+  - gotoparent
+  - gotoowner
   AITargetSelectors:
   - clear
   - ownerattacker
