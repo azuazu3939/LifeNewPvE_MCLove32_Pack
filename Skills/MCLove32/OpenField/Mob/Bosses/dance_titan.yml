@@ -8,30 +8,3 @@ OpenField_Enemy_踊る巨人_MCLove32_ATTACK:
 
 OpenField_Enemy_踊る巨人_MCLove32_ATTACK1:
   Skills:
-
-OpenField_Enemy_踊る巨人_MCLove32_DAMAGED:
-  Skills: 
-  - setVar{k=skill.name;a="<target.uuid>";t=STRING} @trigger
-  - setVar{k=caster.<skill.var.name>;a="<caster.var.<skill.var.name>|0> + <skill.var.damage-amount>";t=FLOAT} @self
-
-OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING:
-  Cooldown: 5
-  Skills:
-  - setVar{k=skill.ranking;a="1";t=INTEGER} @self 
-  - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process @self
-
-OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process:
-  Skills:
-  - sudoskill{s=OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process_Sudo;cat=true} @EIR{r=48;sort=HIGHEST_THREAT;limit=5}
-
-OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process_Sudo:
-  Skills:
-  - setVar{k=skill.name;a="<caster.uuid>";t=STRING} @self
-  - sudoskill{s=OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process_Sudo_Return;cat=true} @trigger
-
-OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process_Sudo_Return:
-  Skills:
-  - setVar{k=skill.dmg;a="<caster.var.<skill.var.name>|0>";t=FLOAT} @self
-  - setVar{k=skill.entity;a="<target.name>";t=STRING} @UniqueIdentifier{u=<skill.var.name>}
-  - message{m="&a&l<skill.var.ranking>位 &6&l<skill.var.entity> &f&lスコア &f<skill.var.dmg>"} @PIR{r=48} ?!varrange{k=skill.dmg;r=0}
-  - setVar{k=skill.ranking;a="1 + <skill.var.ranking>";t=INTEGER} @self ?!varrange{k=skill.dmg;r=0}

@@ -179,3 +179,43 @@ Generic_Enemy_MCLove32_BUFF:
   - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.05";t=FLOAT} @self ?hasAura{n=Generic_Enemy_MCLove32_Aura7}
   - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.2";t=FLOAT} @self ?hasTag{t=MIDDLE_HEALTH}
   - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.25";t=FLOAT} @self ?hasTag{t=LOW_HEALTH}
+
+#Usage  
+#Skills:
+#- skill:Generic_Enemy_MCLove32_DAMAGED @self ~onDamaged
+#- skill:Generic_Enemy_MCLove32_SHOW_RANKING ~onDamaged =50%
+#- skill:Generic_Enemy_MCLove32_SHOW_RANKING ~onDeath 
+#など、HP条件などは適宜変えて使用すること。
+Generic_Enemy_MCLove32_DAMAGED:
+  Skills: 
+  - setVar{k=skill.name;a="<target.uuid>";t=STRING} @trigger
+  - setVar{k=caster.<skill.var.name>;a="<caster.var.<skill.var.name>|0> + <skill.var.damage-amount>";t=FLOAT} @self
+
+#Usage  
+#Skills:
+#- skill:Generic_Enemy_MCLove32_DAMAGED @self ~onDamaged
+#- skill:Generic_Enemy_MCLove32_SHOW_RANKING ~onDamaged =50%
+#- skill:Generic_Enemy_MCLove32_SHOW_RANKING ~onDeath 
+#など、HP条件などは適宜変えて使用すること。
+#---------------------------------------------------------------
+#@Param / INTEGER: <skill.lim> / INTEGER: <skill.range>
+Generic_Enemy_MCLove32_SHOW_RANKING:
+  Cooldown: 1
+  Skills:
+  - setVar{k=skill.ranking;a="1";t=INTEGER} @self 
+  - setVar{k=skill.range;a="<skill.range>";t=INTEGER} @self
+  - sudoskill{s=Generic_Enemy_MCLove32_SHOW_RANKING_Sudo;cat=true} @EIR{r=<skill.range>;sort=HIGHEST_THREAT;limit=<skill.lim>}
+
+#
+Generic_Enemy_MCLove32_SHOW_RANKING_Sudo:
+  Skills:
+  - setVar{k=skill.name;a="<caster.uuid>";t=STRING} @self
+  - sudoskill{s=Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return;cat=true} @trigger
+
+#
+Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return:
+  Skills:
+  - setVar{k=skill.dmg;a="<caster.var.<skill.var.name>|0>";t=FLOAT} @self
+  - setVar{k=skill.entity;a="<target.name>";t=STRING} @UniqueIdentifier{u=<skill.var.name>}
+  - message{m="&a&l<skill.var.ranking>位 &6&l<skill.var.entity> &f&lスコア &f<skill.var.dmg>"} @PIR{r=<skill.var.range>} ?!varrange{k=skill.dmg;r=0}
+  - setVar{k=skill.ranking;a="1 + <skill.var.ranking>";t=INTEGER} @self ?!varrange{k=skill.dmg;r=0}

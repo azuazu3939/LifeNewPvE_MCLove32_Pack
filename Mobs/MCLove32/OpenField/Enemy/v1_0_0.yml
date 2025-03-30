@@ -389,15 +389,12 @@ OpenField_Enemy_踊る巨人_MCLove32:
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=12;delay=5} @self ~onDropCombat
   - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=300;shield_break=60;heal_percent=0.01} @self ~onEntercombat
   - skill:OpenField_Enemy_踊る巨人_MCLove32_ATTACK @self ~onEntercombat
-  - skill:OpenField_Enemy_踊る巨人_MCLove32_DAMAGED @trigger ~onDamaged 
   - addtag{t=MIDDLE_HEALTH} @self ~onDamaged <70%
   - addtag{t=LOW_HEALTH} @self ~onDamaged <40%
   - remove{delay=10} @self ~onDeath
   - removetag{t=START} @self ~onDropcombat 
   - removetag{t=ATTACK} @self ~onDropcombat
   - removetag{t=DOWN} @self ~onDropcombat
-  - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING @self ~onDeath 
-  - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING @self ~onDamaged =30%
-  - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING @self ~onDamaged =50%
-  - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING @self ~onDamaged =70%
-  - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING @self ~onDamaged =90%
+  - skill:Generic_Enemy_MCLove32_SHOW_RANKING{lim=5;range=48} @self ~onDeath 
+  - skill:Generic_Enemy_MCLove32_SHOW_RANKING{lim=5;range=48} @self ~onDamaged 
+  - skill:Generic_Enemy_MCLove32_DAMAGED @trigger ~onDamaged 
