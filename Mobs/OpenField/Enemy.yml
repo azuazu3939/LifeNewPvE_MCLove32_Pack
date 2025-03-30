@@ -196,18 +196,22 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32:
   Skills:
   - raidBoss @self ~onSpawn 
   - addtag{t=BOSS} @self ~onSpawn 
+
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=32} @self ~onEnterCombat
-  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=8;delay=5} @self ~onDropCombat
   - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=240;shield_break=40;heal_percent=0.01} @self ~onEntercombat
   - skill:OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK @self ~onEntercombat
-  - skill:OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_1 @self ~onDamaged 
-  - addtag{t=MIDDLE_HEALTH} @self ~onDamaged =70%
-  - addtag{t=LOW_HEALTH} @self ~onDamaged =40%
-  - remove{delay=10} @self ~onDeath
+  
   - removetag{t=START} @self ~onDropcombat 
   - removetag{t=ATTACK} @self ~onDropcombat
   - removetag{t=DOWN} @self ~onDropcombat
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=8;delay=5} @self ~onDropCombat
+
+  - skill:OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_1 @self ~onDamaged 
+  - addtag{t=MIDDLE_HEALTH} @self ~onDamaged =70%
+  - addtag{t=LOW_HEALTH} @self ~onDamaged =40%
   - skill:Generic_Enemy_MCLove32_DAMAGED @trigger ~onDamaged 
+
+  - remove{delay=10} @self ~onDeath
   - skill:Generic_Enemy_MCLove32_SHOW_RANKING{lim=5;range=48} @self ~onDeath 
   - skill:OpenField_Util_Bosses_MCLove32_KillCount @self ~onDeath 
 
@@ -273,17 +277,21 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32:
   Skills:
   - raidBoss @self ~onSpawn 
   - addtag{t=BOSS} @self ~onSpawn 
+
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=32} @self ~onEnterCombat
-  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=8;delay=5} @self ~onDropCombat
   - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=140;shield_break=70;heal_percent=0.03} @self ~onEntercombat
   - skill:OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK @self ~onEntercombat
-  - addtag{t=MIDDLE_HEALTH} @self ~onDamaged =70%
-  - addtag{t=LOW_HEALTH} @self ~onDamaged =40%
-  - remove{delay=10} @self ~onDeath
+
   - removetag{t=START} @self ~onDropcombat 
   - removetag{t=ATTACK} @self ~onDropcombat
   - removetag{t=DOWN} @self ~onDropcombat
-  - skill:Generic_Enemy_MCLove32_DAMAGED @trigger ~onDamaged 
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=8;delay=5} @self ~onDropCombat
+
+  - addtag{t=MIDDLE_HEALTH} @self ~onDamaged =70%
+  - addtag{t=LOW_HEALTH} @self ~onDamaged =40%
+  - skill:Generic_Enemy_MCLove32_DAMAGED{delay=1} @trigger ~onDamaged 
+
+  - remove{delay=10} @self ~onDeath
   - skill:Generic_Enemy_MCLove32_SHOW_RANKING{lim=5;range=48} @self ~onDeath 
   - skill:OpenField_Util_Bosses_MCLove32_KillCount @self ~onDeath 
 
@@ -327,19 +335,23 @@ OpenField_Enemy_焔獣フェルドス_MCLove32:
   Skills:
   - raidBoss @self ~onSpawn 
   - addtag{t=BOSS} @self ~onSpawn 
+
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=32} @self ~onEnterCombat
-  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=8;delay=5} @self ~onDropCombat
   - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=200;shield_break=100;heal_percent=0.005} @self ~onEntercombat
   - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK @self ~onEntercombat
-  - addtag{t=MIDDLE_HEALTH} @self ~onDamaged =70%
-  - addtag{t=LOW_HEALTH} @self ~onDamaged =40%
-  - remove{delay=10} @self ~onDeath
+  
   - removetag{t=START} @self ~onDropcombat 
   - removetag{t=ATTACK} @self ~onDropcombat
   - removetag{t=DOWN} @self ~onDropcombat
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=8;delay=5} @self ~onDropCombat
+
   - skill:Generic_Enemy_MCLove32_DAMAGED @trigger ~onDamaged 
+  - addtag{t=MIDDLE_HEALTH} @self ~onDamaged =70%
+  - addtag{t=LOW_HEALTH} @self ~onDamaged =40%
+
   - skill:Generic_Enemy_MCLove32_SHOW_RANKING{lim=5;range=48} @self ~onDeath 
   - skill:OpenField_Util_Bosses_MCLove32_KillCount @self ~onDeath 
+  - remove{delay=10} @self ~onDeath
 
 OpenField_Enemy_踊る巨人_MCLove32:
   Template: OpenField_Enemy_Abstract_Generic
@@ -381,18 +393,20 @@ OpenField_Enemy_踊る巨人_MCLove32:
   Skills:
   - raidBoss @self ~onSpawn 
   - addtag{t=BOSS} @self ~onSpawn 
+  - setVar{k=world.count;a="0";t=INTEGER;save=true} @self ~onSpawn 
+
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=32} @self ~onEnterCombat
-  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=12;delay=5} @self ~onDropCombat
   - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=300;shield_break=60;heal_percent=0.01} @self ~onEntercombat
   - skill:OpenField_Enemy_踊る巨人_MCLove32_ATTACK @self ~onEntercombat
-  - addtag{t=MIDDLE_HEALTH} @self ~onDamaged =70%
-  - addtag{t=LOW_HEALTH} @self ~onDamaged =40%
-  - remove{delay=10} @self ~onDeath
+  
   - removetag{t=START} @self ~onDropcombat 
   - removetag{t=ATTACK} @self ~onDropcombat
   - removetag{t=DOWN} @self ~onDropcombat
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=12;delay=5} @self ~onDropCombat
+
   - skill:Generic_Enemy_MCLove32_DAMAGED_Player @trigger ~onDamaged 
-  - skill:Generic_Enemy_MCLove32_SHOW_RANKING{lim=5;range=48} @self ~onDeath 
+  - addtag{t=MIDDLE_HEALTH} @self ~onDamaged =70%
+  - addtag{t=LOW_HEALTH} @self ~onDamaged =40%
   - skill:Generic_Enemy_MCLove32_SHOW_RANKING{lim=5;range=48} @self ~onDamaged =10%
   - skill:Generic_Enemy_MCLove32_SHOW_RANKING{lim=5;range=48} @self ~onDamaged =20%
   - skill:Generic_Enemy_MCLove32_SHOW_RANKING{lim=5;range=48} @self ~onDamaged =30%
@@ -402,4 +416,6 @@ OpenField_Enemy_踊る巨人_MCLove32:
   - skill:Generic_Enemy_MCLove32_SHOW_RANKING{lim=5;range=48} @self ~onDamaged =70%
   - skill:Generic_Enemy_MCLove32_SHOW_RANKING{lim=5;range=48} @self ~onDamaged =80%
   - skill:Generic_Enemy_MCLove32_SHOW_RANKING{lim=5;range=48} @self ~onDamaged =90%
-  - setVar{k=world.count;a="0";t=INTEGER;save=true} @self ~onSpawn 
+
+  - skill:Generic_Enemy_MCLove32_SHOW_RANKING{lim=5;range=48} @self ~onDeath 
+  - remove{delay=10} @self ~onDeath
