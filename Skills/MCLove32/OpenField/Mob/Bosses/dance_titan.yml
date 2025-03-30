@@ -10,10 +10,8 @@ OpenField_Enemy_踊る巨人_MCLove32_ATTACK1:
   Skills:
 
 OpenField_Enemy_踊る巨人_MCLove32_DAMAGED:
-  #TriggerConditions:
-  #- isplayer
   Skills: 
-  - setVar{k=skill.name;a="<target.name>";t=STRING} @trigger
+  - setVar{k=skill.name;a="<trigger.name>";t=STRING} 
   - setVar{k=caster.<skill.var.name>;a="<caster.var.<skill.var.name>|0> + <skill.var.damage-amount>";t=FLOAT} @self
 
 OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING:
@@ -24,7 +22,13 @@ OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING:
 
 OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process:
   Skills:
-  - setVar{k=skill.itr;a="<caster.var.<target.name>> + <skill.var.itr| >";t=STRING} @TT{sort=HIGHEST_THREAT;limit=5}
+  - skill{
+      s=[
+        - setVar{k=skill.name;a="<target.name>";t=STRING} 
+        - setVar{k=skill.itr;a="<caster.var.<skill.var.name>> + <skill.var.itr>";t=STRING} ?variableIsSet
+        - setVar{k=skill.itr;a="<caster.var.<skill.var.name>>";t=STRING} ?!variableIsSet
+      ]} @TT{sort=HIGHEST_THREAT;limit=5}
+
   - delay 10
   - message{m="<skill.var.itr>"} @PIR{r=32}
 
