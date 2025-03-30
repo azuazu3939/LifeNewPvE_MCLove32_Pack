@@ -58,3 +58,25 @@ OpenField_Util_風輪斬センター_100_MCLove32_Skills_Process:
     b=MOB;mob=OpenField_Util_オークの葉_100_MCLove32;bmd=true;byo=0;bfo=0;rd=true;
     p=40;sp="<skill.var.count> * 8";auraName=OpenField_Util_オークの葉_100_MCLove32_Aura<skill.var.count>} @self 
   - setVar{k=skill.count;a="<skill.var.count> + 1";t=INTEGER} @self
+
+#
+OpenField_Util_Animals_MCLove32_Plains_Skills:
+  Skills:
+  - randomskill{s=
+    OpenField_Util_Animals_MCLove32_Plains_Skill_1,
+    OpenField_Util_Animals_MCLove32_Plains_Skill_2,
+    OpenField_Util_Animals_MCLove32_Plains_Skill_3} @self
+#
+OpenField_Util_Animals_MCLove32_Plains_Skill_1:
+  Skills:
+  - summon{t=OpenField_Guard_ヒィツジー_MCLove32_Leader;a=1;r=0} @self
+
+#
+OpenField_Util_Animals_MCLove32_Plains_Skill_2:
+  Skills:
+  - summon{t=OpenField_Enemy_ハロウルフ_MCLove32_Leader;a=1;r=0} @self
+
+#
+OpenField_Util_Animals_MCLove32_Plains_Skill_3:
+  Skills:
+  - summon{t=OpenField_Guard_モーカウ_MCLove32_Leader;a=1;r=0} @self

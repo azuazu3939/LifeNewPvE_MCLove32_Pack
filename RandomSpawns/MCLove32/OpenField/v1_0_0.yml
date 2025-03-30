@@ -1,10 +1,26 @@
-OpenField_Enemy_ハロウルフ_MCLove32_Leader_Spawn:
-  Type: OpenField_Enemy_ハロウルフ_MCLove32_Leader
+OpenField_Enemy_フウィスピット_MCLove32_Spawn:
+  Type: OpenField_Enemy_フウィスピット_MCLove32
   Worlds: open_field,Plains
   Action: ADD 
   PositionType: LAND
-  Chance: 0.45
-  Priority: 15
+  Chance: 0.3
+  Priority: 12
+  Conditions:
+  - mobsinworld{a=<1000} true 
+  - blocktype{type=water,air} false 
+  - height{h=50to180} true 
+  - region{r=spawn} false 
+  - (mythicinradius{a=<1;r=48} || mythicinradius{a=<3;r=64} || mythicinradius{a=<5;r=80}) true 
+  - mobsInRadius{types=OpenField_Enemy_フウィスピット_MCLove32;amount=<1;radius=40} true
+  - biome{b=terra:origen/origen/scarlet_sanctuary} true
+
+OpenField_Util_Animals_MCLove32_Plains_Spawn:
+  Type: OpenField_Util_Animals_MCLove32_Plains
+  Worlds: open_field,Plains
+  Action: ADD 
+  PositionType: LAND
+  Chance: 0.5
+  Priority: 16
   Conditions:
   - mobsinworld{a=<1000} true 
   - blocktype{type=water,air} false 
@@ -16,44 +32,9 @@ OpenField_Enemy_ハロウルフ_MCLove32_Leader_Spawn:
     snow,
     podzol
     } true  
-  - height{h=60to80} true 
+  - height{h=>50} true 
   - region{r=spawn} false 
   - (mythicinradius{a=<1;r=48} || mythicinradius{a=<3;r=64} || mythicinradius{a=<5;r=80}) true 
-
-OpenField_Guard_ヒィツジー_MCLove32_Leader_Spawn:
-  Type: OpenField_Guard_ヒィツジー_MCLove32_Leader
-  Worlds: open_field,Plains
-  Action: ADD 
-  PositionType: LAND
-  Chance: 0.45
-  Priority: 15
-  Conditions:
-  - mobsinworld{a=<1000} true 
-  - blocktype{type=water,air} false 
-  - blocktype{
-    type=
-    grass_block,
-    moss_block
-    } true  
-  - height{h=60to100} true 
-  - region{r=spawn} false
-  - (mythicinradius{a=<1;r=48} || mythicinradius{a=<3;r=64} || mythicinradius{a=<5;r=80}) true 
-
-OpenField_Enemy_フウィスピット_MCLove32_Spawn:
-  Type: OpenField_Enemy_フウィスピット_MCLove32
-  Worlds: open_field,Plains
-  Action: ADD 
-  PositionType: LAND
-  Chance: 0.45
-  Priority: 15
-  Conditions:
-  - mobsinworld{a=<1000} true 
-  - blocktype{type=water,air} false 
-  - height{h=50to180} true 
-  - region{r=spawn} false 
-  - (mythicinradius{a=<1;r=48} || mythicinradius{a=<3;r=64} || mythicinradius{a=<5;r=80}) true 
-  - mobsInRadius{types=OpenField_Enemy_フウィスピット_MCLove32;amount=<1;radius=40} true
-  - biome{b=terra:origen/origen/scarlet_sanctuary} true
 
 OpenField_Util_Bosses_MCLove32_Plains_Spawn:
   Type: OpenField_Util_Bosses_MCLove32_Plains
@@ -70,7 +51,7 @@ OpenField_Util_Bosses_MCLove32_Plains_Spawn:
   - (mythicinradius{a=<1;r=64} && mythicinradius{a=<2;r=80}) true 
   - mobsInRadius{types=OpenField_Enemy_風牙狼ウィデラー_MCLove32,OpenField_Enemy_羊獣カルーチェ_MCLove32,OpenField_Enemy_焔獣フェルドス_MCLove32;amount=<1;radius=128} true
   - (biome{b=terra:origen/origen/verdant_valleys} ||  biome{b=terra:origen/origen/verdant_river}) true
-  
+
 Generic_Furniture_Object_MCLove32_Base_Spawn:
   Type: Generic_Furniture_Object_MCLove32_Base
   Worlds: Plains

@@ -52,7 +52,7 @@ OpenField_Enemy_ハロウルフ_MCLove32:
   Drop:
   Options:
     FollowRange: 8
-    KnockbackResistance: 0.15
+    KnockbackResistance: 0.2
     Scale: 1.5
     Silent: false 
   Drops:
