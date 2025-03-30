@@ -69,8 +69,8 @@ OpenField_Util_Bosses_MCLove32_Plains_Spawn:
   - region{r=spawn} false 
   - (mythicinradius{a=<1;r=64} && mythicinradius{a=<2;r=80}) true 
   - mobsInRadius{types=OpenField_Enemy_風牙狼ウィデラー_MCLove32,OpenField_Enemy_羊獣カルーチェ_MCLove32,OpenField_Enemy_焔獣フェルドス_MCLove32;amount=<1;radius=128} true
-  - biome{b=terra:origen/origen/verdant_valleys} true
-
+  - (biome{b=terra:origen/origen/verdant_valleys} ||  biome{b=terra:origen/origen/verdant_river}) true
+  
 Generic_Furniture_Object_MCLove32_Base_Spawn:
   Type: Generic_Furniture_Object_MCLove32_Base
   Worlds: Plains
@@ -83,4 +83,4 @@ Generic_Furniture_Object_MCLove32_Base_Spawn:
   - mobsinworld{a=<1200} true 
   - blocktype{type=water,air} false 
   - (mythicinradius{a=<6;r=16} && mythicinradius{a=<8;r=36}) true 
-  - biome{b=terra:origen/origen/verdant_valleys} true
+  - (biome{b=terra:origen/origen/verdant_valleys} ||  biome{b=terra:origen/origen/verdant_river}) true
