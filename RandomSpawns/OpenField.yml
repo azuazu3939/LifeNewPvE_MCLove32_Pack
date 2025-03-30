@@ -49,7 +49,15 @@ OpenField_Util_Bosses_MCLove32_Plains_Spawn:
   - blocktype{type=water,air} false 
   - height{h=50to180} true 
   - region{r=spawn} false 
-  - region{r=plains} true 
+  - region{r=plains} true
+  - blocktype{
+    type=
+    grass_block,
+    moss_block,
+    snow_block,
+    snow,
+    podzol
+    } true  
   - (mythicinradius{a=<1;r=64} && mythicinradius{a=<2;r=80}) true 
   - mobsInRadius{types=OpenField_Enemy_風牙狼ウィデラー_MCLove32,OpenField_Enemy_羊獣カルーチェ_MCLove32,OpenField_Enemy_焔獣フェルドス_MCLove32;amount=<1;radius=128} true
   - (biome{b=terra:origen/origen/verdant_valleys} ||  biome{b=terra:origen/origen/verdant_river}) true
@@ -81,7 +89,15 @@ OpenField_Enemy_踊る巨人_MCLove32_Spawn:
   - mobsinworld{a=<1200} true 
   - blocktype{type=water,air} false 
   - region{r=spawn} false 
-  - region{r=plains} true 
+  - region{r=plains} true
+  - blocktype{
+    type=
+    grass_block,
+    moss_block,
+    snow_block,
+    snow,
+    podzol
+    } true   
   - (biome{b=terra:origen/origen/verdant_valleys} ||  biome{b=terra:origen/origen/verdant_river}) true
   - variableIsSet{k=world.count} true
   - varrange{k=world.count;r=>49} true
