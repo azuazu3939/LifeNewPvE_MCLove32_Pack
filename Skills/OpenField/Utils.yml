@@ -80,3 +80,8 @@ OpenField_Util_Animals_MCLove32_Plains_Skill_2:
 OpenField_Util_Animals_MCLove32_Plains_Skill_3:
   Skills:
   - summon{t=OpenField_Guard_モーカウ_MCLove32_Leader;a=1;r=0} @self
+
+#
+OpenField_Util_Bosses_MCLove32_KillCount:
+  Skills:
+  - setVar{k=world.count;a="<world.var.count|0> + 1";t=INTEGER;save=true} @self

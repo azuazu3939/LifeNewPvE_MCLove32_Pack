@@ -65,3 +65,18 @@ Generic_Furniture_Object_MCLove32_Base_Spawn:
   - blocktype{type=water,air} false 
   - (mythicinradius{a=<6;r=16} && mythicinradius{a=<8;r=36}) true 
   - (biome{b=terra:origen/origen/verdant_valleys} ||  biome{b=terra:origen/origen/verdant_river}) true
+
+OpenField_Enemy_踊る巨人_MCLove32_Spawn:
+  Type: OpenField_Enemy_踊る巨人_MCLove32
+  Worlds: Plains
+  Action: ADD 
+  PositionType: LAND
+  Chance: 1
+  Priority: 10
+  Cooldown: 1800
+  Conditions:
+  - mobsinworld{a=<1200} true 
+  - blocktype{type=water,air} false 
+  - (biome{b=terra:origen/origen/verdant_valleys} ||  biome{b=terra:origen/origen/verdant_river}) true
+  - variableIsSet{k=world.count} true
+  - varrange{k=world.count;r=>49} true
