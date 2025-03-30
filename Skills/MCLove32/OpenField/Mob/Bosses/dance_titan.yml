@@ -30,5 +30,5 @@ OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process:
 
 OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process_Loop:
   Skills:
-  - setVar{k=skill.name;a="<target.name>";t=STRING} 
-  - setVar{k=skill.itr;a="<caster.var.<skill.var.name>>";t=FLOAT} ?!variableIsSet{k=skill.itr} ?variableIsSet{k=caster.<skill.var.name>} 
+  - setVar{k=skill.name;a="<target.name>";t=STRING} @TargetedTarget
+  - setVar{k=skill.itr;a="<caster.var.<skill.var.name>>";t=FLOAT} @self ?!variableIsSet{k=skill.itr} ?variableIsSet{k=caster.<skill.var.name>} 
