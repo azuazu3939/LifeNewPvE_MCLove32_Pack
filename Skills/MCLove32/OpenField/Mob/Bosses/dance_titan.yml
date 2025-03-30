@@ -26,7 +26,15 @@ OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process:
   Conditions:
   - varrange{k=skill.ranking;r=5} false 
   Skills:
-  - setVar{k=skill.name;a="<target.name> + <skill.var.name|0>";t=STRING} @TT{sort=HIGHEST_THREAT;limit=5;stuti=<skill.var.ranking>}
+  - skill{
+      s=[
+        - setVar{k=skill.name;a="<target.name>";t=STRING}
+        - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process_Check 
+      ]} @EIR{r=48;sort=HIGHEST_THREAT;limit=5}
+
+OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process_Check:
+  Conditions:
+  - variableIsSet{k=caster.<skill.var.name>}
+  Skills:
   - setVar{k=skill.ranking;a="<skill.var.ranking> + 1";t=INTEGER} @self 
   - message{m="&a&l<skill.var.ranking>位 &6&l<skill.var.name> &f&lスコア &f<caster.var.<skill.var.name>|0>"} @PIR{r=32}?variableIsSet{k=caster.<skill.var.name>}
-  - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process @self
