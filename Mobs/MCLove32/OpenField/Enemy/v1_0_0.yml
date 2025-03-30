@@ -400,4 +400,4 @@ OpenField_Enemy_踊る巨人_MCLove32:
   - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING @self ~onDamaged =30%
   - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING @self ~onDamaged =50%
   - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING @self ~onDamaged =70%
-  - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING @self ~onDamaged #=90%
+  - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING @self ~onDamaged =90%
