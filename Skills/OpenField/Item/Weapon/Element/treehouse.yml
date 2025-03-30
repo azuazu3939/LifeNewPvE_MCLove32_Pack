@@ -17,7 +17,7 @@ OpenField_Weapon_ツリーハウス_MCLove32_Skills:
   - setMaterialCooldown{m=wooden_pickaxe;d=300} @self 
   - projectile{
     oh=[
-      - damage{a=20;pi=true;ii=true}
+      - damage{a=10;pi=true;ii=true}
     ];
     oe=[
       - skill:OpenField_Weapon_ツリーハウス_MCLove32_Process @origin
@@ -39,7 +39,7 @@ OpenField_Weapon_ツリーハウス_MCLove32_Process:
       - skill:Utils_OpenField_Tree_MCLove32{delay=0} @origin
     ];
     ot=[
-      - damage{a=10;pi=true;ii=true;e=GREEN} @ENO{r=10;limit=5;sort=RANDOM;c=[ - isLiving true - isMythicMob true ]}
+      - damage{a=5;pi=true;ii=true;e=GREEN} @ENO{r=10;limit=5;sort=RANDOM;c=[ - isLiving true - isMythicMob true ]}
       - skill{
         s=[
           - modifyMana{a=3}

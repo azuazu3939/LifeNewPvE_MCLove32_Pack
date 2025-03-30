@@ -16,7 +16,7 @@ OpenField_Weapon_サイスオブデーモン_MCLove32_Skills:
   - modifyMana{a=-50} @self 
   - aura{n=サブウェポン;i=20;rd=true;t=60} @self  
   - setMaterialCooldown{m=netherite_hoe;d=160} @self 
-  - damage{a=75;ii=true;pi=true;e=PURPLE}
+  - damage{a=120;ii=true;pi=true;e=PURPLE}
   - sound{s=entity.warden.death} @self 
   - potion{t=BLINDNESS;l=0;d=50;p=false} 
   - potion{t=LEVITATION;l=0;d=50;p=false} 

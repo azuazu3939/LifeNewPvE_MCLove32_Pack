@@ -34,7 +34,7 @@ OpenField_Weapon_エアブラスタ_MCLove32_SkillProcess:
       - e:p{p=crit;a=4;vs=0.5;hs=0.5;delay=2;audience=@self} @origin
     ];
     oh=[
-      - damage{a=30;ii=true;pi=true}
+      - damage{a=12;ii=true;pi=true}
       - throw{v=8;vy=2}
     ];
     hp=false;hnp=true;v=35;i=1;md=30;mr=25;se=false;sb=false;vr=1.5;hr=2;ho=<skill.ho>} @TL 
@@ -70,8 +70,8 @@ OpenField_Weapon_樹木剣_MCLove32_Skills:
       - setvar{var=skill.i;val="<skill.var.i> - 1";t=INTEGER} @self 
     ];
     oh=[ 
-      - damage{a=100;pi=true;ii=true;delay=<skill.var.i>} 
-      - damage{a=30;pi=true;ii=true;delay=<skill.var.i>}  0.5
+      - damage{a=60;pi=true;ii=true;delay=<skill.var.i>} 
+      - damage{a=20;pi=true;ii=true;delay=<skill.var.i>}  0.5
       - throw{v=5;vy=8;delay=<skill.var.i>}
       - heal{a=0.2;delay=<skill.var.i>} @self 
     ];
@@ -104,8 +104,8 @@ OpenField_Weapon_樹木剣_MCLove32_Skill_Process:
     ];
     oh=[
       - sound{s=entity.breeze.jump;p=0;v=1.25} 
-      - damage{a=50;pi=true;ii=true} 
-      - damage{a=20;pi=true;ii=true}  0.5
+      - damage{a=30;pi=true;ii=true} 
+      - damage{a=10;pi=true;ii=true}  0.5
       - throw{v=5;vy=8}
       - delay 15
       - throw{v=1;vy=-20}
@@ -139,7 +139,7 @@ OpenField_Weapon_風輪斬_MCLove32_Skills:
   - setVar{var=skill.radius;val="1";t=FLOAT;delay=20} @self 
   - projectile{
     oh=[
-      - damage{a=40 * <skill.var.radius>;pi=true;ii=true}
+      - damage{a=20 * <skill.var.radius>;pi=true;ii=true}
     ];
     ot=[
       - e:p{p=totem;a=3;audience=caster;s=0.5;vs=0.2;hs=2} @origin

@@ -4,7 +4,7 @@ OpenField_Weapon_ビットブレードTypeMA_MCLove32_Skills:
   - targets{a=0} false 
   - wearing{m=OpenField_Weapon_ビットブレードTypeMA_MCLove32;s=HAND}
   - materialCooldown{m=diamond_sword} false 
-  - hasMana{a=>20;
+  - hasMana{a=>15;
     onFail=[
       - message{m="&cマナが足りません。"} @self 
     ]} 
@@ -20,9 +20,9 @@ OpenField_Weapon_ビットブレードTypeMA_MCLove32_Skills:
 
 OpenField_Weapon_ビットブレードTypeMA_MCLove32_Skills_Start:
   Skills:
-  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=90;vo=1;so=3;y=3;damage=4} 
-  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=270;vo=1;so=3;y=3;damage=4} 
-  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=90;vo=1.5;so=3;y=5;delay=2;damage=4}
-  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=270;vo=1.5;so=3;y=5;delay=2;damage=4}
-  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=90;vo=2;so=3;y=7;delay=4;damage=4} 
-  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=270;vo=2;so=3;y=7;delay=4;damage=4}
+  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=90;vo=1;so=3;y=3;damage=3} 
+  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=270;vo=1;so=3;y=3;damage=3} 
+  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=90;vo=1.5;so=3;y=5;delay=2;damage=3}
+  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=270;vo=1.5;so=3;y=5;delay=2;damage=3}
+  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=90;vo=2;so=3;y=7;delay=4;damage=3} 
+  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills_Process{ho=270;vo=2;so=3;y=7;delay=4;damage=3}
