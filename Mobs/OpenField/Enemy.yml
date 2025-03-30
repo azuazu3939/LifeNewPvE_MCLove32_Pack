@@ -157,7 +157,7 @@ OpenField_Enemy_フウィスピット_MCLove32:
 
 OpenField_Enemy_羊獣カルーチェ_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
-  Display: "<#58cfe4><b><i>羊獣カルーチェ</i></b></#58cfe4>"
+  Display: "<#58cfe4><b>羊獣カルーチェ</b></#58cfe4>"
   Type: sheep
   Health: 5950
   Faction: sheep
@@ -242,7 +242,7 @@ OpenField_Enemy_黒小ヤギ_MCLove32:
 
 OpenField_Enemy_風牙狼ウィデラー_MCLove32:
   Template: OpenField_Enemy_Abstract_Generic
-  Display: "<#15d455><b><i>風牙狼ウィデラー</i></b></#15d455>"
+  Display: "<#15d455><b>風牙狼ウィデラー</b></#15d455>"
   Type: wolf
   Health: 7950
   Armor: 1
@@ -297,7 +297,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32:
 
 OpenField_Enemy_焔獣フェルドス_MCLove32:
   Template: OpenField_Enemy_Abstract_Generic
-  Display: "<#c20a0a><b><i>焔獣フェルドス</i></b></#c20a0a>"
+  Display: "<#c20a0a><b>焔獣フェルドス</b></#c20a0a>"
   Type: hoglin
   Health: 3950
   Armor: 0
@@ -354,7 +354,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32:
 
 OpenField_Enemy_踊る巨人_MCLove32:
   Template: OpenField_Enemy_Abstract_Generic
-  Display: "<#cf55ff><b><i>踊る巨人</i></b></#cf55ff>"
+  Display: "<#cf55ff><b>踊る巨人</b></#cf55ff>"
   Type: husk
   Health: 99999
   Armor: 0
