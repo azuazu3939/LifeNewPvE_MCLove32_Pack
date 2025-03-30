@@ -13,8 +13,8 @@ OpenField_Enemy_踊る巨人_MCLove32_DAMAGED:
   TriggerConditions:
   - isplayer
   Skills: 
-  - setVar{k=caster.<target.name>;a="<caster.var.<target.name>|0> + <skill.var.damage-amount>";t=FLOAT} @trigger
-  - message{m="<caster.var.<target.name>|0>"} @trigger
+  - setVar{k=caster.<target.name>;a="<caster.var.<target.name>|0> + <skill.var.damage-amount>";t=FLOAT} 
+  - message{m="<caster.var.<target.name>|0>"} 
 
 OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING:
   Skills:
