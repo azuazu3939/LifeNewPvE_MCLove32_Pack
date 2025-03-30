@@ -1,0 +1,60 @@
+OpenField_Enemy_踊る巨人_MCLove32_ATTACK:
+  Conditions:
+  - incombat
+  Skills:
+  - skill:OpenField_Enemy_踊る巨人_MCLove32_Start @self
+  - skill:OpenField_Enemy_踊る巨人_MCLove32_ATTACK1
+  - delay <random.100to160>
+  - skill:OpenField_Enemy_踊る巨人_MCLove32_ATTACK 
+
+OpenField_Enemy_踊る巨人_MCLove32_Start:
+  Conditions:
+  - hasTag{t=踊る巨人} false
+  Skills:
+  - addtag{t=踊る巨人} @self
+  - OnSwing{
+      osw=[
+        - projectile{v=20;i=1;vr=2;hr=2;hp=false;hnp=true;
+            oh=[
+              - damage{a="10 * <skill.var.aura-stacks>";pi=true;ii=true}
+            ];
+            b=DISPLAY;mat=BEDROCK;ps=1;enchanted=true;
+            c=[ - isliving true - isMythicMob true - hasTag{t=踊る巨人} true ];
+            cd=0.8} @TL
+      ];
+      n=OpenField_Enemy_踊る巨人_MCLove32_Start;
+      t=400;i=1;ms=5;mc=true;rd=true} @PIR{r=48}
+
+OpenField_Enemy_踊る巨人_MCLove32_ATTACK1:
+  Skills:
+
+OpenField_Enemy_踊る巨人_MCLove32_DAMAGED:
+  TriggerConditions:
+  - isplayer
+  Skills: 
+  - setVar{k=caster.<target.name>;a="<caster.var.<target.name>|0> + <skill.var.damage-amount>";t=FLOAT} @trigger
+  - message{m="<caster.var.<target.name>|0>"} @trigger
+
+OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING:
+  Skills:
+  - setVar{k=skill.ranking;a="1";t=INTEGER} @self 
+  - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Loop
+
+OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Loop:
+  Conditions:
+  - variableInRange{k=skill.ranking;r=10} false 
+  Skills:
+  - message{m="&a&l<skill.var.ranking>位 &6&l<target.name> &f&lスコア &f<caster.var.<target.name>|0>"} ?variableIsSet{k=caster.<target.name>}
+  - setVar{k=skill.ranking;a="<skill.var.ranking> + 1";t=INTEGER} @self 
+  - OnSwing{
+      osw=[
+        - projectile{v=20;i=1;vr=2;hr=2;hp=false;hnp=true;
+            oh=[
+              - damage{a="10 * <skill.var.aura-stacks>";pi=true;ii=true}
+            ];
+            b=DISPLAY;mat=BEDROCK;ps=1;enchanted=true;
+            c=[ - isliving true - isMythicMob true - hasTag{t=踊る巨人} true ];
+            cd=0.8} @TL
+      ];
+      n=OpenField_Enemy_踊る巨人_MCLove32_Start;
+      t=400;i=1;ms=5;mc=true;rd=true} @playerByName{n=<target.name>}

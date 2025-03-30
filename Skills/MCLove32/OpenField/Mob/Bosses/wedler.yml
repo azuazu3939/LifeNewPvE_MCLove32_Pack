@@ -23,7 +23,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1:
   - setVar{var=skill.size;val="1";t=FLOAT} @self
   - skill:OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1_Effect{repeat=3;repeati=8} @self
   - delay 35
-  - setVar{var=skill.dmg;val="<caster.damage> + 10";t=FLOAT} @self
+  - setVar{var=skill.dmg;val="<caster.damage> + 7";t=FLOAT} @self
   - skill:Generic_Enemy_MCLove32_BUFF @self
   - setVar{var=skill.ho;val="90";t=INTEGER} @self
   - sound{s=entity.wolf.howl;delay=10;v=1.5} @self
@@ -281,6 +281,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1_Process_Shoot:
     ot=[
       - setVar{var=skill.delay;val="<skill.var.delay> - 1";t=INTEGER} @self
       - e:p{p=spark;a=5;vs=0.5;hs=0.25;delay=<skill.var.delay>} @origin
+      - look{f=true;delay=<skill.var.delay>} @projectileforward
       - skill:OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1_Projectile_Effect{delay=<skill.var.delay>} @origin 0.25
       - skill:OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1_Process_Shoot_Damage{delay=<skill.var.delay>} @ENO{r=5;c=[ - samefaction false ];ignore=players}
       - skill:OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1_Process_Shoot_Damage{delay=<skill.var.delay>} @PlayersNearOrigin{r=1.5}
@@ -307,7 +308,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_2:
   - delay 1
   - potion{t=SLOWNESS;l=7;d=20;p=false} @self
   - potion{t=SLOW_FALLING;l=7;d=25;p=false} @self
-  - setVar{var=skill.dmg;val="<caster.damage> + 8";t=FLOAT} @self
+  - setVar{var=skill.dmg;val="<caster.damage> + 5";t=FLOAT} @self
   - skill:Generic_Enemy_MCLove32_BUFF @self
   - sound{s=entity.wolf.ambient;p=0.75;v=1.5} @self
   - delay 10
@@ -368,7 +369,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_3:
   - delay 1
   - potion{t=SLOWNESS;l=7;d=20;p=false} @self
   - potion{t=SLOW_FALLING;l=7;d=25;p=false} @self
-  - setVar{var=skill.dmg;val="<caster.damage> + 4";t=FLOAT} @self
+  - setVar{var=skill.dmg;val="<caster.damage> + 1";t=FLOAT} @self
   - skill:Generic_Enemy_MCLove32_BUFF @self
   - sound{s=entity.wolf.ambient;p=0.75;v=1.5;repeat=1;repeati=10} @self
   - delay 20
@@ -395,7 +396,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_4:
   - delay 1
   - potion{t=SLOWNESS;l=7;d=20;p=false} @self
   - potion{t=SLOW_FALLING;l=7;d=25;p=false} @self
-  - setVar{var=skill.dmg;val="<caster.damage> + 3";t=FLOAT} @self
+  - setVar{var=skill.dmg;val="<caster.damage>";t=FLOAT} @self
   - skill:Generic_Enemy_MCLove32_BUFF @self
   - sound{s=entity.wolf.ambient;p=0.75;v=1.5;repeat=1;repeati=10} @self
   - delay 20
@@ -420,7 +421,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_5:
   Skills:
   - addtag{t=ATTACK} @self
   - look{f=true} @T
-  - setVar{var=skill.dmg;val="<caster.damage> + 5";t=FLOAT} @self
+  - setVar{var=skill.dmg;val="<caster.damage> + 2";t=FLOAT} @self
   - skill:Generic_Enemy_MCLove32_BUFF @self
   - sound{s=entity.wolf.growl;p=0} @self
   - delay 30
