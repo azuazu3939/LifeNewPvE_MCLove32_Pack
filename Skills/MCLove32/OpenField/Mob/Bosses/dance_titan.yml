@@ -26,12 +26,16 @@ OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING:
 OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process:
   Skills:
   - vskill{s=OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process_<skill.var.itr>} @TT{sort=HIGHEST_THREAT;limit=5}
+  - sudoskill{
+      s=[
+        - message{m="<caster.name> <target.name>"} @PIR{r=32}
+      ];cat=true} @TT{sort=HIGHEST_THREAT;limit=5}
 
 OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process_1:
   Skills:
   - setVar{k=skill.itr;a="1 + <skill.var.itr>";t=INTEGER} @self 
   - setVar{k=skill.name;a="<target.name>";t=STRING}
-  - message{m="1 <target.name> <skill.var.name>"} @PIR{r=32}
+  #- message{m="1 <target.name> <skill.var.name>"} @PIR{r=32}
   - setVar{k=skill.ranking;a="<skill.var.ranking> + 1";t=INTEGER} @self ?variableIsSet{k=caster.<skill.var.name>}
   - message{m="&a&l<skill.var.ranking>位 &6&l<skill.var.name> &f&lスコア &f<caster.var.<skill.var.name>|0>"} @PIR{r=32} ?variableIsSet{k=caster.<skill.var.name>}
 
@@ -39,7 +43,7 @@ OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process_2:
   Skills:
   - setVar{k=skill.itr;a="1 + <skill.var.itr>";t=INTEGER} @self 
   - setVar{k=skill.name;a="<target.name>";t=STRING}
-  - message{m="1 <target.name> <skill.var.name>"} @PIR{r=32}
+  #- message{m="2 <target.name> <skill.var.name>"} @PIR{r=32}
   - setVar{k=skill.ranking;a="<skill.var.ranking> + 1";t=INTEGER} @self ?variableIsSet{k=caster.<skill.var.name>}
   - message{m="&a&l<skill.var.ranking>位 &6&l<skill.var.name> &f&lスコア &f<caster.var.<skill.var.name>|0>"} @PIR{r=32} ?variableIsSet{k=caster.<skill.var.name>}
 
@@ -47,7 +51,7 @@ OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process_3:
   Skills:
   - setVar{k=skill.itr;a="1 + <skill.var.itr>";t=INTEGER} @self 
   - setVar{k=skill.name;a="<target.name>";t=STRING}
-  - message{m="1 <target.name> <skill.var.name>"} @PIR{r=32}
+  #- message{m="3 <target.name> <skill.var.name>"} @PIR{r=32}
   - setVar{k=skill.ranking;a="<skill.var.ranking> + 1";t=INTEGER} @self ?variableIsSet{k=caster.<skill.var.name>}
   - message{m="&a&l<skill.var.ranking>位 &6&l<skill.var.name> &f&lスコア &f<caster.var.<skill.var.name>|0>"} @PIR{r=32} ?variableIsSet{k=caster.<skill.var.name>}
 
@@ -55,7 +59,7 @@ OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process_4:
   Skills:
   - setVar{k=skill.itr;a="1 + <skill.var.itr>";t=INTEGER} @self 
   - setVar{k=skill.name;a="<target.name>";t=STRING}
-  - message{m="1 <target.name> <skill.var.name>"} @PIR{r=32}
+  -# message{m="4 <target.name> <skill.var.name>"} @PIR{r=32}
   - setVar{k=skill.ranking;a="<skill.var.ranking> + 1";t=INTEGER} @self ?variableIsSet{k=caster.<skill.var.name>}
   - message{m="&a&l<skill.var.ranking>位 &6&l<skill.var.name> &f&lスコア &f<caster.var.<skill.var.name>|0>"} @PIR{r=32} ?variableIsSet{k=caster.<skill.var.name>}
 
@@ -63,6 +67,6 @@ OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process_5:
   Skills:
   - setVar{k=skill.itr;a="1 + <skill.var.itr>";t=INTEGER} @self 
   - setVar{k=skill.name;a="<target.name>";t=STRING}
-  - message{m="1 <target.name> <skill.var.name>"} @PIR{r=32}
+  #- message{m="5 <target.name> <skill.var.name>"} @PIR{r=32}
   - setVar{k=skill.ranking;a="<skill.var.ranking> + 1";t=INTEGER} @self ?variableIsSet{k=caster.<skill.var.name>}
   - message{m="&a&l<skill.var.ranking>位 &6&l<skill.var.name> &f&lスコア &f<caster.var.<skill.var.name>|0>"} @PIR{r=32} ?variableIsSet{k=caster.<skill.var.name>}
