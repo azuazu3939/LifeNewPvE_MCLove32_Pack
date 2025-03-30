@@ -128,9 +128,9 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_4:
   - potion{t=SLOW;l=10;d=40;p=false} @self
   - setrot{p=60;repeat=39;repeati=1} @self
   - projectile{v=15;mr=16;hs=true;mdh=5;mch=3;se=false;sb=false;i=2;syo=0;sfo=0;tyo=0;hnp=true;c=[ - samefaction false ];
-    b=MOB;mm=OpenField_Enemy_黒小ヤギ_MCLove32;
+    b=MOB;mm=OpenField_Enemy_黒小羊_MCLove32;
     oe=[
-      - summon{t=OpenField_Enemy_黒小ヤギ_MCLove32;a=1;r=0} @origin
+      - summon{t=OpenField_Enemy_黒小羊_MCLove32;a=1;r=0} @origin
     ]} @ring{r=16;p=6}
   - removetag{t=ATTACK} @self
 

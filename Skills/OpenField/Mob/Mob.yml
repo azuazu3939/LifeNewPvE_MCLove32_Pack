@@ -39,7 +39,7 @@ OpenField_Guard_牙狼ノ零_MCLove32_Skill_End:
   Skills:
   - potion{t=SPEED;d=144000;l=2;p=false} @self 
 
-OpenField_Enemy_黒小ヤギ_MCLove32_Skills:
+OpenField_Enemy_黒小羊_MCLove32_Skills:
   Skills:
   - missile{
     ot=[
@@ -51,4 +51,4 @@ OpenField_Enemy_黒小ヤギ_MCLove32_Skills:
     v=20;in=1;se=true;sb=true;hp=false;hnp=true;c=[ - isParent true ];vo=1.5;i=2;delay=200} @parent
   - delay 250
   - remove{delay=1} @self 0.05
-  - skill:OpenField_Enemy_黒小ヤギ_MCLove32_Skills @self
+  - skill:OpenField_Enemy_黒小羊_MCLove32_Skills @self

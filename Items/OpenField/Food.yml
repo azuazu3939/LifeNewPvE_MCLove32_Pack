@@ -1,19 +1,4 @@
-OpneField_Armor_ゾンビ化ビーフ_MCLove32:
-  Id: rotten_flesh
-  Display: "&fゾンビ化ビーフ"
-  Lore:
-  Hide:
-  - ATTRIBUTES
-  Model: 1000
-  Options:
-    Destroy: false
-    CancelDamage: true
-    ItemVersion: 1
-    #Unbreakable: true
-  Group: 'Food'
-  Skills:
-  - skill:OpneField_Armor_ゾンビ化ビーフ_MCLove32_Skills @self ~onConsume
-
+#Note: LootChestに必要
 OpneField_Armor_金のリンゴ_MCLove32:
   Id: golden_apple
   Display: "&f金のリンゴ"
@@ -28,6 +13,7 @@ OpneField_Armor_金のリンゴ_MCLove32:
     #Unbreakable: true
   Group: 'Food'
 
+#Note: LootChestに必要
 OpneField_Armor_金の人参_MCLove32:
   Id: golden_carrot
   Display: "&f金の人参"
