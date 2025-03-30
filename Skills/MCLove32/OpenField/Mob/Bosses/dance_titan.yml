@@ -20,6 +20,7 @@ OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING:
   Skills:
   - setVar{k=skill.ranking;a="1";t=INTEGER} @self 
   - skill:OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Loop
+  - message{m="M-> <caster.var.MCLove32|0> A-> <caster.var.asobi_tai|0>"} @PIR{r=32}
 
 OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Loop:
   Conditions:
