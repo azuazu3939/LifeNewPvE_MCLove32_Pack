@@ -27,8 +27,7 @@ OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process:
 
 OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Process_Sudo:
   Skills:
-  - message{m="<caster.name> <trigger.name> <target.name>"} @self
-  - message{m="あ <caster.name> <trigger.name> <target.name>"} @trigger
   - setVar{k=skill.name;a="<caster.name>";t=STRING} @self
-  - message{m="&a&l<skill.var.ranking>位 &6&l<skill.var.name> &f&lスコア &f<caster.var.<skill.var.name>|0>"} @PIR{r=32} ?variableIsSet{k=caster.<skill.var.name>}
+  - setVar{k=skill.dmg;a="<target.var.<skill.var.name>|0>";t=FLOAT} @trigger
+  - message{m="&a&l<skill.var.ranking>位 &6&l<skill.var.name> &f&lスコア &f<skill.var.dmg>"} @PIR{r=32} ?variableIsSet{k=caster.<skill.var.name>}
   - setVar{k=skill.ranking;a="1 + <skill.var.ranking>";t=INTEGER} @self ?variableIsSet{k=caster.<skill.var.name>} 
