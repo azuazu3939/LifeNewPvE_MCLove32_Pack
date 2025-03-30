@@ -197,6 +197,19 @@ Generic_Enemy_MCLove32_DAMAGED:
 #- skill:Generic_Enemy_MCLove32_SHOW_RANKING ~onDamaged =50%
 #- skill:Generic_Enemy_MCLove32_SHOW_RANKING ~onDeath 
 #など、HP条件などは適宜変えて使用すること。
+Generic_Enemy_MCLove32_DAMAGED_Player:
+  TriggerConditions:
+  - isplayer true 
+  Skills: 
+  - setVar{k=skill.name;a="<target.uuid>";t=STRING} @trigger
+  - setVar{k=caster.<skill.var.name>;a="<caster.var.<skill.var.name>|0> + <skill.var.damage-amount>";t=FLOAT} @self
+
+#Usage  
+#Skills:
+#- skill:Generic_Enemy_MCLove32_DAMAGED @self ~onDamaged
+#- skill:Generic_Enemy_MCLove32_SHOW_RANKING ~onDamaged =50%
+#- skill:Generic_Enemy_MCLove32_SHOW_RANKING ~onDeath 
+#など、HP条件などは適宜変えて使用すること。
 #---------------------------------------------------------------
 #@Param / INTEGER: <skill.lim> / INTEGER: <skill.range>
 Generic_Enemy_MCLove32_SHOW_RANKING:
