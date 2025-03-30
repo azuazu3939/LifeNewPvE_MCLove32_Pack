@@ -43,10 +43,10 @@ Generic_Enemy_ウォーク_MCLove32_SearchBoss:
   - samefaction true
   - hasTag{t=Found} false 
   Skills:
-  - setVar{k=skill.count;a="<skill.var.count> + 1";t=INTEGER} @self
-  - setOwner 
   - addtag{t=Found} @self 
   - addtag{t=Found} @children
+  - setVar{k=skill.count;a="<skill.var.count> + 1";t=INTEGER} @self
+  - setparent
 
 Generic_Enemy_ウォーク_MCLove32_Check:
   Conditions:
