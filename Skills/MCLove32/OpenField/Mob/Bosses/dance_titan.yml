@@ -26,5 +26,6 @@ OpenField_Enemy_踊る巨人_MCLove32_SHOW_RANKING_Loop:
   Conditions:
   - variableInRange{k=skill.ranking;r=10} false 
   Skills:
-  - message{m="&a&l<skill.var.ranking>位 &6&l<target.name> &f&lスコア &f<caster.var.<target.name>|0>"} ?variableIsSet{k=caster.<target.name>}
+  - setVar{k=skill.name;a="<target.name>"}
+  - message{m="&a&l<skill.var.ranking>位 &6&l<skill.var.name> &f&lスコア &f<caster.var.<skill.var.name>|0>"} ?variableIsSet{k=caster.<skill.var.name>}
   - setVar{k=skill.ranking;a="<skill.var.ranking> + 1";t=INTEGER} @self 
