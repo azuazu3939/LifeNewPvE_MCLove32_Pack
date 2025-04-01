@@ -56,7 +56,7 @@ OpenField_Armor_ハロ_MCLove32_L:
     PublicBukkitValues:
       az:divine_blessing: "1"
       az:hit_and_speed: "1"
-      #az:blessing_of_the_earth: "1"
+      #az:ground_reaction_force: "1"
 
 OpenField_Armor_ハロ_MCLove32_B:
   Id: leather_boots
