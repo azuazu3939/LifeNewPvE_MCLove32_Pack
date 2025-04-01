@@ -14,6 +14,8 @@ OpenField_Armor_ハロ_MCLove32_H:
       ArmorToughness: 2 ADD 
       Armor: 2 ADD 
   Group: 'Armor'
+  NBT:
+    az:slow_life: "2"
 
 OpenField_Armor_ハロ_MCLove32_C:
   Id: leather_chestplate
@@ -30,6 +32,8 @@ OpenField_Armor_ハロ_MCLove32_C:
       ArmorToughness: 3 ADD 
       Armor: 3 ADD 
   Group: 'Armor'
+  NBT:
+    az:divine_blessing: "2"
 
 OpenField_Armor_ハロ_MCLove32_L:
   Id: leather_leggings
@@ -46,6 +50,9 @@ OpenField_Armor_ハロ_MCLove32_L:
       ArmorToughness: 4 ADD 
       Armor: 4 ADD 
   Group: 'Armor'
+  NBT:
+    az:slow_life: "1"
+    az:divine_blessing: "1"
 
 OpenField_Armor_ハロ_MCLove32_B:
   Id: leather_boots
@@ -61,6 +68,9 @@ OpenField_Armor_ハロ_MCLove32_B:
       ArmorToughness: 5 ADD 
       Armor: 5 ADD 
   Group: 'Armor'
+  NBT:
+    az:divine_blessing: "1"
+    az:blessing_of_the_earth: "1"
 
 OpenField_Armor_カルチェ_MCLove32_H:
   Id: leather_helmet
@@ -77,6 +87,9 @@ OpenField_Armor_カルチェ_MCLove32_H:
       ArmorToughness: 6 ADD 
       Armor: 6 ADD 
   Group: 'Armor'
+  NBT:
+    az:divine_blessing: "1"
+    az:speed_holder: "1"
 
 OpenField_Armor_カルチェ_MCLove32_C:
   Id: leather_chestplate
@@ -93,6 +106,7 @@ OpenField_Armor_カルチェ_MCLove32_C:
       ArmorToughness: 9 ADD 
       Armor: 15 ADD 
   Group: 'Armor'
+  az:hit_and_speed: "1"
 
 OpenField_Armor_カルチェ_MCLove32_L:
   Id: leather_leggings
@@ -109,6 +123,8 @@ OpenField_Armor_カルチェ_MCLove32_L:
       ArmorToughness: 6 ADD 
       Armor: 12 ADD 
   Group: 'Armor'
+  NBT:
+    az:divine_blessing: "2"
 
 OpenField_Armor_カルチェ_MCLove32_B:
   Id: leather_boots
@@ -125,6 +141,8 @@ OpenField_Armor_カルチェ_MCLove32_B:
       ArmorToughness: 18 ADD 
       Armor: 9 ADD 
   Group: 'Armor'
+  NBT:
+    az:hit_and_speed: "1"
 
 OpenField_Armor_ウィド_MCLove32_H:
   Id: leather_helmet
