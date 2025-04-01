@@ -54,8 +54,8 @@ OpenField_Armor_ハロ_MCLove32_L:
   Group: 'Armor'
   NBT:
     PublicBukkitValues:
-      az:slow_life: "1"
       az:divine_blessing: "1"
+      az:blessing_of_the_earth: "1"
 
 OpenField_Armor_ハロ_MCLove32_B:
   Id: leather_boots
@@ -74,7 +74,7 @@ OpenField_Armor_ハロ_MCLove32_B:
   NBT:
     PublicBukkitValues:
       az:divine_blessing: "1"
-      az:blessing_of_the_earth: "1"
+      az:slow_life: "1"
 
 OpenField_Armor_カルチェ_MCLove32_H:
   Id: leather_helmet
