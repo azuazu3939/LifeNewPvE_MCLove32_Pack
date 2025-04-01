@@ -168,9 +168,9 @@ OpenField_Armor_ウィド_MCLove32_H:
       Health: 5 ADD 
       ArmorToughness: 4 ADD 
       Armor: 4 ADD 
-  NBT:
+  NBT: 
     PublicBukkitValues:
-      lifenewpve:max_mana: "25"
+      az:max_mana: "25"
   Group: 'Armor'
 
 OpenField_Armor_ウィド_MCLove32_C:
@@ -189,7 +189,7 @@ OpenField_Armor_ウィド_MCLove32_C:
       Armor: 8 ADD 
   NBT:
     PublicBukkitValues:
-      lifenewpve:max_mana: "25"
+      az:max_mana: "25"
   Group: 'Armor'
 
 OpenField_Armor_ウィド_MCLove32_L:
@@ -208,7 +208,7 @@ OpenField_Armor_ウィド_MCLove32_L:
       Armor: 8 ADD 
   NBT:
     PublicBukkitValues:
-      lifenewpve:max_mana: "25"
+      az:max_mana: "25"
   Group: 'Armor'
 
 OpenField_Armor_ウィド_MCLove32_B:
@@ -227,7 +227,7 @@ OpenField_Armor_ウィド_MCLove32_B:
       Armor: 8 ADD 
   NBT:
     PublicBukkitValues:
-      lifenewpve:max_mana: "25"
+      az:max_mana: "25"
   Group: 'Armor'
 
 OpenField_Armor_フェルム_MCLove32_H:
