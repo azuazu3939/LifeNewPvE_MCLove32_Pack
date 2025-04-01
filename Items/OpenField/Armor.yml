@@ -15,7 +15,8 @@ OpenField_Armor_ハロ_MCLove32_H:
       Armor: 2 ADD 
   Group: 'Armor'
   NBT:
-    az:slow_life: "2"
+    PublicBukkitValues:
+      az:slow_life: "2"
 
 OpenField_Armor_ハロ_MCLove32_C:
   Id: leather_chestplate
@@ -33,7 +34,8 @@ OpenField_Armor_ハロ_MCLove32_C:
       Armor: 3 ADD 
   Group: 'Armor'
   NBT:
-    az:divine_blessing: "2"
+    PublicBukkitValues:
+      az:divine_blessing: "2"
 
 OpenField_Armor_ハロ_MCLove32_L:
   Id: leather_leggings
@@ -51,8 +53,9 @@ OpenField_Armor_ハロ_MCLove32_L:
       Armor: 4 ADD 
   Group: 'Armor'
   NBT:
-    az:slow_life: "1"
-    az:divine_blessing: "1"
+    PublicBukkitValues:
+      az:slow_life: "1"
+      az:divine_blessing: "1"
 
 OpenField_Armor_ハロ_MCLove32_B:
   Id: leather_boots
@@ -69,8 +72,9 @@ OpenField_Armor_ハロ_MCLove32_B:
       Armor: 5 ADD 
   Group: 'Armor'
   NBT:
-    az:divine_blessing: "1"
-    az:blessing_of_the_earth: "1"
+    PublicBukkitValues:
+      az:divine_blessing: "1"
+      az:blessing_of_the_earth: "1"
 
 OpenField_Armor_カルチェ_MCLove32_H:
   Id: leather_helmet
@@ -88,8 +92,9 @@ OpenField_Armor_カルチェ_MCLove32_H:
       Armor: 6 ADD 
   Group: 'Armor'
   NBT:
-    az:divine_blessing: "1"
-    az:speed_holder: "1"
+    PublicBukkitValues:
+      az:divine_blessing: "1"
+      az:speed_holder: "1"
 
 OpenField_Armor_カルチェ_MCLove32_C:
   Id: leather_chestplate
@@ -106,7 +111,9 @@ OpenField_Armor_カルチェ_MCLove32_C:
       ArmorToughness: 9 ADD 
       Armor: 15 ADD 
   Group: 'Armor'
-  az:hit_and_speed: "1"
+  NBT:
+    PublicBukkitValues:
+      az:hit_and_speed: "1"
 
 OpenField_Armor_カルチェ_MCLove32_L:
   Id: leather_leggings
@@ -124,7 +131,8 @@ OpenField_Armor_カルチェ_MCLove32_L:
       Armor: 12 ADD 
   Group: 'Armor'
   NBT:
-    az:divine_blessing: "2"
+    PublicBukkitValues:
+      az:divine_blessing: "2"
 
 OpenField_Armor_カルチェ_MCLove32_B:
   Id: leather_boots
@@ -142,7 +150,8 @@ OpenField_Armor_カルチェ_MCLove32_B:
       Armor: 9 ADD 
   Group: 'Armor'
   NBT:
-    az:hit_and_speed: "1"
+    PublicBukkitValues:
+      az:hit_and_speed: "1"
 
 OpenField_Armor_ウィド_MCLove32_H:
   Id: leather_helmet
