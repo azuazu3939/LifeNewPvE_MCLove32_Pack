@@ -115,7 +115,7 @@ OpenField_Armor_カルチェ_MCLove32_C:
   NBT:
     PublicBukkitValues:
       az:hit_and_speed: "1"
-      az:offense: "2"
+      az:offence: "2"
 
 OpenField_Armor_カルチェ_MCLove32_L:
   Id: leather_leggings
