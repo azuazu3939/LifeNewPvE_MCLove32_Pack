@@ -407,4 +407,5 @@ OpenField_Enemy_踊る巨人_MCLove32:
   - addtag{t=LOW_HEALTH} @self ~onDamaged =40%
 
   - skill:Generic_Enemy_MCLove32_SHOW_RANKING{lim=5;range=48} @self ~onDeath 
+  - skill:OpenField_Util_Bosses_MCLove32_KillCount10 @self ~onDeath 
   - remove{delay=10} @self ~onDeath

@@ -70,3 +70,8 @@ OpenField_Util_Animals_MCLove32_Plains_Skill_3:
 OpenField_Util_Bosses_MCLove32_KillCount:
   Skills:
   - setVar{k=world.count;a="<world.var.count|0> + 1";t=INTEGER;save=true} @self
+
+#
+OpenField_Util_Bosses_MCLove32_KillCount10:
+  Skills:
+  - setVar{k=world.count;a="<world.var.count|0> + 10";t=INTEGER;save=true} @self

@@ -330,3 +330,163 @@ OpenField_Armor_フェルム_MCLove32_B:
       az:offence: "1"
       az:slow_life: "1"
   Group: 'Armor'
+
+OpenField_Armor_フラクタ_MCLove32_H:
+  Id: netherite_helmet
+  Display: "&fフラクタ-ヘルム"
+  Lore: []
+  Model: 100
+  Options:
+    ItemVersion: 1
+    Unbreakable: true
+  Attributes:
+    Head:
+      ArmorToughness: 10 ADD 
+      Armor: 12 ADD 
+      Damage: 1 ADD
+  NBT:
+    PublicBukkitValues:
+      az:max_mana: "50"
+      az:mana_regen: "5"
+      az:offence: "1"
+      az:defence: "1"
+  Group: 'Armor'
+
+OpenField_Armor_フラクタ_MCLove32_C:
+  Id: netherite_chestplate
+  Display: "&fフラクタ-チェスト"
+  Lore: []
+  Model: 100
+  Options:
+    ItemVersion: 1
+    Unbreakable: true
+  Attributes:
+    Chest:
+      Health: 3
+      ArmorToughness: 2 ADD 
+      Armor: 3 ADD 
+  NBT:
+    PublicBukkitValues:
+      az:flying_hunter: "1"
+      az:high_poison: "1"
+      az:bad_status_hunter: "1"
+  Group: 'Armor'
+
+OpenField_Armor_フラクタ_MCLove32_L:
+  Id: netherite_leggings
+  Display: "&fフラクタ-レギンス"
+  Lore: []
+  Model: 100
+  Options:
+    ItemVersion: 1
+    Unbreakable: true
+  Attributes:
+    Legs:
+      Health: 2
+      ArmorToughness: 3 ADD 
+      Armor: 5 ADD 
+  NBT:
+    PublicBukkitValues:
+      az:mana_regen: "5"
+      az:hit_and_speed: "2"
+      az:speed_master: "2"
+  Group: 'Armor'
+
+OpenField_Armor_フラクタ_MCLove32_B:
+  Id: netherite_boots
+  Display: "&fフラクタ-ブーツ"
+  Lore: []
+  Model: 100
+  Options:
+    ItemVersion: 1
+    Unbreakable: true
+  Attributes:
+    Feet:
+      ArmorToughness: 5 ADD 
+      Armor: 2 ADD 
+      Damage: 1 ADD
+  NBT:
+    PublicBukkitValues:
+      az:max_mana: "50"
+      az:speed_master: "1"
+      az:offence: "2"
+  Group: 'Armor'
+
+OpenField_Armor_ボルク_MCLove32_H:
+  Id: golden_helmet
+  Display: "&fボルク-ヘルム"
+  Lore: []
+  Model: 100
+  Options:
+    ItemVersion: 1
+    Unbreakable: true
+  Attributes:
+    Head:
+      ArmorToughness: 4 ADD 
+      Armor: 3 ADD 
+      Health: 8 ADD
+  NBT:
+    PublicBukkitValues:
+      az:high_poison: "2"
+      az:flying_hunter: "1"
+  Group: 'Armor'
+
+OpenField_Armor_ボルク_MCLove32_C:
+  Id: golden_chestplate
+  Display: "&fボルク-チェスト"
+  Lore: []
+  Model: 100
+  Options:
+    ItemVersion: 1
+    Unbreakable: true
+  Attributes:
+    Chest:
+      Health: 6
+      ArmorToughness: 2 ADD 
+      Armor: 3 ADD 
+  NBT:
+    PublicBukkitValues:
+      az:hit_and_speed: "3"
+      az:defence: "2"
+      az:offence: "1"
+  Group: 'Armor'
+
+OpenField_Armor_ボルク_MCLove32_L:
+  Id: golden_leggings
+  Display: "&fボルク-レギンス"
+  Lore: []
+  Model: 100
+  Options:
+    ItemVersion: 1
+    Unbreakable: true
+  Attributes:
+    Legs:
+      Health: 5
+      ArmorToughness: 3 ADD 
+      Armor: 4 ADD 
+  NBT:
+    PublicBukkitValues:
+      az:hit_and_speed: "1"
+      az:high_poison: "1"
+      az:offence: "1"
+  Group: 'Armor'
+
+OpenField_Armor_ボルク_MCLove32_B:
+  Id: golden_boots
+  Display: "&fボルク-ブーツ"
+  Lore: []
+  Model: 100
+  Options:
+    ItemVersion: 1
+    Unbreakable: true
+  Attributes:
+    Feet:
+      ArmorToughness: 5 ADD 
+      Armor: 2 ADD 
+      Health: 4 ADD
+  NBT:
+    PublicBukkitValues:
+      az:bad_status_hunter: "2"
+      az:high_poison: "1"
+      az:offence: "1"
+  Group: 'Armor'
