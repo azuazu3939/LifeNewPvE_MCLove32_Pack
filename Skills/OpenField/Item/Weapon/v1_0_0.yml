@@ -1,7 +1,6 @@
 Generic_Weapon_Attack_MCLove32:
   Cooldown: 0.1
   Conditions:
-  - targetinlineofsight
   - canattack{d=8}
   - itemrecharging false 
   Skills:
