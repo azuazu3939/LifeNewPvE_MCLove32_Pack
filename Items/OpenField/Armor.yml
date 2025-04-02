@@ -94,6 +94,7 @@ OpenField_Armor_カルチェ_MCLove32_H:
   NBT:
     PublicBukkitValues:
       az:divine_blessing: "1"
+      az:hit_and_speed: "1"
       az:speed_holder: "1"
 
 OpenField_Armor_カルチェ_MCLove32_C:
@@ -114,6 +115,7 @@ OpenField_Armor_カルチェ_MCLove32_C:
   NBT:
     PublicBukkitValues:
       az:hit_and_speed: "1"
+      az:offence: "2"
 
 OpenField_Armor_カルチェ_MCLove32_L:
   Id: leather_leggings
@@ -133,6 +135,7 @@ OpenField_Armor_カルチェ_MCLove32_L:
   NBT:
     PublicBukkitValues:
       az:divine_blessing: "2"
+      az:defence: "2"
 
 OpenField_Armor_カルチェ_MCLove32_B:
   Id: leather_boots
@@ -152,6 +155,8 @@ OpenField_Armor_カルチェ_MCLove32_B:
   NBT:
     PublicBukkitValues:
       az:hit_and_speed: "1"
+      az:offence: "1"
+      az:defence: "1"
 
 OpenField_Armor_ウィド_MCLove32_H:
   Id: leather_helmet
