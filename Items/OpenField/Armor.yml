@@ -56,7 +56,6 @@ OpenField_Armor_ハロ_MCLove32_L:
     PublicBukkitValues:
       az:divine_blessing: "1"
       az:hit_and_speed: "1"
-      #az:ground_reaction_force: "1"
 
 OpenField_Armor_ハロ_MCLove32_B:
   Id: leather_boots
@@ -171,6 +170,8 @@ OpenField_Armor_ウィド_MCLove32_H:
   NBT: 
     PublicBukkitValues:
       az:max_mana: "25"
+      az:mana_regen: "3"
+      az:ground_reaction_force: "2"
   Group: 'Armor'
 
 OpenField_Armor_ウィド_MCLove32_C:
@@ -190,6 +191,9 @@ OpenField_Armor_ウィド_MCLove32_C:
   NBT:
     PublicBukkitValues:
       az:max_mana: "25"
+      az:mana_regen: "3"
+      az:defence: "1"
+      az:ground_reaction_force: "1"
   Group: 'Armor'
 
 OpenField_Armor_ウィド_MCLove32_L:
@@ -209,6 +213,9 @@ OpenField_Armor_ウィド_MCLove32_L:
   NBT:
     PublicBukkitValues:
       az:max_mana: "25"
+      az:mana_regen: "3"
+      az:defence: "1"
+      az:speed_holder: "1"
   Group: 'Armor'
 
 OpenField_Armor_ウィド_MCLove32_B:
@@ -228,6 +235,8 @@ OpenField_Armor_ウィド_MCLove32_B:
   NBT:
     PublicBukkitValues:
       az:max_mana: "25"
+      az:mana_regen: "3"
+      az:defence: "3"
   Group: 'Armor'
 
 OpenField_Armor_フェルム_MCLove32_H:
@@ -245,6 +254,11 @@ OpenField_Armor_フェルム_MCLove32_H:
       ArmorToughness: 3 ADD 
       Armor: 3 ADD 
       Damage: 1 ADD
+  NBT:
+    PublicBukkitValues:
+      az:mana_regen: "2"
+      az:offence: "1"
+      az:hit_and_speed: "1"
   Group: 'Armor'
 
 OpenField_Armor_フェルム_MCLove32_C:
@@ -262,6 +276,10 @@ OpenField_Armor_フェルム_MCLove32_C:
       ArmorToughness: 6 ADD 
       Armor: 6 ADD 
       Damage: 1 ADD
+  NBT:
+    PublicBukkitValues:
+      az:mana_regen: "2"
+      az:offence: "2"
   Group: 'Armor'
 
 OpenField_Armor_フェルム_MCLove32_L:
@@ -279,6 +297,11 @@ OpenField_Armor_フェルム_MCLove32_L:
       ArmorToughness: 5 ADD 
       Armor: 5 ADD 
       Damage: 1 ADD
+  NBT:
+    PublicBukkitValues:
+      az:mana_regen: "2"
+      az:offence: "1"
+      az:hit_and_speed: "1"
   Group: 'Armor'
 
 OpenField_Armor_フェルム_MCLove32_B:
@@ -296,4 +319,9 @@ OpenField_Armor_フェルム_MCLove32_B:
       ArmorToughness: 7 ADD 
       Armor: 7 ADD 
       Damage: 1 ADD
+  NBT:
+    PublicBukkitValues:
+      az:mana_regen: "2"
+      az:offence: "1"
+      az:slow_life: "1"
   Group: 'Armor'
