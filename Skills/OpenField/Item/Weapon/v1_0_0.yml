@@ -5,7 +5,7 @@ Generic_Weapon_Attack_MCLove32:
   - itemrecharging false 
   Skills:
   - hit{ts=false} @EIC{r=8;a=120;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
-  - sound{s=entity.player.attack.sweep;v=0.5;sc=PLAYERS} @self
+  - sound{s=entity.player.attack.sweep;sc=PLAYERS} @self
 
 OpenField_Weapon_エアブラスタ_MCLove32_Skills:
   Cooldown: 2
