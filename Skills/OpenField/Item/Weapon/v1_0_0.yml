@@ -1,7 +1,5 @@
 Generic_Weapon_Attack_MCLove32:
   Cooldown: 0.1
-  Conditions:
-  - canattack{d=8}
   Skills:
   - damage{a=1;pi=true;ii=true} @EIC{r=8;a=120;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
   - sound{s=entity.player.attack.sweep;sc=PLAYERS} @self
