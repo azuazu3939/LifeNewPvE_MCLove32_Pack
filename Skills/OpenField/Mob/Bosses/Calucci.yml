@@ -21,7 +21,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_1:
   - targetWithin{d=15}
   Skills:
   - addtag{t=ATTACK} @self
-  - setVar{var=skill.dmg;val="<caster.damage> + 5";t=FLOAT} @self
+  - setVar{var=skill.dmg;val="1";t=FLOAT} @self
   - skill:Generic_Enemy_MCLove32_BUFF @self
   - look{f=true;repeat=9;repeati=1} @T
   - e:p{p=villager_angry;a=5;vs=2.5;hs=2;d=true;dir=0,1,0;s=0.5;size=2} @self
@@ -71,7 +71,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_3:
   - targetWithin{d=20} false
   Skills:
   - addtag{t=ATTACK} @self
-  - setVar{var=skill.dmg;val="<caster.damage> + 4";t=FLOAT} @self
+  - setVar{var=skill.dmg;val="1";t=FLOAT} @self
   - skill:Generic_Enemy_MCLove32_BUFF @self
   - look{f=true;repeat=29;repeati=1} @T
   - e:p{p=villager_angry;a=5;vs=2.5;hs=2;d=true;dir=0,1,0;s=0.5;size=2;repeat=2;repeati=10} @self
@@ -136,7 +136,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_4:
 
 OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_2_Process:
   Skills:
-  - setVar{var=skill.dmg;val="<caster.damage> + 18";t=FLOAT} @self
+  - setVar{var=skill.dmg;val="1";t=FLOAT} @self
   - skill:Generic_Enemy_MCLove32_BUFF @self
   - projectile{
     ot=[
@@ -172,7 +172,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_5:
   - targetWithin{d=20}
   Skills:
   - addtag{t=ATTACK} @self
-  - setVar{var=skill.dmg;val="<caster.damage> + 6";t=FLOAT} @self
+  - setVar{var=skill.dmg;val="1";t=FLOAT} @self
   - skill:Generic_Enemy_MCLove32_BUFF @self
   - look{f=true;repeati=1;repeat=19} @T
   - e:p{p=villager_angry;a=5;vs=2.5;hs=2;d=true;dir=0,1,0;s=0.5;size=2;repeat=1;repeati=10} @self
