@@ -140,9 +140,6 @@ OpenField_Weapon_スライムソード_MCLove32:
       Damage: 9 ADD 
       AttackSpeed: -0.4 MULTIPLY_BASE
   Group: 'Melee-Weapon'
-  Skills:
-  - skill:Generic_Weapon_Attack_MCLove32 @self ~onSwing 
-  - skill:Generic_Weapon_Attack_MCLove32 @self ~onAttack 
 
 OpenField_Weapon_アイロンスライムソード_MCLove32:
   Id: iron_sword 
@@ -157,10 +154,7 @@ OpenField_Weapon_アイロンスライムソード_MCLove32:
       Damage: 19 ADD 
       AttackSpeed: -0.6 MULTIPLY_BASE
   Group: 'Melee-Weapon'
-  Skills:
-  - skill:Generic_Weapon_Attack_MCLove32 @self ~onSwing 
-  - skill:Generic_Weapon_Attack_MCLove32 @self ~onAttack 
-
+  
 OpenField_Weapon_火炎レーザー_MCLove32:
   Id: iron_hoe
   Display: "&f火炎レーザー"
