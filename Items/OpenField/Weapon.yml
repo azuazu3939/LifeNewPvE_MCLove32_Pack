@@ -13,24 +13,9 @@ OpenField_Weapon_サイスオブデーモン_MCLove32:
   Skills:
   - skill:OpenField_Weapon_サイスオブデーモン_MCLove32_Skills @EIC{r=6;a=120;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]} ~onSwing ?targetinlineofsight ?canattack{d=8}
 
-OpenField_Weapon_ビットブレードTypeA_MCLove32:
-  Id: diamond_sword
-  Display: "&fビットブレードTypeA"
-  Lore: []
-  Model: 1000
-  Options: 
-    ItemVersion: 1
-    Unbreakable: true
-  Attributes:
-    MainHand:
-      Damage: 50 ADD   
-  Group: 'Sub-Skill-Weapon'
-  Skills:
-  - skill:OpenField_Weapon_ビットブレードTypeA_MCLove32_Skills @self ~onUse
-
-OpenField_Weapon_ビットブレードTypeB_MCLove32:
+OpenField_Weapon_ビットブレード_MCLove32:
   Id: netherite_sword
-  Display: "&fビットブレードTypeB"
+  Display: "&fビットブレード"
   Lore: []
   Model: 1000
   Options: 
@@ -41,26 +26,11 @@ OpenField_Weapon_ビットブレードTypeB_MCLove32:
       Damage: 50 ADD    
   Group: 'Sub-Skill-Weapon'
   Skills:
-  - skill:OpenField_Weapon_ビットブレードTypeB_MCLove32_Skills @self ~onUse
+  - skill:OpenField_Weapon_ビットブレード_MCLove32_Skills @self ~onUse
 
-OpenField_Weapon_ビットブレードTypeMA_MCLove32:
-  Id: diamond_sword
-  Display: "&fビットブレードTypeM/A"
-  Lore: []
-  Model: 1001
-  Options: 
-    ItemVersion: 1
-    Unbreakable: true
-  Attributes:
-    MainHand:
-      Damage: 50 ADD    
-  Group: "Main-Skill-Weapon"
-  Skills:
-  - skill:OpenField_Weapon_ビットブレードTypeMA_MCLove32_Skills @self ~onUse
-
-OpenField_Weapon_ビットブレードTypeMB_MCLove32:
+OpenField_Weapon_ビットブレードM_MCLove32:
   Id: netherite_sword
-  Display: "&fビットブレードTypeM/B"
+  Display: "&fビットブレードM"
   Lore: []
   Model: 1001
   Options: 
@@ -71,7 +41,7 @@ OpenField_Weapon_ビットブレードTypeMB_MCLove32:
       Damage: 50 ADD    
   Group: "Main-Skill-Weapon"
   Skills:
-  - skill:OpenField_Weapon_ビットブレードTypeMB_MCLove32_Skills @self ~onUse
+  - skill:OpenField_Weapon_ビットブレードM_MCLove32_Skills @self ~onUse
 
 OpenField_Weapon_サンドストーム_MCLove32:
   Id: bow
