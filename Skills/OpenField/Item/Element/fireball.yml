@@ -52,10 +52,9 @@ OpenField_Weapon_火炎弾_MCLove32_Skill_Location:
 
 OpenField_Weapon_火炎弾_MCLove32_Skill_Damage:
   Skills:
-  - damage{a="80 * <skill.var.size>";ii=true;pi=true;e=RED} @targetedTarget{c=[ - hasTag{t=Cancel} false ]} 
-  - addtag{t=Cancel} @targetedTarget{c=[ - hasTag{t=Cancel} false ]}
-  - removeTag{t=Cancel;delay=1} @targetedTarget{c=[ - hasTag{t=Cancel} true ]}
-
+  - damage{a="80 * <skill.var.size>";ii=true;pi=true;e=RED} @targetedTarget{c=[ - hasAura{n=Cancel} false ]} 
+  - aura{t=1;n=Cancel} @targetedTarget{c=[ - hasAura{n=Cancel} false ]} 
+ 
 OpenField_Weapon_火炎弾_MCLove32_Skill_Effects:
   Skills:
   - skill:OpenField_Weapon_火炎弾_MCLove32_Skill_EffectT1{repeat=3;repeatI=1}
