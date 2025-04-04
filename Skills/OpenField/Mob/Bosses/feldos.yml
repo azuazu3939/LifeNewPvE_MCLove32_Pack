@@ -30,7 +30,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process:
       - endprojectile @self ?hasTag{t=DOWN}
     ];
     oh=[
-      - damage{a=<skill.var.dmg>;pi=true;ii=true;e=RED}
+      - damage{a=<skill.var.dmg> * 2;pi=true;ii=true;e=RED}
     ];
     oe=[
       - missile{
@@ -40,7 +40,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process:
           - endprojectile @self ?hasTag{t=DOWN}
         ];
         oh=[
-          - damage{a=<skill.var.dmg>;pi=true;ii=true;e=RED}
+          - damage{a=<skill.var.dmg> * 2;pi=true;ii=true;e=RED}
         ];
         oe=[
           - setVar{var=skill.count;val="<skill.var.count> - 1";t=INTEGER} @self
@@ -66,7 +66,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish_Projectil
       - modifyprojectile{t=VELOCITY;v=1.025;a=MULTIPLY} @self
     ];
     oh=[
-      - damage{a="<skill.var.dmg> * 0.5";pi=true;ii=true;e=RED}
+      - damage{a="<skill.var.dmg> * 1.2";pi=true;ii=true;e=RED}
     ];
     v=10;i=1;g=0.5;sfo=2;syo=1;tyo=5;mr=12;hnp=true;c=[ - samefaction false ];vr=1.5;hr=1.5;
     ho=<skill.ho>;b=DISPLAY;mat=MAGMA_BLOCK;ps=1;rs=1;ys=1;scale=1,1,1} @forward

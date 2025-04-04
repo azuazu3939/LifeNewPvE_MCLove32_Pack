@@ -1,7 +1,7 @@
 Generic_Weapon_Attack_MCLove32:
   Cooldown: 0.1
   Skills:
-  - damage{a=1;pi=true;ii=true} @EIC{r=8;a=120;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
+  - damage{a=10;pi=true;ii=true} @EIC{r=8;a=120;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
   - sound{s=entity.player.attack.sweep;sc=PLAYERS} @self
 
 OpenField_Weapon_エアブラスタ_MCLove32_Skills:
@@ -40,7 +40,7 @@ OpenField_Weapon_エアブラスタ_MCLove32_SkillProcess:
       - e:p{p=crit;a=4;vs=0.5;hs=0.5;delay=2;audience=@self} @origin
     ];
     oh=[
-      - damage{a=0.8;ii=true;pi=true}
+      - damage{a=20;ii=true;pi=true}
       - throw{v=8;vy=2}
     ];
     hp=false;hnp=true;v=35;i=1;md=30;mr=25;se=false;sb=false;vr=1.5;hr=2;ho=<skill.ho>} @TL 
@@ -76,8 +76,8 @@ OpenField_Weapon_樹木剣_MCLove32_Skills:
       - setvar{var=skill.i;val="<skill.var.i> - 1";t=INTEGER} @self 
     ];
     oh=[ 
-      - damage{a=1.2;pi=true;ii=true;delay=<skill.var.i>} 
-      - damage{a=0.5;pi=true;ii=true;delay=<skill.var.i>}  0.5
+      - damage{a=120;pi=true;ii=true;delay=<skill.var.i>} 
+      - damage{a=50;pi=true;ii=true;delay=<skill.var.i>}  0.5
       - throw{v=5;vy=8;delay=<skill.var.i>}
       - heal{a=0.2;delay=<skill.var.i>} @self 
     ];
@@ -110,8 +110,8 @@ OpenField_Weapon_樹木剣_MCLove32_Skill_Process:
     ];
     oh=[
       - sound{s=entity.breeze.jump;p=0;v=1.25} 
-      - damage{a=0.6;pi=true;ii=true} 
-      - damage{a=0.25;pi=true;ii=true}  0.5
+      - damage{a=60;pi=true;ii=true} 
+      - damage{a=30;pi=true;ii=true}  0.5
       - throw{v=5;vy=8}
       - delay 15
       - throw{v=1;vy=-20}
@@ -145,7 +145,7 @@ OpenField_Weapon_風輪斬_MCLove32_Skills:
   - setVar{var=skill.radius;val="1";t=FLOAT;delay=20} @self 
   - projectile{
     oh=[
-      - damage{a=0.8 * <skill.var.radius>;pi=true;ii=true}
+      - damage{a=80 * <skill.var.radius>;pi=true;ii=true}
     ];
     ot=[
       - e:p{p=totem;a=3;audience=caster;s=0.5;vs=0.2;hs=2} @origin
@@ -194,14 +194,13 @@ OpenField_Weapon_氷剣_MCLove32_Skill_Process:
       - e:p{p=red_dust;c=#ffffff;a=1;audience=caster;s=0.5} @origin
     ];
     oh=[
-      - damage{a=0.4;pi=true;ii=true;e=BLUE}
-      - addtag{t=NO_DAMAGE} 
-      - removeTag{t=NO_DAMAGE;delay=5}
+      - damage{a=20;pi=true;ii=true;e=BLUE}
+      - aura{n=OpenField_Weapon_氷剣_MCLove32_Skill;t=5}
     ];
     conditions=[
       - isLiving true 
       - isMythicMob true
-      - hasTag{t=NO_DAMAGE} false
+      - hasAura{n=OpenField_Weapon_氷剣_MCLove32_Skill} false
     ];
     v=24;i=1;vr=1.5;r=1.5;hp=false;hnp=true;mr=20;md=24;tyo=1.2;
     b=MOB;mob=OpenField_util_氷塊_50_MCLove32;bmd=true;byo=0;bfo=0;
@@ -244,7 +243,7 @@ OpenField_Weapon_炎剣_MCLove32_Skill_Process:
       - skill:OpenField_Weapon_炎剣_MCLove32_Skill_Loop{count=<skill.count>} @origin
     ];
     oh=[
-      - damage{a=0.05;pi=true;ii=true;e=RED}
+      - damage{a=15;pi=true;ii=true;e=RED}
     ];
     conditions=[
       - isLiving true 
@@ -265,7 +264,7 @@ OpenField_Weapon_炎剣_MCLove32_Skill_Loop:
       - e:p{p=flame;a=1;audience=@self} @origin
     ];
     oh=[
-      - damage{a=8;pi=true;ii=true;e=RED}
+      - damage{a=30;pi=true;ii=true;e=RED}
     ];
     conditions=[
       - isLiving true 

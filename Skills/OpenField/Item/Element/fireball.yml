@@ -52,7 +52,7 @@ OpenField_Weapon_火炎弾_MCLove32_Skill_Location:
 
 OpenField_Weapon_火炎弾_MCLove32_Skill_Damage:
   Skills:
-  - damage{a="100 * <skill.var.size>";ii=true;pi=true;e=RED} @targetedTarget{c=[ - hasTag{t=Cancel} false ]} 
+  - damage{a="150 * <skill.var.size>";ii=true;pi=true;e=RED} @targetedTarget{c=[ - hasTag{t=Cancel} false ]} 
   - addtag{t=Cancel} @targetedTarget{c=[ - hasTag{t=Cancel} false ]}
   - removeTag{t=Cancel;delay=1} @targetedTarget{c=[ - hasTag{t=Cancel} true ]}
 

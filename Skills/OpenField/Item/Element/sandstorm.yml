@@ -19,7 +19,7 @@ OpenField_Weapon_サンドストーム_MCLove32_Skills:
     ot=[
       - skill{
         s=[
-          - damage{a=1;pi=true;ii=true;e=GREEN} 
+          - damage{a=5;pi=true;ii=true;e=GREEN} 
           - pull{v=3;to=true}
         ]} @ENO{r=5;limit=5;sort=RANDOM;c=[ - isLiving true - isMythicMob true ]}
       - setvar{var=skill.x;val="<random.float.-5to5>";t=FLOAT} @self 
