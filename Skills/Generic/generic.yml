@@ -265,7 +265,6 @@ Generic_MustDrop_MCLove32_Save:
   - setVar{k=skill.weight;a="<skill.weight<skill.var.count>> + <skill.var.weight|0>";t=INTEGER} @self
   - varAdd{k=skill.count;a=1} @self
   - setVar{k=skill.w<skill.var.count>;a="<skill.weight<skill.var.count>>";t=STRING} @self 
-   - delay 1
   - skill:Generic_MustDrop_MCLove32_Save @targetedTarget
 
 Generic_MustDrop_MCLove32_Load:
@@ -278,7 +277,6 @@ Generic_MustDrop_MCLove32_Load:
   - varAdd{k=skill.adder;a=1} @self
   - setVar{k=skill.v<skill.var.adder>;a="<skill.weight<skill.var.adder>> - <skill.var.rand>";t=INTEGER} @self
   - skill:Generic_MustDrop_MCLove32_Finish @targetedTarget ?varrange{k=skill.v<skill.var.adder>;r=>-1}
-  - delay 1
   - skill:Generic_MustDrop_MCLove32_Load @targetedTarget
 
 Generic_MustDrop_MCLove32_Finish:
