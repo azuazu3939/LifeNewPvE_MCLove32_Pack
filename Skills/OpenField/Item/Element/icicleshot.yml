@@ -47,7 +47,7 @@ OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_20:
       - isMythicMob true
     ];
     oh=[
-      - damage{a=15;ii=true;pi=true;e=BLUE}
+      - damage{a=0.6;ii=true;pi=true;e=BLUE}
     ];
     oe=[
       - sound{s=block.glass.break} @origin
@@ -70,7 +70,7 @@ OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_25:
       - isMythicMob true
     ];
     oh=[
-      - damage{a=18;ii=true;pi=true;e=BLUE}
+      - damage{a=0.8;ii=true;pi=true;e=BLUE}
     ];
     bulletType=MOB;mm=OpenField_Util_氷_50_MCLove32;
     bmd=true;byo=0;bfo=0;v=1;i=1;vr=2.5;r=2.5;hp=false;hnp=true;mr=28;md=60;
@@ -90,7 +90,7 @@ OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_30:
       - isMythicMob true
     ];
     oh=[
-      - damage{a=20;ii=true;pi=true;e=BLUE}
+      - damage{a=1;ii=true;pi=true;e=BLUE}
     ];
     bulletType=MOB;mm=OpenField_Util_氷塊_25_MCLove32;
     bmd=true;byo=0;bfo=0;v=1;i=1;vr=2.5;r=2.5;hp=false;hnp=true;mr=28;md=60;
@@ -110,7 +110,7 @@ OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_35:
       - isMythicMob true
     ];
     oh=[
-      - damage{a=30;ii=true;pi=true;e=BLUE}
+      - damage{a=1.2;ii=true;pi=true;e=BLUE}
     ];
     bulletType=MOB;mm=OpenField_Util_氷塊_50_MCLove32;
     bmd=true;byo=0;bfo=0;v=1;i=1;vr=2.5;r=2.5;hp=false;hnp=true;mr=28;md=60;
@@ -130,7 +130,7 @@ OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_40:
       - isMythicMob true
     ];
     oh=[
-      - damage{a=35;ii=true;pi=true;e=BLUE}
+      - damage{a=1.6;ii=true;pi=true;e=BLUE}
     ];
     bulletType=MOB;mm=OpenField_Util_青氷_25_MCLove32;
     bmd=true;byo=0;bfo=0;v=1;i=1;vr=2.5;r=2.5;hp=false;hnp=true;mr=28;md=60;
@@ -150,7 +150,7 @@ OpenField_Weapon_アイシクルショット_MCLove32_Skill_Process_45:
       - isMythicMob true
     ];
     oh=[
-      - damage{a=45;ii=true;pi=true;e=BLUE}
+      - damage{a=2;ii=true;pi=true;e=BLUE}
     ];
     bulletType=MOB;mm=OpenField_Util_青氷_50_MCLove32;
     bmd=true;byo=0;bfo=0;v=1;i=1;vr=2.5;r=2.5;hp=false;hnp=true;mr=28;md=60;

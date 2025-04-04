@@ -41,7 +41,7 @@ OpenField_Enemy_ハロウルフ_MCLove32:
   Health: 20
   Damage: 2
   Faction: wolf
-  Armor: 0
+  Armor: 40
   DamageModifiers:
   - SUFFOCATION 0
   - FALL 0
@@ -70,13 +70,14 @@ OpenField_Enemy_ハロウルフ_MCLove32:
   - specificfaction{f=sheep}
   Skills:
   - potion{t=SPEED;d=144000;l=1;p=false} @self ~onSpawn
+  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=20} @self ~onSpawn 
   - skill:Generic_Enemy_ウォーク追従_MCLove32{v=45} @self ~onTimer:20
 
 OpenField_Enemy_ハロウルフ_MCLove32_Leader:
   Template: OpenField_Enemy_ハロウルフ_MCLove32
   Health: 30
   Damage: 3
-  Armor: 0
+  Armor: 40
   Drops:
   - exp 30
   Variables:
@@ -91,7 +92,7 @@ OpenField_Enemy_ウィスピット_MCLove32:
   Type: ghast
   Health: 20
   Faction: mob
-  Armor: 0
+  Armor: 30
   Damage: 3
   Options:
     NoDamageTicks: 0
@@ -114,6 +115,7 @@ OpenField_Enemy_ウィスピット_MCLove32:
   - clear
   - gotoowner
   Skills:
+  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=15} @self ~onSpawn 
 
 
 OpenField_Enemy_フウィスピット_MCLove32:
@@ -122,7 +124,7 @@ OpenField_Enemy_フウィスピット_MCLove32:
   Type: bat
   Faction: mob
   Health: 30
-  Armor: 0
+  Armor: 30
   Damage: 5
   Options:
     NoDamageTicks: 0
@@ -147,6 +149,7 @@ OpenField_Enemy_フウィスピット_MCLove32:
   - moveTowardsTarget
   Skills:
   - summon{t=OpenField_Enemy_ウィスピット_MCLove32;a=3to5;r=0} @self ~onSpawn
+  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=15} @self ~onSpawn 
 
 OpenField_Enemy_羊獣カルーチェ_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
@@ -154,7 +157,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32:
   Type: sheep
   Health: 5950
   Faction: sheep
-  Armor: 0
+  Armor: 100
   Damage: 125
   Options:
     NoDamageTicks: 0
@@ -188,7 +191,8 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32:
     Style: SEGMENTED_12
   Skills:
   - raidBoss @self ~onSpawn 
-  - addtag{t=BOSS} @self ~onSpawn 
+  - addtag{t=BOSS} @self ~onSpawn
+  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=50} @self ~onSpawn 
 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=32} @self ~onEnterCombat
   - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=240;shield_break=40;heal_percent=0.01} @self ~onEntercombat
@@ -214,7 +218,7 @@ OpenField_Enemy_黒小羊_MCLove32:
   Type: sheep
   Health: 10
   Faction: mob
-  Armor: 0
+  Armor: 80
   Damage: 0
   Options:
     NoDamageTicks: 0
@@ -238,7 +242,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32:
   Display: "<#15d455>&l風牙狼ウィデラー&R"
   Type: wolf
   Health: 7950
-  Armor: 0
+  Armor: 70
   Faction: wolf
   Damage: 11
   Options:
@@ -273,6 +277,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32:
   Skills:
   - raidBoss @self ~onSpawn 
   - addtag{t=BOSS} @self ~onSpawn 
+  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=35} @self ~onSpawn 
 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=32} @self ~onEnterCombat
   - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=140;shield_break=70;heal_percent=0.03} @self ~onEntercombat
@@ -296,7 +301,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32:
   Display: "<#c20a0a>&l焔獣フェルドス&R"
   Type: hoglin
   Health: 3950
-  Armor: 0
+  Armor: 60
   Faction: hoglin
   Damage: 13
   Options:
@@ -332,7 +337,8 @@ OpenField_Enemy_焔獣フェルドス_MCLove32:
     Style: SEGMENTED_12
   Skills:
   - raidBoss @self ~onSpawn 
-  - addtag{t=BOSS} @self ~onSpawn 
+  - addtag{t=BOSS} @self ~onSpawn
+  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=30} @self ~onSpawn 
 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=32} @self ~onEnterCombat
   - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=200;shield_break=100;heal_percent=0.005} @self ~onEntercombat
@@ -356,7 +362,7 @@ OpenField_Enemy_踊る巨人_MCLove32:
   Display: "<#cf55ff>&l踊る巨人&R"
   Type: husk
   Health: 9950
-  Armor: 0
+  Armor: 100
   Faction: husk
   Damage: 15
   Equipment:
@@ -400,6 +406,7 @@ OpenField_Enemy_踊る巨人_MCLove32:
   - raidBoss @self ~onSpawn
   - addtag{t=BOSS} @self ~onSpawn 
   - setVar{k=world.count;a="0";t=INTEGER;save=true} @self ~onSpawn 
+  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=50} @self ~onSpawn 
 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=32} @self ~onEnterCombat
   - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=300;shield_break=60;heal_percent=0.01} @self ~onEntercombat
