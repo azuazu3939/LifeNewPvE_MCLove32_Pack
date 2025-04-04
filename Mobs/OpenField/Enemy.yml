@@ -377,7 +377,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32:
   - skill:OpenField_Util_Bosses_MCLove32_KillCount @self ~onDeath 
   - remove{delay=10} @self ~onDeath
 
-  - skill:Generic_MustDrop_MCLove32_4{
+  - skill:Generic_MustDrop_MCLove32_3{
     mmid1=OpenField_Material_焔獣の炎殻_MCLove32;amount1=1;weight1=14; 
     mmid3=OpenField_Material_焔獣の炎牙_MCLove32;amount3=1;weight3=10; 
     mmid4=OpenField_Material_炎核_MCLove32;amount4=1;weight4=1; 
