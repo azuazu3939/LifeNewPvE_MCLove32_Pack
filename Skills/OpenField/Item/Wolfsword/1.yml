@@ -26,7 +26,7 @@ OpenField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity:
   - leap{v=<skill.var.v>} @TL{cpitch=min(<caster.l.pitch>, 40)} 
   - setFallDistance{a=0} @self
   - setvar{var=skill.v;val="<skill.var.v> * 0.925";t=INTEGER} @self
-  - damage{a=0.5;ii=true;pi=true} @EIR{r=8;ignore=players;c=[ - isLiving true - isMythicMob true ]}
+  - damage{a=10;ii=true;pi=true} @EIR{r=8;ignore=players;c=[ - isLiving true - isMythicMob true ]}
   - sound{s=entity.wolf.growl;v=0.25;p=0;cd=2} @self 0.5
   - projectile{
     ot=[

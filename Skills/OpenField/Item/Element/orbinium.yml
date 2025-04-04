@@ -46,7 +46,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷:
       - missile{in=4;v=16;fo=true;hp=false;hnp=true;vr=3;hr=3;i=1;md=100;mr=32;syo=0;sfo=0;sb=false;
         b=MOB;mob=OpenField_Util_氷_50_MCLove32;bmd=true;byo=0;bfo=0;
         oh=[
-          - damage{a=0.35;pi=true;ii=true;e=BLUE}
+          - damage{a=10;pi=true;ii=true;e=BLUE}
           - sound{s=entity.splash_potion.break} @origin
         ];
         ot=[
@@ -87,7 +87,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_氷塊:
       - missile{in=4;v=16;fo=true;hp=false;hnp=true;vr=3;hr=3;i=1;md=100;mr=32;syo=0;sfo=0;sb=false;
         b=MOB;mob=OpenField_Util_氷塊_50_MCLove32;bmd=true;byo=0;bfo=0;
         oh=[
-          - damage{a=0.5;pi=true;ii=true;e=BLUE}
+          - damage{a=15;pi=true;ii=true;e=BLUE}
           - sound{s=entity.splash_potion.break} @origin
         ];
         ot=[
@@ -128,7 +128,7 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_青氷:
       - missile{in=4;v=16;fo=true;hp=false;hnp=true;vr=3;hr=3;i=1;md=100;mr=32;syo=0;sfo=0;sb=false;
         b=MOB;mob=OpenField_Util_青氷_50_MCLove32;bmd=true;byo=0;bfo=0;
         oh=[
-          - damage{a=30;pi=true;ii=true;e=BLUE}
+          - damage{a=20;pi=true;ii=true;e=BLUE}
           - sound{s=entity.splash_potion.break} @origin
         ];
         ot=[
@@ -173,28 +173,26 @@ OpenField_Weapon_オービニウム_MCLove32_Skill_Hit1:
   TargetConditions:
   - isLiving true 
   - isMythicMob true
-  - hasTag{t=Cancel_1} false
+  - hasAura{n=Cancel_1} false 
   Skills:
-  - damage{a=0.3;pi=true;ii=true;e=BLUE}
-  - addtag{t=Cancel_1} 
-  - removetag{t=Cancel_1;delay=5} 
+  - aura{t=5;n=Cancel_1}
+  - damage{a=15;pi=true;ii=true;e=BLUE}
+
 
 OpenField_Weapon_オービニウム_MCLove32_Skill_Hit2:
   TargetConditions:
   - isLiving true 
   - isMythicMob true
-  - hasTag{t=Cancel_2} false
+  - hasAura{n=Cancel_2} false 
   Skills:
-  - damage{a=0.5;pi=true;ii=true;e=BLUE}
-  - addtag{t=Cancel_2} 
-  - removetag{t=Cancel_2;delay=5} 
+  - aura{t=5;n=Cancel_2}
+  - damage{a=20;pi=true;ii=true;e=BLUE}
 
 OpenField_Weapon_オービニウム_MCLove32_Skill_Hit3:
   TargetConditions:
   - isLiving true 
   - isMythicMob true
-  - hasTag{t=Cancel_3} false
+  - hasAura{n=Cancel_3} false 
   Skills:
-  - damage{a=1;pi=true;ii=true;e=BLUE}
-  - addtag{t=Cancel_3} 
-  - removetag{t=Cancel_3;delay=5} 
+  - aura{t=5;n=Cancel_3}
+  - damage{a=30;pi=true;ii=true;e=BLUE}
