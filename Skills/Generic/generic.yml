@@ -244,7 +244,7 @@ Generic_MustDrop_MCLove32_Base:
   Skills:
   - cmd{c="mm items give <target.name> <skill.mmid1> <skill.amount1>"} @targetedTarget
 
-#5種類まで設定可能 (mmid1、amount1、weight1)、(mmid2、amount2、weight2)、...
+#設定可能なパラメータ (mmid1、amount1、weight1)、(mmid2、amount2、weight2)、...
 Generic_MustDrop_MCLove32:
   Skills:
   - setVar{k=skill.count;a="1";t=INTEGER} @self
