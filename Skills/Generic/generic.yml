@@ -240,12 +240,12 @@ Generic_Drop_MCLove32:
   - cmd{c="mm items give <target.name> <skill.mmid> <skill.amount>"} @targetedTarget ?chance{c="<skill.chance>"}
 
 #
-Generic_MustDrop_MCLove32_1:
+Generic_MustDrop_MCLove32_Base:
   Skills:
   - cmd{c="mm items give <target.name> <skill.mmid1> <skill.amount1>"} @targetedTarget
 
-#
-Generic_MustDrop_MCLove32_5:
+#5種類まで設定可能 (mmid1、amount1、weight1)、(mmid2、amount2、weight2)、...
+Generic_MustDrop_MCLove32:
   Skills:
   - setVar{k=skill.w1;a="<skill.weight1>";t=STRING} @self
   - setVar{k=skill.w2;a="<skill.weight2>";t=STRING} @self
@@ -253,7 +253,7 @@ Generic_MustDrop_MCLove32_5:
   - setVar{k=skill.w4;a="<skill.weight4>";t=STRING} @self
   - setVar{k=skill.w5;a="<skill.weight5>";t=STRING} @self
 
-  - skill:Generic_MustDrop_MCLove32_1{mmid1=<skill.mmid1>;amount1=<skill.amount1>} @targetedTarget ?varequals{k=skill.w1;v="[Undefined]"} ?varequals{k=skill.w2;v="[Undefined]"} ?varequals{k=skill.w3;v="[Undefined]"} ?varequals{k=skill.w4;v="[Undefined]"} ?varequals{k=skill.w5;v="[Undefined]"}
+  - skill:Generic_MustDrop_MCLove32_Base{mmid1=<skill.mmid1>;amount1=<skill.amount1>} @targetedTarget ?varequals{k=skill.w1;v="[Undefined]"} ?varequals{k=skill.w2;v="[Undefined]"} ?varequals{k=skill.w3;v="[Undefined]"} ?varequals{k=skill.w4;v="[Undefined]"} ?varequals{k=skill.w5;v="[Undefined]"}
   - return ?varequals{k=skill.w1;v="[Undefined]"} ?varequals{k=skill.w2;v="[Undefined]"} ?varequals{k=skill.w3;v="[Undefined]"} ?varequals{k=skill.w4;v="[Undefined]"} ?varequals{k=skill.w5;v="[Undefined]"}
 
   - setVar{k=skill.weight;a="<skill.weight1>";t=INTEGER} @self ?!varequals{k=skill.w1;v="[Undefined]"} ?varequals{k=skill.w2;v="[Undefined]"} ?varequals{k=skill.w3;v="[Undefined]"} ?varequals{k=skill.w4;v="[Undefined]"} ?varequals{k=skill.w5;v="[Undefined]"}
@@ -265,31 +265,31 @@ Generic_MustDrop_MCLove32_5:
 
   - setVar{k=skill.rand;a="random(1, <skill.var.weight>) + 1";t=INTEGER} @self
   - setVar{k=skill.v1;a="<skill.weight1> - <skill.var.rand>";t=INTEGER} @self
-  - skill:Generic_MustDrop_MCLove32_1{mmid1=<skill.mmid1>;amount1=<skill.amount1>} @targetedTarget ?varrange{k=skill.v1;r=>0}
+  - skill:Generic_MustDrop_MCLove32_Base{mmid1=<skill.mmid1>;amount1=<skill.amount1>} @targetedTarget ?varrange{k=skill.v1;r=>0}
   - return ?varrange{k=skill.v1;r=>0}
 
-  - skill:Generic_MustDrop_MCLove32_1{mmid1=<skill.mmid2>;amount1=<skill.amount2>} @targetedTarget ?!varequals{k=skill.w1;v="[Undefined]"} ?varequals{k=skill.w2;v="[Undefined]"} ?varequals{k=skill.w3;v="[Undefined]"} ?varequals{k=skill.w4;v="[Undefined]"} ?varequals{k=skill.w5;v="[Undefined]"}
+  - skill:Generic_MustDrop_MCLove32_Base{mmid1=<skill.mmid2>;amount1=<skill.amount2>} @targetedTarget ?!varequals{k=skill.w1;v="[Undefined]"} ?varequals{k=skill.w2;v="[Undefined]"} ?varequals{k=skill.w3;v="[Undefined]"} ?varequals{k=skill.w4;v="[Undefined]"} ?varequals{k=skill.w5;v="[Undefined]"}
   - return ?!varequals{k=skill.w1;v="[Undefined]"} ?varequals{k=skill.w2;v="[Undefined]"} ?varequals{k=skill.w3;v="[Undefined]"} ?varequals{k=skill.w4;v="[Undefined]"} ?varequals{k=skill.w5;v="[Undefined]"}
 
   - setVar{k=skill.rand;a="<skill.var.rand> - <skill.weight1>";t=INTEGER} @self
   - setVar{k=skill.v2;a="<skill.weight2> - <skill.var.rand>";t=INTEGER} @self
-  - skill:Generic_MustDrop_MCLove32_1{mmid1=<skill.mmid2>;amount1=<skill.amount2>} @targetedTarget ?varrange{k=skill.v2;r=>0}
+  - skill:Generic_MustDrop_MCLove32_Base{mmid1=<skill.mmid2>;amount1=<skill.amount2>} @targetedTarget ?varrange{k=skill.v2;r=>0}
   - return ?varrange{k=skill.v2;r=>0}
 
-  - skill:Generic_MustDrop_MCLove32_1{mmid1=<skill.mmid3>;amount1=<skill.amount3>} @targetedTarget ?!varequals{k=skill.w1;v="[Undefined]"} ?!varequals{k=skill.w2;v="[Undefined]"} ?varequals{k=skill.w3;v="[Undefined]"} ?varequals{k=skill.w4;v="[Undefined]"} ?varequals{k=skill.w5;v="[Undefined]"}
+  - skill:Generic_MustDrop_MCLove32_Base{mmid1=<skill.mmid3>;amount1=<skill.amount3>} @targetedTarget ?!varequals{k=skill.w1;v="[Undefined]"} ?!varequals{k=skill.w2;v="[Undefined]"} ?varequals{k=skill.w3;v="[Undefined]"} ?varequals{k=skill.w4;v="[Undefined]"} ?varequals{k=skill.w5;v="[Undefined]"}
   - return ?!varequals{k=skill.w1;v="[Undefined]"} ?!varequals{k=skill.w2;v="[Undefined]"} ?varequals{k=skill.w3;v="[Undefined]"} ?varequals{k=skill.w4;v="[Undefined]"} ?varequals{k=skill.w5;v="[Undefined]"}
 
   - setVar{k=skill.rand;a="<skill.var.rand> - <skill.weight2>";t=INTEGER} @self
   - setVar{k=skill.v3;a="<skill.weight3> - <skill.var.rand>";t=INTEGER} @self
-  - skill:Generic_MustDrop_MCLove32_1{mmid1=<skill.mmid3>;amount1=<skill.amount3>} @targetedTarget ?varrange{k=skill.v3;r=>0}
+  - skill:Generic_MustDrop_MCLove32_Base{mmid1=<skill.mmid3>;amount1=<skill.amount3>} @targetedTarget ?varrange{k=skill.v3;r=>0}
   - return ?varrange{k=skill.v3;r=>0}
 
-  - skill:Generic_MustDrop_MCLove32_1{mmid1=<skill.mmid4>;amount1=<skill.amount4>} @targetedTarget ?!varequals{k=skill.w1;v="[Undefined]"} ?!varequals{k=skill.w2;v="[Undefined]"} ?!varequals{k=skill.w3;v="[Undefined]"} ?varequals{k=skill.w4;v="[Undefined]"} ?varequals{k=skill.w5;v="[Undefined]"}
+  - skill:Generic_MustDrop_MCLove32_Base{mmid1=<skill.mmid4>;amount1=<skill.amount4>} @targetedTarget ?!varequals{k=skill.w1;v="[Undefined]"} ?!varequals{k=skill.w2;v="[Undefined]"} ?!varequals{k=skill.w3;v="[Undefined]"} ?varequals{k=skill.w4;v="[Undefined]"} ?varequals{k=skill.w5;v="[Undefined]"}
   - return ?!varequals{k=skill.w1;v="[Undefined]"} ?!varequals{k=skill.w2;v="[Undefined]"} ?!varequals{k=skill.w3;v="[Undefined]"} ?varequals{k=skill.w4;v="[Undefined]"} ?varequals{k=skill.w5;v="[Undefined]"}
 
   - setVar{k=skill.rand;a="<skill.var.rand> - <skill.weight3>";t=INTEGER} @self
   - setVar{k=skill.v4;a="<skill.weight4> - <skill.var.rand>";t=INTEGER} @self
-  - skill:Generic_MustDrop_MCLove32_1{mmid1=<skill.mmid4>;amount1=<skill.amount4>} @targetedTarget ?varrange{k=skill.v4;r=>0}
+  - skill:Generic_MustDrop_MCLove32_Base{mmid1=<skill.mmid4>;amount1=<skill.amount4>} @targetedTarget ?varrange{k=skill.v4;r=>0}
   - return ?varrange{k=skill.v4;r=>0}
 
-  - skill:Generic_MustDrop_MCLove32_1{mmid1=<skill.mmid5>;amount1=<skill.amount5>} @targetedTarget 
+  - skill:Generic_MustDrop_MCLove32_Base{mmid1=<skill.mmid5>;amount1=<skill.amount5>} @targetedTarget 
