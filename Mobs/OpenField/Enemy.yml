@@ -12,6 +12,7 @@ OpenField_Enemy_Abstract_Generic:
     NoDamageTicks: 0
     VisibleByDefault: true 
     NoAI: false 
+    PreventOtherDrops: true
     PreventSlimeSplit: true
     NoGravity: false
     PreventMobKillDrops: true 
