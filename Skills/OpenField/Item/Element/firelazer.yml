@@ -1,9 +1,9 @@
 OpenField_Weapon_火炎レーザー_MCLove32_Skills:
-  Cooldown: 10
+  Cooldown: 20
   Conditions:
   - wearing{s=HAND;m=OpenField_Weapon_火炎レーザー_MCLove32} true 
   - materialIsOnCooldown{m=iron_hoe} false 
-  - hasMana{a=>150;
+  - hasMana{a=>200;
     onFail=[
       - message{m="&cマナが足りません。"} @self 
     ]} 
@@ -11,9 +11,9 @@ OpenField_Weapon_火炎レーザー_MCLove32_Skills:
       - message{m="&cサブウェポン共通CT中です。"} @self 
     ]} false  
   Skills:
-  - modifyMana{a=-150} @self 
+  - modifyMana{a=-200} @self 
   - aura{n=サブウェポン;i=20;rd=true;t=60} @self  
-  - setMaterialCooldown{d=200;m=iron_hoe} @self
+  - setMaterialCooldown{d=400;m=iron_hoe} @self
   - setVar{var=skill.x;val="<life.l.x>";t=FLOAT} @TL{d=40}
   - setVar{var=skill.y;val="<life.l.y>";t=FLOAT} @TL{d=40}
   - setVar{var=skill.z;val="<life.l.z>";t=FLOAT} @TL{d=40}
