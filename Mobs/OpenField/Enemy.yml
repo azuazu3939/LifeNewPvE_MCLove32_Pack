@@ -218,7 +218,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32:
   - skill:Generic_Enemy_MCLove32_SHOW_RANKING{lim=5;range=48} @self ~onDeath 
   - skill:OpenField_Util_Bosses_MCLove32_KillCount @self ~onDeath
 
-  - skill:Generic_MustDrop_MCLove32_4{
+  - skill:Generic_MustDrop_MCLove32_5{
     mmid1=OpenField_Material_羊獣の羊毛_MCLove32;amount1=1;weight1=10;
     mmid2=OpenField_Material_羊獣の骨_MCLove32;amount2=1;weight2=8;
     mmid3=OpenField_Material_羊獣の頭_MCLove32;amount3=1;weight3=6;
@@ -309,7 +309,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32:
   - skill:Generic_Enemy_MCLove32_SHOW_RANKING{lim=5;range=48} @self ~onDeath 
   - skill:OpenField_Util_Bosses_MCLove32_KillCount @self ~onDeath 
 
-  - skill:Generic_MustDrop_MCLove32_4{
+  - skill:Generic_MustDrop_MCLove32_5{
     mmid1=OpenField_Material_風牙狼の皮_MCLove32;amount1=1;weight1=10;
     mmid2=OpenField_Material_風牙狼の骨_MCLove32;amount2=1;weight2=8;
     mmid3=OpenField_Material_風牙狼の牙_MCLove32;amount3=1;weight3=6;
@@ -377,7 +377,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32:
   - skill:OpenField_Util_Bosses_MCLove32_KillCount @self ~onDeath 
   - remove{delay=10} @self ~onDeath
 
-  - skill:Generic_MustDrop_MCLove32_3{
+  - skill:Generic_MustDrop_MCLove32_5{
     mmid1=OpenField_Material_焔獣の炎殻_MCLove32;amount1=1;weight1=14;
     mmid2=OpenField_Material_焔獣の炎牙_MCLove32;amount2=1;weight2=10;
     mmid3=OpenField_Material_炎核_MCLove32;amount3=1;weight3=1;
