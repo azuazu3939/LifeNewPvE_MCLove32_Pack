@@ -254,3 +254,17 @@ OpenField_Weapon_炎剣_MCLove32:
   Group: 'Main-Skill-Weapon'
   Skills:
   - skill:OpenField_Weapon_炎剣_MCLove32_Skills @self ~onUse
+
+OpenField_Admin_Kill_MCLove32:
+  Id: stick
+  Display: "&c&lAdmimSword"
+  Lore: []
+  Options:
+    ItemVersion: 1
+    Unbreakable: true 
+  Attributes:
+    MainHand:
+      Damage: 999999999999 ADD  
+  Group: 'Main-Weapon'
+  Skills:
+  - damage{a=<caster.damage>;pi=true;ii=true} @trigger ~onInteract 
