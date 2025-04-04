@@ -1,5 +1,5 @@
 PvE_Armor_ビギンズ_MCLove32_H:
-  Id: dimaond_helemt
+  Id: diamond_helemt
   Display: "&fビギンズ-ヘルム"
   Lore: []
   Model: 100
@@ -18,7 +18,7 @@ PvE_Armor_ビギンズ_MCLove32_H:
   Group: 'Armor'
 
 PvE_Armor_ビギンズ_MCLove32_C:
-  Id: dimaond_chestplate
+  Id: diamond_chestplate
   Display: "&fビギンズ-チェスト"
   Lore: []
   Model: 100
@@ -36,7 +36,7 @@ PvE_Armor_ビギンズ_MCLove32_C:
   Group: 'Armor'
 
 PvE_Armor_ビギンズ_MCLove32_L:
-  Id: dimaond_leggings
+  Id: diamond_leggings
   Display: "&fビギンズ-レグス"
   Lore: []
   Model: 100
@@ -55,7 +55,7 @@ PvE_Armor_ビギンズ_MCLove32_L:
   Group: 'Armor'
 
 PvE_Armor_ビギンズ_MCLove32_B:
-  Id: dimaond_boots
+  Id: diamond_boots
   Display: "&fビギンズ-ブーツ"
   Lore: []
   Model: 100
