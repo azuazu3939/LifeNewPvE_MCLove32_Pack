@@ -262,7 +262,6 @@ Generic_MustDrop_MCLove32:
   - setVar{k=skill.weight;a="<skill.weight4> + <skill.var.weight>";t=INTEGER} @self ?!varequals{k=skill.w1;v="[Undefined]"} ?!varequals{k=skill.w2;v="[Undefined]"} ?!varequals{k=skill.w3;v="[Undefined]"} ?!varequals{k=skill.w4;v="[Undefined]"} 
   - setVar{k=skill.weight;a="<skill.weight5> + <skill.var.weight>";t=INTEGER} @self ?!varequals{k=skill.w1;v="[Undefined]"} ?!varequals{k=skill.w2;v="[Undefined]"} ?!varequals{k=skill.w3;v="[Undefined]"} ?!varequals{k=skill.w4;v="[Undefined]"} ?!varequals{k=skill.w5;v="[Undefined]"}
 
-
   - setVar{k=skill.rand;a="random(1, <skill.var.weight>) + 1";t=INTEGER} @self
   - setVar{k=skill.v1;a="<skill.weight1> - <skill.var.rand>";t=INTEGER} @self
   - skill:Generic_MustDrop_MCLove32_Base{mmid1=<skill.mmid1>;amount1=<skill.amount1>} @targetedTarget ?varrange{k=skill.v1;r=>0}
