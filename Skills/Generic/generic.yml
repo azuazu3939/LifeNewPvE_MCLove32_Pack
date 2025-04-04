@@ -249,10 +249,11 @@ Generic_MustDrop_MCLove32_2:
   Skills:
   - setVar{k=skill.weight;a="<skill.weight1> + <skill.weight2>";t=INTEGER} @self
   - setVar{k=skill.rand;a="random(1, <skill.var.weight>) + 1";t=INTEGER} @self
-  - cmd{c="mm items give <target.name> <skill.mmid1> <skill.amount1>"} @targetedTarget ?varrange{k=skill.rand;r=>0}
+  - setVar{k=skill.v1;a="<skill.weight1> - <skill.var.rand>";t=INTEGER} @self
+  - skill:Generic_MustDrop_MCLove32_1{mmid1=<skill.mmid1>;amount1=<skill.amount1>} @targetedTarget ?varrange{k=skill.v1;r=>0}
   - return ?varrange{k=skill.v1;r=>0}
 
-  - cmd{c="mm items give <target.name> <skill.mmid2> <skill.amount2>"} @targetedTarget
+  - skill:Generic_MustDrop_MCLove32_1{mmid1=<skill.mmid2>;amount1=<skill.amount2>} @targetedTarget 
 
 #
 Generic_MustDrop_MCLove32_3:
@@ -260,15 +261,15 @@ Generic_MustDrop_MCLove32_3:
   - setVar{k=skill.weight;a="<skill.weight1> + <skill.weight2> + <skill.weight3>";t=INTEGER} @self
   - setVar{k=skill.rand;a="random(1, <skill.var.weight>) + 1";t=INTEGER} @self
   - setVar{k=skill.v1;a="<skill.weight1> - <skill.var.rand>";t=INTEGER} @self
-  - cmd{c="mm items give <target.name> <skill.mmid1> <skill.amount1>"} @targetedTarget ?varrange{k=skill.v1;r=>0}
+  - skill:Generic_MustDrop_MCLove32_1{mmid1=<skill.mmid1>;amount1=<skill.amount1>} @targetedTarget ?varrange{k=skill.v1;r=>0}
   - return ?varrange{k=skill.v1;r=>0}
 
   - setVar{k=skill.rand;a="<skill.var.rand> - <skill.weight1>";t=INTEGER} @self
   - setVar{k=skill.v2;a="<skill.weight2> - <skill.var.rand>";t=INTEGER} @self
-  - cmd{c="mm items give <target.name> <skill.mmid2> <skill.amount2>"} @targetedTarget ?varrange{k=skill.v2;r=>0}
+  - skill:Generic_MustDrop_MCLove32_1{mmid1=<skill.mmid2>;amount1=<skill.amount2>} @targetedTarget ?varrange{k=skill.v2;r=>0}
   - return ?varrange{k=skill.v2;r=>0}
 
-  - cmd{c="mm items give <target.name> <skill.mmid3> <skill.amount3>"} @targetedTarget
+  - skill:Generic_MustDrop_MCLove32_1{mmid1=<skill.mmid3>;amount1=<skill.amount3>} @targetedTarget 
 
 #
 Generic_MustDrop_MCLove32_4:
@@ -276,20 +277,23 @@ Generic_MustDrop_MCLove32_4:
   - setVar{k=skill.weight;a="<skill.weight1> + <skill.weight2> + <skill.weight3> + <skill.weight4>";t=INTEGER} @self
   - setVar{k=skill.rand;a="random(1, <skill.var.weight>) + 1";t=INTEGER} @self
   - setVar{k=skill.v1;a="<skill.weight1> - <skill.var.rand>";t=INTEGER} @self
-  - cmd{c="mm items give <target.name> <skill.mmid1> <skill.amount1>"} @targetedTarget ?varrange{k=skill.v1;r=>0}
+  - skill:Generic_MustDrop_MCLove32_1{mmid1=<skill.mmid1>;amount1=<skill.amount1>} @targetedTarget ?varrange{k=skill.v1;r=>0}
   - return ?varrange{k=skill.v1;r=>0}
+  - message{m="1"} @PIR{r=32}
 
   - setVar{k=skill.rand;a="<skill.var.rand> - <skill.weight1>";t=INTEGER} @self
   - setVar{k=skill.v2;a="<skill.weight2> - <skill.var.rand>";t=INTEGER} @self
-  - cmd{c="mm items give <target.name> <skill.mmid2> <skill.amount2>"} @targetedTarget ?varrange{k=skill.v2;r=>0}
+  - skill:Generic_MustDrop_MCLove32_1{mmid1=<skill.mmid2>;amount1=<skill.amount2>} @targetedTarget ?varrange{k=skill.v2;r=>0}
   - return ?varrange{k=skill.v2;r=>0}
+  - message{m="2"} @PIR{r=32}
 
   - setVar{k=skill.rand;a="<skill.var.rand> - <skill.weight2>";t=INTEGER} @self
   - setVar{k=skill.v3;a="<skill.weight3> - <skill.var.rand>";t=INTEGER} @self
-  - cmd{c="mm items give <target.name> <skill.mmid3> <skill.amount3>"} @targetedTarget ?varrange{k=skill.v3;r=>0}
+  - skill:Generic_MustDrop_MCLove32_1{mmid1=<skill.mmid3>;amount1=<skill.amount3>} @targetedTarget ?varrange{k=skill.v3;r=>0}
   - return ?varrange{k=skill.v3;r=>0}
+  - message{m="3"} @PIR{r=32}
 
-  - cmd{c="mm items give <target.name> <skill.mmid4> <skill.amount4>"} @targetedTarget
+  - skill:Generic_MustDrop_MCLove32_1{mmid1=<skill.mmid4>;amount1=<skill.amount4>} @targetedTarget 
 
 #
 Generic_MustDrop_MCLove32_5:
@@ -297,22 +301,22 @@ Generic_MustDrop_MCLove32_5:
   - setVar{k=skill.weight;a="<skill.weight1> + <skill.weight2> + <skill.weight3> + <skill.weight4> + <skill.weight5>";t=INTEGER} @self
   - setVar{k=skill.rand;a="random(1, <skill.var.weight>) + 1";t=INTEGER} @self
   - setVar{k=skill.v1;a="<skill.weight1> - <skill.var.rand>";t=INTEGER} @self
-  - cmd{c="mm items give <target.name> <skill.mmid1> <skill.amount1>"} @targetedTarget ?varrange{k=skill.v1;r=>0}
+  - skill:Generic_MustDrop_MCLove32_1{mmid1=<skill.mmid1>;amount1=<skill.amount1>} @targetedTarget ?varrange{k=skill.v1;r=>0}
   - return ?varrange{k=skill.v1;r=>0}
 
   - setVar{k=skill.rand;a="<skill.var.rand> - <skill.weight1>";t=INTEGER} @self
   - setVar{k=skill.v2;a="<skill.weight2> - <skill.var.rand>";t=INTEGER} @self
-  - cmd{c="mm items give <target.name> <skill.mmid2> <skill.amount2>"} @targetedTarget ?varrange{k=skill.v2;r=>0}
+  - skill:Generic_MustDrop_MCLove32_1{mmid1=<skill.mmid2>;amount1=<skill.amount2>} @targetedTarget ?varrange{k=skill.v2;r=>0}
   - return ?varrange{k=skill.v2;r=>0}
 
   - setVar{k=skill.rand;a="<skill.var.rand> - <skill.weight2>";t=INTEGER} @self
   - setVar{k=skill.v3;a="<skill.weight3> - <skill.var.rand>";t=INTEGER} @self
-  - cmd{c="mm items give <target.name> <skill.mmid3> <skill.amount3>"} @targetedTarget ?varrange{k=skill.v3;r=>0}
+  - skill:Generic_MustDrop_MCLove32_1{mmid1=<skill.mmid3>;amount1=<skill.amount3>} @targetedTarget ?varrange{k=skill.v3;r=>0}
   - return ?varrange{k=skill.v3;r=>0}
 
   - setVar{k=skill.rand;a="<skill.var.rand> - <skill.weight3>";t=INTEGER} @self
   - setVar{k=skill.v4;a="<skill.weight4> - <skill.var.rand>";t=INTEGER} @self
-  - cmd{c="mm items give <target.name> <skill.mmid4> <skill.amount4>"} @targetedTarget ?varrange{k=skill.v4;r=>0}
+  - skill:Generic_MustDrop_MCLove32_1{mmid1=<skill.mmid4>;amount1=<skill.amount4>} @targetedTarget ?varrange{k=skill.v4;r=>0}
   - return ?varrange{k=skill.v4;r=>0}
 
-  - cmd{c="mm items give <target.name> <skill.mmid5> <skill.amount5>"} @targetedTarget
+  - skill:Generic_MustDrop_MCLove32_1{mmid1=<skill.mmid5>;amount1=<skill.amount5>} @targetedTarget 
