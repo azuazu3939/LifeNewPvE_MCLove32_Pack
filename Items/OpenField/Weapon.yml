@@ -55,9 +55,6 @@ OpenField_Weapon_ビットブレードTypeMA_MCLove32:
     MainHand:
       Damage: 50 ADD    
   Group: "Main-Skill-Weapon"
-  Attributes:
-    MainHand:
-      Damage: 7
   Skills:
   - skill:OpenField_Weapon_ビットブレードTypeMA_MCLove32_Skills @self ~onUse
 
@@ -73,9 +70,6 @@ OpenField_Weapon_ビットブレードTypeMB_MCLove32:
     MainHand:
       Damage: 50 ADD    
   Group: "Main-Skill-Weapon"
-  Attributes:
-    MainHand:
-      Damage: 9
   Skills:
   - skill:OpenField_Weapon_ビットブレードTypeMB_MCLove32_Skills @self ~onUse
 
