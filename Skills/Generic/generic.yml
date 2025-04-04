@@ -250,7 +250,7 @@ Generic_MustDrop_MCLove32:
   - setVar{k=skill.count;a="1";t=INTEGER} @self
   - setVar{k=skill.w<skill.var.count>;a="<skill.weight<skill.var.count>>";t=STRING} @self 
   - setVar{k=skill.end;a="0";t=STRING} @self
-  - skill:Generic_MustDrop_MCLove32_Save @self
+  - skill:Generic_MustDrop_MCLove32_Save @targetedTarget
 
 Generic_MustDrop_MCLove32_Save:
   Conditions:
@@ -259,14 +259,14 @@ Generic_MustDrop_MCLove32_Save:
       - setVar{k=skill.adder;a="0";t=INTEGER} @self
       - setVar{k=skill.rand;a="random(0, max(0, <skill.var.weight>))";t=INTEGER} @self
       - setVar{k=skill.finish;a="0";t=INTEGER} @self
-      - skill:Generic_MustDrop_MCLove32_Load @self
+      - skill:Generic_MustDrop_MCLove32_Load @targetedTarget
     ]} false
   Skills:
   - setVar{k=skill.weight;a="<skill.weight<skill.var.count>> + <skill.var.weight|0>";t=INTEGER} @self
   - varAdd{k=skill.count;a=1} @self
   - setVar{k=skill.w<skill.var.count>;a="<skill.weight<skill.var.count>>";t=STRING} @self #
   - delay 1
-  - skill:Generic_MustDrop_MCLove32_Save @self
+  - skill:Generic_MustDrop_MCLove32_Save @targetedTarget
 
 Generic_MustDrop_MCLove32_Load:
   Conditions:
@@ -276,8 +276,8 @@ Generic_MustDrop_MCLove32_Load:
   - setVar{k=skill.rand;a="<skill.var.rand> - <skill.weight<skill.var.adder>>";t=INTEGER} @self ?!varrange{k=skill.adder;r=0}
   - setVar{k=skill.adder;a="1";t=INTEGER} @self
   - setVar{k=skill.v<skill.var.adder>;a="<skill.weight<skill.var.adder>> - <skill.var.rand>";t=INTEGER} @self
-  - skill:Generic_MustDrop_MCLove32_Finish ?varrange{k=skill.v<skill.var.adder>;r=>-1}
-  - skill:Generic_MustDrop_MCLove32_Load @self
+  - skill:Generic_MustDrop_MCLove32_Finish @targetedTarget ?varrange{k=skill.v<skill.var.adder>;r=>-1}
+  - skill:Generic_MustDrop_MCLove32_Load @targetedTarget
 
 Generic_MustDrop_MCLove32_Finish:
   Skills:
