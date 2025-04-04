@@ -1,0 +1,74 @@
+PvE_Armor_ビギンズ_MCLove32_H:
+  Id: dimaond_helemt
+  Display: "&fビギンズ-ヘルム"
+  Lore: []
+  Model: 100
+  Options:
+    ItemVersion: 1
+    Unbreakable: true
+  Attributes:
+    Head:
+      Armor: 5 ADD
+      ArmorToughness: 3 ADD
+      Health: 1.25 ADD
+  NBT:
+    PublicBukkitValues:
+      az:slow_life: "1"
+      az:defence: "1"
+  Group: 'Armor'
+
+PvE_Armor_ビギンズ_MCLove32_C:
+  Id: dimaond_chestplate
+  Display: "&fビギンズ-チェスト"
+  Lore: []
+  Model: 100
+  Options:
+    ItemVersion: 1
+    Unbreakable: true
+  Attributes:
+    Chest:
+      Armor: 5 ADD
+      ArmorToughness: 3 ADD
+      Health: 1.25 ADD
+  NBT:
+    PublicBukkitValues:
+      az:defence: "2"
+  Group: 'Armor'
+
+PvE_Armor_ビギンズ_MCLove32_L:
+  Id: dimaond_leggings
+  Display: "&fビギンズ-レグス"
+  Lore: []
+  Model: 100
+  Options:
+    ItemVersion: 1
+    Unbreakable: true
+  Attributes:
+    Legs:
+      Armor: 5 ADD
+      ArmorToughness: 3 ADD
+      Health: 1.25 ADD
+  NBT:
+    PublicBukkitValues:
+      az:slow_life: "1"
+      az:defence: "1"
+  Group: 'Armor'
+
+PvE_Armor_ビギンズ_MCLove32_B:
+  Id: dimaond_boots
+  Display: "&fビギンズ-ブーツ"
+  Lore: []
+  Model: 100
+  Options:
+    ItemVersion: 1
+    Unbreakable: true
+  Attributes:
+    Feet:
+      Armor: 5 ADD
+      ArmorToughness: 3 ADD
+      Health: 1.25 ADD
+  NBT:
+    PublicBukkitValues:
+      az:slow_life: "1"
+      az:defence: "1"
+  Group: 'Armor'

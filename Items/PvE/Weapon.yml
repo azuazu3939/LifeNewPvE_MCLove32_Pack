@@ -8,6 +8,10 @@ PvE_Weapon_チュートリアル_MCLove32:
   Options: 
     ItemVersion: 1
     Unbreakable: true
-  Group: 'Main-Weapon'
+  Attributes:
+    MainHand:
+      Damage: 20 ADD 
+      AttackSpeed: -0.5 MULTIPLY_BASE
+  Group: 'Melee-Weapon'
   Skills:
   - skill:PvE_Weapon_チュートリアル_MCLove32_Skills @trigger ~onUse
