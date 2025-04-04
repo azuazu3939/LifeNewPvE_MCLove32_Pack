@@ -256,7 +256,7 @@ Generic_MustDrop_MCLove32_Save:
   Conditions:
   - varequals{k=skill.w<skill.var.count>;v="[Undefined]";
     onfail=[
-      - setVar{k=skill.adder;a="0";t=INTEGER} @self
+      - setVar{k=skill.adder;a="1";t=INTEGER} @self
       - setVar{k=skill.rand;a="random(0, <skill.var.weight>)";t=INTEGER} @self
       - setVar{k=skill.finish;a="0";t=INTEGER} @self
       - skill:Generic_MustDrop_MCLove32_Load @targetedTarget
