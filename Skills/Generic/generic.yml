@@ -256,6 +256,7 @@ Generic_MustDrop_MCLove32_Loop:
   Conditions:
   - varequals{k=skill.w<skill.var.count>;v="[Undefined]"} cast Generic_MustDrop_MCLove32_LoopEnd
   Skills:
+  - message{m="<skill.var.count>"} @PIR{r=32}
   - setVar{k=skill.w<skill.var.count>;a="<skill.weight<skill.var.count>>";t=STRING} @self #
   - setVar{k=skill.weight;a="<skill.weight<skill.var.count>> + <skill.var.weight|0>";t=INTEGER} @self
   - varAdd{k=skill.count;a=1} @self
