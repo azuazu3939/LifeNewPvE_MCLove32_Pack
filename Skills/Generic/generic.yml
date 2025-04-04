@@ -272,7 +272,7 @@ Generic_MustDrop_MCLove32_Load:
   - varrange{k=skill.finish;r=1} false
   - varrange{k=skill.adder;r="<skill.var.count>"} false
   Skills:
-  - message{m="c <skill.var.count>、r <skill.var.rand>、w <skill.weight<skill.var.adder>>、a <skill.var.adder>"} @PIR{r=32}
+  - message{m="c<skill.var.count>、r<skill.var.rand>、w<skill.weight<skill.var.adder>>、a<skill.var.adder>"} @PIR{r=32}
   - setVar{k=skill.rand;a="<skill.var.rand> - <skill.weight<skill.var.adder>>";t=INTEGER} @self ?!varrange{k=skill.adder;r=0}
   - setVar{k=skill.adder;a="1";t=INTEGER} @self
   - setVar{k=skill.v<skill.var.adder>;a="<skill.weight<skill.var.adder>> - <skill.var.rand>";t=INTEGER} @self
