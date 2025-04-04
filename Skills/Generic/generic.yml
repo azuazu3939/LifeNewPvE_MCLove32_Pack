@@ -242,8 +242,8 @@ Generic_Drop_MCLove32:
 #
 Generic_MustDrop_MCLove32_1:
   Skills:
-  - cmd{c="mm items give <target.name> <skill.mmid2> <skill.amount2>"} @targetedTarget
-  
+  - cmd{c="mm items give <target.name> <skill.mmid1> <skill.amount1>"} @targetedTarget
+
 #
 Generic_MustDrop_MCLove32_2:
   Skills:
