@@ -256,11 +256,11 @@ Generic_MustDrop_MCLove32:
   - skill:Generic_MustDrop_MCLove32_Base{mmid1=<skill.mmid1>;amount1=<skill.amount1>} @targetedTarget ?varequals{k=skill.w1;v="[Undefined]"} ?varequals{k=skill.w2;v="[Undefined]"} ?varequals{k=skill.w3;v="[Undefined]"} ?varequals{k=skill.w4;v="[Undefined]"} ?varequals{k=skill.w5;v="[Undefined]"}
   - return ?varequals{k=skill.w1;v="[Undefined]"} ?varequals{k=skill.w2;v="[Undefined]"} ?varequals{k=skill.w3;v="[Undefined]"} ?varequals{k=skill.w4;v="[Undefined]"} ?varequals{k=skill.w5;v="[Undefined]"}
 
-  - setVar{k=skill.weight;a="<skill.weight1>";t=INTEGER} @self ?!varequals{k=skill.w1;v="[Undefined]"} ?varequals{k=skill.w2;v="[Undefined]"} ?varequals{k=skill.w3;v="[Undefined]"} ?varequals{k=skill.w4;v="[Undefined]"} ?varequals{k=skill.w5;v="[Undefined]"}
-  - setVar{k=skill.weight;a="<skill.weight1> + <skill.weight2>";t=INTEGER} @self ?!varequals{k=skill.w1;v="[Undefined]"} ?!varequals{k=skill.w2;v="[Undefined]"} ?varequals{k=skill.w3;v="[Undefined]"} ?varequals{k=skill.w4;v="[Undefined]"} ?varequals{k=skill.w5;v="[Undefined]"}
-  - setVar{k=skill.weight;a="<skill.weight1> + <skill.weight2> + <skill.weight3>";t=INTEGER} @self ?!varequals{k=skill.w1;v="[Undefined]"} ?!varequals{k=skill.w2;v="[Undefined]"} ?!varequals{k=skill.w3;v="[Undefined]"} ?varequals{k=skill.w4;v="[Undefined]"} ?varequals{k=skill.w5;v="[Undefined]"}
-  - setVar{k=skill.weight;a="<skill.weight1> + <skill.weight2> + <skill.weight3> + <skill.weight4>";t=INTEGER} @self ?!varequals{k=skill.w1;v="[Undefined]"} ?!varequals{k=skill.w2;v="[Undefined]"} ?!varequals{k=skill.w3;v="[Undefined]"} ?!varequals{k=skill.w4;v="[Undefined]"} ?varequals{k=skill.w5;v="[Undefined]"}
-  - setVar{k=skill.weight;a="<skill.weight1> + <skill.weight2> + <skill.weight3> + <skill.weight4> + <skill.weight5>";t=INTEGER} @self ?!varequals{k=skill.w1;v="[Undefined]"} ?!varequals{k=skill.w2;v="[Undefined]"} ?!varequals{k=skill.w3;v="[Undefined]"} ?!varequals{k=skill.w4;v="[Undefined]"} ?!varequals{k=skill.w5;v="[Undefined]"}
+  - setVar{k=skill.weight;a="<skill.weight1>";t=INTEGER} @self ?!varequals{k=skill.w1;v="[Undefined]"} 
+  - setVar{k=skill.weight;a="<skill.weight2> + <skill.var.weight>";t=INTEGER} @self ?!varequals{k=skill.w1;v="[Undefined]"} ?!varequals{k=skill.w2;v="[Undefined]"}
+  - setVar{k=skill.weight;a="<skill.weight3> + <skill.var.weight>";t=INTEGER} @self ?!varequals{k=skill.w1;v="[Undefined]"} ?!varequals{k=skill.w2;v="[Undefined]"} ?!varequals{k=skill.w3;v="[Undefined]"} 
+  - setVar{k=skill.weight;a="<skill.weight4> + <skill.var.weight>";t=INTEGER} @self ?!varequals{k=skill.w1;v="[Undefined]"} ?!varequals{k=skill.w2;v="[Undefined]"} ?!varequals{k=skill.w3;v="[Undefined]"} ?!varequals{k=skill.w4;v="[Undefined]"} 
+  - setVar{k=skill.weight;a="<skill.weight5> + <skill.var.weight>";t=INTEGER} @self ?!varequals{k=skill.w1;v="[Undefined]"} ?!varequals{k=skill.w2;v="[Undefined]"} ?!varequals{k=skill.w3;v="[Undefined]"} ?!varequals{k=skill.w4;v="[Undefined]"} ?!varequals{k=skill.w5;v="[Undefined]"}
 
 
   - setVar{k=skill.rand;a="random(1, <skill.var.weight>) + 1";t=INTEGER} @self
