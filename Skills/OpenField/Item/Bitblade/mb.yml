@@ -20,9 +20,9 @@ OpenField_Weapon_ビットブレードM_MCLove32_Skills:
 
 OpenField_Weapon_ビットブレードM_MCLove32_Skills_Start:
   Skills:
-  - skill:OpenField_Weapon_ビットブレード_MCLove32_Skills_Process{ho=90;vo=1;so=3;y=3;damage=0.3} 
-  - skill:OpenField_Weapon_ビットブレード_MCLove32_Skills_Process{ho=270;vo=1;so=3;y=3;damage=0.3} 
-  - skill:OpenField_Weapon_ビットブレード_MCLove32_Skills_Process{ho=90;vo=1.5;so=3;y=5;delay=2;damage=0.3}
-  - skill:OpenField_Weapon_ビットブレード_MCLove32_Skills_Process{ho=270;vo=1.5;so=3;y=5;delay=2;damage=0.3}
-  - skill:OpenField_Weapon_ビットブレード_MCLove32_Skills_Process{ho=90;vo=2;so=3;y=7;delay=4;damage=0.3} 
-  - skill:OpenField_Weapon_ビットブレード_MCLove32_Skills_Process{ho=270;vo=2;so=3;y=7;delay=4;damage=0.3}
+  - skill:OpenField_Weapon_ビットブレード_MCLove32_Skills_Process{ho=90;vo=1;so=3;y=3;damage=3} 
+  - skill:OpenField_Weapon_ビットブレード_MCLove32_Skills_Process{ho=270;vo=1;so=3;y=3;damage=3} 
+  - skill:OpenField_Weapon_ビットブレード_MCLove32_Skills_Process{ho=90;vo=1.5;so=3;y=5;delay=2;damage=3}
+  - skill:OpenField_Weapon_ビットブレード_MCLove32_Skills_Process{ho=270;vo=1.5;so=3;y=5;delay=2;damage=3}
+  - skill:OpenField_Weapon_ビットブレード_MCLove32_Skills_Process{ho=90;vo=2;so=3;y=7;delay=4;damage=3} 
+  - skill:OpenField_Weapon_ビットブレード_MCLove32_Skills_Process{ho=270;vo=2;so=3;y=7;delay=4;damage=3}
