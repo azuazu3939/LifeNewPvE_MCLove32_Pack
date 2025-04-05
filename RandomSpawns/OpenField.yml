@@ -16,7 +16,7 @@ OpenField_Enemy_フウィスピット_MCLove32_Spawn:
 
 OpenField_Util_Animals_MCLove32_Plains_Spawn:
   Type: OpenField_Util_Animals_MCLove32_Plains
-  Worlds: Plains
+  Worlds: Open_Plains
   Action: ADD 
   PositionType: LAND
   Chance: 0.5
@@ -32,7 +32,7 @@ OpenField_Util_Animals_MCLove32_Plains_Spawn:
 
 OpenField_Util_Bosses_MCLove32_Plains_Spawn:
   Type: OpenField_Util_Bosses_MCLove32_Plains
-  Worlds: Plains
+  Worlds: Open_Plains
   Action: ADD 
   PositionType: LAND
   Chance: 0.8
@@ -49,7 +49,7 @@ OpenField_Util_Bosses_MCLove32_Plains_Spawn:
 
 Generic_Furniture_Object_MCLove32_Base_Spawn:
   Type: Generic_Furniture_Object_MCLove32_Base
-  Worlds: Plains
+  Worlds: Open_Plains
   Action: ADD 
   PositionType: LAND
   Chance: 0.5
@@ -65,7 +65,7 @@ Generic_Furniture_Object_MCLove32_Base_Spawn:
 
 OpenField_Enemy_踊る巨人_MCLove32_Spawn:
   Type: OpenField_Enemy_踊る巨人_MCLove32
-  Worlds: Plains
+  Worlds: Open_Plains
   Action: ADD 
   PositionType: LAND
   Chance: 1
