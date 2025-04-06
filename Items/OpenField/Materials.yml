@@ -131,3 +131,11 @@ OpenField_Material_原木_MCLove32:
   Options: 
     ItemVersion: 1
   Group: 'Material'
+
+OpenField_Material_スイカ_MCLove32:
+  Id: melon
+  Display: "&fスイカ"
+  Lore: []
+  Options: 
+    ItemVersion: 1
+  Group: 'Material'
