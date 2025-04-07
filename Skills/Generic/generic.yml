@@ -3,6 +3,7 @@ Generic_Enemy_ヘイト_MCLove32:
   Cooldown: 1
   Conditions:
   - incombat
+  - targetWithin{d=48}
   Skills:
   - sudoskill{
       s=[
