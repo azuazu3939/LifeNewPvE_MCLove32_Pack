@@ -139,3 +139,11 @@ OpenField_Material_スイカ_MCLove32:
   Options: 
     ItemVersion: 1
   Group: 'Material'
+
+OpenField_Material_土_MCLove32:
+  Id: dirt
+  Display: "&f土"
+  Lore: []
+  Options: 
+    ItemVersion: 1
+  Group: 'Material'
