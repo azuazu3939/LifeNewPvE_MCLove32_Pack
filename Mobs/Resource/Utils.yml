@@ -67,39 +67,57 @@ Resource_MobUtil_SKELETON_MCLove32:
 
 Resource_MobUtil_BABY_DROWNED_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
-  Type: BABY_DROWNED
+  Type: DROWNED
+  Options:
+    Baby: true 
 
 Resource_MobUtil_BABY_HUSK_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
-  Type: BABY_HUSK
+  Type: HUSK
+  Options:
+    Baby: true 
 
 Resource_MobUtil_BABY_ZOMBIE_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
-  Type: BABY_ZOMBIE
+  Type: ZOMBIE
+  Options:
+    Baby: true 
 
 Resource_MobUtil_BABY_PIGLIN_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
-  Type: BABY_PIGLIN
+  Type: PIGLIN
+  Options:
+    Baby: true 
 
 Resource_MobUtil_BABY_PIGLIN_BRUTE_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
-  Type: BABY_PIGLIN_BRUTE
+  Type: PIGLIN_BRUTE
+  Options:
+    Baby: true 
 
 Resource_MobUtil_BABY_PIG_ZOMBIE_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
-  Type: BABY_PIG_ZOMBIE
+  Type: PIG_ZOMBIE
+  Options:
+    Baby: true 
 
 Resource_MobUtil_BABY_PIG_ZOMBIE_VILLAGER_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
-  Type: BABY_PIG_ZOMBIE_VILLAGER
+  Type: PIG_ZOMBIE_VILLAGER
+  Options:
+    Baby: true 
 
 Resource_MobUtil_BABY_ZOGLIN_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
-  Type: BABY_ZOGLIN
+  Type: ZOGLIN
+  Options:
+    Baby: true 
 
 Resource_MobUtil_BABY_ZOMBIE_VILLAGER_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
-  Type: BABY_ZOMBIE_VILLAGER
+  Type: ZOMBIE_VILLAGER
+  Options:
+    Baby: true 
 
 Resource_MobUtil_BLAZE_MCLove32:
   Template: Resource_MobUtil_バニラ_MCLove32
