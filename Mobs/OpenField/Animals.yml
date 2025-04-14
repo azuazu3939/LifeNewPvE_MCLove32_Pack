@@ -149,4 +149,4 @@ OpenField_Animal_モーカウ_MCLove32_Leader:
   - exp 50
   Skills:
   - summon{t=OpenField_Animal_モーカウ_MCLove32;a=2to4;r=5;s=true} @self ~onSpawn
-  - skill:Generic_Drop_MCLove32{mmid=OpenField_Food_ステーキ_MCLove32;amount=1to2;chance=1} @TTP ~onDeath 
+  - skill:Generic_Drop_MCLove32{mmid=OpenField_Food_ステーキ_MCLove32;amount=2;chance=1} @TTP ~onDeath 
