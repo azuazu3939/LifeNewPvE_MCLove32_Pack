@@ -54,17 +54,17 @@ OpenField_Util_Animals_MCLove32_Plains_Skills:
 #
 OpenField_Util_Animals_MCLove32_Plains_Skill_1:
   Skills:
-  - summon{t=OpenField_Guard_ヒィツジー_MCLove32_Leader;a=1;r=0;if=false;sio=false;sip=false} @self
+  - summon{t=OpenField_Animal_ヒィツジー_MCLove32_Leader;a=1;r=0;if=false;sio=false;sip=false} @self
 
 #
 OpenField_Util_Animals_MCLove32_Plains_Skill_2:
   Skills:
-  - summon{t=OpenField_Enemy_ハロウルフ_MCLove32_Leader;a=1;r=0;if=false;sio=false;sip=false} @self
+  - summon{t=OpenField_Animal_ハロウルフ_MCLove32_Leader;a=1;r=0;if=false;sio=false;sip=false} @self
 
 #
 OpenField_Util_Animals_MCLove32_Plains_Skill_3:
   Skills:
-  - summon{t=OpenField_Guard_モーカウ_MCLove32_Leader;a=1;r=0;if=false;sio=false;sip=false} @self
+  - summon{t=OpenField_Animal_モーカウ_MCLove32_Leader;a=1;r=0;if=false;sio=false;sip=false} @self
 
 #
 OpenField_Util_Bosses_MCLove32_KillCount:

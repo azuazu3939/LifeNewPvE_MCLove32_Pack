@@ -32,64 +32,12 @@ OpenField_Enemy_Abstract_Generic:
 #ベーステンプレMobに、直接攻撃時にダメージを与える処理をしたもの
 OpenField_Enemy_Base_MCLove32:
   Template: OpenField_Enemy_Abstract_Generic
-  Skills:
-  - damage{a=<caster.damage>;ii=true;pi=true} @trigger ~onAttack 
-
-OpenField_Enemy_ハロウルフ_MCLove32:
-  Template: OpenField_Enemy_Base_MCLove32
-  Type: wolf 
-  Display: "ハロウルフ"
-  Health: 20
-  Damage: 2
-  Faction: wolf
-  Armor: 40
   DamageModifiers:
   - SUFFOCATION 0
   - FALL 0
   - POISON 0.1
-  Drop:
-  Options:
-    FollowRange: 8
-    KnockbackResistance: 0.2
-    Scale: 1.5
-    Silent: false 
-  Drops:
-  - exp 50
-  Variables:
-    livingWater: int/2
-  AIGoalSelectors:
-  - clear
-  - meleeattack
-  - randomstroll
-  - gotoparent
-  - gotoowner
-  AITargetSelectors:
-  - clear
-  - ownerattacker
-  - ownertarget
-  - attacker
-  - specificfaction{f=sheep}
   Skills:
-  - potion{t=SPEED;d=144000;l=1;p=false} @self ~onSpawn
-  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=20} @self ~onSpawn 
-  - skill:Generic_Enemy_ウォーク追従_MCLove32{v=45} @self ~onTimer:20
-  - skill:Generic_Drop_MCLove32{mmid=OpenField_Material_ハロウルフの牙_MCLove32;amount=1;chance=0.5} @TTP ~onDeath 
-  - skill:Generic_Drop_MCLove32{mmid=OpenField_Material_ハロウルフの骨_MCLove32;amount=1;chance=0.4} @TTP ~onDeath 
-  - skill:Generic_Drop_MCLove32{mmid=OpenField_Material_ハロウルフの皮_MCLove32;amount=1;chance=0.6} @TTP ~onDeath 
-
-OpenField_Enemy_ハロウルフ_MCLove32_Leader:
-  Template: OpenField_Enemy_ハロウルフ_MCLove32
-  Health: 30
-  Damage: 3
-  Armor: 40
-  Drops:
-  - exp 30
-  Variables:
-    livingWater: int/2
-  Skills:
-  - summon{t=OpenField_Enemy_ハロウルフ_MCLove32;a=2to3;r=5;s=true} @self ~onSpawn
-  - skill:Generic_Enemy_ウォーク_MCLove32{v=45} @self ~onTimer:20
-  - skill:Generic_Drop_MCLove32{mmid=OpenField_Material_ハロウルフの希少な牙_MCLove32;amount=1;chance=0.05} @TTP ~onDeath 
+  - damage{a=<caster.damage>;ii=true;pi=true} @trigger ~onAttack 
 
 OpenField_Enemy_ウィスピット_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32

@@ -1,4 +1,72 @@
 
+OpenField_Armor_アニマー_MCLove32_H:
+  Id: leather_helmet
+  Display: "&fアニマー-キャップ"
+  Lore: []
+  Model: 100
+  Options:
+    ItemVersion: 1
+    Unbreakable: true
+  Attributes:
+    Head:
+      ArmorToughness: 2 ADD 
+      Armor: 3 ADD 
+  Group: 'Armor'
+  NBT:
+    PublicBukkitValues:
+      az:ground_reaction_force: "1"
+
+OpenField_Armor_アニマー_MCLove32_C:
+  Id: leather_chestplate
+  Display: "&fアニマー-チェスト"
+  Lore: []
+  Model: 100
+  Options:
+    ItemVersion: 1
+    Unbreakable: true
+  Attributes:
+    Chest:
+      ArmorToughness: 2 ADD 
+      Armor: 8 ADD 
+  Group: 'Armor'
+  NBT:
+    PublicBukkitValues:
+      az:divine_blessing: "2"
+
+OpenField_Armor_アニマー_MCLove32_L:
+  Id: leather_leggings
+  Display: "&fアニマー-レギンス"
+  Lore: []
+  Model: 100
+  Options:
+    ItemVersion: 1
+    Unbreakable: true
+  Attributes:
+    Legs:
+      ArmorToughness: 2 ADD 
+      Armor: 6 ADD 
+  Group: 'Armor'
+  NBT:
+    PublicBukkitValues:
+      az:ground_reaction_force: "1"
+
+OpenField_Armor_アニマー_MCLove32_B:
+  Id: leather_boots
+  Display: "&fアニマー-ブーツ"
+  Lore: []
+  Model: 100
+  Options:
+    ItemVersion: 1
+    Unbreakable: true
+  Attributes:
+    Feet:
+      ArmorToughness: 2 ADD 
+      Armor: 3 ADD 
+  Group: 'Armor'
+  NBT:
+    PublicBukkitValues:
+      az:ground_reaction_force: "1"
+
 OpenField_Armor_ハロ_MCLove32_H:
   Id: leather_helmet
   Display: "&fハロ-キャップ"
