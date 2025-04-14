@@ -134,9 +134,10 @@ Generic_Util_倉庫_MCLove32:
     Width: 1
     ViewRange: 2
   Skills:
+  - setrotation{p=0;y=180} @self ~onSpawn 
   - cmd{c="axvaultadmin forceopen <target.name>";cd=1} @trigger ~onSignal:generic_util_open
   - e:blockMask{b=BARREL;r=10;ry=2;d=6000} @self ~onSpawn
-  - summon{t=Generic_Util_倉庫サイン_MCLove32;a=1;r=1;s=true} @selfLocation{centered=true;x=-2;z=-2;cyaw=180;cpitch=0} ~onSpawn 
+  - summon{t=Generic_Util_倉庫サイン_MCLove32;a=1;r=1;s=true} @selfLocation{centered=true;x=-2.25;z=-2.25;cyaw=180;cpitch=0} ~onSpawn 
   - remove{delay=6000} @self ~onSpawn 
   - remove{delay=6000} @children ~onSpawn 
 
@@ -148,6 +149,7 @@ Generic_Util_倉庫サイン_MCLove32:
     Height: 3
     Width: 3
   Skills:
+  - setrotation{p=0;y=180} @self ~onSpawn 
   - sudoskill{
     s=[
       - signal{s=generic_util_open} @MIR{r=10;sort=NEAREST;limit=1;t=Generic_Util_倉庫_MCLove32}
