@@ -7,7 +7,6 @@ OpenField_Enemy_フウィスピット_MCLove32_Spawn:
   Priority: 12
   Conditions:
   - mobsinworld{a=<400} true 
-  - blocktype{b=WATER} false
   - blocktype{b=AIR} false
   - height{h=50to180} true 
   - region{r=spawn} false 
@@ -27,7 +26,6 @@ OpenField_Util_Animals_MCLove32_Plains_Spawn:
   - height{h=>50} true 
   - region{r=spawn} false
   - region{r=plains} true
-  - blocktype{b=WATER} false
   - blocktype{b=AIR} false
   - (mythicinradius{a=<1;r=48} || mythicinradius{a=<3;r=64} || mythicinradius{a=<5;r=80}) true 
   #- (biome{b=terra:origen/origen/verdant_valleys} ||  biome{b=terra:origen/origen/verdant_river}) true
@@ -44,7 +42,6 @@ OpenField_Util_Bosses_MCLove32_Plains_Spawn:
   - height{h=>50} true 
   - region{r=spawn} false 
   - region{r=plains} true
-  - blocktype{b=WATER} false
   - blocktype{b=AIR} false
   - (mythicinradius{a=<1;r=64} && mythicinradius{a=<2;r=80}) true 
   - mobsInRadius{types=OpenField_Enemy_風牙狼ウィデラー_MCLove32,OpenField_Enemy_羊獣カルーチェ_MCLove32,OpenField_Enemy_焔獣フェルドス_MCLove32;amount=<1;radius=128} true
@@ -62,7 +59,6 @@ Generic_Furniture_Object_MCLove32_Base_Spawn:
   - mobsinworld{a=<400} true 
   #- region{r=spawn} false 
   - region{r=plains} true  
-  - blocktype{b=WATER} false
   - blocktype{b=AIR} false
   - (mythicinradius{a=<6;r=16} && mythicinradius{a=<8;r=36}) true 
   #- (biome{b=terra:origen/origen/verdant_valleys} ||  biome{b=terra:origen/origen/verdant_river}) true
@@ -79,7 +75,6 @@ OpenField_Enemy_踊る巨人_MCLove32_Spawn:
   - mobsinworld{a=<400} true 
   - region{r=spawn} false 
   - region{r=plains} true
-  - blocktype{b=WATER} false
   - blocktype{b=AIR} false
   #- (biome{b=terra:origen/origen/verdant_valleys} ||  biome{b=terra:origen/origen/verdant_river}) true
   - variableIsSet{k=world.count} true
