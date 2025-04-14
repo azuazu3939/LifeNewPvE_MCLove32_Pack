@@ -160,9 +160,15 @@ OpenField_Object_倉庫Block:
     Type: DISPLAY
     DropSelf: false
     Scale: 5,5,5
-    Billboard: FIXED
-    Transform: GROUND
+    Billboard: VERTICAL
+    Transform: FIXED
     CanRotate: false
+    Lights:
+    - 0,0,0 15
+    - 0,1,0 15
+    Barriers:
+    - 0,0,0 
+    - 0,1,0 
     Hitbox:
       Height: 2.5
       Width: 2.5
