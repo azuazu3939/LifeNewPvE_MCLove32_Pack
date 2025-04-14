@@ -116,7 +116,7 @@ Generic_Util_倉庫Spawn_MCLove32:
     NoAI: true
     Invisible: true
   Skills:
-  - summon{t=Generic_Util_倉庫_MCLove32;a=1;r=1} @selfLocation{centered=true;x=1.5;z=1.5;cyaw=180;cpitch=0} ~onSpawn 
+  - summon{t=Generic_Util_倉庫_MCLove32;a=1;r=1;s=true} @selfLocation{centered=true;x=1.5;z=1.5;cyaw=180;cpitch=0} ~onSpawn 
   - remove{delay=1} @self ~onSpawn 
 
 
