@@ -27,8 +27,7 @@ Generic_Furniture_Object_MCLove32_Base_Skills:
   - randomskill{s=
     Generic_Furniture_Object_MCLove32_Base_Skill1,
     Generic_Furniture_Object_MCLove32_Base_Skill2,
-    Generic_Furniture_Object_MCLove32_Base_Skill3,
-    Generic_Furniture_Object_MCLove32_Base_Skill0} @self
+    Generic_Furniture_Object_MCLove32_Base_Skill3} @self
 
 #
 Generic_Furniture_Object_MCLove32_Base_Skill1:
@@ -44,11 +43,6 @@ Generic_Furniture_Object_MCLove32_Base_Skill2:
 Generic_Furniture_Object_MCLove32_Base_Skill3:
   Skills:
   - summon{t=Generic_Furniture_不思議種Block_MCLove32_Base;a=1;r=0;if=false;sio=false;sip=false} @self
-
-#
-Generic_Furniture_Object_MCLove32_Base_Skill0:
-  Skills:
-  - summon{t=Generic_Furniture_倉庫Block_MCLove32_Base;a=1;r=0;if=false;sio=false;sip=false} @self
 
 #
 OpenField_Util_Animals_MCLove32_Plains_Skills:
