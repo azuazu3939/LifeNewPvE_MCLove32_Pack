@@ -154,3 +154,4 @@ Generic_Util_倉庫サイン_MCLove32:
     s=[
       - signal{s=generic_util_open} @MIR{r=10;sort=NEAREST;limit=1;t=Generic_Util_倉庫_MCLove32}
     ];cat=true} @trigger ~onInteract 
+  - remove{delay=6000} @self ~onSpawn 
