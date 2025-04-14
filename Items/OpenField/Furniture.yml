@@ -170,8 +170,8 @@ OpenField_Object_倉庫Block:
     - 0,0,0 
     - 0,1,0 
     Hitbox:
-      Height: 2.5
-      Width: 2.5
+      Height: 2
+      Width: 2
   FurnitureSkills:
   - cmd{c="axvaultadmin forceopen <target.name>";cd=1} @trigger ~onInteract 
   - removefurniture{delay=6000} ~onBlockplace 
