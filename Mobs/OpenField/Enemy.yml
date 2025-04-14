@@ -28,7 +28,6 @@ OpenField_Enemy_Abstract_Generic:
   Modules:
     ThreatTable: true
   Skills:
-  - message{m="<skill.var.damage-amount>"} @PIR{r=32}
 
 #ベーステンプレMobに、直接攻撃時にダメージを与える処理をしたもの
 OpenField_Enemy_Base_MCLove32:
