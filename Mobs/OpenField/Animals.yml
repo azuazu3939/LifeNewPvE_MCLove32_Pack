@@ -84,6 +84,7 @@ OpenField_Guard_モーカウ_MCLove32:
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=24} @self ~onEnterCombat 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16;delay=5} @self ~onDropCombat
   - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
+  - skill:Generic_Drop_MCLove32{mmid=OpenField_Food_ステーキ_MCLove32;amount=1;chance=0.5} @TTP ~onDeath 
 
 OpenField_Guard_モーカウ_MCLove32_Leader:
   Template: OpenField_Guard_モーカウ_MCLove32
@@ -93,3 +94,4 @@ OpenField_Guard_モーカウ_MCLove32_Leader:
   - exp 50
   Skills:
   - summon{t=OpenField_Guard_モーカウ_MCLove32;a=2to4;r=5;s=true} @self ~onSpawn
+  - skill:Generic_Drop_MCLove32{mmid=OpenField_Food_ステーキ_MCLove32;amount=1;chance=1} @TTP ~onDeath 

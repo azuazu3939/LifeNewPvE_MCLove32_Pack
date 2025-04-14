@@ -1,5 +1,5 @@
 #Note: LootChestに必要
-OpneField_Armor_金のリンゴ_MCLove32:
+OpneField_Food_金のリンゴ_MCLove32:
   Id: golden_apple
   Display: "&f金のリンゴ"
   Lore:
@@ -7,14 +7,11 @@ OpneField_Armor_金のリンゴ_MCLove32:
   - ATTRIBUTES
   Model: 1000
   Options:
-    Destroy: false
-    CancelDamage: true
     ItemVersion: 1
-    #Unbreakable: true
   Group: 'Food'
 
 #Note: LootChestに必要
-OpneField_Armor_金の人参_MCLove32:
+OpneField_Food_金の人参_MCLove32:
   Id: golden_carrot
   Display: "&f金の人参"
   Lore:
@@ -22,8 +19,13 @@ OpneField_Armor_金の人参_MCLove32:
   - ATTRIBUTES
   Model: 1000
   Options:
-    Destroy: false
-    CancelDamage: true
     ItemVersion: 1
-    #Unbreakable: true
+  Group: 'Food'
+
+OpenField_Food_ステーキ_MCLove32:
+  Id: cooked_beef
+  Display: "&fステーキ"
+  Lore: []
+  Options: 
+    ItemVersion: 1
   Group: 'Food'
