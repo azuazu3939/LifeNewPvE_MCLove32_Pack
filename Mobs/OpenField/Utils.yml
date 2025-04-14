@@ -115,7 +115,7 @@ Generic_Util_倉庫_MCLove32:
   - setrotation{p=0;y=180} @self ~onSpawn 
   - cmd{c="axvaultadmin forceopen <target.name>";cd=1} @trigger ~onSignal:generic_util_open
   - e:blockMask{b=BARREL;r=10;ry=2;d=6000} @self ~onSpawn
-  - summon{t=Generic_Util_倉庫サイン_MCLove32;a=1;r=1} @self ~onSpawn 
+  - summon{t=Generic_Util_倉庫サイン_MCLove32;a=1;r=1} @selfLocation{centered=true} ~onSpawn 
   - remove{delay=6000} @self ~onSpawn 
   - remove{delay=6000} @children ~onSpawn 
 
