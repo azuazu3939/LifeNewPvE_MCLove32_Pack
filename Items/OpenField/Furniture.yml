@@ -161,10 +161,11 @@ OpenField_Object_倉庫Block:
     DropSelf: false
     Scale: 5,5,5
     Billboard: FIXED
+    Transform: GROUND
     CanRotate: false
     Hitbox:
-      Height: 2
-      Width: 1
+      Height: 2.5
+      Width: 2.5
   FurnitureSkills:
   - cmd{c="axvaultadmin forceopen <target.name>";cd=1} @trigger ~onInteract 
   - removefurniture{delay=6000} ~onBlockplace 
