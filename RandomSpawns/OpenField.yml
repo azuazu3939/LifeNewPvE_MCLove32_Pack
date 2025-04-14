@@ -51,12 +51,12 @@ Generic_Furniture_Object_MCLove32_Base_Spawn:
   PositionType: LAND
   Chance: 0.5
   Priority: 2
-  Cooldown: 300
+  Cooldown: 60
   Conditions:
   - mobsinworld{a=<400} true 
   #- region{r=spawn} false 
   - region{r=plains} true  
-  - (mythicinradius{a=<6;r=16} && mythicinradius{a=<8;r=36}) true 
+  - (mythicinradius{a=<3;r=16} && mythicinradius{a=<5;r=36}) true 
   #- (biome{b=terra:origen/origen/verdant_valleys} ||  biome{b=terra:origen/origen/verdant_river}) true
 
 OpenField_Enemy_踊る巨人_MCLove32_Spawn:
