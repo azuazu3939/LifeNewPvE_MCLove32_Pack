@@ -123,9 +123,7 @@ Generic_Util_倉庫Spawn_MCLove32:
 Generic_Util_倉庫_MCLove32:
   Template: OpenField_Enemy_Abstract_Generic
   Type: block_display
-  Display: "&a右クリで倉庫を開く"
-  Options:
-    AlwaysShowName: true
+  Display: "倉庫"
   DisplayOptions:
     Block: chest
     Scale: 3,3,3
@@ -146,8 +144,9 @@ Generic_Util_倉庫_MCLove32:
 Generic_Util_倉庫サイン_MCLove32:
   Template: OpenField_Enemy_Abstract_Generic
   Type: INTERACTION
-  Display: ""
+  Display: "&a右クリで倉庫を開く"
   Options:
+    AlwaysShowName: true
     Height: 3
     Width: 3
   Skills:
