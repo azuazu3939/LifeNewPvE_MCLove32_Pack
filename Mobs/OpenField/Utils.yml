@@ -98,6 +98,28 @@ OpenField_Util_Animals_MCLove32_Plains:
   - skill:OpenField_Util_Animals_MCLove32_Plains_Skills @self ~onSpawn 
   - remove{delay=1} @self ~onSpawn 
 
+Generic_Util_倉庫Spawn_MCLove32:
+  Template: OpenField_Enemy_Abstract_Generic
+  Display: ""
+  Type: silverfish
+  Health: 99999999
+  Armor: 0
+  Faction: silverfish
+  Damage: 0
+  Options:
+    NoDamageTicks: 200
+    Silent: true 
+    Scale: 0.5
+    MovementSpeed: 0.001
+    KnockbackResistance: 1
+    MaxCombatDistance: 0
+    NoAI: true
+    Invisible: true
+  Skills:
+  - summon{t=Generic_Util_倉庫_MCLove32;a=1;r=1} @selfLocation{centered=true} ~onSpawn 
+  - remove{delay=1} @self ~onSpawn 
+
+
 Generic_Util_倉庫_MCLove32:
   Template: OpenField_Enemy_Abstract_Generic
   Type: block_display
