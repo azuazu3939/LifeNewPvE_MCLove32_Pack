@@ -116,7 +116,7 @@ Generic_Util_倉庫Spawn_MCLove32:
     NoAI: true
     Invisible: true
   Skills:
-  - summon{t=Generic_Util_倉庫_MCLove32;a=1;r=1;s=true} @selfLocation{centered=true;x=1.5;z=1.5;cyaw=180;cpitch=0} ~onSpawn 
+  - summon{t=Generic_Util_倉庫_MCLove32;a=1;r=1;s=true} @selfLocation{x=3;z=3} ~onSpawn 
   - remove{delay=1} @self ~onSpawn 
 
 
@@ -137,7 +137,7 @@ Generic_Util_倉庫_MCLove32:
   - setrotation{p=0;y=180} @self ~onSpawn 
   - cmd{c="axvaultadmin forceopen <target.name>";cd=1} @trigger ~onSignal:generic_util_open
   - e:blockMask{b=BARREL;r=10;ry=2;d=6000} @self ~onSpawn
-  - summon{t=Generic_Util_倉庫サイン_MCLove32;a=1;r=1;s=true} @selfLocation{centered=true;x=-2.25;z=-2.25;cyaw=180;cpitch=0} ~onSpawn 
+  - summon{t=Generic_Util_倉庫サイン_MCLove32;a=1;r=1;s=true} @selfLocation{x=-4.5;z=-4.5} ~onSpawn 
   - remove{delay=6000} @self ~onSpawn 
   - remove{delay=6000} @children ~onSpawn 
 
