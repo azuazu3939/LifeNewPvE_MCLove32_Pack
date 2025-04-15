@@ -8,9 +8,9 @@ OpenField_Animal_Base_MCLove32:
   - POISON 0.1
   Skills:
   - skill:Generic_Drop_MCLove32{mmid=OpenField_Armor_アニマー_MCLove32_H;amount=1;chance=0.1} @TTP ~onDeath 
-  - skill:Generic_Drop_MCLove32{mmid=OpenField_Armor_アニマー_MCLove32_C;amount=1;chance=0.1} @TTP ~onDeath
-  - skill:Generic_Drop_MCLove32{mmid=OpenField_Armor_アニマー_MCLove32_L;amount=1;chance=0.1} @TTP ~onDeath 
-  - skill:Generic_Drop_MCLove32{mmid=OpenField_Armor_アニマー_MCLove32_B;amount=1;chance=0.1} @TTP ~onDeath  
+  - skill:Generic_Drop_MCLove32{mmid=OpenField_Armor_アニマー_MCLove32_C;amount=1;chance=0.1;delay=0} @TTP ~onDeath
+  - skill:Generic_Drop_MCLove32{mmid=OpenField_Armor_アニマー_MCLove32_L;amount=1;chance=0.1;delay=1} @TTP ~onDeath 
+  - skill:Generic_Drop_MCLove32{mmid=OpenField_Armor_アニマー_MCLove32_B;amount=1;chance=0.1;delay=2} @TTP ~onDeath  
 
 OpenField_Animal_ハロウルフ_MCLove32:
   Template: OpenField_Animal_Base_MCLove32
