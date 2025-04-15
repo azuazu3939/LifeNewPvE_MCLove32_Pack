@@ -54,7 +54,7 @@ Generic_Furniture_Object_MCLove32_Base_Spawn:
   Cooldown: 60
   Conditions:
   - mobsinworld{a=<400} true 
-  #- region{r=spawn} false 
+  - region{r=spawn} false 
   - region{r=plains} true  
   - (mythicinradius{a=<3;r=16} && mythicinradius{a=<5;r=36}) true 
   #- (biome{b=terra:origen/origen/verdant_valleys} ||  biome{b=terra:origen/origen/verdant_river}) true
