@@ -51,9 +51,9 @@ OpenField_Animal_ハロウルフ_MCLove32:
   - potion{t=SPEED;d=144000;l=1;p=false} @self ~onSpawn
   - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=20} @self ~onSpawn 
   - skill:Generic_Enemy_ウォーク追従_MCLove32{v=45} @self ~onTimer:20
-  - skill:Generic_Drop_MCLove32{mmid=OpenField_Material_ハロウルフの牙_MCLove32;amount=1;chance=0.5} @TTP ~onDeath 
-  - skill:Generic_Drop_MCLove32{mmid=OpenField_Material_ハロウルフの骨_MCLove32;amount=1;chance=0.4} @TTP ~onDeath 
-  - skill:Generic_Drop_MCLove32{mmid=OpenField_Material_ハロウルフの皮_MCLove32;amount=1;chance=0.6} @TTP ~onDeath 
+  - cmd{c="mm items give <target.name> OpenField_Material_ハロウルフの牙_MCLove32 1"} @TTP ~onDeath ?chance{c=0.5}
+  - cmd{c="mm items give <target.name> OpenField_Material_ハロウルフの骨_MCLove32 1"} @TTP ~onDeath ?chance{c=0.4}
+  - cmd{c="mm items give <target.name> OpenField_Material_ハロウルフの皮_MCLove32 1"} @TTP ~onDeath ?chance{c=0.6}
 
 OpenField_Animal_ハロウルフ_MCLove32_Leader:
   Template: OpenField_Animal_ハロウルフ_MCLove32
@@ -67,7 +67,7 @@ OpenField_Animal_ハロウルフ_MCLove32_Leader:
   Skills:
   - summon{t=OpenField_Animal_ハロウルフ_MCLove32;a=2to3;r=5;s=true} @self ~onSpawn
   - skill:Generic_Enemy_ウォーク_MCLove32{v=45} @self ~onTimer:20
-  - skill:Generic_Drop_MCLove32{mmid=OpenField_Material_ハロウルフの希少な牙_MCLove32;amount=1;chance=0.05} @TTP ~onDeath 
+  - cmd{c="mm items give <target.name> OpenField_Material_ハロウルフの希少な牙_MCLove32 1"} @TTP ~onDeath ?chance{c=0.05}
 
 OpenField_Animal_ヒィツジー_MCLove32:
   Template: OpenField_Animal_Base_MCLove32
@@ -139,7 +139,7 @@ OpenField_Animal_モーカウ_MCLove32:
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=24} @self ~onEnterCombat 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16;delay=5} @self ~onDropCombat
   - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
-  - skill:Generic_Drop_MCLove32{mmid=OpenField_Food_ステーキ_MCLove32;amount=1;chance=1} @TTP ~onDeath 
+  - cmd{c="mm items give <target.name> OpenField_Food_ステーキ_MCLove32 1"} @TTP ~onDeath ?chance{c=0.5}
 
 OpenField_Animal_モーカウ_MCLove32_Leader:
   Template: OpenField_Animal_モーカウ_MCLove32
@@ -149,4 +149,4 @@ OpenField_Animal_モーカウ_MCLove32_Leader:
   - exp 50
   Skills:
   - summon{t=OpenField_Animal_モーカウ_MCLove32;a=2to4;r=5;s=true} @self ~onSpawn
-  - skill:Generic_Drop_MCLove32{mmid=OpenField_Food_ステーキ_MCLove32;amount=2;chance=1} @TTP ~onDeath 
+  - cmd{c="mm items give <target.name> OpenField_Food_ステーキ_MCLove32 1"} @TTP ~onDeath ?chance{c=1}

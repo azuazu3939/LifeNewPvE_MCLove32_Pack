@@ -235,13 +235,6 @@ Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return:
   - message{m="&a&l<skill.var.ranking>位 &6&l<skill.var.entity> &f&lスコア &b<skill.var.dmg>"} @PIR{r=<skill.var.range>} ?!varrange{k=skill.dmg;r=0}
   - setVar{k=skill.ranking;a="1 + <skill.var.ranking>";t=INTEGER} @self ?!varrange{k=skill.dmg;r=0}
 
-#
-Generic_Drop_MCLove32:
-  Skills:
-  - message{m="<skill.chance>"} @PIR{r=32}
-  - cmd{c="mm items give <target.name> <skill.mmid> <skill.amount>"} @targetedTarget
-
-#
 Generic_MustDrop_MCLove32_Base:
   Skills:
   - cmd{c="mm items give <target.name> <skill.mmid1> <skill.amount1>"} @targetedTarget
