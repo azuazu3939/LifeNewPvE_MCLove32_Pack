@@ -7,10 +7,10 @@ OpenField_Animal_Base_MCLove32:
   - FALL 0
   - POISON 0.1
   Skills:
-  - cmd{c="mm items give <target.name> OpenField_Armor_アニマー_MCLove32_H 1"} @TTP ~onDeath 
-  - cmd{c="mm items give <target.name> OpenField_Armor_アニマー_MCLove32_C 1"} @TTP ~onDeath 
-  - cmd{c="mm items give <target.name> OpenField_Armor_アニマー_MCLove32_L 1"} @TTP ~onDeath 
-  - cmd{c="mm items give <target.name> OpenField_Armor_アニマー_MCLove32_B 1"} @TTP ~onDeath 
+  - cmd{c="mm items give <target.name> OpenField_Armor_アニマー_MCLove32_H 1"} @TTP ~onDeath ?chance{c=0.05}
+  - cmd{c="mm items give <target.name> OpenField_Armor_アニマー_MCLove32_C 1"} @TTP ~onDeath ?chance{c=0.05}
+  - cmd{c="mm items give <target.name> OpenField_Armor_アニマー_MCLove32_L 1"} @TTP ~onDeath ?chance{c=0.05}
+  - cmd{c="mm items give <target.name> OpenField_Armor_アニマー_MCLove32_B 1"} @TTP ~onDeath ?chance{c=0.05}
 
 OpenField_Animal_ハロウルフ_MCLove32:
   Template: OpenField_Animal_Base_MCLove32
