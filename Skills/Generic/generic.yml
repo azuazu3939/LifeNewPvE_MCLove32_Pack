@@ -238,7 +238,6 @@ Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return:
 #
 Generic_Drop_MCLove32:
   Skills:
-  - message{m="<skill.chance>"} @PIR{r=32}
   - cmd{c="mm items give <target.name> <skill.mmid> <skill.amount>"} @targetedTarget
 
 #
