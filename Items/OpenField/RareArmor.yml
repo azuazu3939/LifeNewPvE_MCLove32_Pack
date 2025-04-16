@@ -1,0 +1,76 @@
+
+OpenField_Armor_アニマー_MCLove32_RareH:
+  Id: leather_helmet
+  Display: "&fアニマー-キャップ"
+  Lore: []
+  Model: 100
+  Options:
+    ItemVersion: 1
+    Unbreakable: true
+  Attributes:
+    Head:
+      ArmorToughness: 7 ADD 
+      Armor: 8 ADD 
+  Group: 'Armor'
+  NBT:
+    PublicBukkitValues:
+      az:ground_reaction_force: "1"
+      az:max_mana: "25"
+      az:mana_regen: "5"
+
+OpenField_Armor_アニマー_MCLove32_RareC:
+  Id: leather_chestplate
+  Display: "&fアニマー-チェスト"
+  Lore: []
+  Model: 100
+  Options:
+    ItemVersion: 1
+    Unbreakable: true
+  Attributes:
+    Chest:
+      ArmorToughness: 7 ADD 
+      Armor: 13 ADD 
+  Group: 'Armor'
+  NBT:
+    PublicBukkitValues:
+      az:divine_blessing: "3"
+      az:max_mana: "50"
+      az:mana_regen: "3"
+
+OpenField_Armor_アニマー_MCLove32_RareL:
+  Id: leather_leggings
+  Display: "&fアニマー-レギンス"
+  Lore: []
+  Model: 100
+  Options:
+    ItemVersion: 1
+    Unbreakable: true
+  Attributes:
+    Legs:
+      ArmorToughness: 7 ADD 
+      Armor: 11 ADD 
+  Group: 'Armor'
+  NBT:
+    PublicBukkitValues:
+      az:ground_reaction_force: "1"
+      az:max_mana: "50"
+      az:mana_regen: "3"
+
+OpenField_Armor_アニマー_MCLove32_RareB:
+  Id: leather_boots
+  Display: "&fアニマー-ブーツ"
+  Lore: []
+  Model: 100
+  Options:
+    ItemVersion: 1
+    Unbreakable: true
+  Attributes:
+    Feet:
+      ArmorToughness: 7 ADD 
+      Armor: 8 ADD 
+  Group: 'Armor'
+  NBT:
+    PublicBukkitValues:
+      az:ground_reaction_force: "1"
+      az:max_mana: "25"
+      az:mana_regen: "5"

@@ -13,8 +13,6 @@ OpenField_Material_小動物の皮_MCLove32:
   Model: 100
   Options: 
     ItemVersion: 1
-  Enchantments:
-  - UNBREAKING 3
   Group: 'Material'
 
 OpenField_Material_ハロウルフの希少な牙_MCLove32:

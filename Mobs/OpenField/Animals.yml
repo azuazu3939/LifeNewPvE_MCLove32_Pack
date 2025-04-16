@@ -12,6 +12,10 @@ OpenField_Animal_Base_MCLove32:
   - cmd{c="mm items give <target.name> OpenField_Armor_アニマー_MCLove32_L 1"} @TTP ~onDeath ?chance{c=0.05}
   - cmd{c="mm items give <target.name> OpenField_Armor_アニマー_MCLove32_B 1"} @TTP ~onDeath ?chance{c=0.05}
   - cmd{c="mm items give <target.name> OpenField_Material_小動物の皮_MCLove32 1"} @TTP ~onDeath ?chance{c=0.5}
+  - cmd{c="mm items give <target.name> OpenField_Armor_アニマー_MCLove32_RareH 1"} @TTP ~onDeath ?chance{c=0.0001}
+  - cmd{c="mm items give <target.name> OpenField_Armor_アニマー_MCLove32_RareC 1"} @TTP ~onDeath ?chance{c=0.0001}
+  - cmd{c="mm items give <target.name> OpenField_Armor_アニマー_MCLove32_RareL 1"} @TTP ~onDeath ?chance{c=0.0001}
+  - cmd{c="mm items give <target.name> OpenField_Armor_アニマー_MCLove32_RareB 1"} @TTP ~onDeath ?chance{c=0.0001}
 
 OpenField_Animal_ハロウルフ_MCLove32:
   Template: OpenField_Animal_Base_MCLove32
