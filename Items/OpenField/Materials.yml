@@ -147,3 +147,32 @@ OpenField_Material_スイカ_MCLove32:
   Options: 
     ItemVersion: 1
   Group: 'Material'
+
+OpenField_Material_アニマ_MCLove32:
+  Id: brown_dye
+  Display: "アニマ"
+  Model: 100
+  Options: 
+    ItemVersion: 1
+  Group: 'Material'
+  Recipes:
+    Anima_H:
+      Type: SHAPELESS
+      Amount: 1
+      Ingredients:
+      - OpenField_Armor_アニマー_MCLove32_H
+    Anima_C:
+      Type: SHAPELESS
+      Amount: 1
+      Ingredients:
+      - OpenField_Armor_アニマー_MCLove32_C
+    Anima_L:
+      Type: SHAPELESS
+      Amount: 1
+      Ingredients:
+      - OpenField_Armor_アニマー_MCLove32_L
+    Anima_B:
+      Type: SHAPELESS
+      Amount: 1
+      Ingredients:
+      - OpenField_Armor_アニマー_MCLove32_B
