@@ -179,7 +179,7 @@ OpenField_Material_Anima_MCLove32:
   Consumable:
     ConsumeSeconds: 3
     HasParticles: false
-    Animation: EAT
+    Animation: NONE
     Sound: block.trial_spawner.spawn_item
     ConsumeEffects:
     - potion{t=LUCK;d=1200;p=false;l=9} @self
