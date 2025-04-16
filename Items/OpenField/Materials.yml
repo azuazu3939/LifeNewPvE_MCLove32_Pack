@@ -177,7 +177,7 @@ OpenField_Material_Anima_MCLove32:
       Ingredients:
       - OpenField_Armor_アニマー_MCLove32_B
   Consumable:
-    ConsumeSeconds: 3
+    ConsumeSeconds: 0.2
     HasParticles: false
     Animation: NONE
     Sound: block.trial_spawner.spawn_item
