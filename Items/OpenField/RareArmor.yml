@@ -7,6 +7,7 @@ OpenField_Armor_アニマー_MCLove32_RareH:
   Options:
     ItemVersion: 1
     Unbreakable: true
+    Color: 255,0,0
   Attributes:
     Head:
       ArmorToughness: 7 ADD 
@@ -26,6 +27,7 @@ OpenField_Armor_アニマー_MCLove32_RareC:
   Options:
     ItemVersion: 1
     Unbreakable: true
+    Color: 255,0,0
   Attributes:
     Chest:
       ArmorToughness: 7 ADD 
@@ -45,6 +47,7 @@ OpenField_Armor_アニマー_MCLove32_RareL:
   Options:
     ItemVersion: 1
     Unbreakable: true
+    Color: 255,0,0
   Attributes:
     Legs:
       ArmorToughness: 7 ADD 
@@ -64,6 +67,7 @@ OpenField_Armor_アニマー_MCLove32_RareB:
   Options:
     ItemVersion: 1
     Unbreakable: true
+    Color: 255,0,0
   Attributes:
     Feet:
       ArmorToughness: 7 ADD 
