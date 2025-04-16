@@ -1,0 +1,44 @@
+OpenField_Tools_石のツルハシ_MCLove32:
+  Id: stone_pickaxe
+  Display: "石のツルハシ"
+  Lore: []
+  Model: 1000
+  Options: 
+    ItemVersion: 1
+    PreventEnchanting: false 
+    PreventCrafting: true       
+    PreventAnviling: false        
+    PreventSmithing: true
+  Group: 'Tools'
+  Skills:
+  - potion{t=HASTE;l=1;d=100;p=false} @self ~onBlockBreak
+
+OpenField_Tools_石の斧_MCLove32:
+  Id: stone_axe
+  Display: "石の斧"
+  Lore: []
+  Model: 1000
+  Options: 
+    ItemVersion: 1
+    PreventEnchanting: false 
+    PreventCrafting: true       
+    PreventAnviling: false        
+    PreventSmithing: true
+  Group: 'Tools'
+  Skills:
+  - potion{t=HASTE;l=1;d=100;p=false} @self ~onBlockBreak
+
+OpenField_Tools_石のシャベル_MCLove32:
+  Id: stone_shovel
+  Display: "石のシャベル"
+  Lore: []
+  Model: 1000
+  Options: 
+    ItemVersion: 1
+    PreventEnchanting: false 
+    PreventCrafting: true       
+    PreventAnviling: false        
+    PreventSmithing: true
+  Group: 'Tools'
+  Skills:
+  - potion{t=HASTE;l=1;d=100;p=false} @self ~onBlockBreak
