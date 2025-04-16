@@ -182,5 +182,5 @@ OpenField_Material_Anima_MCLove32:
     Animation: SPEAR
     Sound: block.trial_spawner.spawn_item
     ConsumeEffects:
-    - aura{n=Anima_Drop;i=20;t=12000;rd=true;ms=10;oc=true} @self
+    - potion{t=LUCK;d=1200;p=false;l=9} @self
 
