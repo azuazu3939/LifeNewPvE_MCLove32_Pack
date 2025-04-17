@@ -2,7 +2,8 @@ OpenField_Util_ルートチェスト_MCLove32:
   Id: chest
   Display: "&fルートチェスト"
   Lore: []
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Options:
     Unbreakable: true
     Placeable: true

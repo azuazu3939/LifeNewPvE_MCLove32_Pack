@@ -3,21 +3,24 @@ OpenField_Material_取引不可_MCLove32:
   Display: "&f取引不可"
   Lore: 
   - "&7GUIを見やすくするためのアイテム。"
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Group: 'Material'
 
 OpenField_Material_小動物の皮_MCLove32:
   Id: leather
   Display: "&f小動物の皮"
   Model: 100
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Group: 'Material'
 
 OpenField_Material_ハロウルフの希少な牙_MCLove32:
   Id: bone_meal
   Display: "&fハロウルフの希少な牙"
   Model: 101
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Enchantments:
   - UNBREAKING 3
   Group: 'Material'
@@ -26,14 +29,16 @@ OpenField_Material_ハロウルフの牙_MCLove32:
   Id: bone_meal
   Display: "&fハロウルフの牙"
   Model: 101
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Group: 'Material'
 
 OpenField_Material_ハロウルフの骨_MCLove32:
   Id: bone
   Display: "&fハロウルフの骨"
   Model: 100
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Options:
     Unbreakable: true
   Group: 'Material'
@@ -42,7 +47,8 @@ OpenField_Material_ハロウルフの皮_MCLove32:
   Id: leather
   Display: "&fハロウルフの皮"
   Model: 101
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Enchantments:
   - UNBREAKING 1
   Group: 'Material'
@@ -51,84 +57,96 @@ OpenField_Material_羊獣の羊毛_MCLove32:
   Id: black_wool
   Display: "&f羊獣の羊毛"
   Model: 100
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Group: 'Material'
 
 OpenField_Material_羊獣の骨_MCLove32:
   Id: bone
   Display: "&f羊獣の骨"
   Model: 101
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Group: 'Material'
 
 OpenField_Material_羊獣の頭_MCLove32:
   Id: bone_block
   Display: "&f羊獣の頭"
   Model: 100
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Group: 'Material'
 
 OpenField_Material_風核_MCLove32:
   Id: wind_charge
   Display: "&f風核"
   Model: 100
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Group: 'Material'
 
 OpenField_Material_風牙狼の皮_MCLove32:
   Id: leather
   Display: "&f風牙狼の皮"
   Model: 102
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Group: 'Material'
 
 OpenField_Material_風牙狼の牙_MCLove32:
   Id: bone_meal
   Display: "&f風牙狼の牙"
   Model: 102
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Group: 'Material'
 
 OpenField_Material_風牙狼の骨_MCLove32:
   Id: bone
   Display: "&f風牙狼の骨"
   Model: 106
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Group: 'Material'
 
 OpenField_Material_炎核_MCLove32:
   Id: fire_charge
   Display: "&f炎核"
   Model: 100
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Group: 'Material'
 
 OpenField_Material_焔獣の炎牙_MCLove32:
   Id: blaze_rod
   Display: "&f焔獣の炎牙"
   Model: 100
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Group: 'Material'
 
 OpenField_Material_焔獣の炎殻_MCLove32:
   Id: blaze_powder
   Display: "&f焔獣の炎殻"
   Model: 100
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Group: 'Material'
 
 OpenField_Material_原木_MCLove32:
   Id: oak_log
   Display: "&f原木"
   Lore: []
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Group: 'Material'
 
 OpenField_Material_スイカ_MCLove32:
   Id: melon
   Display: "&fスイカ"
   Lore: []
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Group: 'Material'
 
 OpenField_Material_Anima_MCLove32:
@@ -137,7 +155,8 @@ OpenField_Material_Anima_MCLove32:
   Model: 100
   Lore:
   - "&f消費することで、ドロップ率を僅かな時間上昇させる。"
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Group: 'Material'
   Recipes:
     Anima_H:

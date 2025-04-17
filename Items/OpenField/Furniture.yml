@@ -3,6 +3,8 @@ OpenField_Object_不思議草Block:
   Display: "不思議草"
   Type: FURNITURE
   Model: 1
+  ItemUpdater:
+    Version: 1
   Furniture:
     Type: DISPLAY
     DropSelf: false
@@ -54,6 +56,8 @@ OpenField_Object_不思議花Block:
   Display: "不思議花"
   Type: FURNITURE
   Model: 1
+  ItemUpdater:
+    Version: 1
   Furniture:
     Type: DISPLAY
     DropSelf: false
@@ -105,6 +109,8 @@ OpenField_Object_不思議種Block:
   Display: "不思議種"
   Type: FURNITURE
   Model: 1
+  ItemUpdater:
+    Version: 1
   Furniture:
     Type: DISPLAY
     DropSelf: false

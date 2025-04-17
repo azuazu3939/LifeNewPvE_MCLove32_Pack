@@ -4,7 +4,8 @@ OpenField_Armor_アニマー_MCLove32_RareH:
   Display: "&fアニマー-キャップ"
   Lore: []
   Model: 100
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Options:
     Unbreakable: true
     Color: 255,0,0
@@ -24,7 +25,8 @@ OpenField_Armor_アニマー_MCLove32_RareC:
   Display: "&fアニマー-チェスト"
   Lore: []
   Model: 100
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Options:
     Unbreakable: true
     Color: 255,0,0
@@ -44,7 +46,8 @@ OpenField_Armor_アニマー_MCLove32_RareL:
   Display: "&fアニマー-レギンス"
   Lore: []
   Model: 100
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Options:
     Unbreakable: true
     Color: 255,0,0
@@ -64,7 +67,8 @@ OpenField_Armor_アニマー_MCLove32_RareB:
   Display: "&fアニマー-ブーツ"
   Lore: []
   Model: 100
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Options:
     Unbreakable: true
     Color: 255,0,0

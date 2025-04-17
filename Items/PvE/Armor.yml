@@ -3,7 +3,8 @@ PvE_Armor_ビギンズ_MCLove32_H:
   Display: "&fビギンズ-ヘルム"
   Lore: []
   Model: 100
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Options:
     Unbreakable: true
   Attributes:
@@ -22,7 +23,8 @@ PvE_Armor_ビギンズ_MCLove32_C:
   Display: "&fビギンズ-チェスト"
   Lore: []
   Model: 100
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Options:
     Unbreakable: true
   Attributes:
@@ -40,7 +42,8 @@ PvE_Armor_ビギンズ_MCLove32_L:
   Display: "&fビギンズ-レグス"
   Lore: []
   Model: 100
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Options:
     Unbreakable: true
   Attributes:
@@ -59,7 +62,8 @@ PvE_Armor_ビギンズ_MCLove32_B:
   Display: "&fビギンズ-ブーツ"
   Lore: []
   Model: 100
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Options:
     Unbreakable: true
   Attributes:

@@ -3,7 +3,8 @@ OpenField_Weapon_サイスオブデーモン_MCLove32:
   Display: "&fサイスオブデーモン"
   Lore: []
   Model: 1000
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Options: 
     Unbreakable: true
   Attributes:
@@ -18,7 +19,8 @@ OpenField_Weapon_ビットブレード_MCLove32:
   Display: "&fビットブレード"
   Lore: []
   Model: 1000
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Options: 
     Unbreakable: true
   Attributes:
@@ -33,7 +35,8 @@ OpenField_Weapon_ビットブレードM_MCLove32:
   Display: "&fビットブレードM"
   Lore: []
   Model: 1001
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Options: 
     Unbreakable: true
   Attributes:
@@ -51,7 +54,8 @@ OpenField_Weapon_サンドストーム_MCLove32:
   - "&f周囲の敵を吸い込み尽くす。"
   - "&fopen_fieldの敵から稀に落ちる。"
   Model: 1000
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Options: 
     Unbreakable: true
   Attributes:
@@ -66,7 +70,8 @@ OpenField_Weapon_エアブラスタ_MCLove32:
   Display: "&fエアブラスタ"
   Lore: []
   Model: 1000
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Options:
     Unbreakable: true
   Attributes:
@@ -81,7 +86,8 @@ OpenField_Weapon_牙狼ノ壱_MCLove32:
   Display: "&f牙狼ノ壱"
   Lore: []
   Model: 1000
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Options:
     Unbreakable: true 
   Attributes:
@@ -96,7 +102,8 @@ OpenField_Weapon_牙狼ノ弐_MCLove32:
   Display: "&f牙狼ノ弐"
   Lore: []
   Model: 1001
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Options:
     Unbreakable: true 
   Attributes:
@@ -111,7 +118,8 @@ OpenField_Weapon_牙狼ノ零_MCLove32:
   Display: "&f牙狼ノ零"
   Lore: []
   Model: 1002
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Options:
     Unbreakable: true
   Attributes:
@@ -126,7 +134,8 @@ OpenField_Weapon_スライムソード_MCLove32:
   Display: "&fスライムソード"
   Lore: []
   Model: 1001
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Options:
     Unbreakable: true 
   Attributes:
@@ -140,7 +149,8 @@ OpenField_Weapon_火炎レーザー_MCLove32:
   Display: "&f火炎レーザー"
   Lore: []
   Model: 1000
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Options:
     Unbreakable: true 
   Attributes:
@@ -155,7 +165,8 @@ OpenField_Weapon_火炎弾_MCLove32:
   Display: "&f火炎弾"
   Lore: []
   Model: 1001
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Options:
     Unbreakable: true 
   Attributes:
@@ -170,7 +181,8 @@ OpenField_Weapon_アイシクルショット_MCLove32:
   Display: "&fアイシクルショット"
   Lore: []
   Model: 1007
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Options:
     Unbreakable: true 
   Attributes:
@@ -185,7 +197,8 @@ OpenField_Weapon_ツリーハウス_MCLove32:
   Display: "&fツリーハウス"
   Lore: []
   Model: 1000
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Options:
     Unbreakable: true 
   Attributes:
@@ -200,7 +213,8 @@ OpenField_Weapon_オービニウム_MCLove32:
   Display: "&fオービニウム"
   Lore: []
   Model: 1007
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Options:
     Unbreakable: true 
   Attributes:
@@ -215,7 +229,8 @@ OpenField_Weapon_風輪斬_MCLove32:
   Display: "&f風輪斬"
   Lore: []
   Model: 1002
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Options:
     Unbreakable: true 
   Attributes:
@@ -230,7 +245,8 @@ OpenField_Weapon_氷剣_MCLove32:
   Display: "&f氷剣"
   Lore: []
   Model: 1002
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Options:
     Unbreakable: true 
   Attributes:
@@ -245,7 +261,8 @@ OpenField_Weapon_炎剣_MCLove32:
   Display: "&f炎剣"
   Lore: []
   Model: 1002
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Options:
     Unbreakable: true 
   Attributes:
@@ -259,7 +276,8 @@ OpenField_Admin_Kill_MCLove32:
   Id: stick
   Display: "&c&lAdmimSword"
   Lore: []
-  ItemVersion: 1
+  ItemUpdater:
+    Version: 1
   Options:
     Unbreakable: true 
   Attributes:
