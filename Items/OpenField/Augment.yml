@@ -1,10 +1,87 @@
 OpneField_Augment_健脚:
   Id: sugar
-  Display: '<#b6f5f0>健脚-スキル'
+  Display: '<#88e9a0>健脚-スキル'
   Model: 100
   Augmentation:
     Type: GEM
-    Tooltip: "<#b6f5f0><bold>健脚"
+    Tooltip: "<#88e9a0><bold>健脚"
     Icon: ''
     Skills:
-    - potion{t=SPEED;l=1;d=200;cd=1}  @self ~onJump
+    - potion{t=JUMP;l=1;d=200;cd=1} @self ~onJump
+
+OpneField_Augment_快足:
+  Id: sugar
+  Display: '<#b6f5f0>快足-スキル'
+  Model: 100
+  Augmentation:
+    Type: GEM
+    Tooltip: "<#b6f5f0><bold>快足"
+    Icon: ''
+    Skills:
+    - potion{t=SPEED;l=1;d=200;cd=1} @self ~onJump
+
+OpneField_Augment_超脚:
+  Id: sugar
+  Display: '<#88e9a0>超脚-スキル'
+  Model: 100
+  Augmentation:
+    Type: GEM
+    Tooltip: "<#88e9a0><bold>超脚"
+    Icon: ''
+    Skills:
+    - potion{t=JUMP;l=2;d=200;cd=1} @self ~onJump
+
+OpneField_Augment_超足:
+  Id: sugar
+  Display: '<#b6f5f0>超足-スキル'
+  Model: 100
+  Augmentation:
+    Type: GEM
+    Tooltip: "<#b6f5f0><bold>超足"
+    Icon: ''
+    Skills:
+    - potion{t=SPEED;l=2;d=200;cd=1} @self ~onJump
+
+OpneField_Augment_速堀:
+  Id: glowstone_dust
+  Display: '<#bdd660>速堀-スキル'
+  Model: 100
+  Augmentation:
+    Type: GEM
+    Tooltip: "<#bdd660><bold>速堀"
+    Icon: ''
+    Skills:
+    - potion{t=HASTE;l=1;d=200;cd=1} @self ~onSwing
+
+OpneField_Augment_増強:
+  Id: glowstone_dust
+  Display: '<#c53131>増強-スキル'
+  Model: 100
+  Augmentation:
+    Type: GEM
+    Tooltip: "<#c53131><bold>増強"
+    Icon: ''
+    Skills:
+    - potion{t=STRENGTH;l=1;d=200;cd=1} @self ~onSwing
+
+OpneField_Augment_超堀:
+  Id: glowstone_dust
+  Display: '<#bdd660>超堀-スキル'
+  Model: 100
+  Augmentation:
+    Type: GEM
+    Tooltip: "<#bdd660><bold>超堀"
+    Icon: ''
+    Skills:
+    - potion{t=HASTE;l=2;d=200;cd=1} @self ~onSwing
+
+OpneField_Augment_超強:
+  Id: glowstone_dust
+  Display: '<#c53131>超強-スキル'
+  Model: 100
+  Augmentation:
+    Type: GEM
+    Tooltip: "<#c53131><bold>超強"
+    Icon: ''
+    Skills:
+    - potion{t=STRENGTH;l=2;d=200;cd=1} @self ~onSwing
