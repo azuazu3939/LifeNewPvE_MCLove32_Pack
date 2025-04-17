@@ -19,7 +19,7 @@ OpenField_Armor_アニマー_MCLove32_H:
     Head:
       ArmorToughness: 2 ADD 
       Armor: 3 ADD 
-  Group: 'Armor'
+  Group: 'Armor2'
   NBT:
     PublicBukkitValues:
       az:ground_reaction_force: "1"
