@@ -1,6 +1,6 @@
 OpneField_Augment_ボルテージ:
   Id: sugar
-  Display: '<#b6f5f0>ボルテージ-ジェム'
+  Display: '<#b6f5f0>ボルテージ-スキル'
   Model: 100
   Augmentation:
     Type: GEM
