@@ -3,7 +3,7 @@ OpneField_Augment_ボルテージ:
   Display: '<#b6f5f0>ボルテージ-ジェム'
   Model: 100
   Augmentation:
-    Type: COMMON_GEM
+    Type: GEM
     Tooltip: "<#b6f5f0><bold>ボルテージ"
     Icon: ''
     Skills:
