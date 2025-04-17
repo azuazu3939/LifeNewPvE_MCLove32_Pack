@@ -37,6 +37,11 @@ OpenField_Food_スイカ_MCLove32:
   ItemUpdater:
     Version: 1
   Group: 'Food'
+  Consumable:
+    ConsumeSeconds: 1
+    HasParticles: true
+    Animation: EAT
+    Sound: entity.generic.eat
   Food:
     Nutrition: 6
     Saturation: 1
