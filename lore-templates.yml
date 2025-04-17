@@ -6,7 +6,7 @@ ArmorCraftLore:
     - "{augments:GEM} &fスキル:"
     - "{augments-each:GEM}<augment.display>"
   - Line: ""
-  - Line: "<lore.rarity>"
+  - Line: "<lore.Rarity>"
 
 
 ArmorLore:
@@ -15,4 +15,4 @@ ArmorLore:
     - "{augments:GEM} &fスキル:"
     - "{augments-each:GEM}<augment.display>"
   - Line: ""
-  - Line: "<lore.rarity>"
+  - Line: "<lore.Rarity>"
