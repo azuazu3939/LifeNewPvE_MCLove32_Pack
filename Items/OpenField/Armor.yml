@@ -4,7 +4,7 @@ OpenField_Armor_アニマー_MCLove32_H:
   Display: "&fアニマー-キャップ"
   Lore: 
     Template: ArmorLore
-    Template: CraftableLore
+    #Template: CraftableLore
   Model: 100
   AugmentationSlots:
     Type: COMMON_GEM
