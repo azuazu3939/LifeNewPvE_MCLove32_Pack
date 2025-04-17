@@ -5,10 +5,11 @@ Resource_Food_ブドウ_MCLove32:
   Hide:
   - ATTRIBUTES
   Model: 1000
+  ItemUpdater:
+    Version: 1
   Options:
     Destroy: false
     CancelDamage: true
-    ItemVersion: 1
     #Unbreakable: true
   Group: 'Food'
   Skills:
@@ -21,10 +22,11 @@ Resource_Food_イチゴ_MCLove32:
   Hide:
   - ATTRIBUTES
   Model: 1001
+  ItemUpdater:
+    Version: 1
   Options:
     Destroy: false
     CancelDamage: true
-    ItemVersion: 1
     #Unbreakable: true
   Group: 'Food'
   Skills:
@@ -37,10 +39,11 @@ Resource_Food_キウイ_MCLove32:
   Hide:
   - ATTRIBUTES
   Model: 1002
+  ItemUpdater:
+    Version: 1
   Options:
     Destroy: false
     CancelDamage: true
-    ItemVersion: 1
     #Unbreakable: true
   Group: 'Food'
   Skills:
@@ -53,10 +56,11 @@ Resource_Food_バナナ_MCLove32:
   Hide:
   - ATTRIBUTES
   Model: 1003
+  ItemUpdater:
+    Version: 1
   Options:
     Destroy: false
     CancelDamage: true
-    ItemVersion: 1
     #Unbreakable: true
   Group: 'Food'
   Skills:
@@ -69,10 +73,11 @@ Resource_Food_フルーツポンチ_MCLove32:
   Hide:
   - ATTRIBUTES
   Model: 1000
+  ItemUpdater:
+    Version: 1
   Options:
     Destroy: false
     CancelDamage: true
-    ItemVersion: 1
     #Unbreakable: true
   Group: 'Food'
   Skills:
@@ -80,15 +85,16 @@ Resource_Food_フルーツポンチ_MCLove32:
 
 Resource_Food_ポーション_MCLove32:
   Id: potion
-  Display: "&fフルーツポンチ"
+  Display: "&fポーション"
   Lore:
   Hide:
   - ATTRIBUTES
   Model: 1000
+  ItemUpdater:
+    Version: 1
   Options:
     Destroy: false
     CancelDamage: true
-    ItemVersion: 1
     #Unbreakable: true
   Group: 'Food'
   PotionEffects:
