@@ -2,7 +2,9 @@
 OpenField_Armor_アニマー_MCLove32_RareH:
   Id: leather_helmet
   Display: "&fアニマー-キャップ"
-  Lore: []
+  Lore: 
+    Template: ArmorLore
+    Rarity: "&1Rare"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -23,7 +25,9 @@ OpenField_Armor_アニマー_MCLove32_RareH:
 OpenField_Armor_アニマー_MCLove32_RareC:
   Id: leather_chestplate
   Display: "&fアニマー-チェスト"
-  Lore: []
+  Lore: 
+    Template: ArmorLore
+    Rarity: "&1Rare"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -44,7 +48,9 @@ OpenField_Armor_アニマー_MCLove32_RareC:
 OpenField_Armor_アニマー_MCLove32_RareL:
   Id: leather_leggings
   Display: "&fアニマー-レギンス"
-  Lore: []
+  Lore: 
+    Template: ArmorLore
+    Rarity: "&1Rare"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -65,7 +71,9 @@ OpenField_Armor_アニマー_MCLove32_RareL:
 OpenField_Armor_アニマー_MCLove32_RareB:
   Id: leather_boots
   Display: "&fアニマー-ブーツ"
-  Lore: []
+  Lore: 
+    Template: ArmorLore
+    Rarity: "&1Rare"
   Model: 100
   ItemUpdater:
     Version: 1

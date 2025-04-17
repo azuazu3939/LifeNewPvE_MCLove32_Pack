@@ -5,6 +5,7 @@ OpenField_Armor_アニマー_MCLove32_H:
   Lore: 
     Template: ArmorCraftLore
     Craft: "&f防具をクラフトで分解することができる。"
+    Rarity: "&7Common"
   Model: 100
   AugmentationSlots:
     Type: GEM
@@ -29,6 +30,7 @@ OpenField_Armor_アニマー_MCLove32_C:
   Lore: 
     Template: ArmorCraftLore
     Craft: "&f防具をクラフトで分解することができる。"
+    Rarity: "&7Common"
   Model: 100
   AugmentationSlots:
     Type: GEM
@@ -54,6 +56,7 @@ OpenField_Armor_アニマー_MCLove32_L:
   Lore: 
     Template: ArmorCraftLore
     Craft: "&f防具をクラフトで分解することができる。"
+    Rarity: "&7Common"
   Model: 100
   AugmentationSlots:
     Type: GEM
@@ -78,6 +81,7 @@ OpenField_Armor_アニマー_MCLove32_B:
   Lore: 
     Template: ArmorCraftLore
     Craft: "&f防具をクラフトで分解することができる。"
+    Rarity: "&7Common"
   Model: 100
   AugmentationSlots:
     Type: GEM
@@ -99,7 +103,9 @@ OpenField_Armor_アニマー_MCLove32_B:
 OpenField_Armor_ハロ_MCLove32_H:
   Id: leather_helmet
   Display: "&fハロ-キャップ"
-  Lore: []
+  Lore: 
+    Template: ArmorLore
+    Rarity: "&7Common"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -124,7 +130,9 @@ OpenField_Armor_ハロ_MCLove32_H:
 OpenField_Armor_ハロ_MCLove32_C:
   Id: leather_chestplate
   Display: "&fハロ-チェスト"
-  Lore: []
+  Lore: 
+    Template: ArmorLore
+    Rarity: "&7Common"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -149,7 +157,9 @@ OpenField_Armor_ハロ_MCLove32_C:
 OpenField_Armor_ハロ_MCLove32_L:
   Id: leather_leggings
   Display: "&fハロ-レギンス"
-  Lore: []
+  Lore: 
+    Template: ArmorLore
+    Rarity: "&7Common"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -174,7 +184,9 @@ OpenField_Armor_ハロ_MCLove32_L:
 OpenField_Armor_ハロ_MCLove32_B:
   Id: leather_boots
   Display: "&fハロ-ブーツ"
-  Lore: []
+  Lore: 
+    Template: ArmorLore
+    Rarity: "&7Common"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -199,7 +211,9 @@ OpenField_Armor_ハロ_MCLove32_B:
 OpenField_Armor_カルチェ_MCLove32_H:
   Id: leather_helmet
   Display: "&fカルチェ-ヘルム"
-  Lore: []
+  Lore: 
+    Template: ArmorLore
+    Rarity: "&aUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -225,7 +239,9 @@ OpenField_Armor_カルチェ_MCLove32_H:
 OpenField_Armor_カルチェ_MCLove32_C:
   Id: leather_chestplate
   Display: "&fカルチェ-チェスト"
-  Lore: []
+  Lore: 
+    Template: ArmorLore
+    Rarity: "&aUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -250,7 +266,9 @@ OpenField_Armor_カルチェ_MCLove32_C:
 OpenField_Armor_カルチェ_MCLove32_L:
   Id: leather_leggings
   Display: "&fカルチェ-レギンス"
-  Lore: []
+  Lore: 
+    Template: ArmorLore
+    Rarity: "&aUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -276,7 +294,9 @@ OpenField_Armor_カルチェ_MCLove32_L:
 OpenField_Armor_カルチェ_MCLove32_B:
   Id: leather_boots
   Display: "&fカルチェ-ブーツ"
-  Lore: []
+  Lore: 
+    Template: ArmorLore
+    Rarity: "&aUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -302,7 +322,9 @@ OpenField_Armor_カルチェ_MCLove32_B:
 OpenField_Armor_ウィド_MCLove32_H:
   Id: leather_helmet
   Display: "&fウィド-ヘルム"
-  Lore: []
+  Lore: 
+    Template: ArmorLore
+    Rarity: "&aUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -328,7 +350,9 @@ OpenField_Armor_ウィド_MCLove32_H:
 OpenField_Armor_ウィド_MCLove32_C:
   Id: leather_chestplate
   Display: "&fウィド-チェスト"
-  Lore: []
+  Lore: 
+    Template: ArmorLore
+    Rarity: "&aUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -355,7 +379,9 @@ OpenField_Armor_ウィド_MCLove32_C:
 OpenField_Armor_ウィド_MCLove32_L:
   Id: leather_leggings
   Display: "&fウィド-レギンス"
-  Lore: []
+  Lore: 
+    Template: ArmorLore
+    Rarity: "&aUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -383,7 +409,9 @@ OpenField_Armor_ウィド_MCLove32_L:
 OpenField_Armor_ウィド_MCLove32_B:
   Id: leather_boots
   Display: "&fウィド-ブーツ"
-  Lore: []
+  Lore: 
+    Template: ArmorLore
+    Rarity: "&aUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -410,7 +438,9 @@ OpenField_Armor_ウィド_MCLove32_B:
 OpenField_Armor_フェルム_MCLove32_H:
   Id: leather_helmet
   Display: "&fフェルム-ヘルム"
-  Lore: []
+  Lore: 
+    Template: ArmorLore
+    Rarity: "&aUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -437,7 +467,9 @@ OpenField_Armor_フェルム_MCLove32_H:
 OpenField_Armor_フェルム_MCLove32_C:
   Id: leather_chestplate
   Display: "&fフェルム-チェスト"
-  Lore: []
+  Lore: 
+    Template: ArmorLore
+    Rarity: "&aUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -464,7 +496,9 @@ OpenField_Armor_フェルム_MCLove32_C:
 OpenField_Armor_フェルム_MCLove32_L:
   Id: leather_leggings
   Display: "&fフェルム-レギンス"
-  Lore: []
+  Lore: 
+    Template: ArmorLore
+    Rarity: "&aUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -491,7 +525,9 @@ OpenField_Armor_フェルム_MCLove32_L:
 OpenField_Armor_フェルム_MCLove32_B:
   Id: leather_boots
   Display: "&fフェルム-ブーツ"
-  Lore: []
+  Lore: 
+    Template: ArmorLore
+    Rarity: "&aUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -519,7 +555,9 @@ OpenField_Armor_フェルム_MCLove32_B:
 OpenField_Armor_フラクタ_MCLove32_H:
   Id: netherite_helmet
   Display: "&fフラクタ-ヘルム"
-  Lore: []
+  Lore: 
+    Template: ArmorLore
+    Rarity: "&aUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -546,7 +584,9 @@ OpenField_Armor_フラクタ_MCLove32_H:
 OpenField_Armor_フラクタ_MCLove32_C:
   Id: netherite_chestplate
   Display: "&fフラクタ-チェスト"
-  Lore: []
+  Lore: 
+    Template: ArmorLore
+    Rarity: "&aUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -572,7 +612,9 @@ OpenField_Armor_フラクタ_MCLove32_C:
 OpenField_Armor_フラクタ_MCLove32_L:
   Id: netherite_leggings
   Display: "&fフラクタ-レギンス"
-  Lore: []
+  Lore: 
+    Template: ArmorLore
+    Rarity: "&aUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -597,7 +639,9 @@ OpenField_Armor_フラクタ_MCLove32_L:
 OpenField_Armor_フラクタ_MCLove32_B:
   Id: netherite_boots
   Display: "&fフラクタ-ブーツ"
-  Lore: []
+  Lore: 
+    Template: ArmorLore
+    Rarity: "&aUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -623,7 +667,9 @@ OpenField_Armor_フラクタ_MCLove32_B:
 OpenField_Armor_ボルク_MCLove32_H:
   Id: golden_helmet
   Display: "&fボルク-ヘルム"
-  Lore: []
+  Lore: 
+    Template: ArmorLore
+    Rarity: "&aUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -648,7 +694,9 @@ OpenField_Armor_ボルク_MCLove32_H:
 OpenField_Armor_ボルク_MCLove32_C:
   Id: golden_chestplate
   Display: "&fボルク-チェスト"
-  Lore: []
+  Lore: 
+    Template: ArmorLore
+    Rarity: "&aUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -673,7 +721,9 @@ OpenField_Armor_ボルク_MCLove32_C:
 OpenField_Armor_ボルク_MCLove32_L:
   Id: golden_leggings
   Display: "&fボルク-レギンス"
-  Lore: []
+  Lore: 
+    Template: ArmorLore
+    Rarity: "&aUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -698,7 +748,9 @@ OpenField_Armor_ボルク_MCLove32_L:
 OpenField_Armor_ボルク_MCLove32_B:
   Id: golden_boots
   Display: "&fボルク-ブーツ"
-  Lore: []
+  Lore: 
+    Template: ArmorLore
+    Rarity: "&aUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
