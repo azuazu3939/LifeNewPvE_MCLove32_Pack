@@ -103,6 +103,11 @@ OpenField_Armor_ハロ_MCLove32_H:
   Model: 100
   ItemUpdater:
     Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.5
+    MaxAmount: 2
   Options:
     Unbreakable: true
     Color: WHITE
@@ -123,6 +128,11 @@ OpenField_Armor_ハロ_MCLove32_C:
   Model: 100
   ItemUpdater:
     Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.5
+    MaxAmount: 2
   Options:
     Unbreakable: true
     Color: WHITE
@@ -143,6 +153,11 @@ OpenField_Armor_ハロ_MCLove32_L:
   Model: 100
   ItemUpdater:
     Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.5
+    MaxAmount: 2
   Options:
     Unbreakable: true
     Color: WHITE
@@ -163,6 +178,11 @@ OpenField_Armor_ハロ_MCLove32_B:
   Model: 100
   ItemUpdater:
     Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.5
+    MaxAmount: 2
   Options:
     Unbreakable: true
     Color: WHITE
@@ -183,6 +203,11 @@ OpenField_Armor_カルチェ_MCLove32_H:
   Model: 100
   ItemUpdater:
     Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.4
+    MaxAmount: 2
   Options:
     Unbreakable: true
     Color: WHITE
@@ -204,6 +229,11 @@ OpenField_Armor_カルチェ_MCLove32_C:
   Model: 100
   ItemUpdater:
     Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.4
+    MaxAmount: 2
   Options:
     Unbreakable: true
     Color: WHITE
@@ -224,6 +254,11 @@ OpenField_Armor_カルチェ_MCLove32_L:
   Model: 100
   ItemUpdater:
     Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.4
+    MaxAmount: 2
   Options:
     Unbreakable: true
     Color: WHITE
@@ -245,6 +280,11 @@ OpenField_Armor_カルチェ_MCLove32_B:
   Model: 100
   ItemUpdater:
     Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.4
+    MaxAmount: 2
   Options:
     Unbreakable: true
     Color: WHITE
@@ -266,6 +306,11 @@ OpenField_Armor_ウィド_MCLove32_H:
   Model: 100
   ItemUpdater:
     Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.4
+    MaxAmount: 2
   Options:
     Unbreakable: true
     Color: GREEN
@@ -287,6 +332,11 @@ OpenField_Armor_ウィド_MCLove32_C:
   Model: 100
   ItemUpdater:
     Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.4
+    MaxAmount: 2
   Options:
     Unbreakable: true
     Color: GREEN
@@ -309,6 +359,11 @@ OpenField_Armor_ウィド_MCLove32_L:
   Model: 100
   ItemUpdater:
     Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.4
+    MaxAmount: 2
   Options:
     Unbreakable: true
     Color: GREEN
@@ -332,6 +387,11 @@ OpenField_Armor_ウィド_MCLove32_B:
   Model: 100
   ItemUpdater:
     Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.4
+    MaxAmount: 2
   Options:
     Unbreakable: true
     Color: GREEN
@@ -354,6 +414,11 @@ OpenField_Armor_フェルム_MCLove32_H:
   Model: 100
   ItemUpdater:
     Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.4
+    MaxAmount: 2
   Options:
     Unbreakable: true
     Color: RED
@@ -376,6 +441,11 @@ OpenField_Armor_フェルム_MCLove32_C:
   Model: 100
   ItemUpdater:
     Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.4
+    MaxAmount: 2
   Options:
     Unbreakable: true
     Color: RED
@@ -398,6 +468,11 @@ OpenField_Armor_フェルム_MCLove32_L:
   Model: 100
   ItemUpdater:
     Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.4
+    MaxAmount: 2
   Options:
     Unbreakable: true
     Color: RED
@@ -420,6 +495,11 @@ OpenField_Armor_フェルム_MCLove32_B:
   Model: 100
   ItemUpdater:
     Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.4
+    MaxAmount: 2
   Options:
     Unbreakable: true
     Color: RED
@@ -443,6 +523,11 @@ OpenField_Armor_フラクタ_MCLove32_H:
   Model: 100
   ItemUpdater:
     Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.4
+    MaxAmount: 2
   Options:
     Unbreakable: true
   Attributes:
@@ -465,6 +550,11 @@ OpenField_Armor_フラクタ_MCLove32_C:
   Model: 100
   ItemUpdater:
     Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.4
+    MaxAmount: 2
   Options:
     Unbreakable: true
   Attributes:
@@ -486,6 +576,11 @@ OpenField_Armor_フラクタ_MCLove32_L:
   Model: 100
   ItemUpdater:
     Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.4
+    MaxAmount: 2
   Options:
     Unbreakable: true
   Attributes:
@@ -506,6 +601,11 @@ OpenField_Armor_フラクタ_MCLove32_B:
   Model: 100
   ItemUpdater:
     Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.4
+    MaxAmount: 2
   Options:
     Unbreakable: true
   Attributes:
@@ -527,6 +627,11 @@ OpenField_Armor_ボルク_MCLove32_H:
   Model: 100
   ItemUpdater:
     Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1 
+    Chance: 1
+    MaxAmount: 1
   Options:
     Unbreakable: true
   Attributes:
@@ -547,6 +652,11 @@ OpenField_Armor_ボルク_MCLove32_C:
   Model: 100
   ItemUpdater:
     Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1 
+    Chance: 1
+    MaxAmount: 1
   Options:
     Unbreakable: true
   Attributes:
@@ -567,6 +677,11 @@ OpenField_Armor_ボルク_MCLove32_L:
   Model: 100
   ItemUpdater:
     Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1 
+    Chance: 1
+    MaxAmount: 1
   Options:
     Unbreakable: true
   Attributes:
@@ -587,6 +702,11 @@ OpenField_Armor_ボルク_MCLove32_B:
   Model: 100
   ItemUpdater:
     Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1 
+    Chance: 1
+    MaxAmount: 1
   Options:
     Unbreakable: true
   Attributes:
