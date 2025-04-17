@@ -4,8 +4,9 @@ PvE_Weapon_チュートリアル_MCLove32:
   Lore: 
   - "&f右クリ時に、剣を振って攻撃する。"
   - "&f誰でも扱える。"
+  - "&fあほ"
   Model: 1000
-  ItemVersion: 1
+  ItemVersion: 2
   Options: 
     Unbreakable: true
   Attributes:
