@@ -7,4 +7,4 @@ OpneField_Augment_ボルテージ:
     Tooltip: "<#b6f5f0><bold>ボルテージ"
     Icon: ''
     Skills:
-    - potion{t=SPEED;l=0;d=300;cd=5}  @self ~onAttack
+    - potion{t=SPEED;l=1;d=200;cd=1}  @self ~onJump
