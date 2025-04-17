@@ -1,0 +1,17 @@
+OpneField_Augment_ボルテージ:
+  Id: sugar
+  Display: '<#b6f5f0>ボルテージ-ジェム'
+  Model: 100
+  Augmentation:
+    Type: COMMON_GEM
+    Tooltip: '<#b6f5f0><bold>ボルテージ'
+    Icon: ''
+    #ReplaceItemModel: NONE
+    #ReplaceEquipModel: NONE
+    #ReplaceItemModelNamespace: mythic
+    #Conditions:
+    #- day true
+    #Stats:
+    #- CRITICAL_STRIKE_CHANCE 0.05 ADDITIVE
+    Skills:
+    - message{m="あほ"} @self ~onUse

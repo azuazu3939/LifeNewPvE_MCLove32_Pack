@@ -1,0 +1,10 @@
+COMMON_GEM:
+  Enabled: true
+  Display: '&6&lジェム'
+  Formatting:
+    Empty: '<augment.icon> Empty <augment.type> Slot'
+    Filled: '<augment.icon> <augment.type>: <augment.tooltip>'
+  Icons:
+    Empty: '☆'
+    Filled: '★'
+    Invalid: ''
