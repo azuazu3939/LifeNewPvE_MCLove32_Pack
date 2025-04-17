@@ -3,8 +3,8 @@ ArmorLore:
   - Line: "&fカテゴリー: &7<item.group>"
   - Line: ""
   - Line:
-    - "{augments:GEM}ジェム:"
-    - "{augments-each:GEM}<augment.display>"
+    - "{augments:COMMON_GEM}ジェム:"
+    - "{augments-each:COMMON_GEM}<augment.display>"
 
 CraftableLore:
   - Line: 
