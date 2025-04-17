@@ -1,5 +1,7 @@
 ArmorCraftLore:
+  - Line: ""
   - Line: "<lore.Craft>"
+  - Line: ""
   - Line:
     - "{augments:COMMON_GEM}ジェム:"
     - "{augments-each:COMMON_GEM}<augment.display>"
