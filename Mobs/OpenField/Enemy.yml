@@ -38,14 +38,14 @@ OpenField_Enemy_Base_MCLove32:
   - POISON 0.1
   Skills:
   - damage{a=<caster.damage>;ii=true;pi=true} @trigger ~onAttack
-  - cmd{c="mlg <target.name> OpneField_Augment_健脚 1 0.01"} @TTP ~onDeath
-  - cmd{c="mlg <target.name> OpneField_Augment_快足 1 0.01"} @TTP ~onDeath 
-  - cmd{c="mlg <target.name> OpneField_Augment_速堀 1 0.01"} @TTP ~onDeath
-  - cmd{c="mlg <target.name> OpneField_Augment_増強 1 0.01"} @TTP ~onDeath 
-  - cmd{c="mlg <target.name> OpneField_Augment_超脚 1 0.0005"} @TTP ~onDeath
-  - cmd{c="mlg <target.name> OpneField_Augment_超足 1 0.0005"} @TTP ~onDeath 
-  - cmd{c="mlg <target.name> OpneField_Augment_超堀 1 0.0005"} @TTP ~onDeath
-  - cmd{c="mlg <target.name> OpneField_Augment_超強 1 0.0005"} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpneField_Augment_健脚 1 0.005"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpneField_Augment_快足 1 0.005"} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpneField_Augment_速堀 1 0.005"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpneField_Augment_増強 1 0.005"} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpneField_Augment_超脚 1 0.0001"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpneField_Augment_超足 1 0.0001"} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpneField_Augment_超堀 1 0.0001"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpneField_Augment_超強 1 0.0001"} @TTP ~onDeath 
 
 OpenField_Enemy_ウィスピット_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32

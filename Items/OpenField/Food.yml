@@ -29,3 +29,17 @@ OpenField_Food_ステーキ_MCLove32:
   ItemUpdater:
     Version: 1
   Group: 'Food'
+
+OpenField_Food_スイカ_MCLove32:
+  Id: melon
+  Display: "&fスイカ"
+  Lore: []
+  ItemUpdater:
+    Version: 1
+  Group: 'Food'
+  Food:
+    Nutrition: 6
+    Saturation: 1
+    CanAlwaysEat: true
+
+

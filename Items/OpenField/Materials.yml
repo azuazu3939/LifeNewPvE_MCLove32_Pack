@@ -141,14 +141,6 @@ OpenField_Material_原木_MCLove32:
     Version: 1
   Group: 'Material'
 
-OpenField_Material_スイカ_MCLove32:
-  Id: melon
-  Display: "&fスイカ"
-  Lore: []
-  ItemUpdater:
-    Version: 1
-  Group: 'Material'
-
 OpenField_Material_Anima_MCLove32:
   Id: brown_dye
   Display: "アニマ"
