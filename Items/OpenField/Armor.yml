@@ -12,7 +12,7 @@ OpenField_Armor_アニマー_MCLove32_H:
     Chance: 1
     MaxAmount: 1
   ItemUpdater:
-    Version: 1
+    Version: 2
   Options:
     Unbreakable: true
   Attributes:
