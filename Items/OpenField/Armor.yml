@@ -5,7 +5,6 @@ OpenField_Armor_アニマー_MCLove32_H:
   Lore: 
     Template: ArmorCraftLore
     Craft: "&f防具をクラフトで分解することができる。"
-    Rarity: "&7&lCommon"
   Model: 100
   AugmentationSlots:
     Type: GEM
@@ -30,7 +29,6 @@ OpenField_Armor_アニマー_MCLove32_C:
   Lore: 
     Template: ArmorCraftLore
     Craft: "&f防具をクラフトで分解することができる。"
-    Rarity: "&7&lCommon"
   Model: 100
   AugmentationSlots:
     Type: GEM
@@ -56,7 +54,6 @@ OpenField_Armor_アニマー_MCLove32_L:
   Lore: 
     Template: ArmorCraftLore
     Craft: "&f防具をクラフトで分解することができる。"
-    Rarity: "&7&lCommon"
   Model: 100
   AugmentationSlots:
     Type: GEM
@@ -81,7 +78,6 @@ OpenField_Armor_アニマー_MCLove32_B:
   Lore: 
     Template: ArmorCraftLore
     Craft: "&f防具をクラフトで分解することができる。"
-    Rarity: "&7&lCommon"
   Model: 100
   AugmentationSlots:
     Type: GEM
@@ -105,7 +101,6 @@ OpenField_Armor_ハロ_MCLove32_H:
   Display: "&fハロ-キャップ"
   Lore: 
     Template: ArmorLore
-    Rarity: "&7&lCommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -132,7 +127,6 @@ OpenField_Armor_ハロ_MCLove32_C:
   Display: "&fハロ-チェスト"
   Lore: 
     Template: ArmorLore
-    Rarity: "&7&lCommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -159,7 +153,6 @@ OpenField_Armor_ハロ_MCLove32_L:
   Display: "&fハロ-レギンス"
   Lore: 
     Template: ArmorLore
-    Rarity: "&7&lCommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -186,7 +179,6 @@ OpenField_Armor_ハロ_MCLove32_B:
   Display: "&fハロ-ブーツ"
   Lore: 
     Template: ArmorLore
-    Rarity: "&7&lCommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -213,7 +205,6 @@ OpenField_Armor_カルチェ_MCLove32_H:
   Display: "&fカルチェ-ヘルム"
   Lore: 
     Template: ArmorLore
-    Rarity: "&a&lUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -241,7 +232,6 @@ OpenField_Armor_カルチェ_MCLove32_C:
   Display: "&fカルチェ-チェスト"
   Lore: 
     Template: ArmorLore
-    Rarity: "&a&lUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -268,7 +258,6 @@ OpenField_Armor_カルチェ_MCLove32_L:
   Display: "&fカルチェ-レギンス"
   Lore: 
     Template: ArmorLore
-    Rarity: "&a&lUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -296,7 +285,6 @@ OpenField_Armor_カルチェ_MCLove32_B:
   Display: "&fカルチェ-ブーツ"
   Lore: 
     Template: ArmorLore
-    Rarity: "&a&lUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -324,7 +312,6 @@ OpenField_Armor_ウィド_MCLove32_H:
   Display: "&fウィド-ヘルム"
   Lore: 
     Template: ArmorLore
-    Rarity: "&a&lUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -352,7 +339,6 @@ OpenField_Armor_ウィド_MCLove32_C:
   Display: "&fウィド-チェスト"
   Lore: 
     Template: ArmorLore
-    Rarity: "&a&lUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -381,7 +367,6 @@ OpenField_Armor_ウィド_MCLove32_L:
   Display: "&fウィド-レギンス"
   Lore: 
     Template: ArmorLore
-    Rarity: "&a&lUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -411,7 +396,6 @@ OpenField_Armor_ウィド_MCLove32_B:
   Display: "&fウィド-ブーツ"
   Lore: 
     Template: ArmorLore
-    Rarity: "&a&lUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -440,7 +424,6 @@ OpenField_Armor_フェルム_MCLove32_H:
   Display: "&fフェルム-ヘルム"
   Lore: 
     Template: ArmorLore
-    Rarity: "&a&lUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -469,7 +452,6 @@ OpenField_Armor_フェルム_MCLove32_C:
   Display: "&fフェルム-チェスト"
   Lore: 
     Template: ArmorLore
-    Rarity: "&a&lUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -498,7 +480,6 @@ OpenField_Armor_フェルム_MCLove32_L:
   Display: "&fフェルム-レギンス"
   Lore: 
     Template: ArmorLore
-    Rarity: "&a&lUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -527,7 +508,6 @@ OpenField_Armor_フェルム_MCLove32_B:
   Display: "&fフェルム-ブーツ"
   Lore: 
     Template: ArmorLore
-    Rarity: "&a&lUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -557,7 +537,6 @@ OpenField_Armor_フラクタ_MCLove32_H:
   Display: "&fフラクタ-ヘルム"
   Lore: 
     Template: ArmorLore
-    Rarity: "&a&lUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -586,7 +565,6 @@ OpenField_Armor_フラクタ_MCLove32_C:
   Display: "&fフラクタ-チェスト"
   Lore: 
     Template: ArmorLore
-    Rarity: "&a&lUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -614,7 +592,6 @@ OpenField_Armor_フラクタ_MCLove32_L:
   Display: "&fフラクタ-レギンス"
   Lore: 
     Template: ArmorLore
-    Rarity: "&a&lUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -641,7 +618,6 @@ OpenField_Armor_フラクタ_MCLove32_B:
   Display: "&fフラクタ-ブーツ"
   Lore: 
     Template: ArmorLore
-    Rarity: "&a&lUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -669,7 +645,6 @@ OpenField_Armor_ボルク_MCLove32_H:
   Display: "&fボルク-ヘルム"
   Lore: 
     Template: ArmorLore
-    Rarity: "&a&lUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -696,7 +671,6 @@ OpenField_Armor_ボルク_MCLove32_C:
   Display: "&fボルク-チェスト"
   Lore: 
     Template: ArmorLore
-    Rarity: "&a&lUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -723,7 +697,6 @@ OpenField_Armor_ボルク_MCLove32_L:
   Display: "&fボルク-レギンス"
   Lore: 
     Template: ArmorLore
-    Rarity: "&a&lUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -750,7 +723,6 @@ OpenField_Armor_ボルク_MCLove32_B:
   Display: "&fボルク-ブーツ"
   Lore: 
     Template: ArmorLore
-    Rarity: "&a&lUncommon"
   Model: 100
   ItemUpdater:
     Version: 1
