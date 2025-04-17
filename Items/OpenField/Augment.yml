@@ -5,8 +5,8 @@ OpneField_Augment_ボルテージ:
   Augmentation:
     Type: COMMON_GEM
     Tooltip: 
-    - "<#b6f5f0><bold>ボルテージ"
-    - "て"
+    - "<#b6f5f0><bold>ボルテージ\n"
+    - "て\n"
     - "!"
     Icon: ''
     Skills:
