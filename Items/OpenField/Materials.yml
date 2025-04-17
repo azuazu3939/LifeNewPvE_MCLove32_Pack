@@ -152,6 +152,8 @@ OpenField_Material_Anima_MCLove32:
   Id: brown_dye
   Display: "アニマ"
   Model: 100
+  Lore:
+  - "&f消費することで、ドロップ率を僅かな時間上昇させる。"
   Options: 
     ItemVersion: 1
   Group: 'Material'
@@ -177,7 +179,7 @@ OpenField_Material_Anima_MCLove32:
       Ingredients:
       - OpenField_Armor_アニマー_MCLove32_B
   Consumable:
-    ConsumeSeconds: 0.2
+    ConsumeSeconds: 1
     HasParticles: false
     Animation: NONE
     Sound: block.trial_spawner.spawn_item
