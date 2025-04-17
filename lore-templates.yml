@@ -3,15 +3,12 @@ ArmorCraftLore:
   - Line: "<lore.Craft>"
   - Line: ""
   - Line:
-    - "{augments:COMMON_GEM}ジェム:"
-    - "{augments-each:COMMON_GEM}<augment.display>"
-  - Line: ""
-  - Line: "&fカテゴリー: &7<item.group>"
+    - "{augments:GEM} &fスキル:"
+    - "{augments-each:GEM}<augment.display>"
+
 
 ArmorLore:
   - Line: ""
   - Line:
-    - "{augments:COMMON_GEM}ジェム:"
-    - "{augments-each:COMMON_GEM}<augment.display>"
-  - Line: ""
-  - Line: "&fカテゴリー: &7<item.group>"
+    - "{augments:GEM} &fスキル:"
+    - "{augments-each:GEM}<augment.display>"
