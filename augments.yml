@@ -2,7 +2,7 @@ COMMON_GEM:
   Enabled: true
   Display: '&6&lジェム'
   Formatting:
-    Empty: '&f<augment.icon> Empty <augment.type> Slot'
+    Empty: '&f<augment.icon> 空き <augment.type> &fスロット'
     Filled: '&f<augment.icon> <augment.type>: <augment.tooltip>'
   Icons:
     Empty: '☆'

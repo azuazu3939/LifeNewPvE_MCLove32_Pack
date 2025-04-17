@@ -4,14 +4,10 @@ OpneField_Augment_ボルテージ:
   Model: 100
   Augmentation:
     Type: COMMON_GEM
-    Tooltip: '<#b6f5f0><bold>ボルテージ'
+    Tooltip: 
+    - "<#b6f5f0><bold>ボルテージ"
+    - "て"
+    - "!"
     Icon: ''
-    #ReplaceItemModel: NONE
-    #ReplaceEquipModel: NONE
-    #ReplaceItemModelNamespace: mythic
-    #Conditions:
-    #- day true
-    #Stats:
-    #- CRITICAL_STRIKE_CHANCE 0.05 ADDITIVE
     Skills:
     - message{m="あほ"} @self ~onUse
