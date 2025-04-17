@@ -155,7 +155,7 @@ OpenField_Material_Anima_MCLove32:
   Lore:
   - "&f消費することで、ドロップ率を僅かな時間上昇させる。"
   Options: 
-    ItemVersion: 2
+    ItemVersion: 1
   Group: 'Material'
   Recipes:
     Anima_H:
