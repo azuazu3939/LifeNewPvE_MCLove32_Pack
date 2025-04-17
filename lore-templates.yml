@@ -1,0 +1,11 @@
+ArmorLore:
+  - Filler: ''
+  - Line: '&fカテゴリー: &7<item.group>'
+  - Filler: ''
+  - Line:
+    - '&f{augments:GEM}ジェム:'
+    - '&f{augments-each:GEM}<augment.display>'
+
+CraftableLore:
+  - Line: 
+    - "防具をクラフトで分解することができる。"
