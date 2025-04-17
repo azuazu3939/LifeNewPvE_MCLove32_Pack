@@ -1,10 +1,10 @@
-OpneField_Augment_ボルテージ:
+OpneField_Augment_健脚:
   Id: sugar
-  Display: '<#b6f5f0>ボルテージ-スキル'
+  Display: '<#b6f5f0>健脚-スキル'
   Model: 100
   Augmentation:
     Type: GEM
-    Tooltip: "<#b6f5f0><bold>ボルテージ"
+    Tooltip: "<#b6f5f0><bold>健脚"
     Icon: ''
     Skills:
     - potion{t=SPEED;l=1;d=200;cd=1}  @self ~onJump
