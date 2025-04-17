@@ -4,7 +4,7 @@ OpenField_Armor_アニマー_MCLove32_RareH:
   Display: "&fアニマー-キャップ"
   Lore: 
     Template: ArmorLore
-    Rarity: "&b&l☆レアリティ&f: &1&lRare"
+    Rarity: "&1&lRare"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -27,7 +27,7 @@ OpenField_Armor_アニマー_MCLove32_RareC:
   Display: "&fアニマー-チェスト"
   Lore: 
     Template: ArmorLore
-    Rarity: "&b&l☆レアリティ&f: &1&lRare"
+    Rarity: "&1&lRare"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -50,7 +50,7 @@ OpenField_Armor_アニマー_MCLove32_RareL:
   Display: "&fアニマー-レギンス"
   Lore: 
     Template: ArmorLore
-    Rarity: "&b&l☆レアリティ&f: &1&lRare"
+    Rarity: "&1&lRare"
   Model: 100
   ItemUpdater:
     Version: 1
@@ -73,7 +73,7 @@ OpenField_Armor_アニマー_MCLove32_RareB:
   Display: "&fアニマー-ブーツ"
   Lore: 
     Template: ArmorLore
-    Rarity: "&b&l☆レアリティ&f: &1&lRare"
+    Rarity: "&1&lRare"
   Model: 100
   ItemUpdater:
     Version: 1

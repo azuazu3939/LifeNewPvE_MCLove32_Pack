@@ -15,4 +15,4 @@ ArmorLore:
     - "{augments:GEM} &fスキル:"
     - "{augments-each:GEM}<augment.display>"
   - Line: ""
-  - Line: "<lore.Rarity>"
+  - Line: "&b&l☆レアリティ&f: <lore.Rarity>"
