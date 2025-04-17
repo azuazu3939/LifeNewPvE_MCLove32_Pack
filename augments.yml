@@ -2,8 +2,8 @@ COMMON_GEM:
   Enabled: true
   Display: '&6&lジェム'
   Formatting:
-    Empty: '&f&l<augment.icon> Empty <augment.type> Slot'
-    Filled: '&f&l<augment.icon> <augment.type>: <augment.tooltip>'
+    Empty: '&f<augment.icon> Empty <augment.type> Slot'
+    Filled: '&f<augment.icon> <augment.type>: <augment.tooltip>'
   Icons:
     Empty: '☆'
     Filled: '★'
