@@ -4,10 +4,7 @@ OpneField_Augment_ボルテージ:
   Model: 100
   Augmentation:
     Type: COMMON_GEM
-    Tooltip: 
-    - "<#b6f5f0><bold>ボルテージ\n"
-    - "て\n"
-    - "!"
+    Tooltip: <#b6f5f0><bold>ボルテージ"
     Icon: ''
     Skills:
     - message{m="あほ"} @self ~onUse

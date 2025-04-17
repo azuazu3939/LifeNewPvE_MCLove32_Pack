@@ -5,7 +5,3 @@ ArmorLore:
     - "{augments-each:COMMON_GEM}<augment.display>"
   - Line: ""
   - Line: "&fカテゴリー: &7<item.group>"
-
-CraftableLore:
-  - Line: 
-    - "&f防具をクラフトで分解することができる。"
