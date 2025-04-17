@@ -6,7 +6,7 @@ PvE_Weapon_チュートリアル_MCLove32:
   - "&f誰でも扱える。"
   Model: 1000
   ItemUpdater:
-    Version: 3
+    Version: 1
   Options: 
     Unbreakable: true
   Attributes:
