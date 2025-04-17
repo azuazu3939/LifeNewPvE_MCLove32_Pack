@@ -3,8 +3,8 @@ OpenField_Armor_アニマー_MCLove32_H:
   Id: leather_helmet
   Display: "&fアニマー-キャップ"
   Lore: 
-    - "&f防具をクラフトで分解することができる。"
-    Template: ArmorLore
+    Template: ArmorCraftLore
+    Craft: "&f防具をクラフトで分解することができる。"
   Model: 100
   AugmentationSlots:
     Type: COMMON_GEM
@@ -28,8 +28,8 @@ OpenField_Armor_アニマー_MCLove32_C:
   Id: leather_chestplate
   Display: "&fアニマー-チェスト"
   Lore: 
-    - "&f防具をクラフトで分解することができる。"
-    Template: ArmorLore
+    Template: ArmorCraftLore
+    Craft: "&f防具をクラフトで分解することができる。"
   Model: 100
   AugmentationSlots:
     Type: COMMON_GEM
@@ -53,8 +53,8 @@ OpenField_Armor_アニマー_MCLove32_L:
   Id: leather_leggings
   Display: "&fアニマー-レギンス"
   Lore: 
-    - "&f防具をクラフトで分解することができる。"
-    Template: ArmorLore
+    Template: ArmorCraftLore
+    Craft: "&f防具をクラフトで分解することができる。"
   Model: 100
   AugmentationSlots:
     Type: COMMON_GEM
@@ -78,8 +78,8 @@ OpenField_Armor_アニマー_MCLove32_B:
   Id: leather_boots
   Display: "&fアニマー-ブーツ"
   Lore: 
-    - "&f防具をクラフトで分解することができる。"
-    Template: ArmorLore
+    Template: ArmorCraftLore
+    Craft: "&f防具をクラフトで分解することができる。"
   Model: 100
   AugmentationSlots:
     Type: COMMON_GEM
