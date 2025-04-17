@@ -7,7 +7,7 @@ OpenField_Armor_アニマー_MCLove32_H:
     Craft: "&f防具をクラフトで分解することができる。"
   Model: 100
   AugmentationSlots:
-    Type: COMMON_GEM
+    Type: GEM
     Amount: 1 
     Chance: 1
     MaxAmount: 1
@@ -32,7 +32,7 @@ OpenField_Armor_アニマー_MCLove32_C:
     Craft: "&f防具をクラフトで分解することができる。"
   Model: 100
   AugmentationSlots:
-    Type: COMMON_GEM
+    Type: GEM
     Amount: 1
     Chance: 1
     MaxAmount: 1
@@ -57,7 +57,7 @@ OpenField_Armor_アニマー_MCLove32_L:
     Craft: "&f防具をクラフトで分解することができる。"
   Model: 100
   AugmentationSlots:
-    Type: COMMON_GEM
+    Type: GEM
     Amount: 1 
     Chance: 1
     MaxAmount: 1
@@ -82,7 +82,7 @@ OpenField_Armor_アニマー_MCLove32_B:
     Craft: "&f防具をクラフトで分解することができる。"
   Model: 100
   AugmentationSlots:
-    Type: COMMON_GEM
+    Type: GEM
     Amount: 1 
     Chance: 1
     MaxAmount: 1
