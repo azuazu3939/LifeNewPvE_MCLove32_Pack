@@ -3,8 +3,8 @@ OpenField_Tools_石のツルハシ_MCLove32:
   Display: "石のツルハシ"
   Lore: []
   Model: 1000
+  ItemVersion: 1
   Options: 
-    ItemVersion: 1
     PreventEnchanting: false 
     PreventCrafting: true       
     PreventAnviling: false        
@@ -19,8 +19,8 @@ OpenField_Tools_石の斧_MCLove32:
   Display: "石の斧"
   Lore: []
   Model: 1000
+  ItemVersion: 1
   Options: 
-    ItemVersion: 1
     PreventEnchanting: false 
     PreventCrafting: true       
     PreventAnviling: false        
@@ -35,8 +35,8 @@ OpenField_Tools_石のシャベル_MCLove32:
   Display: "石のシャベル"
   Lore: []
   Model: 1000
+  ItemVersion: 1
   Options: 
-    ItemVersion: 1
     PreventEnchanting: false 
     PreventCrafting: true       
     PreventAnviling: false        

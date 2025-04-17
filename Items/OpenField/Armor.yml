@@ -5,8 +5,8 @@ OpenField_Armor_アニマー_MCLove32_H:
   Lore: 
   - "防具をクラフトで分解することができる。"
   Model: 100
+  ItemVersion: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true
   Attributes:
     Head:
@@ -23,8 +23,8 @@ OpenField_Armor_アニマー_MCLove32_C:
   Lore: 
   - "防具をクラフトで分解することができる。"
   Model: 100
+  ItemVersion: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true
   Attributes:
     Chest:
@@ -41,8 +41,8 @@ OpenField_Armor_アニマー_MCLove32_L:
   Lore: 
   - "防具をクラフトで分解することができる。"
   Model: 100
+  ItemVersion: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true
   Attributes:
     Legs:
@@ -59,8 +59,8 @@ OpenField_Armor_アニマー_MCLove32_B:
   Lore: 
   - "防具をクラフトで分解することができる。"
   Model: 100
+  ItemVersion: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true
   Attributes:
     Feet:
@@ -76,8 +76,8 @@ OpenField_Armor_ハロ_MCLove32_H:
   Display: "&fハロ-キャップ"
   Lore: []
   Model: 100
+  ItemVersion: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true
     Color: WHITE
   Attributes:
@@ -95,8 +95,8 @@ OpenField_Armor_ハロ_MCLove32_C:
   Display: "&fハロ-チェスト"
   Lore: []
   Model: 100
+  ItemVersion: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true
     Color: WHITE
   Attributes:
@@ -114,8 +114,8 @@ OpenField_Armor_ハロ_MCLove32_L:
   Display: "&fハロ-レギンス"
   Lore: []
   Model: 100
+  ItemVersion: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true
     Color: WHITE
   Attributes:
@@ -134,8 +134,8 @@ OpenField_Armor_ハロ_MCLove32_B:
   Display: "&fハロ-ブーツ"
   Lore: []
   Model: 100
+  ItemVersion: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true
     Color: WHITE
   Attributes:
@@ -153,8 +153,8 @@ OpenField_Armor_カルチェ_MCLove32_H:
   Display: "&fカルチェ-ヘルム"
   Lore: []
   Model: 100
+  ItemVersion: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true
     Color: WHITE
   Attributes:
@@ -174,8 +174,8 @@ OpenField_Armor_カルチェ_MCLove32_C:
   Display: "&fカルチェ-チェスト"
   Lore: []
   Model: 100
+  ItemVersion: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true
     Color: WHITE
   Attributes:
@@ -194,8 +194,8 @@ OpenField_Armor_カルチェ_MCLove32_L:
   Display: "&fカルチェ-レギンス"
   Lore: []
   Model: 100
+  ItemVersion: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true
     Color: WHITE
   Attributes:
@@ -214,8 +214,8 @@ OpenField_Armor_カルチェ_MCLove32_B:
   Display: "&fカルチェ-ブーツ"
   Lore: []
   Model: 100
+  ItemVersion: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true
     Color: WHITE
   Attributes:
@@ -235,8 +235,8 @@ OpenField_Armor_ウィド_MCLove32_H:
   Display: "&fウィド-ヘルム"
   Lore: []
   Model: 100
+  ItemVersion: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true
     Color: GREEN
   Attributes:
@@ -256,8 +256,8 @@ OpenField_Armor_ウィド_MCLove32_C:
   Display: "&fウィド-チェスト"
   Lore: []
   Model: 100
+  ItemVersion: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true
     Color: GREEN
   Attributes:
@@ -278,8 +278,8 @@ OpenField_Armor_ウィド_MCLove32_L:
   Display: "&fウィド-レギンス"
   Lore: []
   Model: 100
+  ItemVersion: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true
     Color: GREEN
   Attributes:
@@ -300,8 +300,8 @@ OpenField_Armor_ウィド_MCLove32_B:
   Display: "&fウィド-ブーツ"
   Lore: []
   Model: 100
+  ItemVersion: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true
     Color: GREEN
   Attributes:
@@ -321,8 +321,8 @@ OpenField_Armor_フェルム_MCLove32_H:
   Display: "&fフェルム-ヘルム"
   Lore: []
   Model: 100
+  ItemVersion: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true
     Color: RED
   Attributes:
@@ -343,8 +343,8 @@ OpenField_Armor_フェルム_MCLove32_C:
   Display: "&fフェルム-チェスト"
   Lore: []
   Model: 100
+  ItemVersion: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true
     Color: RED
   Attributes:
@@ -364,8 +364,8 @@ OpenField_Armor_フェルム_MCLove32_L:
   Display: "&fフェルム-レギンス"
   Lore: []
   Model: 100
+  ItemVersion: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true
     Color: RED
   Attributes:
@@ -386,8 +386,8 @@ OpenField_Armor_フェルム_MCLove32_B:
   Display: "&fフェルム-ブーツ"
   Lore: []
   Model: 100
+  ItemVersion: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true
     Color: RED
   Attributes:
@@ -408,8 +408,8 @@ OpenField_Armor_フラクタ_MCLove32_H:
   Display: "&fフラクタ-ヘルム"
   Lore: []
   Model: 100
+  ItemVersion: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true
   Attributes:
     Head:
@@ -429,8 +429,8 @@ OpenField_Armor_フラクタ_MCLove32_C:
   Display: "&fフラクタ-チェスト"
   Lore: []
   Model: 100
+  ItemVersion: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true
   Attributes:
     Chest:
@@ -449,8 +449,8 @@ OpenField_Armor_フラクタ_MCLove32_L:
   Display: "&fフラクタ-レギンス"
   Lore: []
   Model: 100
+  ItemVersion: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true
   Attributes:
     Legs:
@@ -469,8 +469,8 @@ OpenField_Armor_フラクタ_MCLove32_B:
   Display: "&fフラクタ-ブーツ"
   Lore: []
   Model: 100
+  ItemVersion: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true
   Attributes:
     Feet:
@@ -489,8 +489,8 @@ OpenField_Armor_ボルク_MCLove32_H:
   Display: "&fボルク-ヘルム"
   Lore: []
   Model: 100
+  ItemVersion: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true
   Attributes:
     Head:
@@ -508,8 +508,8 @@ OpenField_Armor_ボルク_MCLove32_C:
   Display: "&fボルク-チェスト"
   Lore: []
   Model: 100
+  ItemVersion: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true
   Attributes:
     Chest:
@@ -528,8 +528,8 @@ OpenField_Armor_ボルク_MCLove32_L:
   Display: "&fボルク-レギンス"
   Lore: []
   Model: 100
+  ItemVersion: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true
   Attributes:
     Legs:
@@ -548,8 +548,8 @@ OpenField_Armor_ボルク_MCLove32_B:
   Display: "&fボルク-ブーツ"
   Lore: []
   Model: 100
+  ItemVersion: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true
   Attributes:
     Feet:
