@@ -34,6 +34,7 @@ OpenField_Material_ハロウルフの骨_MCLove32:
   Display: "&fハロウルフの骨"
   Model: 100
   ItemVersion: 1
+  Options:
     Unbreakable: true
   Group: 'Material'
 
