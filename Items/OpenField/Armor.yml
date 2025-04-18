@@ -162,7 +162,7 @@ OpenField_Armor_Helo_MCLove32_H:
     PublicBukkitValues:
       az:slow_life: "2"
 
-OpenField_Armor_ハロ_MCLove32_C:
+OpenField_Armor_Helo_MCLove32_C:
   Id: leather_chestplate
   Display: "&fハロ-チェスト"
   Lore: 
@@ -196,7 +196,7 @@ OpenField_Armor_ハロ_MCLove32_C:
     PublicBukkitValues:
       az:divine_blessing: "2"
 
-OpenField_Armor_ハロ_MCLove32_L:
+OpenField_Armor_Helo_MCLove32_L:
   Id: leather_leggings
   Display: "&fハロ-レギンス"
   Lore: 
@@ -230,7 +230,7 @@ OpenField_Armor_ハロ_MCLove32_L:
     PublicBukkitValues:
       az:divine_blessing: "1"
 
-OpenField_Armor_ハロ_MCLove32_B:
+OpenField_Armor_Helo_MCLove32_B:
   Id: leather_boots
   Display: "&fハロ-ブーツ"
   Lore: 
@@ -264,7 +264,7 @@ OpenField_Armor_ハロ_MCLove32_B:
       az:divine_blessing: "1"
       az:slow_life: "1"
 
-OpenField_Armor_カルチェ_MCLove32_H:
+OpenField_Armor_Calucci_MCLove32_H:
   Id: leather_helmet
   Display: "&fカルチェ-ヘルム"
   Lore: 
@@ -296,10 +296,10 @@ OpenField_Armor_カルチェ_MCLove32_H:
       Amount: 1
       Ingredients:
       - OpenField_Material_羊獣の羊毛_MCLove32 | OpenField_Material_羊獣の頭_MCLove32 | OpenField_Material_羊獣の羊毛_MCLove32
-      - OpenField_Material_羊獣の羊毛_MCLove32 | OpenField_Armor_ハロ_MCLove32_H | OpenField_Material_羊獣の羊毛_MCLove32
+      - OpenField_Material_羊獣の羊毛_MCLove32 | OpenField_Armor_Helo_MCLove32_H | OpenField_Material_羊獣の羊毛_MCLove32
       - OpenField_Material_羊獣の骨_MCLove32 | OpenField_Material_風核_MCLove32 | OpenField_Material_羊獣の骨_MCLove32
 
-OpenField_Armor_カルチェ_MCLove32_C:
+OpenField_Armor_Calucci_MCLove32_C:
   Id: leather_chestplate
   Display: "&fカルチェ-チェスト"
   Lore: 
@@ -330,10 +330,10 @@ OpenField_Armor_カルチェ_MCLove32_C:
       Amount: 1
       Ingredients:
       - OpenField_Material_羊獣の羊毛_MCLove32 | OpenField_Material_羊獣の骨_MCLove32 | OpenField_Material_羊獣の羊毛_MCLove32
-      - OpenField_Material_羊獣の羊毛_MCLove32 | OpenField_Armor_ハロ_MCLove32_C | OpenField_Material_羊獣の羊毛_MCLove32
+      - OpenField_Material_羊獣の羊毛_MCLove32 | OpenField_Armor_Helo_MCLove32_C | OpenField_Material_羊獣の羊毛_MCLove32
       - OpenField_Material_羊獣の骨_MCLove32 | OpenField_Material_羊獣の羊毛_MCLove32 | OpenField_Material_羊獣の骨_MCLove32
 
-OpenField_Armor_カルチェ_MCLove32_L:
+OpenField_Armor_Calucci_MCLove32_L:
   Id: leather_leggings
   Display: "&fカルチェ-レギンス"
   Lore: 
@@ -365,10 +365,10 @@ OpenField_Armor_カルチェ_MCLove32_L:
       Amount: 1
       Ingredients:
       - OpenField_Material_羊獣の羊毛_MCLove32 | OpenField_Material_羊獣の頭_MCLove32 | OpenField_Material_羊獣の羊毛_MCLove32
-      - OpenField_Material_羊獣の頭_MCLove32 | OpenField_Armor_ハロ_MCLove32_C | OpenField_Material_羊獣の頭_MCLove32
+      - OpenField_Material_羊獣の頭_MCLove32 | OpenField_Armor_Helo_MCLove32_L | OpenField_Material_羊獣の頭_MCLove32
       - OpenField_Material_羊獣の骨_MCLove32 | OpenField_Material_羊獣の羊毛_MCLove32 | OpenField_Material_羊獣の骨_MCLove32
 
-OpenField_Armor_カルチェ_MCLove32_B:
+OpenField_Armor_Calucci_MCLove32_B:
   Id: leather_boots
   Display: "&fカルチェ-ブーツ"
   Lore: 
@@ -400,7 +400,7 @@ OpenField_Armor_カルチェ_MCLove32_B:
       Amount: 1
       Ingredients:
       - OpenField_Material_羊獣の羊毛_MCLove32 | OpenField_Material_風核_MCLove32 | OpenField_Material_羊獣の羊毛_MCLove32
-      - OpenField_Material_羊獣の頭_MCLove32 | OpenField_Armor_ハロ_MCLove32_C | OpenField_Material_羊獣の頭_MCLove32
+      - OpenField_Material_羊獣の頭_MCLove32 | OpenField_Armor_Helo_MCLove32_B | OpenField_Material_羊獣の頭_MCLove32
       - OpenField_Material_羊獣の骨_MCLove32 | OpenField_Material_羊獣の骨_MCLove32 | OpenField_Material_羊獣の骨_MCLove32
 
 OpenField_Armor_ウィド_MCLove32_H:
