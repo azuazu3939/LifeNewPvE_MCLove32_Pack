@@ -169,22 +169,22 @@ OpenField_Material_Anima_MCLove32:
       Type: SHAPELESS
       Amount: 1
       Ingredients:
-      - OpenField_Armor_アニマー_MCLove32_H
+      - OpenField_Armor_Animer_MCLove32_H
     Anima_C:
       Type: SHAPELESS
       Amount: 1
       Ingredients:
-      - OpenField_Armor_アニマー_MCLove32_C
+      - OpenField_Armor_Animer_MCLove32_C
     Anima_L:
       Type: SHAPELESS
       Amount: 1
       Ingredients:
-      - OpenField_Armor_アニマー_MCLove32_L
+      - OpenField_Armor_Animer_MCLove32_L
     Anima_B:
       Type: SHAPELESS
       Amount: 1
       Ingredients:
-      - OpenField_Armor_アニマー_MCLove32_B
+      - OpenField_Armor_Animer_MCLove32_B
   Consumable:
     ConsumeSeconds: 1
     HasParticles: false
