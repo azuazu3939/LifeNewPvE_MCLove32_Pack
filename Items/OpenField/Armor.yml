@@ -157,7 +157,7 @@ OpenField_Armor_Helo_MCLove32_H:
       Ingredients:
       - OpenField_Material_ハロウルフの皮_MCLove32 | OpenField_Material_ハロウルフの骨_MCLove32 | OpenField_Material_ハロウルフの皮_MCLove32
       - OpenField_Material_ハロウルフの皮_MCLove32 | OpenField_Armor_Animer_MCLove32_H | OpenField_Material_ハロウルフの皮_MCLove32
-      - OpenField_Material_ハロウルフの骨_MCLove32 | OpenField_Material_ハロウルフの希少な牙_MCLove32 | OpenField_Material_ハロウルフの骨_MCLove32
+      - OpenField_Material_ハロウルフの骨_MCLove32 | OpenField_Material_HeloRare_MCLove32 | OpenField_Material_ハロウルフの骨_MCLove32
   NBT:
     PublicBukkitValues:
       az:slow_life: "2"
@@ -191,7 +191,7 @@ OpenField_Armor_Helo_MCLove32_C:
       Ingredients:
       - OpenField_Material_ハロウルフの皮_MCLove32 | OpenField_Material_ハロウルフの骨_MCLove32 | OpenField_Material_ハロウルフの皮_MCLove32
       - OpenField_Material_ハロウルフの皮_MCLove32 | OpenField_Armor_Animer_MCLove32_C | OpenField_Material_ハロウルフの皮_MCLove32
-      - OpenField_Material_ハロウルフの骨_MCLove32 | OpenField_Material_ハロウルフの希少な牙_MCLove32 | OpenField_Material_ハロウルフの骨_MCLove32
+      - OpenField_Material_ハロウルフの骨_MCLove32 | OpenField_Material_HeloRare_MCLove32 | OpenField_Material_ハロウルフの骨_MCLove32
   NBT:
     PublicBukkitValues:
       az:divine_blessing: "2"
@@ -225,7 +225,7 @@ OpenField_Armor_Helo_MCLove32_L:
       Ingredients:
       - OpenField_Material_ハロウルフの皮_MCLove32 | OpenField_Material_ハロウルフの骨_MCLove32 | OpenField_Material_ハロウルフの皮_MCLove32
       - OpenField_Material_ハロウルフの皮_MCLove32 | OpenField_Armor_Animer_MCLove32_L | OpenField_Material_ハロウルフの皮_MCLove32
-      - OpenField_Material_ハロウルフの骨_MCLove32 | OpenField_Material_ハロウルフの希少な牙_MCLove32 | OpenField_Material_ハロウルフの骨_MCLove32
+      - OpenField_Material_ハロウルフの骨_MCLove32 | OpenField_Material_HeloRare_MCLove32 | OpenField_Material_ハロウルフの骨_MCLove32
   NBT:
     PublicBukkitValues:
       az:divine_blessing: "1"
@@ -258,7 +258,7 @@ OpenField_Armor_Helo_MCLove32_B:
       Ingredients:
       - OpenField_Material_ハロウルフの皮_MCLove32 | OpenField_Material_ハロウルフの骨_MCLove32 | OpenField_Material_ハロウルフの皮_MCLove32
       - OpenField_Material_ハロウルフの皮_MCLove32 | OpenField_Armor_Animer_MCLove32_B | OpenField_Material_ハロウルフの皮_MCLove32
-      - OpenField_Material_ハロウルフの骨_MCLove32 | OpenField_Material_ハロウルフの希少な牙_MCLove32 | OpenField_Material_ハロウルフの骨_MCLove32
+      - OpenField_Material_ハロウルフの骨_MCLove32 | OpenField_Material_HeloRare_MCLove32 | OpenField_Material_ハロウルフの骨_MCLove32
   NBT:
     PublicBukkitValues:
       az:divine_blessing: "1"
