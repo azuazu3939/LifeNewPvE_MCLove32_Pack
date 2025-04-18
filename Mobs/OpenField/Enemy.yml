@@ -38,14 +38,14 @@ OpenField_Enemy_Base_MCLove32:
   - POISON 0.1
   Skills:
   - damage{a=<caster.damage>;ii=true;pi=true} @trigger ~onAttack
-  - cmd{c="mlg <target.name> OpneField_Augment_健脚 1 0.005"} @TTP ~onDeath
-  - cmd{c="mlg <target.name> OpneField_Augment_快足 1 0.005"} @TTP ~onDeath 
-  - cmd{c="mlg <target.name> OpneField_Augment_速堀 1 0.005"} @TTP ~onDeath
-  - cmd{c="mlg <target.name> OpneField_Augment_増強 1 0.005"} @TTP ~onDeath 
-  - cmd{c="mlg <target.name> OpneField_Augment_超脚 1 0.0001"} @TTP ~onDeath
-  - cmd{c="mlg <target.name> OpneField_Augment_超足 1 0.0001"} @TTP ~onDeath 
-  - cmd{c="mlg <target.name> OpneField_Augment_超堀 1 0.0001"} @TTP ~onDeath
-  - cmd{c="mlg <target.name> OpneField_Augment_超強 1 0.0001"} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpneField_Augment_健脚 1 0.001"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpneField_Augment_快足 1 0.001"} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpneField_Augment_速堀 1 0.001"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpneField_Augment_増強 1 0.001"} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpneField_Augment_超脚 1 0.00005"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpneField_Augment_超足 1 0.00005"} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpneField_Augment_超堀 1 0.00005"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpneField_Augment_超強 1 0.00005"} @TTP ~onDeath 
 
 OpenField_Enemy_ウィスピット_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
@@ -178,7 +178,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32:
     mmid2=OpenField_Material_羊獣の骨_MCLove32;amount2=1;weight2=8;
     mmid3=OpenField_Material_羊獣の頭_MCLove32;amount3=1;weight3=6;
     mmid4=OpenField_Material_風核_MCLove32;amount4=1;weight4=1; 
-    } @TTP ~onDeath 
+    repeat=2;repeati=1} @TTP ~onDeath 
 
 OpenField_Enemy_黒小羊_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
@@ -269,7 +269,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32:
     mmid2=OpenField_Material_風牙狼の骨_MCLove32;amount2=1;weight2=8;
     mmid3=OpenField_Material_風牙狼の牙_MCLove32;amount3=1;weight3=6;
     mmid4=OpenField_Material_風核_MCLove32;amount4=1;weight4=1;
-    } @TTP ~onDeath 
+    repeat=2;repeati=1} @TTP ~onDeath 
 
 OpenField_Enemy_焔獣フェルドス_MCLove32:
   Template: OpenField_Enemy_Abstract_Generic
@@ -336,7 +336,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32:
     mmid1=OpenField_Material_焔獣の炎殻_MCLove32;amount1=1;weight1=14;
     mmid2=OpenField_Material_焔獣の炎牙_MCLove32;amount2=1;weight2=10;
     mmid3=OpenField_Material_炎核_MCLove32;amount3=1;weight3=1;
-    } @TTP ~onDeath 
+    repeat=2;repeati=1} @TTP ~onDeath 
 
 OpenField_Enemy_踊る巨人_MCLove32:
   Template: OpenField_Enemy_Abstract_Generic

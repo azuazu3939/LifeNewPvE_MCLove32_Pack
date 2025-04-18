@@ -1,5 +1,5 @@
 
-OpenField_Armor_アニマー_MCLove32_H:
+OpenField_Armor_Animer_MCLove32_H:
   Id: leather_helmet
   Display: "&fアニマー-キャップ"
   Lore: 
@@ -20,10 +20,18 @@ OpenField_Armor_アニマー_MCLove32_H:
       ArmorToughness: 2 ADD 
       Armor: 3 ADD 
   Group: 'Armor2'
+  Recipes:
+    Animer_Craft:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - OpenField_Material_小動物の皮_MCLove32 | OpenField_Material_小動物の皮_MCLove32 | OpenField_Material_小動物の皮_MCLove32
+      - OpenField_Material_小動物の皮_MCLove32 | AIR | OpenField_Material_小動物の皮_MCLove32
+      - AIR | AIR | AIR 
   NBT:
     PublicBukkitValues:
 
-OpenField_Armor_アニマー_MCLove32_C:
+OpenField_Armor_Animer_MCLove32_C:
   Id: leather_chestplate
   Display: "&fアニマー-チェスト"
   Lore: 
@@ -44,11 +52,19 @@ OpenField_Armor_アニマー_MCLove32_C:
       ArmorToughness: 2 ADD 
       Armor: 8 ADD 
   Group: 'Armor'
+  Recipes:
+    Animer_Craft:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - OpenField_Material_小動物の皮_MCLove32 | AIR | OpenField_Material_小動物の皮_MCLove32
+      - OpenField_Material_小動物の皮_MCLove32 | OpenField_Material_小動物の皮_MCLove32 | OpenField_Material_小動物の皮_MCLove32
+      - OpenField_Material_小動物の皮_MCLove32 | OpenField_Material_小動物の皮_MCLove32 | OpenField_Material_小動物の皮_MCLove32 
   NBT:
     PublicBukkitValues:
       az:divine_blessing: "2"
 
-OpenField_Armor_アニマー_MCLove32_L:
+OpenField_Armor_Animer_MCLove32_L:
   Id: leather_leggings
   Display: "&fアニマー-レギンス"
   Lore: 
@@ -69,10 +85,18 @@ OpenField_Armor_アニマー_MCLove32_L:
       ArmorToughness: 2 ADD 
       Armor: 6 ADD 
   Group: 'Armor'
+  Recipes:
+    Animer_Craft:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - OpenField_Material_小動物の皮_MCLove32 | OpenField_Material_小動物の皮_MCLove32 | OpenField_Material_小動物の皮_MCLove32
+      - OpenField_Material_小動物の皮_MCLove32 | AIR | OpenField_Material_小動物の皮_MCLove32
+      - OpenField_Material_小動物の皮_MCLove32 | AIR | OpenField_Material_小動物の皮_MCLove32 
   NBT:
     PublicBukkitValues:
 
-OpenField_Armor_アニマー_MCLove32_B:
+OpenField_Armor_Animer_MCLove32_B:
   Id: leather_boots
   Display: "&fアニマー-ブーツ"
   Lore: 
@@ -93,10 +117,18 @@ OpenField_Armor_アニマー_MCLove32_B:
       ArmorToughness: 2 ADD 
       Armor: 3 ADD 
   Group: 'Armor'
+  Recipes:
+    Animer_Craft:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - OpenField_Material_小動物の皮_MCLove32 | AIR | OpenField_Material_小動物の皮_MCLove32
+      - OpenField_Material_小動物の皮_MCLove32 | AIR | OpenField_Material_小動物の皮_MCLove32
+      - AIR | AIR | AIR 
   NBT:
     PublicBukkitValues:
 
-OpenField_Armor_ハロ_MCLove32_H:
+OpenField_Armor_Helo_MCLove32_H:
   Id: leather_helmet
   Display: "&fハロ-キャップ"
   Lore: 
@@ -118,6 +150,14 @@ OpenField_Armor_ハロ_MCLove32_H:
       ArmorToughness: 2 ADD 
       Armor: 2 ADD 
   Group: 'Armor'
+  Recipes:
+    Anima_to_Helo:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - OpenField_Material_ハロウルフの皮_MCLove32 | OpenField_Material_ハロウルフの骨_MCLove32 | OpenField_Material_ハロウルフの皮_MCLove32
+      - OpenField_Material_ハロウルフの皮_MCLove32 | OpenField_Armor_Animer_MCLove32_H | OpenField_Material_ハロウルフの皮_MCLove32
+      - OpenField_Material_ハロウルフの骨_MCLove32 | OpenField_Material_ハロウルフの希少な牙_MCLove32 | OpenField_Material_ハロウルフの骨_MCLove32
   NBT:
     PublicBukkitValues:
       az:slow_life: "2"
@@ -144,6 +184,14 @@ OpenField_Armor_ハロ_MCLove32_C:
       ArmorToughness: 3 ADD 
       Armor: 3 ADD 
   Group: 'Armor'
+  Recipes:
+    Anima_to_Helo:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - OpenField_Material_ハロウルフの皮_MCLove32 | OpenField_Material_ハロウルフの骨_MCLove32 | OpenField_Material_ハロウルフの皮_MCLove32
+      - OpenField_Material_ハロウルフの皮_MCLove32 | OpenField_Armor_Animer_MCLove32_C | OpenField_Material_ハロウルフの皮_MCLove32
+      - OpenField_Material_ハロウルフの骨_MCLove32 | OpenField_Material_ハロウルフの希少な牙_MCLove32 | OpenField_Material_ハロウルフの骨_MCLove32
   NBT:
     PublicBukkitValues:
       az:divine_blessing: "2"
@@ -170,6 +218,14 @@ OpenField_Armor_ハロ_MCLove32_L:
       ArmorToughness: 4 ADD 
       Armor: 4 ADD 
   Group: 'Armor'
+  Recipes:
+    Anima_to_Helo:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - OpenField_Material_ハロウルフの皮_MCLove32 | OpenField_Material_ハロウルフの骨_MCLove32 | OpenField_Material_ハロウルフの皮_MCLove32
+      - OpenField_Material_ハロウルフの皮_MCLove32 | OpenField_Armor_Animer_MCLove32_L | OpenField_Material_ハロウルフの皮_MCLove32
+      - OpenField_Material_ハロウルフの骨_MCLove32 | OpenField_Material_ハロウルフの希少な牙_MCLove32 | OpenField_Material_ハロウルフの骨_MCLove32
   NBT:
     PublicBukkitValues:
       az:divine_blessing: "1"
@@ -195,6 +251,14 @@ OpenField_Armor_ハロ_MCLove32_B:
       ArmorToughness: 5 ADD 
       Armor: 5 ADD 
   Group: 'Armor'
+  Recipes:
+    Anima_to_Helo:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - OpenField_Material_ハロウルフの皮_MCLove32 | OpenField_Material_ハロウルフの骨_MCLove32 | OpenField_Material_ハロウルフの皮_MCLove32
+      - OpenField_Material_ハロウルフの皮_MCLove32 | OpenField_Armor_Animer_MCLove32_B | OpenField_Material_ハロウルフの皮_MCLove32
+      - OpenField_Material_ハロウルフの骨_MCLove32 | OpenField_Material_ハロウルフの希少な牙_MCLove32 | OpenField_Material_ハロウルフの骨_MCLove32
   NBT:
     PublicBukkitValues:
       az:divine_blessing: "1"
@@ -226,6 +290,14 @@ OpenField_Armor_カルチェ_MCLove32_H:
     PublicBukkitValues:
       az:divine_blessing: "1"
       az:speed_holder: "1"
+  Recipes:
+    Armor_Craft:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - OpenField_Material_羊獣の羊毛_MCLove32 | OpenField_Material_羊獣の頭_MCLove32 | OpenField_Material_羊獣の羊毛_MCLove32
+      - OpenField_Material_羊獣の羊毛_MCLove32 | OpenField_Armor_ハロ_MCLove32_H | OpenField_Material_羊獣の羊毛_MCLove32
+      - OpenField_Material_羊獣の骨_MCLove32 | OpenField_Material_風核_MCLove32 | OpenField_Material_羊獣の骨_MCLove32
 
 OpenField_Armor_カルチェ_MCLove32_C:
   Id: leather_chestplate
@@ -252,6 +324,14 @@ OpenField_Armor_カルチェ_MCLove32_C:
   NBT:
     PublicBukkitValues:
       az:offence: "2"
+  Recipes:
+    Armor_Craft:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - OpenField_Material_羊獣の羊毛_MCLove32 | OpenField_Material_羊獣の骨_MCLove32 | OpenField_Material_羊獣の羊毛_MCLove32
+      - OpenField_Material_羊獣の羊毛_MCLove32 | OpenField_Armor_ハロ_MCLove32_C | OpenField_Material_羊獣の羊毛_MCLove32
+      - OpenField_Material_羊獣の骨_MCLove32 | OpenField_Material_羊獣の羊毛_MCLove32 | OpenField_Material_羊獣の骨_MCLove32
 
 OpenField_Armor_カルチェ_MCLove32_L:
   Id: leather_leggings
@@ -279,6 +359,14 @@ OpenField_Armor_カルチェ_MCLove32_L:
     PublicBukkitValues:
       az:divine_blessing: "2"
       az:defence: "2"
+  Recipes:
+    Armor_Craft:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - OpenField_Material_羊獣の羊毛_MCLove32 | OpenField_Material_羊獣の頭_MCLove32 | OpenField_Material_羊獣の羊毛_MCLove32
+      - OpenField_Material_羊獣の頭_MCLove32 | OpenField_Armor_ハロ_MCLove32_C | OpenField_Material_羊獣の頭_MCLove32
+      - OpenField_Material_羊獣の骨_MCLove32 | OpenField_Material_羊獣の羊毛_MCLove32 | OpenField_Material_羊獣の骨_MCLove32
 
 OpenField_Armor_カルチェ_MCLove32_B:
   Id: leather_boots
@@ -306,6 +394,14 @@ OpenField_Armor_カルチェ_MCLove32_B:
     PublicBukkitValues:
       az:offence: "1"
       az:defence: "1"
+  Recipes:
+    Armor_Craft:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - OpenField_Material_羊獣の羊毛_MCLove32 | OpenField_Material_風核_MCLove32 | OpenField_Material_羊獣の羊毛_MCLove32
+      - OpenField_Material_羊獣の頭_MCLove32 | OpenField_Armor_ハロ_MCLove32_C | OpenField_Material_羊獣の頭_MCLove32
+      - OpenField_Material_羊獣の骨_MCLove32 | OpenField_Material_羊獣の骨_MCLove32 | OpenField_Material_羊獣の骨_MCLove32
 
 OpenField_Armor_ウィド_MCLove32_H:
   Id: leather_helmet
