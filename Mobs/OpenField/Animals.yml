@@ -1,4 +1,89 @@
-OpenField_Guard_ヒィツジー_MCLove32:
+OpenField_Animal_Base_MCLove32:
+  Template: OpenField_Enemy_Abstract_Generic
+  Type: sheep
+  Faction: sheep
+  DamageModifiers:
+  - SUFFOCATION 0
+  - FALL 0
+  - POISON 0.1
+  Skills:
+  - cmd{c="mlg <target.name> OpneField_Augment_健脚 1 0.001"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpneField_Augment_快足 1 0.001"} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpneField_Augment_速堀 1 0.001"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpneField_Augment_増強 1 0.001"} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpneField_Augment_超脚 1 0.00005"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpneField_Augment_超足 1 0.00005"} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpneField_Augment_超堀 1 0.00005"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpneField_Augment_超強 1 0.00005"} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Armor_Animer_MCLove32_H 1 0.005"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Armor_Animer_MCLove32_C 1 0.005"} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Armor_Animer_MCLove32_L 1 0.005"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Armor_Animer_MCLove32_B 1 0.005"} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Material_小動物の皮_MCLove32 1 0.05"} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Armor_Animer_MCLove32_RareH 1 0.0001"} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Armor_Animer_MCLove32_RareC 1 0.0001"} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Armor_Animer_MCLove32_RareL 1 0.0001"} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Armor_Animer_MCLove32_RareB 1 0.0001"} @TTP ~onDeath 
+
+OpenField_Animal_ハロウルフ_MCLove32:
+  Template: OpenField_Animal_Base_MCLove32
+  Type: wolf 
+  Display: "ハロウルフ"
+  Health: 20
+  Damage: 2
+  Faction: wolf
+  Armor: 40
+  DamageModifiers:
+  - SUFFOCATION 0
+  - FALL 0
+  - POISON 0.1
+  Drop:
+  Options:
+    FollowRange: 8
+    KnockbackResistance: 0.2
+    Scale: 1.5
+    Silent: false 
+  Drops:
+  - exp 50
+  Variables:
+    livingWater: int/2
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - randomstroll
+  - gotoparent
+  - gotoowner
+  AITargetSelectors:
+  - clear
+  - ownerattacker
+  - ownertarget
+  - attacker
+  - specificfaction{f=sheep}
+  Skills:
+  - damage{a=<caster.damage>;ii=true;pi=true} @trigger ~onAttack 
+  - potion{t=SPEED;d=144000;l=1;p=false} @self ~onSpawn
+  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=20} @self ~onSpawn 
+  - skill:Generic_Enemy_ウォーク追従_MCLove32{v=45} @self ~onTimer:20
+  - cmd{c="mlg <target.name> OpenField_Material_ハロウルフの牙_MCLove32 1 0.05"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Material_ハロウルフの骨_MCLove32 1 0.04"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Material_ハロウルフの皮_MCLove32 1 0.06"} @TTP ~onDeath 
+
+OpenField_Animal_ハロウルフ_MCLove32_Leader:
+  Template: OpenField_Animal_ハロウルフ_MCLove32
+  Health: 30
+  Damage: 3
+  Armor: 40
+  Drops:
+  - exp 30
+  Variables:
+    livingWater: int/2
+  Skills:
+  - summon{t=OpenField_Animal_ハロウルフ_MCLove32;a=2to3;r=5;s=true} @self ~onSpawn
+  - skill:Generic_Enemy_ウォーク_MCLove32{v=45} @self ~onTimer:20
+  - cmd{c="mlg <target.name> OpenField_Material_ハロウルフの希少な牙_MCLove32 1 0.005"} @TTP ~onDeath
+
+OpenField_Animal_ヒィツジー_MCLove32:
+  Template: OpenField_Animal_Base_MCLove32
   Type: sheep
   Display: "&fヒィツジー"
   Faction: sheep
@@ -21,32 +106,24 @@ OpenField_Guard_ヒィツジー_MCLove32:
   Drops:
   - exp 30
   Options:
-    Collidable: true 
-    DigOutOfGround: true 
     FollowRange: 16
-    Despawn: true 
-    NoDamageTicks: 0
     KnockbackResistance: 0.15
-    NoAI: false 
-    PreventMobKillDrops: true 
-    PreventRandomEquipment: true 
-    PreventVanillaDamage: true
-    Silent: false 
   Skills:
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=24} @self ~onEnterCombat 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16;delay=5} @self ~onDropCombat
   - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
 
-OpenField_Guard_ヒィツジー_MCLove32_Leader:
-  Template: OpenField_Guard_ヒィツジー_MCLove32
+OpenField_Animal_ヒィツジー_MCLove32_Leader:
+  Template: OpenField_Animal_ヒィツジー_MCLove32
   Health: 25
   Armor: 0
   Drops:
   - exp 50
   Skills:
-  - summon{t=OpenField_Guard_ヒィツジー_MCLove32;a=2to4;r=5;s=true} @self ~onSpawn
+  - summon{t=OpenField_Animal_ヒィツジー_MCLove32;a=2to4;r=5;s=true} @self ~onSpawn
 
-OpenField_Guard_モーカウ_MCLove32:
+OpenField_Animal_モーカウ_MCLove32:
+  Template: OpenField_Animal_Base_MCLove32
   Type: cow
   Display: "モーカウ"
   Faction: cow
@@ -69,27 +146,20 @@ OpenField_Guard_モーカウ_MCLove32:
   Drops:
   - exp 30
   Options:
-    Collidable: true 
-    DigOutOfGround: true 
     FollowRange: 16
-    Despawn: true 
-    NoDamageTicks: 0
     KnockbackResistance: 0.15
-    NoAI: false 
-    PreventMobKillDrops: true 
-    PreventRandomEquipment: true 
-    PreventVanillaDamage: true
-    Silent: false 
   Skills:
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=24} @self ~onEnterCombat 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16;delay=5} @self ~onDropCombat
   - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
+  - cmd{c="mlg <target.name> OpenField_Food_ステーキ_MCLove32 1 0.5"} @TTP ~onDeath
 
-OpenField_Guard_モーカウ_MCLove32_Leader:
-  Template: OpenField_Guard_モーカウ_MCLove32
+OpenField_Animal_モーカウ_MCLove32_Leader:
+  Template: OpenField_Animal_モーカウ_MCLove32
   Health: 25
   Armor: 0
   Drops:
   - exp 50
   Skills:
-  - summon{t=OpenField_Guard_モーカウ_MCLove32;a=2to4;r=5;s=true} @self ~onSpawn
+  - summon{t=OpenField_Animal_モーカウ_MCLove32;a=2to4;r=5;s=true} @self ~onSpawn
+  - cmd{c="mlg <target.name> OpenField_Food_ステーキ_MCLove32 1 1"} @TTP ~onDeath

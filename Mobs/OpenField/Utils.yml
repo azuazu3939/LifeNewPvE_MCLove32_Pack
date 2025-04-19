@@ -97,3 +97,62 @@ OpenField_Util_Animals_MCLove32_Plains:
   Skills:
   - skill:OpenField_Util_Animals_MCLove32_Plains_Skills @self ~onSpawn 
   - remove{delay=1} @self ~onSpawn 
+
+Generic_Util_倉庫Spawn_MCLove32:
+  Template: OpenField_Enemy_Abstract_Generic
+  Display: ""
+  Type: silverfish
+  Health: 99999999
+  Armor: 0
+  Faction: silverfish
+  Damage: 0
+  Options:
+    NoDamageTicks: 200
+    Silent: true 
+    Scale: 0.5
+    MovementSpeed: 0.001
+    KnockbackResistance: 1
+    MaxCombatDistance: 0
+    NoAI: true
+    Invisible: true
+  Skills:
+  - summon{t=Generic_Util_倉庫_MCLove32;a=1;r=0;s=true} @selfLocation{x=1.5;z=1.5} @self ~onSpawn 
+  - remove{delay=1} @self ~onSpawn 
+
+
+Generic_Util_倉庫_MCLove32:
+  Template: OpenField_Enemy_Abstract_Generic
+  Type: block_display
+  Display: "倉庫"
+  DisplayOptions:
+    Block: chest
+    Scale: 3,3,3
+    BlockLight: 15
+    SkyLight: 15
+    Billboard: FIXED
+    Height: 1
+    Width: 1
+    ViewRange: 2
+  Skills:
+  - setrotation{p=0;y=180} @self ~onSpawn 
+  - cmd{c="axvaultadmin forceopen <target.name>";cd=1} @trigger ~onSignal:generic_util_open
+  - e:blockMask{b=BARREL;r=10;ry=2;d=6000} @selfLocation{x=-1.5;z=-1.5} ~onSpawn
+  - summon{t=Generic_Util_倉庫サイン_MCLove32;a=1;r=0;s=true} @selfLocation{x=-1.5;z=-1.5} ~onSpawn 
+  - remove{delay=6000} @self ~onSpawn 
+  - remove{delay=6000} @children ~onSpawn 
+
+Generic_Util_倉庫サイン_MCLove32:
+  Template: OpenField_Enemy_Abstract_Generic
+  Type: INTERACTION
+  Display: "&a右クリで倉庫を開く"
+  Options:
+    AlwaysShowName: true
+    Height: 3
+    Width: 3
+  Skills:
+  - setrotation{p=0;y=180} @self ~onSpawn 
+  - sudoskill{
+    s=[
+      - signal{s=generic_util_open} @MIR{r=10;sort=NEAREST;limit=1;t=Generic_Util_倉庫_MCLove32}
+    ];cat=true} @trigger ~onInteract 
+  - remove{delay=6000} @self ~onSpawn 

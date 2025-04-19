@@ -1,0 +1,14 @@
+ArmorCraftLore:
+  - Line: ""
+  - Line: "<lore.Craft>"
+  - Line: ""
+  - Line:
+    - "{augments:GEM} &fスキル:"
+    - "{augments-each:GEM}<augment.display>"
+
+
+ArmorLore:
+  - Line: ""
+  - Line:
+    - "{augments:GEM} &fスキル:"
+    - "{augments-each:GEM}<augment.display>"

@@ -1,8 +1,11 @@
 Generic_Weapon_Attack_MCLove32:
   Cooldown: 0.1
   Skills:
-  - damage{a=10;pi=true;ii=true} @EIC{r=8;a=120;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
-  - sound{s=entity.player.attack.sweep;sc=PLAYERS} @self
+  - skill{
+    s=[
+      - damage{a=10;pi=true;ii=true}
+      - sound{s=entity.player.attack.sweep;sc=PLAYERS} @self
+    ]} @EIC{r=8;a=120;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
 
 OpenField_Weapon_エアブラスタ_MCLove32_Skills:
   Cooldown: 2
@@ -44,84 +47,6 @@ OpenField_Weapon_エアブラスタ_MCLove32_SkillProcess:
       - throw{v=8;vy=2}
     ];
     hp=false;hnp=true;v=35;i=1;md=30;mr=25;se=false;sb=false;vr=1.5;hr=2;ho=<skill.ho>} @TL 
-
-OpenField_Weapon_樹木剣_MCLove32_Skills:
-  Cooldown: 10
-  Conditions:
-  - wearing{s=HAND;m=OpenField_Weapon_樹木剣_MCLove32} true
-  - crouching true 
-  - materialcooldown{m=wooden_sword} false 
-  - hasMana{a=>80;
-    onFail=[
-      - message{m="&cマナが足りません。"} @self 
-    ]} 
-  - hasAura{n=サブウェポン;
-    onfail=[
-      - message{m="&cサブウェポン共通CT中です。"} @self 
-    ]} false  
-  Skills:
-  - modifyMana{a=-80} @self 
-  - aura{n=サブウェポン;i=20;rd=true;t=60} @self  
-  - setmaterialcooldown{m=wooden_sword;d=200} @self
-  - potion{t=SLOW;l=7;d=40;p=false;i=false} @self
-  - sound{s=block.trial_spawner.about_to_spawn_item;p=1.414;v=0.5} @self
-  - delay 5
-  - setvar{var=skill.i;val="30";t=INTEGER} @self 
-  - slash{y=1;w=8;h=16;mpd=true;a=180;radius=6;hnp=true;hp=false;
-    oP=[ 
-      - e:p{p=sweep_attack;a=1;vs=0.2;hs=1;audience=@self;size=2;delay=<skill.var.i>} @origin
-      - e:p{a=25;vs=0.5;hs=0.5;color=#46884a;audience=@self;p=red_dust;size=2;delay=<skill.var.i>} @origin 
-      - e:p{a=25;vs=0.5;hs=0.5;color=#af9831;audience=@self;p=red_dust;size=2;delay=<skill.var.i>} @origin 
-      - skill:OpenField_Weapon_樹木剣_MCLove32_Skill_Process{delay=<skill.var.i>} @self 
-      - setvar{var=skill.i;val="<skill.var.i> - 1";t=INTEGER} @self 
-    ];
-    oh=[ 
-      - damage{a=120;pi=true;ii=true;delay=<skill.var.i>} 
-      - damage{a=50;pi=true;ii=true;delay=<skill.var.i>}  0.5
-      - throw{v=5;vy=8;delay=<skill.var.i>}
-      - heal{a=0.2;delay=<skill.var.i>} @self 
-    ];
-    conditions=[
-      - isLiving true 
-      - isMythicMob true
-    ];
-    roll=<random.-45to45>;fo=-3;duration=30;p=30} @self 
-  - delay 20
-  - jump{v=0.45} @self 
-  - delay 10 
-  - sound{s=block.glass.break;p=1;v=0.75} @self
-  - sound{s=block.glass.break;p=0.85;v=1} @self
-  - sound{s=block.glass.break;p=0.7;v=1.25} @self
-  - sound{s=block.glass.break;p=0.65;v=1.5} @self
-  - sound{s=item.trident.thunder;p=2;v=0.45;delay=1} @self 
-
-OpenField_Weapon_樹木剣_MCLove32_Skill_Process:
-  Conditions:
-  - (
-    wearing{s=HAND;m=OpenField_Weapon_樹木剣ヘビー_MCLove32} ||
-    wearing{s=HAND;m=OpenField_Weapon_樹木剣ライト_MCLove32}
-    ) true
-  Skills:
-  - projectile{
-    ot=[
-      - e:p{p=sweep_attack;a=1;vs=0.2;hs=1;audience=@self} 
-      - e:p{a=3;vs=0.25;hs=0.25;color=#46884a;audience=@self;p=red_dust} 
-      - e:p{a=3;vs=0.25;hs=0.25;color=#af9831;audience=@self;p=red_dust} 
-    ];
-    oh=[
-      - sound{s=entity.breeze.jump;p=0;v=1.25} 
-      - damage{a=60;pi=true;ii=true} 
-      - damage{a=30;pi=true;ii=true}  0.5
-      - throw{v=5;vy=8}
-      - delay 15
-      - throw{v=1;vy=-20}
-      - heal{a=0.1} @self 
-    ];
-    conditions=[
-      - isLiving true 
-      - isMythicMob true
-    ];
-    v=-20;i=2;se=false;hp=false;hnp=true;mr=24;vr=1.5;hr=1.5;fo=true}
 
 OpenField_Weapon_風輪斬_MCLove32_Skills:
   Cooldown: 3

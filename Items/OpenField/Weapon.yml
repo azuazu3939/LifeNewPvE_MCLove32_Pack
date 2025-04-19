@@ -3,8 +3,9 @@ OpenField_Weapon_サイスオブデーモン_MCLove32:
   Display: "&fサイスオブデーモン"
   Lore: []
   Model: 1000
+  ItemUpdater:
+    Version: 1
   Options: 
-    ItemVersion: 1
     Unbreakable: true
   Attributes:
     MainHand:
@@ -18,8 +19,9 @@ OpenField_Weapon_ビットブレード_MCLove32:
   Display: "&fビットブレード"
   Lore: []
   Model: 1000
+  ItemUpdater:
+    Version: 1
   Options: 
-    ItemVersion: 1
     Unbreakable: true
   Attributes:
     MainHand:
@@ -33,8 +35,9 @@ OpenField_Weapon_ビットブレードM_MCLove32:
   Display: "&fビットブレードM"
   Lore: []
   Model: 1001
+  ItemUpdater:
+    Version: 1
   Options: 
-    ItemVersion: 1
     Unbreakable: true
   Attributes:
     MainHand:
@@ -51,8 +54,9 @@ OpenField_Weapon_サンドストーム_MCLove32:
   - "&f周囲の敵を吸い込み尽くす。"
   - "&fopen_fieldの敵から稀に落ちる。"
   Model: 1000
+  ItemUpdater:
+    Version: 1
   Options: 
-    ItemVersion: 1
     Unbreakable: true
   Attributes:
     MainHand:
@@ -66,8 +70,9 @@ OpenField_Weapon_エアブラスタ_MCLove32:
   Display: "&fエアブラスタ"
   Lore: []
   Model: 1000
+  ItemUpdater:
+    Version: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true
   Attributes:
     MainHand:
@@ -81,8 +86,9 @@ OpenField_Weapon_牙狼ノ壱_MCLove32:
   Display: "&f牙狼ノ壱"
   Lore: []
   Model: 1000
+  ItemUpdater:
+    Version: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true 
   Attributes:
     MainHand:
@@ -96,8 +102,9 @@ OpenField_Weapon_牙狼ノ弐_MCLove32:
   Display: "&f牙狼ノ弐"
   Lore: []
   Model: 1001
+  ItemUpdater:
+    Version: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true 
   Attributes:
     MainHand:
@@ -111,8 +118,9 @@ OpenField_Weapon_牙狼ノ零_MCLove32:
   Display: "&f牙狼ノ零"
   Lore: []
   Model: 1002
+  ItemUpdater:
+    Version: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true
   Attributes:
     MainHand:
@@ -126,8 +134,9 @@ OpenField_Weapon_スライムソード_MCLove32:
   Display: "&fスライムソード"
   Lore: []
   Model: 1001
+  ItemUpdater:
+    Version: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true 
   Attributes:
     MainHand:
@@ -140,8 +149,9 @@ OpenField_Weapon_火炎レーザー_MCLove32:
   Display: "&f火炎レーザー"
   Lore: []
   Model: 1000
+  ItemUpdater:
+    Version: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true 
   Attributes:
     MainHand:
@@ -155,8 +165,9 @@ OpenField_Weapon_火炎弾_MCLove32:
   Display: "&f火炎弾"
   Lore: []
   Model: 1001
+  ItemUpdater:
+    Version: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true 
   Attributes:
     MainHand:
@@ -170,8 +181,9 @@ OpenField_Weapon_アイシクルショット_MCLove32:
   Display: "&fアイシクルショット"
   Lore: []
   Model: 1007
+  ItemUpdater:
+    Version: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true 
   Attributes:
     MainHand:
@@ -180,13 +192,33 @@ OpenField_Weapon_アイシクルショット_MCLove32:
   Skills:
   - skill:OpenField_Weapon_アイシクルショット_MCLove32_Skills @self ~onUse
 
+<<<<<<< HEAD
+=======
+OpenField_Weapon_ツリーハウス_MCLove32:
+  Id: wooden_pickaxe
+  Display: "&fツリーハウス"
+  Lore: []
+  Model: 1000
+  ItemUpdater:
+    Version: 1
+  Options:
+    Unbreakable: true 
+  Attributes:
+    MainHand:
+      Damage: 50 ADD  
+  Group: 'Sub-Skill-Weapon'
+  Skills:
+  - skill:OpenField_Weapon_ツリーハウス_MCLove32_Skills @self ~onUse
+
+>>>>>>> 9196cc54f4b564ccb9309b1c8fbb5a175253654c
 OpenField_Weapon_オービニウム_MCLove32:
   Id: diamond_shovel
   Display: "&fオービニウム"
   Lore: []
   Model: 1007
+  ItemUpdater:
+    Version: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true 
   Attributes:
     MainHand:
@@ -200,8 +232,9 @@ OpenField_Weapon_風輪斬_MCLove32:
   Display: "&f風輪斬"
   Lore: []
   Model: 1002
+  ItemUpdater:
+    Version: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true 
   Attributes:
     MainHand:
@@ -215,8 +248,9 @@ OpenField_Weapon_氷剣_MCLove32:
   Display: "&f氷剣"
   Lore: []
   Model: 1002
+  ItemUpdater:
+    Version: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true 
   Attributes:
     MainHand:
@@ -230,12 +264,32 @@ OpenField_Weapon_炎剣_MCLove32:
   Display: "&f炎剣"
   Lore: []
   Model: 1002
+  ItemUpdater:
+    Version: 1
   Options:
-    ItemVersion: 1
     Unbreakable: true 
   Attributes:
     MainHand:
       Damage: 30 ADD  
   Group: 'Main-Skill-Weapon'
   Skills:
+<<<<<<< HEAD
   - skill:OpenField_Weapon_炎剣_MCLove32_Skills @self ~onUse
+=======
+  - skill:OpenField_Weapon_炎剣_MCLove32_Skills @self ~onUse
+
+OpenField_Admin_Kill_MCLove32:
+  Id: stick
+  Display: "&c&lAdmimSword"
+  Lore: []
+  ItemUpdater:
+    Version: 1
+  Options:
+    Unbreakable: true 
+  Attributes:
+    MainHand:
+      Damage: 999999999999 ADD  
+  Group: 'Main-Weapon'
+  Skills:
+  - damage{a=<caster.damage>;pi=true;ii=true} @trigger ~onInteract 
+>>>>>>> 9196cc54f4b564ccb9309b1c8fbb5a175253654c

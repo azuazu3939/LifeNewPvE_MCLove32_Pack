@@ -6,10 +6,11 @@ Resource_Material_鉱石研磨剤:_MCLove32:
   - "&f行うことで獲得可能なアイテム。"
   - "&f主に資源系ツールの強化に使われる。"
   Model: 1000
+  ItemUpdater:
+    Version: 1
   Options: 
     Destroy: false
     CancelDamage: true
-    ItemVersion: 1
     #Unbreakable: false
   Group: 'Material'
 
@@ -21,10 +22,11 @@ Resource_Material_鉱石ユニオン_MCLove32:
   - "&f主に資源系ツールの強化に使われる。"
   - "&fどこの地下でも掘れるが、そこまで出回っていない。"
   Model: 1000
+  ItemUpdater:
+    Version: 1
   Options: 
     Destroy: false
     CancelDamage: true
-    ItemVersion: 1
     #Unbreakable: false
   Group: 'Material' 
 
@@ -36,10 +38,11 @@ Resource_Material_鉱石紅蓮_MCLove32:
   - "&f主に資源系ツールの強化に使われる。"
   - "&f高熱を帯びている。地下深くで入手できる。"
   Model: 1000
+  ItemUpdater:
+    Version: 1
   Options: 
     Destroy: false
     CancelDamage: true
-    ItemVersion: 1
     #Unbreakable: false
   Group: 'Material'
 
@@ -51,10 +54,11 @@ Resource_Material_鉱石パピュライト_MCLove32:
   - "&f主に資源系ツールの強化に使われる。"
   - "&f単純な形状で、不純物が含まれない。"
   Model: 1000
+  ItemUpdater:
+    Version: 1
   Options: 
     Destroy: false
     CancelDamage: true
-    ItemVersion: 1
     #Unbreakable: false
   Group: 'Material'
 
@@ -66,10 +70,11 @@ Resource_Material_鉱石紫焔_MCLove32:
   - "&f主に資源系ツールの強化に使われる。"
   - "&f炎のような複雑な形状の鉱物。"
   Model: 1000
+  ItemUpdater:
+    Version: 1
   Options: 
     Destroy: false
     CancelDamage: true
-    ItemVersion: 1
     #Unbreakable: false
   Group: 'Material'
 
@@ -78,9 +83,10 @@ Resource_Material_GREENSoul_MCLove32:
   Display: "&aGreen-ソール"
   Lore: []
   Model: 1000
+  ItemUpdater:
+    Version: 1
   Options: 
     Destroy: false
     CancelDamage: true
-    ItemVersion: 1
     #Unbreakable: false
   Group: 'Material'

@@ -5,8 +5,9 @@ PvE_Weapon_チュートリアル_MCLove32:
   - "&f右クリ時に、剣を振って攻撃する。"
   - "&f誰でも扱える。"
   Model: 1000
+  ItemUpdater:
+    Version: 1
   Options: 
-    ItemVersion: 1
     Unbreakable: true
   Attributes:
     MainHand:

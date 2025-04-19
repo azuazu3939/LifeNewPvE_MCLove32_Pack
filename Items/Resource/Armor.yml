@@ -8,10 +8,11 @@ Resource_Armor_強化ダイヤモンドH_MCLove32:
   Display: "&f強化ダイヤモンドヘルメット"
   Lore: []
   Model: 1000
+  ItemUpdater:
+    Version: 1
   Options:
     Destroy: false
     CancelDamage: true
-    ItemVersion: 1
     Unbreakable: true
   Group: 'Armor'
 
@@ -20,10 +21,11 @@ Resource_Armor_強化ダイヤモンドC_MCLove32:
   Display: "&f強化ダイヤモンドチェストプレート"
   Lore: []
   Model: 1000
+  ItemUpdater:
+    Version: 1
   Options:
     Destroy: false
     CancelDamage: true
-    ItemVersion: 1
     Unbreakable: true
   Group: 'Armor'
 
@@ -32,10 +34,11 @@ Resource_Armor_強化ダイヤモンドL_MCLove32:
   Display: "&f強化ダイヤモンドレギンス"
   Lore: []
   Model: 1000
+  ItemUpdater:
+    Version: 1
   Options:
     Destroy: false
     CancelDamage: true
-    ItemVersion: 1
     Unbreakable: true
   Group: 'Armor'
 
@@ -44,10 +47,11 @@ Resource_Armor_強化ダイヤモンドB_MCLove32:
   Display: "&f強化ダイヤモンドブーツ"
   Lore: []
   Model: 1000
+  ItemUpdater:
+    Version: 1
   Options:
     Destroy: false
     CancelDamage: true
-    ItemVersion: 1
     Unbreakable: true
   Group: 'Armor'
 
@@ -56,11 +60,12 @@ Resource_Armor_黒曜石H_MCLove32:
   Display: "&f黒曜石ヘルメット"
   Lore: []
   Model: 1000
+  ItemUpdater:
+    Version: 1
   Options:
     Color: BLACK
     Destroy: false
     CancelDamage: true
-    ItemVersion: 1
     Unbreakable: true
   Attributes:
     Head:
@@ -73,11 +78,12 @@ Resource_Armor_黒曜石C_MCLove32:
   Display: "&f黒曜石チェストプレート"
   Lore: []
   Model: 1000
+  ItemUpdater:
+    Version: 1
   Options:
     Color: BLACK
     Destroy: false
     CancelDamage: true
-    ItemVersion: 1
     Unbreakable: true
   Attributes:
     Chest:
@@ -90,11 +96,12 @@ Resource_Armor_黒曜石L_MCLove32:
   Display: "&f黒曜石レギンス"
   Lore: []
   Model: 1000
+  ItemUpdater:
+    Version: 1
   Options:
     Color: BLACK
     Destroy: false
     CancelDamage: true
-    ItemVersion: 1
     Unbreakable: true
   Attributes:
     Legs:
@@ -107,11 +114,12 @@ Resource_Armor_黒曜石B_MCLove32:
   Display: "&f黒曜石ブーツ"
   Lore: []
   Model: 1000
+  ItemUpdater:
+    Version: 1
   Options:
     Color: BLACK
     Destroy: false
     CancelDamage: true
-    ItemVersion: 1
     Unbreakable: true
   Attributes:
     Feet:

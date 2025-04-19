@@ -28,69 +28,25 @@ OpenField_Enemy_Abstract_Generic:
   Modules:
     ThreatTable: true
   Skills:
-  - message{m="<skill.var.damage-amount>"} @PIR{r=32}
+  - remove{delay=1} @self ~onTimer:100 ?containregion{r=open}
 
 #ベーステンプレMobに、直接攻撃時にダメージを与える処理をしたもの
 OpenField_Enemy_Base_MCLove32:
   Template: OpenField_Enemy_Abstract_Generic
-  Skills:
-  - damage{a=<caster.damage>;ii=true;pi=true} @trigger ~onAttack 
-
-OpenField_Enemy_ハロウルフ_MCLove32:
-  Template: OpenField_Enemy_Base_MCLove32
-  Type: wolf 
-  Display: "ハロウルフ"
-  Health: 20
-  Damage: 2
-  Faction: wolf
-  Armor: 40
   DamageModifiers:
   - SUFFOCATION 0
   - FALL 0
   - POISON 0.1
-  Drop:
-  Options:
-    FollowRange: 8
-    KnockbackResistance: 0.2
-    Scale: 1.5
-    Silent: false 
-  Drops:
-  - exp 50
-  Variables:
-    livingWater: int/2
-  AIGoalSelectors:
-  - clear
-  - meleeattack
-  - randomstroll
-  - gotoparent
-  - gotoowner
-  AITargetSelectors:
-  - clear
-  - ownerattacker
-  - ownertarget
-  - attacker
-  - specificfaction{f=sheep}
   Skills:
-  - potion{t=SPEED;d=144000;l=1;p=false} @self ~onSpawn
-  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=20} @self ~onSpawn 
-  - skill:Generic_Enemy_ウォーク追従_MCLove32{v=45} @self ~onTimer:20
-  - skill:Generic_Drop_MCLove32{mmid=OpenField_Material_ハロウルフの牙_MCLove32;amount=1;chance=0.5} @TTP ~onDeath 
-  - skill:Generic_Drop_MCLove32{mmid=OpenField_Material_ハロウルフの骨_MCLove32;amount=1;chance=0.4} @TTP ~onDeath 
-  - skill:Generic_Drop_MCLove32{mmid=OpenField_Material_ハロウルフの皮_MCLove32;amount=1;chance=0.6} @TTP ~onDeath 
-
-OpenField_Enemy_ハロウルフ_MCLove32_Leader:
-  Template: OpenField_Enemy_ハロウルフ_MCLove32
-  Health: 30
-  Damage: 3
-  Armor: 40
-  Drops:
-  - exp 30
-  Variables:
-    livingWater: int/2
-  Skills:
-  - summon{t=OpenField_Enemy_ハロウルフ_MCLove32;a=2to3;r=5;s=true} @self ~onSpawn
-  - skill:Generic_Enemy_ウォーク_MCLove32{v=45} @self ~onTimer:20
-  - skill:Generic_Drop_MCLove32{mmid=OpenField_Material_ハロウルフの希少な牙_MCLove32;amount=1;chance=0.05} @TTP ~onDeath 
+  - damage{a=<caster.damage>;ii=true;pi=true} @trigger ~onAttack
+  - cmd{c="mlg <target.name> OpneField_Augment_健脚 1 0.001"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpneField_Augment_快足 1 0.001"} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpneField_Augment_速堀 1 0.001"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpneField_Augment_増強 1 0.001"} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpneField_Augment_超脚 1 0.00005"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpneField_Augment_超足 1 0.00005"} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpneField_Augment_超堀 1 0.00005"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpneField_Augment_超強 1 0.00005"} @TTP ~onDeath 
 
 OpenField_Enemy_ウィスピット_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
@@ -223,7 +179,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32:
     mmid2=OpenField_Material_羊獣の骨_MCLove32;amount2=1;weight2=8;
     mmid3=OpenField_Material_羊獣の頭_MCLove32;amount3=1;weight3=6;
     mmid4=OpenField_Material_風核_MCLove32;amount4=1;weight4=1; 
-    } @TTP ~onDeath 
+    repeat=2;repeati=1} @TTP ~onDeath 
 
 OpenField_Enemy_黒小羊_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
@@ -257,7 +213,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32:
   Health: 7950
   Armor: 70
   Faction: wolf
-  Damage: 11
+  Damage: 150
   Options:
     NoDamageTicks: 0
     Silent: true 
@@ -314,7 +270,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32:
     mmid2=OpenField_Material_風牙狼の骨_MCLove32;amount2=1;weight2=8;
     mmid3=OpenField_Material_風牙狼の牙_MCLove32;amount3=1;weight3=6;
     mmid4=OpenField_Material_風核_MCLove32;amount4=1;weight4=1;
-    } @TTP ~onDeath 
+    repeat=2;repeati=1} @TTP ~onDeath 
 
 OpenField_Enemy_焔獣フェルドス_MCLove32:
   Template: OpenField_Enemy_Abstract_Generic
@@ -323,7 +279,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32:
   Health: 3950
   Armor: 60
   Faction: hoglin
-  Damage: 13
+  Damage: 180
   Options:
     NoDamageTicks: 0
     Silent: true 
@@ -381,7 +337,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32:
     mmid1=OpenField_Material_焔獣の炎殻_MCLove32;amount1=1;weight1=14;
     mmid2=OpenField_Material_焔獣の炎牙_MCLove32;amount2=1;weight2=10;
     mmid3=OpenField_Material_炎核_MCLove32;amount3=1;weight3=1;
-    } @TTP ~onDeath 
+    repeat=2;repeati=1} @TTP ~onDeath 
 
 OpenField_Enemy_踊る巨人_MCLove32:
   Template: OpenField_Enemy_Abstract_Generic
@@ -390,7 +346,7 @@ OpenField_Enemy_踊る巨人_MCLove32:
   Health: 9950
   Armor: 100
   Faction: husk
-  Damage: 15
+  Damage: 135
   Equipment:
   - DIAMOND_AXE HAND
   - LEATHER_HELMET{color=BLACK} HEAD

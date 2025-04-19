@@ -1,0 +1,10 @@
+GEM:
+  Enabled: true
+  Display: '&6&lスキル'
+  Formatting:
+    Empty: '&f<augment.icon> <#b2fff5>空き&f <augment.type> &fカスタムスロット'
+    Filled: '&f<augment.icon> <augment.type>: <augment.tooltip>'
+  Icons:
+    Empty: '☆'
+    Filled: '★'
+    Invalid: ''

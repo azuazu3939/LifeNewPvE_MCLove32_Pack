@@ -2,6 +2,9 @@ OpenField_Object_不思議草Block:
   Id: birch_sapling
   Display: "不思議草"
   Type: FURNITURE
+  Model: 1
+  ItemUpdater:
+    Version: 1
   Furniture:
     Type: DISPLAY
     DropSelf: false
@@ -52,6 +55,9 @@ OpenField_Object_不思議花Block:
   Id: oak_sapling
   Display: "不思議花"
   Type: FURNITURE
+  Model: 1
+  ItemUpdater:
+    Version: 1
   Furniture:
     Type: DISPLAY
     DropSelf: false
@@ -102,6 +108,9 @@ OpenField_Object_不思議種Block:
   Id: spruce_sapling
   Display: "不思議種"
   Type: FURNITURE
+  Model: 1
+  ItemUpdater:
+    Version: 1
   Furniture:
     Type: DISPLAY
     DropSelf: false

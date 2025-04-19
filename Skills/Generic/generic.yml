@@ -3,6 +3,7 @@ Generic_Enemy_ヘイト_MCLove32:
   Cooldown: 1
   Conditions:
   - incombat
+  - targetWithin{d=48}
   Skills:
   - sudoskill{
       s=[
@@ -234,15 +235,9 @@ Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return:
   - message{m="&a&l<skill.var.ranking>位 &6&l<skill.var.entity> &f&lスコア &b<skill.var.dmg>"} @PIR{r=<skill.var.range>} ?!varrange{k=skill.dmg;r=0}
   - setVar{k=skill.ranking;a="1 + <skill.var.ranking>";t=INTEGER} @self ?!varrange{k=skill.dmg;r=0}
 
-#
-Generic_Drop_MCLove32:
-  Skills:
-  - cmd{c="mm items give <target.name> <skill.mmid> <skill.amount>"} @targetedTarget ?chance{c="<skill.chance>"}
-
-#
 Generic_MustDrop_MCLove32_Base:
   Skills:
-  - cmd{c="mm items give <target.name> <skill.mmid1> <skill.amount1>"} @targetedTarget
+  - cmd{c="mlg <target.name> <skill.mmid1> <skill.amount1> 1"} @targetedTarget
 
 #設定可能なパラメータ (mmid1、amount1、weight1)、(mmid2、amount2、weight2)、...
 Generic_MustDrop_MCLove32:
