@@ -28,6 +28,7 @@ OpenField_Enemy_Abstract_Generic:
   Modules:
     ThreatTable: true
   Skills:
+  - remove{delay=1} @self ~onTimer:100 ?containregion{r=open}
 
 #ベーステンプレMobに、直接攻撃時にダメージを与える処理をしたもの
 OpenField_Enemy_Base_MCLove32:
