@@ -180,21 +180,6 @@ OpenField_Weapon_アイシクルショット_MCLove32:
   Skills:
   - skill:OpenField_Weapon_アイシクルショット_MCLove32_Skills @self ~onUse
 
-OpenField_Weapon_ツリーハウス_MCLove32:
-  Id: wooden_pickaxe
-  Display: "&fツリーハウス"
-  Lore: []
-  Model: 1000
-  Options:
-    ItemVersion: 1
-    Unbreakable: true 
-  Attributes:
-    MainHand:
-      Damage: 50 ADD  
-  Group: 'Sub-Skill-Weapon'
-  Skills:
-  - skill:OpenField_Weapon_ツリーハウス_MCLove32_Skills @self ~onUse
-
 OpenField_Weapon_オービニウム_MCLove32:
   Id: diamond_shovel
   Display: "&fオービニウム"
@@ -254,17 +239,3 @@ OpenField_Weapon_炎剣_MCLove32:
   Group: 'Main-Skill-Weapon'
   Skills:
   - skill:OpenField_Weapon_炎剣_MCLove32_Skills @self ~onUse
-
-OpenField_Admin_Kill_MCLove32:
-  Id: stick
-  Display: "&c&lAdmimSword"
-  Lore: []
-  Options:
-    ItemVersion: 1
-    Unbreakable: true 
-  Attributes:
-    MainHand:
-      Damage: 999999999999 ADD  
-  Group: 'Main-Weapon'
-  Skills:
-  - damage{a=<caster.damage>;pi=true;ii=true} @trigger ~onInteract 

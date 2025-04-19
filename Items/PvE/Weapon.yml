@@ -15,3 +15,28 @@ PvE_Weapon_チュートリアル_MCLove32:
   Group: 'Melee-Weapon'
   Skills:
   - skill:PvE_Weapon_チュートリアル_MCLove32_Skills @trigger ~onUse
+
+PvE_Admin_Kill_MCLove32:
+  Id: stick
+  Display: "&c&lAdmimSword"
+  Lore: []
+  Options:
+    ItemVersion: 1
+    Unbreakable: true 
+  Attributes:
+    MainHand:
+      Damage: 999999999999 ADD  
+  Group: 'Admin_Main-Weapon'
+  Skills:
+  - damage{a=<caster.damage>;pi=true;ii=true} @trigger ~onInteract
+
+PvE_Admin_Remove_MCLove32:
+  Id: stick
+  Display: "&c&lAdmimSword"
+  Lore: []
+  Options:
+    ItemVersion: 1
+    Unbreakable: true 
+  Group: 'Admin'
+  Skills:
+  - remove{delay=1} @trigger ~onInteract 
