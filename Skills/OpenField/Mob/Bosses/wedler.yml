@@ -496,7 +496,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_6_Sphere:
       - damage{a="<skill.var.dmg>";pi=true;ii=true;e=GREEN} @ENO{r=6;c=[ - samefaction false ]}
       - potion{t=SLOW;l=2;d=100;p=false} @ENO{r=6;c=[ - samefaction false ]}
     ];
-    v=2;i=1;vr=2;hr=2;syo=2;sfo=3;hnp=true;c=[ - samefaction false ];
+    v=2;i=1;vr=2;hr=1.5;syo=1.5;sfo=3;hnp=true;c=[ - samefaction false ];
     in=12;sdir=@forward{f=5;y=5}} @T
   - delay 4
   - potion{t=INVISIBILITY;l=0;d=200;p=false} @self
@@ -545,5 +545,5 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_7_Run:
       - damage{a="<skill.var.dmg> * 1.25";pi=true;ii=true;e=GREEN} @ENO{r=6;c=[ - samefaction false ]}
       - potion{t=SLOW;l=2;d=100;p=false} @ENO{r=6;c=[ - samefaction false ]}
     ];
-    v=0;i=1;vr=2;hr=2;syo=<random.2to8>;sfo=-3;sso=<random.-12to12>;hnp=true;c=[ - samefaction false ];
+    v=0;i=1;vr=2;hr=2;md=120;syo=<random.2to8>;sfo=-3;sso=<random.-12to12>;hnp=true;c=[ - samefaction false ];
     sdir=@TL;in=25} @T
