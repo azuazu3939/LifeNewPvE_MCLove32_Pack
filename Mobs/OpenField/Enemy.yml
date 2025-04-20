@@ -218,6 +218,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32:
   Faction: wolf
   Damage: 150
   Options:
+    Variant: black
     NoDamageTicks: 0
     Silent: true 
     Scale: 3.25
