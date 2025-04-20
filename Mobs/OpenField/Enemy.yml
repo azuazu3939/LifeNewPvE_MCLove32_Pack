@@ -278,7 +278,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32:
   Template: OpenField_Enemy_Abstract_Generic
   Display: "<#c20a0a>&l焔獣フェルドス&R"
   Type: hoglin
-  Health: 2950
+  Health: 4950
   Armor: 60
   Faction: hoglin
   Damage: 180

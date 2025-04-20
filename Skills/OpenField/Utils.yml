@@ -50,7 +50,8 @@ OpenField_Util_Animals_MCLove32_Plains_Skills:
   - randomskill{s=
     OpenField_Util_Animals_MCLove32_Plains_Skill_1,
     OpenField_Util_Animals_MCLove32_Plains_Skill_2,
-    OpenField_Util_Animals_MCLove32_Plains_Skill_3} @self
+    OpenField_Util_Animals_MCLove32_Plains_Skill_3,
+    OpenField_Util_Animals_MCLove32_Plains_Skill_4} @self
 #
 OpenField_Util_Animals_MCLove32_Plains_Skill_1:
   Skills:
@@ -65,6 +66,11 @@ OpenField_Util_Animals_MCLove32_Plains_Skill_2:
 OpenField_Util_Animals_MCLove32_Plains_Skill_3:
   Skills:
   - summon{t=OpenField_Animal_モーカウ_MCLove32_Leader;a=1;r=0;if=false;sio=false;sip=false} @self
+
+#
+OpenField_Util_Animals_MCLove32_Plains_Skill_4:
+  Skills:
+  - summon{t=OpenField_Animal_ピグ_MCLove32_Leader;a=1;r=0;if=false;sio=false;sip=false} @self
 
 #
 OpenField_Util_Bosses_MCLove32_KillCount:

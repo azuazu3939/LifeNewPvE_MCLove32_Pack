@@ -110,8 +110,9 @@ OpenField_Animal_ヒィツジー_MCLove32:
     KnockbackResistance: 0.15
   Skills:
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=24} @self ~onEnterCombat 
-  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16;delay=5} @self ~onDropCombat
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=10;delay=5} @self ~onDropCombat
   - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
+  - cmd{c="mlg <target.name> OpenField_Food_羊ステーキ_MCLove32 1 0.5"} @TTP ~onDeath
 
 OpenField_Animal_ヒィツジー_MCLove32_Leader:
   Template: OpenField_Animal_ヒィツジー_MCLove32
@@ -121,6 +122,7 @@ OpenField_Animal_ヒィツジー_MCLove32_Leader:
   - exp 50
   Skills:
   - summon{t=OpenField_Animal_ヒィツジー_MCLove32;a=2to4;r=5;s=true} @self ~onSpawn
+  - cmd{c="mlg <target.name> OpenField_Food_羊ステーキ_MCLove32 1 1"} @TTP ~onDeath
 
 OpenField_Animal_モーカウ_MCLove32:
   Template: OpenField_Animal_Base_MCLove32
@@ -150,7 +152,7 @@ OpenField_Animal_モーカウ_MCLove32:
     KnockbackResistance: 0.15
   Skills:
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=24} @self ~onEnterCombat 
-  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16;delay=5} @self ~onDropCombat
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=10;delay=5} @self ~onDropCombat
   - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
   - cmd{c="mlg <target.name> OpenField_Food_ステーキ_MCLove32 1 0.5"} @TTP ~onDeath
 
@@ -163,3 +165,43 @@ OpenField_Animal_モーカウ_MCLove32_Leader:
   Skills:
   - summon{t=OpenField_Animal_モーカウ_MCLove32;a=2to4;r=5;s=true} @self ~onSpawn
   - cmd{c="mlg <target.name> OpenField_Food_ステーキ_MCLove32 1 1"} @TTP ~onDeath
+
+OpenField_Animal_ピグ_MCLove32:
+  Template: OpenField_Animal_Base_MCLove32
+  Type: pig
+  Display: "ピグ"
+  Faction: pig
+  Health: 20
+  Armor: 0
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  - randomstroll
+  - gotoparent
+  - gotoowner
+  - fleeplayers{d=16;s=2;ss=1.5}
+  - fleeConditional{distance=16;speed=2;safespeed=1.5;conditions=[ - hasTag{t=BOSS} true ]}
+  AITargetSelectors:
+  - clear
+  - attacker
+  Drops:
+  - exp 30
+  Options:
+    FollowRange: 10
+    KnockbackResistance: 0.15
+  Skills:
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=24} @self ~onEnterCombat 
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=10;delay=5} @self ~onDropCombat
+  - skill:Generic_Enemy_ヘイト_MCLove32 @self ~onEnterCombat
+  - cmd{c="mlg <target.name> OpenField_Food_豚ステーキ_MCLove32 1 0.5"} @TTP ~onDeath
+
+OpenField_Animal_ピグ_MCLove32_Leader:
+  Template: OpenField_Animal_ピグ_MCLove32
+  Health: 25
+  Armor: 0
+  Drops:
+  - exp 50
+  Skills:
+  - summon{t=OpenField_Animal_ピグ;a=2to4;r=5;s=true} @self ~onSpawn
+  - cmd{c="mlg <target.name> OpenField_Food_豚ステーキ_MCLove32 1 1"} @TTP ~onDeath
