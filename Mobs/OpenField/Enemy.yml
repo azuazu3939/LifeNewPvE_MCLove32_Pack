@@ -30,7 +30,6 @@ OpenField_Enemy_Abstract_Generic:
   Skills:
   - remove{delay=1} @self ~onTimer:100 ?containregion{r=open}
   - found @trigger ~onEntercombat 
-  - found @trigger ~onDamaged ?~isplayer 
 
 #ベーステンプレMobに、直接攻撃時にダメージを与える処理をしたもの
 OpenField_Enemy_Base_MCLove32:
