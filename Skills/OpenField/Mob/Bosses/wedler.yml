@@ -470,6 +470,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_6_Sphere:
   - look{f=true} @T
   - setVar{var=skill.dmg;val="1";t=FLOAT} @self
   - skill:Generic_Enemy_MCLove32_BUFF @self
+  - setVar{var=skill.tick;val="0";t=INTEGER} @self
   - missile{
     ot=[
       - e:ps{p=spark;a=30;r=1} @origin 
