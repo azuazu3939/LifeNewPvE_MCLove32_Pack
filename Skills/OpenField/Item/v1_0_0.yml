@@ -279,7 +279,7 @@ OpenField_Weapon_フォーカス_MCLove32_Skills:
   - delay 100
   - skill{
     s=[
-      - damage{a=300;pi=true;ii=true}
+      - damage{a=325;pi=true;ii=true}
       - sound{s=entity.wither.death;p=2;v=1.5;sc=AMBIENT} @self
       - potion{t=WEAKNESS;l=2;d=200;p=false}
       - potion{t=WEAKNESS;l=2;d=200;p=false} @self
