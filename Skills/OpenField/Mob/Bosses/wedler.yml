@@ -453,11 +453,11 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_6:
   Skills:
   - addtag{t=ATTACK} @self
   - delay 20
-  - Generic_onGroundトリガースキル_MCLove32{s_name=OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_6_Sphere}
+  - skill:Generic_onGroundトリガースキル_MCLove32{s_name=OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_6_Sphere}
   - delay 24
-  - Generic_onGroundトリガースキル_MCLove32{s_name=OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_6_Sphere}
+  - skill:Generic_onGroundトリガースキル_MCLove32{s_name=OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_6_Sphere}
   - delay 40
-  - Generic_onGroundトリガースキル_MCLove32{s_name=OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_6_Sphere}
+  - skill:Generic_onGroundトリガースキル_MCLove32{s_name=OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_6_Sphere}
   - delay 16
   - removeTag{t=ATTACK} @self
 
