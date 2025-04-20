@@ -59,7 +59,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1_Process:
       #- skill:OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1_Process_Shoot_Damage @ENO{r=5;c=[ - samefaction false ];ignore=players}
       #- skill:OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1_Process_Shoot_Damage @PlayersNearOrigin{r=1.5}
     ];
-    v=4;se=false;sb=false;mr=20;i=1;sfo=3;syo=3;tyo=3;md=40;ho=90;hnp=true;c=[ - samefaction false ]} @forward{lockpitch=true}
+    v=4;se=false;sb=false;mr=20;i=1;sfo=3;syo=3;tyo=3;md=60;ho=90;hnp=true;c=[ - samefaction false ]} @forward{lockpitch=true}
 
 OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1_Process_V1:
   Skills:
