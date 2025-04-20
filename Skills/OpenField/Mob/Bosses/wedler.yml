@@ -497,7 +497,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_6_Sphere:
       - potion{t=SLOW;l=2;d=100;p=false} @ENO{r=6;c=[ - samefaction false ]}
     ];
     v=2;i=1;vr=2;hr=4;syo=4;sfo=3;hnp=true;c=[ - samefaction false ];
-    in=12;sdir=@forward{f=5;y=5}} @T
+    in=25;sdir=@forward{f=5;y=5}} @T
   - delay 4
   #- potion{t=INVISIBILITY;l=0;d=200;p=false} @self
   - leap{v=350} @forward{f=5;so=<random.-8to8>}
