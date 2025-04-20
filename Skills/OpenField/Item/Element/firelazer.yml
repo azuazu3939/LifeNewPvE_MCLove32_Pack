@@ -14,9 +14,9 @@ OpenField_Weapon_火炎レーザー_MCLove32_Skills:
   - modifyMana{a=-200} @self 
   - aura{n=サブウェポン;i=20;rd=true;t=60} @self  
   - setMaterialCooldown{d=400;m=iron_hoe} @self
-  - setVar{var=skill.x;val="<life.l.x>";t=FLOAT} @TL{d=40}
-  - setVar{var=skill.y;val="<life.l.y>";t=FLOAT} @TL{d=40}
-  - setVar{var=skill.z;val="<life.l.z>";t=FLOAT} @TL{d=40}
+  - setVar{var=skill.x;val="<az.l.x>";t=FLOAT} @TL{d=40}
+  - setVar{var=skill.y;val="<az.l.y>";t=FLOAT} @TL{d=40}
+  - setVar{var=skill.z;val="<az.l.z>";t=FLOAT} @TL{d=40}
   - sound{s=entity.blaze.shoot;repeat=2;repeatI=10} @self
   - skill:OpenField_Weapon_火炎レーザー_MCLove32_Skill_Starts{repeat=15;repeatI=1} @forward{f=8;lockpitch=true}
 
