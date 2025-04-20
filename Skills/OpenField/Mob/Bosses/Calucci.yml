@@ -3,7 +3,12 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK:
   - incombat
   Skills:
   - skill:OpenField_Enemy_羊獣カルーチェ_MCLove32_Target @self 0.5
-  - randomskill{s=OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_1,OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_2,OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_3,OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_4,OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_5;
+  - randomskill{s=     
+    OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_1,
+    OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_2,
+    OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_3,
+    OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_4,
+    OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK_5;
     repeati=20;repeat=2} @self
   - delay <random.60to180>
   - skill:OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK @self

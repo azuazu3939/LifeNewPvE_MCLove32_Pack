@@ -118,14 +118,14 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
   Display: "<#58cfe4>&l羊獣カルーチェ&R"
   Type: sheep
-  Health: 5950
+  Health: 950
   Faction: sheep
-  Armor: 100
-  Damage: 125
+  Armor: 40
+  Damage: 100
   Options:
     NoDamageTicks: 0
     Silent: true 
-    Scale: 3
+    Scale: 2
     Color: BLACK
     MovementSpeed: 0.15
     KnockbackResistance: 1
@@ -155,7 +155,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32:
   Skills:
   - raidBoss @self ~onSpawn 
   - addtag{t=BOSS} @self ~onSpawn
-  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=50} @self ~onSpawn 
+  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=20} @self ~onSpawn 
 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=32} @self ~onEnterCombat
   - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=240;shield_break=40;heal_percent=0.01} @self ~onEntercombat
@@ -174,13 +174,10 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32:
   - remove{delay=10} @self ~onDeath
   - skill:Generic_Enemy_MCLove32_SHOW_RANKING{lim=5;range=48} @self ~onDeath 
   - skill:OpenField_Util_Bosses_MCLove32_KillCount @self ~onDeath
-
-  - skill:Generic_MustDrop_MCLove32{
-    mmid1=OpenField_Material_羊獣の羊毛_MCLove32;amount1=1;weight1=10;
-    mmid2=OpenField_Material_羊獣の骨_MCLove32;amount2=1;weight2=8;
-    mmid3=OpenField_Material_羊獣の頭_MCLove32;amount3=1;weight3=6;
-    mmid4=OpenField_Material_風核_MCLove32;amount4=1;weight4=1; 
-    repeat=2;repeati=1} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Material_羊獣の羊毛_MCLove32 1 0.6"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Material_羊獣の骨_MCLove32 1 0.5"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Material_羊獣の頭_MCLove32 1 0.4"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Material_風核_MCLove32 1 0.1"} @TTP ~onDeath
 
 OpenField_Enemy_黒小羊_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
@@ -241,7 +238,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32:
   - float
   BossBar:
     Enabled: true
-    Title: <caster.name> <caster.hp>/<caster.mhp>
+    Title: <caster.name>
     Range: 32
     Color: WHITE
     Style: SEGMENTED_12
@@ -266,13 +263,10 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32:
   - remove{delay=10} @self ~onDeath
   - skill:Generic_Enemy_MCLove32_SHOW_RANKING{lim=5;range=48} @self ~onDeath 
   - skill:OpenField_Util_Bosses_MCLove32_KillCount @self ~onDeath 
-
-  - skill:Generic_MustDrop_MCLove32{
-    mmid1=OpenField_Material_風牙狼の皮_MCLove32;amount1=1;weight1=10;
-    mmid2=OpenField_Material_風牙狼の骨_MCLove32;amount2=1;weight2=8;
-    mmid3=OpenField_Material_風牙狼の牙_MCLove32;amount3=1;weight3=6;
-    mmid4=OpenField_Material_風核_MCLove32;amount4=1;weight4=1;
-    repeat=2;repeati=1} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Material_風牙狼の皮_MCLove32 1 0.6"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Material_風牙狼の骨_MCLove32 1 0.5"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Material_風牙狼の牙_MCLove32 1 0.4"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Material_風核_MCLove32 1 0.1"} @TTP ~onDeath
 
 OpenField_Enemy_焔獣フェルドス_MCLove32:
   Template: OpenField_Enemy_Abstract_Generic
@@ -334,12 +328,9 @@ OpenField_Enemy_焔獣フェルドス_MCLove32:
   - skill:Generic_Enemy_MCLove32_SHOW_RANKING{lim=5;range=48} @self ~onDeath 
   - skill:OpenField_Util_Bosses_MCLove32_KillCount @self ~onDeath 
   - remove{delay=10} @self ~onDeath
-
-  - skill:Generic_MustDrop_MCLove32{
-    mmid1=OpenField_Material_焔獣の炎殻_MCLove32;amount1=1;weight1=14;
-    mmid2=OpenField_Material_焔獣の炎牙_MCLove32;amount2=1;weight2=10;
-    mmid3=OpenField_Material_炎核_MCLove32;amount3=1;weight3=1;
-    repeat=2;repeati=1} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Material_焔獣の炎殻_MCLove32 1 0.8"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Material_焔獣の炎牙_MCLove32 1 0.6"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Material_炎核_MCLove32 1 0.1"} @TTP ~onDeath
 
 OpenField_Enemy_踊る巨人_MCLove32:
   Template: OpenField_Enemy_Abstract_Generic

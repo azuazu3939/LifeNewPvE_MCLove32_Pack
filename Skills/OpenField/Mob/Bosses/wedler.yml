@@ -2,8 +2,16 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK:
   Conditions:
   - incombat
   Skills:
-  - randomskill{s=OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1,OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_2,OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_3,OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_5,OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_6,OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_7;fbs=OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_4;
+  - randomskill{s=
+    OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1,
+    OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_2,
+    OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_3,
+    OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_5,
+    OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_6,
+    OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_7;
+    fbs=OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_4;
     repeati=20;repeat=2} @self
+  - clearpotion{t=INVISIBILITY} @self
   - delay <random.120to160>
   - skill:OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK
 
@@ -459,12 +467,12 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_6:
   - delay 40
   - skill:Generic_onGroundトリガースキル_MCLove32{s_name=OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_6_Sphere}
   - delay 16
-  #- clearpotion{t=INVISIBILITY} @self
+  - clearpotion{t=INVISIBILITY} @self
   - removeTag{t=ATTACK} @self
 
 OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_6_Sphere:
   Skills:
-  #- clearpotion{t=INVISIBILITY} @self
+  - clearpotion{t=INVISIBILITY} @self
   - delay 4
   - jump{v=0.8} @self
   - delay 10
@@ -491,7 +499,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_6_Sphere:
       - e:pr{r=8;pts=32;a=1;s=2;d=true;dir=0,2,0;dr=true;p=wax_off} @origin
       - e:pr{r=10;pts=32;a=1;s=2;d=true;dir=0,2,0;dr=true;p=wax_off} @origin
 
-      - e:p{p=explosion_huge;a=1;vs=1;hs=1;repeat=3;repeati=5} @origin
+      - e:p{p=explosion_huge;a=1;vs=1;hs=1} @origin
       - sound{s=block.end_portal.spawn;p=2;v=1} @origin
       - damage{a="<skill.var.dmg>";pi=true;ii=true;e=GREEN} @ENO{r=4;c=[ - samefaction false ]}
       - potion{t=SLOW;l=2;d=100;p=false} @ENO{r=6;c=[ - samefaction false ]}
@@ -499,7 +507,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_6_Sphere:
     v=2;i=1;vr=2;hr=4;syo=4;sfo=3;hnp=true;c=[ - samefaction false ];
     in=25;sdir=@forward{f=5;y=5}} @T
   - delay 4
-  #- potion{t=INVISIBILITY;l=0;d=200;p=false} @self
+  - potion{t=INVISIBILITY;l=0;d=200;p=false} @self
   - leap{v=350} @forward{f=5;so=<random.-8to8>}
 
 OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_7:
@@ -534,14 +542,10 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_7_Run:
       - damage{a=<skill.var.dmg>;pi=true;ii=true;e=GREEN}
     ];
     oe=[
-      - e:pr{r=4;pts=32;p=cloud;a=1;s=1;d=true;dir=0,1,0} @origin
-      - e:pr{r=8;pts=32;p=cloud;a=1;s=1;d=true;dir=0,1,0} @origin
-      - e:pr{r=10;pts=32;p=cloud;a=1;s=1;d=true;dir=0,1,0} @origin
       - e:pr{r=4;pts=32;a=1;s=2;d=true;dir=0,2,0;dr=true;p=wax_off} @origin
       - e:pr{r=8;pts=32;a=1;s=2;d=true;dir=0,2,0;dr=true;p=wax_off} @origin
       - e:pr{r=10;pts=32;a=1;s=2;d=true;dir=0,2,0;dr=true;p=wax_off} @origin
-
-      - e:p{p=explosion_huge;a=1;vs=1;hs=1;repeat=3;repeati=5} @origin
+      - e:p{p=explosion_huge;a=1;vs=1;hs=1} @origin
       - damage{a="<skill.var.dmg> * 1.25";pi=true;ii=true;e=GREEN} @ENO{r=4;c=[ - samefaction false ]}
       - potion{t=SLOW;l=2;d=100;p=false} @ENO{r=6;c=[ - samefaction false ]}
     ];
