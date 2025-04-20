@@ -106,7 +106,7 @@ OpenField_Animal_ヒィツジー_MCLove32:
   Drops:
   - exp 30
   Options:
-    FollowRange: 16
+    FollowRange: 10
     KnockbackResistance: 0.15
   Skills:
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=24} @self ~onEnterCombat 
@@ -146,7 +146,7 @@ OpenField_Animal_モーカウ_MCLove32:
   Drops:
   - exp 30
   Options:
-    FollowRange: 16
+    FollowRange: 10
     KnockbackResistance: 0.15
   Skills:
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=24} @self ~onEnterCombat 
