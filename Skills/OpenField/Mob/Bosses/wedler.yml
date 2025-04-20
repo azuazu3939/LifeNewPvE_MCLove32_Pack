@@ -545,5 +545,5 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_7_Run:
       - damage{a="<skill.var.dmg> * 1.25";pi=true;ii=true;e=GREEN} @ENO{r=6;c=[ - samefaction false ]}
       - potion{t=SLOW;l=2;d=100;p=false} @ENO{r=6;c=[ - samefaction false ]}
     ];
-    v=0;i=1;vr=2;hr=2;se=false;syo=<random.2to8>;sfo=-3;sso=<random.-12to12>;hnp=true;c=[ - samefaction false ];
+    v=0;i=1;vr=2;hr=2;syo=<random.2to8>;sfo=-3;sso=<random.-12to12>;hnp=true;c=[ - samefaction false ];
     sdir=@TL;in=12} @T
