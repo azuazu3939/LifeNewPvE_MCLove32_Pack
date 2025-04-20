@@ -472,10 +472,9 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_6_Sphere:
   - skill:Generic_Enemy_MCLove32_BUFF @self
   - missile{
     ot=[
-      - e:ps{p=spark;a=50;r=1} @origin 
+      - e:ps{p=spark;a=30;r=1} @origin 
       - e:ps{p=sweep_attack;a=20;r=2} @origin
-      - e:ps{p=cloud;a=50;s=0.2;r=1;cd=0.2} @origin
-
+      - e:ps{p=cloud;a=30;s=0.2;r=1;cd=0.2} @origin
       - setVar{var=skill.tick;val="<skill.var.tick> + 1";t=INTEGER} @self
       - skill:OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_2_Process_Tick @self
     ];
@@ -541,7 +540,6 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_7_Run:
       - e:pr{r=10;pts=32;a=1;s=2;d=true;dir=0,2,0;dr=true;p=wax_off} @origin
 
       - e:p{p=explosion_huge;a=1;vs=1;hs=1;repeat=3;repeati=5} @origin
-      - sound{s=block.end_portal.spawn;p=2;v=1} @origin
       - damage{a="<skill.var.dmg> * 1.25";pi=true;ii=true;e=GREEN} @ENO{r=6;c=[ - samefaction false ]}
       - potion{t=SLOW;l=2;d=100;p=false} @ENO{r=6;c=[ - samefaction false ]}
     ];
