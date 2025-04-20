@@ -14,6 +14,7 @@ OpenField_Armor_アニマー_MCLove32_RareH:
     Head:
       ArmorToughness: 7 ADD 
       Armor: 8 ADD 
+      Luck: 5 ADD
   Group: 'Armor'
   NBT:
     PublicBukkitValues:
@@ -36,6 +37,7 @@ OpenField_Armor_アニマー_MCLove32_RareC:
     Chest:
       ArmorToughness: 7 ADD 
       Armor: 13 ADD 
+      Luck: 5 ADD
   Group: 'Armor'
   NBT:
     PublicBukkitValues:
@@ -58,6 +60,7 @@ OpenField_Armor_アニマー_MCLove32_RareL:
     Legs:
       ArmorToughness: 7 ADD 
       Armor: 11 ADD 
+      Luck: 5 ADD
   Group: 'Armor'
   NBT:
     PublicBukkitValues:
@@ -80,6 +83,7 @@ OpenField_Armor_アニマー_MCLove32_RareB:
     Feet:
       ArmorToughness: 7 ADD 
       Armor: 8 ADD 
+      Luck: 5 ADD
   Group: 'Armor'
   NBT:
     PublicBukkitValues:
