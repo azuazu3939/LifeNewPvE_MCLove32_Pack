@@ -512,6 +512,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_7:
   - addtag{t=ATTACK} @self
   - stun{t=60} @self
   - sound{s=block.trial_spawner.about_to_spawn_item;p=2;v=3} @self
+  - setVar{k=skill.tick;a="200";t=INTEGER} @self
   - skill:OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_7_Run{repeat=9;repeati=10}
   - delay 60
   - removetag{t=ATTACK} @self
@@ -520,7 +521,8 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_7_Run:
   Skills:
   - missile{
     os=[
-      - modifyprojectile{t=VELOCITY;a=SET;v=10;delay=200} @self
+      - modifyprojectile{t=VELOCITY;a=SET;v=10;delay=<skill.var.tick>} @self
+      - setVar{k=skill.tick;a="<skill.var.tick> - 10";t=INTEGER} @self
     ];
     ot=[
       - e:ps{p=spark;a=10;r=1} @origin 
