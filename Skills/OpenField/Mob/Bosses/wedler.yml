@@ -348,7 +348,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_2_Process:
       - damage{a="<skill.var.dmg> * 1.8";pi=true;ii=true;e=GREEN} @ENO{r=6;c=[ - samefaction false ]}
       - potion{t=SLOW;l=2;d=100;p=false} @ENO{r=6;c=[ - samefaction false ]}
     ];
-    v=2;i=1;vr=3;hr=3;se=false;syo=2;sfo=3;hnp=true;c=[ - samefaction false ]} @forward{f=10;y=-5}
+    v=2;i=1;vr=4;hr=4;se=false;syo=2;sfo=3;hnp=true;c=[ - samefaction false ]} @forward{f=10;y=-5}
 
 OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_2_Process_Tick:
   Conditions:
@@ -439,7 +439,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_5:
       - e:pr{r=8;pts=32;p=cloud;a=1;s=0.7;d=true;dir=0,1,0} @origin
       - e:pr{r=10;pts=32;p=cloud;a=1;s=0.7;d=true;dir=0,1,0} @origin
     ];
-    se=false;g=1;v=8;tyo=25;sfo=0;syo=0;i=1;md=100;hnp=true;c=[ - samefaction false ]} @T
+    se=false;hr=4;vr=4;g=1;v=8;tyo=25;sfo=0;syo=0;i=1;md=100;hnp=true;c=[ - samefaction false ]} @T
   - delay 40
   - removeTag{t=ATTACK} @self
 
@@ -496,7 +496,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_6_Sphere:
       - damage{a="<skill.var.dmg>";pi=true;ii=true;e=GREEN} @ENO{r=6;c=[ - samefaction false ]}
       - potion{t=SLOW;l=2;d=100;p=false} @ENO{r=6;c=[ - samefaction false ]}
     ];
-    v=2;i=1;vr=2;hr=3;syo=3;sfo=3;hnp=true;c=[ - samefaction false ];
+    v=2;i=1;vr=2;hr=4;syo=4;sfo=3;hnp=true;c=[ - samefaction false ];
     in=12;sdir=@forward{f=5;y=5}} @T
   - delay 4
   #- potion{t=INVISIBILITY;l=0;d=200;p=false} @self
@@ -545,5 +545,5 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_7_Run:
       - damage{a="<skill.var.dmg> * 1.25";pi=true;ii=true;e=GREEN} @ENO{r=6;c=[ - samefaction false ]}
       - potion{t=SLOW;l=2;d=100;p=false} @ENO{r=6;c=[ - samefaction false ]}
     ];
-    v=0;i=1;vr=3;hr=3;md=200;syo=<random.2to8>;sfo=-3;sso=<random.-12to12>;hnp=true;c=[ - samefaction false ];
+    v=0;i=1;vr=4;hr=4;md=200;syo=<random.2to8>;sfo=-3;sso=<random.-12to12>;hnp=true;c=[ - samefaction false ];
     sdir=@TL;in=25} @T
