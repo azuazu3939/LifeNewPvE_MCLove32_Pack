@@ -4,7 +4,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK:
   Skills:
   - randomskill{s=OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1,OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_2,OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_3,OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_5,OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_6,OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_7;fbs=OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_4;
     repeati=20;repeat=2} @self
-  - delay <random.80to160>
+  - delay <random.120to160>
   - skill:OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK
 
 OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1:
