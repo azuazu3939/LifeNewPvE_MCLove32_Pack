@@ -277,3 +277,31 @@ Generic_MustDrop_MCLove32_Finish:
   Skills:
   - setVar{k=skill.finish;a="1";t=INTEGER} @self
   - skill:Generic_MustDrop_MCLove32_Base{mmid1=<skill.mmid<skill.var.adder>>;amount1=<skill.amount<skill.var.adder>>} @targetedTarget
+
+#
+Generic_ターゲットランダムプレイヤー_MCLove32:
+  Conditions:
+  - incombat
+  Skills:
+  - setTarget @TTP{sort=RANDOM;limit=1} ?targets{a=>0}
+
+#設定可能なパラメータ (s_name、s_repeat、s_repeat_i)
+Generic_onGroundトリガースキル_MCLove32:
+  Conditions:
+  - incombat
+  - onGround{onfail=Generic_onGroundトリガースキル_MCLove32_NO}
+  Skills:
+  - setVar{k=skill.repeat;a="0";t=INTEGER} @self
+  - setVar{k=skill.repeat_i;a="0";t=INTEGER} @self
+
+  - setVar{k=skill.repeat_c;a="<skill.s_repeat>";t=STRING} @self
+  - setVar{k=skill.repeat_i_c;a="<skill.s_repeat_i>";t=STRING} @self
+  - setVar{k=skill.repeat;a="<skill.s_repeat>";t=INTEGER} @self ?!varequals{k=skill.repeat_c;v="[Undefined]"}
+  - setVar{k=skill.repeat_i;a="<skill.s_repeat_i>";t=INTEGER} @self ?!varequals{k=skill.repeat_i_c;v="[Undefined]"}
+  
+  - vskill{s=<skill.s_name>;repeat=<skill.var.repeat>;repeati=<skill.var.repeat_i>} @self
+
+Generic_onGroundトリガースキル_MCLove32_NO:
+ Skill:
+ - delay 1
+ - skill:Generic_onGroundトリガースキル_MCLove32 @self
