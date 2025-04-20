@@ -459,6 +459,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_6:
   - delay 40
   - skill:Generic_onGroundトリガースキル_MCLove32{s_name=OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_6_Sphere}
   - delay 16
+  - clearpotion{t=INVISIBILITY} @self
   - removeTag{t=ATTACK} @self
 
 OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_6_Sphere:
