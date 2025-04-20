@@ -39,7 +39,7 @@ OpenField_Food_羊ステーキ_MCLove32:
   Group: 'Food'
 
 OpenField_Food_豚ステーキ_MCLove32:
-  Id: porkchop
+  Id: cooked_porkchop
   Display: "&fステーキ"
   Lore: []
   ItemUpdater:
