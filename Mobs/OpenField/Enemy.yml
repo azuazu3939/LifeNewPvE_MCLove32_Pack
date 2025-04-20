@@ -241,7 +241,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32:
   - float
   BossBar:
     Enabled: true
-    Title: <caster.name>
+    Title: <caster.name> <caster.mhp> <caster.hp>
     Range: 32
     Color: WHITE
     Style: SEGMENTED_12
