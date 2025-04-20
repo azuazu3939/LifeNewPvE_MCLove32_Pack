@@ -493,7 +493,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_6_Sphere:
 
       - e:p{p=explosion_huge;a=1;vs=1;hs=1;repeat=3;repeati=5} @origin
       - sound{s=block.end_portal.spawn;p=2;v=1} @origin
-      - damage{a="<skill.var.dmg>";pi=true;ii=true;e=GREEN} @ENO{r=6;c=[ - samefaction false ]}
+      - damage{a="<skill.var.dmg>";pi=true;ii=true;e=GREEN} @ENO{r=4;c=[ - samefaction false ]}
       - potion{t=SLOW;l=2;d=100;p=false} @ENO{r=6;c=[ - samefaction false ]}
     ];
     v=2;i=1;vr=2;hr=4;syo=4;sfo=3;hnp=true;c=[ - samefaction false ];
@@ -542,7 +542,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_7_Run:
       - e:pr{r=10;pts=32;a=1;s=2;d=true;dir=0,2,0;dr=true;p=wax_off} @origin
 
       - e:p{p=explosion_huge;a=1;vs=1;hs=1;repeat=3;repeati=5} @origin
-      - damage{a="<skill.var.dmg> * 1.25";pi=true;ii=true;e=GREEN} @ENO{r=6;c=[ - samefaction false ]}
+      - damage{a="<skill.var.dmg> * 1.25";pi=true;ii=true;e=GREEN} @ENO{r=4;c=[ - samefaction false ]}
       - potion{t=SLOW;l=2;d=100;p=false} @ENO{r=6;c=[ - samefaction false ]}
     ];
     v=0;i=1;vr=4;hr=4;md=200;syo=<random.2to8>;sfo=-3;sso=<random.-12to12>;hnp=true;c=[ - samefaction false ];
