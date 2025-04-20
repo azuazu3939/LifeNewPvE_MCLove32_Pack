@@ -546,4 +546,4 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_7_Run:
       - potion{t=SLOW;l=2;d=100;p=false} @ENO{r=6;c=[ - samefaction false ]}
     ];
     v=0;i=1;vr=2;hr=2;syo=<random.2to8>;sfo=-3;sso=<random.-12to12>;hnp=true;c=[ - samefaction false ];
-    sdir=@TL;in=12} @T
+    sdir=@TL;in=25} @T
