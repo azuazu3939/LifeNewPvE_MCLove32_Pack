@@ -523,9 +523,9 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_7_Run:
       - modifyprojectile{t=VELOCITY;a=SET;v=10;delay=200} @self
     ];
     ot=[
-      - e:ps{p=spark;a=50;r=1} @origin 
-      - e:ps{p=sweep_attack;a=20;r=2} @origin
-      - e:ps{p=cloud;a=50;s=0.2;r=1;cd=0.2} @origin
+      - e:ps{p=spark;a=10;r=1} @origin 
+      - e:ps{p=sweep_attack;a=5;r=2} @origin
+      - e:ps{p=cloud;a=10;s=0.2;r=1;cd=0.2} @origin
     ];
     oh=[
       - damage{a=<skill.var.dmg>;pi=true;ii=true;e=GREEN}
