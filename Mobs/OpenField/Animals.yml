@@ -203,5 +203,5 @@ OpenField_Animal_ピグ_MCLove32_Leader:
   Drops:
   - exp 50
   Skills:
-  - summon{t=OpenField_Animal_ピグ;a=2to4;r=5;s=true} @self ~onSpawn
+  - summon{t=OpenField_Animal_ピグ_MCLove32;a=2to4;r=5;s=true} @self ~onSpawn
   - cmd{c="mlg <target.name> OpenField_Food_豚ステーキ_MCLove32 1 1"} @TTP ~onDeath
