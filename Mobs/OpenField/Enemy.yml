@@ -118,7 +118,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
   Display: "<#58cfe4>&l羊獣カルーチェ&R"
   Type: sheep
-  Health: 5950
+  Health: 4950
   Faction: sheep
   Armor: 100
   Damage: 125
@@ -211,7 +211,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32:
   Template: OpenField_Enemy_Abstract_Generic
   Display: "<#15d455>&l風牙狼ウィデラー&R"
   Type: wolf
-  Health: 7950
+  Health: 3950
   Armor: 70
   Faction: wolf
   Damage: 150
@@ -241,7 +241,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32:
   - float
   BossBar:
     Enabled: true
-    Title: <caster.name> <caster.mhp> <caster.hp>
+    Title: <caster.name> <caster.hp>/<caster.mhp>
     Range: 32
     Color: WHITE
     Style: SEGMENTED_12
@@ -278,7 +278,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32:
   Template: OpenField_Enemy_Abstract_Generic
   Display: "<#c20a0a>&l焔獣フェルドス&R"
   Type: hoglin
-  Health: 3950
+  Health: 2950
   Armor: 60
   Faction: hoglin
   Damage: 180
