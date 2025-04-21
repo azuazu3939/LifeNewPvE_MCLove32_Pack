@@ -52,13 +52,13 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1_Process:
   Skills:
   - projectile{
     ot=[
-      - setprojectiledirection @laser{v=4}
+      - setprojectiledirection @laser{v=6}
       - e:p{p=spark;a=5;vs=0.5;hs=0.25} @origin
       - skill:OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1_Projectile_Effect @origin 0.25
       - skill:OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1_Process_Shoot_Damage @ENO{r=5;c=[ - samefaction false ];ignore=players}
       - skill:OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1_Process_Shoot_Damage @PlayersNearOrigin{r=1.5}
     ];
-    v=5;se=false;sb=false;mr=24;i=1;md=60;syo=3;sfo=3;ho=90;hnp=true;c=[ - samefaction false ]} @forward
+    v=12;se=false;sb=false;mr=24;i=1;md=60;syo=3;sfo=3;ho=90;hnp=true;c=[ - samefaction false ]} @forward
 
 OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1_Process_V1:
   Skills:
