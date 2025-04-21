@@ -53,7 +53,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1_Process:
   Skills:
   - projectile{
     ot=[
-      - setprojectiledirection @laser{v=10}
+      - setprojectiledirection @laser{v=5}
       - e:p{p=spark;a=1;repeat=49;repeati=1} @origin
     ];
     v=5;se=false;sb=false;mr=20;i=1;md=60;syo=3;sfo=3;ho=90;hnp=true;c=[ - samefaction false ]} @forward
