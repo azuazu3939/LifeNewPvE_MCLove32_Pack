@@ -50,7 +50,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1_Projectile_Effect:
 
 OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1_Process:
   Skills:
-  - vskill{s=OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1_Process_V<skill.var.itr>} @self
+  - vskill{s=OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1_Process_V<skill.var.itr>;f=true} @self
 
 OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1_Process_V1:
   Skills:
