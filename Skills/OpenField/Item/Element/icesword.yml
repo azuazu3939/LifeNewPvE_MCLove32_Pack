@@ -1,0 +1,41 @@
+OpenField_Weapon_氷剣_MCLove32_Skills:
+  Cooldown: 1.2
+  Conditions: 
+  - wearing{s=HAND;m=OpenField_Weapon_氷剣_MCLove32} true
+  - materialcooldown{m=diamond_sword} false 
+  - hasMana{a=>10;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]} 
+  - hasAura{n=メインウェポン;
+    onfail=[
+      - message{m="&cメインウェポン共通CT中です。"} @self 
+    ]} false  
+  Skills:
+  - modifyMana{a=-10} @self 
+  - aura{n=メインウェポン;i=20;rd=true;t=20} @self  
+  - setmaterialcooldown{m=diamond_sword;d=24} @self
+  - skill:OpenField_Weapon_氷剣_MCLove32_Skill_Process{ho=30} @self 
+  - skill:OpenField_Weapon_氷剣_MCLove32_Skill_Process{ho=0} @self 
+  - skill:OpenField_Weapon_氷剣_MCLove32_Skill_Process{ho=-30} @self 
+
+OpenField_Weapon_氷剣_MCLove32_Skill_Process:
+  Skills:
+  - projectile{
+    ot=[
+      - e:p{p=red_dust;c=#4c4cff;a=1;audience=caster;s=0.5} @origin
+      - e:p{p=red_dust;c=#00ffff;a=1;audience=caster;s=0.5} @origin
+      - e:p{p=red_dust;c=#ffffff;a=1;audience=caster;s=0.5} @origin
+    ];
+    oh=[
+      - damage{a=20;pi=true;ii=true;e=BLUE}
+      - aura{n=OpenField_Weapon_氷剣_MCLove32_Skill;t=5}
+    ];
+    conditions=[
+      - isLiving true 
+      - isMythicMob true
+      - hasAura{n=OpenField_Weapon_氷剣_MCLove32_Skill} false
+    ];
+    v=24;i=1;vr=1.5;r=1.5;hp=false;hnp=true;mr=20;md=24;tyo=1.2;
+    b=MOB;mob=OpenField_util_氷塊_50_MCLove32;bmd=true;byo=0;bfo=0;
+    ho=<skill.ho>} @forward{f=5}

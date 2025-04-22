@@ -1,7 +1,7 @@
 OpenField_Weapon_サンドストーム_MCLove32_Skills:
   Cooldown: 10
   Conditions:
-  - wearing{m=OpenField_Weapon_サンドストーム_MCLove32;s=HAND}
+  - wearing{m=OpenField_Weapon_sandstorm_MCLove32;s=HAND}
   - matCooldown{m=bow} false 
   - hasMana{a=>80;
     onFail=[

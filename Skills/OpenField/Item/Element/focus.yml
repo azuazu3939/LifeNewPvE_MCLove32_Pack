@@ -1,0 +1,28 @@
+OpenField_Weapon_フォーカス_MCLove32_Skills:
+  Cooldown: 60
+  Conditions:
+  - wearing{s=HAND;m=OpenField_Weapon_フォーカス_MCLove32} true
+  - materialcooldown{m=stick} false 
+  - hasMana{a=>450;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]} 
+  - hasAura{n=サブウェポン;
+    onfail=[
+      - message{m="&cサブウェポン共通CT中です。"} @self 
+    ]} false 
+  Skills:
+  - modifyMana{a=-450} @self 
+  - aura{n=サブウェポン;i=20;rd=true;t=60} @self  
+  - setmaterialcooldown{m=stick;d=1200} @self
+  - potion{t=SLOWNESS;l=9;d=105;p=false} @self 
+  - sound{s=entity.wither.spawn;v=1.5;sc=AMBIENT} @self
+  - delay 100
+  - skill{
+    s=[
+      - damage{a=450;pi=true;ii=true}
+      - sound{s=entity.wither.death;p=2;v=1.5;sc=AMBIENT} @self
+      - potion{t=WEAKNESS;l=2;d=200;p=false}
+      - potion{t=WEAKNESS;l=2;d=200;p=false} @self
+      - potion{t=SPEED;l=3;d=200;p=false} @self 
+    ]} @EIC{r=10;a=150;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]} ?wearing{s=HAND;m=OpenField_Weapon_フォーカス_MCLove32}

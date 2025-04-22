@@ -46,13 +46,12 @@ OpenField_Weapon_ビットブレードM_MCLove32:
   Skills:
   - skill:OpenField_Weapon_ビットブレードM_MCLove32_Skills @self ~onUse
 
-OpenField_Weapon_サンドストーム_MCLove32:
+OpenField_Weapon_sandstorm_MCLove32:
   Id: bow
   Display: "&dサンドストーム"
   Lore: 
   - "&f着弾した敵を中心に砂嵐を発生させ、"
   - "&f周囲の敵を吸い込み尽くす。"
-  - "&fopen_fieldの敵から稀に落ちる。"
   Model: 1000
   ItemUpdater:
     Version: 1
@@ -64,8 +63,16 @@ OpenField_Weapon_サンドストーム_MCLove32:
   Group: 'Sub-Skill-Weapon'
   Skills:
   - skill:OpenField_Weapon_サンドストーム_MCLove32_Skills @triggerLocation ~onBowHit
+  Recipes:
+    Craft:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - OpenField_Material_風核_MCLove32 | OpenField_Material_風核_MCLove32 | OpenField_Material_風核_MCLove32
+      - OpenField_Material_風核_MCLove32 | OpenField_Material_風核_MCLove32 | OpenField_Material_風核_MCLove32
+      - OpenField_Material_風核_MCLove32 | OpenField_Material_風核_MCLove32 | OpenField_Material_風核_MCLove32
 
-OpenField_Weapon_エアブラスタ_MCLove32:
+OpenField_Weapon_airblaster_MCLove32:
   Id: iron_sword
   Display: "&fエアブラスタ"
   Lore: []
@@ -80,8 +87,16 @@ OpenField_Weapon_エアブラスタ_MCLove32:
   Group: "Main-Skill-Weapon"
   Skills:
   - skill:OpenField_Weapon_エアブラスタ_MCLove32_Skills @tl ~onUse
+  Recipes:
+    Craft:
+      Type: SHAPELESS
+      Amount: 1
+      Ingredients:
+      - OpenField_Weapon_ms_sword_MCLove32
+      - OpenField_Weapon_ms_sword_MCLove32
+      - OpenField_Material_風核_MCLove32
 
-OpenField_Weapon_牙狼ノ壱_MCLove32:
+OpenField_Weapon_wolfsword_1_MCLove32:
   Id: stone_sword 
   Display: "&f牙狼ノ壱"
   Lore: []
@@ -96,8 +111,21 @@ OpenField_Weapon_牙狼ノ壱_MCLove32:
   Group: 'Sub-Skill-Weapon'
   Skills:
   - skill:OpenField_Weapon_牙狼ノ壱_MCLove32_Skills @self ~onUse
+  Recipes:
+    Craft:
+      Type: SHAPELESS
+      Amount: 1
+      Ingredients:
+      - OpenField_Weapon_s_sword_MCLove32
+      - OpenField_Weapon_s_sword_MCLove32
+      - OpenField_Material_ハロウルフの牙_MCLove32
+      - OpenField_Material_ハロウルフの牙_MCLove32
+      - OpenField_Material_ハロウルフの牙_MCLove32
+      - OpenField_Material_ハロウルフの骨_MCLove32
+      - OpenField_Material_ハロウルフの骨_MCLove32
+      - OpenField_Material_ハロウルフの骨_MCLove32
 
-OpenField_Weapon_牙狼ノ弐_MCLove32:
+OpenField_Weapon_wolfsword_2_MCLove32:
   Id: stone_sword 
   Display: "&f牙狼ノ弐"
   Lore: []
@@ -112,8 +140,16 @@ OpenField_Weapon_牙狼ノ弐_MCLove32:
   Group: 'Sub-Skill-Weapon'
   Skills:
   - skill:OpenField_Weapon_牙狼ノ弐_MCLove32_Skills @self ~onUse
+  Recipes:
+    Craft:
+      Type: SHAPELESS
+      Amount: 1
+      Ingredients:
+      - OpenField_Weapon_wolfsword_1_MCLove32
+      - OpenField_Weapon_wolfsword_1_MCLove32
+      - OpenField_Material_HeloRare_MCLove32
 
-OpenField_Weapon_牙狼ノ零_MCLove32:
+OpenField_Weapon_wolfsword_0_MCLove32:
   Id: stone_sword 
   Display: "&f牙狼ノ零"
   Lore: []
@@ -128,8 +164,21 @@ OpenField_Weapon_牙狼ノ零_MCLove32:
   Group: 'Sub-Skill-Weapon'
   Skills:
   - skill:OpenField_Weapon_牙狼ノ零_MCLove32_Skills @self ~onUse
+  Recipes:
+    Craft:
+      Type: SHAPELESS
+      Amount: 1
+      Ingredients:
+      - OpenField_Weapon_wolfsword_1_MCLove32
+      - OpenField_Weapon_wolfsword_1_MCLove32
+      - OpenField_Weapon_wolfsword_2_MCLove32
+      - OpenField_Weapon_wolfsword_2_MCLove32
+      - OpenField_Material_HeloRare_MCLove32
+      - OpenField_Material_HeloRare_MCLove32
+      - OpenField_Material_風核_MCLove32
+      - OpenField_Material_風核_MCLove32
 
-OpenField_Weapon_ノーマルソード_MCLove32:
+OpenField_Weapon_n_sword_MCLove32:
   Id: iron_sword 
   Display: "&fノーマルソード"
   Lore: []
@@ -143,8 +192,14 @@ OpenField_Weapon_ノーマルソード_MCLove32:
       Damage: 30 ADD 
       AttackSpeed: -0.5 MULTIPLY_BASE
   Group: 'Melee-Weapon'
+  Recipes:
+    Craft:
+      Type: SHAPELESS
+      Amount: 1
+      Ingredients:
+      - OpenField_Weapon_s_sword_MCLove32
 
-OpenField_Weapon_シャープソード_MCLove32:
+OpenField_Weapon_s_sword_MCLove32:
   Id: iron_sword 
   Display: "&fシャープソード"
   Lore: []
@@ -158,8 +213,15 @@ OpenField_Weapon_シャープソード_MCLove32:
       Damage: 30to50 ADD 
       AttackSpeed: -0.4 MULTIPLY_BASE
   Group: 'Melee-Weapon'
+  Recipes:
+    Craft:
+      Type: SHAPELESS
+      Amount: 1
+      Ingredients:
+      - OpenField_Weapon_n_sword_MCLove32
+      - OpenField_Weapon_n_sword_MCLove32
 
-OpenField_Weapon_マルチノーマルソード_MCLove32:
+OpenField_Weapon_mn_sword_MCLove32:
   Id: iron_sword 
   Display: "&fマルチノーマルソード"
   Lore: []
@@ -173,8 +235,14 @@ OpenField_Weapon_マルチノーマルソード_MCLove32:
       Damage: 20 ADD 
       AttackSpeed: -0.5 MULTIPLY_BASE
   Group: 'Multi-Melee-Weapon'
+  Recipes:
+    Craft:
+      Type: SHAPELESS
+      Amount: 1
+      Ingredients:
+      - OpenField_Weapon_ms_sword_MCLove32
 
-OpenField_Weapon_マルチシャープソード_MCLove32:
+OpenField_Weapon_ms_sword_MCLove32:
   Id: iron_sword 
   Display: "&fマルチシャープソード"
   Lore: []
@@ -188,6 +256,13 @@ OpenField_Weapon_マルチシャープソード_MCLove32:
       Damage: 20to40 ADD 
       AttackSpeed: -0.4 MULTIPLY_BASE
   Group: 'Multi-Melee-Weapon'
+  Recipes:
+    Craft:
+      Type: SHAPELESS
+      Amount: 1
+      Ingredients:
+      - OpenField_Weapon_mn_sword_MCLove32
+      - OpenField_Weapon_mn_sword_MCLove32
 
 OpenField_Weapon_火炎レーザー_MCLove32:
   Id: iron_hoe

@@ -305,3 +305,21 @@ Generic_onGroundトリガースキル_MCLove32_NO:
  Skill:
  - delay 1
  - skill:Generic_onGroundトリガースキル_MCLove32 @self
+
+Generic_Weapon_Attack_MCLove32:
+  Cooldown: 0.1
+  Skills:
+  - skill{
+    s=[
+      - damage{a=10;pi=true;ii=true}
+      - sound{s=entity.player.attack.sweep;sc=PLAYERS} @self
+    ]} @EIC{r=8;a=120;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
+
+Generic_Weapon_Multi_Attack_MCLove32:
+  Cooldown: 0.1
+  Skills:
+  - skill{
+    s=[
+      - damage{a=10;pi=true;ii=true}
+      - sound{s=entity.player.attack.sweep;sc=PLAYERS} @self
+    ]} @EIC{r=8;a=120;limit=5;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}

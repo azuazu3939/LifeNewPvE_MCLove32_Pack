@@ -1,0 +1,40 @@
+OpenField_Weapon_エアブラスタ_MCLove32_Skills:
+  Cooldown: 2
+  Conditions:
+  - wearing{m=OpenField_Weapon_airblaster_MCLove32;s=HAND}
+  - matCooldown{m=iron_sword} false
+  - hasMana{a=>20;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]} 
+  - hasAura{n=メインウェポン;
+    onfail=[
+      - message{m="&cメインウェポン共通CT中です。"} @self 
+    ]} false 
+  Skills:
+  - modifyMana{a=-20} @self
+  - aura{n=メインウェポン;i=20;rd=true;t=20} @self
+  - setMaterialCooldown{m=iron_sword;d=200} @self  
+  - skill:OpenField_Weapon_エアブラスタ_MCLove32_SkillProcess{ho=30} @self 
+  - skill:OpenField_Weapon_エアブラスタ_MCLove32_SkillProcess{ho=0} @self 
+  - skill:OpenField_Weapon_エアブラスタ_MCLove32_SkillProcess{ho=-30} @self 
+
+OpenField_Weapon_エアブラスタ_MCLove32_SkillProcess:
+  Skills:
+  - projectile{
+    os=[
+      - sound{s=entity.breeze.deflect;p=2} @self
+      - e:p{p=crit;a=15;vs=2;hs=2;y=1.5} @self 
+    ];
+    ot=[
+      - setvar{var=skill.x;val="<random.float.-1to1>";t=FLOAT} @self 
+      - setvar{var=skill.z;val="<random.float.-1to1>";t=FLOAT} @self 
+      - e:p{p=sweep_attack;a=1;vs=0.3;hs=0.3;s=1;d=true;audience=@self;origin=@origin{x=<skill.var.x>;z=<skill.var.z>}} @origin{x=<skill.var.x>;y=1;z=<skill.var.z>}
+      - e:p{p=cloud;a=5;s=0.25;d=true;delay=2;audience=@self;eo=true;origin=@origin{x=<skill.var.x>;z=<skill.var.z>}} @origin{x=<skill.var.x>;y=1;z=<skill.var.z>}
+      - e:p{p=crit;a=4;vs=0.5;hs=0.5;delay=2;audience=@self} @origin
+    ];
+    oh=[
+      - damage{a=20;ii=true;pi=true}
+      - throw{v=8;vy=2}
+    ];
+    hp=false;hnp=true;v=35;i=1;md=30;mr=25;se=false;sb=false;vr=1.5;hr=2;ho=<skill.ho>} @TL 

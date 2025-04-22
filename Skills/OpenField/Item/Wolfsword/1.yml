@@ -1,7 +1,7 @@
 OpenField_Weapon_牙狼ノ壱_MCLove32_Skills:
   Cooldown: 20
   Conditions:
-  - wearing{m=OpenField_Weapon_牙狼ノ壱_MCLove32;s=HAND}
+  - wearing{m=OpenField_Weapon_wolfsword_1_MCLove32;s=HAND}
   - materialcooldown{m=stone_sword} false 
   - hasMana{a=>400;
     onFail=[
@@ -20,7 +20,7 @@ OpenField_Weapon_牙狼ノ壱_MCLove32_Skills:
 
 OpenField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity:
   Conditions:
-  - wearing{m=OpenField_Weapon_牙狼ノ壱_MCLove32;s=HAND} true
+  - wearing{m=OpenField_Weapon_wolfsword_1_MCLove32;s=HAND} true
   - onground orElseCast OpenField_Weapon_牙狼_MCLove32_Skill_Wait
   Skills:
   - leap{v=<skill.var.v>} @TL{cpitch=min(<caster.l.pitch>, 40)} 

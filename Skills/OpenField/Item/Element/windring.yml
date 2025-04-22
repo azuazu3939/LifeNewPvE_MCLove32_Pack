@@ -1,0 +1,40 @@
+OpenField_Weapon_風輪斬_MCLove32_Skills:
+  Cooldown: 3
+  Conditions:
+  - wearing{s=HAND;m=OpenField_Weapon_風輪斬_MCLove32} true
+  - materialcooldown{m=iron_sword} false 
+  - hasMana{a=>60;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]} 
+  - hasAura{n=サブウェポン;
+    onfail=[
+      - message{m="&cサブウェポン共通CT中です。"} @self 
+    ]} false  
+  Skills:
+  - modifyMana{a=-60} @self 
+  - aura{n=サブウェポン;i=20;rd=true;t=60} @self  
+  - setmaterialcooldown{m=iron_sword;d=60} @self
+  - setVar{var=skill.radius;val="0.1";t=FLOAT} @self 
+  - setVar{var=skill.radius;val="0.5";t=FLOAT;delay=10} @self 
+  - setVar{var=skill.radius;val="1";t=FLOAT;delay=20} @self 
+  - projectile{
+    oh=[
+      - damage{a=80 * <skill.var.radius>;pi=true;ii=true}
+    ];
+    ot=[
+      - e:p{p=totem;a=3;audience=caster;s=0.5;vs=0.2;hs=2} @origin
+      - e:p{p=spore_blossom_air;a=3;audience=caster;s=0.5;vs=0.5;hs=2.5} @origin
+      - e:pr{p=sweepattack;a=1;audience=caster;s=0.5;r=3;pts=16} @origin 0.5
+      - sound{s=item.trident.riptide_3;p=2;v=0.25;cd=0.25;audience=caster} @origin
+      - pull{v=4;to=true} @ENO{r=5;limit=3;sort=NEAREST;c=[ - isLiving true - isMythicMob true ]} 0.75
+    ];
+    os=[
+      - sound{s=item.trident.riptide_3;p=1;v=0.5;audience=caster} @self
+    ];
+    i=1;vr=3.5;hr=3.5;hp=false;hnp=true;mr=32;md=300;v=8;se=false;ti=20;
+    b=MOB;mob=OpenField_Util_風輪斬センター_100_MCLove32;bmd=true;byo=0;bfo=0;
+    conditions=[
+      - isLiving true 
+      - isMythicMob true
+    ]} @forward{f=10}
