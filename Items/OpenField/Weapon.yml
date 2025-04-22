@@ -155,7 +155,7 @@ OpenField_Weapon_シャープソード_MCLove32:
     Unbreakable: true 
   Attributes:
     MainHand:
-      Damage: <random.30to50> ADD 
+      Damage: 30to50 ADD 
       AttackSpeed: -0.4 MULTIPLY_BASE
   Group: 'Melee-Weapon'
 
@@ -185,7 +185,7 @@ OpenField_Weapon_マルチシャープソード_MCLove32:
     Unbreakable: true 
   Attributes:
     MainHand:
-      Damage: <random.20to40> ADD 
+      Damage: 20to40 ADD 
       AttackSpeed: -0.4 MULTIPLY_BASE
   Group: 'Multi-Melee-Weapon'
 
