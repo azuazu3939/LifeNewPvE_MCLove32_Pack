@@ -47,7 +47,10 @@ OpenField_Enemy_Base_MCLove32:
   - cmd{c="mlg <target.name> OpneField_Augment_超脚 1 0.00005"} @TTP ~onDeath
   - cmd{c="mlg <target.name> OpneField_Augment_超足 1 0.00005"} @TTP ~onDeath 
   - cmd{c="mlg <target.name> OpneField_Augment_超堀 1 0.00005"} @TTP ~onDeath
-  - cmd{c="mlg <target.name> OpneField_Augment_超強 1 0.00005"} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpneField_Augment_超強 1 0.00005"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpneField_Augment_健脚 1 0.001"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Weapon_ノーマルソード_MCLove32 1 0.005"} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Weapon_シャープソード_MCLove32 1 0.0025"} @TTP ~onDeath
 
 OpenField_Enemy_ウィスピット_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32

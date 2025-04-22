@@ -129,9 +129,9 @@ OpenField_Weapon_牙狼ノ零_MCLove32:
   Skills:
   - skill:OpenField_Weapon_牙狼ノ零_MCLove32_Skills @self ~onUse
 
-OpenField_Weapon_スライムソード_MCLove32:
+OpenField_Weapon_ノーマルソード_MCLove32:
   Id: iron_sword 
-  Display: "&fスライムソード"
+  Display: "&fノーマルソード"
   Lore: []
   Model: 1001
   ItemUpdater:
@@ -142,6 +142,21 @@ OpenField_Weapon_スライムソード_MCLove32:
     MainHand:
       Damage: 30 ADD 
       AttackSpeed: -0.5 MULTIPLY_BASE
+  Group: 'Melee-Weapon'
+
+OpenField_Weapon_シャープソード_MCLove32:
+  Id: iron_sword 
+  Display: "&fシャープソード"
+  Lore: []
+  Model: 1001
+  ItemUpdater:
+    Version: 1
+  Options:
+    Unbreakable: true 
+  Attributes:
+    MainHand:
+      Damage: <random.30to50> ADD 
+      AttackSpeed: -0.4 MULTIPLY_BASE
   Group: 'Melee-Weapon'
   
 OpenField_Weapon_火炎レーザー_MCLove32:
