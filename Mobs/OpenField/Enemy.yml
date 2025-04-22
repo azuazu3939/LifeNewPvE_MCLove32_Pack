@@ -127,6 +127,8 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32:
   Faction: sheep
   Armor: 40
   Damage: 100
+  Drops:
+  - exp 2500
   Options:
     NoDamageTicks: 0
     Silent: true 
@@ -200,6 +202,8 @@ OpenField_Enemy_黒小羊_MCLove32:
   Faction: mob
   Armor: 80
   Damage: 0
+  Drops:
+  - exp 20
   Options:
     NoDamageTicks: 0
     Silent: true 
@@ -228,6 +232,8 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32:
   Armor: 70
   Faction: wolf
   Damage: 150
+  Drops:
+  - exp 5000
   Options:
     Variant: black
     NoDamageTicks: 0
@@ -296,6 +302,8 @@ OpenField_Enemy_焔獣フェルドス_MCLove32:
   Armor: 60
   Faction: hoglin
   Damage: 180
+  Drops:
+  - exp 5500
   Options:
     NoDamageTicks: 0
     Silent: true 
@@ -365,6 +373,8 @@ OpenField_Enemy_踊る巨人_MCLove32:
   Armor: 100
   Faction: husk
   Damage: 135
+  Drops:
+  - exp 20000
   Equipment:
   - DIAMOND_AXE HAND
   - LEATHER_HELMET{color=BLACK} HEAD

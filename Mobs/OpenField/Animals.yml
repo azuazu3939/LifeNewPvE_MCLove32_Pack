@@ -41,7 +41,6 @@ OpenField_Animal_ハロウルフ_MCLove32:
   - SUFFOCATION 0
   - FALL 0
   - POISON 0.1
-  Drop:
   Options:
     FollowRange: 8
     KnockbackResistance: 0.2
