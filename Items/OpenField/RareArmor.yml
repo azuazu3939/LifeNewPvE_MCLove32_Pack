@@ -205,3 +205,122 @@ OpenField_Armor_Helo_MCLove32_RareB:
       az:slow_life: "1"
       az:max_mana: "20"
       az:mana_regen: "2"
+
+OpenField_Armor_Calucci_MCLove32_RareH:
+  Id: leather_helmet
+  Display: "&fカルチェ-ヘルム"
+  Lore: 
+    Template: ArmorLore
+  Model: 100
+  ItemUpdater:
+    Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.4
+    MaxAmount: 2
+  Options:
+    Unbreakable: true
+    Color: WHITE
+  Attributes:
+    Head:
+      Health: 5 ADD 
+      ArmorToughness: 14 ADD 
+      Armor: 14 ADD 
+      Luck: 5 ADD 
+  Group: 'Armor'
+  NBT:
+    PublicBukkitValues:
+      az:divine_blessing: "1"
+      az:speed_holder: "1"
+      az:max_mana: "30"
+      az:mana_regen: "3"
+
+OpenField_Armor_Calucci_MCLove32_RareC:
+  Id: leather_chestplate
+  Display: "&fカルチェ-チェスト"
+  Lore: 
+    Template: ArmorLore
+  Model: 100
+  ItemUpdater:
+    Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.4
+    MaxAmount: 2
+  Options:
+    Unbreakable: true
+    Color: WHITE
+  Attributes:
+    Chest:
+      Health: 2 ADD 
+      ArmorToughness: 17 ADD 
+      Armor: 23 ADD 
+      Luck: 5 ADD 
+  Group: 'Armor'
+  NBT:
+    PublicBukkitValues:
+      az:offence: "2"
+      az:max_mana: "30"
+      az:mana_regen: "3"
+
+OpenField_Armor_Calucci_MCLove32_RareL:
+  Id: leather_leggings
+  Display: "&fカルチェ-レギンス"
+  Lore: 
+    Template: ArmorLore
+  Model: 100
+  ItemUpdater:
+    Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.4
+    MaxAmount: 2
+  Options:
+    Unbreakable: true
+    Color: WHITE
+  Attributes:
+    Legs:
+      Health: 3 ADD 
+      ArmorToughness: 14 ADD 
+      Armor: 20 ADD 
+      Luck: 5 ADD 
+  Group: 'Armor'
+  NBT:
+    PublicBukkitValues:
+      az:divine_blessing: "2"
+      az:defence: "2"
+      az:max_mana: "30"
+      az:mana_regen: "3"
+
+OpenField_Armor_Calucci_MCLove32_RareB:
+  Id: leather_boots
+  Display: "&fカルチェ-ブーツ"
+  Lore: 
+    Template: ArmorLore
+  Model: 100
+  ItemUpdater:
+    Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.4
+    MaxAmount: 2
+  Options:
+    Unbreakable: true
+    Color: WHITE
+  Attributes:
+    Feet:
+      Health: 1 ADD 
+      ArmorToughness: 26 ADD 
+      Armor: 17 ADD
+      Luck: 5 ADD 
+  Group: 'Armor'
+  NBT:
+    PublicBukkitValues:
+      az:offence: "1"
+      az:defence: "1"
+      az:max_mana: "30"
+      az:mana_regen: "3"

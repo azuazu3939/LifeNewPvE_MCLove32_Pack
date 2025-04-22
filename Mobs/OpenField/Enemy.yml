@@ -183,6 +183,14 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32:
   - cmd{c="mlg <target.name> OpenField_Material_羊獣の骨_MCLove32 1 0.5"} @TTP ~onDeath
   - cmd{c="mlg <target.name> OpenField_Material_羊獣の頭_MCLove32 1 0.4"} @TTP ~onDeath
   - cmd{c="mlg <target.name> OpenField_Material_風核_MCLove32 1 0.1"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Armor_Calucci_MCLove32_H 1 0.01"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Armor_Calucci_MCLove32_C 1 0.01"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Armor_Calucci_MCLove32_L 1 0.01"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Armor_Calucci_MCLove32_B 1 0.01"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Armor_Calucci_MCLove32_RareH 1 0.0005"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Armor_Calucci_MCLove32_RareC 1 0.0005"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Armor_Calucci_MCLove32_RareL 1 0.0005"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Armor_Calucci_MCLove32_RareB 1 0.0005"} @TTP ~onDeath
 
 OpenField_Enemy_黒小羊_MCLove32:
   Template: OpenField_Enemy_Base_MCLove32
@@ -207,6 +215,9 @@ OpenField_Enemy_黒小羊_MCLove32:
   - POISON 0.1
   Skills:
   - skill:OpenField_Enemy_黒小羊_MCLove32_Skills @self ~onSpawn 
+  - cmd{c="mlg <target.name> OpenField_Material_羊獣の羊毛_MCLove32 1 0.005"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Material_羊獣の骨_MCLove32 1 0.005"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Material_羊獣の頭_MCLove32 1 0.005"} @TTP ~onDeath
   - remove{delay=600} @self ~onSpawn 
 
 OpenField_Enemy_風牙狼ウィデラー_MCLove32:
@@ -272,6 +283,10 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32:
   - cmd{c="mlg <target.name> OpenField_Material_風牙狼の骨_MCLove32 1 0.5"} @TTP ~onDeath
   - cmd{c="mlg <target.name> OpenField_Material_風牙狼の牙_MCLove32 1 0.4"} @TTP ~onDeath
   - cmd{c="mlg <target.name> OpenField_Material_風核_MCLove32 1 0.1"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Armor_ウィド_MCLove32_H 1 0.01"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Armor_ウィド_MCLove32_C 1 0.01"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Armor_ウィド_MCLove32_L 1 0.01"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Armor_ウィド_MCLove32_B 1 0.01"} @TTP ~onDeath
 
 OpenField_Enemy_焔獣フェルドス_MCLove32:
   Template: OpenField_Enemy_Abstract_Generic
@@ -336,6 +351,11 @@ OpenField_Enemy_焔獣フェルドス_MCLove32:
   - cmd{c="mlg <target.name> OpenField_Material_焔獣の炎殻_MCLove32 1 0.8"} @TTP ~onDeath
   - cmd{c="mlg <target.name> OpenField_Material_焔獣の炎牙_MCLove32 1 0.6"} @TTP ~onDeath
   - cmd{c="mlg <target.name> OpenField_Material_炎核_MCLove32 1 0.1"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Armor_フェルム_MCLove32_H 1 0.01"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Armor_フェルム_MCLove32_C 1 0.01"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Armor_フェルム_MCLove32_L 1 0.01"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Armor_フェルム_MCLove32_B 1 0.01"} @TTP ~onDeath
+
 
 OpenField_Enemy_踊る巨人_MCLove32:
   Template: OpenField_Enemy_Abstract_Generic
