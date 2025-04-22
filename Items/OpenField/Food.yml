@@ -63,4 +63,28 @@ OpenField_Food_スイカ_MCLove32:
     Saturation: 9
     CanAlwaysEat: true
 
+OpenField_Food_magic_melon_MCLove32:
+  Id: melon
+  Display: "&f魔法のスイカ"
+  Lore: []
+  ItemUpdater:
+    Version: 1
+  Group: 'Food'
+  Consumable:
+    ConsumeSeconds: 2
+    HasParticles: true
+    Animation: EAT
+    Sound: entity.generic.eat
+  Food:
+    Nutrition: 20
+    Saturation: 20
+    CanAlwaysEat: true
+  Recipes:
+    Craft:
+      Type: SHAPELESS
+      Amount: 1
+      Ingredients:
+      - OpenField_Food_スイカ_MCLove32
+      - OpenField_Material_マジカルダスト_MCLove32
+
 

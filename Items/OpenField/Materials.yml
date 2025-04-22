@@ -155,6 +155,80 @@ OpenField_Material_原木_MCLove32:
     Version: 1
   Group: 'Material'
 
+OpenField_Material_smooth_wood_MCLove32:
+  Id: oak_log
+  Display: "&f滑らかな原木"
+  Lore: []
+  Enchantments:
+  - UNBREAKING 1
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'
+  Recipes:
+    Craft:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - OpenField_Material_原木_MCLove32 | OpenField_Material_原木_MCLove32 | OpenField_Material_原木_MCLove32
+      - OpenField_Material_原木_MCLove32 | OpenField_Material_原木_MCLove32 | OpenField_Material_原木_MCLove32
+      - OpenField_Material_原木_MCLove32 | OpenField_Material_原木_MCLove32 | OpenField_Material_原木_MCLove32
+
+OpenField_Material_bloom_leaves_MCLove32:
+  Id: cherry_leaves
+  Display: "&f桜の葉"
+  Lore: []
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'
+
+OpenField_Material_bloom_log_MCLove32:
+  Id: cherry_log
+  Display: "&f桜の枝"
+  Lore: []
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'
+  Recipes:
+    Craft:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - OpenField_Material_bloom_leaves_MCLove32 | OpenField_Material_bloom_leaves_MCLove32 | OpenField_Material_bloom_leaves_MCLove32
+      - OpenField_Material_bloom_leaves_MCLove32 | OpenField_Material_bloom_leaves_MCLove32 | OpenField_Material_bloom_leaves_MCLove32
+      - OpenField_Material_bloom_leaves_MCLove32 | OpenField_Material_bloom_leaves_MCLove32 | OpenField_Material_bloom_leaves_MCLove32
+
+OpenField_Material_bloom_wood_MCLove32:
+  Id: cherry_wood
+  Display: "&f桜の木"
+  Lore: []
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'
+  Recipes:
+    Craft:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - OpenField_Material_bloom_leaves_MCLove32 | OpenField_Material_bloom_log_MCLove32 | OpenField_Material_bloom_leaves_MCLove32
+      - OpenField_Material_bloom_log_MCLove32 | OpenField_Material_smooth_wood_MCLove32 | OpenField_Material_bloom_log_MCLove32
+      - OpenField_Material_bloom_leaves_MCLove32 | OpenField_Material_smooth_wood_MCLove32 | OpenField_Material_bloom_leaves_MCLove32
+
+OpenField_Material_夜空の欠片_MCLove32:
+  Id: echo_shard
+  Display: "&f夜空の欠片"
+  Lore: []
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'
+
+OpenField_Material_マジカルダスト_MCLove32:
+  Id: purple_dye
+  Display: "&fマジカルダスト"
+  Lore: []
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'
+
 OpenField_Material_Anima_MCLove32:
   Id: brown_dye
   Display: "アニマ"
@@ -180,11 +254,31 @@ OpenField_Material_Anima_MCLove32:
       Amount: 1
       Ingredients:
       - OpenField_Armor_Animer_MCLove32_L
-    Anima_B:
+    AnimaH_B:
       Type: SHAPELESS
       Amount: 1
       Ingredients:
       - OpenField_Armor_Animer_MCLove32_B
+    AnimaH_H:
+      Type: SHAPELESS
+      Amount: 5
+      Ingredients:
+      - OpenField_Armor_Helo_MCLove32_H
+    AnimaH_C:
+      Type: SHAPELESS
+      Amount: 5
+      Ingredients:
+      - OpenField_Armor_Helo_MCLove32_H
+    Anima_L:
+      Type: SHAPELESS
+      Amount: 5
+      Ingredients:
+      - OpenField_Armor_Helo_MCLove32_L
+    AnimaH_B:
+      Type: SHAPELESS
+      Amount: 5
+      Ingredients:
+      - OpenField_Armor_Helo_MCLove32_B
   Consumable:
     ConsumeSeconds: 1
     HasParticles: false
@@ -217,5 +311,32 @@ OpenField_Material_AnimaHigh_MCLove32:
     Sound: block.trial_spawner.spawn_item
     ConsumeEffects:
     - potion{t=LUCK;d=12000;p=false;l=9} @self
+  
+  OpenField_Material_AnimaHighest_MCLove32:
+  Id: brown_dye
+  Display: "アニマエスト"
+  Model: 100
+  Lore:
+  - "&f消費することで、ドロップ率を長時間大きく上昇させる。"
+  ItemUpdater:
+    Version: 1
+  Enchantments:
+  - UNBREAKING 3
+  Group: 'Material'
+  Recipes:
+    Anima_H:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - OpenField_Material_AnimaHigh_MCLove32 | OpenField_Material_AnimaHigh_MCLove32 | OpenField_Material_AnimaHigh_MCLove32
+      - OpenField_Material_AnimaHigh_MCLove32 | OpenField_Material_AnimaHigh_MCLove32 | OpenField_Material_AnimaHigh_MCLove32
+      - OpenField_Material_AnimaHigh_MCLove32 | OpenField_Material_AnimaHigh_MCLove32 | OpenField_Material_AnimaHigh_MCLove32
+  Consumable:
+    ConsumeSeconds: 3
+    HasParticles: false
+    Animation: NONE
+    Sound: block.trial_spawner.spawn_item
+    ConsumeEffects:
+    - potion{t=LUCK;d=36000;p=false;l=19} @self
 
 

@@ -324,3 +324,240 @@ OpenField_Armor_Calucci_MCLove32_RareB:
       az:defence: "1"
       az:max_mana: "30"
       az:mana_regen: "3"
+
+OpenField_Armor_wid_MCLove32_RareH:
+  Id: leather_helmet
+  Display: "&fウィド-ヘルム"
+  Lore: 
+    Template: ArmorLore
+  Model: 100
+  ItemUpdater:
+    Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.4
+    MaxAmount: 2
+  Options:
+    Unbreakable: true
+    Color: GREEN
+  Attributes:
+    Head:
+      Health: 5 ADD 
+      ArmorToughness: 13 ADD 
+      Armor: 13 ADD 
+      Luck: 5 ADD 
+  NBT: 
+    PublicBukkitValues:
+      az:max_mana: "60"
+      az:mana_regen: "6"
+  Group: 'Armor'
+
+OpenField_Armor_wid_MCLove32_RareC:
+  Id: leather_chestplate
+  Display: "&fウィド-チェスト"
+  Lore: 
+    Template: ArmorLore
+  Model: 100
+  ItemUpdater:
+    Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.4
+    MaxAmount: 2
+  Options:
+    Unbreakable: true
+    Color: GREEN
+  Attributes:
+    Chest:
+      Health: 2 ADD 
+      ArmorToughness: 17 ADD 
+      Armor: 17 ADD 
+      Luck: 5 ADD 
+  NBT:
+    PublicBukkitValues:
+      az:max_mana: "60"
+      az:mana_regen: "6"
+      az:defence: "1"
+  Group: 'Armor'
+
+OpenField_Armor_wid_MCLove32_RareL:
+  Id: leather_leggings
+  Display: "&fウィド-レギンス"
+  Lore: 
+    Template: ArmorLore
+  Model: 100
+  ItemUpdater:
+    Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.4
+    MaxAmount: 2
+  Options:
+    Unbreakable: true
+    Color: GREEN
+  Attributes:
+    Legs:
+      Health: 3 ADD 
+      ArmorToughness: 13 ADD 
+      Armor: 17 ADD 
+      Luck: 5 ADD 
+  NBT:
+    PublicBukkitValues:
+      az:max_mana: "60"
+      az:mana_regen: "6"
+      az:defence: "1"
+      az:speed_holder: "1"
+  Group: 'Armor'
+
+OpenField_Armor_wid_MCLove32_RareB:
+  Id: leather_boots
+  Display: "&fウィド-ブーツ"
+  Lore: 
+    Template: ArmorLore
+  Model: 100
+  ItemUpdater:
+    Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.4
+    MaxAmount: 2
+  Options:
+    Unbreakable: true
+    Color: GREEN
+  Attributes:
+    Feet:
+      Health: 1 ADD 
+      ArmorToughness: 21 ADD 
+      Armor: 17 ADD 
+      Luck: 5 ADD 
+  NBT:
+    PublicBukkitValues:
+      az:max_mana: "60"
+      az:mana_regen: "6"
+      az:defence: "3"
+  Group: 'Armor'
+
+OpenField_Armor_Felm_MCLove32_H:
+  Id: leather_helmet
+  Display: "&fフェルム-ヘルム"
+  Lore: 
+    Template: ArmorLore
+  Model: 100
+  ItemUpdater:
+    Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.4
+    MaxAmount: 2
+  Options:
+    Unbreakable: true
+    Color: RED
+  Attributes:
+    Head:
+      Health: 5 ADD 
+      ArmorToughness: 12 ADD 
+      Armor: 12 ADD 
+      Damage: 1 ADD
+      Luck: 5 ADD 
+  NBT:
+    PublicBukkitValues:
+      az:max_mana: "30"
+      az:mana_regen: "6"
+      az:offence: "1"
+  Group: 'Armor'
+
+OpenField_Armor_Felm_MCLove32_C:
+  Id: leather_chestplate
+  Display: "&fフェルム-チェスト"
+  Lore: 
+    Template: ArmorLore
+  Model: 100
+  ItemUpdater:
+    Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.4
+    MaxAmount: 2
+  Options:
+    Unbreakable: true
+    Color: RED
+  Attributes:
+    Chest:
+      Health: 2 ADD 
+      ArmorToughness: 15 ADD 
+      Armor: 15 ADD 
+      Damage: 1 ADD
+      Luck: 5 ADD 
+  NBT:
+    PublicBukkitValues:
+      az:max_mana: "30"
+      az:mana_regen: "6"
+      az:offence: "2"
+  Group: 'Armor'
+
+OpenField_Armor_Felm_MCLove32_L:
+  Id: leather_leggings
+  Display: "&fフェルム-レギンス"
+  Lore: 
+    Template: ArmorLore
+  Model: 100
+  ItemUpdater:
+    Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.4
+    MaxAmount: 2
+  Options:
+    Unbreakable: true
+    Color: RED
+  Attributes:
+    Legs:
+      Health: 3 ADD 
+      ArmorToughness: 14 ADD 
+      Armor: 14 ADD 
+      Damage: 1 ADD
+      Luck: 5 ADD 
+  NBT:
+    PublicBukkitValues:
+      az:max_mana: "30"
+      az:mana_regen: "6"
+      az:offence: "1"
+  Group: 'Armor'
+
+OpenField_Armor_Felm_MCLove32_B:
+  Id: leather_boots
+  Display: "&fフェルム-ブーツ"
+  Lore: 
+    Template: ArmorLore
+  Model: 100
+  ItemUpdater:
+    Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.4
+    MaxAmount: 2
+  Options:
+    Unbreakable: true
+    Color: RED
+  Attributes:
+    Feet:
+      Health: 1 ADD 
+      ArmorToughness: 16 ADD 
+      Armor: 16 ADD 
+      Damage: 1 ADD
+      Luck: 5 ADD 
+  NBT:
+    PublicBukkitValues:
+      az:max_mana: "30"
+      az:mana_regen: "6"
+      az:offence: "1"
+      az:slow_life: "1"
+  Group: 'Armor'

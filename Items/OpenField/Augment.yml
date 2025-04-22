@@ -93,3 +93,43 @@ OpneField_Augment_超強:
     Icon: ''
     Skills:
     - potion{t=STRENGTH;l=2;d=200;cd=1} @self ~onSwing
+
+OpneField_Augment_night:
+  Id: echo_shard
+  Display: '<#3d2e8a>夜空-スキル'
+  Model: 100
+  Group: 'Augment'
+  Augmentation:
+    Type: GEM
+    Tooltip: "<#3d2e8a><bold>夜空"
+    Icon: ''
+    Skills:
+    - potion{t=NIGHT_VISION;l=0;d=200;cd=1} @self ~onJump
+  Recipes:
+    Craft:
+      Type: SHAPED
+      Amount: 1
+      Ingredients:
+      - OpenField_Material_夜空の欠片_MCLove32 | OpenField_Material_夜空の欠片_MCLove32 | OpenField_Material_夜空の欠片_MCLove32
+      - OpenField_Material_夜空の欠片_MCLove32 | OpenField_Material_夜空の欠片_MCLove32 | OpenField_Material_夜空の欠片_MCLove32
+      - OpenField_Material_夜空の欠片_MCLove32 | OpenField_Material_夜空の欠片_MCLove32 | OpenField_Material_夜空の欠片_MCLove32
+
+OpneField_Augment_night_bloom:
+  Id: echo_shard
+  Display: '<#a611b1>夜桜-スキル'
+  Model: 100
+  Group: 'Augment'
+  Augmentation:
+    Type: GEM
+    Tooltip: "<#a611b1><bold>夜桜"
+    Icon: ''
+    Skills:
+    - potion{t=REGENERATION;l=0;d=200;cd=1} @self ~onJump
+    - potion{t=REGENERATION;l=1;d=200;cd=1} @self ~onJump ?night
+  Recipes:
+    Craft:
+      Type: SHAPELESS
+      Amount: 1
+      Ingredients:
+      - OpneField_Augment_night
+      - OpenField_Material_bloom_wood_MCLove32

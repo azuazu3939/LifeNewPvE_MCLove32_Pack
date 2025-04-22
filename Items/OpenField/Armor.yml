@@ -403,7 +403,7 @@ OpenField_Armor_Calucci_MCLove32_B:
       - OpenField_Material_羊獣の頭_MCLove32 | OpenField_Armor_Helo_MCLove32_B | OpenField_Material_羊獣の頭_MCLove32
       - OpenField_Material_羊獣の骨_MCLove32 | OpenField_Material_羊獣の骨_MCLove32 | OpenField_Material_羊獣の骨_MCLove32
 
-OpenField_Armor_ウィド_MCLove32_H:
+OpenField_Armor_wid_MCLove32_H:
   Id: leather_helmet
   Display: "&fウィド-ヘルム"
   Lore: 
@@ -430,7 +430,7 @@ OpenField_Armor_ウィド_MCLove32_H:
       az:mana_regen: "3"
   Group: 'Armor'
 
-OpenField_Armor_ウィド_MCLove32_C:
+OpenField_Armor_wid_MCLove32_C:
   Id: leather_chestplate
   Display: "&fウィド-チェスト"
   Lore: 
@@ -458,7 +458,7 @@ OpenField_Armor_ウィド_MCLove32_C:
       az:defence: "1"
   Group: 'Armor'
 
-OpenField_Armor_ウィド_MCLove32_L:
+OpenField_Armor_wid_MCLove32_L:
   Id: leather_leggings
   Display: "&fウィド-レギンス"
   Lore: 
@@ -487,7 +487,7 @@ OpenField_Armor_ウィド_MCLove32_L:
       az:speed_holder: "1"
   Group: 'Armor'
 
-OpenField_Armor_ウィド_MCLove32_B:
+OpenField_Armor_wid_MCLove32_B:
   Id: leather_boots
   Display: "&fウィド-ブーツ"
   Lore: 
@@ -515,7 +515,7 @@ OpenField_Armor_ウィド_MCLove32_B:
       az:defence: "3"
   Group: 'Armor'
 
-OpenField_Armor_フェルム_MCLove32_H:
+OpenField_Armor_Felm_MCLove32_H:
   Id: leather_helmet
   Display: "&fフェルム-ヘルム"
   Lore: 
@@ -543,7 +543,7 @@ OpenField_Armor_フェルム_MCLove32_H:
       az:offence: "1"
   Group: 'Armor'
 
-OpenField_Armor_フェルム_MCLove32_C:
+OpenField_Armor_Felm_MCLove32_C:
   Id: leather_chestplate
   Display: "&fフェルム-チェスト"
   Lore: 
@@ -571,7 +571,7 @@ OpenField_Armor_フェルム_MCLove32_C:
       az:offence: "2"
   Group: 'Armor'
 
-OpenField_Armor_フェルム_MCLove32_L:
+OpenField_Armor_Felm_MCLove32_L:
   Id: leather_leggings
   Display: "&fフェルム-レギンス"
   Lore: 
@@ -599,7 +599,7 @@ OpenField_Armor_フェルム_MCLove32_L:
       az:offence: "1"
   Group: 'Armor'
 
-OpenField_Armor_フェルム_MCLove32_B:
+OpenField_Armor_Felm_MCLove32_B:
   Id: leather_boots
   Display: "&fフェルム-ブーツ"
   Lore: 
