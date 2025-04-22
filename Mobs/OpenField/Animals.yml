@@ -26,8 +26,8 @@ OpenField_Animal_Base_MCLove32:
   - cmd{c="mlg <target.name> OpenField_Armor_Animer_MCLove32_RareB 1 0.0001"} @TTP ~onDeath 
   - cmd{c="mlg <target.name> OpenField_Weapon_ノーマルソード_MCLove32 1 0.015"} @TTP ~onDeath 
   - cmd{c="mlg <target.name> OpenField_Weapon_シャープソード_MCLove32 1 0.005"} @TTP ~onDeath
-  - cmd{c="mlg <target.name> OpenField_Weapon_マルチノーマルソード_MCLove32 1 0.015"} @TTP ~onDeath 
-  - cmd{c="mlg <target.name> OpenField_Weapon_マルチシャープソード_MCLove32 1 0.005"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Weapon_マルチノーマルソード_MCLove32 1 0.005"} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Weapon_マルチシャープソード_MCLove32 1 0.0025"} @TTP ~onDeath
 
 OpenField_Animal_ハロウルフ_MCLove32:
   Template: OpenField_Animal_Base_MCLove32
