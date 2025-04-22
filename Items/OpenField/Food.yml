@@ -60,7 +60,7 @@ OpenField_Food_スイカ_MCLove32:
     Sound: entity.generic.eat
   Food:
     Nutrition: 6
-    Saturation: 1
+    Saturation: 9
     CanAlwaysEat: true
 
 
