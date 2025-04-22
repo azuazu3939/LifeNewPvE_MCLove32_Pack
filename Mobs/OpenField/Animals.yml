@@ -67,9 +67,10 @@ OpenField_Animal_ハロウルフ_MCLove32:
   - potion{t=SPEED;d=144000;l=1;p=false} @self ~onSpawn
   - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=20} @self ~onSpawn 
   - skill:Generic_Enemy_ウォーク追従_MCLove32{v=45} @self ~onTimer:20
-  - cmd{c="mlg <target.name> OpenField_Material_ハロウルフの牙_MCLove32 1 0.05"} @TTP ~onDeath
-  - cmd{c="mlg <target.name> OpenField_Material_ハロウルフの骨_MCLove32 1 0.04"} @TTP ~onDeath
-  - cmd{c="mlg <target.name> OpenField_Material_ハロウルフの皮_MCLove32 1 0.06"} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Material_ハロウルフの牙_MCLove32 1 0.2"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Material_HeloRare_MCLove32 1 0.02"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Material_ハロウルフの骨_MCLove32 1 0.16"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Material_ハロウルフの皮_MCLove32 1 0.24"} @TTP ~onDeath 
   - cmd{c="mlg <target.name> OpenField_Armor_Helo_MCLove32_H 1 0.0005"} @TTP ~onDeath 
   - cmd{c="mlg <target.name> OpenField_Armor_Helo_MCLove32_C 1 0.0005"} @TTP ~onDeath 
   - cmd{c="mlg <target.name> OpenField_Armor_Helo_MCLove32_L 1 0.0005"} @TTP ~onDeath 
