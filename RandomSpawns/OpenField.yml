@@ -42,7 +42,7 @@ OpenField_Util_Bosses_MCLove32_Plains_Spawn:
   - region{r=spawn} false
   - containregion{r=open} false
   - (mythicinradius{a=<3;r=64} && mythicinradius{a=<5;r=80}) true 
-  - mobsInRadius{types=OpenField_Enemy_風牙狼ウィデラー_MCLove32,OpenField_Enemy_羊獣カルーチェ_MCLove32,OpenField_Enemy_焔獣フェルドス_MCLove32;amount=<1;radius=80} true
+  - mobsInRadius{types=OpenField_Enemy_風牙狼ウィデラー_MCLove32,OpenField_Enemy_羊獣カルーチェ_MCLove32,OpenField_Enemy_焔獣フェルドス_MCLove32;amount=<1;radius=64} true
   #- (biome{b=terra:origen/origen/verdant_valleys} ||  biome{b=terra:origen/origen/verdant_river}) true
 
 Generic_Furniture_Object_MCLove32_Base_Spawn:
