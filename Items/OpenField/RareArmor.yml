@@ -19,8 +19,8 @@ OpenField_Armor_アニマー_MCLove32_RareH:
   NBT:
     PublicBukkitValues:
       az:ground_reaction_force: "1"
-      az:max_mana: "25"
-      az:mana_regen: "5"
+      az:max_mana: "20"
+      az:mana_regen: "2"
 
 OpenField_Armor_アニマー_MCLove32_RareC:
   Id: leather_chestplate
@@ -42,8 +42,8 @@ OpenField_Armor_アニマー_MCLove32_RareC:
   NBT:
     PublicBukkitValues:
       az:divine_blessing: "3"
-      az:max_mana: "50"
-      az:mana_regen: "3"
+      az:max_mana: "20"
+      az:mana_regen: "2"
 
 OpenField_Armor_アニマー_MCLove32_RareL:
   Id: leather_leggings
@@ -65,8 +65,8 @@ OpenField_Armor_アニマー_MCLove32_RareL:
   NBT:
     PublicBukkitValues:
       az:ground_reaction_force: "1"
-      az:max_mana: "50"
-      az:mana_regen: "3"
+      az:max_mana: "20"
+      az:mana_regen: "2"
 
 OpenField_Armor_アニマー_MCLove32_RareB:
   Id: leather_boots
@@ -88,5 +88,120 @@ OpenField_Armor_アニマー_MCLove32_RareB:
   NBT:
     PublicBukkitValues:
       az:ground_reaction_force: "1"
-      az:max_mana: "25"
-      az:mana_regen: "5"
+      az:max_mana: "20"
+      az:mana_regen: "2"
+
+OpenField_Armor_Helo_MCLove32_RareH:
+  Id: leather_helmet
+  Display: "&fハロ-キャップ"
+  Lore: 
+    Template: ArmorLore
+  Model: 100
+  ItemUpdater:
+    Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.5
+    MaxAmount: 2
+  Options:
+    Unbreakable: true
+    Color: WHITE
+  Attributes:
+    Head:
+      Health: 3 ADD 
+      ArmorToughness: 10 ADD 
+      Armor: 10 ADD 
+  Group: 'Armor'
+  NBT:
+    PublicBukkitValues:
+      az:slow_life: "2"
+      az:max_mana: "20"
+      az:mana_regen: "2"
+
+OpenField_Armor_Helo_MCLove32_RareC:
+  Id: leather_chestplate
+  Display: "&fハロ-チェスト"
+  Lore: 
+    Template: ArmorLore
+  Model: 100
+  ItemUpdater:
+    Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.5
+    MaxAmount: 2
+  Options:
+    Unbreakable: true
+    Color: WHITE
+  Attributes:
+    Chest:
+      Health: 2 ADD 
+      ArmorToughness: 11 ADD 
+      Armor: 11 ADD 
+      Luck: 5 ADD 
+  Group: 'Armor'
+  NBT:
+    PublicBukkitValues:
+      az:divine_blessing: "2"
+      az:max_mana: "20"
+      az:mana_regen: "2"
+
+OpenField_Armor_Helo_MCLove32_RareL:
+  Id: leather_leggings
+  Display: "&fハロ-レギンス"
+  Lore: 
+    Template: ArmorLore
+  Model: 100
+  ItemUpdater:
+    Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.5
+    MaxAmount: 2
+  Options:
+    Unbreakable: true
+    Color: WHITE
+  Attributes:
+    Legs:
+      Health: 1 ADD 
+      ArmorToughness: 12 ADD 
+      Armor: 12 ADD 
+      Luck: 5 ADD 
+  Group: 'Armor'
+  NBT:
+    PublicBukkitValues:
+      az:divine_blessing: "1"
+      az:max_mana: "20"
+      az:mana_regen: "2"
+
+OpenField_Armor_Helo_MCLove32_RareB:
+  Id: leather_boots
+  Display: "&fハロ-ブーツ"
+  Lore: 
+    Template: ArmorLore
+  Model: 100
+  ItemUpdater:
+    Version: 1
+  AugmentationSlots:
+    Type: GEM
+    Amount: 1to2 
+    Chance: 0.5
+    MaxAmount: 2
+  Options:
+    Unbreakable: true
+    Color: WHITE
+  Attributes:
+    Feet:
+      ArmorToughness: 13 ADD 
+      Armor: 13 ADD
+      Luck: 5 ADD 
+  Group: 'Armor'
+  NBT:
+    PublicBukkitValues:
+      az:divine_blessing: "1"
+      az:slow_life: "1"
+      az:max_mana: "20"
+      az:mana_regen: "2"
