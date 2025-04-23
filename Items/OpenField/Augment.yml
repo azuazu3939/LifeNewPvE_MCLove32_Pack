@@ -136,12 +136,12 @@ OpneField_Augment_night_bloom:
 
 OpneField_Augment_dobule_jump:
   Id: echo_shard
-  Display: '<#2ecd85>ダブルジャンプ-スキル'
+  Display: '<#2ecd85>グレートダブルジャンプ-スキル'
   Model: 100
   Group: 'Augment'
   Augmentation:
     Type: GEM
-    Tooltip: "<#2ecd85><bold>ダブルジャンプ"
+    Tooltip: "<#2ecd85><bold>グレートダブルジャンプ"
     Icon: ''
     Skills:
-    - lunge{v=2;yv=4} @self ~onFly
+    - lunge{v=1.5;yv=1} @self ~onFly
