@@ -254,7 +254,7 @@ OpenField_Material_Anima_MCLove32:
       Amount: 1
       Ingredients:
       - OpenField_Armor_Animer_MCLove32_L
-    AnimaH_B:
+    Anima_B:
       Type: SHAPELESS
       Amount: 1
       Ingredients:
@@ -269,7 +269,7 @@ OpenField_Material_Anima_MCLove32:
       Amount: 5
       Ingredients:
       - OpenField_Armor_Helo_MCLove32_H
-    Anima_L:
+    AnimaH_L:
       Type: SHAPELESS
       Amount: 5
       Ingredients:
