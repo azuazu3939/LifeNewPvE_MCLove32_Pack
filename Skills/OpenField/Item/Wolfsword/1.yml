@@ -34,7 +34,7 @@ OpenField_Weapon_牙狼ノ壱_MCLove32_Skill_Velocity:
       - skill{s=[
         - summon{t=OpenField_Guard_牙狼_MCLove32;a=1;r=0;s=true} 
         - sound{s=entity.wolf.howl;v=0.5} 
-        ]} @origin 0.001 ?children{a=<5} ?wearing{m=OpenField_Weapon_牙狼ノ壱_MCLove32;s=HAND}
+        ]} @origin 0.001 ?children{a=<5} ?wearing{m=OpenField_Weapon_wolfsword_1_MCLove32;s=HAND}
     ];
     v=8;i=2;se=false;sb=true;hp=false;hnp=false;mr=8;hr=1.5;vr=1.5} @Ring{r=8;p=16}
   - delay 2
