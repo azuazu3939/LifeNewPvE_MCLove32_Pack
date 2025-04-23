@@ -115,7 +115,7 @@ OpneField_Augment_night:
       - OpenField_Material_夜空の欠片_MCLove32 | OpenField_Material_夜空の欠片_MCLove32 | OpenField_Material_夜空の欠片_MCLove32
 
 OpneField_Augment_night_bloom:
-  Id: echo_shard
+  Id: pink_petals
   Display: '<#a611b1>夜桜-スキル'
   Model: 100
   Group: 'Augment'

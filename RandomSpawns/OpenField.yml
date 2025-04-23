@@ -1,6 +1,6 @@
 OpenField_Enemy_フウィスピット_MCLove32_Spawn:
   Type: OpenField_Enemy_フウィスピット_MCLove32
-  Worlds: open_field
+  Worlds: Open_Plains,Open_Plains_1,Open_Plains_2,Open_Plains_3,Open_Plains_4,Open_Plains_5,Open_Plains_6,Open_Plains_7,Open_Plains_8,Open_Plains_9
   Action: ADD 
   PositionType: LAND
   Chance: 0.3
@@ -16,7 +16,7 @@ OpenField_Enemy_フウィスピット_MCLove32_Spawn:
 
 OpenField_Util_Animals_MCLove32_Plains_Spawn:
   Type: OpenField_Util_Animals_MCLove32_Plains
-  Worlds: Open_Plains
+  Worlds: Open_Plains,Open_Plains_1,Open_Plains_2,Open_Plains_3,Open_Plains_4,Open_Plains_5,Open_Plains_6,Open_Plains_7,Open_Plains_8,Open_Plains_9
   Action: ADD 
   PositionType: LAND
   Chance: 0.5
@@ -27,11 +27,26 @@ OpenField_Util_Animals_MCLove32_Plains_Spawn:
   - region{r=spawn} false
   - containregion{r=open} false
   - (mythicinradius{a=<3;r=48} || mythicinradius{a=<5;r=64} || mythicinradius{a=<7;r=80}) true 
-  #- (biome{b=terra:origen/origen/verdant_valleys} ||  biome{b=terra:origen/origen/verdant_river}) true
+  - (
+    biome{b=terra:origen/origen/verdant_valleys} 
+    || biome{b=terra:origen/origen/verdant_river} 
+    || biome{b=terra:origen/origen/watery_wilds} 
+    || biome{b=terra:origen/origen/scarlet_sanctuary}
+    || biome{b=terra:origen/origen/overgrown_cliffs}
+    || biome{b=terra:origen/origen/vertical_vistas}
+    || biome{b=terra:origen/origen/vertical_river}
+    || biome{b=terra:origen/origen/vertical_jungle_river}
+    || biome{b=terra:origen/origen/murky_marshlands}
+    || biome{b=terra:origen/origen/foliage_fortress_outer}
+    || biome{b=terra:origen/origen/secluded_valley_outer}
+    || biome{b=terra:origen/origen/canopy_cascades}
+    || biome{b=terra:origen/origen/sandy_splits}
+    || biome{b=terra:origen/origen/black_forest}
+    ) true
 
 OpenField_Util_Bosses_MCLove32_Plains_Spawn:
   Type: OpenField_Util_Bosses_MCLove32_Plains
-  Worlds: Open_Plains
+  Worlds: Open_Plains,Open_Plains_1,Open_Plains_2,Open_Plains_3,Open_Plains_4,Open_Plains_5,Open_Plains_6,Open_Plains_7,Open_Plains_8,Open_Plains_9
   Action: ADD 
   PositionType: LAND
   Chance: 0.8
@@ -47,7 +62,7 @@ OpenField_Util_Bosses_MCLove32_Plains_Spawn:
 
 Generic_Furniture_Object_MCLove32_Base_Spawn:
   Type: Generic_Furniture_Object_MCLove32_Base
-  Worlds: Open_Plains
+  Worlds: Open_Plains,Open_Plains_1,Open_Plains_2,Open_Plains_3,Open_Plains_4,Open_Plains_5,Open_Plains_6,Open_Plains_7,Open_Plains_8,Open_Plains_9
   Action: ADD 
   PositionType: LAND
   Chance: 0.5
@@ -62,7 +77,7 @@ Generic_Furniture_Object_MCLove32_Base_Spawn:
 
 OpenField_Enemy_踊る巨人_MCLove32_Spawn:
   Type: OpenField_Enemy_踊る巨人_MCLove32
-  Worlds: Open_Plains
+  Worlds: Open_Plains,Open_Plains_1,Open_Plains_2,Open_Plains_3,Open_Plains_4,Open_Plains_5,Open_Plains_6,Open_Plains_7,Open_Plains_8,Open_Plains_9
   Action: ADD 
   PositionType: LAND
   Chance: 1
