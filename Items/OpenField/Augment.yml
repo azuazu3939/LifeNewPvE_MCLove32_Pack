@@ -135,7 +135,7 @@ OpneField_Augment_night_bloom:
       - OpenField_Material_bloom_wood_MCLove32
 
 OpneField_Augment_double_jump:
-  Id: echo_shard
+  Id: rabbit_foot
   Display: '<#2ecd85>グレートダブルジャンプ-スキル'
   Model: 100
   Group: 'Augment'

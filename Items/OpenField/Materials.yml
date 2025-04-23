@@ -312,7 +312,7 @@ OpenField_Material_AnimaHigh_MCLove32:
     ConsumeEffects:
     - potion{t=LUCK;d=12000;p=false;l=9} @self
   
-  OpenField_Material_AnimaHighest_MCLove32:
+OpenField_Material_AnimaHighest_MCLove32:
   Id: brown_dye
   Display: "アニマエスト"
   Model: 100
