@@ -144,4 +144,4 @@ OpneField_Augment_dobule_jump:
     Tooltip: "<#2ecd85><bold>ダブルジャンプ"
     Icon: ''
     Skills:
-    - lunge{v=2;yv=1} @self ~onFly
+    - lunge{v=1.5;yv=1} @self ~onFly
