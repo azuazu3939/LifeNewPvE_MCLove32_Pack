@@ -134,7 +134,7 @@ OpneField_Augment_night_bloom:
       - OpneField_Augment_night
       - OpenField_Material_bloom_wood_MCLove32
 
-OpneField_Augment_dobule_jump:
+OpneField_Augment_double_jump:
   Id: echo_shard
   Display: '<#2ecd85>グレートダブルジャンプ-スキル'
   Model: 100
