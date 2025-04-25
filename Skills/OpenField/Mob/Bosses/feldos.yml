@@ -161,16 +161,16 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3_Run:
 
 OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3_HeadShoot:
   Skills:
-  - e:pr{r=4;pts=16;a=1;s=0.1;d=true;dir=0,-1,0;p=flame;y=0.5} @targetedLoc
-  - e:pr{r=4;pts=16;a=1;s=0.1;d=true;dir=0,-1,0;p=flame;y=1} @targetedLoc
-  - e:pr{r=4;pts=16;a=1;s=0.1;d=true;dir=0,-1,0;p=flame;y=1.5} @targetedLoc
-  - e:pr{r=4;pts=16;a=1;s=0.1;d=true;dir=0,-1,0;p=flame;y=2} @targetedLoc
-  - e:pr{r=4;pts=16;a=1;s=0.1;d=true;dir=0,-1,0;p=flame;y=2.5} @targetedLoc
-  - e:pr{r=4;pts=16;a=1;s=0.1;d=true;dir=0,-1,0;p=flame;y=3} @targetedLoc
-  - e:pr{r=4;pts=16;a=1;s=0.1;d=true;dir=0,-1,0;p=flame;y=3.5} @targetedLoc
-  - e:pr{r=4;pts=16;a=1;s=0.1;d=true;dir=0,-1,0;p=flame;y=4} @targetedLoc
-  - e:pr{r=4;pts=16;a=1;s=0.1;d=true;dir=0,-1,0;p=flame;y=4.5} @targetedLoc
-  - e:pr{r=4;pts=16;a=1;s=0.1;d=true;dir=0,-1,0;p=flame;y=5} @targetedLoc
+  - e:pr{r=4;pts=16;a=1;s=0.125;d=true;dir=0,-1,0;p=flame;y=0.5} @targetedLoc{y=0.5}
+  - e:pr{r=4;pts=16;a=1;s=0.125;d=true;dir=0,-1,0;p=flame;y=1} @targetedLoc{y=1}
+  - e:pr{r=4;pts=16;a=1;s=0.125;d=true;dir=0,-1,0;p=flame;y=1.5} @targetedLoc{y=1.5}
+  - e:pr{r=4;pts=16;a=1;s=0.125;d=true;dir=0,-1,0;p=flame;y=2} @targetedLoc{y=2}
+  - e:pr{r=4;pts=16;a=1;s=0.125;d=true;dir=0,-1,0;p=flame;y=2.5} @targetedLoc{y=2.5}
+  - e:pr{r=4;pts=16;a=1;s=0.125;d=true;dir=0,-1,0;p=flame;y=3} @targetedLoc{y=3}
+  - e:pr{r=4;pts=16;a=1;s=0.125;d=true;dir=0,-1,0;p=flame;y=3.5} @targetedLoc{y=3.5}
+  - e:pr{r=4;pts=16;a=1;s=0.125;d=true;dir=0,-1,0;p=flame;y=4} @targetedLoc{y=4}
+  - e:pr{r=4;pts=16;a=1;s=0.125;d=true;dir=0,-1,0;p=flame;y=4.5} @targetedLoc{y=4.5}
+  - e:pr{r=4;pts=16;a=1;s=0.125;d=true;dir=0,-1,0;p=flame;y=5} @targetedLoc{y=5}
   - delay 30
   - projectile{
     ot=[
@@ -184,4 +184,4 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3_HeadShoot:
       - skill:OpenField_Weapon_火炎弾_MCLove32_Skill_Effects @origin
     ];
     b=DISPLAY;mat=MAGMA_BLOCK;scale=1,1,1;ys=1;
-    v=1;type=METEOR;fo=true;origin=@origin{y=10};vr=2;hr=2.5;hnp=true;mr=20;i=1;c=[ - samefaction false ];g=1} @targetedLoc
+    v=3;fo=true;origin=@origin{y=10};vr=2;hr=2.5;hnp=true;mr=20;i=1;c=[ - samefaction false ]} @targetedLoc
