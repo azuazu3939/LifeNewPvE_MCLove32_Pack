@@ -163,7 +163,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3_Run:
 
 OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3_HeadShoot:
   Skills:
-  - e:pr{r=4;pts=32;a=1;s=0.05;d=true;dir=0,2,0;dr=true;p=flame;vs=2;y=2} @targetedLoc
+  - e:pr{r=4;pts=32;a=1;s=0.01;d=true;dir=0,-1,0;dr=true;p=flame;y=2} @targetedLoc
   - delay 10
   - projectile{
     oh=[
@@ -174,4 +174,4 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3_HeadShoot:
       - skill:OpenField_Weapon_火炎弾_MCLove32_Skill_Effects @origin
     ];
     b=DISPLAY;mat=MAGMA_BLOCK;scale=1,1,1;ys=1;
-    v=10;sfo=0;syo=10;vr=2;hr=2.5;hnp=true;mr=20;i=1;c=[ - samefaction false ]} @targetedLoc
+    v=10;origin=@targetedLoc;fo=true;sfo=0;syo=10;vr=2;hr=2.5;hnp=true;mr=20;i=1;c=[ - samefaction false ]} @targetedLoc
