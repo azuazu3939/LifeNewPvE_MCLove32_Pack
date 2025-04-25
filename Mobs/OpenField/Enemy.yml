@@ -30,7 +30,6 @@ OpenField_Enemy_Abstract_Generic:
   Modules:
     ThreatTable: true
   Skills:
-  - setVar{k=target.boss_rank;a="0";t=INTEGER;save=true} @T{c=[ isPlayer true ]} ~onEntercombat
   - remove{delay=1} @self ~onTimer:100 ?containregion{r=open}
   - found @trigger ~onEntercombat 
 
@@ -151,7 +150,7 @@ OpenField_Enemy_羊獣カルーチェ_MCLove32:
   - clear
   - attacker
   - players
-  - nearestif{c=[ - (samefaction false && varrange{k=target.boss_rank;v=<"<caster.var.boss_rank> + 1"} true) ]}
+  - otherFaction
   AIGoalSelectors:
   - clear
   - randomstroll
@@ -258,7 +257,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32:
   - clear
   - attacker
   - players
-  - nearestif{c=[ - (samefaction false && varrange{k=target.boss_rank;v=<"<caster.var.boss_rank> + 1"} true) ]}
+  - otherFaction
   AIGoalSelectors:
   - clear
   - randomstroll
@@ -408,7 +407,7 @@ OpenField_Enemy_踊る巨人_MCLove32:
   - clear
   - attacker
   - players 
-  - nearestif{c=[ - (samefaction false && varrange{k=target.boss_rank;v=<"<caster.var.boss_rank> + 1"} true) ]}
+  - otherFaction
   AIGoalSelectors:
   - clear
   - randomstroll
