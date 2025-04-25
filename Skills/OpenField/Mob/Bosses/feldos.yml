@@ -151,7 +151,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3:
   - setVar{var=skill.count;val="1";t=INTEGER} @self
   - setVar{var=skill.dmg;val="1";t=FLOAT} @self
   - skill:Generic_Enemy_MCLove32_BUFF @self
-  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3_Run{repeat=<random0to3>;repeati=40} @self
+  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3_Run{repeat=<random.0to3>;repeati=40} @self
   - delay 60
   - removetag{t=ATTACK} @self
 
