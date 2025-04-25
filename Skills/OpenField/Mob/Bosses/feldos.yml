@@ -140,3 +140,37 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process_Loop:
     v=12;i=1;syo=2;sfo=4;tyo=1.4;vr=1.5;hr=1.5;mr=16;g=-0.15;sb=false;se=false;hnp=true;c=[ - samefaction false ];
     b=DISPLAY;mat=MAGMA_BLOCK;scale=1,1,1;ps=1;rs=1;ys=1;
     ho=<skill.ho>;repeat=<skill.rep>;repeati=10} @forward{lockpitch=true}
+
+OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3:
+  Cooldown: 30
+  Conditions:
+  - incombat
+  - hasTag{t=DOWN} false
+  - hasTag{t=ATTACK} false 
+  Skills:
+  - addtag{t=ATTACK} @self
+  - setVar{var=skill.count;val="1";t=INTEGER} @self
+  - setVar{var=skill.dmg;val="1";t=FLOAT} @self
+  - skill:Generic_Enemy_MCLove32_BUFF @self
+  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3_Run{repeat=<random0to3>;repeati=40} @self
+  - delay 60
+  - removetag{t=ATTACK} @self
+
+OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3_Run:
+  Skills:
+  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3_HeadShoot @RLNC{a=12;r=24;minr=5;s=3}
+
+OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3_HeadShoot:
+  Skills:
+  - e:pr{r=4;pts=32;a=1;s=0.05;d=true;dir=0,2,0;dr=true;p=flame;vs=2;y=2} @targetedLoc
+  - delay 10
+  - projectile{
+    oh=[
+      - damage{a="<skill.var.dmg> * 0.8";pi=true;ii=true;e=RED}
+    ];
+    oe=[
+      - damage{a="<skill.var.dmg> * 1.5";pi=true;ii=true;e=RED} @ENO{r=4;limit=5;sort=NEAREST}
+      - skill:OpenField_Weapon_火炎弾_MCLove32_Skill_Effects @origin
+    ];
+    b=DISPLAY;mat=MAGMA_BLOCK;scale=1,1,1:ys=1;
+    v=10;sfo=0;syo=10;vr=2;hr=2.5;hnp=true;mr=20;i=1;c=[ - samefaction false ]}  @targetedLoc
