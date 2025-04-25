@@ -161,16 +161,16 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3_Run:
 
 OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3_HeadShoot:
   Skills:
-  - e:pr{r=4;pts=16;a=1;s=0.2;d=true;dir=0,-1,0;p=flame;y=0.5} @targetedLoc{y=2.5}
-  - e:pr{r=4;pts=16;a=1;s=0.2;d=true;dir=0,-1,0;p=flame;y=1} @targetedLoc{y=3}
-  - e:pr{r=4;pts=16;a=1;s=0.2;d=true;dir=0,-1,0;p=flame;y=1.5} @targetedLoc{y=3.5}
-  - e:pr{r=4;pts=16;a=1;s=0.2;d=true;dir=0,-1,0;p=flame;y=2} @targetedLoc{y=4}
-  - e:pr{r=4;pts=16;a=1;s=0.2;d=true;dir=0,-1,0;p=flame;y=2.5} @targetedLoc{y=4.5}
-  - e:pr{r=4;pts=16;a=1;s=0.2;d=true;dir=0,-1,0;p=flame;y=3} @targetedLoc{y=5}
-  - e:pr{r=4;pts=16;a=1;s=0.2;d=true;dir=0,-1,0;p=flame;y=3.5} @targetedLoc{y=5.5}
-  - e:pr{r=4;pts=16;a=1;s=0.2;d=true;dir=0,-1,0;p=flame;y=4} @targetedLoc{y=6}
-  - e:pr{r=4;pts=16;a=1;s=0.2;d=true;dir=0,-1,0;p=flame;y=4.5} @targetedLoc{y=6.5}
-  - e:pr{r=4;pts=16;a=1;s=0.2;d=true;dir=0,-1,0;p=flame;y=5} @targetedLoc{y=7}
+  - e:pr{r=4;pts=16;a=1;s=0.2;d=true;dir=0,-1,0;p=flame;y=0.5} @targetedLoc{y=3.5}
+  - e:pr{r=4;pts=16;a=1;s=0.2;d=true;dir=0,-1,0;p=flame;y=1} @targetedLoc{y=4}
+  - e:pr{r=4;pts=16;a=1;s=0.2;d=true;dir=0,-1,0;p=flame;y=1.5} @targetedLoc{y=4.5}
+  - e:pr{r=4;pts=16;a=1;s=0.2;d=true;dir=0,-1,0;p=flame;y=2} @targetedLoc{y=5}
+  - e:pr{r=4;pts=16;a=1;s=0.2;d=true;dir=0,-1,0;p=flame;y=2.5} @targetedLoc{y=5.5}
+  - e:pr{r=4;pts=16;a=1;s=0.2;d=true;dir=0,-1,0;p=flame;y=3} @targetedLoc{y=6}
+  - e:pr{r=4;pts=16;a=1;s=0.2;d=true;dir=0,-1,0;p=flame;y=3.5} @targetedLoc{y=6.5}
+  - e:pr{r=4;pts=16;a=1;s=0.2;d=true;dir=0,-1,0;p=flame;y=4} @targetedLoc{y=7}
+  - e:pr{r=4;pts=16;a=1;s=0.2;d=true;dir=0,-1,0;p=flame;y=4.5} @targetedLoc{y=7.5}
+  - e:pr{r=4;pts=16;a=1;s=0.2;d=true;dir=0,-1,0;p=flame;y=5} @targetedLoc{y=8}
   - e:p{p=explosion_huge;a=1;delay=30} @targetedLoc
   - delay 30
   - damage{a="<skill.var.dmg> * 2";pi=true;ii=true;e=RED} @LNTL{r=3.5}
