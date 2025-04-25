@@ -184,4 +184,4 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3_HeadShoot:
       - skill:OpenField_Weapon_火炎弾_MCLove32_Skill_Effects @origin
     ];
     b=DISPLAY;mat=MAGMA_BLOCK;scale=1,1,1;ys=1;
-    v=1;type=METEOR;syo=10;fo=true;origin=@origin{y=10};sfo=10;vr=2;hr=2.5;hnp=true;mr=20;i=1;c=[ - samefaction false ];g=1} @targetedLoc
+    v=1;type=METEOR;fo=true;origin=@origin{y=10};vr=2;hr=2.5;hnp=true;mr=20;i=1;c=[ - samefaction false ];g=1} @targetedLoc
