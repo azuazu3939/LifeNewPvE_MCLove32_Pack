@@ -330,7 +330,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32:
   - clear
   - attacker
   - players 
-  - nearestif{c=[ - (samefaction false && (varset{k=target.boss_rank} && varrange{k=target.boss_rank;v=<"<caster.var.boss_rank> + 1"}) true) ]}
+  - otherFaction
   AIGoalSelectors:
   - clear
   - randomstroll
