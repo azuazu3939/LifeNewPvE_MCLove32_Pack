@@ -173,6 +173,6 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3_HeadShoot:
   - e:pr{r=4;pts=16;a=1;s=0.2;d=true;dir=0,-1,0;p=flame} @targetedLoc{y=5}
   - e:p{p=explosion_huge;a=1;delay=30} @targetedLoc
   - delay 10
-  - blockMask{b=RED_TERRACOTTA;r=3.5;d=30} @targetedLoc
+  - blockMask{b=RED_TERRACOTTA;r=3;d=30} @targetedLoc
   - delay 20
   - damage{a="<skill.var.dmg> * 2";pi=true;ii=true;e=RED} @LNTL{r=3.5}
