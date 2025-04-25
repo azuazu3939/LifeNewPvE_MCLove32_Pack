@@ -161,6 +161,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3_Run:
 
 OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3_HeadShoot:
   Skills:
+  - sound{s=block.beacon.ambient;p=2;v=0.5} @targetedLoc 
   - e:pr{r=4;pts=16;a=1;s=0.2;d=true;dir=0,-1,0;p=flame} @targetedLoc{y=0.5}
   - e:pr{r=4;pts=16;a=1;s=0.2;d=true;dir=0,-1,0;p=flame} @targetedLoc{y=1}
   - e:pr{r=4;pts=16;a=1;s=0.2;d=true;dir=0,-1,0;p=flame} @targetedLoc{y=1.5}
@@ -176,3 +177,4 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3_HeadShoot:
   - blockMask{b=RED_TERRACOTTA;r=3;d=30} @targetedLoc
   - delay 25
   - damage{a="<skill.var.dmg> * 2";pi=true;ii=true;e=RED} @LNTL{r=3.5;c=[ - samefaction false ]}
+  - sound{s=entity.blaze.ambient;p=2;v=0.5;sc=AMBIENT} @targetedLoc
