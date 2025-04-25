@@ -172,5 +172,5 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3_HeadShoot:
   - e:pr{r=4;pts=16;a=1;s=0.125;d=true;dir=0,-1,0;p=flame;y=4.5} @targetedLoc{y=4.5}
   - e:pr{r=4;pts=16;a=1;s=0.125;d=true;dir=0,-1,0;p=flame;y=5} @targetedLoc{y=5}
   - delay 30
-  - damage{a="<skill.var.dmg> * 1.5";pi=true;ii=true;e=RED;origin=@targetedLoc} @ENO{r=4;limit=5;sort=NEAREST}
+  - damage{a="<skill.var.dmg> * 2";pi=true;ii=true;e=RED;origin=@targetedLoc} @ENO{r=4;limit=5;sort=NEAREST}
   - skill:OpenField_Weapon_火炎弾_MCLove32_Skill_Effects{origin=@targetedLoc} @origin
