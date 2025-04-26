@@ -84,7 +84,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2:
       - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process
     ];
     n=ATTACK2;i=10;t=300;rd=true} @self
-  - delay 60
+  - delay <random.10to40>
   - removetag{t=ATTACK} @self
 
 OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process:
