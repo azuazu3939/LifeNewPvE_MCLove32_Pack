@@ -181,7 +181,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_4:
     ];
     oh=[
       - damage{a=<skill.var.dmg> * 1.8;pi=true;ii=true;e=RED} 
-      - throw{v=5;vy=10}
+      - throw{v=10;vy=20}
     ];
     os=[
       - sound{s=block.anvil.place;p=2;sc=BLOCKS;repeat=9;repeati=4} @self 
