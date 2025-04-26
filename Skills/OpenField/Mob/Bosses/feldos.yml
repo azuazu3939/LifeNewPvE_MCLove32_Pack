@@ -13,14 +13,11 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1:
   - hasTag{t=ATTACK} false 
   Skills:
   - addtag{t=ATTACK} @self
-  - setVar{var=skill.count;val="1";t=INTEGER} @self
   - setVar{var=skill.dmg;val="1";t=FLOAT} @self
   - skill:Generic_Enemy_MCLove32_BUFF @self
   - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process @self
 
 OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process:
-  Conditions:
-  - varrange{var=skill.count;val=<0} castinstead OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish
   Skills:
   - addtag{t=TAG} @self
   - projectile{
@@ -35,6 +32,9 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process:
     ];
     oh=[
       - damage{a=<skill.var.dmg> * 2;pi=true;ii=true;e=RED}
+    ];
+    oe=[
+      - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish
     ];
     v=6;i=1;se=false;sfo=0;syo=0;mr=15;hs=true;hfs=0;mdh=10;mch=10;hnp=true;c=[ - samefaction false ]} @T
 
@@ -66,7 +66,6 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2:
   - hasTag{t=ATTACK} false 
   Skills:
   - addtag{t=ATTACK} @self
-  - setVar{var=skill.count;val="1";t=INTEGER} @self
   - setVar{var=skill.dmg;val="1";t=FLOAT} @self
   - skill:Generic_Enemy_MCLove32_BUFF @self
   - setVar{var=skill.repeat;val="3";t=INTEGER} @self
@@ -139,9 +138,9 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3:
 
 OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3_Run:
   Skills:
-  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3_HeadShoot @RLNC{a=40;r=32;minr=1;s=4}
+  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3_Meteor @RLNC{a=40;r=32;minr=1;s=4}
 
-OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3_HeadShoot:
+OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3_Meteor:
   Skills:
   - sound{s=block.beacon.ambient;p=2;v=0.5} @targetedLoc 
   - e:pr{r=4;pts=16;a=1;s=0.2;d=true;dir=0,-1,0;p=flame} @targetedLoc{y=0.5}
@@ -184,7 +183,10 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_4:
       - damage{a=<skill.var.dmg> * 1.5;pi=true;ii=true;e=RED} 
     ];
     os=[
-      - modifyprojectile{t=VELOCITY;a=SET;v=10;delay=80} @self 
+      - sound{s=block.anvil.place;p=2;sc=BLOCKS;repeat=7;repeati=10} @self 
+      - delay 80
+      - sound{s=block.anvil.place;p=1;sc=BLOCKS} @self 
+      - modifyprojectile{t=VELOCITY;a=SET;v=10} @self 
     ];
     oe=[
       - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish_Projectile{ho=0} @self 
@@ -193,6 +195,6 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_4:
       - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish_Projectile{ho=60} @self 
       - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish_Projectile{ho=-60} @self 
     ];
-    v=0.5;i=1;hnp=true;se=false;sb=false;hs=true;hfs=0;sfo=0;syo=0;c=[ - samefaction false ];mr=20} @TL 
+    v=0.5;i=1;hnp=true;se=false;sb=false;hs=true;hfs=0;sfo=0;syo=0;c=[ - samefaction false ];mr=16} @TL 
   - delay 120
   - removetag{t=ATTACK} @self
