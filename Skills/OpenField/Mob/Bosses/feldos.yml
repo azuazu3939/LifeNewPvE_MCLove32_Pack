@@ -229,13 +229,13 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5:
   - potion{t=SLOWNESS;l=7;d=10;p=false} @self 
   - delay 10
   - jump{v=1.25} @self
-  - delay 5
+  - delay 2
   - skill:Generic_onGroundトリガースキル_MCLove32{s_name=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5_OnGround;s_repeat_i=1;s_repeat=39} @self
+  - delay 40
+  - removetag{t=ATTACK} @self
 
 OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5_OnGround:
   Skills:
   - damage{a=<skill.var.dmg> * 1.25;pi=true;ii=true;e=RED;delay=<skill.var.itr>} @EIRR{min="0.5 * <skill.var.itr>";max="0.5 * <skill.var.itr> + 0.5";c=[ - hasAura{n=HIT} false ]}
   - aura{n=HIT;t=20} @EIRR{min="0.5 * <skill.var.itr>";max="0.5 * <skill.var.itr> + 0.5";c=[ - hasAura{n=HIT} false ]}
   - e:p{p=sweep_attack;a=3;vs=0.05;hs=0.05} @ring{r="0.5 * <skill.var.itr> + 0.25";p=32}
-  - delay 20
-  - removetag{t=ATTACK} @self
