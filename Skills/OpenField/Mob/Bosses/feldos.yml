@@ -3,6 +3,10 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK:
   - incombat
   Skills:
   - randomskill{s=
+    OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1,
+    OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2,
+    OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3,
+    OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_4,
     OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5;
     repeat=2;repeati=10} @self
   - delay <random.140to200>
@@ -86,7 +90,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2:
       - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process
     ];
     n=ATTACK2;i=10;t=300;rd=true} @self
-  - delay <random.10to40>
+  - delay <random.10to60>
   - removetag{t=ATTACK} @self
 
 OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process:
@@ -217,7 +221,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_4:
   - removetag{t=ATTACK} @self
 
 OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5:
-  Cooldown: 10
+  Cooldown: 5
   Conditions:
   - incombat
   - hasTag{t=DOWN} false
