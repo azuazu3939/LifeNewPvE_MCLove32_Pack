@@ -183,10 +183,10 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_4:
       - damage{a=<skill.var.dmg> * 1.8;pi=true;ii=true;e=RED} 
     ];
     os=[
-      - sound{s=block.anvil.place;p=2;sc=BLOCKS;repeat=7;repeati=5} @self 
+      - sound{s=block.anvil.place;p=2;sc=BLOCKS;repeat=9;repeati=4} @self 
       - delay 40
       - sound{s=block.anvil.place;p=1;sc=BLOCKS} @self 
-      - delay 15
+      - delay 20
       - modifyprojectile{t=VELOCITY;a=SET;v=30} @self 
     ];
     oe=[
