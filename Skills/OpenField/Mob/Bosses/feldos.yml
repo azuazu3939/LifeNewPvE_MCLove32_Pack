@@ -181,7 +181,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_4:
     ];
     oh=[
       - sound{s=entity.wither.break_block;sc=BLOCKS}
-      - stun{t=2}
+      - stun{t=2;f=false}
       - damage{a=<skill.var.dmg> * 1.8;pi=true;ii=true;e=RED} 
       - delay 5
       - sound{s=entity.wither.break_block;sc=BLOCKS}
