@@ -292,7 +292,7 @@ Generic_onGroundトリガースキル_MCLove32:
   - onGround{
     onfail=[
       - delay 1
-      - skill:Generic_onGroundトリガースキル_MCLove32{s_name=<skill.s_name>;s_repeat=<skill.s_repeat>;s_repeat_i=<s_repeat_i>} @self
+      - skill:Generic_onGroundトリガースキル_MCLove32 @self
     ]}
   Skills:
   - setVar{k=skill.repeat;a="0";t=INTEGER} @self
