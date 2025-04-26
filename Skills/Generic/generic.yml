@@ -90,6 +90,8 @@ Generic_Enemy_ウォークRemoveCheck_MCLove32:
 Generic_Enemy_MCLove32_EnterCombat:
   Conditions:
   - incombat
+  - targets{a=>0} true
+  - playerInRadius{a=>0;d=40;is=true} true 
   - hasTag{t=START} false
   - hasTag{t=DOWN} castinstead Generic_Enemy_MCLove32_NEXT
   Skills:
