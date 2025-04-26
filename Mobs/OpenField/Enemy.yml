@@ -41,6 +41,7 @@ OpenField_Enemy_Base_MCLove32:
   - FALL 0
   - POISON 0.1
   Skills:
+  - shieldbreak{duration=200} @trigger ~onAttack ?~isplayer 0.005
   - damage{a=<caster.damage>;ii=true;pi=true} @trigger ~onAttack
   - cmd{c="mlg <target.name> OpneField_Augment_健脚 1 0.001"} @TTP ~onDeath
   - cmd{c="mlg <target.name> OpneField_Augment_快足 1 0.001"} @TTP ~onDeath 
