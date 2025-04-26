@@ -304,7 +304,7 @@ Generic_onGroundトリガースキル_MCLove32:
 Generic_onGroundトリガースキル_MCLove32_NO:
   Skills:
   - delay 1
-  - skill:Generic_onGroundトリガースキル_MCLove32 @self
+  - skill:Generic_onGroundトリガースキル_MCLove32{s_name=<skill.s_name>;s_repeat=<skill.s_repeat>;s_repeat_i=<skill.s_repeat_i>} @self
 
 Generic_Weapon_Attack_MCLove32:
   Cooldown: 0.1
