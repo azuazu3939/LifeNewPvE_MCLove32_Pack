@@ -234,7 +234,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5:
 
 OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5_OnGround:
   Skills:
-  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5_OnGround_Loop{repeat=39;repeati=1}
+  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5_OnGround_Loop{repeat=39;repeati=1} @self
 
 OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5_OnGround_Loop:
   Skills:
