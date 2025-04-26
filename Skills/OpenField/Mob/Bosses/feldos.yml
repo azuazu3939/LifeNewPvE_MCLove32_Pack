@@ -195,6 +195,6 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_4:
     os=[
       - modifyprojectile{t=VELOCITY;a=SET;v=10;delay=80} @self 
     ];
-    v=0;i=1;hnp=true;se=false;sb=false;hs=true;hfs=0;sfo=0;syo=0} @TL 
+    v=0;i=1;hnp=true;se=false;sb=false;hs=true;hfs=0;sfo=0;syo=0;c=[ - samefaction false ]} @TL 
   - delay 120
   - removetag{t=ATTACK} @self
