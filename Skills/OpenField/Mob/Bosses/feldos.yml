@@ -230,13 +230,9 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5:
   - delay 20
   - jump{v=1.25} @self
   - delay 10
-  - skill:Generic_onGroundトリガースキル_MCLove32{s_name=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5_OnGround} @self
+  - skill:Generic_onGroundトリガースキル_MCLove32{s_name=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5_OnGround;s_repeat_i=1;s_repeat=39} @self
 
 OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5_OnGround:
-  Skills:
-  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5_OnGround_Loop{repeat=39;repeati=1} @self
-
-OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5_OnGround_Loop:
   Skills:
   - skill{
     s=[
