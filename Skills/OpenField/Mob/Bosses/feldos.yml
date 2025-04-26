@@ -230,12 +230,12 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5:
   - delay 10
   - jump{v=1.25} @self
   - delay 2
-  - skill:Generic_onGroundトリガースキル_MCLove32{s_name=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5_OnGround;s_repeat_i=1;s_repeat=19} @self
+  - skill:Generic_onGroundトリガースキル_MCLove32{s_name=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5_OnGround;s_repeat_i=1;s_repeat=39} @self
   - delay 40
   - removetag{t=ATTACK} @self
 
 OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5_OnGround:
   Skills:
-  - damage{a=<skill.var.dmg> * 2;pi=true;ii=true;e=RED} @EIRR{min="<skill.var.itr>";max="<skill.var.itr> + 3";c=[ - hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5_OnGround} false ]}
-  - aura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5_OnGround;t=40} @EIRR{min="<skill.var.itr>";max="<skill.var.itr> + 3"}
-  - e:p{p=sweep_attack;a=2;vs=0.05;hs=0.05} @ring{r="<skill.var.itr> + 1.5";p=64}
+  - damage{a=<skill.var.dmg> * 2;pi=true;ii=true;e=RED} @EIRR{min="<skill.var.itr>";max="<skill.var.itr> + 2";c=[ - hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5_OnGround} false ]}
+  - aura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5_OnGround;t=40} @EIRR{min="<skill.var.itr>";max="<skill.var.itr> + 2"}
+  - e:p{p=sweep_attack;a=2;vs=0.05;hs=0.05} @ring{r="<skill.var.itr> + 1";p=64}
