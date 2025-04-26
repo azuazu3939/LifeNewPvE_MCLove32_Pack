@@ -2,6 +2,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK:
   Conditions:
   - incombat
   - targets{a=>0} true
+  - playerInRadius{a=>0;d=40;is=true} true 
   Skills:
   - randomskill{s=
     OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1,
