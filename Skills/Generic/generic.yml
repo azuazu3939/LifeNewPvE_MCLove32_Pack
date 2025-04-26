@@ -313,7 +313,7 @@ Generic_Weapon_Attack_MCLove32:
     s=[
       - damage{a=10;pi=true;ii=true}
       - sound{s=entity.player.attack.sweep;sc=PLAYERS} @self
-    ]} @EIC{r=8;a=120;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
+    ]} @EIC{r=6;a=120;limit=1;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
 
 Generic_Weapon_Multi_Attack_MCLove32:
   Cooldown: 0.1
@@ -322,4 +322,4 @@ Generic_Weapon_Multi_Attack_MCLove32:
     s=[
       - damage{a=10;pi=true;ii=true}
       - sound{s=entity.player.attack.sweep;sc=PLAYERS} @self
-    ]} @EIC{r=8;a=120;limit=5;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
+    ]} @EIC{r=6;a=120;limit=3;sort=NEAREST;conditions=[ - isLiving true - isMythicMob true ]}
