@@ -289,7 +289,11 @@ Generic_ターゲットランダムプレイヤー_MCLove32:
 Generic_onGroundトリガースキル_MCLove32:
   Conditions:
   - incombat
-  - onGround{onfail=Generic_onGroundトリガースキル_MCLove32_NO}
+  - onGround{
+    onfail=[
+      - delay 1
+      - skill:Generic_onGroundトリガースキル_MCLove32{s_name=<skill.s_name>;s_repeat=<skill.s_repeat>;s_repeat_i=<s_repeat_i>} @self
+    ]}
   Skills:
   - setVar{k=skill.repeat;a="0";t=INTEGER} @self
   - setVar{k=skill.repeat_i;a="0";t=INTEGER} @self
@@ -300,11 +304,6 @@ Generic_onGroundトリガースキル_MCLove32:
   - setVar{k=skill.repeat_i;a="<skill.s_repeat_i>";t=INTEGER} @self ?!varequals{k=skill.repeat_i_c;v="[Undefined]"}
   
   - vskill{s=<skill.s_name>;repeat=<skill.var.repeat>;repeati=<skill.var.repeat_i>} @self
-
-Generic_onGroundトリガースキル_MCLove32_NO:
- Skill:
- - delay 1
- - skill:Generic_onGroundトリガースキル_MCLove32 @self
 
 Generic_Weapon_Attack_MCLove32:
   Cooldown: 0.1
