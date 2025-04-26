@@ -104,7 +104,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process:
   - projectile{
     ot=[
       - modifyprojectile{t=VELOCITY;a=MULTIPLY;v=0.995} @self
-      - setProjectileDirection{m=0.05} @TL 
+      - setProjectileDirection{m=0.1} @TL 
       - look{f=true} @projectileforward
     ];d="10 * <skill.var.repeat>";hp=false;se=false;sb=false;v=0.5;i=1} @TL 
 
