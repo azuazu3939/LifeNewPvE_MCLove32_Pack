@@ -180,7 +180,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_4:
       - look{f=true} @projectileforward
     ];
     oh=[
-      - damage{a=<skill.var.dmg> * 1.5;pi=true;ii=true;e=RED} 
+      - damage{a=<skill.var.dmg> * 1.8;pi=true;ii=true;e=RED} 
     ];
     os=[
       - sound{s=block.anvil.place;p=2;sc=BLOCKS;repeat=7;repeati=5} @self 
