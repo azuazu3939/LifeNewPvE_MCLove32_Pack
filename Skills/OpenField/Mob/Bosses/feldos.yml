@@ -4,10 +4,10 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK:
   - targets{a=>0} true
   - playerInRadius{a=>0;d=40;is=true} true 
   Skills:
+  #OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1,
+    #OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2,
+    #OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3,
   - randomskill{s=
-    OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1,
-    OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2,
-    OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3,
     OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_4;
     repeat=2;repeati=10} @self
   - delay <random.100to160>
