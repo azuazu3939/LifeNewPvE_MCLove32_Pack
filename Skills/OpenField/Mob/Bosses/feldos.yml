@@ -200,21 +200,8 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_4:
       - damage{a=<skill.var.dmg> * 1.5;pi=true;ii=true;e=RED} 
     ];
     os=[
-      - e:p{p=cloud;a=30;s=2} @self
-      - sound{s=entity.blaze.shoot;p=2;v=2;sc=AMBIENT} @self 
-      - e:p{p=cloud;a=30;s=2;delay=20} @self
-      - sound{s=entity.blaze.shoot;p=2;v=2;sc=AMBIENT;delay=20} @self 
-      - e:p{p=cloud;a=30;s=2;delay=40} @self
-      - sound{s=entity.blaze.shoot;p=2;v=2;sc=AMBIENT;delay=40} @self 
-      - e:p{p=cloud;a=30;s=2;delay=50} @self
-      - sound{s=entity.blaze.shoot;p=2;v=2;sc=AMBIENT;delay=50} @self 
-      - e:p{p=cloud;a=30;s=2;delay=60} @self
-      - sound{s=entity.blaze.shoot;p=2;v=2;sc=AMBIENT;delay=60} @self 
       - modifyprojectile{t=VELOCITY;a=SET;v=10;delay=80} @self 
-      - e:p{p=cloud;a=50;s=2;delay=80} @self
-      - sound{s=entity.blaze.shoot;p=2;v=2;sc=AMBIENT;delay=80} @self 
-      - setProjectileDirection @TL
     ];
-    v=0;i=1;hnp=true;se=false;sb=false;hs=true;hfs=0} @TL 
+    v=0;i=1;hnp=true;se=false;sb=false;hs=true;hfs=0;sfo=0;syo=0} @TL 
   - delay 120
   - removetag{t=ATTACK} @self
