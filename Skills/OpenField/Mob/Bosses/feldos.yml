@@ -170,7 +170,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3_Meteor:
   - delay 5
   - blockMask{b=RED_TERRACOTTA;r=3;d=30} @targetedLoc
   - delay 25
-  - damage{a="<skill.var.dmg> * 2";pi=true;ii=true;e=RED} @LNTL{r=3.5;c=[ - samefaction false ]}
+  - damage{a="<skill.var.dmg>";pi=true;ii=true;e=RED} @LNTL{r=3.5;c=[ - samefaction false ]}
   - sound{s=entity.blaze.shoot;p=2;v=0.5;sc=AMBIENT} @targetedLoc
 
 OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_4:
