@@ -180,7 +180,13 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_4:
       - look{f=true} @projectileforward
     ];
     oh=[
+      - sound{s=entity.wither.break_block;sc=BLOCKS}
+      - stun{t=2}
       - damage{a=<skill.var.dmg> * 1.8;pi=true;ii=true;e=RED} 
+      - delay 5
+      - sound{s=entity.wither.break_block;sc=BLOCKS}
+      - delay 2
+      - sound{s=entity.wither.break_block;sc=BLOCKS}
       - throw{v=10;vy=20}
     ];
     os=[
