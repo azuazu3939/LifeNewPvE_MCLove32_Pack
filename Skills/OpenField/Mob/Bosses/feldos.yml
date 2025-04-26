@@ -239,6 +239,6 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5_OnGround:
       - damage{a=<skill.var.dmg> * 1.25;pi=true;ii=true;e=RED;delay=<skill.var.itr>} @targeted{c=[ - hasAura{n=HIT} false ]}
       - aura{n=HIT;t=20}
     ]} @EIRR{min="0.5 * <skill.var.itr>";max="0.5 * <skill.var.itr> + 0.5"}
-  - e:p{p=explosion_small;a=3;vs=0.05;hs=0.05} @ring{r="0.5 * <skill.var.itr> + 0.25";p=64}
+  - e:p{p=explosion;a=3;vs=0.05;hs=0.05} @ring{r="0.5 * <skill.var.itr> + 0.25";p=64}
   - delay 20
   - removetag{t=ATTACK} @self
