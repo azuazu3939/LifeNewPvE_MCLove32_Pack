@@ -7,7 +7,8 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK:
   - randomskill{s=
     OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1,
     OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2,
-    OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3;
+    OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3,
+    OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_4;
     repeat=2;repeati=10} @self
   - delay <random.100to160>
   - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK
@@ -178,3 +179,42 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3_HeadShoot:
   - delay 25
   - damage{a="<skill.var.dmg> * 2";pi=true;ii=true;e=RED} @LNTL{r=3.5;c=[ - samefaction false ]}
   - sound{s=entity.blaze.shoot;p=2;v=0.5;sc=AMBIENT} @targetedLoc
+
+OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_4:
+  Cooldown: 8
+  Conditions:
+  - incombat
+  - hasTag{t=DOWN} false
+  - hasTag{t=ATTACK} false 
+  Skills:
+  - addtag{t=ATTACK} @self
+  - setVar{var=skill.count;val="1";t=INTEGER} @self
+  - setVar{var=skill.dmg;val="1";t=FLOAT} @self
+  - skill:Generic_Enemy_MCLove32_BUFF @self
+  - projectile{
+    ot=[
+      - teleport @origin
+      - look{f=true} @T 
+    ];
+    oh=[
+      - damage{a=<skill.var.dmg> * 1.5;pi=true;ii=true;e=RED} 
+    ];
+    os=[
+      - e:p{p=cloud;a=30;s=2} @self
+      - sound{s=entity.blaze.shoot;p=2;v=2;sc=AMBIENT} @self 
+      - e:p{p=cloud;a=30;s=2;delay=20} @self
+      - sound{s=entity.blaze.shoot;p=2;v=2;sc=AMBIENT;delay=20} @self 
+      - e:p{p=cloud;a=30;s=2;delay=40} @self
+      - sound{s=entity.blaze.shoot;p=2;v=2;sc=AMBIENT;delay=40} @self 
+      - e:p{p=cloud;a=30;s=2;delay=50} @self
+      - sound{s=entity.blaze.shoot;p=2;v=2;sc=AMBIENT;delay=50} @self 
+      - e:p{p=cloud;a=30;s=2;delay=60} @self
+      - sound{s=entity.blaze.shoot;p=2;v=2;sc=AMBIENT;delay=60} @self 
+      - modifyprojectile{t=VELOCITY;a=SET;v=10;delay=80} @self 
+      - e:p{p=cloud;a=50;s=2;delay=80} @self
+      - sound{s=entity.blaze.shoot;p=2;v=2;sc=AMBIENT;delay=80} @self 
+      - setProjectileDirection @TL
+    ];
+    v=0;i=1;hnp=true;se=false} @TL 
+  - delay 120
+  - removetag{t=ATTACK} @self
