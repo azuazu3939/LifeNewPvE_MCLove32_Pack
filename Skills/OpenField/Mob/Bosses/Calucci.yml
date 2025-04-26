@@ -1,6 +1,7 @@
 OpenField_Enemy_羊獣カルーチェ_MCLove32_ATTACK:
   Conditions:
   - incombat
+  - targets{a=>0} true
   Skills:
   - skill:OpenField_Enemy_羊獣カルーチェ_MCLove32_Target @self 0.5
   - randomskill{s=     
