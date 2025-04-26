@@ -155,7 +155,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3:
 
 OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3_Run:
   Skills:
-  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3_HeadShoot @RLNC{a=40;r=24;minr=1;s=5}
+  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3_HeadShoot @RLNC{a=40;r=20;minr=1;s=5}
 
 OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3_HeadShoot:
   Skills:
