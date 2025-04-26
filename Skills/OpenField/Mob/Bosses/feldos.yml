@@ -240,6 +240,6 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5:
 
 OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5_OnGround:
   Skills:
-  - damage{a=<skill.var.dmg> * 1.25;pi=true;ii=true;e=RED} @EIRR{min="<skill.var.itr>";max="<skill.var.itr> + 1";c=[ - hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5_OnGround} false - surface{r=<2} true ]}
+  - damage{a=<skill.var.dmg> * 1.4;pi=true;ii=true;e=RED} @EIRR{min="<skill.var.itr>";max="<skill.var.itr> + 1";c=[ - hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5_OnGround} false - surface{r=<2} true ]}
   - aura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5_OnGround;t=40} @EIRR{min="<skill.var.itr>";max="<skill.var.itr> + 1"}
   - e:p{p=sweep_attack;a=2;vs=0.05;hs=0.05} @ring{r="<skill.var.itr> + 1";p=64}
