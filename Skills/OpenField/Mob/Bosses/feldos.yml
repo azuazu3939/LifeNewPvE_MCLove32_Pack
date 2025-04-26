@@ -215,6 +215,6 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_4:
       - sound{s=entity.blaze.shoot;p=2;v=2;sc=AMBIENT;delay=80} @self 
       - setProjectileDirection @TL
     ];
-    v=0;i=1;hnp=true;se=false;hs=true;hfs=0} @TL 
+    v=0;i=1;hnp=true;se=false;sb=false;hs=true;hfs=0} @TL 
   - delay 120
   - removetag{t=ATTACK} @self
