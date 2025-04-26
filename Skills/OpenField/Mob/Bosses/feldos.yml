@@ -130,7 +130,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_Process_Loop:
       - endprojectile @self ?hasTag{t=DOWN}
     ];
     oh=[
-      - damage{a=<skill.var.dmg>;pi=true;ii=true;e=RED} @targetedTarget{c=[ - hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_HIT} false ]}
+      - damage{a=<skill.var.dmg> * 0.6;pi=true;ii=true;e=RED} @targetedTarget{c=[ - hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_HIT} false ]}
       - aura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_HIT;i=20;t=10;rd=true} @targetedTarget{c=[ - isPlayer false ]}
       - aura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2_HIT;i=20;t=200;rd=true} @targetedTarget{c=[ - isPlayer false ]}
     ];
@@ -240,6 +240,6 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5:
 
 OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5_OnGround:
   Skills:
-  - damage{a=<skill.var.dmg> * 2;pi=true;ii=true;e=RED} @EIRR{min="<skill.var.itr>";max="<skill.var.itr> + 1";c=[ - hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5_OnGround} false - surface{r=<2} true ]}
+  - damage{a=<skill.var.dmg> * 1.25;pi=true;ii=true;e=RED} @EIRR{min="<skill.var.itr>";max="<skill.var.itr> + 1";c=[ - hasAura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5_OnGround} false - surface{r=<2} true ]}
   - aura{n=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5_OnGround;t=40} @EIRR{min="<skill.var.itr>";max="<skill.var.itr> + 1"}
   - e:p{p=sweep_attack;a=2;vs=0.05;hs=0.05} @ring{r="<skill.var.itr> + 1";p=64}
