@@ -174,7 +174,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_4:
   - projectile{
     ot=[
       - endprojectile @self ?hasTag{t=DOWN}
-      - modifyprojectile{t=VELOCITY;a=MULTIPLY;v=1.05} @self 
+      - modifyprojectile{t=VELOCITY;a=MULTIPLY;v=0.95} @self 
       - setProjectileDirection{m=0.1} @TL 
       - teleport @origin
       - look{f=true} @projectileforward
@@ -183,10 +183,11 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_4:
       - damage{a=<skill.var.dmg> * 1.5;pi=true;ii=true;e=RED} 
     ];
     os=[
-      - sound{s=block.anvil.place;p=2;sc=BLOCKS;repeat=7;repeati=10} @self 
-      - delay 80
+      - sound{s=block.anvil.place;p=2;sc=BLOCKS;repeat=7;repeati=5} @self 
+      - delay 40
       - sound{s=block.anvil.place;p=1;sc=BLOCKS} @self 
-      - modifyprojectile{t=VELOCITY;a=SET;v=10} @self 
+      - delay 15
+      - modifyprojectile{t=VELOCITY;a=SET;v=24} @self 
     ];
     oe=[
       - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish_Projectile{ho=0} @self 
@@ -195,6 +196,6 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_4:
       - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish_Projectile{ho=60} @self 
       - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish_Projectile{ho=-60} @self 
     ];
-    v=0.5;i=1;hnp=true;se=false;sb=false;hs=true;hfs=0;sfo=0;syo=0;c=[ - samefaction false ];mr=16} @TL 
+    v=1;i=1;hnp=true;se=false;sb=false;hs=true;hfs=0;sfo=0;syo=0;c=[ - samefaction false ];mr=16} @TL 
   - delay 120
   - removetag{t=ATTACK} @self
