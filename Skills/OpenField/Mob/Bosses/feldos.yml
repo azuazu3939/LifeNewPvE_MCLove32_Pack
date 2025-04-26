@@ -22,30 +22,19 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process:
   Conditions:
   - varrange{var=skill.count;val=<0} castinstead OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish
   Skills:
+  - addtag{t=TAG} @self
   - projectile{
     ot=[
       - teleport @origin
       - look{f=true} @projectileforward
       - endprojectile @self ?hasTag{t=DOWN}
+
+      - removetag{t=TAG} @self ?hasTag{t=TAG} 0.025
+      - addtag{t=TAG} @self ?!hasTag{t=TAG} 0.02
+      - setProjectileDirection{m=0.2} @TL ?!hasTag{t=TAG}
     ];
     oh=[
       - damage{a=<skill.var.dmg> * 2;pi=true;ii=true;e=RED}
-    ];
-    oe=[
-      - missile{
-        ot=[
-          - teleport @origin
-          - look{f=true} @projectileforward
-          - endprojectile @self ?hasTag{t=DOWN}
-        ];
-        oh=[
-          - damage{a=<skill.var.dmg> * 2;pi=true;ii=true;e=RED}
-        ];
-        oe=[
-          - setVar{var=skill.count;val="<skill.var.count> - 1";t=INTEGER} @self
-          - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process @self
-        ];
-        v=8;in=12;i=1;se=false;sfo=0;syo=0;mr=10;hs=true;hfs=0;mdh=10;mch=10;fo=true;hnp=true;c=[ - samefaction false ]} @T
     ];
     v=6;i=1;se=false;sfo=0;syo=0;mr=15;hs=true;hfs=0;mdh=10;mch=10;hnp=true;c=[ - samefaction false ]} @T
 
@@ -54,7 +43,6 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish:
   - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish_Projectile{ho=0} @self 
   - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish_Projectile{ho=30} @self 
   - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish_Projectile{ho=-30} @self 
-  - stun{t=60;f=true} @self
   - delay 60
   - removetag{t=ATTACK} @self
 
@@ -186,16 +174,24 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_4:
   - skill:Generic_Enemy_MCLove32_BUFF @self
   - projectile{
     ot=[
+      - endprojectile @self ?hasTag{t=DOWN}
       - modifyprojectile{t=VELOCITY;a=MULTIPLY;v=1.05} @self 
       - setProjectileDirection{m=0.1} @TL 
       - teleport @origin
-      - look{f=true} @T 
+      - look{f=true} @projectileforward
     ];
     oh=[
       - damage{a=<skill.var.dmg> * 1.5;pi=true;ii=true;e=RED} 
     ];
     os=[
       - modifyprojectile{t=VELOCITY;a=SET;v=10;delay=80} @self 
+    ];
+    oe=[
+      - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish_Projectile{ho=0} @self 
+      - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish_Projectile{ho=30} @self 
+      - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish_Projectile{ho=-30} @self
+      - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish_Projectile{ho=60} @self 
+      - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish_Projectile{ho=-60} @self 
     ];
     v=0.5;i=1;hnp=true;se=false;sb=false;hs=true;hfs=0;sfo=0;syo=0;c=[ - samefaction false ];mr=20} @TL 
   - delay 120
