@@ -30,6 +30,8 @@ OpenField_Armor_Animer_MCLove32_H:
       - AIR | AIR | AIR 
   NBT:
     PublicBukkitValues:
+      az:max_unique: "4"
+      az:try_unique_enchant: "4"
 
 OpenField_Armor_Animer_MCLove32_C:
   Id: leather_chestplate
@@ -62,7 +64,8 @@ OpenField_Armor_Animer_MCLove32_C:
       - OpenField_Material_小動物の皮_MCLove32 | OpenField_Material_小動物の皮_MCLove32 | OpenField_Material_小動物の皮_MCLove32 
   NBT:
     PublicBukkitValues:
-      az:divine_blessing: "2"
+      az:max_unique: "4"
+      az:try_unique_enchant: "4"
 
 OpenField_Armor_Animer_MCLove32_L:
   Id: leather_leggings
@@ -95,6 +98,8 @@ OpenField_Armor_Animer_MCLove32_L:
       - OpenField_Material_小動物の皮_MCLove32 | AIR | OpenField_Material_小動物の皮_MCLove32 
   NBT:
     PublicBukkitValues:
+      az:max_unique: "4"
+      az:try_unique_enchant: "4"
 
 OpenField_Armor_Animer_MCLove32_B:
   Id: leather_boots
@@ -127,6 +132,8 @@ OpenField_Armor_Animer_MCLove32_B:
       - AIR | AIR | AIR 
   NBT:
     PublicBukkitValues:
+      az:max_unique: "4"
+      az:try_unique_enchant: "4"
 
 OpenField_Armor_Helo_MCLove32_H:
   Id: leather_helmet
@@ -160,7 +167,8 @@ OpenField_Armor_Helo_MCLove32_H:
       - OpenField_Material_ハロウルフの骨_MCLove32 | OpenField_Material_HeloRare_MCLove32 | OpenField_Material_ハロウルフの骨_MCLove32
   NBT:
     PublicBukkitValues:
-      az:slow_life: "2"
+      az:max_unique: "4"
+      az:try_unique_enchant: "5"
 
 OpenField_Armor_Helo_MCLove32_C:
   Id: leather_chestplate
@@ -194,7 +202,8 @@ OpenField_Armor_Helo_MCLove32_C:
       - OpenField_Material_ハロウルフの骨_MCLove32 | OpenField_Material_HeloRare_MCLove32 | OpenField_Material_ハロウルフの骨_MCLove32
   NBT:
     PublicBukkitValues:
-      az:divine_blessing: "2"
+      az:max_unique: "4"
+      az:try_unique_enchant: "5"
 
 OpenField_Armor_Helo_MCLove32_L:
   Id: leather_leggings
@@ -228,7 +237,8 @@ OpenField_Armor_Helo_MCLove32_L:
       - OpenField_Material_ハロウルフの骨_MCLove32 | OpenField_Material_HeloRare_MCLove32 | OpenField_Material_ハロウルフの骨_MCLove32
   NBT:
     PublicBukkitValues:
-      az:divine_blessing: "1"
+      az:max_unique: "4"
+      az:try_unique_enchant: "5"
 
 OpenField_Armor_Helo_MCLove32_B:
   Id: leather_boots
@@ -261,8 +271,8 @@ OpenField_Armor_Helo_MCLove32_B:
       - OpenField_Material_ハロウルフの骨_MCLove32 | OpenField_Material_HeloRare_MCLove32 | OpenField_Material_ハロウルフの骨_MCLove32
   NBT:
     PublicBukkitValues:
-      az:divine_blessing: "1"
-      az:slow_life: "1"
+      az:max_unique: "4"
+      az:try_unique_enchant: "5"
 
 OpenField_Armor_Calucci_MCLove32_H:
   Id: leather_helmet
@@ -288,8 +298,8 @@ OpenField_Armor_Calucci_MCLove32_H:
   Group: 'Armor'
   NBT:
     PublicBukkitValues:
-      az:divine_blessing: "1"
-      az:speed_holder: "1"
+      az:max_unique: "4"
+      az:try_unique_enchant: "6"
   Recipes:
     Armor_Craft:
       Type: SHAPED
@@ -323,7 +333,8 @@ OpenField_Armor_Calucci_MCLove32_C:
   Group: 'Armor'
   NBT:
     PublicBukkitValues:
-      az:offence: "2"
+      az:max_unique: "4"
+      az:try_unique_enchant: "6"
   Recipes:
     Armor_Craft:
       Type: SHAPED
@@ -357,8 +368,8 @@ OpenField_Armor_Calucci_MCLove32_L:
   Group: 'Armor'
   NBT:
     PublicBukkitValues:
-      az:divine_blessing: "2"
-      az:defence: "2"
+      az:max_unique: "4"
+      az:try_unique_enchant: "6"
   Recipes:
     Armor_Craft:
       Type: SHAPED
@@ -392,8 +403,8 @@ OpenField_Armor_Calucci_MCLove32_B:
   Group: 'Armor'
   NBT:
     PublicBukkitValues:
-      az:offence: "1"
-      az:defence: "1"
+      az:max_unique: "4"
+      az:try_unique_enchant: "6"
   Recipes:
     Armor_Craft:
       Type: SHAPED
@@ -428,6 +439,8 @@ OpenField_Armor_wid_MCLove32_H:
     PublicBukkitValues:
       az:max_mana: "25"
       az:mana_regen: "3"
+      az:max_unique: "5"
+      az:try_unique_enchant: "7"
   Group: 'Armor'
 
 OpenField_Armor_wid_MCLove32_C:
@@ -455,7 +468,8 @@ OpenField_Armor_wid_MCLove32_C:
     PublicBukkitValues:
       az:max_mana: "25"
       az:mana_regen: "3"
-      az:defence: "1"
+      az:max_unique: "5"
+      az:try_unique_enchant: "7"
   Group: 'Armor'
 
 OpenField_Armor_wid_MCLove32_L:
@@ -483,8 +497,8 @@ OpenField_Armor_wid_MCLove32_L:
     PublicBukkitValues:
       az:max_mana: "25"
       az:mana_regen: "3"
-      az:defence: "1"
-      az:speed_holder: "1"
+      az:max_unique: "5"
+      az:try_unique_enchant: "7"
   Group: 'Armor'
 
 OpenField_Armor_wid_MCLove32_B:
@@ -512,7 +526,8 @@ OpenField_Armor_wid_MCLove32_B:
     PublicBukkitValues:
       az:max_mana: "25"
       az:mana_regen: "3"
-      az:defence: "3"
+      az:max_unique: "5"
+      az:try_unique_enchant: "7"
   Group: 'Armor'
 
 OpenField_Armor_Felm_MCLove32_H:
@@ -540,7 +555,8 @@ OpenField_Armor_Felm_MCLove32_H:
   NBT:
     PublicBukkitValues:
       az:mana_regen: "2"
-      az:offence: "1"
+      az:max_unique: "5"
+      az:try_unique_enchant: "7"
   Group: 'Armor'
 
 OpenField_Armor_Felm_MCLove32_C:
@@ -568,7 +584,8 @@ OpenField_Armor_Felm_MCLove32_C:
   NBT:
     PublicBukkitValues:
       az:mana_regen: "2"
-      az:offence: "2"
+      az:max_unique: "5"
+      az:try_unique_enchant: "7"
   Group: 'Armor'
 
 OpenField_Armor_Felm_MCLove32_L:
@@ -596,7 +613,8 @@ OpenField_Armor_Felm_MCLove32_L:
   NBT:
     PublicBukkitValues:
       az:mana_regen: "2"
-      az:offence: "1"
+      az:max_unique: "5"
+      az:try_unique_enchant: "7"
   Group: 'Armor'
 
 OpenField_Armor_Felm_MCLove32_B:
@@ -624,8 +642,8 @@ OpenField_Armor_Felm_MCLove32_B:
   NBT:
     PublicBukkitValues:
       az:mana_regen: "2"
-      az:offence: "1"
-      az:slow_life: "1"
+      az:max_unique: "5"
+      az:try_unique_enchant: "7"
   Group: 'Armor'
 
 OpenField_Armor_フラクタ_MCLove32_H:
@@ -652,8 +670,8 @@ OpenField_Armor_フラクタ_MCLove32_H:
     PublicBukkitValues:
       az:max_mana: "50"
       az:mana_regen: "5"
-      az:offence: "1"
-      az:defence: "1"
+      az:max_unique: "5"
+      az:try_unique_enchant: "8"
   Group: 'Armor'
 
 OpenField_Armor_フラクタ_MCLove32_C:
@@ -678,9 +696,8 @@ OpenField_Armor_フラクタ_MCLove32_C:
       Armor: 3 ADD 
   NBT:
     PublicBukkitValues:
-      az:flying_hunter: "1"
-      az:high_poison: "1"
-      az:bad_status_hunter: "1"
+      az:max_unique: "5"
+      az:try_unique_enchant: "10"
   Group: 'Armor'
 
 OpenField_Armor_フラクタ_MCLove32_L:
@@ -705,8 +722,8 @@ OpenField_Armor_フラクタ_MCLove32_L:
       Armor: 5 ADD 
   NBT:
     PublicBukkitValues:
-      az:mana_regen: "5"
-      az:speed_master: "2"
+      az:max_unique: "5"
+      az:try_unique_enchant: "10"
   Group: 'Armor'
 
 OpenField_Armor_フラクタ_MCLove32_B:
@@ -732,8 +749,8 @@ OpenField_Armor_フラクタ_MCLove32_B:
   NBT:
     PublicBukkitValues:
       az:max_mana: "50"
-      az:speed_master: "1"
-      az:offence: "2"
+      az:max_unique: "5"
+      az:try_unique_enchant: "8"
   Group: 'Armor'
 
 OpenField_Armor_ボルク_MCLove32_H:
@@ -758,8 +775,8 @@ OpenField_Armor_ボルク_MCLove32_H:
       Health: 8 ADD
   NBT:
     PublicBukkitValues:
-      az:high_poison: "2"
-      az:flying_hunter: "1"
+      az:max_unique: "6"
+      az:try_unique_enchant: "8"
   Group: 'Armor'
 
 OpenField_Armor_ボルク_MCLove32_C:
@@ -784,8 +801,8 @@ OpenField_Armor_ボルク_MCLove32_C:
       Armor: 3 ADD 
   NBT:
     PublicBukkitValues:
-      az:defence: "2"
-      az:offence: "1"
+      az:max_unique: "6"
+      az:try_unique_enchant: "8"
   Group: 'Armor'
 
 OpenField_Armor_ボルク_MCLove32_L:
@@ -810,8 +827,8 @@ OpenField_Armor_ボルク_MCLove32_L:
       Armor: 4 ADD 
   NBT:
     PublicBukkitValues:
-      az:high_poison: "1"
-      az:offence: "1"
+      az:max_unique: "6"
+      az:try_unique_enchant: "8"
   Group: 'Armor'
 
 OpenField_Armor_ボルク_MCLove32_B:
@@ -836,7 +853,6 @@ OpenField_Armor_ボルク_MCLove32_B:
       Health: 4 ADD
   NBT:
     PublicBukkitValues:
-      az:bad_status_hunter: "2"
-      az:high_poison: "1"
-      az:offence: "1"
+      az:max_unique: "6"
+      az:try_unique_enchant: "8"
   Group: 'Armor'

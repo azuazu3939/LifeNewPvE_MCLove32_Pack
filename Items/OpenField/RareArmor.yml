@@ -18,7 +18,8 @@ OpenField_Armor_アニマー_MCLove32_RareH:
   Group: 'Armor'
   NBT:
     PublicBukkitValues:
-      az:ground_reaction_force: "1"
+      az:max_unique: "4"
+      az:try_unique_enchant: "4"
       az:max_mana: "20"
       az:mana_regen: "2"
 
@@ -41,7 +42,8 @@ OpenField_Armor_アニマー_MCLove32_RareC:
   Group: 'Armor'
   NBT:
     PublicBukkitValues:
-      az:divine_blessing: "3"
+      az:max_unique: "4"
+      az:try_unique_enchant: "4"
       az:max_mana: "20"
       az:mana_regen: "2"
 
@@ -64,7 +66,8 @@ OpenField_Armor_アニマー_MCLove32_RareL:
   Group: 'Armor'
   NBT:
     PublicBukkitValues:
-      az:ground_reaction_force: "1"
+      az:max_unique: "4"
+      az:try_unique_enchant: "4"
       az:max_mana: "20"
       az:mana_regen: "2"
 
@@ -87,7 +90,8 @@ OpenField_Armor_アニマー_MCLove32_RareB:
   Group: 'Armor'
   NBT:
     PublicBukkitValues:
-      az:ground_reaction_force: "1"
+      az:max_unique: "4"
+      az:try_unique_enchant: "4"
       az:max_mana: "20"
       az:mana_regen: "2"
 
@@ -115,7 +119,8 @@ OpenField_Armor_Helo_MCLove32_RareH:
   Group: 'Armor'
   NBT:
     PublicBukkitValues:
-      az:slow_life: "2"
+      az:max_unique: "4"
+      az:try_unique_enchant: "4"
       az:max_mana: "20"
       az:mana_regen: "2"
 
@@ -144,7 +149,8 @@ OpenField_Armor_Helo_MCLove32_RareC:
   Group: 'Armor'
   NBT:
     PublicBukkitValues:
-      az:divine_blessing: "2"
+      az:max_unique: "4"
+      az:try_unique_enchant: "4"
       az:max_mana: "20"
       az:mana_regen: "2"
 
@@ -173,7 +179,8 @@ OpenField_Armor_Helo_MCLove32_RareL:
   Group: 'Armor'
   NBT:
     PublicBukkitValues:
-      az:divine_blessing: "1"
+      az:max_unique: "4"
+      az:try_unique_enchant: "4"
       az:max_mana: "20"
       az:mana_regen: "2"
 
@@ -201,8 +208,8 @@ OpenField_Armor_Helo_MCLove32_RareB:
   Group: 'Armor'
   NBT:
     PublicBukkitValues:
-      az:divine_blessing: "1"
-      az:slow_life: "1"
+      az:max_unique: "4"
+      az:try_unique_enchant: "4"
       az:max_mana: "20"
       az:mana_regen: "2"
 
@@ -231,8 +238,8 @@ OpenField_Armor_Calucci_MCLove32_RareH:
   Group: 'Armor'
   NBT:
     PublicBukkitValues:
-      az:divine_blessing: "1"
-      az:speed_holder: "1"
+      az:max_unique: "4"
+      az:try_unique_enchant: "6"
       az:max_mana: "30"
       az:mana_regen: "3"
 
@@ -261,7 +268,8 @@ OpenField_Armor_Calucci_MCLove32_RareC:
   Group: 'Armor'
   NBT:
     PublicBukkitValues:
-      az:offence: "2"
+      az:max_unique: "4"
+      az:try_unique_enchant: "6"
       az:max_mana: "30"
       az:mana_regen: "3"
 
@@ -290,8 +298,8 @@ OpenField_Armor_Calucci_MCLove32_RareL:
   Group: 'Armor'
   NBT:
     PublicBukkitValues:
-      az:divine_blessing: "2"
-      az:defence: "2"
+      az:max_unique: "4"
+      az:try_unique_enchant: "6"
       az:max_mana: "30"
       az:mana_regen: "3"
 
@@ -320,8 +328,8 @@ OpenField_Armor_Calucci_MCLove32_RareB:
   Group: 'Armor'
   NBT:
     PublicBukkitValues:
-      az:offence: "1"
-      az:defence: "1"
+      az:max_unique: "4"
+      az:try_unique_enchant: "6"
       az:max_mana: "30"
       az:mana_regen: "3"
 
@@ -347,8 +355,10 @@ OpenField_Armor_wid_MCLove32_RareH:
       ArmorToughness: 13 ADD 
       Armor: 13 ADD 
       Luck: 5 ADD 
-  NBT: 
+  NBT:
     PublicBukkitValues:
+      az:max_unique: "5"
+      az:try_unique_enchant: "7"
       az:max_mana: "60"
       az:mana_regen: "6"
   Group: 'Armor'
@@ -377,9 +387,10 @@ OpenField_Armor_wid_MCLove32_RareC:
       Luck: 5 ADD 
   NBT:
     PublicBukkitValues:
+      az:max_unique: "5"
+      az:try_unique_enchant: "7"
       az:max_mana: "60"
       az:mana_regen: "6"
-      az:defence: "1"
   Group: 'Armor'
 
 OpenField_Armor_wid_MCLove32_RareL:
@@ -406,10 +417,10 @@ OpenField_Armor_wid_MCLove32_RareL:
       Luck: 5 ADD 
   NBT:
     PublicBukkitValues:
+      az:max_unique: "5"
+      az:try_unique_enchant: "7"
       az:max_mana: "60"
       az:mana_regen: "6"
-      az:defence: "1"
-      az:speed_holder: "1"
   Group: 'Armor'
 
 OpenField_Armor_wid_MCLove32_RareB:
@@ -436,9 +447,10 @@ OpenField_Armor_wid_MCLove32_RareB:
       Luck: 5 ADD 
   NBT:
     PublicBukkitValues:
+      az:max_unique: "5"
+      az:try_unique_enchant: "7"
       az:max_mana: "60"
       az:mana_regen: "6"
-      az:defence: "3"
   Group: 'Armor'
 
 OpenField_Armor_Felm_MCLove32_H:
@@ -466,9 +478,10 @@ OpenField_Armor_Felm_MCLove32_H:
       Luck: 5 ADD 
   NBT:
     PublicBukkitValues:
+      az:max_unique: "5"
+      az:try_unique_enchant: "7"
       az:max_mana: "30"
       az:mana_regen: "6"
-      az:offence: "1"
   Group: 'Armor'
 
 OpenField_Armor_Felm_MCLove32_C:
@@ -496,9 +509,10 @@ OpenField_Armor_Felm_MCLove32_C:
       Luck: 5 ADD 
   NBT:
     PublicBukkitValues:
+      az:max_unique: "5"
+      az:try_unique_enchant: "7"
       az:max_mana: "30"
       az:mana_regen: "6"
-      az:offence: "2"
   Group: 'Armor'
 
 OpenField_Armor_Felm_MCLove32_L:
@@ -526,9 +540,10 @@ OpenField_Armor_Felm_MCLove32_L:
       Luck: 5 ADD 
   NBT:
     PublicBukkitValues:
+      az:max_unique: "5"
+      az:try_unique_enchant: "7"
       az:max_mana: "30"
       az:mana_regen: "6"
-      az:offence: "1"
   Group: 'Armor'
 
 OpenField_Armor_Felm_MCLove32_B:
@@ -556,8 +571,8 @@ OpenField_Armor_Felm_MCLove32_B:
       Luck: 5 ADD 
   NBT:
     PublicBukkitValues:
+      az:max_unique: "5"
+      az:try_unique_enchant: "7"
       az:max_mana: "30"
       az:mana_regen: "6"
-      az:offence: "1"
-      az:slow_life: "1"
   Group: 'Armor'
