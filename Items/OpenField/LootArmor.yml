@@ -1,0 +1,279 @@
+OpenField_Armor_キラード_MCLove32_H:
+  Id: golden_helmet
+  Display: "&fキラード-ヘルメット"
+  Lore: 
+    Template: ArmorLore
+  Model: 100
+  ItemUpdater:
+    Version: 1
+  Options:
+    Unbreakable: true
+  Attributes:
+    Head:
+      Health: 4 ADD 
+      ArmorToughness: 8 ADD 
+      Armor: 8 ADD 
+  Group: 'Armor'
+
+OpenField_Armor_キラード_MCLove32_C:
+  Id: golden_chestplate
+  Display: "&fキラード-チェスト"
+  Lore: 
+    Template: ArmorLore
+  Model: 100
+  ItemUpdater:
+    Version: 1
+  Options:
+    Unbreakable: true
+  Attributes:
+    Chest:
+      Health: 4 ADD 
+      ArmorToughness: 8 ADD 
+      Armor: 8 ADD 
+  Group: 'Armor'
+
+OpenField_Armor_キラード_MCLove32_L:
+  Id: golden_leggings
+  Display: "&fキラード-レギンス"
+  Lore: 
+    Template: ArmorLore
+  Model: 100
+  ItemUpdater:
+    Version: 1
+  Options:
+    Unbreakable: true
+  Attributes:
+    Legs:
+      Health: 4 ADD 
+      ArmorToughness: 8 ADD 
+      Armor: 8 ADD 
+  Group: 'Armor'
+
+OpenField_Armor_キラード_MCLove32_B:
+  Id: golden_boots
+  Display: "&fキラードブーツ"
+  Lore: 
+    Template: ArmorLore
+  Model: 100
+  ItemUpdater:
+    Version: 1
+  Options:
+    Unbreakable: true
+  Attributes:
+    Feet:
+      Health: 4 ADD 
+      ArmorToughness: 8 ADD 
+      Armor: 8 ADD 
+  Group: 'Armor'
+
+OpenField_Armor_ドラク_MCLove32_H:
+  Id: golden_helmet
+  Display: "&fドラク-ヘルメット"
+  Lore: 
+    Template: ArmorLore
+  Model: 100
+  ItemUpdater:
+    Version: 1
+  Options:
+    Unbreakable: true
+  Attributes:
+    Head:
+      Health: 3 ADD 
+      ArmorToughness: 6 ADD 
+      Armor: 6 ADD 
+      Damage: 2
+  Group: 'Armor'
+
+OpenField_Armor_ドラク_MCLove32_C:
+  Id: golden_chestplate
+  Display: "&fドラク-チェスト"
+  Lore: 
+    Template: ArmorLore
+  Model: 100
+  ItemUpdater:
+    Version: 1
+  Options:
+    Unbreakable: true
+  Attributes:
+    Chest:
+      Health: 3 ADD 
+      ArmorToughness: 6 ADD 
+      Armor: 6 ADD 
+      Damage: 2
+  Group: 'Armor'
+
+OpenField_Armor_ドラク_MCLove32_L:
+  Id: golden_leggings
+  Display: "&fドラク-レギンス"
+  Lore: 
+    Template: ArmorLore
+  Model: 100
+  ItemUpdater:
+    Version: 1
+  Options:
+    Unbreakable: true
+  Attributes:
+    Legs:
+      Health: 3 ADD 
+      ArmorToughness: 6 ADD 
+      Armor: 6 ADD 
+      Damage: 2
+  Group: 'Armor'
+
+OpenField_Armor_ドラク_MCLove32_B:
+  Id: golden_boots
+  Display: "&fドラク-ブーツ"
+  Lore: 
+    Template: ArmorLore
+  Model: 100
+  ItemUpdater:
+    Version: 1
+  Options:
+    Unbreakable: true
+  Attributes:
+    Feet:
+      Health: 3 ADD 
+      ArmorToughness: 6 ADD 
+      Armor: 6 ADD 
+      Damage: 2
+  Group: 'Armor'
+
+OpenField_Armor_クラード_MCLove32_H:
+  Id: golden_helmet
+  Display: "&fクラード-ヘルメット"
+  Lore: 
+    Template: ArmorLore
+  Model: 100
+  ItemUpdater:
+    Version: 1
+  Options:
+    Unbreakable: true
+  Attributes:
+    Head:
+      Health: 8 ADD 
+      ArmorToughness: 16 ADD 
+      Armor: 16 ADD 
+  Group: 'Armor'
+
+OpenField_Armor_クラード_MCLove32_C:
+  Id: golden_chestplate
+  Display: "&fクラード-チェスト"
+  Lore: 
+    Template: ArmorLore
+  Model: 100
+  ItemUpdater:
+    Version: 1
+  Options:
+    Unbreakable: true
+  Attributes:
+    Chest:
+      Health: 8 ADD 
+      ArmorToughness: 16 ADD 
+      Armor: 16 ADD 
+  Group: 'Armor'
+
+OpenField_Armor_クラード_MCLove32_L:
+  Id: golden_leggings
+  Display: "&fクラード-レギンス"
+  Lore: 
+    Template: ArmorLore
+  Model: 100
+  ItemUpdater:
+    Version: 1
+  Options:
+    Unbreakable: true
+  Attributes:
+    Legs:
+      Health: 8 ADD 
+      ArmorToughness: 16 ADD 
+      Armor: 16 ADD 
+  Group: 'Armor'
+
+OpenField_Armor_クラード_MCLove32_B:
+  Id: golden_boots
+  Display: "&fクラードブーツ"
+  Lore: 
+    Template: ArmorLore
+  Model: 100
+  ItemUpdater:
+    Version: 1
+  Options:
+    Unbreakable: true
+  Attributes:
+    Feet:
+      Health: 8 ADD 
+      ArmorToughness: 16 ADD 
+      Armor: 16 ADD 
+  Group: 'Armor'
+
+OpenField_Armor_ウラク_MCLove32_H:
+  Id: golden_helmet
+  Display: "&fウラク-ヘルメット"
+  Lore: 
+    Template: ArmorLore
+  Model: 100
+  ItemUpdater:
+    Version: 1
+  Options:
+    Unbreakable: true
+  Attributes:
+    Head:
+      Health: 5 ADD 
+      ArmorToughness: 12 ADD 
+      Armor: 12 ADD 
+      Damage: 3
+  Group: 'Armor'
+
+OpenField_Armor_ウラク_MCLove32_C:
+  Id: golden_chestplate
+  Display: "&fウラク-チェスト"
+  Lore: 
+    Template: ArmorLore
+  Model: 100
+  ItemUpdater:
+    Version: 1
+  Options:
+    Unbreakable: true
+  Attributes:
+    Chest:
+      Health: 5 ADD 
+      ArmorToughness: 12 ADD 
+      Armor: 12 ADD 
+      Damage: 3
+  Group: 'Armor'
+
+OpenField_Armor_ウラク_MCLove32_L:
+  Id: golden_leggings
+  Display: "&fウラク-レギンス"
+  Lore: 
+    Template: ArmorLore
+  Model: 100
+  ItemUpdater:
+    Version: 1
+  Options:
+    Unbreakable: true
+  Attributes:
+    Legs:
+      Health: 5 ADD 
+      ArmorToughness: 12 ADD 
+      Armor: 12 ADD 
+      Damage: 3
+  Group: 'Armor'
+
+OpenField_Armor_ウラク_MCLove32_B:
+  Id: golden_boots
+  Display: "&fウラク-ブーツ"
+  Lore: 
+    Template: ArmorLore
+  Model: 100
+  ItemUpdater:
+    Version: 1
+  Options:
+    Unbreakable: true
+  Attributes:
+    Feet:
+      Health: 5 ADD 
+      ArmorToughness: 12 ADD 
+      Armor: 12 ADD 
+      Damage: 3
+  Group: 'Armor'

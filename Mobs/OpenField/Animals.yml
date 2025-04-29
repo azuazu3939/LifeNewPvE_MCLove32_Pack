@@ -29,6 +29,23 @@ OpenField_Animal_Base_MCLove32:
   - cmd{c="mlg <target.name> OpenField_Weapon_マルチノーマルソード_MCLove32 1 0.005"} @TTP ~onDeath 
   - cmd{c="mlg <target.name> OpenField_Weapon_マルチシャープソード_MCLove32 1 0.0025"} @TTP ~onDeath
 
+  - cmd{c="mlg <target.name> OpenField_Armor_キラード_MCLove32_H 1 0.005"} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Armor_キラード_MCLove32_C 1 0.005"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Armor_キラード_MCLove32_L 1 0.005"} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Armor_キラード_MCLove32_B 1 0.005"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Armor_ドラク_MCLove32_H 1 0.005"} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Armor_ドラク_MCLove32_C 1 0.005"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Armor_ドラク_MCLove32_L 1 0.005"} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Armor_ドラク_MCLove32_B 1 0.005"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Armor_クラード_MCLove32_H 1 0.0001"} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Armor_クラード_MCLove32_C 1 0.0001"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Armor_クラード_MCLove32_L 1 0.0001"} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Armor_クラード_MCLove32_B 1 0.0001"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Armor_ウラク_MCLove32_H 1 0.0001"} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Armor_ウラク_MCLove32_C 1 0.0001"} @TTP ~onDeath
+  - cmd{c="mlg <target.name> OpenField_Armor_ウラク_MCLove32_L 1 0.0001"} @TTP ~onDeath 
+  - cmd{c="mlg <target.name> OpenField_Armor_ウラク_MCLove32_B 1 0.0001"} @TTP ~onDeath
+
 OpenField_Animal_ハロウルフ_MCLove32:
   Template: OpenField_Animal_Base_MCLove32
   Type: wolf 
